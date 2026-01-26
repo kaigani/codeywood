@@ -1,0 +1,132 @@
+# ========================================
+# PROJECT FILES (Your active work)
+# ========================================
+
+# Main projects directory - all your actual work goes here
+projects/*
+!projects/.gitkeep
+
+# ========================================
+# GENERATED OUTPUTS
+# ========================================
+
+# Generated images (large files, project-specific)
+**/SHOTS_*/
+**/CHARACTER_REFS/*/refs/
+**/LOCATION_REFS/*/refs/
+**/PROP_REFS/*/refs/
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# Exception: Keep example images if explicitly added
+!examples/**/*.png
+
+# ========================================
+# API & SECRETS
+# ========================================
+
+# API keys and credentials
+.env
+.env.local
+.env.*.local
+*.key
+**/secrets/
+credentials.json
+fal_api_key.txt
+
+# ========================================
+# GENERATION LOGS & CACHES
+# ========================================
+
+# Generation logs (contain prompts, timestamps, potentially sensitive)
+**/GENERATION_LOG*.json
+**/generation_log.json
+
+# QA reports from your projects (not examples)
+projects/**/SHOT_QA_REPORT*.md
+projects/**/VISUAL_CONTINUITY_REPORT*.md
+
+# ========================================
+# SYSTEM FILES
+# ========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ========================================
+# EDITOR & IDE
+# ========================================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ========================================
+# DEPENDENCIES & BUILD
+# ========================================
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+.venv/
+env/
+.env/
+
+# ========================================
+# TEMPORARY FILES
+# ========================================
+
+# Temp and cache
+tmp/
+temp/
+.cache/
+*.tmp
+*.temp
+*.bak
+
+# ========================================
+# LARGE FILES
+# ========================================
+
+# Video files (future, for v0.3+)
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Audio files (future)
+*.mp3
+*.wav
+*.aac
+*.flac

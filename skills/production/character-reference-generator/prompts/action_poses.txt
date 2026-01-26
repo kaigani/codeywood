@@ -1,0 +1,119 @@
+# CHARACTER ACTION POSES
+# Use for: Dynamic pose reference (requires turnaround as reference)
+# Model: Nano Banana Pro / recraft-v3 with reference image
+# Version: 1.0
+
+## BASE PROMPT TEMPLATE
+
+{{CHARACTER_DESCRIPTION}}, {{POSE_DESCRIPTION}}, {{OUTFIT_DESCRIPTION}}, {{EXPRESSION}}, {{ENVIRONMENT}}, dynamic composition, {{CAMERA_ANGLE}}, {{LIGHTING_STYLE}}, {{STYLE_KEYWORDS}}
+
+## COMMON ACTION POSES
+
+### RUNNING
+Pose: mid-stride running pose, one foot off ground, arms pumping
+Expression: determined, focused
+Camera: side view or 3/4 view
+
+### WALKING (PURPOSEFUL)
+Pose: confident stride, walking with purpose
+Expression: determined, alert
+Camera: front or 3/4 view
+
+### SITTING (WORKING)
+Pose: seated at desk, leaning forward, engaged with work
+Expression: concentrated, focused
+Camera: 3/4 view, slightly above
+
+### SITTING (RELAXED)
+Pose: seated casually, relaxed posture, one leg crossed
+Expression: neutral to thoughtful
+Camera: level or slightly below
+
+### STANDING (CONFRONTATIONAL)
+Pose: squared stance, weight forward, hands at sides or crossed
+Expression: intense, challenging
+Camera: slightly low angle
+
+### STANDING (DEFENSIVE)
+Pose: arms crossed, weight back, guarded posture
+Expression: wary, closed off
+Camera: level
+
+### CROUCHING/EXAMINING
+Pose: crouched down, examining something on ground
+Expression: focused, curious
+Camera: level or slightly above
+
+### REACHING/GRABBING
+Pose: arm extended, hand reaching for object
+Expression: urgent or careful
+Camera: follows action
+
+### FIGHTING STANCE
+Pose: balanced stance, hands up, ready for action
+Expression: determined, fierce
+Camera: dynamic angle
+
+### GESTURE (POINTING)
+Pose: arm extended, pointing at something/someone
+Expression: accusatory or directing
+Camera: includes both character and direction
+
+## NEGATIVE PROMPT
+
+multiple people, static pose, straight-on mugshot, t-pose, a-pose, anatomically incorrect, floating, wrong proportions, extra limbs, blurry motion, {{CHARACTER_NEGATIVE_PROMPTS}}
+
+## RECOMMENDED SETTINGS
+
+- Aspect ratio: Varies by pose (2:3, 3:2, 1:1)
+- Steps: 28
+- Guidance: 3.5
+- Reference weight: 0.85 (allow pose variation)
+- Reference image: turnaround.png
+
+## REFERENCE IMAGE USAGE
+
+Lower reference weight (0.85) allows for pose variation
+while maintaining facial/body consistency.
+
+For extreme poses, may need to lower to 0.80.
+
+## ENVIRONMENT CONSIDERATIONS
+
+Action poses often need context:
+- Include ground plane for grounding
+- Add environmental hints for realism
+- Match lighting to show style
+
+## EXAMPLE PROMPT (RUNNING)
+
+Asian woman in her early thirties, athletic build, short black hair with silver streak, mid-stride running pose, one foot off ground, arms pumping forward, wearing charcoal blazer and dark jeans, determined focused expression, urban street environment, slight motion, dynamic composition, side view camera angle, dramatic lighting with motion emphasis, neo-noir aesthetic, cinematic
+
+## QUALITY CHECKLIST
+
+After generation, verify:
+- [ ] Face recognizable as character
+- [ ] Pose is dynamic but natural
+- [ ] Anatomy is correct
+- [ ] Outfit is accurate
+- [ ] Grounded (not floating)
+- [ ] Expression matches action
+- [ ] Lighting matches show style
+
+## POSE SELECTION FROM SCRIPT
+
+Review script for:
+1. Action sequences
+2. Character-specific movements
+3. Signature gestures
+4. Key dramatic moments
+
+Generate poses that will be needed for shot production.
+
+## TIPS FOR DYNAMIC POSES
+
+- Be specific about weight distribution
+- Describe arm and leg positions
+- Include environmental interaction
+- Match expression to action
+- Consider camera angle carefully

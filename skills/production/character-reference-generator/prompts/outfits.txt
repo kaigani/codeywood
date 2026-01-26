@@ -1,0 +1,89 @@
+# CHARACTER OUTFIT VARIANTS
+# Use for: Alternate wardrobe generation (requires turnaround as reference)
+# Model: Nano Banana Pro / recraft-v3 with reference image
+# Version: 1.0
+
+## BASE PROMPT TEMPLATE
+
+{{CHARACTER_DESCRIPTION}}, full body shot, standing pose, {{OUTFIT_DESCRIPTION}}, neutral expression, {{ENVIRONMENT_HINT}}, full figure visible, {{LIGHTING_STYLE}}, {{STYLE_KEYWORDS}}
+
+## OUTFIT CONTEXTS
+
+### WORK/PROFESSIONAL
+Context: Office, workplace, formal settings
+Notes: Keep character's color palette, adjust for formality
+
+### CASUAL/HOME
+Context: Relaxed settings, off-duty
+Notes: Reveal personality through casual choices
+
+### FORMAL/SPECIAL
+Context: Events, special occasions
+Notes: Elevated version of signature style
+
+### ACTIVE/ACTION
+Context: Physical activity, chase scenes
+Notes: Practical but character-consistent
+
+### WEATHER VARIANT
+Context: Cold, rain, extreme conditions
+Notes: Add layers while maintaining silhouette
+
+## NEGATIVE PROMPT
+
+multiple people, crowd, dynamic action pose, dramatic angle, cluttered background, wrong body type, deformed, extra limbs, wrong proportions, {{CHARACTER_NEGATIVE_PROMPTS}}
+
+## RECOMMENDED SETTINGS
+
+- Aspect ratio: 2:3 (portrait, full body)
+- Steps: 28
+- Guidance: 3.5
+- Reference weight: 0.90 (allow outfit variation)
+- Reference image: turnaround.png
+
+## REFERENCE IMAGE USAGE
+
+Use turnaround as reference but with slightly lower weight (0.90)
+to allow outfit changes while maintaining face/body consistency.
+
+## SUBSTITUTION VARIABLES
+
+- {{CHARACTER_DESCRIPTION}}: Focus on physical description, not outfit
+- {{OUTFIT_DESCRIPTION}}: Detailed new outfit description
+- {{ENVIRONMENT_HINT}}: "in office setting", "at home", etc.
+- {{LIGHTING_STYLE}}: From STYLEGUIDE_VISUAL.md
+- {{STYLE_KEYWORDS}}: From STYLEGUIDE_VISUAL.md
+
+## EXAMPLE PROMPT (CASUAL)
+
+Asian woman in her early thirties, athletic build, 5'7", short black hair with silver streak, sharp cheekbones, full body shot, standing pose, wearing oversized gray sweater, black leggings, wool socks, no shoes, neutral expression, in apartment living room, natural window lighting, full figure visible, neo-noir aesthetic, cinematic
+
+## OUTFIT DESCRIPTION GUIDELINES
+
+When describing outfits:
+1. Start with main garment (top/dress)
+2. Add bottom if separate
+3. Include footwear
+4. Note accessories
+5. Keep character's color palette
+6. Match formality to context
+
+## QUALITY CHECKLIST
+
+After generation, verify:
+- [ ] Face matches turnaround
+- [ ] Body proportions consistent
+- [ ] Outfit matches description
+- [ ] Colors fit character palette
+- [ ] Pose is natural
+- [ ] Full figure visible
+- [ ] Context is appropriate
+
+## GENERATING FROM SCRIPT
+
+For script-required outfits:
+1. Scan script for wardrobe mentions
+2. Create outfit description
+3. Determine context/environment
+4. Generate with turnaround reference
+5. Save with descriptive filename

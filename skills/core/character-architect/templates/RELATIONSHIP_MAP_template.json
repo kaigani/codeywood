@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "show_title": "{{SHOW_TITLE}}",
+    "version": "1.0",
+    "created": "{{DATE}}",
+    "episode_current": "PILOT"
+  },
+
+  "characters": [
+    "{{CHARACTER_1_ID}}",
+    "{{CHARACTER_2_ID}}",
+    "{{CHARACTER_3_ID}}"
+  ],
+
+  "relationships": {
+    "{{CHARACTER_1_ID}}": {
+      "{{CHARACTER_2_ID}}": {
+        "axes": {
+          "trust": 0,
+          "respect": 0,
+          "dependency": 0,
+          "intimacy": 0,
+          "moral_alignment": 0
+        },
+        "bond_mechanism": "{{WHAT_CONNECTS_THEM}}",
+        "pressure_mechanism": "{{WHAT_CREATES_CONFLICT}}",
+        "private_language": [],
+        "arc_direction": "{{E.G._TRUST_+3_OVER_SEASON}}",
+        "history": "{{HOW_THEY_MET_BACKGROUND}}",
+        "current_tension": "{{ACTIVE_CONFLICT_OR_UNRESOLVED_ISSUE}}"
+      },
+      "{{CHARACTER_3_ID}}": {
+        "axes": {
+          "trust": 0,
+          "respect": 0,
+          "dependency": 0,
+          "intimacy": 0,
+          "moral_alignment": 0
+        },
+        "bond_mechanism": "",
+        "pressure_mechanism": "",
+        "private_language": [],
+        "arc_direction": "",
+        "history": "",
+        "current_tension": ""
+      }
+    },
+    "{{CHARACTER_2_ID}}": {
+      "{{CHARACTER_3_ID}}": {
+        "axes": {
+          "trust": 0,
+          "respect": 0,
+          "dependency": 0,
+          "intimacy": 0,
+          "moral_alignment": 0
+        },
+        "bond_mechanism": "",
+        "pressure_mechanism": "",
+        "private_language": [],
+        "arc_direction": "",
+        "history": "",
+        "current_tension": ""
+      }
+    }
+  },
+
+  "axis_definitions": {
+    "trust": {
+      "description": "Belief in reliability and honesty",
+      "range": "-5 (active distrust) to +5 (complete faith)",
+      "typical_movement": "±1-2 per significant episode event"
+    },
+    "respect": {
+      "description": "Admiration for competence and character",
+      "range": "-5 (contempt) to +5 (reverence)",
+      "typical_movement": "±1 per episode"
+    },
+    "dependency": {
+      "description": "Need for the other person",
+      "range": "-5 (avoidance) to +5 (can't function without)",
+      "typical_movement": "±1 per episode"
+    },
+    "intimacy": {
+      "description": "Emotional closeness and vulnerability",
+      "range": "-5 (walls up) to +5 (complete openness)",
+      "typical_movement": "±1-2 per significant episode event"
+    },
+    "moral_alignment": {
+      "description": "Shared values and ethics",
+      "range": "-5 (fundamental opposition) to +5 (complete alignment)",
+      "typical_movement": "±1 per episode"
+    }
+  },
+
+  "episode_log": [
+    {
+      "episode": "PILOT",
+      "changes": [
+        {
+          "characters": ["{{CHAR_1}}", "{{CHAR_2}}"],
+          "axis": "trust",
+          "old_value": 0,
+          "new_value": 0,
+          "reason": "{{WHAT_CAUSED_CHANGE}}"
+        }
+      ]
+    }
+  ],
+
+  "tracking_requirements": {
+    "per_episode_minimum": 2,
+    "per_episode_note": "At least 2 axis changes across all relationships per episode",
+    "negative_requirement": "At least 1 change must be negative (conflict/regression)"
+  }
+}

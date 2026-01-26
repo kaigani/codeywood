@@ -1,0 +1,9 @@
+# This file ensures the projects/ directory exists in the repo structure
+# but all contents are gitignored.
+#
+# Create your projects here:
+#   projects/my-noir-detective/
+#   projects/sci-fi-anthology/
+#   projects/etc/
+#
+# Each project should mirror the structure in examples/sample-project/

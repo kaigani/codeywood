@@ -1,0 +1,263 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Canon Database Schema",
+  "description": "Machine-readable source of truth for AI video story generation",
+  "type": "object",
+  "required": ["meta", "characters", "locations", "visual_style"],
+
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["show_title", "version", "last_updated"],
+      "properties": {
+        "show_title": { "type": "string" },
+        "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "last_updated": { "type": "string", "format": "date-time" },
+        "knowledge_cutoff": { "type": "string" },
+        "phase": {
+          "type": "string",
+          "enum": ["PRE_VISUAL", "REFERENCE_GENERATION", "SHOT_PRODUCTION", "COMPLETE"]
+        }
+      }
+    },
+
+    "characters": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["full_name", "role"],
+        "properties": {
+          "full_name": { "type": "string" },
+          "role": {
+            "type": "string",
+            "enum": ["protagonist", "deuteragonist", "antagonist", "supporting", "recurring"]
+          },
+          "age": { "type": "integer" },
+          "archetype": { "type": "string" },
+
+          "psychology": {
+            "type": "object",
+            "properties": {
+              "want": { "type": "string" },
+              "need": { "type": "string" },
+              "lie": { "type": "string" },
+              "wound": { "type": "string" },
+              "virtue_with_cost": { "type": "string" }
+            }
+          },
+
+          "visual": {
+            "type": "object",
+            "properties": {
+              "locked": { "type": "boolean" },
+              "description": { "type": "string" },
+              "signature_outfit": { "type": "string" },
+              "color_palette": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "signature_prop": { "type": "string" },
+              "negative_prompts": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "reference_images": {
+                "type": "object",
+                "additionalProperties": { "type": "string" }
+              }
+            }
+          },
+
+          "voice": {
+            "type": "object",
+            "properties": {
+              "sentence_length": {
+                "type": "string",
+                "enum": ["short", "medium_short", "medium", "medium_long", "long"]
+              },
+              "metaphor_domain": { "type": "string" },
+              "sarcasm_level": { "type": "integer", "minimum": 0, "maximum": 10 },
+              "directness": { "type": "integer", "minimum": 0, "maximum": 10 },
+              "taboo_topics": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "linguistic_fingerprints": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          },
+
+          "relationships": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "axes": {
+                  "type": "object",
+                  "properties": {
+                    "trust": { "type": "integer", "minimum": -5, "maximum": 5 },
+                    "respect": { "type": "integer", "minimum": -5, "maximum": 5 },
+                    "dependency": { "type": "integer", "minimum": -5, "maximum": 5 },
+                    "intimacy": { "type": "integer", "minimum": -5, "maximum": 5 },
+                    "moral_alignment": { "type": "integer", "minimum": -5, "maximum": 5 }
+                  }
+                },
+                "bond_mechanism": { "type": "string" },
+                "pressure_mechanism": { "type": "string" },
+                "private_language": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "arc_direction": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "locations": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["type", "description"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["primary", "secondary", "recurring", "one_off"]
+          },
+          "description": { "type": "string" },
+          "mood": { "type": "string" },
+          "locked": { "type": "boolean" },
+
+          "visual": {
+            "type": "object",
+            "properties": {
+              "time_variants": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "key_areas": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "color_palette": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "lighting_signature": { "type": "string" },
+              "negative_prompts": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "reference_images": {
+                "type": "object",
+                "additionalProperties": { "type": "string" }
+              }
+            }
+          },
+
+          "blocking_rules": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+
+    "props": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["type", "description"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["signature", "functional", "environmental"]
+          },
+          "owner": { "type": "string" },
+          "description": { "type": "string" },
+          "significance": { "type": "string" },
+
+          "visual": {
+            "type": "object",
+            "properties": {
+              "locked": { "type": "boolean" },
+              "reference_images": {
+                "type": "object",
+                "additionalProperties": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "visual_style": {
+      "type": "object",
+      "properties": {
+        "global_aesthetic": { "type": "string" },
+        "color_grading": { "type": "string" },
+        "lighting_style": { "type": "string" },
+        "lens_language": { "type": "string" },
+        "camera_movement": { "type": "string" },
+
+        "shot_taxonomy": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+
+        "global_negative_prompts": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+
+    "factions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "description": { "type": "string" },
+          "members": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "values": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "conflict_with": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+
+    "canon_facts": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+
+    "continuity_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["date", "change"],
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "change": { "type": "string" },
+          "affected_artifacts": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "reason": { "type": "string" }
+        }
+      }
+    }
+  }
+}

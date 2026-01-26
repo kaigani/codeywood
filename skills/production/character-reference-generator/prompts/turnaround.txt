@@ -1,0 +1,51 @@
+# CHARACTER TURNAROUND - NEUTRAL POSE
+# Use for: Initial reference generation (no prior images)
+# Model: Nano Banana Pro / recraft-v3
+# Version: 1.0
+
+## BASE PROMPT TEMPLATE
+
+{{CHARACTER_DESCRIPTION}}, character design reference sheet, turnaround view showing front view, three-quarter view, side profile, and back view, {{OUTFIT_DESCRIPTION}}, neutral standing pose, neutral expression, arms slightly away from body, clean white background, professional character sheet layout, even studio lighting, consistent proportions across all views, {{STYLE_KEYWORDS}}
+
+## NEGATIVE PROMPT
+
+multiple characters, crowd, dynamic pose, action pose, smiling, dramatic expression, props in hand, harsh shadows, colored background, cluttered background, photography, realistic photo, blurry, low quality, deformed, extra limbs, missing limbs, {{CHARACTER_NEGATIVE_PROMPTS}}
+
+## RECOMMENDED SETTINGS
+
+- Aspect ratio: 16:9 (for 4-panel layout)
+- OR Aspect ratio: 1:1 (for 2x2 grid)
+- Steps: 28
+- Guidance: 3.5
+- Safety tolerance: 2
+
+## SUBSTITUTION VARIABLES
+
+- {{CHARACTER_DESCRIPTION}}: From CANON_DB.json → characters.{ID}.visual.description
+- {{OUTFIT_DESCRIPTION}}: From CANON_DB.json → characters.{ID}.visual.signature_outfit
+- {{STYLE_KEYWORDS}}: From STYLEGUIDE_VISUAL.md → global aesthetic keywords
+- {{CHARACTER_NEGATIVE_PROMPTS}}: From CANON_DB.json → characters.{ID}.visual.negative_prompts
+
+## EXAMPLE PROMPT
+
+Asian woman in her early thirties, athletic build, 5'7", short black hair with one silver streak on the left side, sharp cheekbones, tired dark eyes with slight circles underneath, small scar through left eyebrow, character design reference sheet, turnaround view showing front view, three-quarter view, side profile, and back view, wearing charcoal blazer over white button-up shirt, dark slim-fit jeans, black ankle boots, neutral standing pose, neutral expression, arms slightly away from body, clean white background, professional character sheet layout, even studio lighting, consistent proportions across all views, neo-noir aesthetic, cinematic, professional illustration
+
+## QUALITY CHECKLIST
+
+After generation, verify:
+- [ ] All four views present and distinct
+- [ ] Proportions consistent across views
+- [ ] Face features match description
+- [ ] Hair style/color consistent
+- [ ] Outfit accurate to description
+- [ ] No extra limbs or deformities
+- [ ] Background is clean
+- [ ] Lighting is even
+
+## IF GENERATION FAILS
+
+Common issues and fixes:
+- Views not distinct: Add "clearly separated panels" to prompt
+- Inconsistent features: Increase specificity of description
+- Wrong style: Strengthen style keywords
+- Background issues: Emphasize "clean white background, studio setting"

@@ -1,0 +1,69 @@
+# LOCATION ESTABLISHING SHOT
+# Use for: Wide establishing shot (no prior reference)
+# Model: Nano Banana Pro / recraft-v3
+# Version: 1.0
+
+## BASE PROMPT TEMPLATE
+
+{{LOCATION_DESCRIPTION}}, wide establishing shot, full environment visible, {{KEY_FEATURES}}, {{TIME_OF_DAY}} lighting, {{MOOD_ATMOSPHERE}}, architectural photography style, clean composition, depth and scale visible, {{STYLE_KEYWORDS}}
+
+## NEGATIVE PROMPT
+
+people, characters, figures, crowds, close-up, tight framing, cluttered, messy, unrealistic architecture, floating objects, distorted perspective, {{LOCATION_NEGATIVE_PROMPTS}}
+
+## RECOMMENDED SETTINGS
+
+- Aspect ratio: 16:9 (cinematic wide)
+- Steps: 28
+- Guidance: 3.5
+- Safety tolerance: 2
+
+## SUBSTITUTION VARIABLES
+
+- {{LOCATION_DESCRIPTION}}: From CANON_DB → locations.{ID}.description
+- {{KEY_FEATURES}}: Notable architectural/design elements
+- {{TIME_OF_DAY}}: "daylight", "golden hour", "night", etc.
+- {{MOOD_ATMOSPHERE}}: From CANON_DB → locations.{ID}.mood
+- {{STYLE_KEYWORDS}}: From STYLEGUIDE_VISUAL.md
+
+## EXAMPLE PROMPT
+
+Large open-plan police precinct office with rows of cluttered desks, wide establishing shot, full environment visible, harsh overhead fluorescent lighting, evidence boards covering walls with photos and red string, coffee station in corner with stained machine, large windows along one wall showing city skyline, glass-walled captain's office in background, afternoon daylight lighting, gritty functional institutional atmosphere, architectural photography style, clean composition, depth and scale visible, neo-noir aesthetic, cinematic, desaturated colors
+
+## LOCATION TYPE VARIATIONS
+
+### INTERIOR - OFFICE/INSTITUTIONAL
+Focus: Layout, lighting fixtures, workstations, institutional details
+
+### INTERIOR - RESIDENTIAL
+Focus: Personal touches, furniture arrangement, lived-in details
+
+### INTERIOR - PUBLIC SPACE
+Focus: Scale, foot traffic flow, signage, functional elements
+
+### EXTERIOR - URBAN
+Focus: Buildings, streets, signage, urban texture
+
+### EXTERIOR - NATURAL
+Focus: Landscape features, vegetation, weather/sky
+
+## QUALITY CHECKLIST
+
+After generation, verify:
+- [ ] Full location visible
+- [ ] Key features identifiable
+- [ ] Scale is realistic
+- [ ] Perspective is correct
+- [ ] Mood matches description
+- [ ] No unwanted figures
+- [ ] Lighting is consistent
+- [ ] Style matches show aesthetic
+
+## TIPS FOR CONSISTENT LOCATIONS
+
+1. Be very specific about architectural elements
+2. Include fixed features that will anchor consistency
+3. Describe lighting fixtures explicitly
+4. Note wall colors/textures
+5. Include furniture arrangement
+6. Mention window placement/style

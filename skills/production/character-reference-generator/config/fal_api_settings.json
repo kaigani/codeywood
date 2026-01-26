@@ -1,0 +1,86 @@
+{
+  "model": "nano_banana_pro",
+  "endpoint": "fal-ai/recraft-v3",
+
+  "default_params": {
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "num_inference_steps": 28,
+    "guidance_scale": 3.5,
+    "num_images": 1,
+    "safety_tolerance": "2",
+    "output_format": "png"
+  },
+
+  "turnaround_params": {
+    "image_size": {
+      "width": 1536,
+      "height": 1024
+    },
+    "num_inference_steps": 30,
+    "guidance_scale": 4.0,
+    "notes": "16:9 for 4-panel turnaround layout"
+  },
+
+  "expression_params": {
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "reference_weight": 0.95,
+    "notes": "High reference weight for facial consistency"
+  },
+
+  "outfit_params": {
+    "image_size": {
+      "width": 768,
+      "height": 1152
+    },
+    "reference_weight": 0.90,
+    "notes": "2:3 portrait for full body, lower weight allows outfit changes"
+  },
+
+  "action_pose_params": {
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "reference_weight": 0.85,
+    "notes": "Lower weight allows pose variation"
+  },
+
+  "detail_params": {
+    "image_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "reference_weight": 0.95,
+    "notes": "High weight for detail accuracy"
+  },
+
+  "reference_mode": {
+    "style_reference_weight": 0.85,
+    "character_reference_weight": 0.95,
+    "notes": "Use character weight for faces, style weight for aesthetics"
+  },
+
+  "retry_policy": {
+    "max_retries": 3,
+    "retry_delay_ms": 2000,
+    "on_failure": "log_and_continue"
+  },
+
+  "output_settings": {
+    "base_path": "CHARACTER_REFS",
+    "naming_convention": "{character_id}/{character_name}_{type}_{variant}.png",
+    "metadata_file": "generation_log.json"
+  },
+
+  "quality_thresholds": {
+    "min_acceptable_consistency": 0.85,
+    "regenerate_on_failure": true,
+    "manual_review_required": true
+  }
+}

@@ -1,0 +1,90 @@
+# CHARACTER EXPRESSIONS
+# Use for: Expression pack generation (requires turnaround as reference)
+# Model: Nano Banana Pro / recraft-v3 with reference image
+# Version: 1.0
+
+## BASE PROMPT TEMPLATE
+
+{{CHARACTER_DESCRIPTION}}, portrait, {{EXPRESSION_DESCRIPTION}}, {{OUTFIT_DESCRIPTION}}, facing camera, head and shoulders visible, {{LIGHTING_STYLE}}, {{STYLE_KEYWORDS}}
+
+## EXPRESSION VARIANTS
+
+### NEUTRAL
+Expression: calm, relaxed expression, neutral face, natural resting expression
+Use: Default state, baseline for comparison
+
+### HAPPY
+Expression: genuine smile, warm expression, eyes crinkling slightly, pleased
+Use: Positive moments, victories, connection scenes
+
+### SAD
+Expression: downcast eyes, slight frown, melancholic expression, subdued
+Use: Loss, disappointment, vulnerability
+
+### ANGRY
+Expression: furrowed brow, tense jaw, intense glare, frustrated expression
+Use: Conflict, confrontation, determination
+
+### SURPRISED
+Expression: wide eyes, raised eyebrows, slightly open mouth, startled
+Use: Revelations, shock moments, discoveries
+
+### DETERMINED
+Expression: set jaw, focused eyes, resolute expression, intense concentration
+Use: Key decision moments, preparing for action
+
+### VULNERABLE
+Expression: soft eyes, slightly uncertain, guard lowered, open expression
+Use: Intimate moments, confession scenes, connection
+
+## NEGATIVE PROMPT
+
+multiple people, full body, action pose, dramatic background, props, harsh contrast, blurry, deformed features, asymmetrical face, wrong eye color, wrong hair, {{CHARACTER_NEGATIVE_PROMPTS}}
+
+## RECOMMENDED SETTINGS
+
+- Aspect ratio: 1:1 (square portrait)
+- Steps: 28
+- Guidance: 3.5
+- Reference weight: 0.95 (high consistency)
+- Reference image: turnaround.png
+
+## REFERENCE IMAGE USAGE
+
+CRITICAL: Use character turnaround as reference image with high weight (0.95)
+This ensures facial features remain consistent across expressions.
+
+## SUBSTITUTION VARIABLES
+
+- {{CHARACTER_DESCRIPTION}}: From CANON_DB → condensed to face/upper body
+- {{EXPRESSION_DESCRIPTION}}: From expression variants above
+- {{OUTFIT_DESCRIPTION}}: Primary outfit or "wearing [color] top"
+- {{LIGHTING_STYLE}}: From STYLEGUIDE_VISUAL.md
+- {{STYLE_KEYWORDS}}: From STYLEGUIDE_VISUAL.md
+
+## EXAMPLE PROMPT (ANGRY)
+
+Asian woman in her early thirties, sharp cheekbones, short black hair with silver streak, small scar through left eyebrow, portrait, furrowed brow, tense jaw, intense glare, frustrated expression, wearing charcoal blazer, facing camera, head and shoulders visible, dramatic side lighting, neo-noir aesthetic, cinematic
+
+## QUALITY CHECKLIST
+
+After generation, verify:
+- [ ] Face matches turnaround reference
+- [ ] Expression is clearly readable
+- [ ] Hair consistent with reference
+- [ ] Eye color/shape consistent
+- [ ] Lighting matches show style
+- [ ] No feature drift from reference
+
+## BATCH GENERATION
+
+For efficiency, generate all expressions in sequence:
+1. Neutral (baseline check)
+2. Happy
+3. Sad
+4. Angry
+5. Surprised
+6. Determined
+7. Vulnerable
+
+Review neutral first - if it doesn't match turnaround, adjust reference weight before proceeding.
