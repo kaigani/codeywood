@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeywood - AI Video Story Generation System</title>
+    <meta name="description" content="An open-source modular Claude Skills-based system for autonomous AI video story generation. From sparse user requirements to full episodes.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kaigani.github.io/codeywood/">
+    <meta property="og:title" content="Codeywood - AI Video Story Generation System">
+    <meta property="og:description" content="An open-source modular Claude Skills-based system for autonomous AI video story generation. From sparse user requirements to full episodes.">
+    <meta property="og:image" content="https://kaigani.github.io/codeywood/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Codeywood">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://kaigani.github.io/codeywood/">
+    <meta name="twitter:title" content="Codeywood - AI Video Story Generation System">
+    <meta name="twitter:description" content="An open-source modular Claude Skills-based system for autonomous AI video story generation. From sparse user requirements to full episodes.">
+    <meta name="twitter:image" content="https://kaigani.github.io/codeywood/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0a0a1a">
+    <meta name="msapplication-TileColor" content="#0a0a1a">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Starfield Background -->
+    <div class="starfield" id="starfield"></div>
+
+    <!-- Navigation -->
+    <nav class="pixel-nav">
+        <div class="nav-content">
+            <a href="#" class="nav-logo">CODEYWOOD</a>
+            <div class="nav-links">
+                <a href="#overview">Overview</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#skills">Skills</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="https://github.com/kaigani/codeywood" class="nav-cta" target="_blank">GitHub</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Fixed Background Image -->
+    <div class="hero-bg" id="hero-bg">
+        <img src="header.jpg" alt="Codeywood - Hollywood sign reimagined as pixel art">
+    </div>
+    <div class="hero-bg-overlay" id="hero-bg-overlay"></div>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="CODEYWOOD">CODEYWOOD</h1>
+            <p class="tagline">AI Video Story Generation System</p>
+            <p class="subtitle typewriter">From concept to episode, powered by Claude Skills</p>
+            <div class="hero-cta">
+                <a href="#overview" class="pixel-btn primary">Learn More</a>
+                <a href="https://github.com/kaigani/codeywood" class="pixel-btn secondary" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">SCROLL</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section class="section overview" id="overview">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="pixel-bracket">[</span>
+                OVERVIEW
+                <span class="pixel-bracket">]</span>
+            </h2>
+
+            <div class="overview-grid">
+                <div class="overview-main">
+                    <p class="lead">Codeywood is an open-source, modular system for autonomous AI video story generation. Using Claude Skills as instruction sets, it transforms sparse user requirements into complete episodic content.</p>
+
+                    <div class="feature-cards">
+                        <div class="feature-card" data-aos="fade-up">
+                            <div class="feature-icon">
+                                <span class="pixel-icon">&#9733;</span>
+                            </div>
+                            <h3>Modular Skills</h3>
+                            <p>Self-contained instruction sets that Claude reads and follows. Each skill has clear inputs, outputs, and quality gates.</p>
+                        </div>
+
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature-icon">
+                                <span class="pixel-icon">&#9881;</span>
+                            </div>
+                            <h3>Reference-Based Pipeline</h3>
+                            <p>Visual consistency through reference images, not just prompts. Characters and locations stay on-model across hundreds of shots.</p>
+                        </div>
+
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="feature-icon">
+                                <span class="pixel-icon">&#9825;</span>
+                            </div>
+                            <h3>Community-Driven</h3>
+                            <p>Open source from day one. Contribute skills, improve workflows, share results. Built in public on GitHub.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="overview-sidebar">
+                    <div class="info-panel">
+                        <h4>Tech Stack</h4>
+                        <ul class="tech-list">
+                            <li><span class="tech-label">AI Engine</span> Claude Code</li>
+                            <li><span class="tech-label">Images</span> Nano Banana Pro</li>
+                            <li><span class="tech-label">Video</span> Kling / Veo 3.1</li>
+                            <li><span class="tech-label">API</span> fal.ai</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-panel status">
+                        <h4>Current Status</h4>
+                        <div class="status-indicator">
+                            <span class="status-dot active"></span>
+                            <span>v0.1 - Story Foundation</span>
+                        </div>
+                        <p class="status-desc">Generating complete pilot scripts from 8-10 user questions.</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="pixel-bracket">[</span>
+                HOW IT WORKS
+                <span class="pixel-bracket">]</span>
+            </h2>
+
+            <div class="workflow-diagram">
+                <div class="workflow-phase">
+                    <div class="phase-header">
+                        <span class="phase-number">01</span>
+                        <h3>Story Intake</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Answer 8-10 questions about your show concept. Genre, protagonist, relationships, themes, setting.</p>
+                        <div class="phase-output">
+                            <span class="output-label">Outputs:</span>
+                            <code>CREATIVE_BRIEF.md</code>
+                            <code>POWER_STACK.md</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workflow-arrow">&#9654;</div>
+
+                <div class="workflow-phase">
+                    <div class="phase-header">
+                        <span class="phase-number">02</span>
+                        <h3>Character & Story</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Deep character psychology, relationship matrices, episode beats, scene breakdowns.</p>
+                        <div class="phase-output">
+                            <span class="output-label">Outputs:</span>
+                            <code>CHARACTER_SHEETS/</code>
+                            <code>EP_BEATS.md</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workflow-arrow">&#9654;</div>
+
+                <div class="workflow-phase">
+                    <div class="phase-header">
+                        <span class="phase-number">03</span>
+                        <h3>Visual References</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Generate character turnarounds, expressions, locations. Build the reference library.</p>
+                        <div class="phase-output">
+                            <span class="output-label">Outputs:</span>
+                            <code>CHARACTER_REFS/</code>
+                            <code>LOCATION_REFS/</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workflow-arrow">&#9654;</div>
+
+                <div class="workflow-phase">
+                    <div class="phase-header">
+                        <span class="phase-number">04</span>
+                        <h3>Shot Production</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Generate consistent shot images using references. Validate quality. Animate to video.</p>
+                        <div class="phase-output">
+                            <span class="output-label">Outputs:</span>
+                            <code>SHOTS_EP01/</code>
+                            <code>VIDEO/</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workflow-detail">
+                <h3>The Key Insight: Reference-Based Generation</h3>
+                <div class="insight-content">
+                    <div class="insight-diagram">
+                        <pre class="ascii-art">
+Story ─────► Character/Location ─────► Reference ─────► Shot ─────► Video
+             Definitions                Library          Images
+                  │                         │               │
+                  └─────── Each stage uses previous stage's ──────┘
+                           outputs as REFERENCE INPUTS
+                        </pre>
+                    </div>
+                    <p>Unlike prompt-only approaches, Codeywood builds a library of locked visual references. Every shot image is generated with character and location references attached, ensuring consistency across hundreds of frames.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Architecture Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="pixel-bracket">[</span>
+                SKILLS ARCHITECTURE
+                <span class="pixel-bracket">]</span>
+            </h2>
+
+            <p class="section-intro">Skills are self-contained instruction sets that Claude reads and follows. Each skill declares its inputs, produces specific outputs, and can be improved independently.</p>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">&#9998;</span>
+                        Core / Story
+                    </h3>
+                    <ul class="skill-list">
+                        <li><code>story-intake</code> <span class="skill-desc">8-10 questions to creative brief</span></li>
+                        <li><code>logline-architect</code> <span class="skill-desc">Generate & refine loglines</span></li>
+                        <li><code>character-architect</code> <span class="skill-desc">Deep character psychology</span></li>
+                        <li><code>story-architect</code> <span class="skill-desc">Episode beats & scene lists</span></li>
+                        <li><code>screenplay-writer</code> <span class="skill-desc">Formatted screenplays</span></li>
+                        <li><code>dialogue-doctor</code> <span class="skill-desc">Voice & subtext polish</span></li>
+                        <li><code>story-critic</code> <span class="skill-desc">Quality gate with veto</span></li>
+                        <li><code>bible-keeper</code> <span class="skill-desc">Living reference document</span></li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">&#127912;</span>
+                        Production / Visual
+                    </h3>
+                    <ul class="skill-list">
+                        <li><code>canon-database-manager</code> <span class="skill-desc">Machine-readable source of truth</span></li>
+                        <li><code>visual-style-guide</code> <span class="skill-desc">Show visual language</span></li>
+                        <li><code>character-reference-generator</code> <span class="skill-desc">Turnarounds, expressions, poses</span></li>
+                        <li><code>location-reference-generator</code> <span class="skill-desc">Establishing shots, variants</span></li>
+                        <li><code>shot-list-generator</code> <span class="skill-desc">Screenplay to shot specs</span></li>
+                        <li><code>shot-image-generator</code> <span class="skill-desc">Reference-based shot images</span></li>
+                        <li><code>shot-quality-validator</code> <span class="skill-desc">QA pass on shots</span></li>
+                        <li><code>visual-continuity-validator</code> <span class="skill-desc">Cross-shot consistency</span></li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">&#9881;</span>
+                        Meta / Orchestration
+                    </h3>
+                    <ul class="skill-list">
+                        <li><code>workflow-orchestrator</code> <span class="skill-desc">Pipeline execution & gates</span></li>
+                        <li><code>continuity-validator</code> <span class="skill-desc">Cross-artifact consistency</span></li>
+                        <li><code>reference-library-updater</code> <span class="skill-desc">Improve refs from good shots</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="section roadmap" id="roadmap">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="pixel-bracket">[</span>
+                ROADMAP
+                <span class="pixel-bracket">]</span>
+            </h2>
+
+            <div class="timeline">
+                <div class="timeline-item active">
+                    <div class="timeline-marker">
+                        <span class="version">v0.1</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Story Foundation</h3>
+                        <p class="timeline-status">IN PROGRESS</p>
+                        <p>Complete pilot script + story bible from 8-10 user questions. All core skills operational.</p>
+                        <ul class="milestone-list">
+                            <li class="done">Story intake & creative brief</li>
+                            <li class="done">Character architecture</li>
+                            <li class="done">Episode beats & scene lists</li>
+                            <li>Screenplay generation</li>
+                            <li>Quality validation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="version">v0.2</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Complete Image Assets</h3>
+                        <p class="timeline-status">NEXT</p>
+                        <p>All reference images + shot images generated with visual consistency.</p>
+                        <ul class="milestone-list">
+                            <li>Character reference generator</li>
+                            <li>Location reference generator</li>
+                            <li>Shot list & image generation</li>
+                            <li>Quality validation pipeline</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="version">v0.3</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Scene Generation</h3>
+                        <p class="timeline-status">FUTURE</p>
+                        <p>2-3 minute animated scene with audio. Image-to-video pipeline.</p>
+                        <ul class="milestone-list">
+                            <li>Video animation (Kling/Veo)</li>
+                            <li>Audio integration</li>
+                            <li>Scene assembly</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="version">v1.0</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Full Episode</h3>
+                        <p class="timeline-status">ASPIRATIONAL</p>
+                        <p>Complete 20-30 minute episode from sparse requirements. Requires breakthroughs in consistency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section class="section getting-started" id="getting-started">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="pixel-bracket">[</span>
+                GETTING STARTED
+                <span class="pixel-bracket">]</span>
+            </h2>
+
+            <div class="start-grid">
+                <div class="start-card">
+                    <div class="start-number">1</div>
+                    <h3>Clone the Repo</h3>
+                    <pre class="code-block"><code>git clone https://github.com/kaigani/codeywood.git
+cd codeywood</code></pre>
+                </div>
+
+                <div class="start-card">
+                    <div class="start-number">2</div>
+                    <h3>Start with Story Intake</h3>
+                    <p>Read and follow the skill instructions:</p>
+                    <pre class="code-block"><code>skills/core/story-intake/SKILL.md</code></pre>
+                    <p>Answer 8-10 questions to generate your creative brief.</p>
+                </div>
+
+                <div class="start-card">
+                    <div class="start-number">3</div>
+                    <h3>Follow the Workflow</h3>
+                    <p>Work through skills sequentially. Each builds on the previous. See <code>QUICKSTART.md</code> for the full guide.</p>
+                </div>
+
+                <div class="start-card">
+                    <div class="start-number">4</div>
+                    <h3>Contribute Back</h3>
+                    <p>Found something that works? Something that doesn't? Open an issue or PR. This project grows through community iteration.</p>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <h3>Ready to build your story?</h3>
+                <p>Check out the sample project to see a complete worked example.</p>
+                <a href="https://github.com/kaigani/codeywood/tree/main/examples/sample-project" class="pixel-btn primary" target="_blank">View Sample Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pixel-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">CODEYWOOD</span>
+                    <p>AI Video Story Generation System</p>
+                    <p class="footer-tagline">Open source. Community driven. Built in public.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/kaigani/codeywood" target="_blank">GitHub Repository</a></li>
+                        <li><a href="https://github.com/kaigani/codeywood/blob/main/QUICKSTART.md" target="_blank">Quick Start Guide</a></li>
+                        <li><a href="https://github.com/kaigani/codeywood/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Skills</h4>
+                    <ul>
+                        <li><a href="https://github.com/kaigani/codeywood/tree/main/skills/core" target="_blank">Core Skills</a></li>
+                        <li><a href="https://github.com/kaigani/codeywood/tree/main/skills/production" target="_blank">Production Skills</a></li>
+                        <li><a href="https://github.com/kaigani/codeywood/tree/main/examples" target="_blank">Examples</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Codeywood Project. Open Source under MIT License.</p>
+                <p class="pixel-credits">Made with <span class="heart">&#9829;</span> and Claude Code</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
