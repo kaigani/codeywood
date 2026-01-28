@@ -10,18 +10,8 @@ projects/*
 # GENERATED OUTPUTS
 # ========================================
 
-# Generated images (large files, project-specific)
+# Generated shot folders (can be large)
 **/SHOTS_*/
-**/CHARACTER_REFS/*/refs/
-**/LOCATION_REFS/*/refs/
-**/PROP_REFS/*/refs/
-*.png
-*.jpg
-*.jpeg
-*.webp
-
-# Exception: Keep example images if explicitly added
-!examples/**/*.png
 
 # ========================================
 # API & SECRETS
