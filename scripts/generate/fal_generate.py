@@ -28,7 +28,6 @@ import os
 import sys
 import json
 import argparse
-import re
 from datetime import datetime
 from pathlib import Path
 
@@ -92,73 +91,25 @@ def load_project_config(project_path):
         return yaml.safe_load(f)
 
 
-def load_character_sheet(project_path, character_slug):
-    """Load character sheet markdown and extract visual/psychological data"""
-    config = load_project_config(project_path)
-    char_sheets_path = project_path / config['paths']['character_sheets']
+def load_character_from_config(config, character_slug):
+    """Load character visual data from PROJECT_CONFIG.yaml"""
+    characters = config.get('characters', {})
 
-    # Try different naming conventions
-    possible_names = [
-        f"{character_slug.upper()}.md",
-        f"{character_slug.replace('-', '_').upper()}.md",
-        f"{character_slug.title().replace('-', '_')}.md",
-        f"{character_slug}.md",
-    ]
-
-    char_file = None
-    for name in possible_names:
-        path = char_sheets_path / name
-        if path.exists():
-            char_file = path
-            break
-
-    if not char_file:
-        print(f"ERROR: Character sheet not found for '{character_slug}'")
-        print(f"Looked in: {char_sheets_path}")
+    if character_slug not in characters:
+        print(f"ERROR: Character '{character_slug}' not found in PROJECT_CONFIG.yaml")
+        print(f"Available characters: {', '.join(characters.keys())}")
         return None
 
-    with open(char_file, 'r') as f:
-        content = f.read()
+    char_config = characters[character_slug]
 
-    # Extract key information
-    character_data = {
+    return {
         'slug': character_slug,
-        'name': extract_field(content, 'Full Name') or character_slug.title(),
-        'physical_description': extract_code_block(content, 'Physical Description'),
-        'wardrobe': extract_code_block(content, 'Signature Outfit') or extract_code_block(content, 'Wardrobe'),
-        'keywords': extract_code_block(content, 'Image Generation Keywords'),
-        'negative_prompts': extract_code_block(content, 'Negative Prompts'),
-        'one_line': extract_quote(content, 'One-Line Description'),
+        'name': char_config.get('name', character_slug.title()),
+        'visual_keywords': char_config.get('visual_keywords', ''),
+        'wardrobe': char_config.get('wardrobe', ''),
+        'palette': char_config.get('palette', []),
+        'role': char_config.get('role', ''),
     }
-
-    return character_data
-
-
-def extract_field(content, field_name):
-    """Extract a field value from markdown table or line"""
-    pattern = rf'\|\s*{field_name}\s*\|\s*([^|]+)\s*\|'
-    match = re.search(pattern, content)
-    if match:
-        return match.group(1).strip()
-    return None
-
-
-def extract_code_block(content, header):
-    """Extract content from a code block under a header"""
-    pattern = rf'(?:###?\s*{header}|{header})\s*\n```[^\n]*\n(.*?)```'
-    match = re.search(pattern, content, re.DOTALL | re.IGNORECASE)
-    if match:
-        return match.group(1).strip()
-    return None
-
-
-def extract_quote(content, header):
-    """Extract a blockquote under a header"""
-    pattern = rf'###?\s*{header}\s*\n>\s*(.+)'
-    match = re.search(pattern, content, re.IGNORECASE)
-    if match:
-        return match.group(1).strip()
-    return None
 
 
 # ============================================================================
@@ -239,61 +190,82 @@ def build_style_dna_prompt(style_dna, subject, composition, mood):
 def build_hero_shot_prompt(character_data, style_dna, moment, composition, mood):
     """Build a hero shot prompt from character data and style DNA"""
     components = [
-        character_data.get('physical_description', ''),
+        # Character specifics first
+        character_data.get('visual_keywords', ''),
         character_data.get('wardrobe', ''),
+        # Shot context
         moment,
-        style_dna['medium_era'],
-        style_dna['linework_texture'],
-        style_dna['lighting_rendering'],
         composition,
         mood,
-        style_dna['color_palette'],
+        # Cinematography and style DNA
+        style_dna.get('cinematography', ''),
+        style_dna.get('medium_era', ''),
+        style_dna.get('linework_texture', ''),
+        style_dna.get('lighting_rendering', ''),
+        style_dna.get('color_palette', ''),
     ]
     return ". ".join(filter(None, components))
 
 
 def build_identity_sheet_prompt(character_data, style_dna, hex_palette=None):
-    """Build an identity sheet prompt with composite layout"""
-    char_desc = character_data.get('physical_description', '')
+    """Build an identity sheet prompt with structured format:
+    Type, Character description, Style DNA, Panel layout, Technical specs, Style reference
+    """
+    visual_keywords = character_data.get('visual_keywords', '')
     wardrobe = character_data.get('wardrobe', '')
+    char_name = character_data.get('name', 'character')
 
-    layout = f"""Clean layout with multiple character views on neutral warm beige background (#d4c4b0). Professional character reference sheet format.
+    # Build structured prompt following the template
+    prompt_parts = []
 
-TOP ROW (left to right):
-- Extreme close-up of eyes, heavy ink outlines
-- Close-up of face profile
-- Hands reference shot
+    # 1. TYPE
+    prompt_parts.append(f"A cinematic editorial contact sheet of {char_name}, character design reference sheet, turnaround view")
 
-MIDDLE SECTION (large):
-- Full body front view with signature wardrobe, commanding presence
-- Full body back view, silhouette quality
+    # 2. CHARACTER DESCRIPTION
+    prompt_parts.append(visual_keywords)
 
-BOTTOM ROW (left to right):
-- Portrait showing vulnerability or alternate expression
-- Signature action pose
-- Quiet moment or alternate state
+    # 3. WARDROBE
+    prompt_parts.append(wardrobe)
 
-Technical: Dark animated style with heavy ink outlines, crisp silhouettes, cel-shaded shadows, high contrast. Thin black dividing lines between panels. Consistent lighting across all views"""
-
-    components = [
-        char_desc,
-        wardrobe,
-        layout,
+    # 4. STYLE DNA
+    style_components = [
+        style_dna.get('medium_era', ''),
+        style_dna.get('cinematography', ''),
+        style_dna.get('lighting_rendering', ''),
+        style_dna.get('color_palette', ''),
     ]
+    prompt_parts.append(", ".join(filter(None, style_components)))
 
-    if hex_palette:
-        hex_str = '", "'.join(hex_palette)
-        components.append(f'Color grading: ["{hex_str}"]')
+    # 5. PANEL BY PANEL LAYOUT
+    layout = """Clean layout with multiple views on neutral warm beige background (#d4c4b0). Grid format showing:
 
-    return ". ".join(filter(None, components))
+TOP ROW: Extreme close-up of eyes showing iris detail and expression | Close-up of natural expression showing mouth and facial structure
+
+LEFT SIDE: Large hero portrait shot, head and shoulders, straight-on angle, natural lighting, eyes looking directly at camera
+
+MIDDLE ROW: Detailed hand reference showing natural hand gesture with character-specific details
+
+BOTTOM ROW: Three portrait headshots showing range of expression - intense/serious, slight smile, neutral/watchful - showing personality through subtle facial variations
+
+RIGHT SIDE: Full body turnaround - front view and back view showing complete outfit, standing naturally, clean lighting"""
+    prompt_parts.append(layout)
+
+    # 6. TECHNICAL SPECS
+    tech_specs = "Technical specs: High resolution, consistent lighting across all panels, clean composite layout with thin black dividing lines between panels, single character only, maintain exact likeness throughout"
+    prompt_parts.append(tech_specs)
+
+    # 7. STYLE REFERENCE
+    prompt_parts.append("Style reference: Match character likeness and style from provided reference images")
+
+    return ". ".join(filter(None, prompt_parts))
 
 
 # ============================================================================
 # IMAGE GENERATION
 # ============================================================================
 
-def generate_image(prompt, model_id, settings, output_path, negative_prompt=None, seed=None):
-    """Generate an image using FAL.ai"""
+def generate_image(prompt, model_id, settings, output_path, negative_prompt=None, seed=None, image_urls=None):
+    """Generate an image using FAL.ai, optionally with reference images"""
     model = MODELS[model_id]
 
     print(f"\n{'='*70}")
@@ -310,25 +282,36 @@ def generate_image(prompt, model_id, settings, output_path, negative_prompt=None
 
     os.environ["FAL_KEY"] = fal_key
 
-    # Convert image_size dict to standard literal if possible
-    image_size = settings.get('image_size', {"width": 1024, "height": 1024})
-    if isinstance(image_size, dict):
-        w, h = image_size.get("width", 1024), image_size.get("height", 1024)
-        # Map common sizes to fal literals
-        size_map = {
-            (1024, 1024): "square_hd",
-            (1536, 864): "landscape_16_9",
-            (864, 1536): "portrait_16_9",
-            (1024, 1536): "portrait_4_3",
-            (1536, 1024): "landscape_4_3",
-        }
-        image_size = size_map.get((w, h), image_size)  # Use literal or keep dict
-
     # Prepare arguments
     arguments = {
         "prompt": prompt,
-        "image_size": image_size,
     }
+
+    # Handle image sizing - nano_banana uses aspect_ratio + resolution
+    if model_id == "nano_banana":
+        if "aspect_ratio" in settings:
+            arguments["aspect_ratio"] = settings["aspect_ratio"]
+        if "resolution" in settings:
+            arguments["resolution"] = settings["resolution"]
+    else:
+        # Other models use image_size
+        image_size = settings.get('image_size', {"width": 1024, "height": 1024})
+        if isinstance(image_size, dict):
+            w, h = image_size.get("width", 1024), image_size.get("height", 1024)
+            size_map = {
+                (1024, 1024): "square_hd",
+                (1536, 864): "landscape_16_9",
+                (864, 1536): "portrait_16_9",
+                (1024, 1536): "portrait_4_3",
+                (1536, 1024): "landscape_4_3",
+            }
+            image_size = size_map.get((w, h), image_size)
+        arguments["image_size"] = image_size
+
+    # Add reference images if provided
+    if image_urls:
+        arguments["image_urls"] = image_urls
+        print(f"Reference images: {len(image_urls)}")
 
     # Add seed for reproducibility
     if seed is not None:
@@ -343,7 +326,7 @@ def generate_image(prompt, model_id, settings, output_path, negative_prompt=None
     if "guidance_scale" in settings:
         arguments["guidance_scale"] = settings["guidance_scale"]
 
-    print(f"Settings: {json.dumps({k: v for k, v in arguments.items() if k != 'prompt'}, indent=2)}")
+    print(f"Settings: {json.dumps({k: v for k, v in arguments.items() if k not in ['prompt', 'image_urls']}, indent=2)}")
     print("\nGenerating...")
 
     try:
@@ -491,8 +474,8 @@ def run_hero_shots(project_path, config, character_slug, model_id=None, seed=Non
     if model_id is None:
         model_id = config['visual'].get('primary_model', 'seedream')
 
-    # Load character data
-    char_data = load_character_sheet(project_path, character_slug)
+    # Load character data from config (not markdown parsing)
+    char_data = load_character_from_config(config, character_slug)
     if not char_data:
         return
 
@@ -538,11 +521,20 @@ def run_hero_shots(project_path, config, character_slug, model_id=None, seed=Non
     negative_prompt = ", ".join(config.get('negative_prompts', []))
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
-    settings = {
-        "image_size": config['visual']['defaults'].get('hero_shot_size', {"width": 1024, "height": 1536}),
-        "num_inference_steps": config['visual']['defaults'].get('num_inference_steps', 35),
-        "guidance_scale": config['visual']['defaults'].get('guidance_scale', 4.0),
-    }
+    # Nano Banana Pro uses aspect_ratio + resolution
+    if model_id == "nano_banana":
+        settings = {
+            "aspect_ratio": "4:3",  # Portrait orientation for hero shots
+            "resolution": "2K",
+            "num_inference_steps": config['visual']['defaults'].get('num_inference_steps', 40),
+            "guidance_scale": config['visual']['defaults'].get('guidance_scale', 4.5),
+        }
+    else:
+        settings = {
+            "image_size": config['visual']['defaults'].get('hero_shot_size', {"width": 1024, "height": 1536}),
+            "num_inference_steps": config['visual']['defaults'].get('num_inference_steps', 35),
+            "guidance_scale": config['visual']['defaults'].get('guidance_scale', 4.0),
+        }
 
     for shot in hero_shots:
         prompt = build_hero_shot_prompt(
@@ -560,12 +552,12 @@ def run_hero_shots(project_path, config, character_slug, model_id=None, seed=Non
 
 
 def run_identity_sheet(project_path, config, character_slug, model_id=None, seed=None):
-    """Generate identity sheet for a character"""
+    """Generate identity sheet for a character using hero shots as reference"""
     if model_id is None:
         model_id = config['visual'].get('technical_model', 'nano_banana')
 
-    # Load character data
-    char_data = load_character_sheet(project_path, character_slug)
+    # Load character data from config (not markdown parsing)
+    char_data = load_character_from_config(config, character_slug)
     if not char_data:
         return
 
@@ -578,23 +570,47 @@ def run_identity_sheet(project_path, config, character_slug, model_id=None, seed
     if char_config.get('palette'):
         hex_palette = char_config['palette']
 
+    # Find and upload hero shots as reference images
+    exports_path = project_path / config['paths'].get('exports', 'EXPORTS')
+    hero_path = exports_path / "hero_shots" / character_slug
+
+    image_urls = []
+    if hero_path.exists():
+        hero_files = sorted(hero_path.glob("*.png"), key=lambda p: p.stat().st_mtime, reverse=True)
+        # Get the 3 most recent hero shots
+        hero_files = hero_files[:3]
+
+        if hero_files:
+            print(f"\nUploading {len(hero_files)} hero shots as reference images...")
+            for hero_file in hero_files:
+                print(f"  Uploading: {hero_file.name}")
+                url = fal_client.upload_file(str(hero_file))
+                image_urls.append(url)
+                print(f"    ✓ {url[:60]}...")
+
+    if not image_urls:
+        print("\nWARNING: No hero shots found. Generate hero shots first for best results.")
+        print(f"  Run: --hero {character_slug}")
+
     print(f"\n{'#'*70}")
     print(f"# IDENTITY SHEET: {char_data['name']}")
     print(f"# Model: {MODELS[model_id]['name']}")
+    print(f"# Reference images: {len(image_urls)}")
     print(f"{'#'*70}")
 
     prompt = build_identity_sheet_prompt(char_data, style_dna, hex_palette)
 
     # Get output directory
-    exports_path = project_path / config['paths'].get('exports', 'EXPORTS')
     identity_path = exports_path / "identity_sheets"
     identity_path.mkdir(parents=True, exist_ok=True)
 
     negative_prompt = ", ".join(config.get('negative_prompts', []))
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
+    # Nano Banana Pro uses resolution + aspect_ratio, not image_size
     settings = {
-        "image_size": config['visual']['defaults'].get('identity_sheet_size', {"width": 1536, "height": 1536}),
+        "aspect_ratio": "5:4",
+        "resolution": "2K",
         "num_inference_steps": 40,
         "guidance_scale": 4.5,
     }
@@ -602,7 +618,7 @@ def run_identity_sheet(project_path, config, character_slug, model_id=None, seed
     filename = f"{character_slug}_identity_{model_id}_{timestamp}.png"
     output_path = identity_path / filename
 
-    generate_image(prompt, model_id, settings, output_path, negative_prompt, seed=seed)
+    generate_image(prompt, model_id, settings, output_path, negative_prompt, seed=seed, image_urls=image_urls)
 
 
 # ============================================================================

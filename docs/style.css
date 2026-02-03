@@ -887,6 +887,132 @@ pre {
 }
 
 /* ============================================
+   GLOSSARY SECTION
+   ============================================ */
+
+.glossary {
+    background: linear-gradient(to bottom, rgba(5, 5, 16, 0.9), rgba(10, 10, 26, 0.85));
+}
+
+.glossary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.glossary-card {
+    background: var(--bg-card);
+    border: var(--pixel-border) var(--text-muted);
+    transition: all 0.3s;
+}
+
+.glossary-card:hover {
+    border-color: var(--accent-gold);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(244, 208, 63, 0.1);
+}
+
+.glossary-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    background: var(--bg-darker);
+    border-bottom: 2px solid var(--text-muted);
+}
+
+.glossary-icon {
+    font-size: 1.5rem;
+    color: var(--accent-gold);
+}
+
+.glossary-header h3 {
+    font-size: 0.875rem;
+    color: var(--accent-gold);
+    margin: 0;
+}
+
+.glossary-content {
+    padding: var(--space-lg);
+}
+
+.glossary-def {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    margin-bottom: var(--space-md);
+    line-height: 1.6;
+}
+
+.glossary-details {
+    background: var(--bg-darker);
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+    border-left: 3px solid var(--accent-blue);
+}
+
+.glossary-details p {
+    margin-bottom: var(--space-xs);
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.glossary-details p:last-child {
+    margin-bottom: 0;
+}
+
+.glossary-details strong {
+    color: var(--accent-blue);
+}
+
+.glossary-details code {
+    font-size: 0.85em;
+    color: var(--accent-blue);
+}
+
+.glossary-example {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 0;
+    padding-top: var(--space-sm);
+    border-top: 1px dashed var(--text-muted);
+}
+
+.glossary-relationship {
+    background: var(--bg-card);
+    border: var(--pixel-border) var(--accent-gold);
+    padding: var(--space-xl);
+}
+
+.glossary-relationship h3 {
+    font-size: 0.875rem;
+    color: var(--accent-gold);
+    margin-bottom: var(--space-lg);
+}
+
+.glossary-relationship .ascii-art {
+    margin-bottom: var(--space-lg);
+    font-size: 0.8rem;
+}
+
+.glossary-relationship p {
+    color: var(--text-secondary);
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .glossary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .glossary-relationship .ascii-art {
+        font-size: 0.65rem;
+        overflow-x: auto;
+    }
+}
+
+/* ============================================
    ROADMAP SECTION
    ============================================ */
 
