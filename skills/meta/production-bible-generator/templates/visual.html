@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual - {{PROJECT_NAME}} Production Bible</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="sidebar-toggle">MENU</button>
+
+    <div class="bible-layout">
+
+        <!-- {{SIDEBAR}} -->
+
+        <main class="bible-main">
+
+            <div class="page-breadcrumb">
+                <a href="index.html">Dashboard</a> / Visual
+            </div>
+
+            <div class="page-header">
+                <h1>Visual Production</h1>
+                <p class="subtitle">Reference library, style guide, and generated assets</p>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-row">
+                <div class="stat-card">
+                    <span class="stat-value">{{STYLE_IMAGES}}</span>
+                    <span class="stat-label">Style Refs</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">{{CHARACTER_IMAGES}}</span>
+                    <span class="stat-label">Character Refs</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">{{LOCATION_IMAGES}}</span>
+                    <span class="stat-label">Location Refs</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">{{TOTAL_IMAGES}}</span>
+                    <span class="stat-label">Total Images</span>
+                </div>
+            </div>
+
+            <!-- ============ STYLE GUIDE ============ -->
+            <div class="bible-section" id="style-guide">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> STYLE GUIDE <span class="bracket">]</span></h2>
+                    <span class="status-badge {{STYLE_STATUS}}">{{STYLE_STATUS}}</span>
+                </div>
+
+                <div class="card">
+                    <h3>Target Aesthetic</h3>
+                    <p style="color: var(--text-secondary);">{{STYLE_DESCRIPTION}}</p>
+
+                    <div style="margin-top: var(--space-lg);">
+                        <h4 style="margin-bottom: var(--space-sm); color: var(--accent-gold);">STYLE KEYWORDS</h4>
+                        <pre><code>{{STYLE_KEYWORDS}}</code></pre>
+                    </div>
+                </div>
+
+                {{#if STYLE_IMAGES_LIST}}
+                <h3 style="margin-top: var(--space-lg); margin-bottom: var(--space-md); color: var(--text-primary);">Style Reference Images</h3>
+                <div class="gallery">
+                    {{#each STYLE_IMAGES_LIST}}
+                    <div class="gallery-item" data-lightbox="style">
+                        <div class="gallery-item-image">
+                            <img src="{{path}}" alt="{{label}}">
+                        </div>
+                        <div class="gallery-item-label">
+                            {{label}}
+                            <span class="version">{{version}}</span>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+                {{else}}
+                <div class="card" style="text-align: center; padding: var(--space-xl);">
+                    <p style="color: var(--text-muted);">No style reference images generated yet.</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">See GENERATION_QUEUE.md &rarr; GEN-001</p>
+                </div>
+                {{/if}}
+            </div>
+
+            <!-- ============ CHARACTER REFERENCES ============ -->
+            <div class="bible-section" id="characters">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> CHARACTER REFERENCES <span class="bracket">]</span></h2>
+                    <span class="status-badge {{CHAR_REFS_STATUS}}">{{CHAR_REFS_STATUS}}</span>
+                </div>
+
+                {{#each CHARACTERS}}
+                <div class="card" id="char-ref-{{id}}">
+                    <h3>{{name}} <span class="tag tag-character">{{role}}</span></h3>
+                    <p class="card-meta">{{visual_summary}}</p>
+
+                    <!-- Turnaround -->
+                    <div style="margin-top: var(--space-lg);">
+                        <h4 style="color: var(--accent-gold); margin-bottom: var(--space-md);">TURNAROUND</h4>
+                        {{#if turnaround_image}}
+                        <div class="gallery">
+                            <div class="gallery-item" data-lightbox="char-{{id}}">
+                                <div class="gallery-item-image" style="aspect-ratio: 16/9;">
+                                    <img src="{{turnaround_image}}" alt="{{name}} turnaround">
+                                </div>
+                                <div class="gallery-item-label">
+                                    Turnaround
+                                    <span class="version">{{turnaround_version}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        {{else}}
+                        <div style="background: var(--bg-darker); border: 2px dashed var(--text-muted); padding: var(--space-lg); text-align: center; color: var(--text-muted);">
+                            TURNAROUND PENDING
+                        </div>
+                        {{/if}}
+                    </div>
+
+                    <!-- Expressions -->
+                    {{#if expression_images}}
+                    <div style="margin-top: var(--space-lg);">
+                        <h4 style="color: var(--accent-gold); margin-bottom: var(--space-md);">EXPRESSIONS</h4>
+                        <div class="gallery">
+                            {{#each expression_images}}
+                            <div class="gallery-item" data-lightbox="char-{{../id}}-expr">
+                                <div class="gallery-item-image" style="aspect-ratio: 1/1;">
+                                    <img src="{{path}}" alt="{{label}}">
+                                </div>
+                                <div class="gallery-item-label">
+                                    {{label}}
+                                    <span class="version">{{version}}</span>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                    {{/if}}
+
+                    <!-- Action Poses -->
+                    {{#if pose_images}}
+                    <div style="margin-top: var(--space-lg);">
+                        <h4 style="color: var(--accent-gold); margin-bottom: var(--space-md);">ACTION POSES</h4>
+                        <div class="gallery">
+                            {{#each pose_images}}
+                            <div class="gallery-item" data-lightbox="char-{{../id}}-pose">
+                                <div class="gallery-item-image">
+                                    <img src="{{path}}" alt="{{label}}">
+                                </div>
+                                <div class="gallery-item-label">
+                                    {{label}}
+                                    <span class="version">{{version}}</span>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                    {{/if}}
+
+                    <!-- Signature Image -->
+                    {{#if signature_image}}
+                    <div style="margin-top: var(--space-lg);">
+                        <h4 style="color: var(--accent-gold); margin-bottom: var(--space-md);">SIGNATURE</h4>
+                        <div class="gallery">
+                            <div class="gallery-item" data-lightbox="char-{{id}}-sig">
+                                <div class="gallery-item-image">
+                                    <img src="{{signature_image}}" alt="{{name}} signature">
+                                </div>
+                                <div class="gallery-item-label">
+                                    {{signature_label}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/if}}
+
+                    <!-- Generation Prompt (collapsible) -->
+                    <div style="margin-top: var(--space-lg);">
+                        <h4 data-collapsible="char-prompt-{{id}}" style="cursor: pointer; color: var(--text-muted);">
+                            <span class="collapse-arrow">[+]</span> GENERATION PROMPTS
+                        </h4>
+                        <div id="char-prompt-{{id}}">
+                            <div style="margin-top: var(--space-md);">
+                                <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: var(--space-sm);">Turnaround prompt:</p>
+                                <pre><code>{{turnaround_prompt}}</code></pre>
+                            </div>
+                            <div style="margin-top: var(--space-md);">
+                                <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: var(--space-sm);">Negative prompt:</p>
+                                <pre><code>{{negative_prompt}}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+            <!-- ============ LOCATION REFERENCES ============ -->
+            <div class="bible-section" id="locations">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> LOCATION REFERENCES <span class="bracket">]</span></h2>
+                    <span class="status-badge {{LOC_REFS_STATUS}}">{{LOC_REFS_STATUS}}</span>
+                </div>
+
+                {{#each LOCATIONS}}
+                <div class="card" id="loc-{{id}}">
+                    <h3>{{name}} <span class="tag tag-location">{{id}}</span></h3>
+                    <div class="card-meta">Used in: {{episodes_scenes}}</div>
+                    <p style="color: var(--text-secondary);">{{description}}</p>
+
+                    {{#if images}}
+                    <div class="gallery" style="margin-top: var(--space-lg);">
+                        {{#each images}}
+                        <div class="gallery-item" data-lightbox="loc-{{../id}}">
+                            <div class="gallery-item-image">
+                                <img src="{{path}}" alt="{{label}}">
+                            </div>
+                            <div class="gallery-item-label">
+                                {{label}}
+                                <span class="version">{{version}}</span>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    {{else}}
+                    <div style="margin-top: var(--space-lg); background: var(--bg-darker); border: 2px dashed var(--text-muted); padding: var(--space-lg); text-align: center; color: var(--text-muted);">
+                        LOCATION REFS PENDING
+                    </div>
+                    {{/if}}
+
+                    <!-- Visual Requirements -->
+                    {{#if visual_requirements}}
+                    <div style="margin-top: var(--space-lg);">
+                        <h4 data-collapsible="loc-req-{{id}}" style="cursor: pointer; color: var(--text-muted);">
+                            <span class="collapse-arrow">[+]</span> VISUAL REQUIREMENTS
+                        </h4>
+                        <div id="loc-req-{{id}}">
+                            <table class="bible-table" style="margin-top: var(--space-md);">
+                                <tr><th>Time of Day</th><td>{{time_of_day}}</td></tr>
+                                <tr><th>Atmosphere</th><td>{{atmosphere}}</td></tr>
+                                <tr><th>Key Features</th><td>{{key_features}}</td></tr>
+                                <tr><th>Corruption</th><td>{{corruption_level}}</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    {{/if}}
+                </div>
+                {{/each}}
+            </div>
+
+            <!-- ============ STORYBOARDS ============ -->
+            {{#if STORYBOARDS}}
+            <div class="bible-section" id="storyboards">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> STORYBOARDS <span class="bracket">]</span></h2>
+                </div>
+
+                <div class="gallery">
+                    {{#each STORYBOARDS}}
+                    <div class="gallery-item" data-lightbox="storyboard">
+                        <div class="gallery-item-image">
+                            <img src="{{path}}" alt="{{label}}">
+                        </div>
+                        <div class="gallery-item-label">
+                            {{label}}
+                            <span class="version">{{version}}</span>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+            {{/if}}
+
+            <!-- ============ ACTION SEQUENCES ============ -->
+            {{#if ACTION_SEQUENCES}}
+            <div class="bible-section" id="action-sequences">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> ACTION SEQUENCES <span class="bracket">]</span></h2>
+                </div>
+
+                <div class="gallery">
+                    {{#each ACTION_SEQUENCES}}
+                    <div class="gallery-item" data-lightbox="action">
+                        <div class="gallery-item-image">
+                            <img src="{{path}}" alt="{{label}}">
+                        </div>
+                        <div class="gallery-item-label">
+                            {{label}}
+                            <span class="version">{{version}}</span>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+            {{/if}}
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

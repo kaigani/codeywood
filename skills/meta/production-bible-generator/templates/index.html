@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{PROJECT_NAME}} - Production Bible</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="sidebar-toggle">MENU</button>
+
+    <div class="bible-layout">
+
+        <!-- ============ SIDEBAR ============ -->
+        <!-- {{SIDEBAR}} -->
+        <nav class="bible-sidebar">
+            <div class="sidebar-header">
+                <h1>PRODUCTION BIBLE</h1>
+                <div class="project-name">{{PROJECT_NAME}}</div>
+                <div class="gen-date">Generated: {{GENERATED_DATE}}</div>
+            </div>
+
+            <div class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title">Overview</div>
+                    <ul>
+                        <li><a href="index.html" class="active"><span class="nav-status complete"></span> Dashboard</a></li>
+                        <li><a href="status.html"><span class="nav-status progress"></span> Production Status</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-section-title">Story</div>
+                    <ul>
+                        <li><a href="story.html"><span class="nav-status {{STORY_STATUS}}"></span> Story Overview</a></li>
+                        <li><a href="story.html#characters"><span class="nav-status {{CHARACTERS_STATUS}}"></span> Characters</a></li>
+                        <li><a href="story.html#episodes"><span class="nav-status {{EPISODES_STATUS}}"></span> Episodes</a></li>
+                        <li><a href="story.html#relationships"><span class="nav-status {{RELATIONSHIPS_STATUS}}"></span> Relationships</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-section-title">Visual</div>
+                    <ul>
+                        <li><a href="visual.html"><span class="nav-status {{VISUAL_STATUS}}"></span> Visual Overview</a></li>
+                        <li><a href="visual.html#style-guide"><span class="nav-status {{STYLE_STATUS}}"></span> Style Guide</a></li>
+                        <li><a href="visual.html#characters"><span class="nav-status {{CHAR_REFS_STATUS}}"></span> Character Refs</a></li>
+                        <li><a href="visual.html#locations"><span class="nav-status {{LOC_REFS_STATUS}}"></span> Location Refs</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                CODEYWOOD
+            </div>
+        </nav>
+        <!-- {{/SIDEBAR}} -->
+
+        <!-- ============ MAIN CONTENT ============ -->
+        <main class="bible-main">
+
+            <div class="page-header">
+                <h1>{{PROJECT_NAME}}</h1>
+                <p class="subtitle">{{LOGLINE}}</p>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-row">
+                <div class="stat-card">
+                    <span class="stat-value">{{CHARACTER_COUNT}}</span>
+                    <span class="stat-label">Characters</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">{{EPISODE_COUNT}}</span>
+                    <span class="stat-label">Episodes</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">{{IMAGE_COUNT}}</span>
+                    <span class="stat-label">Images</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">{{SCENE_COUNT}}</span>
+                    <span class="stat-label">Scenes</span>
+                </div>
+            </div>
+
+            <!-- Progress -->
+            <div class="bible-section">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> PRODUCTION PROGRESS <span class="bracket">]</span></h2>
+                </div>
+
+                <div class="progress-grid">
+                    <div class="progress-card">
+                        <h3>Story Foundation</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: {{PHASE_1_PROGRESS}}%"></div>
+                            </div>
+                            <span class="progress-percent">{{PHASE_1_PROGRESS}}%</span>
+                        </div>
+                        <div class="progress-details">
+                            Creative brief, characters, episodes, screenplay
+                        </div>
+                    </div>
+
+                    <div class="progress-card">
+                        <h3>Visual References</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: {{PHASE_2_PROGRESS}}%"></div>
+                            </div>
+                            <span class="progress-percent">{{PHASE_2_PROGRESS}}%</span>
+                        </div>
+                        <div class="progress-details">
+                            Style guide, character refs, location refs
+                        </div>
+                    </div>
+
+                    <div class="progress-card">
+                        <h3>Shot Production</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: {{PHASE_3_PROGRESS}}%"></div>
+                            </div>
+                            <span class="progress-percent">{{PHASE_3_PROGRESS}}%</span>
+                        </div>
+                        <div class="progress-details">
+                            Storyboards, action sequences, shot images
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="bible-section">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> AT A GLANCE <span class="bracket">]</span></h2>
+                </div>
+
+                <div class="card-grid">
+                    <!-- Characters quick view -->
+                    {{#each CHARACTERS}}
+                    <div class="character-card">
+                        <div class="character-card-image">
+                            {{#if turnaround_image}}
+                            <img src="{{turnaround_image}}" alt="{{name}}">
+                            {{else}}
+                            <div class="placeholder">TURNAROUND<br>PENDING</div>
+                            {{/if}}
+                        </div>
+                        <div class="character-card-body">
+                            <h3>{{name}}</h3>
+                            <div class="character-role">{{role}}</div>
+                            <p class="character-description">{{one_liner}}</p>
+                            <div class="character-card-footer">
+                                <span class="tag tag-character">{{tier}}</span>
+                                {{#if has_refs}}
+                                <span class="tag tag-production">REFS READY</span>
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+            <!-- Recent Activity / What's Next -->
+            <div class="bible-section">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> NEXT STEPS <span class="bracket">]</span></h2>
+                </div>
+
+                <div class="card">
+                    <ul class="checklist">
+                        {{#each NEXT_STEPS}}
+                        <li class="{{status}}">{{description}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

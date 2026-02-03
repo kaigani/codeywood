@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status - {{PROJECT_NAME}} Production Bible</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="sidebar-toggle">MENU</button>
+
+    <div class="bible-layout">
+
+        <!-- {{SIDEBAR}} -->
+
+        <main class="bible-main">
+
+            <div class="page-breadcrumb">
+                <a href="index.html">Dashboard</a> / Production Status
+            </div>
+
+            <div class="page-header">
+                <h1>Production Status</h1>
+                <p class="subtitle">Artifact checklist and generation queue</p>
+            </div>
+
+            <!-- ============ PHASE PROGRESS ============ -->
+            <div class="bible-section">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> PHASE PROGRESS <span class="bracket">]</span></h2>
+                </div>
+
+                <div class="progress-grid">
+                    <div class="progress-card">
+                        <h3>Phase 1: Story Foundation</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: {{PHASE_1_PROGRESS}}%"></div>
+                            </div>
+                            <span class="progress-percent">{{PHASE_1_PROGRESS}}%</span>
+                        </div>
+                        <ul class="checklist" style="margin-top: var(--space-md);">
+                            {{#each PHASE_1_ITEMS}}
+                            <li class="{{status}}">{{label}}</li>
+                            {{/each}}
+                        </ul>
+                    </div>
+
+                    <div class="progress-card">
+                        <h3>Phase 2a: References</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: {{PHASE_2A_PROGRESS}}%"></div>
+                            </div>
+                            <span class="progress-percent">{{PHASE_2A_PROGRESS}}%</span>
+                        </div>
+                        <ul class="checklist" style="margin-top: var(--space-md);">
+                            {{#each PHASE_2A_ITEMS}}
+                            <li class="{{status}}">{{label}}</li>
+                            {{/each}}
+                        </ul>
+                    </div>
+
+                    <div class="progress-card">
+                        <h3>Phase 2b: Shot Production</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: {{PHASE_2B_PROGRESS}}%"></div>
+                            </div>
+                            <span class="progress-percent">{{PHASE_2B_PROGRESS}}%</span>
+                        </div>
+                        <ul class="checklist" style="margin-top: var(--space-md);">
+                            {{#each PHASE_2B_ITEMS}}
+                            <li class="{{status}}">{{label}}</li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============ ARTIFACT INVENTORY ============ -->
+            <div class="bible-section">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> ARTIFACT INVENTORY <span class="bracket">]</span></h2>
+                </div>
+
+                <div class="card">
+                    <table class="bible-table">
+                        <thead>
+                            <tr>
+                                <th>Artifact</th>
+                                <th>Type</th>
+                                <th>File</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each ARTIFACTS}}
+                            <tr>
+                                <td>{{name}}</td>
+                                <td><span class="tag tag-{{type}}">{{type}}</span></td>
+                                <td><code>{{file}}</code></td>
+                                <td><span class="status-badge {{status}}">{{status}}</span></td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ============ IMAGE GENERATION QUEUE ============ -->
+            <div class="bible-section">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> GENERATION QUEUE <span class="bracket">]</span></h2>
+                </div>
+
+                <div class="card">
+                    <table class="bible-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Subject</th>
+                                <th>Type</th>
+                                <th>Priority</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each GENERATION_QUEUE}}
+                            <tr>
+                                <td><code>{{id}}</code></td>
+                                <td>{{subject}}</td>
+                                <td><span class="tag tag-{{type}}">{{type}}</span></td>
+                                <td>{{priority}}</td>
+                                <td><span class="status-badge {{status}}">{{status}}</span></td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ============ LOCKED REFERENCES ============ -->
+            <div class="bible-section">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> LOCKED REFERENCES <span class="bracket">]</span></h2>
+                </div>
+
+                {{#if LOCKED_REFS}}
+                <div class="card-grid">
+                    {{#each LOCKED_REFS}}
+                    <div class="card">
+                        <h3>{{name}}</h3>
+                        <div class="card-meta">Locked: {{lock_date}} &middot; Version: {{version}}</div>
+                        {{#if image}}
+                        <div style="margin-top: var(--space-md);">
+                            <img src="{{image}}" alt="{{name}}" style="border: var(--pixel-border) var(--status-complete);">
+                        </div>
+                        {{/if}}
+                    </div>
+                    {{/each}}
+                </div>
+                {{else}}
+                <div class="card" style="text-align: center; padding: var(--space-xl);">
+                    <p style="color: var(--text-muted);">No references locked yet.</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">
+                        Generate and iterate on references, then lock when satisfied.
+                    </p>
+                </div>
+                {{/if}}
+            </div>
+
+            <!-- ============ QUALITY GATES ============ -->
+            <div class="bible-section">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> QUALITY GATES <span class="bracket">]</span></h2>
+                </div>
+
+                <div class="card">
+                    <table class="bible-table">
+                        <thead>
+                            <tr>
+                                <th>Gate</th>
+                                <th>Requirement</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each QUALITY_GATES}}
+                            <tr>
+                                <td>{{name}}</td>
+                                <td>{{requirement}}</td>
+                                <td><span class="status-badge {{status}}">{{status}}</span></td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ============ GENERATION LOG ============ -->
+            <div class="bible-section">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> GENERATION LOG <span class="bracket">]</span></h2>
+                </div>
+
+                {{#if GENERATION_LOG}}
+                <div class="card">
+                    <table class="bible-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Subject</th>
+                                <th>Version</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each GENERATION_LOG}}
+                            <tr>
+                                <td>{{date}}</td>
+                                <td>{{type}}</td>
+                                <td>{{subject}}</td>
+                                <td>{{version}}</td>
+                                <td>{{notes}}</td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+                {{else}}
+                <div class="card" style="text-align: center; padding: var(--space-xl);">
+                    <p style="color: var(--text-muted);">No generations logged yet.</p>
+                </div>
+                {{/if}}
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

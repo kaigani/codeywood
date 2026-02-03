@@ -1,0 +1,13 @@
+# Codeywood Generation Tools Dependencies
+
+# FAL.ai client
+fal-client>=0.4.0
+
+# HTTP requests for downloading images
+requests>=2.28.0
+
+# Environment variable loading
+python-dotenv>=1.0.0
+
+# YAML configuration parsing
+pyyaml>=6.0

@@ -105,6 +105,11 @@ temp/
 *.temp
 *.bak
 
+# Sandbox experiments (results not version controlled)
+sandbox/**/results/
+sandbox/**/*.png
+sandbox/**/*.jpg
+
 # ========================================
 # LARGE FILES
 # ========================================

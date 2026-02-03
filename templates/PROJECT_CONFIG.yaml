@@ -1,0 +1,88 @@
+# Codeywood Project Configuration Template
+# Copy this to your project folder and customize
+
+project:
+  name: "My Project"
+  slug: "my-project"  # Used for file naming
+  version: "0.1"
+  modality: "animation"  # animation | live-action | hybrid
+
+# Visual Production Settings
+visual:
+  # Primary model for artistic/hero shots
+  primary_model: "seedream"
+  primary_endpoint: "fal-ai/bytedance/seedream/v4.5/text-to-image"
+
+  # Secondary model for technical refs (identity sheets)
+  technical_model: "nano_banana"
+  technical_endpoint: "fal-ai/nano-banana-pro"
+
+  # Default generation settings
+  defaults:
+    num_inference_steps: 35
+    guidance_scale: 4.0
+    hero_shot_size:
+      width: 1024
+      height: 1536
+    identity_sheet_size:
+      width: 1536
+      height: 1536
+    style_test_wide:
+      width: 1536
+      height: 864
+    style_test_square:
+      width: 1024
+      height: 1024
+
+# Locked Style DNA (populated after Phase 1 exploration)
+style_dna:
+  name: ""  # e.g., "Gothic Western"
+  locked: false
+
+  medium_era: ""
+  linework_texture: ""
+  lighting_rendering: ""
+  color_palette: ""
+
+  # Extracted hex palette (8-12 colors)
+  hex_palette: []
+
+# Negative prompts (common across generations)
+negative_prompts:
+  - "multiple characters"
+  - "multiple people"
+  - "crowd"
+  - "duplicate figures"
+  - "photography"
+  - "realistic photo"
+  - "photorealistic"
+  - "blurry"
+  - "low quality"
+  - "deformed"
+  - "extra limbs"
+  - "missing limbs"
+  - "bad anatomy"
+
+# Characters (populated as hero shots complete)
+characters: {}
+  # Example:
+  # nameless:
+  #   name: "Nameless"
+  #   hero_shots_locked: true
+  #   identity_sheet_locked: true
+  #   palette:
+  #     - "#0d0d0d"
+  #     - "#1a1a1a"
+
+# Paths (relative to project root)
+paths:
+  story: "STORY"
+  character_sheets: "STORY/CHARACTER_SHEETS"
+  visual_production: "VISUAL_PRODUCTION"
+  style_guide: "VISUAL_PRODUCTION/STYLE_GUIDE"
+  character_refs: "VISUAL_PRODUCTION/CHARACTER_REFS"
+  location_refs: "VISUAL_PRODUCTION/LOCATION_REFS"
+  exports: "EXPORTS"
+  hero_shots: "EXPORTS/hero_shots"
+  identity_sheets: "EXPORTS/identity_sheets"
+  style_tests: "EXPORTS/style_tests"

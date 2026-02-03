@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story - {{PROJECT_NAME}} Production Bible</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="sidebar-toggle">MENU</button>
+
+    <div class="bible-layout">
+
+        <!-- {{SIDEBAR}} - Same sidebar as index.html, with story links active -->
+
+        <main class="bible-main">
+
+            <div class="page-breadcrumb">
+                <a href="index.html">Dashboard</a> / Story
+            </div>
+
+            <div class="page-header">
+                <h1>Story Overview</h1>
+                <p class="subtitle">{{LOGLINE}}</p>
+            </div>
+
+            <!-- ============ CREATIVE BRIEF ============ -->
+            <div class="bible-section" id="brief">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> CREATIVE BRIEF <span class="bracket">]</span></h2>
+                    <span class="status-badge {{BRIEF_STATUS}}">{{BRIEF_STATUS}}</span>
+                </div>
+
+                <div class="card">
+                    <table class="bible-table">
+                        <tr><th>Genre</th><td>{{GENRE}}</td></tr>
+                        <tr><th>Comparisons</th><td>{{COMPS}}</td></tr>
+                        <tr><th>Anti-Comp</th><td>{{ANTI_COMP}}</td></tr>
+                        <tr><th>Tone</th><td>{{TONE}}</td></tr>
+                        <tr><th>Theme</th><td>{{THEME_QUESTION}}</td></tr>
+                        <tr><th>Setting</th><td>{{SETTING}}</td></tr>
+                        <tr><th>Season Endpoint</th><td>{{SEASON_ENDPOINT}}</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ============ CHARACTERS ============ -->
+            <div class="bible-section" id="characters">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> CHARACTERS <span class="bracket">]</span></h2>
+                    <span class="status-badge {{CHARACTERS_STATUS}}">{{CHARACTERS_STATUS}}</span>
+                </div>
+
+                {{#each CHARACTERS}}
+                <div class="card" id="char-{{id}}">
+                    <h3>{{name}} <span style="color: var(--text-muted); font-size: 0.6rem;">{{role}}</span></h3>
+                    <div class="card-meta">{{archetype}} &middot; {{tier}}</div>
+
+                    <blockquote class="md-content" style="margin-top: var(--space-md);">
+                        {{one_liner}}
+                    </blockquote>
+
+                    <!-- Visual Profile -->
+                    <div style="margin-top: var(--space-lg);">
+                        <h4 data-collapsible="char-visual-{{id}}" class="open" style="cursor: pointer;">
+                            <span class="collapse-arrow">[-]</span> VISUAL PROFILE
+                        </h4>
+                        <div id="char-visual-{{id}}">
+                            <table class="bible-table" style="margin-top: var(--space-md);">
+                                <tr><th>Description</th><td>{{visual_description}}</td></tr>
+                                <tr><th>Outfit</th><td>{{outfit}}</td></tr>
+                                <tr><th>Props</th><td>{{signature_props}}</td></tr>
+                                <tr><th>Color Palette</th><td>{{color_palette}}</td></tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Psychology -->
+                    <div style="margin-top: var(--space-lg);">
+                        <h4 data-collapsible="char-psych-{{id}}" style="cursor: pointer;">
+                            <span class="collapse-arrow">[+]</span> PSYCHOLOGY
+                        </h4>
+                        <div id="char-psych-{{id}}">
+                            <table class="bible-table" style="margin-top: var(--space-md);">
+                                <tr><th>Want</th><td>{{want}}</td></tr>
+                                <tr><th>Need</th><td>{{need}}</td></tr>
+                                <tr><th>Lie</th><td>{{lie}}</td></tr>
+                                <tr><th>Wound</th><td>{{wound}}</td></tr>
+                                <tr><th>Virtue/Cost</th><td>{{virtue_cost}}</td></tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Voice -->
+                    <div style="margin-top: var(--space-lg);">
+                        <h4 data-collapsible="char-voice-{{id}}" style="cursor: pointer;">
+                            <span class="collapse-arrow">[+]</span> VOICE
+                        </h4>
+                        <div id="char-voice-{{id}}">
+                            <table class="bible-table" style="margin-top: var(--space-md);">
+                                <tr><th>Speech Pattern</th><td>{{speech_pattern}}</td></tr>
+                                <tr><th>Metaphor Domain</th><td>{{metaphor_domain}}</td></tr>
+                                <tr><th>Sarcasm</th><td>{{sarcasm_level}}/10</td></tr>
+                                <tr><th>Directness</th><td>{{directness}}/10</td></tr>
+                            </table>
+
+                            {{#if sample_lines}}
+                            <div style="margin-top: var(--space-md);">
+                                {{#each sample_lines}}
+                                <blockquote class="md-content">{{this}}</blockquote>
+                                {{/each}}
+                            </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+            <!-- ============ EPISODES ============ -->
+            <div class="bible-section" id="episodes">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> EPISODES <span class="bracket">]</span></h2>
+                    <span class="status-badge {{EPISODES_STATUS}}">{{EPISODES_STATUS}}</span>
+                </div>
+
+                <!-- Season Grid Summary -->
+                {{#if SEASON_GRID}}
+                <div class="card" style="margin-bottom: var(--space-xl);">
+                    <h3>Season Overview</h3>
+                    <p class="card-meta">{{EPISODE_COUNT}} episodes planned</p>
+                    <table class="bible-table">
+                        <thead>
+                            <tr>
+                                <th>EP</th>
+                                <th>Title</th>
+                                <th>Focus</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each SEASON_GRID}}
+                            <tr>
+                                <td>{{number}}</td>
+                                <td>{{title}}</td>
+                                <td>{{focus}}</td>
+                                <td><span class="status-badge {{status}}">{{status}}</span></td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+                {{/if}}
+
+                <!-- Detailed Episode Breakdowns -->
+                <div class="episode-list">
+                    {{#each EPISODES}}
+                    <div class="episode-item" id="ep-{{number}}">
+                        <div class="episode-number">{{number}}</div>
+                        <div class="episode-info">
+                            <h3>{{title}}</h3>
+                            <p>{{logline}}</p>
+                        </div>
+                        <div class="episode-status">
+                            <span class="status-badge {{status}}">{{status}}</span>
+                        </div>
+                    </div>
+
+                    {{#if has_beats}}
+                    <div class="card" style="margin-left: 60px;">
+                        <h4 data-collapsible="ep-beats-{{number}}" style="cursor: pointer;">
+                            <span class="collapse-arrow">[+]</span> BEAT SHEET
+                        </h4>
+                        <div id="ep-beats-{{number}}">
+                            <table class="bible-table" style="margin-top: var(--space-md);">
+                                <thead>
+                                    <tr><th>Beat</th><th>Act</th><th>Description</th></tr>
+                                </thead>
+                                <tbody>
+                                    {{#each beats}}
+                                    <tr>
+                                        <td>{{id}}</td>
+                                        <td>{{act}}</td>
+                                        <td>{{description}}</td>
+                                    </tr>
+                                    {{/each}}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    {{/if}}
+
+                    {{#if has_scenes}}
+                    <div class="card" style="margin-left: 60px;">
+                        <h4 data-collapsible="ep-scenes-{{number}}" style="cursor: pointer;">
+                            <span class="collapse-arrow">[+]</span> SCENE LIST ({{scene_count}} scenes)
+                        </h4>
+                        <div id="ep-scenes-{{number}}">
+                            <table class="bible-table" style="margin-top: var(--space-md);">
+                                <thead>
+                                    <tr><th>SC</th><th>Location</th><th>Characters</th><th>Goal</th></tr>
+                                </thead>
+                                <tbody>
+                                    {{#each scenes}}
+                                    <tr>
+                                        <td>{{id}}</td>
+                                        <td>{{location}}</td>
+                                        <td>{{characters}}</td>
+                                        <td>{{goal}}</td>
+                                    </tr>
+                                    {{/each}}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+
+            <!-- ============ RELATIONSHIPS ============ -->
+            <div class="bible-section" id="relationships">
+                <div class="section-heading">
+                    <h2><span class="bracket">[</span> RELATIONSHIPS <span class="bracket">]</span></h2>
+                </div>
+
+                <div class="relationship-grid">
+                    {{#each RELATIONSHIPS}}
+                    <div class="relationship-card">
+                        <h4>{{character_a}} &harr; {{character_b}}</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: var(--space-md);">{{type}}</p>
+
+                        {{#each axes}}
+                        <div class="axis-bar">
+                            <span class="axis-label">{{name}}</span>
+                            <div class="axis-track">
+                                <div class="axis-center"></div>
+                                <!-- Value mapped from [-5,+5] to [0%,100%] -->
+                                <div class="axis-value" style="left: 50%; width: {{bar_width}}%; margin-left: {{bar_offset}}%;"></div>
+                            </div>
+                            <span class="axis-num">{{value}}</span>
+                        </div>
+                        {{/each}}
+
+                        {{#if bond_mechanism}}
+                        <p style="margin-top: var(--space-md); color: var(--text-secondary); font-size: 0.9rem;">
+                            <strong style="color: var(--accent-blue);">Bond:</strong> {{bond_mechanism}}
+                        </p>
+                        {{/if}}
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

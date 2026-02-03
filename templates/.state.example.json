@@ -1,0 +1,33 @@
+{
+  "$schema": "../schemas/state.schema.json",
+  "version": "1.0",
+  "project_slug": "my-project",
+  "current_phase": "INITIALIZED",
+  "current_state": "PENDING",
+  "last_updated": null,
+
+  "gates": {
+    "gate_0_intake": { "status": "pending", "passed_at": null, "details": null },
+    "gate_1_logline": { "status": "pending", "passed_at": null, "details": null },
+    "gate_2_characters": { "status": "pending", "passed_at": null, "details": null },
+    "gate_3_story": { "status": "pending", "passed_at": null, "details": null },
+    "gate_4_script": { "status": "pending", "passed_at": null, "details": null },
+    "gate_5_approved": { "status": "pending", "passed_at": null, "details": null },
+    "gate_6_references": { "status": "pending", "passed_at": null, "details": null },
+    "gate_7_shots": { "status": "pending", "passed_at": null, "details": null }
+  },
+
+  "skills_completed": [],
+
+  "generations": {
+    "style_tests": [],
+    "hero_shots": {},
+    "identity_sheets": {},
+    "location_refs": {},
+    "storyboards": {}
+  },
+
+  "executions": [],
+
+  "errors": []
+}

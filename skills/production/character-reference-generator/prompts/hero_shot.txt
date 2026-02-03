@@ -1,0 +1,150 @@
+# CHARACTER HERO SHOT - SIGNATURE MOMENT
+# Use for: Early style validation, establishing character vibe BEFORE identity sheets
+# Model: Nano Banana Pro / recraft-v3
+# Version: 1.0
+
+## DESIGN PHILOSOPHY
+
+Hero shots come BEFORE technical reference sheets. They:
+1. Validate that the style works for this character
+2. Establish the emotional essence of the character
+3. Discover what makes the character visually compelling
+4. Inform the identity sheet approach (what to emphasize)
+
+Generate 3-5 hero shot variations, select the best to guide all subsequent refs.
+
+## BASE PROMPT TEMPLATE
+
+{{CHARACTER_DESCRIPTION}}
+
+{{SIGNATURE_MOMENT_DESCRIPTION}}
+
+{{COMPOSITION_FRAMING}}
+
+{{MOOD_ATMOSPHERE}}
+
+{{STYLE_KEYWORDS}}
+
+Color grading: {{HEX_PALETTE}}
+
+## NEGATIVE PROMPT
+
+multiple characters, reference sheet, turnaround, grid layout, panels, diagram, photography, realistic photo, blurry, low quality, deformed, extra limbs, bad anatomy, {{CHARACTER_NEGATIVE_PROMPTS}}
+
+## RECOMMENDED SETTINGS
+
+- Aspect ratio: 2:3 portrait (1024x1536) for character focus
+- OR Aspect ratio: 16:9 (1536x864) for environmental context
+- Steps: 35 (higher for hero quality)
+- Guidance: 4.0
+- Style reference weight: 0.80-0.85 (allow some interpretation)
+
+## SUBSTITUTION VARIABLES
+
+Core data:
+- {{CHARACTER_DESCRIPTION}}: Full visual description from CANON_DB or character sheet
+- {{CHARACTER_NEGATIVE_PROMPTS}}: From CANON_DB.json → characters.{ID}.visual.negative_prompts
+
+Scene variables (custom per hero shot):
+- {{SIGNATURE_MOMENT_DESCRIPTION}}: A defining moment or pose that captures who this character IS
+- {{COMPOSITION_FRAMING}}: Camera angle, shot type, framing choices
+- {{MOOD_ATMOSPHERE}}: Emotional quality, lighting mood, atmosphere
+
+Style data:
+- {{STYLE_KEYWORDS}}: From locked style reference
+- {{HEX_PALETTE}}: From locked style reference
+
+## HERO SHOT TYPES
+
+### The Entrance
+First impression, character arriving or revealed.
+```
+{{CHARACTER}} steps out of [shadows/dust/doorway], silhouetted against [light source].
+[Shot type], [angle], [framing].
+Sense of arrival, mystery, presence established.
+```
+
+### The Signature Action
+Character doing what they're known for.
+```
+{{CHARACTER}} [signature action] with practiced ease.
+[Dynamic composition] capturing [specific body language].
+[Mood] atmosphere, [lighting description].
+```
+
+### The Quiet Moment
+Character in contemplation, revealing inner life.
+```
+{{CHARACTER}} alone, [reflective action or pose].
+[Intimate framing], [soft lighting or dramatic contrast].
+Vulnerability beneath the surface, glimpse of humanity.
+```
+
+### The Confrontation
+Character facing conflict, showing resolve.
+```
+{{CHARACTER}} facing [threat/challenge/choice], [body language showing resolve].
+[Tension-building composition], [lighting emphasizing drama].
+Moment before action, coiled potential.
+```
+
+## EXAMPLE PROMPTS (Hellmouth Cowboy - Nameless)
+
+### Hero Shot 1: The Entrance
+```
+A cursed gunslinger, appears late 30s, tall and gaunt with predator's build. Weathered leather face, eyes that have seen too much death. Long duster coat nearly black with trail dust, wide-brimmed hat, twin revolvers on worn gun belt.
+
+He emerges from heat-shimmer on a dead horizon, leading his horse by the reins. Black silhouette becoming visible through dust and light.
+
+Wide shot, low angle, figure small against vast corrupted sky but dominating the composition through sheer presence. Empty frontier stretching behind him.
+
+Ominous arrival, biblical plague energy, the violence to come already written in the air.
+
+Dark animated style, Castlevania meets spaghetti western, clean lines with weight variation, cel-shaded with deep shadows.
+
+Color grading: ["#060910","#0b1220","#081f39","#15406a","#174f7c","#337eb2","#4ca9d2","#56b4d9","#b1cad4","#b9bfc8","#742d4b","#fe9f58"]
+```
+
+### Hero Shot 2: The Signature Action
+```
+A cursed gunslinger mid-draw, hands blurred with supernatural speed. Weathered face utterly calm despite the violence happening. Twin revolvers clearing leather, muzzle flash beginning.
+
+Dynamic medium shot, slightly low angle, capturing the economy of lethal motion. Background blurred, all focus on the hands and the dead eyes above them.
+
+Cold efficiency, no anger, no satisfaction. Just the work that never ends.
+
+Dark animated style, Castlevania meets spaghetti western, dramatic shadows, motion lines suggesting speed.
+
+Color grading: ["#060910","#0b1220","#081f39","#15406a","#174f7c","#337eb2","#4ca9d2","#56b4d9","#b1cad4","#b9bfc8","#742d4b","#fe9f58"]
+```
+
+### Hero Shot 3: The Quiet Moment
+```
+A cursed gunslinger sits alone at a cold campfire, hat off, staring into embers. Gray hair longer than expected, face exposed without the shadow of the brim. Looks older. Tired beyond measure.
+
+Close medium shot, firelight from below casting upward shadows. Space around him empty, isolating.
+
+The weight of a century of killing visible in the slump of his shoulders. This is who he is when no one is dying.
+
+Dark animated style, Castlevania meets spaghetti western, intimate, vulnerable, deep shadows.
+
+Color grading: ["#060910","#0b1220","#081f39","#15406a","#174f7c","#337eb2","#4ca9d2","#56b4d9","#b1cad4","#b9bfc8","#742d4b","#fe9f58"]
+```
+
+## SELECTION CRITERIA
+
+When choosing the winning hero shot to guide identity sheets:
+- [ ] Does this capture who the character IS, not just what they look like?
+- [ ] Would this work as a poster/key art?
+- [ ] Does the style work for this character specifically?
+- [ ] Are there details here that should be emphasized in the identity sheet?
+- [ ] Does this make you want to know more about this character?
+
+## WORKFLOW INTEGRATION
+
+1. Generate 3-5 hero shot variations
+2. Select the best (or composite elements from multiple)
+3. Extract color palette from winning shot (refine hex codes)
+4. Note which details/angles work best
+5. Use winning hero shot as character reference (0.85-0.90 weight) for identity sheet
+6. Identity sheet panels should echo the established look

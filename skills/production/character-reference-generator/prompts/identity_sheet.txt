@@ -1,0 +1,120 @@
+# CHARACTER IDENTITY SHEET - COMPOSITE LAYOUT
+# Use for: Primary character reference after hero shot approval
+# Model: Nano Banana Pro / recraft-v3
+# Version: 2.0
+# Replaces: turnaround.txt (v1.0)
+
+## DESIGN PHILOSOPHY
+
+This template uses specific panel descriptions rather than abstract "turnaround" concepts.
+AI generators respond better to concrete layout instructions than generic reference sheet terms.
+
+## BASE PROMPT TEMPLATE
+
+{{CHARACTER_DESCRIPTION}}
+
+Clean layout with multiple views on neutral beige/gray background. Grid format showing:
+
+TOP ROW: Extreme close-up of eyes showing {{EYE_DETAILS}} | Close-up of {{MOUTH_EXPRESSION}} showing teeth and mouth shape
+
+LEFT SIDE: Large hero portrait shot, head and shoulders, straight-on angle, {{NEUTRAL_EXPRESSION}}, natural lighting, eyes looking directly at camera
+
+MIDDLE ROW: Detailed hand reference showing {{HAND_DESCRIPTION}}
+
+BOTTOM ROW: Three portrait headshots - {{EXPRESSION_1}}, {{EXPRESSION_2}}, {{EXPRESSION_3}} - showing subtle facial variations and personality
+
+RIGHT SIDE: Full body turnaround - front view and back view showing {{OUTFIT_DESCRIPTION}}, standing naturally with arms at sides, clean studio lighting
+
+Technical specs: High resolution, consistent lighting across all panels, clean composite layout with thin black dividing lines between panels
+
+{{STYLE_KEYWORDS}}
+
+Color grading: {{HEX_PALETTE}}
+
+## NEGATIVE PROMPT
+
+multiple characters, multiple people, crowd, duplicate figures, photography, realistic photo, blurry, low quality, deformed, extra limbs, missing limbs, bad anatomy, extra fingers, missing fingers, fused fingers, long neck, distorted face, {{CHARACTER_NEGATIVE_PROMPTS}}
+
+## RECOMMENDED SETTINGS
+
+- Aspect ratio: 3:2 landscape (1536x1024)
+- Steps: 28
+- Guidance: 3.5
+- Style reference weight: 0.85 (if using locked style ref)
+- Character reference weight: 0.90 (if iterating on existing ref)
+
+## SUBSTITUTION VARIABLES
+
+Core data (from CANON_DB.json → characters.{ID}):
+- {{CHARACTER_DESCRIPTION}}: visual.description
+- {{OUTFIT_DESCRIPTION}}: visual.signature_outfit
+- {{CHARACTER_NEGATIVE_PROMPTS}}: visual.negative_prompts
+
+Expression variables:
+- {{EYE_DETAILS}}: "iris detail and eye shape" OR specific notes like "amber-flecked hazel iris"
+- {{MOUTH_EXPRESSION}}: "natural closed-lip expression" OR "slight knowing smirk"
+- {{NEUTRAL_EXPRESSION}}: "neutral expression" OR character-appropriate default
+- {{EXPRESSION_1}}: First expression (e.g., "angry expression")
+- {{EXPRESSION_2}}: Second expression (e.g., "slight smile")
+- {{EXPRESSION_3}}: Third expression (e.g., "weary/tired look")
+- {{HAND_DESCRIPTION}}: "natural hand gesture with fingers relaxed" OR character-specific
+
+Style data (from project style refs):
+- {{STYLE_KEYWORDS}}: From STYLEGUIDE_VISUAL.md → global aesthetic keywords
+- {{HEX_PALETTE}}: Extracted from locked style reference (8-12 hex codes)
+
+## EXAMPLE PROMPT (Hellmouth Cowboy - Nameless)
+
+A cursed gunslinger, appears late 30s but actually 140+ years old, tall and gaunt with the build of a predator conserving energy. Weathered leather face stretched over sharp bones, eyes that have seen too much death to be surprised by anything. Long duster coat nearly black with trail dust, wide-brimmed hat pulled low, gun belt worn smooth from decades of use.
+
+Clean layout with multiple views on neutral beige/gray background. Grid format showing:
+
+TOP ROW: Extreme close-up of eyes showing pale gray iris, haunted depth, crow's feet from squinting | Close-up of thin-lipped neutral expression showing weathered lips and jaw stubble
+
+LEFT SIDE: Large hero portrait shot, head and shoulders, straight-on angle, emotionless thousand-yard stare, natural lighting, eyes looking directly at camera
+
+MIDDLE ROW: Detailed hand reference showing scarred gunfighter's hand, fingers relaxed but ready, callused knuckles
+
+BOTTOM ROW: Three portrait headshots - cold anger expression, grim resignation, distant listening (hearing voices) - showing subtle facial variations and personality
+
+RIGHT SIDE: Full body turnaround - front view and back view showing long duster coat, gun belt with twin revolvers, dusty boots, standing naturally with arms at sides, clean studio lighting
+
+Technical specs: High resolution, consistent lighting across all panels, clean composite layout with thin black dividing lines between panels
+
+Dark animated style, Castlevania meets spaghetti western, clean lines with weight variation, cel-shaded with deep shadows, atmospheric and grim.
+
+Color grading: ["#060910","#0b1220","#081f39","#15406a","#174f7c","#337eb2","#4ca9d2","#56b4d9","#b1cad4","#b9bfc8","#742d4b","#fe9f58"]
+
+## QUALITY CHECKLIST
+
+After generation, verify:
+- [ ] All specified panels present and readable
+- [ ] Eye close-up shows clear iris detail
+- [ ] Hero portrait is prominently placed
+- [ ] Expression variations are distinct but consistent
+- [ ] Hand reference shows correct finger count and natural position
+- [ ] Full body shows complete outfit, both front and back
+- [ ] Proportions consistent across all panels
+- [ ] Grid layout is clean with visible dividers
+- [ ] Color palette matches provided hex codes
+- [ ] Style matches locked style reference
+
+## IF GENERATION FAILS
+
+Common issues and fixes:
+- **Panels merging**: Add "clearly separated panels with black dividing lines"
+- **Missing panels**: Simplify to fewer panels, generate additional sheets separately
+- **Hand issues**: Use higher guidance (4.0) and add "anatomically correct hands"
+- **Inconsistent face**: Increase style/character reference weight
+- **Wrong colors**: Verify hex palette is formatted correctly with brackets and quotes
+- **Style drift**: Increase style reference weight to 0.90
+
+## COMPARISON: OLD vs NEW APPROACH
+
+OLD (v1.0 turnaround.txt):
+"character design reference sheet, turnaround view showing front, side, back"
+→ Inconsistent results, model interprets "turnaround" differently each time
+
+NEW (v2.0 identity_sheet.txt):
+Explicit panel-by-panel description of exact layout
+→ Consistent, predictable results with all reference elements needed

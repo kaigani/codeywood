@@ -1,0 +1,143 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Codeywood Project State",
+  "description": "Machine-managed state for tracking project progress through the pipeline",
+  "type": "object",
+  "required": ["version", "project_slug", "current_phase", "gates"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "State schema version"
+    },
+    "project_slug": {
+      "type": "string",
+      "description": "Project identifier matching PROJECT_CONFIG.yaml"
+    },
+    "current_phase": {
+      "type": "string",
+      "enum": [
+        "INITIALIZED",
+        "STORY_INTAKE",
+        "STORY_DEVELOPMENT",
+        "STORY_REVIEW",
+        "REFERENCE_GENERATION",
+        "SHOT_PRODUCTION",
+        "SHOT_VALIDATION",
+        "EPISODE_COMPLETE"
+      ]
+    },
+    "current_state": {
+      "type": "string",
+      "enum": ["PENDING", "IN_PROGRESS", "BLOCKED", "COMPLETE"]
+    },
+    "last_updated": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "gates": {
+      "type": "object",
+      "properties": {
+        "gate_0_intake": { "$ref": "#/definitions/gate" },
+        "gate_1_logline": { "$ref": "#/definitions/gate" },
+        "gate_2_characters": { "$ref": "#/definitions/gate" },
+        "gate_3_story": { "$ref": "#/definitions/gate" },
+        "gate_4_script": { "$ref": "#/definitions/gate" },
+        "gate_5_approved": { "$ref": "#/definitions/gate" },
+        "gate_6_references": { "$ref": "#/definitions/gate" },
+        "gate_7_shots": { "$ref": "#/definitions/gate" }
+      }
+    },
+    "skills_completed": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "skill": { "type": "string" },
+          "completed_at": { "type": "string", "format": "date-time" },
+          "outputs": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "generations": {
+      "type": "object",
+      "description": "Tracks generated assets with their execution IDs",
+      "properties": {
+        "style_tests": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/generation_record" }
+        },
+        "hero_shots": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/generation_record" }
+          }
+        },
+        "identity_sheets": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/definitions/generation_record" }
+        },
+        "location_refs": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/generation_record" }
+          }
+        },
+        "storyboards": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/definitions/generation_record" }
+        }
+      }
+    },
+    "executions": {
+      "type": "array",
+      "description": "Log of n8n workflow executions",
+      "items": {
+        "type": "object",
+        "properties": {
+          "workflow": { "type": "string" },
+          "execution_id": { "type": "string" },
+          "started_at": { "type": "string", "format": "date-time" },
+          "completed_at": { "type": ["string", "null"], "format": "date-time" },
+          "status": { "type": "string", "enum": ["running", "success", "error"] },
+          "payload": { "type": "object" },
+          "result": { "type": ["object", "null"] }
+        }
+      }
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "timestamp": { "type": "string", "format": "date-time" },
+          "phase": { "type": "string" },
+          "skill": { "type": "string" },
+          "message": { "type": "string" },
+          "resolved": { "type": "boolean" }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "gate": {
+      "type": "object",
+      "properties": {
+        "status": { "type": "string", "enum": ["pending", "passed", "failed"] },
+        "passed_at": { "type": ["string", "null"], "format": "date-time" },
+        "details": { "type": ["string", "null"] }
+      }
+    },
+    "generation_record": {
+      "type": "object",
+      "properties": {
+        "path": { "type": "string" },
+        "execution_id": { "type": "string" },
+        "model": { "type": "string" },
+        "generated_at": { "type": "string", "format": "date-time" },
+        "locked": { "type": "boolean" }
+      }
+    }
+  }
+}
