@@ -27,6 +27,7 @@ Usage:
 import os
 import sys
 import json
+import re
 import argparse
 from datetime import datetime
 from pathlib import Path
@@ -167,6 +168,68 @@ DEFAULT_STYLE_DNA_TEMPLATES = {
         "color_palette": "Limited palette of desaturated earth tones with blood-red accents",
     },
 }
+
+
+# ============================================================================
+# PROMPT ENGINEERING UTILITIES
+# ============================================================================
+
+# Photorealistic mode - words to avoid (trigger concept art / illustration look)
+VIBE_WORDS_TO_AVOID = [
+    "ethereal", "magical", "mystical", "supernatural", "impossible",
+    "otherworldly", "dreamlike", "fantastical", "enchanted", "stunning",
+    "breathtaking", "amazing", "incredible", "concept art", "illustration",
+    "digital painting", "render", "fantasy glow", "YA fantasy",
+]
+
+# Photorealistic mode - technical replacements
+CAMERA_SPECS = [
+    "24mm anamorphic lens",
+    "shot on ARRI Alexa",
+    "Kodak Vision3 500T color science",
+    "f/2.8 shallow depth of field",
+    "practical set construction",
+]
+
+# Negative prompts by mode
+NEGATIVE_PROMPTS = {
+    "photorealistic": [
+        "digital painting", "illustration", "concept art", "anime style", "cartoon",
+        "stylized", "CGI render", "video game", "oversaturated", "HDR", "neon colors",
+        "fantasy glow", "magical effects", "lens flare abuse", "floating elements",
+        "deformed anatomy", "extra limbs", "bad proportions", "blurry", "low quality",
+        "matte painting", "painted look", "brush strokes visible"
+    ],
+    "reference_sheet": [
+        "desaturated", "gritty", "grimdark", "realistic gore", "sexualized",
+        "Halloween costume aesthetic", "campy", "muddy colors", "floating heads",
+        "bland lighting", "generic fantasy", "anime style", "cartoon style",
+        "multiple people", "crowd scene", "deformed", "extra limbs", "bad anatomy"
+    ],
+}
+
+def apply_photorealistic_mode(prompt, include_camera=True):
+    """Transform a prompt to photorealistic mode by:
+    1. Stripping vibe words that trigger concept art look
+    2. Adding camera/lens technical specifications
+    3. Adding practical set construction phrase
+    """
+    # Strip vibe words (case insensitive)
+    cleaned = prompt
+    for word in VIBE_WORDS_TO_AVOID:
+        cleaned = re.sub(rf'\b{re.escape(word)}\b', '', cleaned, flags=re.IGNORECASE)
+
+    # Clean up double spaces and trailing commas
+    cleaned = re.sub(r'\s+', ' ', cleaned)
+    cleaned = re.sub(r',\s*,', ',', cleaned)
+    cleaned = re.sub(r',\s*\.', '.', cleaned)
+
+    # Add camera specs if requested
+    if include_camera:
+        camera_line = ". ".join(CAMERA_SPECS[:3])  # Use first 3 specs
+        cleaned = f"{cleaned.rstrip('.')}. {camera_line}."
+
+    return cleaned.strip()
 
 
 # ============================================================================
@@ -743,57 +806,129 @@ BOTTOM RIGHT: Dusk atmosphere detail, corrupted crimson sky, volumetric dust, bl
 }
 
 
-def run_location_ref(project_path, config, location_slug, model_id=None, seed=None):
-    """Generate 2x2 location reference grid"""
+def build_location_prompt(loc_config, style_dna, hex_palette, mode="photorealistic"):
+    """Build a well-structured location reference prompt using prompt-engineer skill techniques.
+
+    Modes:
+    - photorealistic: Production stills look (default) - cinematographer's lookbook
+    - concept: Concept art style - allows painterly/ethereal language
+
+    Photorealistic mode uses:
+    - Camera/lens specifications
+    - Film stock references
+    - Material physics over vibe words
+    - "Practical set construction" power phrase
+    """
+    name = loc_config.get('name', 'Unknown Location')
+    visual_keywords = loc_config.get('visual_keywords', '')
+    palette = loc_config.get('palette', hex_palette[:6])
+
+    # Format hex palette for prompt
+    palette_str = ', '.join(palette) if palette else ', '.join(hex_palette[:6])
+
+    if mode == "photorealistic":
+        # PHOTOREALISTIC MODE: Frame as cinematographer's lookbook / location scout gallery
+        # Uses technical camera language, material physics, practical set construction
+
+        prompt = f"""Location scout reference gallery for a period film production. Setting: {name}.
+
+Physical Description: {visual_keywords}
+
+The Grid Layout (Neutral #2d2d2d background, thin dividers):
+
+Top Left (Wide Establishing): Golden hour exterior, 24mm anamorphic lens, f/4 deep focus. Atmospheric perspective showing full environment scale. Shot on ARRI Alexa, Kodak Vision3 500T.
+
+Top Right (Interior/Detail): Key architectural feature, practical light sources visible in frame. Hard shadows from directional light, dust particles catching light beams. 35mm spherical lens, f/2.8.
+
+Bottom Left (Texture Close-up): Macro detail of material surfaces - weathered wood grain, oxidized metal, damp stone, condensation, salt deposits. Tangible material physics, environmental storytelling through wear patterns.
+
+Bottom Right (Alt Lighting): Same location under different lighting - moonlight through windows, oil lantern practicals, firelight. Shows how the space transforms. Natural color temperature shifts.
+
+Technical: Period-accurate 1720s Caribbean colonial architecture. Practical set construction, location scout photograph. High production value, 8k resolution.
+
+Color Palette: [{palette_str}]"""
+
+    else:
+        # CONCEPT MODE: Allows painterly/ethereal language for early development
+        prompt = f"""Cinematic concept art location reference for a YA historical fantasy film. Setting: {name}.
+
+Visual Narrative: {visual_keywords}
+
+The Grid Layout (Neutral #2d2d2d background, thin black dividers):
+
+Top Left (Wide): Establishing shot at golden hour. Atmospheric perspective, soaring scale.
+Top Right (Medium): Interior or key architectural detail. Dramatic light beams cutting through atmosphere.
+Bottom Left (Close-up): Macro detail of textures - weathered surfaces, environmental storytelling.
+Bottom Right (Alt Angle): Alternative lighting condition - moonlight, or supernatural coloring.
+
+Style: Cinematic concept art, high detail, painterly finish.
+
+Color Palette: [{palette_str}]"""
+
+    return prompt
+
+
+def run_location_ref(project_path, config, location_slug, model_id=None, seed=None, mode="photorealistic"):
+    """Generate 2x2 location reference grid in 16:9 aspect ratio.
+
+    Modes:
+    - photorealistic: Cinematographer's lookbook style (default)
+    - concept: Painterly concept art style
+    """
     if model_id is None:
         model_id = config['visual'].get('primary_model', 'seedream')
 
-    if location_slug not in LOCATIONS:
+    # Check config locations first, fall back to hardcoded LOCATIONS
+    config_locations = config.get('locations', {})
+    if location_slug in config_locations:
+        loc_config = config_locations[location_slug]
+    elif location_slug in LOCATIONS:
+        # Convert old format to new format
+        old_loc = LOCATIONS[location_slug]
+        loc_config = {
+            'name': old_loc.get('name', location_slug),
+            'visual_keywords': old_loc.get('description', ''),
+            'episode': 'N/A',
+        }
+    else:
+        available = list(config_locations.keys()) + list(LOCATIONS.keys())
         print(f"ERROR: Unknown location '{location_slug}'")
-        print(f"Available: {', '.join(LOCATIONS.keys())}")
+        print(f"Available: {', '.join(available)}")
         return
-
-    loc = LOCATIONS[location_slug]
 
     # Get style DNA from config
     style_dna = config.get('style_dna', DEFAULT_STYLE_DNA_TEMPLATES['gothic_western'])
     hex_palette = style_dna.get('hex_palette', [])
 
     print(f"\n{'#'*70}")
-    print(f"# LOCATION: {loc['name']}")
-    print(f"# Time: {loc['time']}")
+    print(f"# LOCATION: {loc_config.get('name', location_slug)}")
+    print(f"# Episode: {loc_config.get('episode', 'N/A')}")
     print(f"# Model: {MODELS[model_id]['name']}")
     print(f"{'#'*70}")
 
-    # Build prompt
-    components = [
-        loc['description'],
-        loc['grid'],
-        style_dna['medium_era'],
-        style_dna['linework_texture'],
-        style_dna['lighting_rendering'],
-        style_dna['color_palette'],
-        "Technical: Thin black dividing lines between panels. Consistent lighting approach across views. Each panel shows different angle/detail of same location.",
-    ]
-
-    if hex_palette:
-        hex_str = '", "'.join(hex_palette)
-        components.append(f'Color grading: ["{hex_str}"]')
-
-    prompt = ". ".join(filter(None, components))
+    # Build well-structured prompt using specified mode
+    prompt = build_location_prompt(loc_config, style_dna, hex_palette, mode=mode)
 
     # Get output directory
     exports_path = project_path / config['paths'].get('exports', 'EXPORTS')
     location_path = exports_path / "location_refs"
     location_path.mkdir(parents=True, exist_ok=True)
 
-    negative_prompt = ", ".join(config.get('negative_prompts', []))
+    # Use mode-appropriate negative prompt
+    base_negative = config.get('negative_prompts', [])
+    if mode == "photorealistic":
+        mode_negative = NEGATIVE_PROMPTS.get('photorealistic', [])
+    else:
+        mode_negative = []  # Concept mode uses base negative only
+    negative_prompt = ", ".join(base_negative + mode_negative)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
+    # Use 16:9 aspect ratio for cinematic location refs
     settings = {
-        "image_size": {"width": 1536, "height": 1536},
-        "num_inference_steps": config['visual']['defaults'].get('num_inference_steps', 35),
-        "guidance_scale": config['visual']['defaults'].get('guidance_scale', 4.0),
+        "aspect_ratio": "16:9",
+        "resolution": "2K",
+        "num_inference_steps": config['visual']['defaults'].get('num_inference_steps', 40),
+        "guidance_scale": config['visual']['defaults'].get('guidance_scale', 4.5),
     }
 
     filename = f"{location_slug}_ref_{model_id}_{timestamp}.png"
@@ -1001,6 +1136,8 @@ Examples:
     parser.add_argument("--all-storyboards", action="store_true", help="Generate all storyboard scenes")
     parser.add_argument("--model", choices=list(MODELS.keys()), help="Model to use")
     parser.add_argument("--seed", type=int, help="Random seed for reproducibility")
+    parser.add_argument("--mode", choices=["photorealistic", "concept"], default="photorealistic",
+                        help="Prompt mode: photorealistic (production stills) or concept (painterly art)")
     parser.add_argument("--list-models", action="store_true", help="List available models")
 
     args = parser.parse_args()
@@ -1042,16 +1179,19 @@ Examples:
 
     elif args.all_locations:
         print(f"\n{'='*70}")
-        print(f"GENERATING ALL LOCATION REFERENCES")
+        print(f"GENERATING ALL LOCATION REFERENCES (mode: {args.mode})")
         print(f"{'='*70}\n")
-        for location_slug in LOCATIONS.keys():
-            run_location_ref(project_path, config, location_slug, args.model, seed=args.seed)
+        # Use config locations if available, otherwise fall back to hardcoded
+        config_locations = config.get('locations', {})
+        location_slugs = list(config_locations.keys()) if config_locations else list(LOCATIONS.keys())
+        for location_slug in location_slugs:
+            run_location_ref(project_path, config, location_slug, args.model, seed=args.seed, mode=args.mode)
         print(f"\n{'='*70}")
         print(f"ALL LOCATIONS COMPLETE")
         print(f"{'='*70}")
 
     elif args.location:
-        run_location_ref(project_path, config, args.location, args.model, seed=args.seed)
+        run_location_ref(project_path, config, args.location, args.model, seed=args.seed, mode=args.mode)
 
     elif args.all_storyboards:
         print(f"\n{'='*70}")

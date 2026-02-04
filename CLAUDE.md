@@ -26,8 +26,14 @@ python3 scripts/generate/fal_generate.py --hero CHARACTER --model nano_banana
 # Generate identity sheet
 python3 scripts/generate/fal_generate.py --identity CHARACTER
 
-# Generate location reference grid
+# Generate location reference grid (photorealistic by default)
 python3 scripts/generate/fal_generate.py --location LOCATION
+
+# Generate location with concept art mode (for early development)
+python3 scripts/generate/fal_generate.py --location LOCATION --mode concept
+
+# Generate all locations
+python3 scripts/generate/fal_generate.py --all-locations
 
 # Generate storyboard
 python3 scripts/generate/fal_generate.py --storyboard SCENE
@@ -160,6 +166,27 @@ Production passes through 8 sequential gates:
 5. **Phase 4**: Storyboards (3x2 shot grids)
 6. **Phase 5+**: Production shots
 
+## Prompt Engineering (Production vs Concept)
+
+The system supports two prompt modes via the prompt-engineer skill:
+
+### Photorealistic Mode (Default)
+For production stills that look like frames from an actual film. Uses:
+- **Camera/Lens specs**: "24mm anamorphic lens, f/2.8"
+- **Film stock refs**: "shot on ARRI Alexa, Kodak Vision3 500T"
+- **Material physics**: "oxidized iron, damp limestone, condensation"
+- **Power phrase**: "practical set construction"
+
+**Avoid** vibe words: ethereal, magical, mystical, supernatural, concept art, illustration
+
+### Concept Mode
+For early development with painterly/illustrative quality. Allows:
+- Atmospheric adjectives (ethereal, haunting)
+- Style references ("in the style of")
+- Art medium references (digital painting, matte painting)
+
+Use `--mode concept` for development exploration, default `--mode photorealistic` for final production.
+
 ## Composite Layout Prompting
 
 For identity sheets and reference grids, use explicit panel descriptions:
@@ -226,6 +253,7 @@ When using claude-mem, follow the memory isolation rules in the Memory Managemen
 | `references/KNOWLEDGE_BASE.md` | Prompting techniques |
 | `WORKFLOWS/README.md` | Workflow pattern format |
 | `scripts/generate/fal_generate.py` | Main image generation tool |
+| `skills/production/prompt-engineer/SKILL.md` | Prompt engineering techniques |
 
 ## Current Active Project
 
