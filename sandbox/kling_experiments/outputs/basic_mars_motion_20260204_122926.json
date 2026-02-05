@@ -1,0 +1,20 @@
+{
+  "experiment": "basic_mars_motion",
+  "timestamp": "2026-02-04T12:29:26.751690",
+  "request": {
+    "start_image_url": "https://v3b.fal.media/files/b/0a8d2abe/M02dJHLc0Aaa7-MDYVx8W_mars_entrance_nano_banana_20260203_120530.png",
+    "duration": "5",
+    "aspect_ratio": "16:9",
+    "generate_audio": false,
+    "prompt": "Young woman with dark curly hair looks up slowly, her eyes catching the golden light, a subtle knowing smile crosses her face, cinematic slow movement"
+  },
+  "video_url": "https://v3b.fal.media/files/b/0a8d2ad0/m6wMDCtMld4utWg6bdpYq_output.mp4",
+  "result": {
+    "video": {
+      "url": "https://v3b.fal.media/files/b/0a8d2ad0/m6wMDCtMld4utWg6bdpYq_output.mp4",
+      "content_type": "video/mp4",
+      "file_name": "output.mp4",
+      "file_size": 8623460
+    }
+  }
+}

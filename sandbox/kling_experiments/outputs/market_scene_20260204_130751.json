@@ -1,0 +1,27 @@
+{
+  "experiment": "market_scene",
+  "timestamp": "2026-02-04T13:07:51.422696",
+  "request": {
+    "start_image_url": "https://v3b.fal.media/files/b/0a8d2b70/XGdLl1fh1vn2l2b9UZUE8_detail-image.jpg",
+    "multi_prompt": [
+      {
+        "prompt": "Close-up on hands examining strange glowing bottles, curiosity, soft ambient light filtering through market stalls, cinematic shallow depth of field",
+        "duration": "3"
+      },
+      {
+        "prompt": "@Element1 young woman with dark curly hair speaks to an unseen merchant, gesturing at the bottles, her expression shifts from curiosity to suspicion, medium close-up, warm golden market lighting",
+        "duration": "3"
+      },
+      {
+        "prompt": "Wide shot pulling back as @Element1 turns and walks away from the stall into the bustling @Element2 market, atmospheric haze, golden hour light filtering through fabric awnings, cinematic crane movement",
+        "duration": "4"
+      }
+    ],
+    "duration": "10",
+    "aspect_ratio": "16:9",
+    "generate_audio": true,
+    "negative_prompt": "blur, distort, low quality, cartoon, anime, deformed hands"
+  },
+  "elements_count": 2,
+  "video_url": "https://v3b.fal.media/files/b/0a8d2bb6/F9nLee-esxTQKAVMK--eI_output.mp4"
+}

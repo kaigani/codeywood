@@ -1,0 +1,34 @@
+{
+  "experiment": "multi_char_mars_jonah",
+  "timestamp": "2026-02-04T12:40:42.993658",
+  "request": {
+    "start_image_url": "https://v3b.fal.media/files/b/0a8d2af2/tH27J7gmzCnm1DTTdQCl2_whisper_market_ref_nano_banana_20260204_075825.png",
+    "duration": "5",
+    "aspect_ratio": "16:9",
+    "generate_audio": true,
+    "prompt": "@Element1 and @Element2 walk through a mysterious market, exchanging a glance, @Element1 reaches out to touch @Element2's arm, intimate moment, golden hour lighting, cinematic",
+    "elements": [
+      {
+        "frontal_image_url": "https://v3b.fal.media/files/b/0a8d2af1/wwUj5L5z_fd9rKlhZTu6q_mars_entrance_nano_banana_20260203_120530.png",
+        "reference_image_urls": [
+          "https://v3b.fal.media/files/b/0a8d2af1/ewZHZC6DASczrEVzUqTKV_mars_action_nano_banana_20260203_120530.png"
+        ]
+      },
+      {
+        "frontal_image_url": "https://v3b.fal.media/files/b/0a8d2af2/5TtfRaJ9yfUpcVevtP2zI_jonah_entrance_nano_banana_20260203_122140.png",
+        "reference_image_urls": [
+          "https://v3b.fal.media/files/b/0a8d2af2/WFguXMvVBLQViLh6URg-u_jonah_action_nano_banana_20260203_122140.png"
+        ]
+      }
+    ]
+  },
+  "video_url": "https://v3b.fal.media/files/b/0a8d2b14/EvA0gbiwVgy9LIEhCcD_3_output.mp4",
+  "result": {
+    "video": {
+      "url": "https://v3b.fal.media/files/b/0a8d2b14/EvA0gbiwVgy9LIEhCcD_3_output.mp4",
+      "content_type": "video/mp4",
+      "file_name": "output.mp4",
+      "file_size": 12000593
+    }
+  }
+}

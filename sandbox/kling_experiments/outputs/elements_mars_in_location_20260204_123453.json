@@ -1,0 +1,29 @@
+{
+  "experiment": "elements_mars_in_location",
+  "timestamp": "2026-02-04T12:34:53.696565",
+  "request": {
+    "start_image_url": "https://v3b.fal.media/files/b/0a8d2ad1/SgyPhNdDwNcqHTHQoQwZu_holding_cells_ref_nano_banana_20260204_075649.png",
+    "duration": "5",
+    "aspect_ratio": "16:9",
+    "generate_audio": true,
+    "prompt": "@Element1 emerges from shadows into a shaft of golden light, dust particles floating around her, she looks around cautiously, cinematic camera push in",
+    "elements": [
+      {
+        "frontal_image_url": "https://v3b.fal.media/files/b/0a8d2ad0/FTIoTkceykqbpDSsnfPDp_mars_entrance_nano_banana_20260203_120530.png",
+        "reference_image_urls": [
+          "https://v3b.fal.media/files/b/0a8d2ad0/W0EtIJ9BVRR8bBnyKt6ZF_mars_action_nano_banana_20260203_120530.png",
+          "https://v3b.fal.media/files/b/0a8d2ad1/M0VPVyk_L9hhztdStv0ng_mars_quiet_nano_banana_20260203_120530.png"
+        ]
+      }
+    ]
+  },
+  "video_url": "https://v3b.fal.media/files/b/0a8d2af1/zFRWG5BmkU5nQgM1ll0cU_output.mp4",
+  "result": {
+    "video": {
+      "url": "https://v3b.fal.media/files/b/0a8d2af1/zFRWG5BmkU5nQgM1ll0cU_output.mp4",
+      "content_type": "video/mp4",
+      "file_name": "output.mp4",
+      "file_size": 13925753
+    }
+  }
+}
