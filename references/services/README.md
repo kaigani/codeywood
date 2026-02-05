@@ -46,7 +46,8 @@ references/services/
 
 | Service | Spec File | Endpoint | Usage |
 |---------|-----------|----------|-------|
-| **Nano Banana Pro** | `nano-banana-pro/` | `fal-ai/nano-banana-pro` | Final frames with image references |
+| **Nano Banana Pro** | `nano-banana-pro/` | `fal-ai/nano-banana-pro` | Text-to-image generation |
+| **Nano Banana Pro (Edit)** | `nano-banana-pro/` | `fal-ai/nano-banana-pro/edit` | Final frames with image references |
 
 ---
 

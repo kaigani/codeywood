@@ -221,6 +221,94 @@ Before finalizing any prompt:
 
 ---
 
+## STILL IMAGE: Logical Consistency Rules
+
+When crafting prompts for still images, avoid "logical knots" that confuse the model. Each element must work together physically and cinematically.
+
+### Rule 1: Single Time of Day / Lighting State
+
+**Problem**: Asking for a "transition" (e.g., "golden hour to wrong-blue moonlight") in a single still forces the model to represent change over time.
+
+**Result**: The model may split the image awkwardly or create muddy orange-teal color casts.
+
+**Fix**: Describe the **result** of the transition, not the transition itself. Pick the dominant look.
+
+| Wrong | Right |
+|-------|-------|
+| "golden hour fading to purple dusk" | "purple dusk with faint amber warmth from lantern" |
+| "sunrise to full daylight" | "harsh midday sun, high contrast shadows" |
+| "night becoming dawn" | "pre-dawn blue, first pink on horizon" |
+
+### Rule 2: Lens Logic Must Be Consistent
+
+**Problem**: Wide-angle lenses (24mm) naturally produce deep focus. Asking for "shallow depth of field" with a wide lens contradicts optical physics.
+
+**Cinematography Reality**:
+| Lens | Natural DoF | Use For |
+|------|-------------|---------|
+| 24mm wide | Deep focus | Environments, establishing shots, epic scope |
+| 50mm normal | Medium | General purpose, natural perspective |
+| 85mm+ telephoto | Shallow focus | Portraits, close-ups, subject isolation |
+
+**Fix**: Match lens choice to desired depth of field:
+
+| Wrong | Right |
+|-------|-------|
+| "24mm anamorphic, shallow DoF" | "24mm anamorphic, deep focus" |
+| "85mm, everything in focus" | "24mm wide angle, deep focus" |
+| "wide angle, blurred background" | "85mm telephoto, shallow DoF, bokeh" |
+
+### Rule 3: Describe States, Not Motion
+
+**Problem**: Still images cannot show motion. Describing actions mid-process ("landing", "falling", "running") forces the model to freeze an unstable moment.
+
+**Fix**: Describe the **pose** or **result** of the action:
+
+| Motion (Bad) | State (Good) |
+|--------------|--------------|
+| "woman landing on floor" | "woman in mid-crouch on stone floor" |
+| "man falling backward" | "man caught off-balance, arms outstretched" |
+| "ship sinking into waves" | "ship listing severely, deck nearly vertical" |
+| "flames spreading across building" | "building engulfed in flames, structure collapsing" |
+
+### Rule 4: Conflicting Light Sources
+
+**Problem**: Multiple light sources with different qualities can create muddy or impossible lighting.
+
+**Fix**: Establish hierarchy - one KEY light, supporting FILL or ACCENT lights:
+
+| Conflicting | Hierarchical |
+|-------------|--------------|
+| "sunlight and moonlight both illuminating the scene" | "moonlight primary, faint amber lantern accent on face" |
+| "harsh shadows and soft diffused light" | "hard key light from left, soft fill on right" |
+
+### Example: Before/After Optimization
+
+**Before** (logical knots):
+```
+Interior of colonial prison at night, golden hour to wrong-blue transition,
+young woman landing silently on stone floor having dropped through window,
+24mm anamorphic lens, shallow depth of field, long perspective of cell doors
+```
+
+**After** (logically consistent):
+```
+Cinematic wide shot, interior Caribbean colonial prison corridor at night.
+A young woman in mid-crouch on weathered stone floor beneath a high barred window.
+Practical oil lantern casts flickering amber glow against damp walls.
+Wrong-blue teal moonlight streams through bars, creates sharp shadows.
+Long perspective of iron cell doors receding into dark misty void.
+Shot on ARRI Alexa, 24mm anamorphic lens, deep focus, high contrast,
+heavy texture on stone and iron.
+```
+
+**Fixes applied**:
+1. Single lighting state (moonlight dominant, lantern accent)
+2. Wide lens + deep focus (not shallow DoF)
+3. "Mid-crouch" pose instead of "landing" action
+
+---
+
 ## VIDEO GENERATION: Kling 3.0 Pro
 
 ### Overview
@@ -404,6 +492,21 @@ Cut 3: "Wide shot pulling back as @Element1 turns and walks away into the
 | Character inconsistency | Only frontal image provided | Add 2-3 reference angles |
 | Static video | No motion verbs in prompt | Add action verbs, camera movement |
 | **"Custom Voice IDs not supported with Elements"** | Using both voice_ids AND elements | **Choose one**: voice OR elements, not both |
+| **Unexpected objects/creatures appear** | Prose/narrative language interpreted literally | Use purely descriptive language (see below) |
+
+### Video Prompts: Descriptive vs Narrative Language
+
+**CRITICAL**: Video models interpret language literally. Prose or narrative language will be rendered visually.
+
+| Narrative (BAD) | Descriptive (GOOD) |
+|-----------------|-------------------|
+| "atmosphere of lingering presence" | "empty room, dust in the air" |
+| "something was here" | "bare stone walls, straw on floor" |
+| "a sense of dread fills the space" | "dark shadows in corners, dim lighting" |
+| "memories of the past echo" | "old scratches on the wall, faded marks" |
+| "danger lurks unseen" | "she looks around cautiously" |
+
+**Rule**: Describe only what the CAMERA SEES, not what the CHARACTER FEELS or what the STORY IMPLIES.
 
 ### Voice vs Elements Trade-off
 

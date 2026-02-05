@@ -175,9 +175,9 @@ Use character and location designs from reference images.
     if args.seed is not None:
         api_arguments["seed"] = args.seed
 
-    # Generate with CORRECT parameters
+    # Generate with CORRECT parameters - use /edit endpoint for image references
     result = fal_client.subscribe(
-        "fal-ai/nano-banana-pro",
+        "fal-ai/nano-banana-pro/edit",
         arguments=api_arguments,
         with_logs=True,
         on_queue_update=lambda u: print(f"  Queue: {type(u).__name__}")
@@ -216,8 +216,8 @@ Use character and location designs from reference images.
             "prompt": full_prompt,
             "timestamp": datetime.now().isoformat(),
             "image_url": image_url,
-            "model": "fal-ai/nano-banana-pro",
-            "method": "CORRECT (with image_urls)"
+            "model": "fal-ai/nano-banana-pro/edit",
+            "method": "CORRECT (with image_urls via /edit endpoint)"
         }
 
         metadata_path = output_path.with_suffix('.json')

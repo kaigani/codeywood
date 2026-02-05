@@ -116,29 +116,83 @@ def load_character_from_config(config, character_slug):
 # ============================================================================
 # MODEL DEFINITIONS
 # ============================================================================
+# Structure: model_id -> {name, best_for, endpoints: {modality -> endpoint}}
+# Modalities: text-to-image, edit (with image refs), image-to-video, text-to-video
 
 MODELS = {
     "seedream": {
-        "endpoint": "fal-ai/bytedance/seedream/v4.5/text-to-image",
         "name": "SeeDream v4.5",
         "best_for": "Artistic styles, painterly, stylized",
+        "endpoints": {
+            "text-to-image": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+        },
     },
     "hunyuan": {
-        "endpoint": "fal-ai/hunyuan-image/v3/instruct/text-to-image",
         "name": "Hunyuan Image 3.0",
         "best_for": "Artistic styles, illustration",
+        "endpoints": {
+            "text-to-image": "fal-ai/hunyuan-image/v3/instruct/text-to-image",
+        },
     },
     "grok": {
-        "endpoint": "xai/grok-imagine-image",
         "name": "Grok Imagine",
         "best_for": "Artistic exploration, creative styles",
+        "endpoints": {
+            "text-to-image": "xai/grok-imagine-image",
+        },
     },
     "nano_banana": {
-        "endpoint": "fal-ai/nano-banana-pro",
         "name": "Nano Banana Pro",
         "best_for": "Precise style refs, prompt handling, technical refs",
+        "endpoints": {
+            "text-to-image": "fal-ai/nano-banana-pro",
+            "edit": "fal-ai/nano-banana-pro/edit",  # with image references
+        },
+    },
+    "kling": {
+        "name": "Kling Video 3.0 Pro",
+        "best_for": "Video generation with character consistency",
+        "endpoints": {
+            "image-to-video": "fal-ai/kling-video/v3/pro/image-to-video",
+            "text-to-video": "fal-ai/kling-video/v3/pro/text-to-video",
+        },
     },
 }
+
+
+def get_endpoint(model_id: str, modality: str = None, has_image_refs: bool = False) -> str:
+    """Get the appropriate endpoint for a model based on modality.
+
+    Args:
+        model_id: The model identifier (e.g., 'nano_banana', 'kling')
+        modality: Explicit modality ('text-to-image', 'edit', 'image-to-video', etc.)
+        has_image_refs: If True and modality not specified, auto-selects 'edit' for supported models
+
+    Returns:
+        The FAL endpoint string
+    """
+    model = MODELS.get(model_id)
+    if not model:
+        raise ValueError(f"Unknown model: {model_id}")
+
+    endpoints = model.get("endpoints", {})
+
+    # If modality explicitly specified, use it
+    if modality:
+        if modality in endpoints:
+            return endpoints[modality]
+        raise ValueError(f"Model '{model_id}' does not support modality '{modality}'. Available: {list(endpoints.keys())}")
+
+    # Auto-select based on context
+    if has_image_refs and "edit" in endpoints:
+        return endpoints["edit"]
+
+    # Default to text-to-image for image models
+    if "text-to-image" in endpoints:
+        return endpoints["text-to-image"]
+
+    # For video models, require explicit modality
+    raise ValueError(f"Model '{model_id}' requires explicit modality. Available: {list(endpoints.keys())}")
 
 
 # ============================================================================
@@ -389,6 +443,11 @@ def generate_image(prompt, model_id, settings, output_path, negative_prompt=None
     if "guidance_scale" in settings:
         arguments["guidance_scale"] = settings["guidance_scale"]
 
+    # Select endpoint based on model and whether we have image references
+    has_refs = bool(image_urls)
+    endpoint = get_endpoint(model_id, modality=None, has_image_refs=has_refs)
+    print(f"Endpoint: {endpoint}")
+
     print(f"Settings: {json.dumps({k: v for k, v in arguments.items() if k not in ['prompt', 'image_urls']}, indent=2)}")
     print("\nGenerating...")
 
@@ -400,7 +459,7 @@ def generate_image(prompt, model_id, settings, output_path, negative_prompt=None
                 pass
 
         result = fal_client.subscribe(
-            model["endpoint"],
+            endpoint,
             arguments=arguments,
             with_logs=True,
             on_queue_update=queue_update
@@ -743,6 +802,27 @@ BOTTOM ROW (left to right):
 SHOT 4: Medium on second figure, simple facial expression sketch, dialogue moment composition
 SHOT 5: Two figures on horse, simple sketch with internal struggle indicated subtly, keeps riding forward
 SHOT 6: WIDE composition - two silhouettes walking toward horizon line, simple shapes against sky, minimal detail iconic framing""",
+    },
+    # -------------------------------------------------------------------------
+    # PIRATE-ROMANCE: The Cartographer's Daughter
+    # -------------------------------------------------------------------------
+    "pr-sc02-naval-infiltration": {
+        "scene": "SC02 - Naval Infiltration (Ledger Discovery)",
+        "location": "Naval Compound Exterior → Holding Cells Interior → Silas's Cell",
+        "time": "Dusk to Night - wrong-blue moonlight",
+        "characters": "Mars",
+        "purpose": "Mars infiltrates compound, discovers the Ledger, first supernatural contact",
+        "grid": """3×2 storyboard composite grid on light gray background (#e0e0e0). Professional animation storyboard format. Black and white sketch style, simple line art blocking.
+
+TOP ROW (left to right):
+SHOT 1: Wide establishing of naval compound walls at dusk, high stone walls with iron gates, tiny figure of Mars in shadow at eastern wall, scale composition showing massive colonial architecture against small determined figure
+SHOT 2: Mars climbing drainage pipe on compound wall, figure silhouette against amber dusk sky, motion lines indicating upward movement, last light catching her shape
+SHOT 3: Interior cell corridor, Mars dropping through window, wrong-blue moonlight through barred windows indicated by hatching, long perspective of iron doors stretching into darkness
+
+BOTTOM ROW (left to right):
+SHOT 4: Mars standing in doorway of cell, silhouetted by teal-tinged light from corridor behind, small empty cell interior with cot and bucket, something lingers in the air indicated by loose sketch lines
+SHOT 5: Close-up on hands working at mortar with small blade, stone dust falling indicated by small particles, ink-stained fingers against rough stone, tactile tension composition
+SHOT 6: Mars holding the Ledger, wrong-blue glow illuminating her face from below, book pulsing indicated by radiating lines, her expression a mix of horror and recognition""",
     },
 }
 
