@@ -86,3 +86,55 @@ paths:
   hero_shots: "EXPORTS/hero_shots"
   identity_sheets: "EXPORTS/identity_sheets"
   style_tests: "EXPORTS/style_tests"
+
+# =============================================================================
+# ASSET MANIFEST
+# =============================================================================
+# Tracks paths to generated assets. Updated by scripts after successful generation.
+# Claude reads this to understand what assets exist and where they are located.
+#
+# This section is SCRIPT-MANAGED. Do not edit manually unless correcting errors.
+# =============================================================================
+
+assets:
+  # Identity sheets (8-panel character reference composites)
+  identity_sheets: {}
+    # Example (populated by fal_generate.py --identity):
+    # protagonist: "EXPORTS/identity_sheets/protagonist_identity_nano_banana_20260205.png"
+
+  # Hero shots (3 per character: entrance, action, quiet)
+  hero_shots: {}
+    # Example (populated by fal_generate.py --hero):
+    # protagonist:
+    #   entrance: "EXPORTS/hero_shots/protagonist/protagonist_entrance_nano_banana_20260205.png"
+    #   action: "EXPORTS/hero_shots/protagonist/protagonist_action_nano_banana_20260205.png"
+    #   quiet: "EXPORTS/hero_shots/protagonist/protagonist_quiet_nano_banana_20260205.png"
+
+  # Location reference grids (2x2 composites)
+  location_refs: {}
+    # Example (populated by fal_generate.py --location):
+    # office: "EXPORTS/location_refs/office_ref_nano_banana_20260205.png"
+
+  # Storyboards (3x2 shot grids)
+  storyboards: {}
+    # Example (populated by fal_generate.py --storyboard):
+    # sc01_cold_open: "EXPORTS/storyboards/sc01_cold_open_storyboard_20260205.png"
+
+  # Video production frames (scene-specific)
+  frames: {}
+    # Example (populated by generate_frames.py):
+    # sc02:
+    #   shot01: "VISUAL_PRODUCTION/sc02_outputs/frames/sc02_shot01_establishing_20260205.png"
+    #   shot02: "VISUAL_PRODUCTION/sc02_outputs/frames/sc02_shot02_climbing_20260205.png"
+
+  # Video clips (scene-specific)
+  clips: {}
+    # Example (populated by generate_clips.py):
+    # sc02:
+    #   clip01: "VISUAL_PRODUCTION/sc02_outputs/clips/sc02_clip01_exterior_20260205.mp4"
+    #   clip02: "VISUAL_PRODUCTION/sc02_outputs/clips/sc02_clip02_interior_20260205.mp4"
+
+  # Final assemblies (complete scenes)
+  assemblies: {}
+    # Example (populated by assemble_scene.py):
+    # sc02: "VISUAL_PRODUCTION/sc02_outputs/assembly/sc02_naval_infiltration_complete_20260205.mp4"

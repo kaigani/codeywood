@@ -127,18 +127,44 @@ Log to GENERATION_LOG:
 }
 ```
 
-### Step 7: Quality Check (Automated)
+### Step 7: Quality Check (Automated + Claude Review)
 
-Basic automated checks:
+**Automated checks**:
 - Image generated successfully
 - Correct dimensions
 - File size reasonable
 - No obvious errors (black image, etc.)
 
+**Claude review (REQUIRED before proceeding to video)**:
+
+Invoke `shot-quality-validator` skill for each generated frame:
+1. Single moment check - No composite/multi-state images
+2. Character consistency - Matches identity sheet
+3. Technical quality - No artifacts, correct resolution
+4. Composition - Matches shot type specification
+
+**CRITICAL: Single Moment Rule**
+
+Frame prompts must produce a single clean moment. Watch for:
+- Multiple versions of same character (before/after states)
+- Split-screen or triptych compositions
+- Motion blur suggesting multiple moments
+
+**Common cause**: Transitional language in prompts like "expression shifts from X to Y" causes models to render BOTH states in one image.
+
+**Fix**: Keep frame prompts static. Move transitions to VIDEO prompts only.
+
+| Frame Prompt (BAD) | Frame Prompt (GOOD) |
+|--------------------|---------------------|
+| "Her expression shifts from determination to horror" | "Her expression is focused determination" |
+| "He turns and walks away" | "He stands facing the door, hand on handle" |
+| "The sun sets on the horizon" | "Golden sunset light on the horizon" |
+
 Flag for manual review if:
 - Multiple characters present
 - Complex composition
 - First shot of a new character/location
+- **Any composite/multi-moment images detected**
 
 ### Step 8: Handle Failures
 

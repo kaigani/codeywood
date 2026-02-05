@@ -309,6 +309,56 @@ heavy texture on stone and iron.
 
 ---
 
+## FRAME vs VIDEO PROMPTS (CRITICAL DISTINCTION)
+
+Frame prompts and video prompts serve different purposes. Confusing them causes generation failures.
+
+### Frame Prompts (for Nano Banana Pro / image generation)
+
+**Purpose**: Generate a single, clean moment to use as a video start frame.
+
+**Rules**:
+- Describe STATIC states, not transitions
+- No temporal language ("then", "as", "shifts to")
+- Single lighting state
+- Single character pose/expression
+
+| Element | Frame Prompt Approach |
+|---------|----------------------|
+| Expression | "Her expression is focused determination" |
+| Action | "She crouches at the wall, blade in hand" |
+| Lighting | "Wrong-blue moonlight from barred window" |
+
+### Video Prompts (for Kling / video generation)
+
+**Purpose**: Describe motion and transitions that animate FROM the start frame.
+
+**Rules**:
+- Include motion verbs and camera movement
+- Transitions are allowed ("shifts from X to Y")
+- Describe what CHANGES, not what stays static
+- Must be START FRAME AWARE - continue from visible state
+
+| Element | Video Prompt Approach |
+|---------|----------------------|
+| Expression | "Her expression shifts from determination to horror" |
+| Action | "She pries at the mortar, stone dust falling" |
+| Camera | "Slow push-in as she discovers the book" |
+
+### Transitional Language Placement
+
+| Language Type | Frame Prompt | Video Prompt |
+|---------------|--------------|--------------|
+| "shifts from X to Y" | ❌ NEVER | ✅ Yes |
+| "turns and walks" | ❌ NEVER | ✅ Yes |
+| "as the sun sets" | ❌ NEVER | ✅ Yes |
+| Static pose | ✅ Yes | ⚠️ Add motion |
+| Single state | ✅ Yes | ⚠️ Add change |
+
+**CRITICAL**: If transitional language appears in a frame prompt, it will cause composite images (multiple states rendered in one frame).
+
+---
+
 ## VIDEO GENERATION: Kling 3.0 Pro
 
 ### Overview
@@ -362,6 +412,26 @@ In prompts, reference uploaded elements with `@Element1`, `@Element2`, etc:
 - @Element2 = Second element (typically location or secondary character)
 
 ### Video Prompting Techniques
+
+#### Start Frame Awareness (CRITICAL)
+
+Video prompts must describe actions that CONTINUE FROM the visible start frame state.
+
+The model SEES the start frame. If the prompt contradicts what's visible, the model will:
+- Try to reconcile the contradiction (creating awkward transitions)
+- Invent intermediate actions (moving to a "new" position)
+- Produce discontinuous motion
+
+**Before writing video prompts**:
+1. View/understand the start frame (generated shot frame OR extracted last frame)
+2. Note the character's current position/state/expression
+3. Write prompts that continue FROM that state, not TO that state
+
+| Start Frame Shows | BAD Prompt | GOOD Prompt |
+|-------------------|------------|-------------|
+| Mars IN doorway | "She reaches for the door handle" | "She steps forward through the doorway" |
+| Hands already working | "She notices the loose stone" | "She continues prying at the mortar" |
+| Character sitting | "She walks to the chair and sits" | "She shifts in her seat, leaning forward" |
 
 #### Motion Verbs (Essential)
 Unlike image prompts, video prompts MUST include motion:

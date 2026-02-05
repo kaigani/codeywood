@@ -4,8 +4,8 @@
 
 Codeywood is a modular Claude Skills-based system for autonomous AI video story generation. The goal is complete 20-30 minute episodes from user requirements using a hybrid architecture:
 
-- **Creative Layer** (Claude): Story development, quality evaluation, iteration
-- **Execution Layer** (Python + n8n): API orchestration, file management, reproducible workflows
+- **Claude** (Orchestrator): Story development, quality evaluation, workflow orchestration, adaptive decision-making
+- **Scripts** (Primitives): Generalized Python tools for API calls, file management, reproducible operations
 
 ## Memory Management & Isolation
 To prevent context bleed between sub-projects in this monorepo, follow these strict rules when using memory tools (e.g., `claude-mem` or `server-memory`):

@@ -160,6 +160,124 @@ MODELS = {
 }
 
 
+# =============================================================================
+# AGENTIC PRIMITIVES SUPPORT
+# =============================================================================
+
+# Global flags set by CLI arguments
+AGENTIC_FLAGS = {
+    "dry_run": False,
+    "force": False,
+    "json_output": False,
+}
+
+# Collect results for JSON output
+GENERATION_RESULTS = []
+
+
+def check_output_exists(output_path: Path, force: bool = None) -> tuple[bool, str]:
+    """Check if output already exists and decide whether to skip.
+
+    Args:
+        output_path: Path where output would be saved
+        force: Override force flag (uses AGENTIC_FLAGS if None)
+
+    Returns:
+        (should_skip, reason) tuple
+    """
+    if force is None:
+        force = AGENTIC_FLAGS["force"]
+
+    if output_path.exists():
+        if force:
+            return False, "exists but --force specified, will overwrite"
+        else:
+            return True, f"already exists (use --force to overwrite)"
+    return False, None
+
+
+def log_generation_result(action: str, output_path: Path, status: str, metadata: dict = None):
+    """Log a generation result for JSON output."""
+    result = {
+        "action": action,
+        "output_path": str(output_path) if output_path else None,
+        "status": status,
+        "timestamp": datetime.now().isoformat(),
+    }
+    if metadata:
+        result["metadata"] = metadata
+    GENERATION_RESULTS.append(result)
+
+
+def print_dry_run(action: str, output_path: Path, details: str = None):
+    """Print dry-run preview of what would happen."""
+    print(f"[DRY-RUN] Would {action}")
+    print(f"          Output: {output_path}")
+    if details:
+        print(f"          {details}")
+
+
+def update_state_file(project_path: Path, command: str, output_paths: list, status: str = "success", metadata: dict = None):
+    """Update .state.json with execution record.
+
+    This is a lightweight state update for the generation script.
+    For full state management, use the StateManager class.
+    """
+    import uuid
+
+    state_path = project_path / ".state.json"
+
+    # Load existing state or create new
+    if state_path.exists():
+        with open(state_path) as f:
+            state = json.load(f)
+    else:
+        state = {
+            "version": "0.5",
+            "project_slug": project_path.name,
+            "current_phase": "REFERENCE_GENERATION",
+            "executions": [],
+            "generations": {},
+        }
+
+    # Ensure executions list exists
+    if "executions" not in state:
+        state["executions"] = []
+
+    # Add execution record
+    execution = {
+        "execution_id": str(uuid.uuid4())[:8],
+        "command": command,
+        "completed_at": datetime.now().isoformat(),
+        "status": status,
+        "output_paths": [str(p) for p in output_paths],
+    }
+    if metadata:
+        execution["metadata"] = metadata
+
+    state["executions"].append(execution)
+
+    # Keep only last 100 executions
+    if len(state["executions"]) > 100:
+        state["executions"] = state["executions"][-100:]
+
+    # Update timestamp
+    state["last_updated"] = datetime.now().isoformat()
+
+    # Save
+    with open(state_path, "w") as f:
+        json.dump(state, f, indent=2)
+
+
+def output_json_results():
+    """Output all results as JSON."""
+    print(json.dumps({
+        "status": "complete",
+        "results": GENERATION_RESULTS,
+        "timestamp": datetime.now().isoformat(),
+    }, indent=2))
+
+
 def get_endpoint(model_id: str, modality: str = None, has_image_refs: bool = False) -> str:
     """Get the appropriate endpoint for a model based on modality.
 
@@ -659,6 +777,21 @@ def run_hero_shots(project_path, config, character_slug, model_id=None, seed=Non
         }
 
     for shot in hero_shots:
+        # Check for existing outputs (idempotency)
+        # For hero shots, check if ANY file matching the pattern exists
+        existing = list(hero_path.glob(f"{character_slug}_{shot['name']}_{model_id}_*.png"))
+        if existing:
+            should_skip, reason = check_output_exists(existing[0])
+            if should_skip:
+                print(f"  Skipping {shot['name']}: {reason}")
+                log_generation_result(
+                    f"hero_shot_{shot['name']}",
+                    existing[0],
+                    "skipped",
+                    {"reason": reason}
+                )
+                continue
+
         prompt = build_hero_shot_prompt(
             char_data,
             style_dna,
@@ -670,7 +803,28 @@ def run_hero_shots(project_path, config, character_slug, model_id=None, seed=Non
         filename = f"{character_slug}_{shot['name']}_{model_id}_{timestamp}.png"
         output_path = hero_path / filename
 
+        # Dry-run mode
+        if AGENTIC_FLAGS["dry_run"]:
+            print_dry_run(
+                f"generate hero shot '{shot['name']}' for {character_slug}",
+                output_path,
+                f"Model: {model_id}, Seed: {seed}"
+            )
+            log_generation_result(
+                f"hero_shot_{shot['name']}",
+                output_path,
+                "dry_run",
+                {"model": model_id, "seed": seed}
+            )
+            continue
+
         generate_image(prompt, model_id, settings, output_path, negative_prompt, seed=seed)
+        log_generation_result(
+            f"hero_shot_{shot['name']}",
+            output_path,
+            "generated",
+            {"model": model_id, "seed": seed}
+        )
 
 
 def run_identity_sheet(project_path, config, character_slug, model_id=None, seed=None):
@@ -726,6 +880,20 @@ def run_identity_sheet(project_path, config, character_slug, model_id=None, seed
     identity_path = exports_path / "identity_sheets"
     identity_path.mkdir(parents=True, exist_ok=True)
 
+    # Check for existing identity sheet (idempotency)
+    existing = list(identity_path.glob(f"{character_slug}_identity_{model_id}_*.png"))
+    if existing:
+        should_skip, reason = check_output_exists(existing[0])
+        if should_skip:
+            print(f"  Identity sheet: {reason}")
+            log_generation_result(
+                "identity_sheet",
+                existing[0],
+                "skipped",
+                {"reason": reason}
+            )
+            return
+
     negative_prompt = ", ".join(config.get('negative_prompts', []))
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
@@ -740,7 +908,28 @@ def run_identity_sheet(project_path, config, character_slug, model_id=None, seed
     filename = f"{character_slug}_identity_{model_id}_{timestamp}.png"
     output_path = identity_path / filename
 
+    # Dry-run mode
+    if AGENTIC_FLAGS["dry_run"]:
+        print_dry_run(
+            f"generate identity sheet for {character_slug}",
+            output_path,
+            f"Model: {model_id}, References: {len(image_urls)}"
+        )
+        log_generation_result(
+            "identity_sheet",
+            output_path,
+            "dry_run",
+            {"model": model_id, "seed": seed, "reference_count": len(image_urls)}
+        )
+        return
+
     generate_image(prompt, model_id, settings, output_path, negative_prompt, seed=seed, image_urls=image_urls)
+    log_generation_result(
+        "identity_sheet",
+        output_path,
+        "generated",
+        {"model": model_id, "seed": seed, "reference_count": len(image_urls)}
+    )
 
 
 # ============================================================================
@@ -994,6 +1183,20 @@ def run_location_ref(project_path, config, location_slug, model_id=None, seed=No
     location_path = exports_path / "location_refs"
     location_path.mkdir(parents=True, exist_ok=True)
 
+    # Check for existing location ref (idempotency)
+    existing = list(location_path.glob(f"{location_slug}_ref_{model_id}_*.png"))
+    if existing:
+        should_skip, reason = check_output_exists(existing[0])
+        if should_skip:
+            print(f"  Location ref: {reason}")
+            log_generation_result(
+                "location_ref",
+                existing[0],
+                "skipped",
+                {"reason": reason, "location": location_slug}
+            )
+            return
+
     # Use mode-appropriate negative prompt
     base_negative = config.get('negative_prompts', [])
     if mode == "photorealistic":
@@ -1014,7 +1217,28 @@ def run_location_ref(project_path, config, location_slug, model_id=None, seed=No
     filename = f"{location_slug}_ref_{model_id}_{timestamp}.png"
     output_path = location_path / filename
 
+    # Dry-run mode
+    if AGENTIC_FLAGS["dry_run"]:
+        print_dry_run(
+            f"generate location ref for {location_slug}",
+            output_path,
+            f"Model: {model_id}, Mode: {mode}"
+        )
+        log_generation_result(
+            "location_ref",
+            output_path,
+            "dry_run",
+            {"model": model_id, "seed": seed, "location": location_slug, "mode": mode}
+        )
+        return
+
     generate_image(prompt, model_id, settings, output_path, negative_prompt, seed=seed)
+    log_generation_result(
+        "location_ref",
+        output_path,
+        "generated",
+        {"model": model_id, "seed": seed, "location": location_slug, "mode": mode}
+    )
 
 
 def run_storyboard(project_path, config, storyboard_slug, model_id=None, seed=None):
@@ -1220,7 +1444,25 @@ Examples:
                         help="Prompt mode: photorealistic (production stills) or concept (painterly art)")
     parser.add_argument("--list-models", action="store_true", help="List available models")
 
+    # Agentic primitives flags
+    parser.add_argument("--dry-run", action="store_true",
+                        help="Preview what would be generated without executing")
+    parser.add_argument("--force", action="store_true",
+                        help="Overwrite existing outputs (default: skip if exists)")
+    parser.add_argument("--json", action="store_true",
+                        help="Output results as JSON for structured parsing")
+
     args = parser.parse_args()
+
+    # Set agentic flags
+    AGENTIC_FLAGS["dry_run"] = args.dry_run
+    AGENTIC_FLAGS["force"] = args.force
+    AGENTIC_FLAGS["json_output"] = args.json
+
+    if args.dry_run and not args.json:
+        print("\n" + "=" * 70)
+        print("DRY-RUN MODE: No actual generation will occur")
+        print("=" * 70)
 
     if args.list_models:
         print("\nAvailable Models:")
@@ -1288,6 +1530,44 @@ Examples:
 
     else:
         parser.print_help()
+        return
+
+    # Update state file with execution results (unless dry-run)
+    if not AGENTIC_FLAGS["dry_run"] and GENERATION_RESULTS:
+        # Build command string
+        cmd_parts = ["fal_generate.py"]
+        if args.hero:
+            cmd_parts.extend(["--hero", args.hero])
+        if args.identity:
+            cmd_parts.extend(["--identity", args.identity])
+        if args.location:
+            cmd_parts.extend(["--location", args.location])
+        if args.all_locations:
+            cmd_parts.append("--all-locations")
+        if args.storyboard:
+            cmd_parts.extend(["--storyboard", args.storyboard])
+        if args.all_storyboards:
+            cmd_parts.append("--all-storyboards")
+        if args.model:
+            cmd_parts.extend(["--model", args.model])
+        if args.seed:
+            cmd_parts.extend(["--seed", str(args.seed)])
+
+        # Collect output paths from successful generations
+        output_paths = [r["output_path"] for r in GENERATION_RESULTS if r.get("status") == "generated"]
+
+        if output_paths:
+            update_state_file(
+                project_path,
+                command=" ".join(cmd_parts),
+                output_paths=output_paths,
+                status="success",
+                metadata={"model": args.model or "default", "seed": args.seed}
+            )
+
+    # Output JSON results if requested
+    if AGENTIC_FLAGS["json_output"]:
+        output_json_results()
 
 
 if __name__ == "__main__":

@@ -206,6 +206,56 @@ If generated shots are consistently better than references:
 - Lighting inconsistency
 - Color grading shifts
 
+## End-of-Clip Continuity Review (Video Production)
+
+When generating video clips, continuity must be validated BETWEEN clips, not just within shots.
+
+### Workflow
+
+```
+Generate Clip N → Extract Last Frame → Claude Reviews → Decision:
+    ├─ Continue to Clip N+1 (if continuity is good)
+    ├─ Generate Bridge Clip (if gap needs bridging)
+    └─ Generate New Frame(s) → New Bridge Clip (for exceptional continuity)
+```
+
+### Review Process
+
+After each clip is generated:
+
+1. **Extract last frame** using ffmpeg:
+   ```bash
+   ffmpeg -sseof -1 -i clip.mp4 -update 1 -q:v 2 last_frame.png
+   ```
+
+2. **Claude reviews** the extracted frame:
+   - What is the character's position/state/expression?
+   - Does this flow naturally into the next clip's requirements?
+   - Are there any continuity breaks?
+
+3. **Decision**:
+   - **Continue**: Last frame flows naturally into next clip's start frame
+   - **Bridge needed**: Gap exists but can be bridged with additional video
+   - **New frames needed**: Generate supporting frame(s) using Nano Banana Pro
+
+### Bridge Clip Strategy
+
+When a bridge clip is needed:
+
+1. Use extracted last frame as start frame (strategy: `last_frame`)
+2. Write prompts that transition FROM the current state TO the next clip's expected state
+3. Keep prompts START FRAME AWARE - describe continuation, not contradiction
+
+### Continuity Decision Criteria
+
+| Scenario | Decision |
+|----------|----------|
+| Character in same position, same framing | Continue |
+| Character in similar position, different framing | Continue (cut handles it) |
+| Character needs to move to new position | Bridge clip |
+| Significant time/action gap | Bridge clip |
+| New location | New generated start frame |
+
 ## Notes
 
 - Perfect continuity is impossible with current tech
@@ -214,3 +264,4 @@ If generated shots are consistently better than references:
 - Scene boundaries can hide more variance
 - Some drift is acceptable if not distracting
 - Progressive drift is harder to catch than sudden
+- **End-of-clip review is essential for video production**

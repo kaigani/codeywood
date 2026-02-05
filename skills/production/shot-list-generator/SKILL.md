@@ -245,6 +245,47 @@ Check:
 - Simple information transfer
 - Montage sequences
 
+## Video Clip Considerations
+
+Shot lists feed into clip definitions. When creating shots, consider:
+
+### Start Frame Strategy
+
+Each video clip needs a start frame. Shots marked for frame generation will be used as start frames.
+
+| Strategy | When to Use | Shot List Impact |
+|----------|-------------|------------------|
+| `shot` | Generated frame exists | Mark shot as `priority: required` |
+| `last_frame` | Bridge clip, no generated frame | No frame needed, uses previous clip |
+| `custom` | Special case | Manual preparation required |
+
+### Frame Prompts vs Video Prompts
+
+Shot prompts in the shot list are for FRAME generation (still images):
+- Describe static states, not transitions
+- No temporal language
+- Single moment, single expression
+
+Video prompts live in CLIP DEFINITIONS, not shot lists.
+
+### Shots That Need Frames
+
+Not every shot needs a generated frame. Mark shots appropriately:
+
+```yaml
+- id: 1
+  priority: required  # Frame will be generated
+  notes: "Start frame for Clip 1"
+
+- id: 2
+  priority: optional  # May not need frame (covered by multi-prompt)
+  notes: "Generated via Clip 1 multi-prompt"
+
+- id: 3
+  priority: required
+  notes: "Start frame for Clip 2 (new location)"
+```
+
 ## Notes
 
 - Shot list is INPUT for shot-image-generator
@@ -252,3 +293,5 @@ Check:
 - References must exist before shot list can be complete
 - Duration estimates guide pacing, not strict requirements
 - Coverage can be adjusted during generation phase
+- **Frame prompts must be static (no transitional language)**
+- **Clip definitions handle video sequencing, not shot lists**

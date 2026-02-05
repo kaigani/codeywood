@@ -2,54 +2,212 @@
 
 > A modular framework for AI-assisted visual storytelling
 
+## First Principle: Agentic-First
+
+**The entire system is designed for agentic orchestration by Claude.**
+
+This is not a pipeline system where Claude follows rigid workflows. It is an adaptive
+system where Claude:
+
+1. **Retrieves data** - Reads configs, state, and generated assets
+2. **Structures decisions** - Plans next steps based on current state
+3. **Executes scripts** - Calls generalized Python tools via Bash
+4. **Reviews outputs** - Evaluates results (images, video frames, clips)
+5. **Adapts** - Adjusts subsequent steps based on what actually happened
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                    CLAUDE (Orchestrator)                            │
+│                                                                     │
+│  1. Read state: PROJECT_CONFIG.yaml, .state.json, generated assets  │
+│  2. Decide: What needs to happen next?                              │
+│  3. Execute: Call script via Bash                                   │
+│  4. Review: Read/view output, assess quality                        │
+│  5. Adapt: Adjust plan based on actual results                      │
+│  6. Loop: Repeat until goal achieved                                │
+│                                                                     │
+└────────────────────────┬────────────────────────────────────────────┘
+                         │ Bash (direct script invocation)
+                         ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                    SCRIPTS (Generalized Primitives)                 │
+│                                                                     │
+│  Scripts are TOOLS, not workflows. They:                            │
+│  • Accept parameters via CLI (no hardcoded values)                  │
+│  • Execute a single, well-defined operation                         │
+│  • Return structured results (file paths, JSON metadata)            │
+│  • Don't encode workflow logic (Claude decides what to call)        │
+│  • Codify best practices for API calls and data validation          │
+│                                                                     │
+│  Examples:                                                          │
+│  • fal_generate.py --hero mars          # Generate hero shot        │
+│  • generate_clips.py --clip 1           # Generate single clip      │
+│  • validate.py --scene sc02             # Validate scene assets     │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+### Why Agentic-First?
+
+**Non-deterministic outputs require adaptive decisions.**
+
+AI generation models (image, video) produce non-deterministic results. A pre-planned
+pipeline cannot anticipate what the model will actually generate. The system must:
+
+- Review each output before proceeding
+- Adjust subsequent prompts based on actual results
+- Insert bridge content when continuity gaps appear
+- Re-generate when quality is insufficient
+
+Only an agentic approach can make these real-time decisions.
+
+### What This Means in Practice
+
+| Aspect | Old Approach (Pipeline) | Agentic-First |
+|--------|-------------------------|---------------|
+| Workflow | Predefined sequence | Claude decides next step |
+| Scripts | Workflow-specific | Generalized primitives |
+| State | Updated by automation | Updated by scripts, read by Claude |
+| Quality gates | Automated pass/fail | Claude reviews and decides |
+| Adaptation | Manual intervention | Built into the loop |
+| Error handling | Stop and alert | Claude diagnoses and adjusts |
+
 ## Overview
 
-Codeywood uses a **hybrid architecture** that separates:
+Codeywood uses a **layered architecture**:
 
-1. **Creative Work** (Claude) - Story development, quality evaluation, iteration suggestions
-2. **Deterministic Execution** (n8n) - API calls, file management, pipeline orchestration
-3. **Framework** - Reusable tools, knowledge, and skills (this repo root)
+1. **Claude** (Orchestrator) - Reads state, makes decisions, executes scripts, reviews outputs
+2. **Scripts** (Primitives) - Generalized tools that execute single operations
+3. **Framework** - Reusable knowledge, skills documentation, and templates (this repo root)
 4. **Projects** - Individual productions using the framework (`projects/`)
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    CLAUDE (Creative)                        │
-│  • Reads SKILL.md for production guidance                   │
-│  • Generates plans, scripts, prompts                        │
-│  • Evaluates quality and suggests iterations                │
-└─────────────────────┬───────────────────────────────────────┘
-                      │ n8n_run_workflow (via MCP)
-                      ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    N8N (Deterministic)                      │
-│  • Executes FAL.ai, Kling, Veo3 API calls                   │
-│  • Manages file I/O and asset storage                       │
-│  • Enforces quality gates                                   │
-│  • Updates .state.json with execution results               │
-└─────────────────────────────────────────────────────────────┘
-```
-
-This separation allows:
-- **Inspectable workflows** - Open n8n, see exactly where you are
-- **Manual intervention** - Pause, adjust parameters, resume
-- **Reproducible execution** - Same inputs produce same outputs
-- **Easy iteration** - Claude suggests, n8n executes, repeat
 
 ## State Management
 
 Projects use two complementary files:
 
-| File | Edited By | Purpose |
-|------|-----------|---------|
-| `PROJECT_CONFIG.yaml` | Humans | Style DNA, character definitions, model preferences |
-| `.state.json` | n8n workflows | Pipeline state, gate status, execution history |
+| File | Edited By | Read By | Purpose |
+|------|-----------|---------|---------|
+| `PROJECT_CONFIG.yaml` | Humans | Claude, Scripts | Style DNA, characters, model preferences, asset manifest |
+| `.state.json` | Scripts | Claude | Execution history, gate status, generation records |
 
-This separation ensures:
-- Configuration is human-readable and git-friendly
-- State is machine-managed and always accurate
-- No merge conflicts between creative and operational data
+### PROJECT_CONFIG.yaml (Human-Managed)
 
-See `schemas/state.schema.json` for the complete state schema.
+Contains all creative decisions and asset paths:
+
+```yaml
+project: my-project
+style_dna:
+  name: "Style Name"
+  locked: true
+  # ... style components
+
+characters:
+  protagonist:
+    name: "Character Name"
+    visual_keywords: "..."
+
+# Asset manifest (updated by scripts after generation)
+assets:
+  identity_sheets:
+    protagonist: "EXPORTS/identity_sheets/protagonist_20260205.png"
+  hero_shots:
+    protagonist:
+      entrance: "EXPORTS/hero_shots/protagonist_entrance_20260205.png"
+```
+
+### .state.json (Script-Managed)
+
+Contains execution history and state that Claude reads to understand progress:
+
+```json
+{
+  "current_phase": "visual-development",
+  "gates_passed": ["gate-0", "gate-1", "gate-2"],
+  "execution_log": [
+    {
+      "timestamp": "2026-02-05T10:30:00Z",
+      "command": "fal_generate.py --hero protagonist",
+      "result": "success",
+      "output": "EXPORTS/hero_shots/protagonist_entrance_20260205.png",
+      "metadata": {"model": "nano_banana", "seed": 12345}
+    }
+  ]
+}
+```
+
+### State Flow
+
+```
+Claude reads state → Decides next action → Calls script →
+Script executes → Script updates state → Claude reads updated state → Loop
+```
+
+## Script Design Principles
+
+Scripts are **generalized primitives** that Claude composes into workflows. They must be:
+
+### 1. Parameterized (No Hardcoded Values)
+
+```bash
+# Good: All values come from CLI or config
+python fal_generate.py --hero mars --model nano_banana --seed 12345
+
+# Bad: Hardcoded character or style in script
+```
+
+### 2. Single-Purpose (One Operation)
+
+Each script does ONE thing well:
+- `fal_generate.py` - Generate images via FAL.ai
+- `generate_clips.py` - Generate video clips via Kling
+- `assemble_scene.py` - Concatenate clips into scene
+
+### 3. Structured Output
+
+Scripts return structured results that Claude can parse:
+- File paths to generated assets
+- JSON metadata alongside each asset
+- Exit codes for success/failure
+- Stdout messages Claude can read
+
+### 4. Idempotent (Safe to Re-run)
+
+```bash
+# Check if output exists, skip if so
+python fal_generate.py --hero mars
+# Output: "Skipping: mars_entrance already exists. Use --force to overwrite."
+
+# Force regeneration when needed
+python fal_generate.py --hero mars --force
+```
+
+### 5. Dry-Run Capable
+
+```bash
+# Preview what would happen without executing
+python generate_clips.py --clip 1 --dry-run
+# Output: Would generate clip01 using shot01 as start frame, 7s duration, $2.35 cost
+```
+
+### 6. State-Updating
+
+After successful execution, scripts update `.state.json`:
+```python
+# At end of successful generation:
+state_manager.record_execution(
+    command="fal_generate.py --hero mars",
+    output="EXPORTS/hero_shots/mars_entrance_20260205.png",
+    metadata={"model": "nano_banana", "seed": 12345}
+)
+```
+
+### 7. Config-Driven
+
+Scripts read `PROJECT_CONFIG.yaml` for:
+- Style DNA (prompts, negative prompts)
+- Character definitions (visual keywords, palettes)
+- Model preferences (which model to use by default)
+- Output paths (where to save assets)
 
 ## Directory Structure
 
@@ -222,6 +380,13 @@ When adding to the knowledge base:
 
 ## Version History
 
+- **v0.5** (2026-02-05): **Agentic-First Architecture**
+  - Established agentic orchestration as core design principle
+  - Claude orchestrates all workflows (removed n8n dependency)
+  - Scripts redesigned as generalized primitives
+  - Added Script Design Principles (parameterized, single-purpose, idempotent, etc.)
+  - State management updated: scripts update .state.json, Claude reads and decides
+  - Video production validated with agentic clip generation loop (SC02)
 - **v0.4** (2026-01-31): Added location reference generation, autonomous batch generation (--all-locations flag)
 - **v0.3** (2026-01-29): Refactored architecture, project-agnostic generation tools
 - **v0.2** (2026-01-28): Visual production pipeline, Hellmouth Cowboy validation

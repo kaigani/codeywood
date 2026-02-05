@@ -92,17 +92,18 @@
     },
     "executions": {
       "type": "array",
-      "description": "Log of n8n workflow executions",
+      "description": "Log of script executions",
       "items": {
         "type": "object",
         "properties": {
-          "workflow": { "type": "string" },
+          "command": { "type": "string", "description": "Script command that was executed" },
           "execution_id": { "type": "string" },
           "started_at": { "type": "string", "format": "date-time" },
           "completed_at": { "type": ["string", "null"], "format": "date-time" },
           "status": { "type": "string", "enum": ["running", "success", "error"] },
-          "payload": { "type": "object" },
-          "result": { "type": ["object", "null"] }
+          "parameters": { "type": "object", "description": "CLI parameters passed to script" },
+          "output_paths": { "type": "array", "items": { "type": "string" }, "description": "Paths to generated files" },
+          "metadata": { "type": ["object", "null"], "description": "Additional execution metadata (model, seed, etc.)" }
         }
       }
     },

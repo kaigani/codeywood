@@ -1,24 +1,28 @@
 # Codeywood Setup Guide
 
-This guide walks through setting up the Codeywood framework with the hybrid Claude + n8n architecture.
+This guide walks through setting up the Codeywood framework with the agentic-first architecture where Claude orchestrates Python scripts directly.
 
 ## Prerequisites
 
 - Python 3.10+
-- Node.js 18+
-- Docker (for self-hosted n8n) OR n8n cloud account
-- Claude Code CLI with MCP support
+- Claude Code CLI
 - FAL.ai API key
 
-## Quick Start (15 minutes)
+## Quick Start (5 minutes)
 
 ### 1. Clone and Install Python Dependencies
 
 ```bash
 cd /path/to/codeywood
+
+# Set up main generation scripts
 cd scripts/generate
 python3 -m venv venv
 source venv/bin/activate
+pip install -r requirements.txt
+
+# Set up production scripts (if doing video production)
+cd ../production
 pip install -r requirements.txt
 ```
 
@@ -30,72 +34,27 @@ Add to your shell profile (`~/.zshrc` or `~/.bashrc`):
 # Required for FAL.ai API access
 export FAL_KEY="your-fal-api-key"
 
-# Required for n8n workflows to find generation scripts
+# Optional: Set default Codeywood root
 export CODEYWOOD_ROOT="/path/to/codeywood"
 ```
 
 Then reload: `source ~/.zshrc`
 
-### 3. Install and Start n8n
+### 3. Verify Setup
 
 ```bash
-# Install globally
-npm install -g n8n
+# Test the generation script
+cd /path/to/codeywood
+source scripts/generate/venv/bin/activate
 
-# Start n8n (environment variables must be set first)
-n8n start
-```
+# List available models
+python3 scripts/generate/fal_generate.py --list-models
 
-Open http://localhost:5678 and complete initial setup (create account).
-
-### 4. Import n8n Workflows
-
-1. Open n8n → Workflows → Import from File
-2. Import each file from `n8n/` directory:
-   - `cw-generate-character-refs.json`
-   - `cw-validate-gate.json`
-   - (others as they're created)
-3. Activate each workflow
-
-### 5. Create n8n API Key
-
-1. n8n → Settings → API
-2. Create new API key
-3. Copy the key (you'll need it next)
-
-### 6. Configure Claude Code MCP
-
-Create or edit `~/.claude/claude_desktop_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "n8n": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-n8n"],
-      "env": {
-        "N8N_HOST": "http://localhost:5678",
-        "N8N_API_KEY": "your-api-key-from-step-5"
-      }
-    }
-  }
-}
-```
-
-Restart Claude Code to load MCP configuration.
-
-### 7. Verify Setup
-
-In Claude Code:
-
-```
-You: List available n8n workflows
-
-Claude: [Calls n8n_list_workflows]
-Available workflows:
-- cw-generate-character-refs
-- cw-validate-gate
-...
+# Should output:
+# Available models:
+# - nano_banana: Nano Banana Pro - Best for: Precise style refs, technical refs
+# - seedream: SeeDream v4.5 - Best for: Artistic styles, painterly, stylized
+# ...
 ```
 
 ## Creating Your First Project
@@ -105,23 +64,26 @@ Available workflows:
 ```bash
 cp -r templates/project-scaffold projects/my-project
 cp templates/PROJECT_CONFIG.yaml projects/my-project/
-cp templates/.state.example.json projects/my-project/.state.json
 ```
 
 ### 2. Edit PROJECT_CONFIG.yaml
 
 ```yaml
-project:
-  name: "My Project"
-  slug: "my-project"
-  modality: "animation"
+project: my-project
+title: "My Project"
+modality: animation  # or live-action-ya, hybrid
 
 # Leave style_dna empty for now - will be locked after exploration
 style_dna:
   locked: false
+
+characters:
+  protagonist:
+    name: "Character Name"
+    visual_keywords: "physical description..."
 ```
 
-### 3. Start Production
+### 3. Start Production with Claude
 
 In Claude Code, from your project directory:
 
@@ -129,92 +91,123 @@ In Claude Code, from your project directory:
 You: Let's start story development for this project
 
 Claude: [Reads PROJECT_CONFIG.yaml]
-[Begins story-intake skill]
+I'll help you develop the story. Let me start by asking some questions
+about your vision for this project...
 ```
 
-## Directory Structure After Setup
+## Directory Structure
 
 ```
 codeywood/
 ├── SKILL.md                      # Master skill for Claude
 ├── ARCHITECTURE.md               # System design
 ├── SETUP.md                      # This file
+├── CLAUDE.md                     # Per-project instructions
 │
-├── mcp/                          # MCP configuration
-│   ├── README.md
-│   └── claude_mcp_config.example.json
+├── scripts/
+│   ├── generate/                 # Image generation tools
+│   │   ├── fal_generate.py       # Main generation script
+│   │   ├── requirements.txt
+│   │   └── venv/                 # Python virtual environment
+│   └── production/               # Video production tools
+│       ├── generate_frames.py
+│       ├── generate_clips.py
+│       ├── assemble_scene.py
+│       └── lib/
 │
-├── n8n/                          # n8n workflow definitions
-│   ├── README.md
-│   ├── cw-generate-character-refs.json
-│   └── cw-validate-gate.json
-│
-├── schemas/                      # JSON schemas
-│   └── state.schema.json
-│
-├── scripts/generate/             # Python generation tools
 ├── skills/                       # Claude skill definitions
+│   ├── core/                     # Story development skills
+│   ├── production/               # Visual production skills
+│   └── meta/                     # System management skills
+│
 ├── references/                   # Knowledge base
+│   ├── KNOWLEDGE_BASE.md
+│   └── services/                 # Service-specific guides
+│
 ├── templates/                    # Project scaffolding
+│   ├── PROJECT_CONFIG.yaml
+│   └── project-scaffold/
+│
 └── projects/                     # Your productions
+    └── my-project/
+        ├── PROJECT_CONFIG.yaml
+        ├── .state.json
+        ├── STORY/
+        ├── VISUAL_PRODUCTION/
+        └── EXPORTS/
+```
+
+## How It Works
+
+### Agentic Architecture
+
+Claude orchestrates the entire workflow:
+
+1. **Claude reads** PROJECT_CONFIG.yaml and .state.json to understand project state
+2. **Claude decides** what needs to happen next based on quality gates
+3. **Claude executes** Python scripts via Bash to perform generation
+4. **Claude reviews** the generated outputs
+5. **Claude adapts** the plan based on results
+6. **Repeat** until complete
+
+### Script Invocation
+
+Claude calls scripts directly:
+
+```bash
+# Generate character references
+python3 scripts/generate/fal_generate.py --hero protagonist --model nano_banana
+
+# Generate location references
+python3 scripts/generate/fal_generate.py --location office --mode photorealistic
+
+# Generate video frames
+python3 scripts/production/generate_frames.py --shots shot_lists/sc01_shots.yaml
+
+# Generate video clips (one at a time for review)
+python3 scripts/production/generate_clips.py --clips clip_definitions/sc01_clips.yaml --clip 1
 ```
 
 ## Troubleshooting
 
-### "n8n workflow not found"
-- Ensure workflow is imported AND activated in n8n
-- Check workflow name matches exactly (case-sensitive)
-
 ### "FAL_KEY not set"
-- Verify environment variable is exported
-- For n8n, set it in n8n's environment variables settings
+- Verify environment variable is exported: `echo $FAL_KEY`
+- Ensure your shell profile was reloaded: `source ~/.zshrc`
 
-### "MCP connection failed"
-- Restart Claude Code after editing MCP config
-- Verify n8n is running on the configured port
-- Check API key is correct
+### "ModuleNotFoundError: No module named 'fal_client'"
+- Activate the virtual environment: `source scripts/generate/venv/bin/activate`
+- Or install dependencies: `pip install -r scripts/generate/requirements.txt`
 
-### "Permission denied" on file operations
-- n8n needs filesystem access to your projects directory
-- For Docker n8n, mount the projects volume
+### "Character/Location not found"
+- Check PROJECT_CONFIG.yaml has the character/location defined
+- Verify the slug matches exactly (case-sensitive)
 
-## Advanced Configuration
+### "Style DNA not locked"
+- Run style exploration first: `python3 scripts/generate/fal_generate.py --test style_dna`
+- Lock the winning style in PROJECT_CONFIG.yaml: `style_dna: locked: true`
 
-### Using n8n Cloud Instead of Self-Hosted
+## Extending the System
 
-1. Create account at https://n8n.io
-2. Import workflows to cloud instance
-3. Update MCP config with cloud URL:
+### Adding New Scripts
 
-```json
-{
-  "mcpServers": {
-    "n8n": {
-      "env": {
-        "N8N_HOST": "https://your-instance.app.n8n.cloud",
-        "N8N_API_KEY": "your-cloud-api-key"
-      }
-    }
-  }
-}
-```
+Scripts should follow these principles:
+- Accept all parameters via CLI (no hardcoded values)
+- Read configuration from PROJECT_CONFIG.yaml
+- Return structured results (file paths, JSON metadata)
+- Update .state.json after successful execution
 
-### Adding Custom Workflows
+### Adding New Skills
 
-1. Create workflow in n8n UI
-2. Export as JSON to `n8n/` directory
-3. Follow naming convention: `cw-{action}-{target}.json`
-4. Document in `n8n/README.md`
+Create a new directory in `skills/` with a SKILL.md file containing:
+- Purpose
+- Inputs required
+- Outputs produced
+- Process steps
+- Doneness criteria
 
-### Extending Generation Scripts
-
-The Python scripts in `scripts/generate/` can be extended:
-- Add new `--flag` options in `fal_generate.py`
-- Create corresponding n8n workflows that call them
-- Document new capabilities in `SKILL.md`
+Skills are reference documents that inform Claude's decisions.
 
 ## Support
 
-- Issues: https://github.com/your-repo/codeywood/issues
 - Documentation: `docs/` directory
 - Knowledge base: `references/KNOWLEDGE_BASE.md`

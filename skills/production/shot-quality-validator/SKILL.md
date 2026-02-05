@@ -38,6 +38,20 @@ Is the image technically sound?
 | Clarity/sharpness | 10% | No unwanted blur |
 | Artifacts | 10% | No visible generation artifacts |
 | Anatomy | 15% | No deformities |
+| Single moment | 15% | Clean frame, no composite/multi-state images |
+
+**CRITICAL: Single Moment Check**
+Frame prompts must produce a single clean moment, not composites. Watch for:
+- Multiple versions of same character in frame (before/after states)
+- Split-screen or triptych compositions (unless explicitly requested)
+- Motion blur suggesting multiple moments
+- Transitional language in prompt interpreted literally
+
+Common cause: Prompts containing transitional language like "expression shifts from X to Y"
+will cause models to render both X and Y states in a single image.
+
+**Fix**: Move transitional language to VIDEO prompts only. Frame prompts should describe
+a static moment (the START state).
 
 ### 3. Composition
 Does the shot match specification?
@@ -181,6 +195,7 @@ Create list of shots needing regeneration:
 - Wrong number of figures
 - Major anatomical errors
 - Completely wrong location
+- **Composite/multi-moment image** (frame shows multiple states of same subject)
 
 ### HIGH (Likely Regenerate)
 - Significant character drift
