@@ -293,10 +293,13 @@ Unlike image prompts, video prompts MUST include motion:
 | `static shot` | No camera movement (intentional stillness) |
 
 #### Transition Language (Multi-Prompt)
-When using multi-prompt, describe scene progression:
-- Cut 1: "Close-up on hands examining..."
-- Cut 2: "@Element1 speaks to the merchant, expression shifts from..."
-- Cut 3: "Wide shot pulling back as @Element1 turns and walks away..."
+When using multi-prompt, **prefix each prompt with "Cut to:"** to signal clear scene transitions. This helps the model understand each segment is a distinct shot:
+
+- Cut 1: "Cut to: Close-up on hands examining..."
+- Cut 2: "Cut to: @Element1 speaks to the merchant, expression shifts from..."
+- Cut 3: "Cut to: Wide shot pulling back as @Element1 turns and walks away..."
+
+**Note**: The "Cut to:" prefix improves transition clarity and reduces artifacts between segments.
 
 ### Multi-Cut Scene Template
 
@@ -304,15 +307,15 @@ For a 10-second, 3-cut scene:
 ```python
 multi_prompt = [
     {
-        "prompt": "Close-up on [DETAIL], [MOOD], [LIGHTING], cinematic shallow depth of field",
+        "prompt": "Cut to: Close-up on [DETAIL], [MOOD], [LIGHTING], cinematic shallow depth of field",
         "duration": "3"
     },
     {
-        "prompt": "@Element1 [ACTION], [EXPRESSION CHANGE], medium close-up, [LIGHTING]",
+        "prompt": "Cut to: @Element1 [ACTION], [EXPRESSION CHANGE], medium close-up, [LIGHTING]",
         "duration": "3"
     },
     {
-        "prompt": "Wide shot [PULLBACK ACTION] as @Element1 [DEPARTURE ACTION] into @Element2, [ATMOSPHERE], cinematic crane movement",
+        "prompt": "Cut to: Wide shot [PULLBACK ACTION] as @Element1 [DEPARTURE ACTION] into @Element2, [ATMOSPHERE], cinematic crane movement",
         "duration": "4"
     }
 ]
@@ -400,6 +403,27 @@ Cut 3: "Wide shot pulling back as @Element1 turns and walks away into the
 | Duration mismatch | Cut durations don't sum to total | Ensure sum equals video duration |
 | Character inconsistency | Only frontal image provided | Add 2-3 reference angles |
 | Static video | No motion verbs in prompt | Add action verbs, camera movement |
+| **"Custom Voice IDs not supported with Elements"** | Using both voice_ids AND elements | **Choose one**: voice OR elements, not both |
+
+### Voice vs Elements Trade-off
+
+**CRITICAL LIMITATION**: Kling 3.0 does not allow `voice_ids` and `elements` in the same request.
+
+| Need | Use | Trade-off |
+|------|-----|-----------|
+| Character speaks with custom voice | `voice_ids` only | Rely on start frame for visual consistency |
+| Character visual consistency across cuts | `elements` only | Use native audio, no custom voice |
+
+**Workflow for dialogue scenes**:
+1. Use a frame showing the character as `start_image_url`
+2. Include character description in prompts (hair, clothing)
+3. Use `voice_ids` with `<<<voice_N>>>` syntax
+4. NO `elements` array
+
+**Workflow for visual consistency scenes**:
+1. Use `elements` with frontal + reference images
+2. Use `@ElementN` syntax in prompts
+3. NO `voice_ids` - use native audio generation
 
 ### Quality Checklist (Video)
 

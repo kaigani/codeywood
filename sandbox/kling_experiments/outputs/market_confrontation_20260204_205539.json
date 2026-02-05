@@ -1,0 +1,21 @@
+{
+  "experiment": "market_confrontation",
+  "timestamp": "2026-02-04T20:55:39.699446",
+  "start_frame": "/Users/kaigani/Documents/PROJECTS/DEVELOPMENT/260125 codeywood/sandbox/kling_experiments/market_scene_end-frame.png",
+  "audio_mode": "native (dialogue embedded in prompts)",
+  "multi_prompt": [
+    {
+      "prompt": "Medium shot, @Element1 steps forward confrontationally toward the produce seller, she points accusingly at the glowing bottles on the shelves behind him and says 'What are those things in the back? I saw them glowing.' Suspicious expression, afternoon market lighting, shallow depth of field",
+      "duration": "4"
+    },
+    {
+      "prompt": "Close-up reaction shot of the produce seller, middle-aged man's face shifts from friendly to nervous, he stammers 'I don't know what you mean, miss.' He glances back at his shelves, beads of sweat forming, warm golden market lighting, cinematic tension",
+      "duration": "3"
+    },
+    {
+      "prompt": "Over-shoulder shot from behind seller, @Element1 leans in closer with narrowing eyes, she says 'Don't lie to me. I know a curse when I see one.' Her expression hardens with determination, confrontational body language, dramatic lighting shift, cinematic tension builds",
+      "duration": "3"
+    }
+  ],
+  "video_url": "https://v3b.fal.media/files/b/0a8d36ad/2QsV4G3NIBY7ffQLmpPwy_output.mp4"
+}

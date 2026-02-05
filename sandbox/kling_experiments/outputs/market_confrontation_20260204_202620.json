@@ -1,0 +1,25 @@
+{
+  "experiment": "market_confrontation",
+  "timestamp": "2026-02-04T20:26:20.934505",
+  "start_frame": "/Users/kaigani/Documents/PROJECTS/DEVELOPMENT/260125 codeywood/sandbox/kling_experiments/market_scene_end-frame.png",
+  "voice_id": "848145936509059116",
+  "dialogue": [
+    "What are those things in the back? I saw them glowing.",
+    "Don't lie to me. I know a curse when I see one."
+  ],
+  "multi_prompt": [
+    {
+      "prompt": "Medium shot, young woman with dark curly hair in burgundy blouse steps forward confrontationally, she points at the shelves behind the seller and says <<<voice_1>>> 'What are those things in the back? I saw them glowing.' suspicious expression, afternoon market lighting, shallow depth of field",
+      "duration": "4"
+    },
+    {
+      "prompt": "Close-up reaction shot of the produce seller, middle-aged man's face shifts from friendly to nervous, he glances back at his shelves, beads of sweat, warm golden market lighting, cinematic tension",
+      "duration": "3"
+    },
+    {
+      "prompt": "Over-shoulder shot from behind seller, the young woman leans in closer, her dark curly hair framing her face, she says <<<voice_1>>> 'Don't lie to me. I know a curse when I see one.' determined expression, dramatic lighting shift, cinematic confrontation",
+      "duration": "3"
+    }
+  ],
+  "video_url": "https://v3b.fal.media/files/b/0a8d35fd/B-IX8Jeapr-0_v0C8zUpi_output.mp4"
+}

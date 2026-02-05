@@ -1,0 +1,21 @@
+{
+  "experiment": "genie_eruption",
+  "timestamp": "2026-02-04T21:18:49.678647",
+  "start_frame": "/Users/kaigani/Documents/PROJECTS/DEVELOPMENT/260125 codeywood/sandbox/kling_experiments/genie_eruption_start-frame.png",
+  "audio_mode": "native (dialogue embedded in prompts)",
+  "multi_prompt": [
+    {
+      "prompt": "Close-up of a glowing bottle on the shelf, the glass begins to crack and pulse with swirling purple and gold magical energy, ethereal wisps escape through the cracks, the produce seller gasps 'No! Not that one!' Dramatic lighting shift, magical particles fill the air, cinematic tension",
+      "duration": "3"
+    },
+    {
+      "prompt": "Wide shot as the bottle EXPLODES in a spectacular burst of magical smoke and light, @Element1 shields her face and stumbles backward in shock, the produce seller dives behind his stall, swirling vortex of purple and gold energy fills the market stall, dramatic camera shake, particles and light rays everywhere",
+      "duration": "4"
+    },
+    {
+      "prompt": "Medium shot as the smoke coalesces into a towering ethereal GENIE figure, semi-transparent with glowing eyes and flowing robes made of starlight, the genie's deep voice echoes 'WHO HAS AWAKENED ME?' @Element1 stares up in terrified wonder, mouth agape, magical lighting bathes the scene in otherworldly glow, epic reveal moment",
+      "duration": "5"
+    }
+  ],
+  "video_url": "https://v3b.fal.media/files/b/0a8d3738/Q3bqpV7cc76ZZBlJfwysj_output.mp4"
+}
