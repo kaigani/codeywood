@@ -59,12 +59,15 @@ codeywood/
 │   ├── writer/          # Story development skills
 │   ├── production/      # Visual production skills
 │   └── meta/            # System orchestration skills
-├── scripts/generate/    # Image generation CLI tools
+├── scripts/
+│   ├── lib/             # Shared Python library (config, fal_api, ffmpeg, paths)
+│   ├── reference/       # Image generation CLI tools
+│   └── production/      # Video production primitives
 ├── templates/           # Project scaffolding
 ├── projects/            # Individual productions
 ├── references/          # Knowledge base (prompting techniques)
-├── WORKFLOWS/patterns/  # Reusable execution patterns
-└── EXPORTS/             # Cross-project outputs
+├── docs/                # System documentation
+└── WORKFLOWS/patterns/  # Reusable execution patterns
 ```
 
 ## Project Structure (Per Project)
@@ -73,15 +76,26 @@ codeywood/
 projects/{name}/
 ├── PROJECT_CONFIG.yaml  # Human-edited: style DNA, characters, settings
 ├── .state.json          # Machine-managed: pipeline state, gates
-├── STORY/
+├── STORY/               # Narrative artifacts
 │   ├── CREATIVE_BRIEF.md
 │   ├── LOGLINE_LOCK.md
 │   ├── CHARACTER_SHEETS/*.md
 │   └── SCRIPTS/*.md
-└── EXPORTS/
-    ├── hero_shots/
-    ├── identity_sheets/
-    └── location_refs/
+├── REFERENCES/          # Shared visual reference library (identity sheets, hero shots, etc.)
+│   ├── identity_sheets/
+│   ├── hero_shots/
+│   ├── location_refs/
+│   └── storyboards/
+├── PRODUCTION/          # Per-scene video production
+│   └── EP01/
+│       └── sc03/        # Everything for one scene in one place
+│           ├── shot_list.yaml
+│           ├── clip_definitions.yaml
+│           ├── frames/  # Generated start frames
+│           ├── clips/   # Generated video clips
+│           └── assembly/
+└── DELIVERABLES/        # Final approved outputs
+    └── EP01/
 ```
 
 ## State Management

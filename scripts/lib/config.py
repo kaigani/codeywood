@@ -35,7 +35,10 @@ class ProjectConfig:
 
     def __init__(self, project_root: Path):
         self.project_root = Path(project_root)
-        self.exports_dir = self.project_root / "EXPORTS"
+        # Support both new (REFERENCES/) and legacy (EXPORTS/) layouts
+        refs = self.project_root / "REFERENCES"
+        self.references_dir = refs if refs.exists() else self.project_root / "EXPORTS"
+        self.exports_dir = self.references_dir  # backward compat alias
         self.config_path = self.project_root / "PROJECT_CONFIG.yaml"
 
         if not self.config_path.exists():

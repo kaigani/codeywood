@@ -3,12 +3,15 @@
 Validate shot list and clip definition YAML files.
 
 Usage:
+    python validate.py --scene PRODUCTION/EP01/sc03
     python validate.py --shot-list path/to/shots.yaml
     python validate.py --clips path/to/clips.yaml
-    python validate.py --shot-list shots.yaml --clips clips.yaml
 
 Examples:
-    # Validate SC02 files
+    # Validate all SC03 files (new layout)
+    python validate.py --scene PRODUCTION/EP01/sc03
+
+    # Validate specific files (legacy)
     python validate.py --shot-list shot_lists/sc02_shots.yaml --clips clip_definitions/sc02_clips.yaml
 """
 
@@ -19,8 +22,8 @@ from typing import List, Tuple
 
 import yaml
 
-# Add parent to path for imports
-sys.path.insert(0, str(Path(__file__).parent))
+# Add scripts/ to path for shared lib imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from lib.config import load_config, find_project_root
 
@@ -290,12 +293,16 @@ def main():
         epilog=__doc__,
     )
     parser.add_argument(
+        "--scene",
+        help="Path to scene directory (e.g., PRODUCTION/EP01/sc03). Auto-finds shot_list.yaml, clip_definitions.yaml within.",
+    )
+    parser.add_argument(
         "--shot-list", "-s",
-        help="Path to shot list YAML file",
+        help="Path to shot list YAML file (legacy, use --scene instead)",
     )
     parser.add_argument(
         "--clips", "-c",
-        help="Path to clip definitions YAML file",
+        help="Path to clip definitions YAML file (legacy, use --scene instead)",
     )
     parser.add_argument(
         "--project",
@@ -303,15 +310,17 @@ def main():
     )
     args = parser.parse_args()
 
-    if not args.shot_list and not args.clips:
+    if not args.scene and not args.shot_list and not args.clips:
         parser.print_help()
-        print("\nSpecify --shot-list and/or --clips to validate")
+        print("\nSpecify --scene, --shot-list, and/or --clips to validate")
         sys.exit(1)
 
     # Determine project root
     try:
         if args.project:
             project_root = Path(args.project)
+        elif args.scene:
+            project_root = find_project_root(Path(args.scene).parent)
         elif args.shot_list:
             project_root = find_project_root(Path(args.shot_list).parent)
         elif args.clips:
@@ -321,16 +330,35 @@ def main():
     except FileNotFoundError:
         project_root = None
 
+    # Resolve paths from --scene if provided
+    shot_list_arg = args.shot_list
+    clips_arg = args.clips
+
+    if args.scene:
+        scene_path = Path(args.scene)
+        if not scene_path.is_absolute() and project_root:
+            scene_path = project_root / args.scene
+        if not shot_list_arg:
+            candidate = scene_path / "shot_list.yaml"
+            if candidate.exists():
+                shot_list_arg = str(candidate)
+        if not clips_arg:
+            candidate = scene_path / "clip_definitions.yaml"
+            if candidate.exists():
+                clips_arg = str(candidate)
+
     validator = Validator()
     shot_data = None
 
     # Validate shot list
-    if args.shot_list:
-        shot_path = Path(args.shot_list)
+    if shot_list_arg:
+        shot_path = Path(shot_list_arg)
         if not shot_path.is_absolute() and project_root:
-            alt_path = project_root / "VISUAL_PRODUCTION" / args.shot_list
-            if alt_path.exists():
-                shot_path = alt_path
+            for alt_base in ["PRODUCTION", "VISUAL_PRODUCTION"]:
+                alt_path = project_root / alt_base / shot_list_arg
+                if alt_path.exists():
+                    shot_path = alt_path
+                    break
 
         if not shot_path.exists():
             print(f"Error: Shot list not found: {shot_path}")
@@ -343,12 +371,14 @@ def main():
         validator.validate_shot_list(shot_data)
 
     # Validate clip definitions
-    if args.clips:
-        clips_path = Path(args.clips)
+    if clips_arg:
+        clips_path = Path(clips_arg)
         if not clips_path.is_absolute() and project_root:
-            alt_path = project_root / "VISUAL_PRODUCTION" / args.clips
-            if alt_path.exists():
-                clips_path = alt_path
+            for alt_base in ["PRODUCTION", "VISUAL_PRODUCTION"]:
+                alt_path = project_root / alt_base / clips_arg
+                if alt_path.exists():
+                    clips_path = alt_path
+                    break
 
         if not clips_path.exists():
             print(f"Error: Clip definitions not found: {clips_path}")

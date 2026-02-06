@@ -203,6 +203,7 @@ class FalGenerator:
         output_name: str = "clip",
         negative_prompt: str = None,
         on_queue_update: Callable = None,
+        **kwargs,
     ) -> Optional[Path]:
         """
         Generate a video clip using Kling 3.0.
@@ -210,8 +211,9 @@ class FalGenerator:
         Args:
             start_frame: Path to start frame image
             prompts: List of {"prompt": str, "duration": int} dicts
-            characters: List of {"id": str, "element": str} dicts
+            characters: List of {"id": str, "element": str, optional "reference_image_paths": [str]} dicts
             scene_refs: List of scene reference frame paths (establishing shots, etc.)
+            location_element: Optional dict with {"frontal": str, "reference_image_paths": [str], "element_tag": str}
             output_name: Base name for output file
             negative_prompt: Override negative prompt
             on_queue_update: Custom queue update callback
@@ -235,33 +237,88 @@ class FalGenerator:
                     scene_ref_urls.append(self.upload_image(ref))
 
         # Build elements from character list
+        # Characters can have explicit refs (agentic mode) or use config lookup (legacy mode)
         elements = []
         for char in characters:
             char_id = char["id"]
-            identity = self.config.get_identity_sheet(char_id)
-            hero = self.config.get_hero_shot(char_id, "entrance")
 
-            if identity:
+            # Prefer explicit ref path if provided (agentic mode)
+            if "ref" in char:
+                identity_path = Path(char["ref"]) if char["ref"] else None
+            elif hasattr(self.config, 'get_identity_sheet'):
+                identity_path = self.config.get_identity_sheet(char_id)
+            else:
+                identity_path = None
+
+            # Hero shot: explicit or config lookup
+            if "hero_ref" in char:
+                hero_path = Path(char["hero_ref"]) if char["hero_ref"] else None
+            elif hasattr(self.config, 'get_hero_shot'):
+                hero_path = self.config.get_hero_shot(char_id, "entrance")
+            else:
+                hero_path = None
+
+            if identity_path and identity_path.exists():
+                identity_url = self.upload_image(identity_path)
                 element = {
-                    "frontal_image_url": self.upload_image(identity),
+                    "frontal_image_url": identity_url,
                 }
-                # Build reference_image_urls: hero shot + scene refs
+                # Build reference_image_urls
+                # Priority: explicit reference_image_paths > hero shot + scene refs
                 ref_urls = []
-                if hero:
-                    ref_urls.append(self.upload_image(hero))
-                ref_urls.extend(scene_ref_urls)
-                if ref_urls:
-                    element["reference_image_urls"] = ref_urls
+                if "reference_image_paths" in char:
+                    # Per-clip pose-specific references (multi-shot mode)
+                    for rp in char["reference_image_paths"]:
+                        rp = Path(rp)
+                        if rp.exists():
+                            ref_urls.append(self.upload_image(rp))
+                else:
+                    # Default: hero shot + scene refs (legacy/simple mode)
+                    if hero_path and hero_path.exists():
+                        ref_urls.append(self.upload_image(hero_path))
+                    ref_urls.extend(scene_ref_urls)
+                # If no refs, use start frame as reference for consistency
+                if not ref_urls:
+                    ref_urls.append(start_url)
+                element["reference_image_urls"] = ref_urls
                 elements.append(element)
                 print(f"  Element: {char['element']} = {char_id} (refs: {len(ref_urls)})")
+            elif identity_path:
+                print(f"  Warning: Identity not found for {char_id}: {identity_path}")
 
-        # Build multi-prompt
+        # Build location/scene element if provided
+        # Location element provides environmental consistency across clips
+        if kwargs.get("location_element"):
+            loc = kwargs["location_element"]
+            frontal_path = Path(loc["frontal"]) if loc.get("frontal") else None
+            if frontal_path and frontal_path.exists():
+                loc_element = {
+                    "frontal_image_url": self.upload_image(frontal_path),
+                }
+                loc_ref_urls = []
+                for rp in loc.get("reference_image_paths", []):
+                    rp = Path(rp)
+                    if rp.exists():
+                        loc_ref_urls.append(self.upload_image(rp))
+                if not loc_ref_urls:
+                    loc_ref_urls.append(start_url)
+                loc_element["reference_image_urls"] = loc_ref_urls
+                elements.append(loc_element)
+                loc_tag = loc.get("element_tag", f"@Element{len(elements)}")
+                print(f"  Element: {loc_tag} = location (refs: {len(loc_ref_urls)})")
+
+        # Build multi-prompt (Kling limit: 512 chars per prompt)
+        # Use 500 as safety margin for encoding differences
+        PROMPT_MAX_CHARS = 500
         multi_prompt = []
         for p in prompts:
             prompt_text = p["prompt"]
             # Add "CUT to:" prefix if not present and cut_prefix is true (default)
             if p.get("cut_prefix", True) and not prompt_text.strip().lower().startswith("cut to:"):
                 prompt_text = f"CUT to: {prompt_text}"
+            if len(prompt_text) > PROMPT_MAX_CHARS:
+                print(f"  WARNING: Prompt exceeds {PROMPT_MAX_CHARS} chars ({len(prompt_text)}), truncating")
+                prompt_text = prompt_text[:PROMPT_MAX_CHARS]
             multi_prompt.append({
                 "prompt": prompt_text,
                 "duration": str(p["duration"]),
@@ -274,27 +331,55 @@ class FalGenerator:
         for i, p in enumerate(multi_prompt):
             print(f"  [{i+1}] ({p['duration']}s) {p['prompt'][:60]}...")
 
-        # Build request
-        defaults = self.config.get_model_defaults("kling")
+        # Build request with fallback defaults for agentic mode
+        # Kling v3 Pro defaults
+        KLING_DEFAULTS = {
+            "aspect_ratio": "16:9",
+            "generate_audio": True,
+            "cost_per_second": 0.336,
+            "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+        }
+        DEFAULT_NEGATIVE = "blurry, distorted, low quality, artifacts, text, watermark, talking, dialogue"
+
+        # Get defaults from config if available, else use hardcoded
+        if hasattr(self.config, 'get_model_defaults'):
+            defaults = self.config.get_model_defaults("kling") or {}
+        else:
+            defaults = {}
+
+        # Get negative prompt from config if available
+        if negative_prompt:
+            neg_prompt = negative_prompt
+        elif hasattr(self.config, 'build_negative_prompt'):
+            neg_prompt = self.config.build_negative_prompt(for_video=True)
+        else:
+            neg_prompt = DEFAULT_NEGATIVE
+
         request = {
             "start_image_url": start_url,
             "multi_prompt": multi_prompt,
-            "duration": str(total_duration),
-            "aspect_ratio": defaults.get("aspect_ratio", "16:9"),
-            "generate_audio": defaults.get("generate_audio", True),
-            "negative_prompt": negative_prompt or self.config.build_negative_prompt(for_video=True),
+            "shot_type": "customize",
+            "aspect_ratio": defaults.get("aspect_ratio", KLING_DEFAULTS["aspect_ratio"]),
+            "generate_audio": defaults.get("generate_audio", KLING_DEFAULTS["generate_audio"]),
+            "negative_prompt": neg_prompt,
         }
 
         if elements:
             request["elements"] = elements
 
         # Cost estimate
-        cost_per_sec = self.config.models.get("kling", {}).get("cost_per_second", 0.336)
+        if hasattr(self.config, 'models'):
+            cost_per_sec = self.config.models.get("kling", {}).get("cost_per_second", KLING_DEFAULTS["cost_per_second"])
+        else:
+            cost_per_sec = KLING_DEFAULTS["cost_per_second"]
         estimated_cost = total_duration * cost_per_sec
         print(f"\nDuration: {total_duration}s | Estimated cost: ${estimated_cost:.2f}")
 
-        # Get endpoint
-        endpoint = self.config.get_model_endpoint("kling", "image_to_video")
+        # Get endpoint (prefer config, fallback to default)
+        if hasattr(self.config, 'get_model_endpoint'):
+            endpoint = self.config.get_model_endpoint("kling", "image_to_video")
+        else:
+            endpoint = KLING_DEFAULTS["endpoint"]
         print(f"Endpoint: {endpoint}")
 
         try:
@@ -346,87 +431,5 @@ class FalGenerator:
             return None
 
 
-def extract_last_frame(video_path: Path, output_path: Path) -> Optional[Path]:
-    """
-    Extract the last frame from a video using ffmpeg.
-
-    Args:
-        video_path: Path to video file
-        output_path: Path for output image
-
-    Returns:
-        Path to extracted frame, or None on failure
-    """
-    import subprocess
-
-    output_path = Path(output_path)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    cmd = [
-        "ffmpeg", "-y",
-        "-sseof", "-1",
-        "-i", str(video_path),
-        "-update", "1",
-        "-q:v", "2",
-        str(output_path)
-    ]
-
-    print(f"\nExtracting last frame from {video_path.name}...")
-    result = subprocess.run(cmd, capture_output=True, text=True)
-
-    if result.returncode == 0 and output_path.exists():
-        print(f"✓ Extracted: {output_path}")
-        return output_path
-    else:
-        print(f"✗ Failed to extract frame")
-        if result.stderr:
-            print(result.stderr[:500])
-        return None
-
-
-def concatenate_clips(clips: List[Path], output_path: Path) -> Optional[Path]:
-    """
-    Concatenate video clips using ffmpeg.
-
-    Args:
-        clips: List of clip paths in order
-        output_path: Path for output video
-
-    Returns:
-        Path to concatenated video, or None on failure
-    """
-    import subprocess
-
-    if not clips:
-        print("No clips to concatenate")
-        return None
-
-    output_path = Path(output_path)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    # Write concat file
-    concat_file = output_path.parent / "concat_list.txt"
-    with open(concat_file, "w") as f:
-        for clip in clips:
-            f.write(f"file '{clip}'\n")
-
-    cmd = [
-        "ffmpeg", "-y",
-        "-f", "concat",
-        "-safe", "0",
-        "-i", str(concat_file),
-        "-c", "copy",
-        str(output_path)
-    ]
-
-    print(f"\nConcatenating {len(clips)} clips...")
-    result = subprocess.run(cmd, capture_output=True, text=True)
-
-    if result.returncode == 0 and output_path.exists():
-        print(f"✓ Assembled: {output_path}")
-        return output_path
-    else:
-        print(f"✗ Assembly failed")
-        if result.stderr:
-            print(result.stderr[:500])
-        return None
+# Re-export ffmpeg utilities for backward compatibility
+from .ffmpeg import extract_last_frame, concatenate_clips

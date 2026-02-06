@@ -3,16 +3,16 @@
 Generate video clips from clip definition YAML.
 
 Usage:
-    python generate_clips.py --clips path/to/clips.yaml [--frames-dir path/to/frames]
-    python generate_clips.py --clips path/to/clips.yaml --clip 1
-    python generate_clips.py --clips path/to/clips.yaml --all
+    python generate_clips.py --scene PRODUCTION/EP01/sc03 --clip 1
+    python generate_clips.py --scene PRODUCTION/EP01/sc03 --all
+    python generate_clips.py --clips path/to/clips.yaml --clip 1  # legacy
 
 Examples:
-    # Generate all clips for SC02
-    python generate_clips.py --clips clip_definitions/sc02_clips.yaml --all
+    # Generate specific clip (new layout)
+    python generate_clips.py --scene PRODUCTION/EP01/sc03 --clip 2
 
-    # Generate specific clip
-    python generate_clips.py --clips clip_definitions/sc02_clips.yaml --clip 2
+    # Generate all clips (legacy layout)
+    python generate_clips.py --clips clip_definitions/sc02_clips.yaml --all
 """
 
 import argparse
@@ -20,8 +20,8 @@ import sys
 from pathlib import Path
 from typing import Optional
 
-# Add parent to path for imports
-sys.path.insert(0, str(Path(__file__).parent))
+# Add scripts/ to path for shared lib imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from lib.config import load_config, find_project_root
 from lib.shot_list import load_shot_list, load_clip_definitions
@@ -45,13 +45,26 @@ def find_frame_for_shot(frames_dir: Path, shot_id: int) -> Optional[Path]:
     return None
 
 
-def find_clip_output(clips_dir: Path, clip_id: int) -> Optional[Path]:
-    """Find the most recent clip output."""
-    patterns = [
+def find_clip_output(clips_dir: Path, clip_id: int, output_name: Optional[str] = None) -> Optional[Path]:
+    """Find the most recent clip output.
+
+    Args:
+        clips_dir: Directory containing clip outputs
+        clip_id: The clip ID to search for
+        output_name: Optional output_name from clip definition (preferred search method)
+    """
+    patterns = []
+
+    # Prefer output_name if provided (most reliable)
+    if output_name:
+        patterns.append(f"*{output_name}*.mp4")
+
+    # Fallback to ID-based patterns
+    patterns.extend([
         f"*clip{clip_id:02d}*.mp4",
         f"*clip_{clip_id}*.mp4",
         f"*clip{clip_id}*.mp4",
-    ]
+    ])
 
     for pattern in patterns:
         matches = list(clips_dir.glob(pattern))
@@ -67,6 +80,7 @@ def generate_clip(
     clip: dict,
     frames_dir: Path,
     clips_dir: Path,
+    project_root: Path = None,
 ) -> Optional[Path]:
     """Generate a single video clip."""
     clip_id = clip.get("id")
@@ -94,9 +108,14 @@ def generate_clip(
 
     elif strategy == "last_frame":
         prev_clip_id = start_config.get("clip_id")
-        prev_clip = find_clip_output(clips_dir, prev_clip_id)
+        # Look up the referenced clip to get its output_name for reliable matching
+        prev_clip_def = clip_defs.get_clip(prev_clip_id)
+        prev_output_name = prev_clip_def.get("output_name") if prev_clip_def else None
+        prev_clip = find_clip_output(clips_dir, prev_clip_id, prev_output_name)
         if not prev_clip:
             print(f"✗ Error: Clip {prev_clip_id} not found for last_frame extraction")
+            if prev_output_name:
+                print(f"  Searched for output_name: {prev_output_name}")
             return None
 
         # Extract last frame
@@ -105,7 +124,7 @@ def generate_clip(
         if not start_frame:
             print(f"✗ Error: Failed to extract last frame from clip {prev_clip_id}")
             return None
-        print(f"Start frame: Last frame of clip {prev_clip_id}")
+        print(f"Start frame: Last frame of clip {prev_clip_id} ({prev_clip.name})")
 
     elif strategy == "custom":
         custom_path = start_config.get("custom_path")
@@ -131,7 +150,58 @@ def generate_clip(
 
     # Get characters
     characters = clip_defs.get_clip_characters(clip)
+
+    # Resolve per-clip element_refs to file paths (multi-shot mode)
+    element_refs = clip.get("element_refs", {})
+    for char in characters:
+        char_id = char["id"]
+        if char_id in element_refs:
+            ref_shots = element_refs[char_id].get("reference_shots", [])
+            ref_paths = []
+            for shot_id in ref_shots:
+                frame = find_frame_for_shot(frames_dir, shot_id)
+                if frame:
+                    ref_paths.append(str(frame))
+            if ref_paths:
+                char["reference_image_paths"] = ref_paths
+
     print(f"Characters: {[c['id'] for c in characters]}")
+    for c in characters:
+        if "reference_image_paths" in c:
+            print(f"  {c['id']}: {len(c['reference_image_paths'])} pose refs")
+
+    # Build location element if defined at scene level
+    kwargs = {}
+    loc_def = clip_defs.raw_data.get("location_element")
+    if loc_def:
+        # Resolve relative paths from REFERENCES/ or EXPORTS/
+        refs_dir = frames_dir  # fallback
+        if project_root:
+            for candidate in ["REFERENCES", "EXPORTS"]:
+                candidate_dir = project_root / candidate
+                if candidate_dir.exists():
+                    refs_dir = candidate_dir
+                    break
+        else:
+            # Walk up from frames_dir as fallback
+            walk = frames_dir
+            while walk.name not in ("REFERENCES", "EXPORTS") and walk.parent != walk:
+                walk = walk.parent
+            if walk.name in ("REFERENCES", "EXPORTS"):
+                refs_dir = walk
+        exports_dir = refs_dir
+        loc_element = {
+            "frontal": str(exports_dir / loc_def["frontal"]) if not Path(loc_def["frontal"]).is_absolute() else loc_def["frontal"],
+            "element_tag": loc_def.get("element_tag", "@Element3"),
+        }
+        ref_paths = []
+        for rp in loc_def.get("reference_shots", []):
+            frame = find_frame_for_shot(frames_dir, rp)
+            if frame:
+                ref_paths.append(str(frame))
+        loc_element["reference_image_paths"] = ref_paths
+        kwargs["location_element"] = loc_element
+        print(f"Location element: {loc_element['element_tag']} ({len(ref_paths)} refs)")
 
     # Build prompts
     prompts = clip_defs.build_clip_prompts(clip)
@@ -148,6 +218,7 @@ def generate_clip(
         characters=characters,
         scene_refs=scene_refs,
         output_name=output_name,
+        **kwargs,
     )
 
 
@@ -158,17 +229,20 @@ def main():
         epilog=__doc__,
     )
     parser.add_argument(
+        "--scene", "-s",
+        help="Path to scene directory (e.g., PRODUCTION/EP01/sc03). Auto-finds clip_definitions.yaml, frames/, clips/ within.",
+    )
+    parser.add_argument(
         "--clips", "-c",
-        required=True,
-        help="Path to clip definitions YAML file",
+        help="Path to clip definitions YAML file (legacy, use --scene instead)",
     )
     parser.add_argument(
         "--frames-dir", "-f",
-        help="Directory containing generated frames (auto-detected if not specified)",
+        help="Directory containing generated frames (auto-detected from --scene)",
     )
     parser.add_argument(
         "--output-dir", "-o",
-        help="Output directory for clips (defaults to {scene_id}_outputs/clips)",
+        help="Output directory for clips (auto-detected from --scene)",
     )
     parser.add_argument(
         "--clip",
@@ -204,23 +278,44 @@ def main():
 
     args = parser.parse_args()
 
+    if not args.scene and not args.clips:
+        parser.print_help()
+        print("\nSpecify --scene or --clips")
+        sys.exit(1)
+
     # Load configuration
     try:
         if args.project:
             project_root = Path(args.project)
         else:
-            project_root = find_project_root(Path(args.clips).parent)
+            search_start = Path(args.scene or args.clips).parent if (args.scene or args.clips) else Path.cwd()
+            project_root = find_project_root(search_start)
         config = load_config(project_root)
     except FileNotFoundError as e:
         print(f"Error: {e}")
         sys.exit(1)
 
-    # Load clip definitions
-    clips_path = Path(args.clips)
-    if not clips_path.is_absolute():
-        alt_path = project_root / "VISUAL_PRODUCTION" / args.clips
-        if alt_path.exists():
-            clips_path = alt_path
+    # Resolve scene directory and clip definitions
+    if args.scene:
+        # New layout: --scene points to scene dir containing clip_definitions.yaml
+        scene_path = Path(args.scene)
+        if not scene_path.is_absolute():
+            scene_path = project_root / args.scene
+        clips_path = scene_path / "clip_definitions.yaml"
+    else:
+        # Legacy: --clips points directly to YAML
+        clips_path = Path(args.clips)
+        if not clips_path.is_absolute():
+            # Try multiple locations
+            for alt in [
+                project_root / args.clips,
+                project_root / "PRODUCTION" / args.clips,
+                project_root / "VISUAL_PRODUCTION" / args.clips,
+            ]:
+                if alt.exists():
+                    clips_path = alt
+                    break
+        scene_path = clips_path.parent
 
     if not clips_path.exists():
         print(f"Error: Clip definitions not found: {clips_path}")
@@ -234,8 +329,15 @@ def main():
     shot_list_ref = clip_data.get("shot_list", "")
     shot_list_path = (clips_path.parent / shot_list_ref).resolve()
     if not shot_list_path.exists():
-        # Try VISUAL_PRODUCTION relative path
-        shot_list_path = project_root / "VISUAL_PRODUCTION" / "shot_lists" / f"{clip_data.get('scene_id')}_shots.yaml"
+        # Try legacy paths
+        scene_id_raw = clip_data.get("scene_id", "")
+        for alt in [
+            project_root / "VISUAL_PRODUCTION" / "shot_lists" / f"{scene_id_raw}_shots.yaml",
+            project_root / "PRODUCTION" / "shot_lists" / f"{scene_id_raw}_shots.yaml",
+        ]:
+            if alt.exists():
+                shot_list_path = alt
+                break
 
     if not shot_list_path.exists():
         print(f"Error: Shot list not found: {shot_list_path}")
@@ -246,14 +348,18 @@ def main():
 
     scene_id = clip_defs.scene_id
 
-    # Determine directories
+    # Determine directories (prefer explicit args, then --scene layout, then legacy)
     if args.frames_dir:
         frames_dir = Path(args.frames_dir)
+    elif args.scene:
+        frames_dir = scene_path / "frames"
     else:
         frames_dir = project_root / "VISUAL_PRODUCTION" / f"{scene_id}_outputs" / "frames"
 
     if args.output_dir:
         output_dir = Path(args.output_dir)
+    elif args.scene:
+        output_dir = scene_path / "clips"
     else:
         output_dir = project_root / "VISUAL_PRODUCTION" / f"{scene_id}_outputs" / "clips"
 
@@ -293,6 +399,7 @@ def main():
             clip=clip,
             frames_dir=frames_dir,
             clips_dir=output_dir,
+            project_root=project_root,
         )
         results[f"clip_{clip_id}"] = result
 

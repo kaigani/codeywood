@@ -137,7 +137,10 @@ class ShotList:
         prompt = shot.get("prompt", "").strip()
 
         # Add dialogue control based on strategy
-        if include_dialogue_control:
+        # Skip if prompt already contains silence directives to avoid redundancy
+        prompt_lower = prompt.lower()
+        has_silence = "no talking" in prompt_lower or "characters are silent" in prompt_lower
+        if include_dialogue_control and not has_silence:
             dialogue = shot.get("dialogue", self.dialogue_strategy)
             if dialogue == "none":
                 prompt += ", no spoken dialogue"
@@ -148,6 +151,16 @@ class ShotList:
             elif dialogue == "reaction":
                 prompt += ", non-verbal reactions only, no spoken dialogue"
             # "scripted" would have specific dialogue in the prompt already
+
+        # Build SFX line from shot sound data
+        sound = shot.get("sound", {})
+        sfx_parts = []
+        if sound.get("ambient"):
+            sfx_parts.append(sound["ambient"].strip())
+        if sound.get("character"):
+            sfx_parts.append(sound["character"].strip())
+        if sfx_parts:
+            prompt += f". SFX: We hear {', '.join(sfx_parts).lower()}"
 
         return prompt
 
@@ -168,6 +181,11 @@ class ClipDefinitions:
 
         with open(self.yaml_path) as f:
             self._data = yaml.safe_load(f)
+
+    @property
+    def raw_data(self) -> Dict[str, Any]:
+        """Get raw YAML data for direct access to scene-level config."""
+        return self._data
 
     @property
     def scene_id(self) -> str:

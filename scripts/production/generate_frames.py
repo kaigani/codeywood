@@ -3,15 +3,18 @@
 Generate production frames from a shot list YAML.
 
 Usage:
-    python generate_frames.py --shot-list path/to/shots.yaml [--output-dir path/to/output]
-    python generate_frames.py --shot-list path/to/shots.yaml --shot 1
-    python generate_frames.py --shot-list path/to/shots.yaml --all
+    python generate_frames.py --scene PRODUCTION/EP01/sc03 --shot 1
+    python generate_frames.py --scene PRODUCTION/EP01/sc03 --all
+    python generate_frames.py --shot-list path/to/shots.yaml --all  # legacy
 
 Examples:
-    # Generate all required frames for SC02
-    python generate_frames.py --shot-list shot_lists/sc02_shots.yaml --all
+    # Generate all required frames for SC03 (new layout)
+    python generate_frames.py --scene PRODUCTION/EP01/sc03 --all
 
     # Generate specific shot
+    python generate_frames.py --scene PRODUCTION/EP01/sc03 --shot 3
+
+    # Legacy: specify shot list directly
     python generate_frames.py --shot-list shot_lists/sc02_shots.yaml --shot 3
 """
 
@@ -19,8 +22,8 @@ import argparse
 import sys
 from pathlib import Path
 
-# Add parent to path for imports
-sys.path.insert(0, str(Path(__file__).parent))
+# Add scripts/ to path for shared lib imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from lib.config import load_config, find_project_root
 from lib.shot_list import load_shot_list
@@ -69,13 +72,16 @@ def main():
         epilog=__doc__,
     )
     parser.add_argument(
-        "--shot-list", "-s",
-        required=True,
-        help="Path to shot list YAML file",
+        "--scene", "-s",
+        help="Path to scene directory (e.g., PRODUCTION/EP01/sc03). Auto-finds shot_list.yaml, frames/ within.",
+    )
+    parser.add_argument(
+        "--shot-list",
+        help="Path to shot list YAML file (legacy, use --scene instead)",
     )
     parser.add_argument(
         "--output-dir", "-o",
-        help="Output directory (defaults to {scene_id}_outputs/frames)",
+        help="Output directory (defaults to scene/frames/)",
     )
     parser.add_argument(
         "--shot",
@@ -93,24 +99,42 @@ def main():
     )
     args = parser.parse_args()
 
+    if not args.scene and not args.shot_list:
+        parser.print_help()
+        print("\nSpecify --scene or --shot-list")
+        sys.exit(1)
+
     # Load configuration
     try:
         if args.project:
             project_root = Path(args.project)
         else:
-            project_root = find_project_root(Path(args.shot_list).parent)
+            search_start = Path(args.scene or args.shot_list).parent if (args.scene or args.shot_list) else Path.cwd()
+            project_root = find_project_root(search_start)
         config = load_config(project_root)
     except FileNotFoundError as e:
         print(f"Error: {e}")
         sys.exit(1)
 
-    # Load shot list
-    shot_list_path = Path(args.shot_list)
-    if not shot_list_path.is_absolute():
-        # Try relative to project VISUAL_PRODUCTION
-        alt_path = project_root / "VISUAL_PRODUCTION" / args.shot_list
-        if alt_path.exists():
-            shot_list_path = alt_path
+    # Resolve shot list path
+    if args.scene:
+        scene_path = Path(args.scene)
+        if not scene_path.is_absolute():
+            scene_path = project_root / args.scene
+        shot_list_path = scene_path / "shot_list.yaml"
+    else:
+        shot_list_path = Path(args.shot_list)
+        if not shot_list_path.is_absolute():
+            for alt_base in ["PRODUCTION", "VISUAL_PRODUCTION"]:
+                alt_path = project_root / alt_base / args.shot_list
+                if alt_path.exists():
+                    shot_list_path = alt_path
+                    break
+        scene_path = shot_list_path.parent
+
+    if not shot_list_path.exists():
+        print(f"Error: Shot list not found: {shot_list_path}")
+        sys.exit(1)
 
     try:
         shot_list = load_shot_list(shot_list_path, config)
@@ -121,6 +145,8 @@ def main():
     # Determine output directory
     if args.output_dir:
         output_dir = Path(args.output_dir)
+    elif args.scene:
+        output_dir = scene_path / "frames"
     else:
         output_dir = project_root / "VISUAL_PRODUCTION" / f"{shot_list.scene_id}_outputs" / "frames"
 

@@ -61,7 +61,7 @@ Medium shot, @Element1 crouches at the wall and pries at loose mortar with a bla
 her jaw clenched with effort, knuckles white on the handle,
 dust particles drift in wrong-blue moonlight from the barred window,
 practical lantern light flickers on her face,
-no spoken dialogue, only the scrape of metal on stone and her labored breathing,
+No talking, characters are silent, only the scrape of metal on stone and her labored breathing,
 slow push-in on her hands
 ```
 
@@ -70,19 +70,21 @@ slow push-in on her hands
 **CRITICAL**: Kling and similar models tend to invent nonsense dialogue if not explicitly told otherwise.
 
 **Always include one of**:
-- `no spoken dialogue` - Complete silence from character
+- `No talking, characters are silent` - Complete silence (MOST EFFECTIVE)
 - `wordless vocalizations only` - Grunts, sighs, gasps allowed
 - `[CHARACTER] says '[EXACT DIALOGUE]'` - Specific scripted speech
+
+**Note**: "no spoken dialogue" was found to be less effective. Use "No talking, characters are silent" instead.
 
 **Sound Direction Options**:
 
 | Type | Prompt Language |
 |------|-----------------|
-| Silent character | "no spoken dialogue, silent" |
-| Effort sounds | "wordless grunts of effort as she digs" |
-| Breathing | "her breathing quickens, no words" |
-| Reaction sounds | "sharp intake of breath, no dialogue" |
-| Environmental only | "only ambient sounds, no character speech" |
+| Silent character | "No talking, characters are silent" |
+| Effort sounds | "wordless grunts of effort, no talking" |
+| Breathing | "her breathing quickens, no talking" |
+| Reaction sounds | "sharp intake of breath, characters are silent" |
+| Environmental only | "only ambient sounds, no talking" |
 | Scripted dialogue | "she whispers 'It's here'" |
 
 ### 4. ENVIRONMENTAL SOUND DIRECTION
@@ -100,7 +102,7 @@ Even without custom voice, describe the soundscape:
 ambient dripping water echoes in the corridor,
 her soft footsteps on wet stone,
 the creak of an iron door hinge,
-no spoken dialogue
+No talking, characters are silent
 ```
 
 ### 5. ESTABLISHING SHOTS: Set the Stage
@@ -207,11 +209,12 @@ For each shot, ensure:
 | Issue | Symptom | Fix |
 |-------|---------|-----|
 | Rushed feeling | Too much action per clip | Add establishing/detail shots |
-| Invented dialogue | Character appears to speak nonsense | Add "no spoken dialogue" |
+| Invented dialogue | Character appears to speak nonsense | Add "No talking, characters are silent" |
 | Confusing action | Character does unexpected things | More explicit body direction |
 | Flat audio | Generic ambient sounds | Specific environmental sound direction |
 | Jarring cuts | Transitions feel abrupt | Add transition/breathing shots |
 | Lost geography | Viewer confused about location | More establishing shots |
+| Over-produced dialogue | Too many clips/compositions for enclosed scene | Use Scene Type Production Guide; fewer clips, longer durations, restricted shot repertoire |
 
 ## Example: SC02 Revision Notes
 
@@ -223,7 +226,7 @@ Original issue: Scene felt rushed, needed more establishing and breathing room.
 3. Add corridor atmosphere shot before Mars enters frame (3s)
 4. Add close-up on her face as she scans the cell (2s)
 5. Add detail shot on the blade working the mortar (3s)
-6. All prompts include "no spoken dialogue" or specific sounds
+6. All prompts include "No talking, characters are silent" or specific sounds
 
 **Sound direction added**:
 - "her steady breathing, no words"
@@ -243,6 +246,9 @@ Before generating video clips:
 - [ ] Character actions include body language details
 - [ ] Transitions are planned, not assumed
 - [ ] Total duration feels appropriate (not rushed)
+- [ ] Clip count matches scene type target (see Scene Type Production Guide)
+- [ ] Dialogue scenes use restricted shot repertoire (OTS, two-shot, singles)
+- [ ] Frame reuse strategy identified (4-6 base compositions, not unique per shot)
 
 ## Frame Validation Gate (CRITICAL)
 
@@ -462,6 +468,163 @@ that visible state.
 
 ---
 
+## Multi-Shot vs Single-Shot Strategy
+
+### Decision Rule
+
+| Condition | Strategy | Start Frame |
+|-----------|----------|-------------|
+| **Same location, continuous action** | Multi-shot + extend from last frame | First clip only |
+| **Location change** | New clip (single or multi-shot) | Fresh start frame |
+| **Time jump** | New clip | Fresh start frame |
+
+**Same-location scenes**: All clips after the first extend from the last frame of the
+previous clip. Elements provide character and location consistency. Shot frames serve as
+**element references** (pose/composition guides), NOT as start frames.
+
+### Asset Requirements by Scene Type
+
+| Scene Type | Elements | Start Frame | Shot Frames Used As |
+|------------|----------|-------------|---------------------|
+| Single-location dialogue | Chars + Location | First clip only, then extend | Element `reference_image_urls` |
+| Single-location action | Chars + Location | First clip only, then extend | Element `reference_image_urls` |
+| Multi-location travel | Chars (location changes per segment) | Per location change | Start frames + element refs |
+| Montage / quick cuts | Chars only | Per clip | Start frames |
+
+### Element Structure for Multi-Shot
+
+Each Kling element has two parts:
+- `frontal_image_url`: Identity sheet (characters) or establishing shot (location) — **stays constant across all clips**
+- `reference_image_urls`: Pose-specific shot frames — **changes per clip**
+
+For a given clip, each character's references should include the shot frames showing
+the poses/compositions that character will inhabit in that clip's multi-prompt cuts.
+
+**Example — 3 elements for a single-location dialogue scene:**
+
+```
+Element 1 (Character A):
+  frontal: character_a_identity_sheet.png     # constant
+  refs:    [shot05_opens_book.png,             # pose in cut 1
+            shot06_recoils.png]                # pose in cut 2
+
+Element 2 (Character B):
+  frontal: character_b_identity_sheet.png     # constant
+  refs:    [shot08_emerges.png]               # pose in this clip
+
+Element 3 (Location):
+  frontal: shot01_establish.png               # constant (room overview)
+  refs:    [shot15_window_detail.png]          # key architectural feature
+```
+
+### Multi-Shot Clip Design
+
+When grouping shots into multi-prompt clips for same-location scenes:
+1. **Max duration**: 10s per clip (Kling v3 Pro limit)
+2. **Group by dramatic beat**: Shots that share characters and flow naturally
+3. **First prompt must match start frame**: The start frame is either a generated shot frame (clip 1) or the last frame of the previous clip (clips 2+)
+4. **Subsequent prompts use CUT to: prefix**: Signals the model to shift framing/composition
+5. **Element refs guide each cut**: Include shot frames for poses in each prompt
+
+### Location Element
+
+For same-location scenes, define a location element to provide environmental consistency:
+- **Frontal**: Wide establishing shot showing the full space
+- **References**: Key architectural details, different angles, important features (window, door, etc.)
+
+This is especially important when the camera moves to different areas of the same room
+or when specific set details (like a window or doorway) are critical to the action.
+
+---
+
+## Scene Type Production Guide
+
+**SC03 Debrief Lesson**: A 86s single-set dialogue scene was produced with 25 shots / 18 clips (avg 4.8s/clip). This is action-scene pacing applied to a dialogue scene. The video model struggled with the volume of varied compositions in an enclosed space. Dialogue scenes need fewer, longer clips with a restricted shot repertoire.
+
+### Pacing Targets by Scene Type
+
+| Scene Type | Clip Count | Avg Clip Duration | Shots per 10s | Shot Types |
+|------------|-----------|-------------------|---------------|------------|
+| Dialogue (single-set) | 6-8 | 8-10s | 0.7-1.0 | OTS, two-shot, singles, establish |
+| Dialogue (multi-set) | 8-12 | 6-8s | 1.0-1.5 | Same + location establishes |
+| Action (chase/fight) | 10-15 | 3-5s | 2.0-3.0 | Wide, medium, ECU, detail, POV |
+| Action (contained) | 6-10 | 4-6s | 1.5-2.0 | Medium, close, detail |
+| Montage / transition | 4-8 | 3-4s | 2.0-3.0 | Varied, poetic |
+| Establish / atmosphere | 2-4 | 5-8s | 0.5-1.0 | Wide, detail |
+
+**Clip count heuristic:**
+- Dialogue: max clips = scene_duration / 10
+- Action: max clips = scene_duration / 5
+- Max unique compositions = clips / 2 + 1
+
+### Dialogue Scene Production Rules
+
+For single-set dialogue scenes (the most common and hardest to get right):
+
+1. **Fewer, longer clips**: Push toward maximum clip duration (10s for Kling v3 Pro). A 90s dialogue scene = 6-8 clips, not 15-18.
+
+2. **Restricted shot repertoire** (max 6-7 base compositions):
+   - Establishing wide (1 clip, opening)
+   - Two-shot medium (the workhorse — majority of clips)
+   - Over-the-shoulder A (A's face, B's shoulder foreground)
+   - Over-the-shoulder B (B's face, A's shoulder foreground)
+   - Single close-up A (1-2 key emotional beats only)
+   - Single close-up B (1-2 key emotional beats only)
+   - Closing wide (optional bookend)
+
+3. **Frame reuse strategy**: Generate 4-6 base composition frames, then reuse or adjust with Nano Banana Pro (`image_urls` reference mode) for slight variations (expression, gaze, hand position). Do NOT generate a unique frame for every shot.
+
+4. **Multi-prompt for shot/reverse-shot**: Within a single clip, use multi-prompt to cut between OTS-A and OTS-B. One 10s clip with two 5s prompts covers more ground than two separate 3s clips.
+
+5. **Minimize hard cuts**: Reserve for:
+   - The establishing shot (clip 1)
+   - 1-2 key emotional turning points
+   - The closing shot
+   - Everything else extends from previous clip's last frame
+
+6. **No standalone ECU/detail clips**: In dialogue, avoid dedicated close-up clips for objects or body details. These fragment the scene. Handle ECU moments as cuts within multi-prompt clips instead.
+
+### SC03 Before/After Example
+
+```
+SC03 ACTUAL (over-produced):
+  25 shots → 18 clips → 86s
+  9 different shot types, 25 unique compositions
+  Avg clip: 4.8s | Hard cuts: 8 | Pacing: ~3 shots/10s
+
+  Shot types used: establish, entrance, ECU-book, opens-book, recoils,
+  spins, reveal, blade, confrontation, truth-CU, throat-CU, gut-punch,
+  silence-two-shot, window-detail, studies-window, calculation, decision,
+  climbs, half-through, apology, drop, left-behind, dust-detail, closing
+
+SC03 REVISED (dialogue-appropriate):
+  8 shots → 7 clips → ~75s
+  6 base compositions, 4 reused with adjustments
+  Avg clip: 10.7s | Hard cuts: 2 | Pacing: ~1 shot/10s
+
+  Clip 1: Establish + Entrance (10s) — wide room, Mars enters [shot frame]
+  Clip 2: Mars alone with book (10s) — medium single, discovers book [extend]
+  Clip 3: Jonah reveal + confrontation (10s) — two-shot, he emerges [hard cut]
+  Clip 4: Truth exchange (10s) — OTS Mars→Jonah, the "Yes" moment [extend]
+  Clip 5: The weight lands (8s) — OTS Jonah→Mars, silence [extend]
+  Clip 6: Window + calculation (10s) — two-shot, she decides [hard cut]
+  Clip 7: Escape + aftermath (10s) — she climbs, he's alone [extend]
+
+  Shot repertoire: establish, medium-single, two-shot, OTS-A, OTS-B, wide-closing
+  Frame reuse: two-shot frame reused for clips 3-5 with Nano Banana adjustments
+```
+
+### Frame Reuse with Nano Banana Pro
+
+Instead of generating 25 unique frames, generate 4-6 base composition frames and create variations:
+
+1. Generate base frames: one per shot type (establish, two-shot, OTS-A, OTS-B, close-A, close-B)
+2. For clips sharing the same composition, reuse the base frame directly OR use Nano Banana Pro with `image_urls` to create slight variations (shifted expression, adjusted gaze, different hand position)
+3. Two-shot and OTS frames can serve multiple clips with only prompt changes
+4. Benefits: visual consistency, reduced cost, less model confusion from varied compositions
+
+---
+
 ## Agentic Workflow Implementation
 
 **How Claude executes the agentic clip generation loop:**
@@ -472,7 +635,7 @@ that visible state.
 # For each clip in sequence:
 
 # 1. Generate single clip
-python3 scripts/production/generate_clips.py --clip-def sc02_clips.yaml --clip 1
+python3 scripts/production/generate_clips.py --scene PRODUCTION/EP01/sc02 --clip 1
 
 # 2. Extract last frame for review
 ffmpeg -sseof -0.1 -i clips/sc02_clip01.mp4 -frames:v 1 clips/clip01_last_frame.png
@@ -486,10 +649,10 @@ ffmpeg -sseof -0.1 -i clips/sc02_clip01.mp4 -frames:v 1 clips/clip01_last_frame.
 # - Decide: proceed / adjust / bridge / use last_frame
 
 # 5. If adjustments needed, update clip definition
-# (Use Edit tool on sc02_clips.yaml)
+# (Use Edit tool on PRODUCTION/EP01/sc02/clip_definitions.yaml)
 
 # 6. Proceed to next clip
-python3 scripts/production/generate_clips.py --clip-def sc02_clips.yaml --clip 2
+python3 scripts/production/generate_clips.py --scene PRODUCTION/EP01/sc02 --clip 2
 ```
 
 ### Claude's Review Protocol
@@ -533,6 +696,10 @@ ASSESSMENT: Aligned ✓
 
 ## Version History
 
+- **2026-02-05**: Dialogue control phrasing update
+  - Changed from "no spoken dialogue" to "No talking, characters are silent"
+  - More effective at preventing Kling from inventing nonsense dialogue
+
 - **2026-02-05**: Agentic Clip Generation Loop (non-deterministic workflow)
   - Clips generated ONE AT A TIME with Claude review after each
   - Last frame extraction and review before proceeding to next clip
@@ -557,3 +724,10 @@ ASSESSMENT: Aligned ✓
   - Dialogue control (prevent invented speech)
   - Sound direction guidance
   - Explicit direction templates
+
+- **2026-02-06**: Scene Type Production Guide (SC03 debrief)
+  - Added dialogue scene production rules: fewer clips, longer durations, restricted shot repertoire
+  - Added clip count and duration targets per scene type
+  - Added frame reuse strategy with Nano Banana Pro
+  - SC03 retrospective: 25 shots / 18 clips was over-produced for dialogue; target is 6-8 clips
+  - Added clip count heuristic: dialogue = duration/10, action = duration/5

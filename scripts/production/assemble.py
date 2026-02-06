@@ -21,8 +21,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import List, Optional
 
-# Add parent to path for imports
-sys.path.insert(0, str(Path(__file__).parent))
+# Add scripts/ to path for shared lib imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from lib.config import find_project_root
 from lib.fal_api import concatenate_clips
@@ -107,9 +107,11 @@ def main():
         import yaml
         clips_path = Path(args.clips)
         if not clips_path.is_absolute():
-            alt_path = project_root / "VISUAL_PRODUCTION" / args.clips
-            if alt_path.exists():
-                clips_path = alt_path
+            for alt_base in ["PRODUCTION", "VISUAL_PRODUCTION"]:
+                alt_path = project_root / alt_base / args.clips
+                if alt_path.exists():
+                    clips_path = alt_path
+                    break
 
         if not clips_path.exists():
             print(f"Error: Clip definitions not found: {clips_path}")
@@ -131,7 +133,21 @@ def main():
 
         # Default clips directory
         if not args.clips_dir:
-            clips_dir = project_root / "VISUAL_PRODUCTION" / f"{scene_id}_outputs" / "clips"
+            # Try new layout first, fall back to legacy
+            for base in ["PRODUCTION", "VISUAL_PRODUCTION"]:
+                candidate = project_root / base
+                if candidate.exists():
+                    if base == "PRODUCTION":
+                        # New layout: find scene in EP*/sc*
+                        for ep_dir in sorted(candidate.iterdir()):
+                            scene_dir = ep_dir / scene_id
+                            if scene_dir.exists():
+                                clips_dir = scene_dir / "clips"
+                                break
+                    else:
+                        clips_dir = candidate / f"{scene_id}_outputs" / "clips"
+                    if clips_dir:
+                        break
 
     if args.clips_dir:
         clips_dir = Path(args.clips_dir)
@@ -179,7 +195,11 @@ def main():
     else:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         output_name = f"{scene_id}_complete" if not clip_ids else output_name
-        output_dir = project_root / "VISUAL_PRODUCTION" / f"{scene_id}_outputs" / "assembly"
+        # Try new layout first
+        if clips_dir and "PRODUCTION" in str(clips_dir):
+            output_dir = clips_dir.parent / "assembly"
+        else:
+            output_dir = project_root / "VISUAL_PRODUCTION" / f"{scene_id}_outputs" / "assembly"
         output_dir.mkdir(parents=True, exist_ok=True)
         output_path = output_dir / f"{output_name}_{timestamp}.mp4"
 
