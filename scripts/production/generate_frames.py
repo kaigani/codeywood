@@ -27,11 +27,11 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from lib.config import load_config, find_project_root
 from lib.shot_list import load_shot_list
-from lib.fal_api import FalGenerator
+from lib.generator import Generator
 
 
 def generate_shot_frame(
-    generator: FalGenerator,
+    generator: Generator,
     shot_list,
     shot: dict,
 ) -> Path:
@@ -50,8 +50,8 @@ def generate_shot_frame(
     for ref in refs:
         print(f"  - {ref.name}")
 
-    # Build prompt
-    prompt = shot_list.build_shot_prompt(shot)
+    # Build prompt (no SFX for stills — causes text burn-in)
+    prompt = shot_list.build_shot_prompt(shot, include_sfx=False)
 
     # Determine lighting mode from shot or scene
     lighting = shot.get("lighting", shot_list.get_lighting_mode())
@@ -155,7 +155,7 @@ def main():
 
     # Initialize generator
     try:
-        generator = FalGenerator(config, output_dir)
+        generator = Generator(config, output_dir)
     except (ImportError, EnvironmentError) as e:
         print(f"Error: {e}")
         sys.exit(1)

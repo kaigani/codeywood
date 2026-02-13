@@ -16,6 +16,7 @@ Examples:
 """
 
 import argparse
+import json
 import sys
 from pathlib import Path
 from typing import Optional
@@ -25,7 +26,8 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from lib.config import load_config, find_project_root
 from lib.shot_list import load_shot_list, load_clip_definitions
-from lib.fal_api import FalGenerator, extract_last_frame
+from lib.generator import Generator
+from lib.ffmpeg import extract_last_frame
 
 
 def find_frame_for_shot(frames_dir: Path, shot_id: int) -> Optional[Path]:
@@ -75,12 +77,13 @@ def find_clip_output(clips_dir: Path, clip_id: int, output_name: Optional[str] =
 
 
 def generate_clip(
-    generator: FalGenerator,
+    generator: Generator,
     clip_defs,
     clip: dict,
     frames_dir: Path,
     clips_dir: Path,
     project_root: Path = None,
+    preflight: bool = False,
 ) -> Optional[Path]:
     """Generate a single video clip."""
     clip_id = clip.get("id")
@@ -101,10 +104,16 @@ def generate_clip(
         shot_id = start_config.get("shot_id")
         start_frame = find_frame_for_shot(frames_dir, shot_id)
         if not start_frame:
-            print(f"✗ Error: Frame for shot {shot_id} not found in {frames_dir}")
-            print("  Run generate_frames.py first")
-            return None
-        print(f"Start frame: Shot {shot_id} -> {start_frame.name}")
+            if preflight:
+                # Use placeholder path in preflight mode
+                start_frame = frames_dir / f"shot{shot_id:02d}_PENDING.png"
+                print(f"Start frame: Shot {shot_id} -> [NOT YET GENERATED]")
+            else:
+                print(f"✗ Error: Frame for shot {shot_id} not found in {frames_dir}")
+                print("  Run generate_frames.py first")
+                return None
+        else:
+            print(f"Start frame: Shot {shot_id} -> {start_frame.name}")
 
     elif strategy == "last_frame":
         prev_clip_id = start_config.get("clip_id")
@@ -113,39 +122,57 @@ def generate_clip(
         prev_output_name = prev_clip_def.get("output_name") if prev_clip_def else None
         prev_clip = find_clip_output(clips_dir, prev_clip_id, prev_output_name)
         if not prev_clip:
-            print(f"✗ Error: Clip {prev_clip_id} not found for last_frame extraction")
-            if prev_output_name:
-                print(f"  Searched for output_name: {prev_output_name}")
-            return None
-
-        # Extract last frame
-        extracted_path = clips_dir / f"clip{clip_id:02d}_start_frame.png"
-        start_frame = extract_last_frame(prev_clip, extracted_path)
-        if not start_frame:
-            print(f"✗ Error: Failed to extract last frame from clip {prev_clip_id}")
-            return None
-        print(f"Start frame: Last frame of clip {prev_clip_id} ({prev_clip.name})")
+            if preflight:
+                # Use placeholder path in preflight mode
+                start_frame = clips_dir / f"clip{prev_clip_id:02d}_last_frame_PENDING.png"
+                print(f"Start frame: Last frame of clip {prev_clip_id} -> [NOT YET GENERATED]")
+            else:
+                print(f"✗ Error: Clip {prev_clip_id} not found for last_frame extraction")
+                if prev_output_name:
+                    print(f"  Searched for output_name: {prev_output_name}")
+                return None
+        else:
+            # Extract last frame
+            extracted_path = clips_dir / f"clip{clip_id:02d}_start_frame.png"
+            start_frame = extract_last_frame(prev_clip, extracted_path)
+            if not start_frame:
+                print(f"✗ Error: Failed to extract last frame from clip {prev_clip_id}")
+                return None
+            print(f"Start frame: Last frame of clip {prev_clip_id} ({prev_clip.name})")
 
     elif strategy == "custom":
         custom_path = start_config.get("custom_path")
         start_frame = Path(custom_path)
         if not start_frame.exists():
-            print(f"✗ Error: Custom start frame not found: {custom_path}")
-            return None
-        print(f"Start frame: Custom -> {start_frame}")
+            if preflight:
+                print(f"Start frame: Custom -> {start_frame} [NOT YET GENERATED]")
+            else:
+                print(f"✗ Error: Custom start frame not found: {custom_path}")
+                return None
+        else:
+            print(f"Start frame: Custom -> {start_frame}")
 
     else:
         print(f"✗ Error: Unknown start frame strategy: {strategy}")
         return None
 
-    # Collect scene reference frames from shots referenced in this clip
+    # Collect scene reference frames
+    prompt_mode = clip_defs.get_prompt_mode(clip)
     scene_refs = []
-    for prompt_def in clip.get("prompts", []):
-        shot_ref = prompt_def.get("shot_ref")
-        if shot_ref:
-            frame = find_frame_for_shot(frames_dir, shot_ref)
+    if prompt_mode == "narrative":
+        # Narrative mode: use shots_covered for scene refs
+        for shot_id in clip.get("shots_covered", []):
+            frame = find_frame_for_shot(frames_dir, shot_id)
             if frame and frame not in scene_refs:
                 scene_refs.append(frame)
+    else:
+        # Multi-prompt mode: use shot_ref from prompts array
+        for prompt_def in clip.get("prompts", []):
+            shot_ref = prompt_def.get("shot_ref")
+            if shot_ref:
+                frame = find_frame_for_shot(frames_dir, shot_ref)
+                if frame and frame not in scene_refs:
+                    scene_refs.append(frame)
     print(f"Scene refs: {len(scene_refs)} frames")
 
     # Get characters
@@ -209,15 +236,20 @@ def generate_clip(
         print("✗ Error: No prompts defined for clip")
         return None
 
-    print(f"Prompts: {len(prompts)} cuts")
+    if prompt_mode == "narrative":
+        print(f"Prompt mode: narrative ({len(prompts[0]['prompt'])} chars)")
+    else:
+        print(f"Prompts: {len(prompts)} cuts")
 
-    # Generate clip
+    # Generate clip (or preflight)
     return generator.generate_video_clip(
         start_frame=start_frame,
         prompts=prompts,
         characters=characters,
         scene_refs=scene_refs,
         output_name=output_name,
+        preflight=preflight,
+        prompt_mode=prompt_mode,
         **kwargs,
     )
 
@@ -261,9 +293,9 @@ def main():
 
     # Agentic primitives flags
     parser.add_argument(
-        "--dry-run",
+        "--preflight", "--dry-run",
         action="store_true",
-        help="Preview what would be generated without executing",
+        help="Write preflight inspection JSON instead of calling FAL API",
     )
     parser.add_argument(
         "--force",
@@ -369,10 +401,13 @@ def main():
 
     # Initialize generator
     try:
-        generator = FalGenerator(config, output_dir)
+        generator = Generator(config, output_dir, preflight=args.preflight)
     except (ImportError, EnvironmentError) as e:
         print(f"Error: {e}")
         sys.exit(1)
+
+    if args.preflight:
+        print("\n*** PREFLIGHT MODE — no API calls will be made ***\n")
 
     # Determine which clips to generate
     if args.clip:
@@ -400,16 +435,72 @@ def main():
             frames_dir=frames_dir,
             clips_dir=output_dir,
             project_root=project_root,
+            preflight=args.preflight,
         )
         results[f"clip_{clip_id}"] = result
 
     # Summary
+    mode_label = "PREFLIGHT COMPLETE" if args.preflight else "GENERATION COMPLETE"
     print("\n" + "="*70)
-    print("GENERATION COMPLETE")
+    print(mode_label)
     print("="*70)
     for name, path in results.items():
         status = "✓" if path else "✗"
         print(f"  {status} {name}: {path}")
+
+    # Preflight: write scene-level summary and print cost totals
+    if args.preflight:
+        clip_summaries = []
+        total_cost = 0.0
+        total_duration = 0
+        warnings = []
+
+        for name, path in results.items():
+            if path and Path(path).exists():
+                with open(path) as f:
+                    pf = json.load(f)
+                analysis = pf.get("analysis", {})
+                clip_summary = {
+                    "clip": name,
+                    "output_name": pf.get("output_name"),
+                    "duration_s": analysis.get("total_duration_s", 0),
+                    "cost_usd": analysis.get("estimated_cost_usd", 0),
+                    "prompt_mode": analysis.get("prompt_mode", "multi_prompt"),
+                    "any_over_limit": analysis.get("any_over_limit", False),
+                }
+                if analysis.get("prompt_mode") == "narrative":
+                    clip_summary["prompt_chars"] = analysis.get("prompt_char_count", 0)
+                else:
+                    clip_summary["num_prompts"] = analysis.get("num_prompts", 0)
+                clip_summaries.append(clip_summary)
+                total_cost += analysis.get("estimated_cost_usd", 0)
+                total_duration += analysis.get("total_duration_s", 0)
+                if analysis.get("any_over_limit"):
+                    warnings.append(f"{name}: prompt over char limit")
+                files = pf.get("files", {})
+                if not files.get("all_exist", True):
+                    warnings.append(f"{name}: missing files: {files.get('missing', [])}")
+
+        summary = {
+            "scene_id": scene_id,
+            "total_clips": len(clip_summaries),
+            "total_duration_s": total_duration,
+            "total_estimated_cost_usd": round(total_cost, 2),
+            "clips": clip_summaries,
+            "warnings": warnings,
+        }
+
+        summary_path = output_dir / f"{scene_id}_preflight_summary.json"
+        with open(summary_path, "w") as f:
+            json.dump(summary, f, indent=2)
+
+        print(f"\n  Total duration: {total_duration}s")
+        print(f"  Total estimated cost: ${total_cost:.2f}")
+        if warnings:
+            print(f"  Warnings: {len(warnings)}")
+            for w in warnings:
+                print(f"    - {w}")
+        print(f"\n  Summary: {summary_path}")
 
     # Return non-zero if any failed
     if None in results.values():

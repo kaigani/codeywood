@@ -65,16 +65,31 @@ No talking, characters are silent, only the scrape of metal on stone and her lab
 slow push-in on her hands
 ```
 
-### 3. DIALOGUE CONTROL: Prevent Invented Speech
+### 3. DIALOGUE CONTROL: Supply or Suppress
 
-**CRITICAL**: Kling and similar models tend to invent nonsense dialogue if not explicitly told otherwise.
+**CRITICAL**: Kling and similar models WILL invent dialogue when a person is the focal point of a shot, regardless of silence directives. The degree of invention depends on the shot:
 
-**Always include one of**:
-- `No talking, characters are silent` - Complete silence (MOST EFFECTIVE)
-- `wordless vocalizations only` - Grunts, sighs, gasps allowed
-- `[CHARACTER] says '[EXACT DIALOGUE]'` - Specific scripted speech
+**When silence directives work**:
+- Wide shots where the character is small in frame
+- Action shots with strong physical movement (running, climbing, fighting)
+- Detail shots focused on objects, not faces
+- Shots where the character's mouth is not visible
 
-**Note**: "no spoken dialogue" was found to be less effective. Use "No talking, characters are silent" instead.
+**When the model will insert dialogue anyway**:
+- Close-ups on a character's face
+- Medium shots with minimal action (standing, waiting, thinking)
+- Two-shots where characters face each other
+- Any shot where a character is clearly the emotional focal point
+
+**Strategy: Supply dialogue rather than fight the model**:
+- Internal monologue: `@Element1 whispers to herself "Almost there..."`
+- Character-to-character: `@Element1 says "I won't let you take it"`
+- Breathing/effort: `@Element1 gasps for breath between words`
+- When silence IS achievable (wide/action shots): `No talking, characters are silent`
+
+**Fallback for close shots where you want silence**: Describe non-verbal mouth actions explicitly — "jaw clenched shut", "bites her lip", "presses lips together" — to give the model something to do with the mouth besides invent speech.
+
+**Note**: "no spoken dialogue" is less effective than "No talking, characters are silent", but even the latter fails on character close-ups. Supply dialogue or internal monologue instead.
 
 **Sound Direction Options**:
 
@@ -694,6 +709,99 @@ ASSESSMENT: Aligned ✓
 - **Shot List Generator**: Creates shot list; Director reviews for pacing
 - **Storyboard**: Visual reference; Director interprets for video timing
 
+---
+
+## LTX-2 / ComfyUI Backend Prompting Guide
+
+When using the ComfyUI backend (LTX-2 19B via `ltx2-i2v`), prompting requires a different approach than Kling. LTX-2 has no element system, no multi-prompt, and no audio generation — but it's free and runs on local GPU.
+
+### The "Complete Story" Approach
+
+LTX-2 requires a **narrative approach** — not a list of elements but a cohesive mini-screenplay.
+
+**Single Paragraph Structure**: Write one continuous, present-tense paragraph that describes the scene from beginning to end. Think of it as a mini screenplay compressed into a single paragraph.
+
+**Six-Part Structure**:
+1. **Scene**: Setting, location, lighting, atmosphere
+2. **Subject/Action**: Who is doing what, with specific physical movements
+3. **Camera/Lens**: Camera behavior, angle, focal length
+4. **Style**: Visual quality, film stock reference, color grading
+5. **Motion/Time**: Temporal flow, speed changes, duration markers
+6. **Guardrails**: What NOT to do (negative prompt handles most of this)
+
+### Show, Don't Tell
+
+Describe **physical movements** instead of emotional labels.
+
+| Bad (emotional label) | Good (physical movement) |
+|----------------------|--------------------------|
+| "She is nervous" | "Her fingers drum against the book cover, knuckles whitening" |
+| "He looks suspicious" | "His eyes narrow, chin drops, shoulders angle toward the door" |
+| "The scene is tense" | "Both figures freeze mid-step, the only motion is dust drifting through lamplight" |
+
+### Temporal Flow and Connectors
+
+Use words like **"then," "as," "slowly," "suddenly," "meanwhile"** to connect actions into a smooth continuous flow. Without these, LTX-2 may render all described actions simultaneously rather than sequentially.
+
+**Bad**: "A woman runs. Birds fly. The flag waves."
+**Good**: "A woman breaks into a sprint along the wall, then as she reaches the corner, a flock of birds bursts upward from the palm tree while the flag above snaps hard in a sudden gust."
+
+### Camera and Lens Language
+
+Use specific cinematography terms to control camera behavior:
+
+| Term | Effect |
+|------|--------|
+| `slow pan left` | Horizontal camera sweep |
+| `dolly in` / `push in` | Camera physically moves closer |
+| `low angle` | Camera below subject looking up |
+| `tracking shot` | Camera follows subject movement |
+| `static camera` | Locked-off, no camera movement |
+| `85mm` / `35mm` | Focal length (tighter vs wider) |
+| `shallow depth of field` | Background blur |
+| `rack focus` | Shift focus between foreground/background |
+
+### Audio-Video Sync
+
+Describe audio events alongside visual actions to improve temporal coherence:
+- "Steam bursts from the pipe as she ducks beneath it"
+- "The door slams shut and she flinches at the sound"
+- "Waves crash against stone in rhythm with her footsteps"
+
+### Composition and Realism Tips
+
+1. **Start with close-ups, move outward**: Beginning a scene on a tight framing enhances character/material consistency. Wider shots can reduce likeness fidelity.
+
+2. **Avoid complex physics**: Don't ask for non-linear or chaotic movements (juggling, swirling liquids, complex particle effects). These create artifacts. Stick to natural, linear motion paths.
+
+3. **Environmental detail matters**: Describe lighting, textures, and atmospheric effects explicitly — "soft rim light catches the edge of her jaw," "mist clings to the stone floor," "golden hour warmth on weathered wood."
+
+4. **Limit scene complexity**: Fewer characters and objects = better results. One or two subjects maximum. Background crowds will degrade.
+
+### LTX-2 vs Kling Prompt Translation
+
+When the Generator simplifies a Kling prompt for LTX-2, it:
+- Strips `@ElementN` tags (no element system)
+- Removes `CUT to:` prefixes (no multi-prompt cuts)
+- Strips timecode markers `[0:00-0:03]` (harmless but noisy)
+- Concatenates multi-prompt entries with ". " separator
+
+**But automatic simplification isn't enough for best results.** When specifically targeting LTX-2, rewrite prompts to follow the narrative paragraph structure above rather than relying on auto-simplified Kling prompts.
+
+### LTX-2 Known Limitations
+
+| Limitation | Workaround |
+|-----------|------------|
+| No character identity sheets | Rely on start frame for character appearance |
+| No multi-prompt (cut within clip) | Write single continuous paragraph with temporal connectors |
+| No audio generation | Post-production audio or accept silent clips |
+| Max ~10s (257 frames) | Keep clips under 10s; split longer sequences |
+| Reduced likeness on wide shots | Start tight, pull out; or accept lower consistency |
+| Complex physics = artifacts | Simplify motion, avoid chaotic movements |
+| ALL CAPS words mispronounced | Never use ALL CAPS in dialogue — LTX-2 tokenizes them differently and produces garbled speech (e.g. "MAP" → "May-Ape"). Use lowercase or title case only |
+
+---
+
 ## Version History
 
 - **2026-02-05**: Dialogue control phrasing update
@@ -724,6 +832,15 @@ ASSESSMENT: Aligned ✓
   - Dialogue control (prevent invented speech)
   - Sound direction guidance
   - Explicit direction templates
+
+- **2026-02-09**: LTX-2 / ComfyUI Backend Prompting Guide
+  - Added "Complete Story" narrative prompting approach for LTX-2
+  - Six-part prompt structure: Scene, Subject/Action, Camera/Lens, Style, Motion/Time, Guardrails
+  - Show Don't Tell: physical movements over emotional labels
+  - Temporal connectors for sequential action flow
+  - Camera/lens language reference table
+  - Composition tips: start tight, avoid complex physics, limit scene complexity
+  - Known limitations and workarounds
 
 - **2026-02-06**: Scene Type Production Guide (SC03 debrief)
   - Added dialogue scene production rules: fewer clips, longer durations, restricted shot repertoire

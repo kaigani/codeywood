@@ -57,7 +57,7 @@ from typing import Optional, List, Dict, Any
 # Add scripts/ to path for shared lib imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from lib.fal_api import FalGenerator
+from lib.generator import Generator
 
 
 def validate_config(config: Dict[str, Any]) -> List[str]:
@@ -152,7 +152,7 @@ def build_config_from_args(args) -> Dict[str, Any]:
     return config
 
 
-def generate_clip(config: Dict[str, Any], dry_run: bool = False) -> Optional[Dict[str, Any]]:
+def generate_clip(config: Dict[str, Any], preflight: bool = False) -> Optional[Dict[str, Any]]:
     """Generate a video clip from configuration."""
 
     start_frame = Path(config["start_frame"])
@@ -163,37 +163,10 @@ def generate_clip(config: Dict[str, Any], dry_run: bool = False) -> Optional[Dic
     scene_refs = [Path(p) for p in config.get("scene_refs", [])]
     location_element = config.get("location_element")
 
-    # Map reference_images -> reference_image_paths for FalGenerator
+    # Map reference_images -> reference_image_paths for Generator
     for char in characters:
         if "reference_images" in char:
             char["reference_image_paths"] = char.pop("reference_images")
-
-    # Calculate total duration and cost estimate
-    total_duration = sum(p.get("duration", 5) for p in prompts)
-    # Kling v3 Pro pricing: ~$0.336 per second
-    estimated_cost = total_duration * 0.336
-
-    print(f"\n{'='*70}")
-    print("CLIP GENERATION")
-    print(f"{'='*70}")
-    print(f"Start frame: {start_frame}")
-    print(f"Output: {output_dir / output_name}")
-    print(f"Duration: {total_duration}s")
-    print(f"Prompts: {len(prompts)} cuts")
-    for i, p in enumerate(prompts):
-        print(f"  Cut {i+1} ({p.get('duration')}s): {p.get('prompt')[:60]}...")
-    print(f"Characters: {[c.get('id') for c in characters]}")
-    print(f"Scene refs: {len(scene_refs)}")
-    print(f"Estimated cost: ${estimated_cost:.2f}")
-    print(f"{'='*70}")
-
-    if dry_run:
-        print("\n[DRY RUN] Would generate clip with above parameters")
-        return {
-            "status": "dry_run",
-            "config": config,
-            "estimated_cost": estimated_cost,
-        }
 
     # Create output directory
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -204,9 +177,9 @@ def generate_clip(config: Dict[str, Any], dry_run: bool = False) -> Optional[Dic
         "paths": {},
         "assets": {},
     }
-    generator = FalGenerator(minimal_config, output_dir)
+    generator = Generator(minimal_config, output_dir, preflight=preflight)
 
-    # Generate the clip
+    # Generate the clip (or preflight)
     kwargs = {}
     if location_element:
         kwargs["location_element"] = location_element
@@ -217,12 +190,20 @@ def generate_clip(config: Dict[str, Any], dry_run: bool = False) -> Optional[Dic
         characters=characters,
         scene_refs=scene_refs,
         output_name=output_name,
+        preflight=preflight,
+        prompt_mode=config.get("prompt_mode", "multi_prompt"),
         **kwargs,
     )
 
-    if result_path:
+    if preflight and result_path:
+        return {
+            "status": "preflight",
+            "output_path": str(result_path),
+        }
+    elif result_path:
         # Build result metadata
         timestamp = datetime.now().isoformat()
+        total_duration = sum(p.get("duration", 5) for p in prompts)
         result = {
             "status": "success",
             "output_path": str(result_path),
@@ -301,9 +282,14 @@ def main():
 
     # Control flags
     parser.add_argument(
-        "--dry-run",
+        "--preflight", "--dry-run",
         action="store_true",
-        help="Preview what would be generated without executing",
+        help="Write preflight inspection JSON instead of calling FAL API",
+    )
+    parser.add_argument(
+        "--narrative",
+        action="store_true",
+        help="Use narrative prompt mode (single prompt with timestamps, not multi_prompt)",
     )
     parser.add_argument(
         "--json",
@@ -323,6 +309,8 @@ def main():
             config = json.load(f)
     elif args.start_frame:
         config = build_config_from_args(args)
+        if args.narrative:
+            config["prompt_mode"] = "narrative"
     else:
         parser.print_help()
         print("\nProvide either --config or inline arguments (--start-frame, --prompt, etc.)")
@@ -337,7 +325,7 @@ def main():
         sys.exit(1)
 
     # Generate
-    result = generate_clip(config, dry_run=args.dry_run)
+    result = generate_clip(config, preflight=args.preflight)
 
     # Output
     if args.json:

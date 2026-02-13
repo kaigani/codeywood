@@ -78,6 +78,11 @@ class ProjectConfig:
         return self._config.get("video_director", {})
 
     @property
+    def backend_config(self) -> Dict[str, Any]:
+        """Get backend configuration."""
+        return self._config.get("backend", {})
+
+    @property
     def negative_prompts(self) -> list:
         """Get global negative prompts."""
         return self._config.get("negative_prompts", [])
@@ -155,6 +160,15 @@ class ProjectConfig:
     def get_storyboard(self, scene_id: str) -> Optional[Path]:
         """Get storyboard path for a scene."""
         return self.resolve_asset_path("storyboards", scene_id)
+
+    def get_voice_ref(self, character_id: str) -> Optional[Path]:
+        """Get voice reference audio path for a character."""
+        return self.resolve_asset_path("voice_refs", character_id)
+
+    @property
+    def tts_config(self) -> Dict[str, Any]:
+        """Get TTS configuration."""
+        return self._config.get("tts", {})
 
     def build_style_prompt(self, lighting_mode: str = "night") -> str:
         """

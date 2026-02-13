@@ -86,6 +86,10 @@ class ShotList:
         """
         Resolve reference paths for a shot.
 
+        Uses per-shot refs config if present, otherwise falls back to
+        scene-level default_refs config. If neither exists, auto-includes
+        identity sheets for any characters in the shot.
+
         Args:
             shot: Shot definition dict
 
@@ -93,43 +97,66 @@ class ShotList:
             List of resolved reference paths
         """
         refs = []
-        ref_config = shot.get("refs", {})
+        ref_config = shot.get("refs", self._data.get("default_refs", {}))
+
+        # If no refs config at all, default to including identity sheets
+        include_identity = ref_config.get("include_identity", not ref_config)
+        include_location = ref_config.get("include_location", False)
 
         # Character identity sheets
-        if ref_config.get("include_identity", False):
+        if include_identity:
             for char in shot.get("characters", []):
                 identity = self.config.get_identity_sheet(char)
                 if identity:
                     refs.append(identity)
 
         # Location reference
-        if ref_config.get("include_location", False):
+        if include_location:
             location = self.get_location()
             loc_ref = self.config.get_location_ref(location)
             if loc_ref:
                 refs.append(loc_ref)
 
-        # Storyboard
-        if ref_config.get("include_storyboard", False):
+        # Storyboard — check scene-level mapping first, then config
+        storyboard_mapping = self._data.get("storyboard_mapping", {})
+        shot_id = shot.get("id")
+        storyboard_path = None
+        if storyboard_mapping and shot_id is not None:
+            for board_file, shot_ids in storyboard_mapping.items():
+                if shot_id in shot_ids:
+                    # Resolve relative to shot_list.yaml directory
+                    storyboard_path = self.yaml_path.parent / board_file
+                    break
+        if storyboard_path and storyboard_path.exists():
+            refs.append(storyboard_path)
+        elif ref_config.get("include_storyboard", False):
             storyboard = self.config.get_storyboard(self.scene_id)
             if storyboard:
                 refs.append(storyboard)
 
-        # Additional refs
+        # Additional refs — try scene-relative first, then exports-relative
         for additional in ref_config.get("additional", []):
-            path = self.config.exports_dir / additional
+            path = self.yaml_path.parent / additional
+            if not path.exists():
+                path = self.config.exports_dir / additional
             if path.exists():
                 refs.append(path)
 
         return refs
 
-    def build_shot_prompt(self, shot: Dict[str, Any], include_dialogue_control: bool = True) -> str:
+    def build_shot_prompt(
+        self,
+        shot: Dict[str, Any],
+        include_dialogue_control: bool = True,
+        include_sfx: bool = True,
+    ) -> str:
         """
         Build the full prompt for a shot.
 
         Args:
             shot: Shot definition dict
             include_dialogue_control: Whether to append dialogue control text
+            include_sfx: Whether to append SFX/sound text (False for frame gen)
 
         Returns:
             Complete prompt string
@@ -152,21 +179,39 @@ class ShotList:
                 prompt += ", non-verbal reactions only, no spoken dialogue"
             # "scripted" would have specific dialogue in the prompt already
 
-        # Build SFX line from shot sound data
+        # Build SFX line from shot sound data (skip for frame generation)
+        if not include_sfx:
+            return prompt
         sound = shot.get("sound", {})
-        sfx_parts = []
-        if sound.get("ambient"):
-            sfx_parts.append(sound["ambient"].strip())
-        if sound.get("character"):
-            sfx_parts.append(sound["character"].strip())
-        if sfx_parts:
-            prompt += f". SFX: We hear {', '.join(sfx_parts).lower()}"
+        if isinstance(sound, str):
+            # Flat string format: "SFX: Boots on wet slate, wind rush"
+            sfx_text = sound.strip()
+            if sfx_text.upper().startswith("SFX:"):
+                sfx_text = sfx_text[4:].strip()
+            if sfx_text:
+                prompt += f". SFX: We hear {sfx_text.lower()}"
+        elif isinstance(sound, dict):
+            sfx_parts = []
+            if sound.get("ambient"):
+                sfx_parts.append(sound["ambient"].strip())
+            if sound.get("character"):
+                sfx_parts.append(sound["character"].strip())
+            if sfx_parts:
+                prompt += f". SFX: We hear {', '.join(sfx_parts).lower()}"
 
         return prompt
 
     def get_required_frames(self) -> List[Dict[str, Any]]:
-        """Get shots that need frames generated (start frames for clips)."""
-        return [s for s in self.shots if s.get("priority") == "required"]
+        """Get shots that need frames generated.
+
+        Returns shots with priority 'required', or all shots if no
+        priority field is set on any shot.
+        """
+        required = [s for s in self.shots if s.get("priority") == "required"]
+        if required:
+            return required
+        # No priority fields set — return all shots
+        return list(self.shots)
 
 
 class ClipDefinitions:
@@ -209,6 +254,10 @@ class ClipDefinitions:
                 return clip
         return None
 
+    def get_prompt_mode(self, clip: Dict[str, Any]) -> str:
+        """Get prompt mode for a clip: 'narrative' or 'multi_prompt' (default)."""
+        return clip.get("prompt_mode", "multi_prompt")
+
     def get_clip_characters(self, clip: Dict[str, Any]) -> List[Dict[str, str]]:
         """
         Get character definitions for a clip.
@@ -228,11 +277,29 @@ class ClipDefinitions:
 
     def build_clip_prompts(self, clip: Dict[str, Any]) -> List[Dict[str, Any]]:
         """
-        Build prompts for a clip, resolving shot references.
+        Build prompts for a clip.
+
+        In narrative mode: returns single-item list with the full narrative prompt.
+        In multi_prompt mode: resolves shot_refs to individual prompts.
 
         Returns:
             List of {"prompt": str, "duration": int, "cut_prefix": bool} dicts
         """
+        prompt_mode = self.get_prompt_mode(clip)
+
+        if prompt_mode == "narrative":
+            narrative_text = clip.get("narrative_prompt", "")
+            if not narrative_text:
+                print(f"  WARNING: Clip in narrative mode but no narrative_prompt defined")
+                return []
+            total_duration = clip.get("duration", 10)
+            return [{
+                "prompt": narrative_text.strip(),
+                "duration": total_duration,
+                "cut_prefix": False,
+            }]
+
+        # Multi-prompt mode: existing behavior
         prompts = []
 
         for prompt_def in clip.get("prompts", []):
