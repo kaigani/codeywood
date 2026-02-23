@@ -43,11 +43,7 @@ DEFAULT_NEGATIVE = (
     "text, watermark, modern clothing, contemporary architecture"
 )
 
-# Scene order for episode assembly
-SCENE_ORDER = [
-    "sc01", "sc02", "sc02b", "sc03", "sc04",
-    "sc05a", "sc05b", "sc06", "sc07", "sc08", "sc09", "sc10",
-]
+import re
 
 
 def duration_to_frame_count(seconds, fps=25):
@@ -56,14 +52,27 @@ def duration_to_frame_count(seconds, fps=25):
     return max(25, min(raw, 321))
 
 
-def find_project_root():
-    """Walk up from script location to find pirate-romance project root."""
-    scripts_dir = Path(__file__).parent.parent.parent
-    project_root = scripts_dir / "projects" / "pirate-romance"
-    if not project_root.exists():
-        print(f"ERROR: Project root not found at {project_root}")
+def natural_sort_key(s):
+    """Sort key for natural ordering of scene IDs (sc1, sc2, ..., sc10, sc11)."""
+    return [int(c) if c.isdigit() else c.lower() for c in re.split(r'(\d+)', s)]
+
+
+def find_project_root(project_name=None):
+    """Find project root by name or by walking up from cwd."""
+    if project_name:
+        codeywood_root = Path(__file__).parent.parent.parent
+        project_root = codeywood_root / "projects" / project_name
+        if not project_root.exists():
+            print(f"ERROR: Project not found at {project_root}")
+            sys.exit(1)
+        return project_root
+    # Fall back to lib.config walk-up-from-cwd approach
+    from lib.config import find_project_root as _find_root
+    try:
+        return _find_root()
+    except FileNotFoundError as e:
+        print(f"ERROR: {e}")
         sys.exit(1)
-    return project_root
 
 
 def resolve_scene_dir(project_root, scene_id):
@@ -369,13 +378,15 @@ def assemble_scene(scene_dir):
 
 
 def discover_scenes(project_root):
-    """Discover all scene directories in episode order."""
+    """Discover all scene directories in episode order (dynamic scan)."""
     ep_dir = project_root / "PRODUCTION" / "EP01"
+    if not ep_dir.exists():
+        print(f"ERROR: Episode directory not found: {ep_dir}")
+        sys.exit(1)
     scenes = []
-    for scene_id in SCENE_ORDER:
-        scene_dir = ep_dir / scene_id
-        if scene_dir.exists():
-            scenes.append((scene_id, scene_dir))
+    for d in sorted(ep_dir.iterdir(), key=lambda p: natural_sort_key(p.name)):
+        if d.is_dir() and d.name.startswith("sc"):
+            scenes.append((d.name, d))
     return scenes
 
 
@@ -389,6 +400,7 @@ def parse_shot_range(shot_arg):
 
 def main():
     parser = argparse.ArgumentParser(description="Generate LTX-2 T2V clips")
+    parser.add_argument("--project", help="Project name (e.g., hellmouth-cowboy)")
     parser.add_argument("--scene", help="Scene ID (e.g., sc01)")
     parser.add_argument("--shot", help="Single shot ID to generate")
     parser.add_argument("--shots", help="Shot range to generate (e.g., 3-7)")
@@ -405,7 +417,7 @@ def main():
     if not args.scene and not args.all_scenes:
         parser.error("Either --scene or --all-scenes is required")
 
-    project_root = find_project_root()
+    project_root = find_project_root(args.project)
     comfyui_url = get_comfyui_url(project_root)
 
     # Build shot filter

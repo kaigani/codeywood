@@ -12,6 +12,7 @@ Usage:
 
 import argparse
 import json
+import re
 import sys
 import time
 from datetime import datetime
@@ -21,21 +22,49 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from lib.ffmpeg import concatenate_clips, probe_duration
 
-# Scene order for episode assembly
-SCENE_ORDER = [
-    "sc01", "sc02", "sc02b", "sc03", "sc04",
-    "sc05a", "sc05b", "sc06", "sc07", "sc08", "sc09", "sc10",
-]
+
+def natural_sort_key(s):
+    """Sort key for natural ordering of scene IDs (sc1, sc2, ..., sc10, sc11)."""
+    return [int(c) if c.isdigit() else c.lower() for c in re.split(r'(\d+)', s)]
 
 
-def find_project_root():
-    """Walk up from script location to find pirate-romance project root."""
-    scripts_dir = Path(__file__).parent.parent.parent
-    project_root = scripts_dir / "projects" / "pirate-romance"
-    if not project_root.exists():
-        print(f"ERROR: Project root not found at {project_root}")
+def find_project_root(project_name=None):
+    """Find project root by name or by walking up from cwd."""
+    if project_name:
+        codeywood_root = Path(__file__).parent.parent.parent
+        project_root = codeywood_root / "projects" / project_name
+        if not project_root.exists():
+            print(f"ERROR: Project not found at {project_root}")
+            sys.exit(1)
+        return project_root
+    from lib.config import find_project_root as _find_root
+    try:
+        return _find_root()
+    except FileNotFoundError as e:
+        print(f"ERROR: {e}")
         sys.exit(1)
-    return project_root
+
+
+def discover_scenes(ep_dir):
+    """Discover all scene directories in natural sort order."""
+    scenes = []
+    for d in sorted(ep_dir.iterdir(), key=lambda p: natural_sort_key(p.name)):
+        if d.is_dir() and d.name.startswith("sc"):
+            scenes.append(d.name)
+    return scenes
+
+
+def get_episode_title(project_root):
+    """Get episode title from PROJECT_CONFIG.yaml or default."""
+    try:
+        import yaml
+        config_path = project_root / "PROJECT_CONFIG.yaml"
+        with open(config_path) as f:
+            config = yaml.safe_load(f)
+        name = config.get("project", {}).get("name", "Episode")
+        return f"{name} — T2V Rough Cut"
+    except Exception:
+        return "T2V Rough Cut"
 
 
 def find_scene_assembly(scene_dir):
@@ -65,11 +94,12 @@ def main():
     parser = argparse.ArgumentParser(
         description="Assemble EP01 T2V rough cut from per-scene assemblies"
     )
+    parser.add_argument("--project", help="Project name (e.g., hellmouth-cowboy)")
     parser.add_argument("--assemble-scenes", action="store_true",
                         help="Also assemble individual scenes from clips before episode assembly")
     args = parser.parse_args()
 
-    project_root = find_project_root()
+    project_root = find_project_root(args.project)
     ep_dir = project_root / "PRODUCTION" / "EP01"
     deliverables_dir = project_root / "DELIVERABLES" / "EP01"
     deliverables_dir.mkdir(parents=True, exist_ok=True)
@@ -78,12 +108,12 @@ def main():
     print(f"Episode dir: {ep_dir}")
     print()
 
+    scene_order = discover_scenes(ep_dir)
+
     # If --assemble-scenes, first assemble each scene from clips
     if args.assemble_scenes:
-        for scene_id in SCENE_ORDER:
+        for scene_id in scene_order:
             scene_dir = ep_dir / scene_id
-            if not scene_dir.exists():
-                continue
             clips_dir = scene_dir / "clips_t2v"
             if not clips_dir.exists():
                 continue
@@ -104,7 +134,7 @@ def main():
     scene_videos = []
     manifest_scenes = []
 
-    for scene_id in SCENE_ORDER:
+    for scene_id in scene_order:
         scene_dir = ep_dir / scene_id
         if not scene_dir.exists():
             print(f"  {scene_id}: directory not found, skipping")
@@ -149,7 +179,7 @@ def main():
     # Write manifest
     manifest = {
         "episode": "ep01",
-        "title": "The Binding — T2V Rough Cut",
+        "title": get_episode_title(project_root),
         "output": str(output_path),
         "assembled_at": datetime.now().isoformat(),
         "total_duration_s": round(episode_duration, 1) if episode_duration else None,
