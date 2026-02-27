@@ -51,6 +51,46 @@ python3 scripts/generate/fal_generate.py --list-models
 | `hunyuan` | Illustration, stylized art |
 | `grok` | Creative exploration, graphic styles |
 
+### Video Analysis & Editing Commands
+
+```bash
+# Analyze a clip (filmstrip, metadata, color, motion, audio)
+python3 scripts/analysis/analyze_clip.py VIDEO_PATH
+python3 scripts/analysis/analyze_clip.py VIDEO_PATH --quick          # Filmstrip + metadata only
+python3 scripts/analysis/analyze_clip.py VIDEO_PATH --preflight      # Show what would be done
+python3 scripts/analysis/analyze_clip.py VIDEO_PATH --transcribe     # Include Whisper STT
+
+# Compare reference vs. generated clip
+python3 scripts/analysis/compare_clips.py REFERENCE GENERATED
+python3 scripts/analysis/compare_clips.py REFERENCE GENERATED --quick
+
+# Trim a clip
+python3 scripts/editing/trim_clip.py VIDEO --start 2.5 --end 8.0
+
+# Create transitions between clips
+python3 scripts/editing/transition.py CLIP_A CLIP_B --type crossfade --duration 1.0
+python3 scripts/editing/transition.py CLIP_A CLIP_B --type l_cut --lead 1.5
+
+# Smart assembly from EDL YAML
+python3 scripts/editing/smart_assemble.py EDL_FILE
+python3 scripts/editing/smart_assemble.py EDL_FILE --preflight
+
+# Paper cut (static images + dialogue + direction narration)
+python3 scripts/production/generate_paper_cut.py --scene PRODUCTION/EP01/sc01
+python3 scripts/production/generate_paper_cut.py --scene PRODUCTION/EP01/sc01 --preflight
+python3 scripts/production/generate_paper_cut.py --scene PRODUCTION/EP01/sc01 --no-direction
+python3 scripts/production/generate_paper_cut.py --scene PRODUCTION/EP01/sc01 --direction-only
+```
+
+### Post-Production Skills
+
+| Skill | Role | Purpose |
+|-------|------|---------|
+| `editor` | Post-production | Film editing decisions, trim heuristics, rhythm, EDL drafting |
+| `sound-designer` | Post-production | Audio layers, mixing, dialogue, L/J-cut strategy |
+| `art-director` | Post-production | Visual coherence, color consistency, style DNA enforcement |
+| `clip-study` | Production | Feedback loop — analyze reference → replicate → compare → learn |
+
 ## Directory Structure
 
 ```
@@ -58,9 +98,14 @@ codeywood/
 ├── skills/              # Claude skill definitions (role-based)
 │   ├── writer/          # Story development skills
 │   ├── production/      # Visual production skills
+│   ├── editor/          # Film editing cognitive skill
+│   ├── sound-designer/  # Sound design cognitive skill
+│   ├── art-director/    # Visual coherence cognitive skill
 │   └── meta/            # System orchestration skills
 ├── scripts/
 │   ├── lib/             # Shared Python library (config, fal_api, ffmpeg, paths)
+│   ├── analysis/        # Video analysis CLIs (analyze_clip, compare_clips)
+│   ├── editing/         # Editing CLIs (trim_clip, smart_assemble, transition)
 │   ├── reference/       # Image generation CLI tools
 │   └── production/      # Video production primitives
 ├── templates/           # Project scaffolding
@@ -268,6 +313,17 @@ When using claude-mem, follow the memory isolation rules in the Memory Managemen
 | `WORKFLOWS/README.md` | Workflow pattern format |
 | `scripts/generate/fal_generate.py` | Main image generation tool |
 | `skills/production/prompt-engineer/SKILL.md` | Prompt engineering techniques |
+| `scripts/lib/video_analysis.py` | Filmstrip, color palette, motion analysis |
+| `scripts/lib/audio_analysis.py` | Waveform, silence detection, Whisper STT |
+| `scripts/lib/scene_detect.py` | Cut detection, shot breakdown |
+| `scripts/lib/ffmpeg.py` | FFmpeg utils + editing primitives (trim, crossfade, L/J-cut, speed, color grade) |
+| `scripts/analysis/analyze_clip.py` | Unified clip analysis CLI |
+| `scripts/analysis/compare_clips.py` | Reference vs. generated comparison CLI |
+| `scripts/editing/smart_assemble.py` | EDL-driven assembly with transitions |
+| `skills/editor/SKILL.md` | Film editing cognitive skill |
+| `skills/sound-designer/SKILL.md` | Sound design cognitive skill |
+| `skills/art-director/SKILL.md` | Visual coherence cognitive skill |
+| `skills/production/clip-study/SKILL.md` | Feedback loop — study, replicate, learn |
 
 ## Current Active Project
 
@@ -275,6 +331,26 @@ When using claude-mem, follow the memory isolation rules in the Memory Managemen
 - Phase: Visual Development (Phase 5)
 - Style: Jeweled Caribbean Fantasy (YA live-action)
 - Characters: Mars (protagonist), Jonah (love interest), Silas/Voice-Taker, Hannah
+
+## Knowledge Lifecycle
+
+New findings follow this lifecycle:
+1. **DISCOVER** → Write to `memory/` (with date, source, validation status)
+2. **VALIDATE** → Test across 2+ sessions or projects
+3. **GRADUATE** → Move to the relevant SKILL.md or `references/` doc
+4. **CLEAN** → Delete from memory after graduation
+
+Memory is a staging area, not permanent storage. If a finding has been stable for 2+ sessions and applies broadly (not project-specific), it should graduate to its skill.
+
+Graduation targets:
+- Prompting techniques → `skills/production/prompt-engineer/SKILL.md`
+- Video generation rules → `skills/production/video-director/SKILL.md`
+- Editing/assembly lessons → `skills/editor/SKILL.md`
+- Audio/voice findings → `skills/sound-designer/SKILL.md`
+- Visual coherence rules → `skills/art-director/SKILL.md`
+- QC patterns → `skills/production/image-qc/SKILL.md` or `video-qc/SKILL.md`
+- Model-specific API knowledge → `references/services/{model}/`
+- Project-specific state → stays in memory
 
 ## Development Notes
 

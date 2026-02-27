@@ -101,6 +101,45 @@ A professional [GRID] [TYPE] reference sheet for [PRODUCTION TYPE]. Subject: [NA
 Style: [STYLE DNA]. Neutral background with thin dividers between panels.
 ```
 
+### Mode 4: STORYBOARD (Pre-Production Sketches)
+
+**Goal**: Black and white composition sketches for shot planning. NOT finished art.
+
+**Framework**: Text-to-image ONLY — never use reference images for storyboards. Reference images cause detail bleed (identity sheet faces override the sketch style).
+
+**Required Elements**:
+1. **Sketch style directive**: `"black and white rough sketch, thick confident ink strokes, value blocking with simple hatching, figures as dark silhouettes, composition reference only"`
+2. **Composition vocabulary**: diagonal motion, vertical framing, negative space, forward vector — describe figures as silhouettes and shapes, NOT by appearance details
+3. **No cinematic style DNA**: No lens specs, no film stock references
+4. **Aggressive negative prompt**: `color, detailed rendering, photorealistic, finished artwork, realistic skin/eyes/hair, identity sheet, film grain, bokeh`
+
+**Model**: Nano Banana Pro text-to-image (`fal-ai/nano-banana-pro`), 40 steps, guidance 4.5
+
+**Content Filter Workarounds**:
+- Gallows/hanging scenes get flagged — describe as "empty gallows structure" or abstract the aftermath
+- Don't depict bodies in violent contexts
+
+**Template**:
+```
+[SKETCH STYLE]. [COMPOSITION TYPE]. [FIGURE SILHOUETTES WITH POSTURE].
+[SPATIAL RELATIONSHIPS]. [VALUE/LIGHT BLOCKING].
+```
+
+> **Note**: Storyboards are INPUT to frame generation — generate boards first, then use them as composition reference for production frames.
+
+---
+
+### Action Sequence Triptych Awareness
+
+When a prompt describes multiple sequential actions, Nano Banana Pro sometimes generates a **multi-panel triptych** instead of a single image. These triptychs are:
+- **NOT good as start frames** (video models need a single image)
+- **Valuable as element reference_image_urls** for action sequences — they show the motion arc across panels (start pose → mid-action → end state)
+
+**Prevention**: Prompt must describe ONE frozen moment, not a sequence.
+**If generated**: Store in REFERENCES/shot_frames/ for reuse as pose guides.
+
+---
+
 ## Vocabulary Guide
 
 ### Photorealistic - AVOID These Words
@@ -141,12 +180,84 @@ multiple people, crowd scene, deformed, extra limbs, bad anatomy
 
 ## Model Selection Guide
 
+### Cloud Models (fal.ai)
+
 | Model | Best Mode | Notes |
 |-------|-----------|-------|
-| nano_banana | Reference sheets, photorealistic | Best for precise control, technical refs |
+| nano_banana | Reference sheets, photorealistic | Best for precise control, technical refs, highest detail density |
 | seedream | Concept art, artistic | Painterly quality, emotional impact |
 | hunyuan | Stylized illustration | Strong line work, graphic styles |
 | grok | Creative exploration | Experimental, varied outputs |
+
+### Local Models (ComfyUI)
+
+| Model | Best Mode | Speed | Quality vs NBP | Notes |
+|-------|-----------|-------|----------------|-------|
+| flux2-klein-t2i | Drafts, iteration, storyboards | ~8-15s | ~75% | cfg 4.0, steps 20, MUST use wide aspect ratio for scenes |
+| flux2-t2i (Dev) | Production frames | ~150-270s | ~85-90% | steps 20, best local option for final frames |
+| flux2-klein-edit | Character likeness transfer | ~21s | ~85-90% of Dev i2i | Input image resolution determines output resolution |
+| flux2-i2i (Dev) | Hero frames, final production | ~270s | ~95% | Best skin/material micro-detail locally |
+
+**Klein vs Dev decision**: Use Klein for anything iterative (storyboards, drafts, concept exploration). Switch to Dev only for final production frames where texture and detail density matter. Klein at 20 steps matches Dev at 12 steps for composition quality, but can never match Dev's material texture rendering.
+
+#### Klein Optimal Settings
+
+| Param | Simple Scenes | Complex Scenes | Notes |
+|-------|--------------|----------------|-------|
+| cfg | 3.5 | 4.0 | 3.5 too soft for unusual subjects (skeletons, dense environments); 5.0 no improvement over 4.0 |
+| steps | 10-12 | 20 | Linear ~0.4s/step. Converges by step 20 — no quality gain at 28 |
+
+Klein warm speed: ~6s t2i, ~21s i2i (vs ~150s Dev t2i, ~270s Dev i2i) — 25x/12x faster when model cached.
+
+#### Quality Ceiling Comparison
+
+| Model | Quality vs NBP | Generation Time | Best For |
+|-------|---------------|-----------------|----------|
+| Klein | ~75% | ~6-15s | Drafts, iteration, storyboards |
+| Dev | ~85-90% | ~150-270s | Production frames |
+| NBP (cloud) | 100% (baseline) | varies | Final hero frames, identity sheets |
+
+Main Klein gaps vs NBP: foreground clutter density, material micro-texture (dust grain, yellowed plastic, oxidized metal), dynamic range (deeper blacks, more vivid highlights), fine anatomical detail.
+
+### Z-Image → Qwen Edit Pipeline
+
+For local ($0.00) production frames with character consistency:
+
+1. **Phase 1 — Z-Image t2i**: Generate isolated character refs (square) + location refs (wide). Best for clean individual refs with high texture quality.
+2. **Phase 2 — Qwen Image Edit**: Compose refs into scene frames (character + location per shot). The killer advantage is consistency across shots, not per-frame quality.
+
+When to use vs Klein/Dev pipeline:
+- **Z-Image + Qwen**: When you need character consistency across many frames (dialogue scenes, paper cuts)
+- **Klein**: When iterating on composition and don't need cross-frame consistency
+- **Dev**: When final production quality matters and you can wait
+
+See: `references/services/z-image/z-image-base.md` and `references/services/qwen/qwen-image-edit.md`
+
+### Reference Image Ordering (Nano Banana Pro)
+
+When using Nano Banana Pro with multiple reference images, ordering in the `image_urls` array matters:
+
+1. **Identity sheets FIRST** — highest priority for character likeness
+2. **Storyboard board SECOND** — composition reference
+3. **Location ref LAST**
+
+If identity sheets go after the storyboard, the board's character appearance can override identity, degrading likeness.
+
+**Content filter**: Remove age references like "He is 17" from prompts — triggers policy violation.
+
+### JSON Prompting for Multiref (Flux/ComfyUI)
+
+When using Flux multiref workflows with 2+ reference images, JSON-structured prompts referencing images by number produce more accurate results:
+
+```json
+{
+  "scene": "Two characters meet at a market stall",
+  "subject_1": "The alien from image 1 stands behind the counter",
+  "subject_2": "The robot from image 3 examines the merchandise"
+}
+```
+
+This is more reliable than prose descriptions for complex multi-reference compositions.
 
 ## Process
 
@@ -218,6 +329,91 @@ Before finalizing any prompt:
 - [ ] Material physics described, not just mood
 - [ ] Negative prompt addresses common failure modes
 - [ ] Aspect ratio appropriate for output type
+
+---
+
+## Advanced Prompting Techniques (Tested 2026-02-23)
+
+These techniques were validated through systematic A/B testing across 26+ generations.
+
+### Technique 1: Prompt Opener Framing
+
+The first 2-5 words of a prompt set the model's interpretation mode. This affects composition, lighting, and detail rendering significantly.
+
+**Effectiveness ranking** (best to worst):
+1. `Film still.` — Most cinematic, best composition and lighting
+2. `Cinematic establishing shot from a [genre] [type].` — Strong genre-appropriate rendering
+3. `Photograph of [location].` — Good photographic realism, slightly clinical
+4. Raw description (no framing) — Weakest results, most generic
+
+**Examples**:
+```
+✅ "Film still. Wide shot of an abandoned warehouse..."
+✅ "Cinematic establishing shot from a dark sci-fi thriller. An abandoned..."
+⚠️ "Photograph of an abandoned warehouse interior. Center frame:..."
+❌ "Show a dusty warehouse with a skeleton sitting at a desk..."
+```
+
+### Technique 2: Spatial Layer Structure (FOREGROUND/SUBJECT/BACKGROUND)
+
+For complex scenes with many objects, explicitly structuring the prompt into spatial layers dramatically improves object density and depth composition.
+
+**Template**:
+```
+[FRAMING]. [SETTING].
+FOREGROUND: [close objects, desk surface, floor clutter].
+SUBJECT: [main subject with detailed physical description].
+BACKGROUND: [environment stretching into depth].
+OVERHEAD: [lighting source].
+[Technical specs]. [Color/grade]. [Film reference].
+```
+
+**When to use**: Scenes requiring dense visual clutter, multiple object types, or strong sense of depth. Particularly effective for production-design-heavy shots (workstations, laboratories, markets, control rooms).
+
+**When NOT to use**: Simple portraits, single-subject shots, or when the model needs creative freedom with composition.
+
+### Technique 3: Exhaustive Physical Vocabulary for Unusual Subjects
+
+Models default to their training distribution. For unusual subjects (skeletons, aliens, monsters, damaged objects), one-word descriptions are insufficient. You must describe the physical specifics exhaustively to override the model's default interpretation.
+
+**Pattern**: Name the subject THEN enumerate its visible physical features:
+
+```
+❌ "A skeleton sits at a desk"
+✅ "A complete human skeleton — bare white skull with empty eye sockets,
+    exposed ribcage, skeletal arms and bony fingers — sits slumped at
+    a dusty desk. The skeleton wears rotting work coveralls and a faded
+    trucker cap on its skull."
+```
+
+**Reinforce with negative prompts** using antonyms of the desired state:
+```
+negative_prompt: "alive, skin, flesh, living person, muscle, tissue"
+```
+
+This applies to any subject that deviates from photographic norms: damaged buildings (describe the damage), alien creatures (describe anatomy), fantasy props (describe materials and wear).
+
+### Technique 4: Aspect Ratio as Composition Control
+
+Aspect ratio is not just a formatting choice — it fundamentally changes how subjects are rendered.
+
+| Ratio | Effect | Best For |
+|-------|--------|----------|
+| 1:1 (1024x1024) | Compresses scenes, subjects dominate, less environment | Portraits, icons, reference sheets |
+| 5:3 (1280x768) | Balanced scene + subject, good depth | Establishing shots, workstation scenes |
+| 16:9 (1280x720) | Maximum environment, subject can get lost | Landscapes, wide establishing shots |
+
+**Critical finding**: Square format can make complex subjects (skeletons, robots, damaged objects) look like normal humans/objects because there's insufficient spatial context for the model to render unusual details. Wide formats give the model room to render both subject detail AND environmental context.
+
+### Technique 5: Negative Prompt Strategy
+
+Effective negative prompts operate on three levels:
+
+1. **Style exclusion**: `cartoon, anime, illustration, painting, digital art, 3D render, CGI`
+2. **Quality floor**: `blurry, low quality, smooth surfaces, pristine, new, clean`
+3. **Subject-specific antonyms**: `alive, skin, flesh` (for skeletons), `modern, contemporary` (for period pieces)
+
+The subject-specific antonyms are the most impactful and most commonly overlooked.
 
 ---
 

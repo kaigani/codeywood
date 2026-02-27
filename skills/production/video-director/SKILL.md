@@ -6,6 +6,20 @@ Direct AI video generation with cinematic pacing, explicit scene direction, and 
 ## Trigger
 When planning video clip sequences, writing multi-prompt video prompts, or reviewing pacing of assembled scenes.
 
+## Production Pipeline Tiers
+
+Choose the right pipeline tier based on production phase:
+
+| Tier | Pipeline | Time (11 clips) | Cost | When to Use |
+|------|----------|-----------------|------|-------------|
+| 1 — First Draft | LTX-2 T2V (text only) | ~18 min | $0.00 | Testing shot lists, prompt quality, pacing |
+| 2 — Revision | Klein frames + LTX-2 i2v | ~28 min | $0.00 | Character anchoring, composition control |
+| 3 — Final | Dev frames + Kling v3 Pro | $$$ | varies | Final production, highest quality |
+
+**Default workflow**: Start at Tier 1 for every scene. Only escalate to Tier 2/3 for shots that need it.
+
+---
+
 ## Core Principles
 
 ### 1. PACING: Let Scenes Breathe
@@ -715,6 +729,22 @@ ASSESSMENT: Aligned ✓
 
 When using the ComfyUI backend (LTX-2 19B via `ltx2-i2v`), prompting requires a different approach than Kling. LTX-2 has no element system, no multi-prompt, and no audio generation — but it's free and runs on local GPU.
 
+### T2V Prompt Best Practices
+
+When using T2V (no start frame), the model has no visual anchor. Every detail must be in the prompt:
+
+1. **Setting anchors required**: Include specific location markers in EVERY wide/medium shot. Without them, the model defaults to generic environments
+2. **Period costume required**: Explicitly describe clothing era. Without this, defaults to modern
+3. **Character physical specificity**: Full physical description every time — skin tone, hair, distinguishing features. No shortcuts
+4. **Literal and descriptive**: Describe what the camera SEES, not emotional/abstract language
+5. **Include dialogue as quoted text**: Actual spoken words in the prompt, not "she whispers something"
+6. **Extra detail where ambiguous**: More is better for T2V — no start frame to anchor interpretation
+7. **Negative prompt**: Add era-specific exclusions ("modern clothing, contemporary architecture" for period pieces)
+
+**What T2V excels at**: Texture/detail shots, close-ups with action direction, abstract/architectural, lighting mood, movement direction.
+
+**What needs most help**: Wide shots with specific architecture, period-accurate costumes, character consistency across shots.
+
 ### The "Complete Story" Approach
 
 LTX-2 requires a **narrative approach** — not a list of elements but a cohesive mini-screenplay.
@@ -777,6 +807,19 @@ Describe audio events alongside visual actions to improve temporal coherence:
 3. **Environmental detail matters**: Describe lighting, textures, and atmospheric effects explicitly — "soft rim light catches the edge of her jaw," "mist clings to the stone floor," "golden hour warmth on weathered wood."
 
 4. **Limit scene complexity**: Fewer characters and objects = better results. One or two subjects maximum. Background crowds will degrade.
+
+### Element Auto-Remapping (Kling)
+
+`@ElementN` in prompts references the Nth element in the `elements` array (1-indexed). When only a subset of elements is sent for a particular clip, the indexing must be remapped. For example, if only `@Element2` character appears in a clip, it must be referenced as `@Element1` in the prompt since it's the 1st (and only) element sent.
+
+`fal_api.py` handles this remapping automatically — but be aware of it when debugging prompt/element mismatches.
+
+### Metadata Discipline
+
+**Always save full prompts in JSON metadata — never truncate.** The `prompt[:200]` truncation bug has been caught twice in production. Full prompts are essential for:
+- Debugging generation failures
+- Reproducing specific results
+- Comparing prompt variations
 
 ### LTX-2 vs Kling Prompt Translation
 
