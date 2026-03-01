@@ -539,7 +539,7 @@ Frame prompts and video prompts serve different purposes. Confusing them causes 
 |---------|----------------------|
 | Expression | "Her expression shifts from determination to horror" |
 | Action | "She pries at the mortar, stone dust falling" |
-| Camera | "Slow push-in as she discovers the book" |
+| Camera | "Slow dolly-in as she discovers the book" |
 
 ### Transitional Language Placement
 
@@ -638,13 +638,17 @@ Unlike image prompts, video prompts MUST include motion:
 | crowd in market | crowd parts as she walks through |
 
 #### Camera Movement Descriptors
-| Movement | Description |
-|----------|-------------|
-| `push in` | Camera moves toward subject |
-| `pull back` / `crane movement` | Camera retreats, often rising |
-| `tracking shot` | Camera follows subject laterally |
-| `pan` | Camera rotates on axis |
-| `static shot` | No camera movement (intentional stillness) |
+
+> **LTX-2 Note**: Use `dolly in` not `push in` — LTX-2 renders equipment nouns as physical objects. See `video-director/SKILL.md` for the full camera motion anti-patterns table.
+
+| Movement | Description | LTX-2 Safe? |
+|----------|-------------|-------------|
+| `dolly in` / `dolly forward` | Camera moves toward subject | Yes |
+| `pull back` / `crane movement` | Camera retreats, often rising | Yes |
+| `tracking shot` | Camera follows subject laterally | Yes |
+| `pan right` / `pan left` | Camera rotates on axis (specify direction) | Yes |
+| `static shot` | No camera movement (intentional stillness) | Yes |
+| ~~`push in`~~ | Unreliable on LTX-2 | Avoid |
 
 #### Transition Language (Multi-Prompt)
 When using multi-prompt, **prefix each prompt with "Cut to:"** to signal clear scene transitions. This helps the model understand each segment is a distinct shot:
@@ -773,6 +777,35 @@ Cut 3: "Wide shot pulling back as @Element1 turns and walks away into the
 | "danger lurks unseen" | "she looks around cautiously" |
 
 **Rule**: Describe only what the CAMERA SEES, not what the CHARACTER FEELS or what the STORY IMPLIES.
+
+### LTX-2 Style Prompting (Non-Photorealistic Looks)
+
+LTX-2 cannot change rendering medium but CAN produce striking non-photorealistic looks by describing **physical materials and production techniques** that exist in the real world.
+
+**Prompt Architecture for Experimental Styles**:
+
+1. **Physical frame/medium** (what the footage is playing ON or shot WITH):
+   - "Footage playing on a damaged VHS tape through a CRT television"
+   - "Shot on Kodak Aerochrome infrared film stock"
+   - "Footage from a FLIR thermal imaging camera"
+
+2. **Material artifacts** (physical damage, chemical processes, surface texture):
+   - "Heavy analog signal corruption: horizontal tracking lines roll up the screen"
+   - "Chemical burn stains blooming orange through the emulsion"
+   - "UV-reactive paint smeared across surfaces — vivid green and hot pink glow"
+
+3. **Active scene description** (avoid static words — see trigger warning below):
+   - Describe people DOING things, not posing for pictures
+   - Include motion verbs even for heavily stylized scenes
+   - Use temporal connectors: "then", "as", "slowly"
+
+4. **Audio layer** (ambient sound enhances temporal coherence):
+   - "The VHS player hums and clicks, audio warped by tracking errors"
+   - "The UV tubes emit a low-frequency electrical buzz"
+
+**Trigger Word Warning**: The words "photograph", "photographic print", "print", "frame" (as picture frame), and "still" cause LTX-2 to produce near-static output. Always reframe static medium references as active physical phenomena. See `video-director/SKILL.md` for the full trigger word table and fixes.
+
+**Optimal prompt length**: 500-700 characters. Shorter prompts produce fewer hallucinated elements. The screenplay format (`EXT. LOCATION – TIME` headers) improves shot adherence.
 
 ### Voice vs Elements Trade-off
 

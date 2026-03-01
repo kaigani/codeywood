@@ -118,7 +118,7 @@ def detect_silence(
 
 def transcribe_audio(
     audio_path: Path,
-    comfyui_url: str = "http://127.0.0.1:8188",
+    comfyui_url: str = "http://192.168.1.181:8100",
     model_size: str = "large",
     timeout: int = 300,
 ) -> Optional[Dict]:

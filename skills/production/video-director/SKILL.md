@@ -780,16 +780,36 @@ Use words like **"then," "as," "slowly," "suddenly," "meanwhile"** to connect ac
 
 Use specific cinematography terms to control camera behavior:
 
-| Term | Effect |
-|------|--------|
-| `slow pan left` | Horizontal camera sweep |
-| `dolly in` / `push in` | Camera physically moves closer |
-| `low angle` | Camera below subject looking up |
-| `tracking shot` | Camera follows subject movement |
-| `static camera` | Locked-off, no camera movement |
-| `85mm` / `35mm` | Focal length (tighter vs wider) |
-| `shallow depth of field` | Background blur |
-| `rack focus` | Shift focus between foreground/background |
+| Term | Effect | Notes |
+|------|--------|-------|
+| `slow pan left` | Horizontal camera sweep | Direction is reliable |
+| `dolly in` | Camera physically moves closer | Canonical term — see anti-patterns below |
+| `dolly forward` | Camera advances into scene | Alternative to `dolly in` |
+| `low angle` | Camera below subject looking up | |
+| `tracking shot` | Camera follows subject laterally | |
+| `static camera` | Locked-off, no camera movement | |
+| `85mm` / `35mm` | Focal length (tighter vs wider) | Affects framing, not movement |
+| `shallow depth of field` | Background blur | |
+| `rack focus` | Shift focus between foreground/background | |
+
+#### Camera Motion Anti-Patterns (LTX-2 Specific)
+
+LTX-2 interprets equipment descriptions as physical objects in the scene. Use **motion verbs**, not **equipment nouns**.
+
+| Anti-Pattern | What LTX-2 Renders | Use Instead |
+|-------------|---------------------|-------------|
+| `push in` | Unreliable — sometimes works, sometimes renders as physical pushing | `dolly in` or `dolly forward` |
+| `camera holds steady on a tripod` | Tripod visible in scene | `static tripod shot` |
+| `pushes forward on a dolly track` | Dolly track visible in frame | `slow dolly in` |
+| `handheld camera movement walking` | Literal hand/arm in frame | `handheld movement` |
+| `pans from left to right` | Ambiguous — may pan wrong direction | `camera pans right` |
+
+**Post-Movement State**: After describing a camera motion, describe what appears AFTER the movement completes. This helps the model animate the full motion rather than jumping to the end state.
+
+```
+BAD:  "Camera dollies in toward the window."
+GOOD: "Camera dollies in toward the window, revealing rain streaking down the glass in close-up."
+```
 
 ### Audio-Video Sync
 
@@ -842,6 +862,80 @@ When the Generator simplifies a Kling prompt for LTX-2, it:
 | Reduced likeness on wide shots | Start tight, pull out; or accept lower consistency |
 | Complex physics = artifacts | Simplify motion, avoid chaotic movements |
 | ALL CAPS words mispronounced | Never use ALL CAPS in dialogue — LTX-2 tokenizes them differently and produces garbled speech (e.g. "MAP" → "May-Ape"). Use lowercase or title case only |
+| **"Photograph" trigger words suppress motion** | Words like "photograph", "print", "photographic print", "frame" cause LTX-2 to produce near-static output. Reframe as active scenes with physical materials instead |
+| Cannot change rendering medium | Cannot render illustration, cel-shading, oil painting, brushstrokes. See Style Technique section below |
+| Equipment nouns render as objects | "tripod", "dolly track", "handheld camera" appear in frame. Use motion verbs instead (see Camera Motion Anti-Patterns) |
+
+### LTX-2 Style Technique Guide
+
+**Core Rule**: LTX-2 renders the real world. If the desired style involves things that physically exist (damaged film, UV paint, infrared film stock, torn paper, liquid mercury), describe those things. If it involves a rendering process that doesn't exist as a physical object (illustration, cel-shading, digital glitch), it won't work.
+
+#### What LTX-2 CAN Control
+
+| Category | Techniques | Example |
+|----------|-----------|---------|
+| **Color palette** | Desaturated, monochrome, specific accent colors, false-color | "near-monochrome with blood-red sky and ember-orange accents" |
+| **Lighting style** | Harsh rim, no fill, practical sources, golden hour, UV | "deep purple ambient with fluorescent surfaces glowing" |
+| **Contrast/exposure** | High contrast, low key, blown highlights, crushed blacks | "extreme high contrast — mid-tones crushed to black or white" |
+| **Mood/atmosphere** | Dust, fog, rain, time of day, weather | "mist clings to the stone floor" |
+| **Physical materials** | Real surfaces, textures, substances | "sculpted clay puppet with visible ball joints, felt coat" |
+| **Film stock/camera** | Specific stocks, camera types, lens artifacts | "shot on Kodak Aerochrome infrared film stock" |
+| **Physical damage** | Film burns, chemical stains, tape degradation | "chemical burn stains blooming orange through the emulsion" |
+
+#### What LTX-2 CANNOT Control
+
+| Category | Why It Fails |
+|----------|-------------|
+| Rendering medium (illustration, cel-shading, hand-drawn) | Creates distracting artifacts as model tries and fails |
+| Line work (ink outlines, cross-hatching, pencil strokes) | Same — partial rendering with artifacts |
+| Digital effects (glitch, pixel sorting, datamosh) | No physical equivalent — describe damaged VHS tape on CRT instead |
+| Brushstrokes/paint texture | No physical equivalent — describe impasto canvas or oil on glass |
+
+#### Proven Style Techniques (Experimental Screen, ~96 clips tested)
+
+**Tier 1 — Production Ready** (strong style fidelity + motion):
+| Style | Technique | Key Prompt Strategy |
+|-------|-----------|-------------------|
+| Punk Zine Collage | Torn paper, marker, construction paper as physical layers | "paper cutout layer with torn edges and visible paper fibers" |
+| Damaged 8mm Film | Chemical burns, sprocket damage, projector flicker | "film stock has chemical burns — blooming orange stains eat through emulsion" |
+| Blacklight UV | UV-reactive paint on surfaces, fluorescent glow | "UV-reactive paint smeared across cheeks — vivid green and hot pink glow" |
+| Thermal FLIR | False-color heat signature imaging | "FLIR thermal imaging camera, false-color: cold=blue, warm=red, hot=yellow" |
+| Liquid Silver (Mercury) | Reflective metallic liquid surfaces | Replace "wet plate photograph" with active mercury/liquid metal scene |
+| Risograph (Two-Color Ink) | Physical ink layers with misregistration | "two-color risograph print — teal ink and magenta ink slightly misregistered" |
+| Infrared Aerochrome | Physical film stock with IR response | "foliage renders in vivid magenta, skin glows pale lavender-white" |
+| Light Leak (Damaged Camera) | Amber/orange light bleeding into exposure | "light leaks blaze across the right side — amber and orange streaks" |
+| Glitch VHS on CRT | Physical damaged tape playing on TV screen | Frame as "footage on a damaged VHS tape through a CRT television" |
+| Night Vision | Green phosphor imaging, IR illumination | "night vision device, green phosphor monochrome, IR illuminator bloom" |
+
+**Tier 2 — Usable with Caveats**:
+| Style | Caveat |
+|-------|--------|
+| Hologram / Pepper's Ghost | Works for translucent blue figure effect; needs strong framing as physical stage illusion |
+| Projection Mapping | Video projected on physical surfaces (brick, concrete); good for abstract motion |
+| Cyanotype (Blue Monochrome) | Reframe from "photographic print" to "Prussian blue monochrome lighting condition" to maintain motion |
+| Surveillance Mosaic | Multi-CRT wall with different camera feeds; works but less distinctive |
+
+**Tier 3 — Marginal**:
+| Style | Issue |
+|-------|-------|
+| Solarized | Tone reversal effect is subtle; Mackie lines don't render clearly |
+| Rear Projection | Mismatched lighting doesn't come through; looks like a normal scene |
+
+#### "Photograph" Trigger Word Warning
+
+**Critical**: The following words cause LTX-2 to produce near-static output (bitrate drops 50-80%):
+- "photograph", "photographic print", "photogram"
+- "print" (when referring to a photographic print)
+- "frame" (when referring to a picture frame)
+- "still", "frozen"
+
+**Fix**: Reframe static medium references as active physical phenomena:
+| Static (Fails) | Active (Works) |
+|----------------|----------------|
+| "A cyanotype photographic print" | "Scene bathed in deep Prussian blue monochrome light" |
+| "A wet plate collodion photograph" | "Surfaces shimmer like liquid mercury on black glass" |
+| "A hand-tinted photograph" | "Light leaks blaze across the exposure in amber streaks" |
+| "A xerox photocopy" | "Two-color risograph ink layers with slight misregistration" |
 
 ---
 
@@ -891,3 +985,11 @@ When the Generator simplifies a Kling prompt for LTX-2, it:
   - Added frame reuse strategy with Nano Banana Pro
   - SC03 retrospective: 25 shots / 18 clips was over-produced for dialogue; target is 6-8 clips
   - Added clip count heuristic: dialogue = duration/10, action = duration/5
+
+- **2026-02-28**: Comprehensive LTX-2 Style & Camera Motion Update (~96 clips tested)
+  - **Camera motion corrections**: Removed `push in` as equivalent to `dolly in` — unreliable on LTX-2. Added full anti-patterns table (equipment nouns render as objects)
+  - **Post-movement state descriptions**: Added guidance to describe what appears AFTER camera motion completes
+  - **Style Technique Guide**: Full taxonomy of what LTX-2 can/cannot control visually
+  - **Experimental Style Scorecard**: 10 production-ready, 4 usable, 2 marginal styles from 09_experimental_screen testing
+  - **"Photograph" trigger word warning**: Words like "photograph/print/frame" suppress motion — documented fixes
+  - **Physical materials workaround**: Detailed technique for achieving non-photorealistic looks by describing real-world production methods

@@ -4,6 +4,12 @@ Workflow: `z-image-base-t2i` on ComfyUI (`http://192.168.1.181:8100/workflows/z-
 
 ---
 
+## API Change
+
+The workflow API is now **asynchronous**. POST returns a job ID; poll for status; fetch result when complete. See `references/services/comfyui/async-api.md` for the new submit → poll → fetch pattern and a ready-to-use Python helper.
+
+---
+
 ## Overview
 
 Z-Image Base is a text-to-image model best suited for generating isolated character and background references. It produces high per-frame quality (texture, lighting, detail) but has no reference image input — each generation is independent with no cross-frame consistency.
@@ -111,10 +117,9 @@ See: `references/services/qwen/qwen-image-edit.md` for compositing details.
 ## API Call Example
 
 ```python
-import requests
+from comfyui_helper import submit_and_wait  # see references/services/comfyui/async-api.md
 
-url = "http://192.168.1.181:8100/workflows/z-image-base-t2i"
-data = {
+png_bytes = submit_and_wait("z-image-base-t2i", {
     "prompt": "...",
     "negative_prompt": "...",
     "seed": "42",
@@ -122,7 +127,5 @@ data = {
     "cfg": "4",
     "width": "1024",
     "height": "1024",
-}
-resp = requests.post(url, data=data, timeout=300)
-# Returns image bytes directly (content-type: image/png)
+})
 ```

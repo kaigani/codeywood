@@ -4,6 +4,8 @@ Workflow: `qwen-image-edit` on ComfyUI (`http://192.168.1.181:8100/workflows/qwe
 Model: Qwen Image Edit 2509 (Lumina2 architecture)
 Inputs: prompt (required), image (required), image2 (optional), image3 (optional), seed, steps (default 4)
 
+> **API Change**: The workflow API is now **asynchronous**. POST returns a job ID; poll for status; fetch result when complete. See `references/services/comfyui/async-api.md` for the new submit → poll → fetch pattern and a ready-to-use Python helper.
+
 ---
 
 ## Critical Rule: `image` Slot = Output Aspect Ratio
