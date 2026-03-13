@@ -18,6 +18,18 @@ Choose the right pipeline tier based on production phase:
 
 **Default workflow**: Start at Tier 1 for every scene. Only escalate to Tier 2/3 for shots that need it.
 
+### LTX-2 Frame Count Limits
+
+| Parameter | Value | Notes |
+|-----------|-------|-------|
+| MIN_FRAMES | 25 | ~1s at 25fps |
+| MAX_FRAMES | 501 | ~20s at 25fps — validated on local hardware 2026-03-02 |
+| FPS | 25 | Fixed |
+| Formula | `round(duration_s * 25) + 1` | Clamp to [25, 501] |
+
+For dialogue clips, use `max(clip_target_duration, audio_duration)` as the effective duration to ensure all speech fits within generated video. If audio exceeds 20s, use freeze-frame extension (`tpad=stop_mode=clone`) as fallback.
+
+
 ---
 
 ## Core Principles
@@ -654,6 +666,23 @@ Instead of generating 25 unique frames, generate 4-6 base composition frames and
 
 ---
 
+## Pipeline Sweet Spot: Content Strategy
+
+The current AI video pipeline has clear strengths and weaknesses. Story selection should play to the strengths:
+
+| Pipeline Strengths (Claude-controlled) | Pipeline Weaknesses (model-dependent) |
+|----------------------------------------|---------------------------------------|
+| Cohesive world-building | VFX and compositing |
+| Sound design and audio layering | Micro-expressions and subtle facial acting |
+| Blocking and spatial storytelling | Progressive visual continuity across clips |
+| Thematic depth and character writing | Action choreography |
+
+**Implication**: Lean into dialogue-driven, character-focused stories. Avoid action/VFX-dependent narratives. The writing pipeline (Writers Room + Directors Room) consistently produces the strongest elements — everything controlled by script and sound rather than visual generation fidelity.
+
+Ideal story format: **character-driven bottle episodes** — two characters, one location, dialogue-heavy, emotional stakes. These maximize what Claude controls and minimize dependence on visual model limitations.
+
+---
+
 ## Agentic Workflow Implementation
 
 **How Claude executes the agentic clip generation loop:**
@@ -776,6 +805,60 @@ Use words like **"then," "as," "slowly," "suddenly," "meanwhile"** to connect ac
 **Bad**: "A woman runs. Birds fly. The flag waves."
 **Good**: "A woman breaks into a sprint along the wall, then as she reaches the corner, a flock of birds bursts upward from the palm tree while the flag above snaps hard in a sudden gust."
 
+### Timecode Direction
+
+LTX-2 follows `[M:SS-M:SS]` timecode markers to pace action and dialogue within a clip. This is the most reliable way to control timing, especially for dialogue scenes.
+
+**Format**: Structure the prompt as "Scene direction by timecode:" followed by timecoded blocks:
+
+```
+Scene direction by timecode:
+
+[0:00-0:02] She shuffles into the kitchen in bare feet, yawning.
+Bare feet pad softly on tile. Coffee maker gurgling.
+
+[0:02-0:04] She sees the robot and says [warm female voice]: "Morning, Koda."
+
+[0:04-0:07] She walks to the counter and leans against it.
+The robot turns its display toward her. She listens. No one speaks.
+Kitchen ambient: coffee maker, fridge hum, morning birds.
+
+[0:07-0:09] She responds [warm female voice]: "You mean it was cold."
+```
+
+**Key findings**:
+- LTX-2 respects timecode boundaries for pacing dialogue and action beats
+- Each timecode block should include: action direction + dialogue (if any) + sound cues
+- Works better than temporal connectors ("then", "after") for precise timing
+- Total timecodes should match the clip's `audio_duration` / total duration
+- Combine with voice tags `[warm female voice]` before quoted dialogue
+
+**When to use**: Dialogue scenes, precisely timed action beats, scenes with specific sound timing (e.g. "phone buzzes at 7 seconds"). Not needed for ambient/establishing shots.
+
+### LTX-2 Native Audio
+
+The `ltx2` consolidated endpoint generates video WITH native audio (dialogue, ambient, SFX). Key findings:
+
+| Works well | Has issues |
+|-----------|------------|
+| Single on-screen voice | Multi-voice without timecodes (voices bleed/drift) |
+| Ambient sounds / SFX | Fitting long dialogue into short clips without timecodes |
+| Voice quality (often better than TTS) | Voice attribution without per-line cues |
+| Timecoded dialogue pacing | |
+| Multi-voice with timecodes + O.S. annotation | |
+
+**Recommended approach for dialogue scenes** (timecoded dual-voice):
+1. Define voice cast up front: `NOOR: warm, natural female voice` / `KODA (O.S.): flat robotic monotone`
+2. Use timecoded blocks with inline voice tags per line:
+   ```
+   [0:02-0:03] NOOR [warm female voice]: "Morning, Koda."
+   [0:03-0:06] KODA (O.S.) [flat robotic monotone]: "Good morning, Noor."
+   ```
+3. Mark non-speaking characters with `(O.S.)` — this helps LTX-2 separate voice sources
+4. Include ambient sound cues in each timecode block for richer audio
+
+**Voice design**: Generate standalone voice clips per character using hero shots as `first_frame`. This establishes what LTX-2 produces for each character independently before using in scenes.
+
 ### Camera and Lens Language
 
 Use specific cinematography terms to control camera behavior:
@@ -846,7 +929,7 @@ Describe audio events alongside visual actions to improve temporal coherence:
 When the Generator simplifies a Kling prompt for LTX-2, it:
 - Strips `@ElementN` tags (no element system)
 - Removes `CUT to:` prefixes (no multi-prompt cuts)
-- Strips timecode markers `[0:00-0:03]` (harmless but noisy)
+- Strips timecode markers `[0:00-0:03]` (but see Timecode Direction below — LTX-2 actually follows these)
 - Concatenates multi-prompt entries with ". " separator
 
 **But automatic simplification isn't enough for best results.** When specifically targeting LTX-2, rewrite prompts to follow the narrative paragraph structure above rather than relying on auto-simplified Kling prompts.
@@ -857,7 +940,7 @@ When the Generator simplifies a Kling prompt for LTX-2, it:
 |-----------|------------|
 | No character identity sheets | Rely on start frame for character appearance |
 | No multi-prompt (cut within clip) | Write single continuous paragraph with temporal connectors |
-| No audio generation | Post-production audio or accept silent clips |
+| Native audio quality varies | LTX-2 consolidated endpoint generates audio natively. Single on-screen voices work well; multi-voice dialogue drifts (voices bleed into each other). Best for: single-character speech + ambient. Use ADR for off-screen characters. See Native Audio section below |
 | Max ~10s (257 frames) | Keep clips under 10s; split longer sequences |
 | Reduced likeness on wide shots | Start tight, pull out; or accept lower consistency |
 | Complex physics = artifacts | Simplify motion, avoid chaotic movements |

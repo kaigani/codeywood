@@ -216,6 +216,44 @@ The concat demuxer maps streams from the first file. If file 1 has no audio trac
 
 ALL clips need audio tracks for concat — even silent ones. Use `add_silent_audio()` to add a silent AAC track to clips with no dialogue or ambient sound. This prevents the concat demuxer from dropping audio from all subsequent clips.
 
+### Never Stream-Copy Concat (`-c copy`)
+
+**Stream copy (`-c copy`) in concat is unsafe** unless you can guarantee every single clip has byte-identical encoding parameters: same resolution, pixel format, H.264 profile/level, GOP structure, frame rate, and audio sample rate. In practice, this guarantee almost never holds — especially when clips come from different generation pipelines or different input image sizes.
+
+**Symptoms of `-c copy` concat failure**:
+- Video "sticks" on one frame during playback (decoder waiting for a keyframe that never comes)
+- Audio drops out mid-playback (AAC frame boundary misalignment)
+- Player shows corruption or artifacts at clip boundaries
+- File plays fine in some players but fails in others
+
+**Root causes**:
+- **Resolution mismatch**: Source images at different sizes (e.g., 1392x752 vs 1280x720 vs 1024x1024) produce clips the decoder can't seamlessly switch between
+- **GOP boundary misalignment**: Clips of different durations have keyframes at different offsets; stream copy preserves these, creating discontinuities
+- **Profile/level inconsistency**: One clip encoded as Baseline, another as Main — stream copy can't reconcile them
+
+**The fix**: Always re-encode during concat. Use `-preset ultrafast` to keep it cheap:
+
+```bash
+ffmpeg -y -f concat -safe 0 -i list.txt \
+  -c:v libx264 -preset ultrafast -crf 18 \
+  -pix_fmt yuv420p -r 25 \
+  -c:a aac -b:a 192k -ar 44100 -ac 2 \
+  output.mp4
+```
+
+This adds a few seconds of processing but eliminates an entire class of playback bugs. The shared `concatenate_clips()` function in `scripts/lib/ffmpeg.py` enforces this by default.
+
+### Resolution Normalization at Source
+
+When creating clips from images (paper cuts, storyboards, title cards), always normalize input images to a consistent resolution before encoding. The `image_to_clip()` function handles this with a scale+pad filter:
+
+```
+scale=1280:720:force_original_aspect_ratio=decrease,
+pad=1280:720:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1
+```
+
+This ensures all clips are 1280x720 regardless of input image size, with letterboxing if the aspect ratio differs. Combined with explicit H.264 profile (`-profile:v main -level:v 4.0`), this makes every clip concat-safe at the source.
+
 ---
 
 ## Review Protocol
@@ -269,6 +307,16 @@ clips:
     audio_lead_s: 1.0
     # Review: KEEP — strong close-up, L-cut into dialogue
 ```
+
+---
+
+## Assembly-Time Visual Effects
+
+When a story requires progressive visual change (deterioration, damage, environmental shift) across clips, handle it in assembly rather than regenerating:
+
+- **Color grade arc**: Apply `colorbalance` or `curves` filters that shift across the EDL (e.g., warm start → desaturated end) to communicate physical/emotional decline without touching source clips.
+- **Screen-glitch overlays**: Insert 2-4 frame static/noise bursts at specific timestamps via ffmpeg overlay to simulate display flicker or malfunction. No regeneration needed.
+- These techniques pair with audio deterioration (see sound-designer skill) for a full sensory arc built entirely in post.
 
 ---
 

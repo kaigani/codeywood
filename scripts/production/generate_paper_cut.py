@@ -125,7 +125,17 @@ def compose_direction_text(shot: dict) -> str:
     """
     # Prefer the dedicated direction field — it's written for narration
     direction_field = shot.get("direction", "").strip()
+
+    # Incorporate sound design cues if present
+    sound_field = shot.get("sound", "").strip()
+    if sound_field:
+        sound_text = f"Sound: {sound_field}"
+    else:
+        sound_text = ""
+
     if direction_field:
+        if sound_text:
+            return f"{direction_field} {sound_text}"
         return direction_field
 
     video_prompt = shot.get("video_prompt", "").strip()
@@ -331,9 +341,20 @@ def generate_paper_cut(
     # Discover existing assets
     frames_dir = scene_dir / "frames"
     vo_dir = scene_dir / "voiceover"
+    direction_dir = scene_dir / "direction"
 
     frames = discover_frames(frames_dir) if frames_dir.exists() else {}
     voiceover = discover_voiceover(vo_dir) if vo_dir.exists() else {}
+
+    # Discover pre-generated direction audio (dir_NN.wav)
+    direction_audio: Dict[int, Path] = {}
+    if direction_dir.exists():
+        for wav in sorted(direction_dir.glob("dir_*.wav")):
+            num_str = wav.stem.replace("dir_", "")
+            try:
+                direction_audio[int(num_str)] = wav
+            except ValueError:
+                pass
 
     print(f"\n{'='*60}")
     print(f"PAPER CUT — {len(shots)} shots")
@@ -341,10 +362,12 @@ def generate_paper_cut(
     print(f"  Scene: {scene_dir}")
     print(f"  Frames found: {len(frames)}/{len(shots)}")
     print(f"  Voiceover shots: {len(voiceover)}")
+    if include_direction and direction_audio:
+        print(f"  Direction audio: {len(direction_audio)} pre-generated")
     if include_direction and narrator_voice_ref:
-        print(f"  Narrator voice: {narrator_voice_ref.name}")
-    elif include_direction:
-        print(f"  Direction: text overlay (no narrator voice ref)")
+        print(f"  Narrator voice: {narrator_voice_ref.name} (TTS fallback)")
+    elif include_direction and not direction_audio:
+        print(f"  Direction: text overlay (no narrator voice ref, no pre-generated audio)")
     print()
 
     # Check for missing frames
@@ -376,7 +399,9 @@ def generate_paper_cut(
                 for line in voiceover.get(sid, []):
                     print(f"    VO: {line['character']}: \"{line['text'][:60]}...\"" if len(line['text']) > 60 else f"    VO: {line['character']}: \"{line['text']}\"")
             if dir_words > 0:
-                print(f"    DIR: {dir_words} words — \"{direction[:80]}...\"" if len(direction) > 80 else f"    DIR: {dir_words} words — \"{direction}\"")
+                has_audio = sid in direction_audio
+                audio_tag = " [AUDIO]" if has_audio else ""
+                print(f"    DIR: {dir_words} words{audio_tag} — \"{direction[:80]}...\"" if len(direction) > 80 else f"    DIR: {dir_words} words{audio_tag} — \"{direction}\"")
 
         print(f"\n{'='*60}\n")
         return None
@@ -389,49 +414,44 @@ def generate_paper_cut(
 
     for i, shot in enumerate(shots):
         sid = shot["id"]
-        dur = shot.get("duration", 5)
+        planned_dur = shot.get("duration", 5)
         name = shot.get("name", f"shot_{sid}")
-
-        print(f"\n  [{sid:2d}] {name} ({dur}s)")
 
         # Skip shots with missing frames
         if sid not in frames:
-            print(f"    SKIP — no frame")
+            print(f"\n  [{sid:2d}] {name} — SKIP (no frame)")
             continue
 
         frame_path = frames[sid]
 
-        # Step 1: Create image clip
-        clip_path = tmp_dir / f"shot_{sid:03d}.mp4"
-        result = image_to_clip(frame_path, clip_path, duration_s=dur)
-        if not result:
-            print(f"    ERROR — image_to_clip failed")
-            continue
-
-        # Step 2: Collect audio tracks
+        # --- Collect all audio BEFORE creating the image clip ---
+        # This lets us size the clip to fit the narration.
         audio_tracks = []
+        dialogue_tracks = []
 
         # Dialogue tracks
         if not direction_only:
             vo_lines = voiceover.get(sid, [])
             if vo_lines:
-                dialogue_tracks = calculate_dialogue_timing(dur, vo_lines)
+                # Use large max so all lines get scheduled; clip auto-sizes to fit
+                dialogue_tracks = calculate_dialogue_timing(9999, vo_lines)
                 audio_tracks.extend(dialogue_tracks)
-                for t in dialogue_tracks:
-                    char = next((l["character"] for l in vo_lines if l["path"] == t["path"]), "?")
-                    print(f"    VO @ {t['start_s']:.1f}s: {char} ({t['duration_s']:.1f}s)")
-            else:
-                dialogue_tracks = []
-        else:
-            dialogue_tracks = []
 
-        # Direction narration (in dialogue gaps)
-        if include_direction and narrator_voice_ref and narrator_voice_ref.exists():
+        # Direction narration — generate/fetch BEFORE clip creation
+        dir_result = None
+        dir_dur = 0.0
+        dir_source = None
+        direction_text = ""
+
+        if include_direction:
             direction_text = compose_direction_text(shot)
             if direction_text:
-                gaps = find_direction_gaps(dur, dialogue_tracks)
-                if gaps:
-                    # Generate direction audio
+                # Try pre-generated direction audio first
+                dir_wav = direction_audio.get(sid)
+                if dir_wav and dir_wav.exists():
+                    dir_result = dir_wav
+                    dir_source = "pre-gen"
+                elif narrator_voice_ref and narrator_voice_ref.exists():
                     dir_audio_path = tmp_dir / f"dir_{sid:03d}.wav"
                     dir_result = generate_direction_audio(
                         text=direction_text,
@@ -439,25 +459,70 @@ def generate_paper_cut(
                         output_path=dir_audio_path,
                         comfyui_url=comfyui_url,
                     )
-                    if dir_result:
-                        dir_dur = probe_audio_duration(dir_result) or 3.0
-                        # Place in first gap that fits
-                        placed = False
-                        for gap_start, gap_end in gaps:
-                            gap_size = gap_end - gap_start
-                            if gap_size >= min(dir_dur, 1.5):
-                                audio_tracks.append({
-                                    "path": dir_result,
-                                    "start_s": gap_start,
-                                    "volume": 0.85,
-                                })
-                                print(f"    DIR @ {gap_start:.1f}s: \"{direction_text[:50]}...\"")
-                                placed = True
-                                break
-                        if not placed:
-                            print(f"    DIR: no gap large enough ({dir_dur:.1f}s needed)")
+                    dir_source = "TTS"
 
-        # Step 3: Mix dialogue audio onto image clip
+                if dir_result:
+                    dir_dur = probe_audio_duration(dir_result) or 3.0
+
+        # --- Size the clip to fit all audio ---
+        # The image must hold for at least as long as the longest audio layer.
+        VO_TAIL_BUFFER = 1.2  # silence after last line
+        DIR_TAIL_BUFFER = 0.8  # silence after direction narration
+
+        # Calculate duration needed for dialogue
+        vo_dur = 0.0
+        if dialogue_tracks:
+            last = dialogue_tracks[-1]
+            vo_dur = last["start_s"] + last["duration_s"] + VO_TAIL_BUFFER
+
+        # Calculate duration needed for direction narration
+        # Direction starts at 0.3s (or after dialogue) + narration length + buffer
+        dir_start = 0.3
+        if dialogue_tracks:
+            last = dialogue_tracks[-1]
+            dir_start = last["start_s"] + last["duration_s"] + 0.2
+        narration_dur = dir_start + dir_dur + DIR_TAIL_BUFFER if dir_dur > 0 else 0.0
+
+        # Clip duration = longest of: planned duration, dialogue needs, narration needs
+        dur = max(planned_dur, vo_dur, narration_dur, 2.0)
+
+        print(f"\n  [{sid:2d}] {name} ({dur:.1f}s)")
+
+        # --- Create image clip at the correct duration ---
+        clip_path = tmp_dir / f"shot_{sid:03d}.mp4"
+        result = image_to_clip(frame_path, clip_path, duration_s=dur)
+        if not result:
+            print(f"    ERROR — image_to_clip failed")
+            continue
+
+        # Print VO track info
+        if dialogue_tracks:
+            vo_lines_list = voiceover.get(sid, [])
+            for t in dialogue_tracks:
+                char = next((l["character"] for l in vo_lines_list if l["path"] == t["path"]), "?")
+                print(f"    VO @ {t['start_s']:.1f}s: {char} ({t['duration_s']:.1f}s)")
+
+        # Place direction audio in the best gap
+        if dir_result and dir_dur > 0:
+            gaps = find_direction_gaps(dur, dialogue_tracks)
+            best_gap = None
+            best_size = 0
+            for gap_start, gap_end in gaps:
+                gap_size = gap_end - gap_start
+                if gap_size >= min(dir_dur, 1.5) and gap_size > best_size:
+                    best_gap = (gap_start, gap_end)
+                    best_size = gap_size
+            if best_gap:
+                audio_tracks.append({
+                    "path": dir_result,
+                    "start_s": best_gap[0],
+                    "volume": 0.85,
+                })
+                print(f"    DIR @ {best_gap[0]:.1f}s [{dir_source}]: \"{direction_text[:50]}...\"")
+            else:
+                print(f"    DIR: no gap large enough ({dir_dur:.1f}s needed)")
+
+        # --- Mix all audio onto the image clip ---
         # image_to_clip already includes silent audio track (44100Hz stereo AAC)
         # so mix_audio_tracks can reference [0:a] and all clips stay uniform
         if audio_tracks:
@@ -469,7 +534,7 @@ def generate_paper_cut(
                 # Mix failed — use the image clip as-is (has silent audio)
                 shot_clips.append(clip_path)
         else:
-            # No dialogue — image clip already has silent audio track
+            # No audio — image clip already has silent audio track
             shot_clips.append(clip_path)
 
     if not shot_clips:
@@ -487,11 +552,17 @@ def generate_paper_cut(
         for clip in shot_clips:
             f.write(f"file '{clip}'\n")
 
+    # Re-encode during concat to guarantee consistent encoding.
+    # Stream copy fails when source clips have different resolutions,
+    # H.264 profiles, or GOP structures — causing stuck-frame playback.
     concat_cmd = [
         "ffmpeg", "-y",
         "-f", "concat", "-safe", "0",
         "-i", str(concat_file),
-        "-c", "copy",
+        "-c:v", "libx264", "-preset", "ultrafast", "-crf", "18",
+        "-pix_fmt", "yuv420p",
+        "-r", "25",
+        "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-ac", "2",
         str(output_path)
     ]
     result = subprocess.run(concat_cmd, capture_output=True, text=True)

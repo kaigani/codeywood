@@ -222,6 +222,38 @@ The next clip's video starts 0.5-1.5s before the audio cut.
 
 ---
 
+## Direction Narration as Audio Layer
+
+Direction narration is a fourth audio layer used in paper cuts and early rough assemblies. It fills silence gaps with spoken description of what the audience would see and hear in the final production.
+
+### Layer Placement
+
+| Layer | Purpose | Volume | When |
+|-------|---------|--------|------|
+| Ambient bed | Environmental presence | -24dB | Always |
+| Dialogue | Character speech (TTS) | -6dB | Per script |
+| **Direction narration** | Camera/sound/blocking cues | **-8dB** | **Silence gaps only** |
+| Action sounds | Synced to motion | -18dB | Per sound design |
+
+Direction narration plays **only in gaps where no dialogue is scheduled**. It never overlaps with character speech. The paper cut script automatically finds the largest silence gap in each shot and places the narration there.
+
+### Narrator Voice
+
+Use a single consistent narrator voice across the production. Store the reference WAV at `REFERENCES/voice_refs/narrator_voice_ref.wav`. This voice should be:
+- **Neutral and warm** — not dramatic or performative
+- **Distinct from character voices** — the audience must instantly know this is narration, not dialogue
+- **Clean recording** — minimal room tone, no background noise (the TTS clones whatever artifacts are in the reference)
+
+### ComfyUI TTS: Sync vs. Async
+
+The `qwen3-tts-voiceclone` workflow returns either:
+- **HTTP 200 with audio bytes** (sync) — short texts, low queue load
+- **HTTP 202 with `job_id`** (async) — longer texts or busy queue
+
+The `generate_direction_audio()` function in `scripts/lib/audio_analysis.py` handles both. For batch generation, submit all jobs first, then poll — this parallelizes the GPU work and is 3-4x faster than sequential generation.
+
+---
+
 ## Voice Design Reference
 
 Characters need consistent vocal identities across the production:
@@ -240,3 +272,11 @@ python3 scripts/production/generate_dialogue.py --scene sc01
 - Test with short phrases first, then generate full lines
 - Use Whisper `model_size=large` for accurate transcription of generated dialogue (`base` misreads short words like "sea" → "C")
 - **Voice iteration lesson**: Initial voice designs often come out too "bright/Disney." Design for the character's emotional register, not their surface personality. A guarded character needs a low, raspy voice — not a cheerful one that "sounds young"
+- **Robot/AI characters**: Flat, synthesized TTS delivery is a natural strength for non-human characters. The emotion comes from context and script, not vocal inflection. Do not fight the TTS limitations here — they outperform human actors who would over-emote the role.
+
+### Audio-Only Deterioration
+
+When a character or machine is physically/emotionally deteriorating across a scene, audio layering can communicate this without regenerating video clips:
+- Layer worsening mechanical sounds (grinding, stuttering servos, electrical crackle) that intensify across clips
+- Degrade voice quality progressively (add subtle distortion, frequency roll-off, or dropout artifacts via ffmpeg filters)
+- This is cheaper and more controllable than trying to achieve progressive visual deterioration across AI-generated clips

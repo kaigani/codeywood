@@ -30,9 +30,9 @@ class ComfyUIVideoBackend(VideoBackend):
     supports_audio = False
     cost_per_second = 0.0
 
-    # Frame count limits (LTX-2 memory constraints)
-    MIN_FRAMES = 25    # ~1s at 25fps
-    MAX_FRAMES = 321   # ~12.8s at 25fps
+    # Frame count limits (LTX-2 at 25fps)
+    MIN_FRAMES = 25    # ~1s
+    MAX_FRAMES = 501   # ~20s — validated on local hardware (2026-03-02)
 
     def __init__(
         self,

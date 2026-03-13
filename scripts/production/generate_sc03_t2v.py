@@ -213,7 +213,7 @@ SHOTS = [
 
 def duration_to_frame_count(seconds, fps=25):
     raw = round(seconds * fps) + 1
-    return max(25, min(raw, 321))
+    return max(25, min(raw, 501))
 
 
 def generate_t2v(prompt, frame_count, seed=None, width=1280, height=720):

@@ -52,7 +52,7 @@ VIDEO_TIMEOUT = 900     # 15 min per clip
 def duration_to_frame_count(seconds, fps=25):
     """Convert duration in seconds to LTX-2 frame count."""
     raw = round(seconds * fps) + 1
-    return max(25, min(raw, 321))
+    return max(25, min(raw, 501))
 
 
 def safe_filename(name):

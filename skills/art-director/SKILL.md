@@ -235,3 +235,10 @@ This arc should be INTENTIONAL and SUBTLE:
 - Saturation changes should be nearly invisible per-cut but visible across the scene
 
 Use `analyze_color_palette()` to verify the arc is smooth, not choppy.
+
+### Deliberate Color Arcs for Deterioration
+
+When a scene requires visible decline (character injury, environmental decay, system failure), use the color grade arc as the primary visual tool:
+- Shift warm → desaturated across the EDL via `colorbalance`/`curves` ffmpeg filters applied per-clip in assembly
+- This communicates physical/emotional deterioration without regenerating any clips — the source footage stays unchanged
+- Combine with audio layering (worsening mechanical sounds, voice degradation) from the sound-designer skill for full sensory sell

@@ -47,6 +47,13 @@ style_dna:
   # Extracted hex palette (8-12 colors)
   hex_palette: []
 
+# Writers Room Configuration
+# Set after Head Writer Selection (see skills/writer/writers-room/SKILL.md)
+writers_room:
+  head_writer: ""        # Persona filename without .yaml (e.g., "mick_caffrey")
+  room: []               # List of persona filenames for room members
+  room_size: 5           # Target room size (3-6)
+
 # Negative prompts (common across generations)
 negative_prompts:
   - "multiple characters"

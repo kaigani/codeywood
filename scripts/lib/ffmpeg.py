@@ -69,12 +69,19 @@ def concatenate_clips(clips: List[Path], output_path: Path) -> Optional[Path]:
         for clip in clips:
             f.write(f"file '{clip}'\n")
 
+    # Re-encode to ensure consistent encoding across all clips.
+    # Stream copy (-c copy) fails when clips have mismatched resolution,
+    # pixel format, H.264 profile/level, or GOP structure — causing
+    # "stuck frame" playback issues. Ultrafast preset keeps this cheap.
     cmd = [
         "ffmpeg", "-y",
         "-f", "concat",
         "-safe", "0",
         "-i", str(concat_file),
-        "-c", "copy",
+        "-c:v", "libx264", "-preset", "ultrafast", "-crf", "18",
+        "-pix_fmt", "yuv420p",
+        "-r", "25",
+        "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-ac", "2",
         str(output_path)
     ]
 
@@ -926,17 +933,27 @@ def image_to_clip(image_path: Path, output_path: Path,
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
+    # Scale to 1280x720 and pad to handle any input resolution.
+    # This ensures all clips are concat-safe (identical resolution,
+    # pixel format, profile, and GOP structure).
+    scale_filter = (
+        "scale=1280:720:force_original_aspect_ratio=decrease,"
+        "pad=1280:720:(ow-iw)/2:(oh-ih)/2:color=black,"
+        "setsar=1"
+    )
+
     cmd = [
         "ffmpeg", "-y",
         "-loop", "1",
         "-i", str(image_path),
         "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
-        "-c:v", "libx264",
+        "-vf", scale_filter,
+        "-c:v", "libx264", "-profile:v", "main", "-level:v", "4.0",
         "-t", str(duration_s),
         "-pix_fmt", "yuv420p",
         "-r", str(fps),
-        "-g", str(fps),          # keyframe every 1 second (not stillimage tune)
-        "-keyint_min", str(fps),  # minimum keyframe interval
+        "-g", str(fps),
+        "-keyint_min", str(fps),
         "-c:a", "aac", "-b:a", "192k",
         "-shortest",
         str(output_path)

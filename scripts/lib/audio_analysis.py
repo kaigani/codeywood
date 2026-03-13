@@ -250,9 +250,13 @@ def generate_direction_audio(
     output_path: Path,
     comfyui_url: str = "http://192.168.1.181:8100",
     workflow: str = "qwen3-tts-voiceclone",
+    timeout: int = 120,
 ) -> Optional[Path]:
     """
     Generate spoken direction narration via TTS voice clone.
+
+    Handles both sync (200 with audio) and async (202 with job_id) responses
+    from the ComfyUI API.
 
     Args:
         text: Direction text to speak
@@ -260,10 +264,12 @@ def generate_direction_audio(
         output_path: Path for output audio file
         comfyui_url: ComfyUI server URL
         workflow: TTS workflow name
+        timeout: Max seconds to wait for async job
 
     Returns:
         Path to generated audio, or None on failure
     """
+    import time as _time
     import requests as _requests
 
     output_path = Path(output_path)
@@ -275,7 +281,7 @@ def generate_direction_audio(
         with open(voice_ref, "rb") as vf:
             files = {"voice": (voice_ref.name, vf, "audio/wav")}
             data = {"text": text}
-            response = _requests.post(url, data=data, files=files, timeout=120)
+            response = _requests.post(url, data=data, files=files, timeout=timeout)
     except _requests.exceptions.ConnectionError:
         print(f"  ComfyUI not available at {comfyui_url}")
         return None
@@ -283,16 +289,58 @@ def generate_direction_audio(
         print(f"  TTS request timed out")
         return None
 
-    if response.status_code != 200:
-        print(f"  TTS error {response.status_code}: {response.text[:200]}")
+    # Sync response — audio returned directly
+    if response.status_code == 200:
+        content_type = response.headers.get("content-type", "")
+        if "audio" in content_type or "octet-stream" in content_type:
+            with open(output_path, "wb") as f:
+                f.write(response.content)
+            return output_path
+
+    # Async response — poll for job completion
+    if response.status_code in (200, 202):
+        try:
+            job_data = response.json()
+        except Exception:
+            print(f"  TTS: unexpected response format")
+            return None
+
+        job_id = job_data.get("job_id")
+        if not job_id:
+            print(f"  TTS: no job_id in response")
+            return None
+
+        deadline = _time.time() + timeout
+        while _time.time() < deadline:
+            try:
+                status_resp = _requests.get(
+                    f"{comfyui_url}/jobs/{job_id}", timeout=10
+                )
+                status = status_resp.json()
+            except Exception:
+                _time.sleep(2)
+                continue
+
+            if status.get("status") == "completed":
+                result_resp = _requests.get(
+                    f"{comfyui_url}/jobs/{job_id}/result", timeout=30
+                )
+                if result_resp.status_code == 200 and len(result_resp.content) > 100:
+                    with open(output_path, "wb") as f:
+                        f.write(result_resp.content)
+                    return output_path
+                else:
+                    print(f"  TTS: result fetch failed ({result_resp.status_code})")
+                    return None
+
+            if status.get("status") == "error":
+                print(f"  TTS job failed: {status.get('error', 'unknown')}")
+                return None
+
+            _time.sleep(2)
+
+        print(f"  TTS: job {job_id} timed out after {timeout}s")
         return None
 
-    content_type = response.headers.get("content-type", "")
-    if "audio" not in content_type and "octet-stream" not in content_type:
-        print(f"  Unexpected content type: {content_type}")
-        return None
-
-    with open(output_path, "wb") as f:
-        f.write(response.content)
-
-    return output_path
+    print(f"  TTS error {response.status_code}: {response.text[:200]}")
+    return None

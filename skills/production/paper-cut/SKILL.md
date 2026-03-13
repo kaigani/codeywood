@@ -148,6 +148,130 @@ These questions address the reasoning gap identified in the Gemini analysis comp
 
 **The "why" behind each cut**: For every transition, articulate why we cut HERE and not 0.5s earlier or later. If you can't articulate it, the cut is wrong.
 
+## Writing Direction Narration
+
+Direction narration fills silence gaps in the paper cut — the moments between dialogue where the image is static but the story continues. It is **not** a screenplay description or video prompt. It is a sparse, spoken layer that tells the audience what they would see and hear if the film were fully produced.
+
+### What to Include
+
+| Category | Example |
+|----------|---------|
+| **Sound effects** | "Coffee maker gurgles to life." |
+| **Camera cues** | "Wide shot, static camera." |
+| **Essential blocking** | "She sits on the floor next to Koda's station." |
+| **Story-significant details** | "Her phone screen glows. Subject line: KODA-7 Firmware Recall." |
+| **Emotional beats** | "The longest pause. The display cuts out completely." |
+
+### What to Exclude
+
+- Full scene descriptions (that's the video prompt's job)
+- Character thoughts or inner monologue
+- Dialogue paraphrasing ("she says something about...")
+- Technical camera specs ("24mm lens, f/2.8")
+- Anything the dialogue already communicates
+
+### Word Count Targets
+
+| Shot Type | Target | Rationale |
+|-----------|--------|-----------|
+| Detail/insert shot (3-5s) | 8-15 words | Just enough to name what we see |
+| Medium shot with action (6-10s) | 15-25 words | One or two beats of blocking |
+| Emotional hold (10-18s) | 25-40 words | Build atmosphere, describe the silence |
+| No dialogue at all | Full gap | Narration is the only audio layer |
+| Dialogue + trailing gap | Gap words only | Fill the silence after lines end |
+
+### The Density Rule
+
+**Sparse > thorough.** A paper cut with narration on every shot becomes an audiobook. Target narration on 40-60% of shots — specifically those with silence gaps > 2 seconds. Shots where dialogue fills the duration need no narration.
+
+### The `direction` Field in shot_list.yaml
+
+Write direction narration directly in the shot list's `direction` field. This is distinct from `video_prompt` (which instructs the video model) and `frame_prompt` (which instructs the image model):
+
+```yaml
+- id: 5
+  duration: 10
+  frame_prompt: "Medium shot of woman at kitchen table with coffee..."
+  video_prompt: "Static camera, warm morning light, woman sips coffee..."
+  direction: "She takes her mug — the ceramic one with the chipped handle — and sits at the kitchen table."
+  sound: "Coffee cup set down on wood. Chair scrape."
+```
+
+The `direction` field is written for the narrator's voice. The `sound` field adds environmental cues. Both feed into the paper cut's direction narration layer.
+
+---
+
+## Pre-Generated Direction Audio
+
+For better quality and faster iteration, pre-generate direction narration WAVs before building the paper cut.
+
+### Workflow
+
+1. **Write sparse narration cues** — a Python dict or YAML mapping `scene → shot_id → text`
+2. **Batch-generate via TTS** — submit all cues to the ComfyUI `qwen3-tts-voiceclone` workflow with the narrator voice reference
+3. **Save to `direction/` directory** — `PRODUCTION/{episode}/{scene}/direction/dir_{shot:02d}.wav`
+4. **Paper cut auto-discovers** — the script checks `direction/` before attempting real-time TTS
+
+### Naming Convention
+
+```
+PRODUCTION/EP01/sc01/direction/
+├── dir_01.wav    ← shot 1 narration
+├── dir_03.wav    ← shot 3 narration (shot 2 has dialogue, no narration needed)
+├── dir_05.wav    ← shot 5 narration
+└── ...
+```
+
+### Why Pre-Generate?
+
+- **Quality control**: Listen to each narration before assembling. Re-generate any that sound wrong.
+- **Speed**: Paper cut assembly takes ~25s when audio is pre-generated vs. minutes with real-time TTS.
+- **No API dependency**: Paper cut builds offline once WAVs exist.
+- **Iteration**: Can regenerate the paper cut dozens of times without re-hitting TTS.
+
+---
+
+## VO Sizing: Shot Duration vs. Dialogue
+
+A shot must be long enough to hold all its dialogue with breathing room. If it isn't, lines get silently dropped and the paper cut is incomplete.
+
+### The Rule
+
+```
+minimum_shot_duration = sum(all_vo_durations) + (num_lines × 0.3s gap) + 0.5s pre-offset + 1.0s buffer
+```
+
+### Practical Sizing
+
+| Dialogue Lines | Typical VO Duration | Minimum Shot Duration |
+|---------------|--------------------|-----------------------|
+| 1-2 short lines | 2-4s | 5-6s |
+| 2-4 exchanges | 6-12s | 10-15s |
+| Long speech (1 character) | 8-12s | 12-15s |
+| Dense back-and-forth (6+ lines) | 15-25s | 18-28s |
+
+### When Shots Overflow
+
+Symptoms: Paper cut output says "Mixing N audio track(s)" but some lines are missing when you listen. The `schedule_dialogue()` function breaks when `current_time + wav_dur > shot_duration`.
+
+Fix: Extend the shot's `duration` in shot_list.yaml. Always check after generating voiceover — VO duration is unpredictable until the TTS actually generates the WAV.
+
+### Post-VO Duration Audit
+
+After generating voiceover, audit timing before building the paper cut:
+
+```bash
+# Check VO durations for a scene
+for f in PRODUCTION/EP01/sc01/voiceover/*.wav; do
+  dur=$(ffprobe -v quiet -show_entries format=duration -of csv=p=0 "$f")
+  echo "$(basename $f): ${dur}s"
+done
+```
+
+Sum VO durations per shot and compare against shot duration. Extend any shot where total VO + gaps exceeds the allocated time.
+
+---
+
 ## Revision Workflow
 
 After review, create revision notes per shot:
