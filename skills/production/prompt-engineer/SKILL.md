@@ -233,6 +233,49 @@ When to use vs Klein/Dev pipeline:
 
 See: `references/services/z-image/z-image-base.md` and `references/services/qwen/qwen-image-edit.md`
 
+### 3-Stage Compositing Pipeline (Best Continuity)
+
+When cross-shot drift is unacceptable (e.g. same character across 10+ shots in a scene),
+use neutral character refs as a controlled intermediate step. This bounds drift to the
+qwen-edit reposing step rather than a fresh t2i roll per frame.
+
+**Stage 1 — Neutral Character Variants** (qwen-edit, ~10s each)
+- Input: character extracted onto neutral grey background (from hero shot via qwen-edit)
+- Output: per-shot poses — CU head/shoulders, medium seated, profile, back view, hands detail
+- Prompt pattern: "Show this character in a [shot type]. [Pose/expression]. Same face, same skin tone. Grey neutral background."
+- Store in: `REFERENCES/character_poses/{character}/`
+
+**Stage 2 — Location Angle Variants** (qwen-edit on wide masters, ~10s each)
+- Input: wide z-image location ref
+- Output: per-shot angles — desk corner, window at night, different camera height
+- Prompt pattern: "Show this room from [angle]. [Lighting/time]. [Props]. No people."
+- Store in: `REFERENCES/location_crops/{episode}/`
+
+**Stage 3 — Final Compositing** (qwen-edit, 2 refs, ~16s each)
+- Input: location crop as `image`, character pose as `image2`
+- Output: production frame
+- Prompt pattern: "Film still, [style]. [Shot type] of the boy from image 2 [action] at [location from this image]. [Lighting]. [Atmosphere]."
+- Store in: `PRODUCTION/{episode}/frames/`
+
+**Stage 4 — Incremental Fixes** (qwen-edit-on-edit, ~10s each)
+- Input: composited frame as `image` (single ref, no image2)
+- Output: fixed frame
+- Best for: prop replacement, skin tone matching, object detail, lighting tweaks
+- NOT for: major recomposition, spatial repositioning, angle changes
+- Prompt pattern: "Replace [wrong thing] with [correct thing]. Keep everything else the same."
+
+**Performance**: ~13s average per generation, $0.00 (local ComfyUI). A 17-clip scene needs
+~17 poses + ~5 location crops + 17 composites + ~5 fixes = ~44 generations = ~10 minutes.
+
+**Key rule**: Never overload qwen-edit with too many references. Use max 2 refs (location + character)
+for compositing. Handle objects (devices, props, tools) via prompt description in compositing or
+via edit-on-edit fixes on the result — don't add them as a third reference image.
+
+**Aspect ratio normalization**: Qwen-edit drifts output dimensions (~8.7% upscale, e.g. 1280x720 →
+1392x752). Always normalize location crops and final frames back to target dimensions after generation.
+Generate z-image source locations at the desired final frame size (e.g. 1280x720 for 16:9). z-image
+respects exact requested dimensions; qwen-edit does not.
+
 ### Reference Image Ordering (Nano Banana Pro)
 
 When using Nano Banana Pro with multiple reference images, ordering in the `image_urls` array matters:

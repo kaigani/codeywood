@@ -17,6 +17,17 @@ The first image slot (`image`) determines output dimensions/aspect ratio:
 **For cinematic frames**: ALWAYS put the wide location ref as `image`
 **Exception**: Character close-ups can use portrait character ref as `image`
 
+### Qwen-Edit Dimension Drift (Validated 2026-03-12)
+
+Qwen-edit does NOT preserve exact input dimensions. It rounds to its own internal grid:
+- 1280x720 input → 1392x752 output (~8.7% upscale, ratio ~1.85:1 instead of 16:9)
+- This drift is consistent — same input size always produces the same output size
+
+**Fix**: Always normalize qwen-edit output back to target frame dimensions after generation.
+Use Pillow `Image.resize()` or ffmpeg scale. This applies to location crops AND final composites.
+
+z-image-base-t2i does NOT drift — it respects exact requested dimensions.
+
 ---
 
 ## Reference Slot Strategy by Shot Type
@@ -144,6 +155,21 @@ For over-the-shoulder shots, compose from refs — don't edit existing two-shots
 3. **Fix** specific issues via edit-on-edit (targeted prompts)
 4. **Derive** shot variations (OTS, different angles) from refs, NOT from existing frames
 5. **Reframe** existing frames for tighter/wider versions via edit-on-edit
+
+### Edit-on-Edit Best Practices (Validated 2026-03-12)
+
+Edit-on-edit is a precision tool for incremental fixes. Use it instead of regenerating:
+
+- **Prop replacement**: "Replace the computer monitor with a small handheld device" — works cleanly
+- **Skin tone / color matching**: "Make the boy's skin tone slightly darker and warmer" — subtle adjustments hold
+- **Object refinement**: "The object in his right hand should be a small brushed aluminum device" — targeted
+- **Lighting tweaks**: Color temperature shifts, adding/removing light sources
+
+**Rules**:
+- One fix per pass. Don't stack multiple changes in a single edit — they compound unpredictably.
+- Prompt must explicitly say "keep everything else the same" to anchor the composition.
+- If a fix drifts the face, go back to the Stage 3 composite and re-fix — don't chain edits on drifted output.
+- Max 2-3 edit passes on a single frame before quality degrades. If you need more, re-composite from Stage 3.
 
 ---
 

@@ -233,9 +233,93 @@ Update Story Lock to v2 and save as `STORY/WRITERS_ROOM/STORY_LOCK.md`. Mark wha
 
 ---
 
-## Phase 5: Episode Breaking
+## Phase 5: Experience Map & Plot Casting
 
-*This phase runs per-episode, typically after the Story Lock is finalized.*
+*This phase runs before episode breaking. It is the bridge between what the story IS and what scenes we write. Process adapted from Corey Mandell's "Experience-First" methodology (Coen Brothers, Vince Gilligan school).*
+
+**Core principle:** Do not start with the itinerary (the outline). Start with the purpose of the trip (the experience). Most unsuccessful writers get trapped in the "trees" of an outline. We look at the "forest" of the experience first, then back into the events that create it.
+
+### Step 1: Define the "Underneath" Experience
+
+Before mapping *what* happens, map *how the audience feels.*
+
+**The "Vacation" analogy:** Every story arc, episode, or scene is a trip. What kind?
+- A "honeymoon" (romance/intimacy)
+- A "bachelor party" (chaos/excitement)
+- A "solo retreat" (reflection/peace)
+- A "road trip with someone you're about to break up with" (tension/dread/tenderness)
+
+Name the psychological journey, not the plot. The underneath experience is the feeling the audience can't articulate but their body knows.
+
+**Examples:**
+- *Ladybird*: The experience of having to "rip yourself away" from a controlling parent — inherently painful and injurious.
+- *Cheers*: The experience of "safety and wholesomeness" in an environment (a bar) that usually feels dangerous or dark.
+- *Breaking Bad*: The slow realization that you've been rooting for the wrong person.
+
+### Step 2: The Experience Map (Deliverable)
+
+A literal map of the audience's emotional states from beginning to end. Not plot beats — *feeling states.*
+
+**Format:**
+
+```markdown
+# Experience Map: {Episode/Arc Title}
+
+## Underneath Experience
+{One sentence: the psychological journey the audience takes}
+
+## The Trip Type
+{The vacation analogy — what kind of emotional trip is this?}
+
+## Feeling States (in order)
+
+| # | State | The Audience Is... | Transition Mechanism |
+|---|-------|--------------------|---------------------|
+| 1 | {feeling} | {what their body is doing} | {what shifts them to the next state} |
+| 2 | {feeling} | {what their body is doing} | {what shifts them to the next state} |
+| ... | | | |
+
+## The Moment That Earns the Trip
+{The single moment where the underneath experience crystallizes — the audience FEELS the theme without anyone saying it}
+
+## What the Audience Takes Home
+{The feeling that persists after the screen goes dark}
+```
+
+**Scope of application:**
+- **Entire story arc**: Map the macro-experience. Cast the major milestones that force the audience to feel that trajectory.
+- **Single episode**: Map the emotional arc. Every beat escalates or complicates the underneath experience.
+- **Single scene**: Define the underneath experience of a conversation. Is it a "power struggle" or a "failed connection"? Cast the dialogue and actions that create that specific friction.
+
+### Step 3: Soliciting Volume (Writers Room Brainstorm)
+
+Once the Experience Map is set, use the room to generate a massive pool of possibilities.
+
+- **Open solicitations**: Task the writers with pitching as many ideas as possible for each feeling state. Every funny, dramatic, or mundane event that could create that specific feeling.
+- **Quantity over quality**: Aim for volume. The goal is to create a pool of events without the pressure of finding the "right" one immediately.
+- **No sequencing yet**: Events are unordered. Just a pile of possibilities per feeling state.
+
+### Step 4: Plot Casting (Narrowing to the Plot)
+
+The head writer "casts" the events that best fit the "roles" created by the Experience Map.
+
+**The filter:** Review the brainstormed pool through the lens of the intended experience. Ask: *"Which of these events creates the exact underlying feeling we mapped?"*
+
+**Strategic selection principles:**
+- Don't pick the funniest scene — pick the one that establishes the character's heart.
+- Don't pick the most dramatic event — pick the one that physicalizes the internal experience.
+- *Cheers* cast the scene with the underage kid to prove the lead was a "good guy when no one was looking," establishing the "safe" experience.
+- *Ladybird* chose a girl jumping out of a moving car to physicalize the "pain of breaking free."
+
+**Finalizing the plot:** Sequence only the "cast" events. This ensures the plot never feels episodic or lagging — every beat is an escalation of the intended experience.
+
+**Deliverable:** `STORY/WRITERS_ROOM/EXPERIENCE_MAP_{episode}.md` containing the map + the cast events.
+
+---
+
+## Phase 6: Episode Breaking
+
+*This phase runs per-episode, after the Experience Map is finalized.*
 
 ### Assign the Team
 
@@ -247,7 +331,7 @@ Update Story Lock to v2 and save as `STORY/WRITERS_ROOM/STORY_LOCK.md`. Mark wha
 
 Before drafting, the room agrees on one sentence: what is this episode's job?
 
-Not the plot. Not the theme. The *job.* What does the audience feel at the end that they didn't feel at the beginning?
+Not the plot. Not the theme. The *job.* What does the audience feel at the end that they didn't feel at the beginning? This should map directly to the Experience Map's "What the Audience Takes Home."
 
 ### The KISS Test
 
@@ -264,6 +348,8 @@ Three parts:
 **Rule:** If something made someone feel something real in draft one, it does not get touched in draft two. Protect what works.
 
 **Rule:** If a draft requires more than four structural changes, the draft failed at a higher level than execution. Go back to the episode brief, not the page.
+
+**Rule:** If a scene doesn't escalate the underneath experience from the Experience Map, it doesn't belong — no matter how well-written it is.
 
 ---
 

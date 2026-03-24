@@ -14,9 +14,20 @@ Choose the right pipeline tier based on production phase:
 |------|----------|-----------------|------|-------------|
 | 1 — First Draft | LTX-2 T2V (text only) | ~18 min | $0.00 | Testing shot lists, prompt quality, pacing |
 | 2 — Revision | Klein frames + LTX-2 i2v | ~28 min | $0.00 | Character anchoring, composition control |
+| 2b — Continuity | 3-stage compositing + LTX-2 i2v | ~40 min | $0.00 | Cross-shot consistency (same character across 10+ shots) |
 | 3 — Final | Dev frames + Kling v3 Pro | $$$ | varies | Final production, highest quality |
 
 **Default workflow**: Start at Tier 1 for every scene. Only escalate to Tier 2/3 for shots that need it.
+
+### Tier 2b: 3-Stage Compositing Pipeline
+
+When shot-to-shot character drift is the main problem, use the 3-stage compositing pipeline
+instead of independent per-shot frame generation. See `skills/production/prompt-engineer/SKILL.md`
+(section: 3-Stage Compositing Pipeline) for full technique.
+
+Key difference from Tier 2: instead of generating each frame independently with Klein t2i,
+you extract a neutral character → repose per shot → compose with location crops → fix incrementally.
+All frames trace back to the same neutral character ref, bounding drift.
 
 ### LTX-2 Frame Count Limits
 
