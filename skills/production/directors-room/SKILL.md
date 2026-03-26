@@ -76,6 +76,7 @@ doneness:
 dependencies:
   skills:
     - production/video-director
+    - production/visual-translation  # Must run BEFORE directors room
 ---
 
 # Directors Room
@@ -269,14 +270,27 @@ When a person is the focal point of a clip, the video model WILL generate mouth 
 
 ---
 
+## Pre-Requisite: Visual Translation Pass
+
+**Before the directors room convenes, the screenplay must pass the Visual Translation Pass** (`skills/production/visual-translation/SKILL.md`).
+
+The Visual Translation Pass tests every beat against 7 rules for visual translatability. Beats that FAIL are pushed back to the writers room for revision. Only beats that PASS or MARGINAL proceed to the directors room.
+
+If no `visual_translation_pass.md` exists for this episode in `PRODUCTION/{episode}/`, run the pass first. Do not plan shots for untranslatable beats — this wastes production time and produces clips that don't communicate the script's intent.
+
+If the directors room encounters a beat mid-session that feels untranslatable (screen content as story, invisible micro-actions, internal states, subtle environmental changes), flag it and push it back through the visual translation pass rather than trying to fix it with prompts.
+
+---
+
 ## Round 0: Context Loading
 
 Before the archetypes convene, Claude loads all available context:
 
 ### Required Reading
 1. **Screenplay section** — the scene being shot-listed
-2. **PROJECT_CONFIG.yaml** — style DNA, character definitions, visual language
-3. **Video Director skill** — model constraints, prompting guide, pacing targets
+2. **Visual Translation Pass** — confirm all beats PASS or MARGINAL (see `PRODUCTION/{episode}/visual_translation_pass.md`)
+3. **PROJECT_CONFIG.yaml** — style DNA, character definitions, visual language
+4. **Video Director skill** — model constraints, prompting guide, pacing targets
 
 ### If Available
 4. **Storyboards** — compositional reference for the scene

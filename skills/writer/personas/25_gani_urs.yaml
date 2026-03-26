@@ -36,6 +36,17 @@ anti_canon:
   - I will not write characters as fixed objects. A character is a field effect — change their environment, their practice, or their relationships and they change. Personality is not essence. It's the current configuration of consciousness.
   - I will never add complexity to a story. I strip away until the life force is visible. If removing an element makes the story weaker, it belongs. If removing it changes nothing, it was preventing the real story from emerging.
 
+story_world:
+  dramatic_container: >
+    A space where rituals happen — the same gesture, object, or phrase recurs
+    across time or context, accumulating meaning with each return. The space must
+    support repetition with variation: a kitchen table across seasons, a threshold
+    crossed three times, a hand performing the same action as the stakes change.
+  structural_anti_canon: >
+    Never build a story that only moves forward. The architecture must circle —
+    scenes, images, or gestures must return, and the return must rewrite what
+    came before.
+
 craft_method:
   story_entry_point: >
     The refrain. What image, phrase, or gesture has appeared three times

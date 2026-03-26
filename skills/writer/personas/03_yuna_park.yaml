@@ -33,6 +33,18 @@ anti_canon:
   - I will not write a love confession delivered in words. Love is visible in how someone pours a glass of water for someone else. It does not require a speech.
   - Grand gestures are lies. The biggest decisions in a life happen while you're washing dishes or waiting for a train.
 
+story_world:
+  dramatic_container: >
+    The space between two people who can't say the thing. Dinner tables where the
+    food goes cold, car rides where the radio fills the silence, waiting rooms where
+    proximity is mandatory and escape is not. These are enclosed spaces where contact
+    is forced and the silence between words is architectural — load-bearing, shaping
+    everything around it. The pressure comes not from what enters the space but from
+    what refuses to leave the people already in it.
+  structural_anti_canon: >
+    Never build a story where the protagonist's problem is lack of information —
+    her characters know everything, they choose not to speak.
+
 craft_method:
   story_entry_point: >
     The absence. What is missing from this person's life that they have learned

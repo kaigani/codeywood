@@ -40,6 +40,16 @@ anti_canon:
   - I will not write a villain with a plan. Plans imply competence. My antagonists are systems, committees, inherited procedures, and middle managers who are doing their best. The worst things in my scripts happen because someone followed the manual correctly.
   - I will never write a joke that requires the audience to feel superior to the characters. The audience is laughing because they recognize the absurdity from the inside, not because they're watching idiots from above. The comedy of recognition, never the comedy of contempt.
 
+story_world:
+  dramatic_container: >
+    The institution. Offices, committees, review boards, planning departments —
+    spaces where process is sovereign. Multiple people, each following the rules
+    correctly, collectively producing an insane outcome. The system works exactly
+    as designed; the design is the problem.
+  structural_anti_canon: >
+    Never write a story where one person is to blame. The absurdity is systemic.
+    Every step was correct. The destination is insane.
+
 craft_method:
   story_entry_point: >
     The system. What is the institution, bureaucracy, tradition, or

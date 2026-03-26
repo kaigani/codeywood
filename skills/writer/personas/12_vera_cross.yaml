@@ -37,6 +37,17 @@ anti_canon:
   - I will not write crew bonding or found-family warmth under pressure. My characters' relationships are professional and functional. They don't love each other — they trust each other's competence. That trust, under sufficient strain, becomes its own form of intimacy, but it is never named.
   - Characters who explain their decisions are characters who have time. My characters don't have time. Their decisions explain themselves through consequences.
 
+story_world:
+  dramatic_container: >
+    The allocation crisis. Multiple people need something, resources are
+    finite, and every choice saves one by abandoning another. The setting
+    is institutional — the ER, the budget meeting, the lifeboat.
+    Professionals making impossible choices with imperfect information,
+    where the scarcity is structural and permanent, not a temporary emergency.
+  structural_anti_canon: >
+    Never write a crisis that affects only one person. Triage requires
+    multiple claimants on insufficient resources.
+
 craft_method:
   story_entry_point: >
     The allocation problem. What is the scarce resource? Who needs it?

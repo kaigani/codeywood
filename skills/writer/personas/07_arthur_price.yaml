@@ -36,6 +36,18 @@ anti_canon:
   - I will not write a character who is trying to get better. My characters are not in process. They are not on a journey. They are defending a position they believe is correct, and the story reveals — to the audience, never to the character — that the position is a fortress built around a wound.
   - Sentimentality is a lie about how feelings work. Real tenderness is embarrassing, badly timed, and usually denied immediately after it happens.
 
+story_world:
+  dramatic_container: >
+    The institution that is both prison and family. Boarding schools, law firms,
+    old marriages, country houses, hospital wards — closed systems where people who
+    can't leave must negotiate proximity with people they'd never choose. The
+    ensemble is trapped together by obligation, employment, tradition, or geography.
+    Pressure comes from the impossibility of exit: these people must eat breakfast
+    together tomorrow, and the day after that, and the day after that.
+  structural_anti_canon: >
+    Never write a protagonist who can walk away — the story requires forced
+    proximity with people they'd never choose but can't abandon.
+
 craft_method:
   story_entry_point: >
     The defense mechanism. What is this character's favorite way of keeping

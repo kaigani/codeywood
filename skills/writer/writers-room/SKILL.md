@@ -427,6 +427,44 @@ The writing pipeline is the strongest link in the current production system. Lea
 
 ---
 
+## Phase 7: Visual Translation Revision
+
+*This phase runs when the Visual Translation Pass (`skills/production/visual-translation/SKILL.md`) flags beats as FAIL and sends revision notes back to the writers room.*
+
+### When This Triggers
+
+After the screenplay is complete, the Visual Translation Pass tests every beat against 7 rules for visual translatability. Beats that fail are sent back with:
+- Which rule(s) they violate
+- What the beat is trying to DO (its narrative function)
+- A proposed visual alternative
+
+### The Revision Rules
+
+1. **Preserve the feeling state.** The experience map's emotional sequence is sacred. Change the mechanism, not the destination.
+2. **Accept the constraint.** If the pass says "temperature is invisible," it's invisible. Don't argue — find a visible version of the same beat.
+3. **One-for-one replacement.** Every cut beat must be replaced by something that does the same narrative job visually. Don't just delete — substitute.
+4. **Annotate changes.** Mark every revision with `[VT-FIX]` and the rule that drove it. The directors room needs to understand why each change was made.
+5. **Re-test.** After revision, the screenplay goes through the Visual Translation Pass again. Only fully-passing scripts proceed to the directors room.
+
+### Common Revision Patterns
+
+| Prose Beat | Visual Alternative |
+|------------|-------------------|
+| Internal state ("files something away") | Physical reaction (face changes, hand goes to mouth) |
+| Screen content as story | Screen as light source + dialogue carries intellectual content |
+| Micro-movement (2mm jaw shift) | Scale up to visible: catches self smiling, flinches, freezes |
+| Gradual transformation | Before/after wide shot, same angle |
+| Invisible process (untangling cables) | Show the result, skip the process |
+| Background text | Dedicated insert shot held 3+ seconds, or cut |
+| Temperature/texture ("it's warm") | Cut — temperature is invisible |
+| Subtle environmental change | Make it OBVIOUS and character-reacted-to, or cut |
+
+### Output
+
+Revised screenplay saved as `STORY/SCRIPTS/{episode}_v{N}.md` with `[VT-FIX]` annotations.
+
+---
+
 ## Quality Standards
 
 Watch for these failures:

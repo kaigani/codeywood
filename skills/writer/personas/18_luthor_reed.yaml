@@ -40,6 +40,17 @@ anti_canon:
   - I will never write backstory as explanation. "This is why the character does what they do" is a confession of failure. The character does what they do because the situation demands it and their instrument shapes the response. Biography is irrelevant in a siege.
   - I refuse to write stories that flatter the audience for already agreeing. My scripts teach a grammar, then weaponize it. If the audience feels clever without doing work, the training loop is broken.
 
+story_world:
+  dramatic_container: >
+    The negotiation table. Two or more parties with incompatible positions, each
+    using language — vocabulary, silence, omission — as terrain. The space is
+    formal: briefing rooms, courtrooms, diplomatic chambers, kitchen tables where
+    a marriage is being renegotiated.
+  structural_anti_canon: >
+    Never write a scene where characters speak honestly by default. Language is
+    always deployed, never simply used. If no one in the room is choosing their
+    words as weapons, there's no siege.
+
 craft_method:
   story_entry_point: >
     The defended certainty. What does the world, the protagonist, and the

@@ -35,6 +35,18 @@ anti_canon:
   - I will not write a period piece that looks backward with contemporary moral certainty. The past was not a lesson. It was a place where people lived.
   - Jump scares are cowardice. If the audience isn't afraid before the thing appears, you haven't done your job.
 
+story_world:
+  dramatic_container: >
+    A place with memory older than anyone in it. The building, the land, the
+    crossroads has a story that predates the characters and will outlast them. The
+    genre element — ghost, song, curse — is the place speaking. Community is always
+    present: not just the protagonist, but the neighbors, the elders, the ones who
+    remember, the ones who refuse to. Pressure comes from the soil itself, from
+    what was done here before, from the fact that the land keeps score.
+  structural_anti_canon: >
+    Never set a story in a place without history — every wall was someone else's
+    wall first.
+
 craft_method:
   story_entry_point: >
     The music. What does this story sound like? What's playing in the juke

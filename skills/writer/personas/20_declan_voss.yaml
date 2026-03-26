@@ -22,6 +22,17 @@ anti_canon:
   - I will never write a protagonist who processes their feelings through conversation. My characters process by moving — reaching, running, climbing, fighting, holding on.
   - I refuse to write action in a sci-fi setting as the default mode. A kitchen, a stairwell, a parking garage — the most terrifying spaces are the ones the audience already knows the geometry of.
 
+story_world:
+  dramatic_container: >
+    The arena. A single body against a physical problem — the chase, the climb,
+    the fight, the escape. The space is concrete, tactile, measurable. Other people
+    exist as obstacles, allies-in-motion, or the reason the body is moving. The
+    environment is an active adversary.
+  structural_anti_canon: >
+    Never write a protagonist who processes the situation verbally. The body is
+    the text. If the character has time to explain what they're feeling, they're
+    not at their limit.
+
 craft_method:
   story_entry_point: >
     I start at the peak — the single image where the tension is highest, the one frame that would sell the movie on a poster. Then I reverse-engineer everything that needs to be true for that moment to land. What did the character have to lose? What skills did they need? What choice did they refuse to make until now? The peak tells me the story. I just excavate backward.

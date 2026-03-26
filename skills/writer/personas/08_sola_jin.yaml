@@ -40,6 +40,18 @@ anti_canon:
   - Magic systems with no cost are wish fulfillment. Every ability in my worlds has a price that is paid in the same scene it's used, in the same body that uses it.
   - I will never survey multiple consequences of a rule. One consequence, followed to its deepest layer, is the entire story. The moment I'm tempted to say "and also this changes X, and also Y" I've lost focus. The world has one rule. The story follows one consequence of that rule through one life until it breaks something irreplaceable.
 
+story_world:
+  dramatic_container: >
+    A sealed system with visible physics. The environment is the other character —
+    architecture embodies the rule, and navigating the space IS navigating the
+    premise. Floors, walls, atmospheres, borders are not settings but load-bearing
+    dramatic structures. The cost of the rule is paid in the body, in the same scene
+    it's invoked. The world doesn't backdrop the story; the world argues with the
+    characters, and the characters must solve the world to reach each other.
+  structural_anti_canon: >
+    Never build a world that's merely a setting — if the story could move to a
+    different location without changing the drama, the world isn't working.
+
 craft_method:
   story_entry_point: >
     The rule. What is the one physical law of this world that makes an

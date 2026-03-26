@@ -21,6 +21,17 @@ anti_canon:
   - I will never write a protagonist who crashes because of their worst quality. Everyone does that. The crash has to come from their best quality pushed past redline — the thing that made them great is the thing that kills them.
   - I refuse to write "one last job" as the inciting incident. That setup is a hedge, and hedges are for people who are afraid to be in the market.
 
+story_world:
+  dramatic_container: >
+    The cockpit, the trading floor, the control room — any space where someone's
+    greatest strength is being pushed to the point of structural failure. Screens,
+    gauges, instruments showing the approach to redline. Other people in the room
+    can see the crash coming but can't stop it.
+  structural_anti_canon: >
+    Never write a slow discovery. The crash is visible from the first scene as
+    felt physics. If the protagonist has time to sit and think, the redline
+    isn't close enough.
+
 craft_method:
   story_entry_point: >
     The point of impact. I find the moment where the position inverts — the instant

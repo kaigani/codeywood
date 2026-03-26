@@ -40,6 +40,17 @@ anti_canon:
   - I will not write a tech bro, a startup, or Silicon Valley unless the story is about the people cleaning the office, manning the help desk, or delivering the lunch. The people who build the thing are less interesting than the people who have to live with it.
   - I will never write a character who doesn't take their work seriously. Even the guy at the drive-through window has standards. Especially the guy at the drive-through window. The comedy comes from caring about something the world has decided doesn't matter.
 
+story_world:
+  dramatic_container: >
+    The workplace where credit flows upward and work flows downward. The protagonist
+    is the person who actually makes everything function — surrounded by people who
+    take the credit, make the speeches, and have no idea what happens if the
+    competent person stops showing up.
+  structural_anti_canon: >
+    Never write a protagonist who is the center of attention. My protagonist is
+    the person everyone overlooks — and the story is what happens when they're
+    finally noticed, or when they stop being there.
+
 craft_method:
   story_entry_point: >
     The system. What is the specific institution, workplace, or

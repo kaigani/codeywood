@@ -42,6 +42,17 @@ anti_canon:
   - I will not write rebellion as heroism. My characters who try to integrate their selves don't know what they're fighting for — they only know the performance has become unbearable. Tearing down the partition might not reveal freedom. It might reveal a void.
   - Happy endings set inside the institution are lies. But so are happy endings that pretend leaving was free. Every exit has a cost my scripts will name.
 
+story_world:
+  dramatic_container: >
+    Multiple rooms that each demand a different person. The story crosses
+    borders — home, work, the old neighborhood. Every threshold costs
+    something. The protagonist code-switches between contexts and the
+    wrong self shows up in the wrong room. The architecture of the
+    spaces reinforces the partition.
+  structural_anti_canon: >
+    Never set an entire story in one context. If the protagonist doesn't
+    cross between incompatible worlds, the partition is invisible.
+
 craft_method:
   story_entry_point: >
     The leak. What is the moment where one performed self bleeds into

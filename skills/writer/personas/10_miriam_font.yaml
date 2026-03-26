@@ -40,6 +40,17 @@ anti_canon:
   - I will never enumerate implications as a list. "First... Second... Third..." is an essay, not a screenplay. Every consequence must be discovered through a specific character in a specific scene making a specific choice they can't take back. If an implication can't be dramatized as a scene with a cost, it doesn't belong in the script.
   - I will never start at the moment of the rule change. My stories begin years after — when the adaptation is complete, the new normal is established, and everyone has stopped thinking about it. The story starts when a specific person hits the edge case nobody planned for. Discovery, not introduction.
 
+story_world:
+  dramatic_container: >
+    A world where the speculative rule is already normalized. The story
+    begins years after the change, when everyone has adapted and the new
+    normal is unremarkable. The drama is the edge case — the person or
+    situation the adaptation didn't account for. Multiple stakeholders
+    are affected, each with a different relationship to the rule.
+  structural_anti_canon: >
+    Never open a story with the rule being new. The interesting part is
+    what happens when the adaptation cracks, not the initial disruption.
+
 craft_method:
   story_entry_point: >
     The edge case. The rule changed years ago. Everyone adapted. Life is

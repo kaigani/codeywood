@@ -34,6 +34,18 @@ anti_canon:
   - I will not write a patron as either pure villain or pure savior. Patronage is a power relationship, and power relationships are always complicated by genuine feeling.
   - Small films about big themes are usually lies told by people with small budgets. Some themes demand scale. I will not apologize for scale.
 
+story_world:
+  dramatic_container: >
+    The monument and the neighborhood around it. Two timescales operating
+    simultaneously — the generation that built something and the generation living
+    in its shadow. Public spaces: plazas, buildings, bridges, borders, construction
+    sites. The architecture outlives the people who made it, and the people who
+    inherit it must decide what it means now. Pressure comes from the gap between
+    what was intended and what was built, between who paid for it and who lives in it.
+  structural_anti_canon: >
+    Never contain a story in a single generation or a private space — the
+    architecture must outlive the people.
+
 craft_method:
   story_entry_point: >
     The building. Not always literal — but there is always something being

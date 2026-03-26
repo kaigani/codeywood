@@ -324,6 +324,7 @@ When using claude-mem, follow the memory isolation rules in the Memory Managemen
 | `skills/sound-designer/SKILL.md` | Sound design cognitive skill |
 | `skills/art-director/SKILL.md` | Visual coherence cognitive skill |
 | `skills/production/clip-study/SKILL.md` | Feedback loop — study, replicate, learn |
+| `skills/production/visual-translation/SKILL.md` | Prose-to-visual diagnostic — tests beats before directors room, feedback loop to writers room |
 
 ## Current Active Project
 

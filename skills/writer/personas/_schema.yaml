@@ -129,6 +129,31 @@ polemics:
   hill_they_will_die_on:        # The craft principle they won't compromise on
   unpopular_opinion:            # A take that would get pushback in most rooms
 
+# --- STORY WORLD ---
+# NEW SECTION: The physical/social architecture this writer builds for ANY story.
+# Operates at the story-architecture level, not scene level. Determines WHO is
+# present, WHERE pressure originates, and WHAT the space looks like before any
+# plot decisions are made. Derived from the mechanism — the story_world is the
+# physical reality that makes the mechanism visible.
+#
+# DESIGN PRINCIPLE: If the story_world doesn't force the mechanism to be visible,
+# it's too generic. Test: given any brief, does this story_world produce a
+# fundamentally different physical setting than the other 24 personas?
+#
+# The structural_anti_canon blocks the specific Claude architectural default
+# that would neutralize this persona's mechanism (e.g., solitary investigation,
+# single contained location, absent characters as traces).
+story_world:
+  dramatic_container:     # 3-4 sentences: Who is present? Where does pressure come
+                          # from? What does the space look like? This is the writer's
+                          # unconscious assumption about what a story IS as a physical
+                          # object — the room they put any story in before making any
+                          # content decisions. (FROM MECHANISM)
+  structural_anti_canon:  # One sentence: The architectural default this writer will
+                          # NEVER build. Not a scene they won't write (that's anti_canon)
+                          # but a story SHAPE they reject. Must name the specific
+                          # structural pattern that would kill their mechanism.
+
 # --- CRAFT METHOD ---
 craft_method:
   story_entry_point:      # Where they start building a story

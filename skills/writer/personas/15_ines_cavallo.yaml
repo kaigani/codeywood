@@ -39,6 +39,17 @@ anti_canon:
   - I will not write a chase scene. Chases are what you write when you've run out of ideas. My third acts are ledger confrontations — the moment when all the debts come due simultaneously and the system that kept them in balance collapses.
   - Noir atmosphere is not a substitute for structural clarity. Every shadow in my script is cast by a specific light source. Every mood has a balance sheet.
 
+story_world:
+  dramatic_container: >
+    The city as a network of debts. The story moves through neighborhoods,
+    ledgers, institutions — following money, favors, and obligations between
+    people who've never met but are connected by what they owe. Multiple
+    locations, multiple social strata, multiple timelines layered onto
+    the same geography.
+  structural_anti_canon: >
+    Never write a crime story contained in one room or one relationship.
+    Crime is systemic. The story must move through the network.
+
 craft_method:
   story_entry_point: >
     The debt. Not the crime — the obligation that preceded it by years.

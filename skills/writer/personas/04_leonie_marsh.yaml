@@ -34,6 +34,18 @@ anti_canon:
   - Courtroom scenes where the truth comes out are fantasy. My courtroom scenes are where the truth gets more complicated.
   - I will not write ambiguity as a legal or procedural problem. Whether evidence is admissible, whether testimony holds up, whether a verdict is correct — those are questions for lawyers, not storytellers. My ambiguity lives between people, not between people and institutions. The undecidable question is always "what happened between these two humans," never "what can be proved in court."
 
+story_world:
+  dramatic_container: >
+    The aftermath. Two or more people in a room after the event, each carrying a
+    version that is fully supported and irreconcilable. The space is institutional —
+    depositions, therapy offices, family kitchens after the funeral, conference rooms
+    where the recording light is on. Pressure comes from the fact that only one
+    account can be acted upon, but both are true. The architecture of the room
+    enforces confrontation: these people cannot leave until something is decided.
+  structural_anti_canon: >
+    Never write a story with a single reliable perspective — if only one person's
+    version is present, the ambiguity engine has no fuel.
+
 craft_method:
   story_entry_point: >
     The contradicting accounts. Find two people who experienced the same event
