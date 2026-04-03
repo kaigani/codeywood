@@ -1,267 +1,94 @@
-# Visual Continuity Validator Skill
+---
+name: visual-continuity-validator
+description: "Validates visual consistency across all shots in an episode by analyzing character, location, scene, and style continuity threads. Detects progressive, sudden, and pattern drift and generates a prioritized correction report. Use when shot quality validation is complete for an episode and cross-shot consistency needs verification."
+---
 
-## Purpose
-Check visual consistency across all shots in an episode, identifying drift patterns and enforcing visual canon.
+# Visual Continuity Validator
 
-## Trigger
-Shot quality validation complete for episode.
+Check visual consistency across all shots in an episode, identifying drift patterns and enforcing visual canon. Produces a prioritized report with regeneration recommendations.
 
-## Inputs Required
-- `SHOTS_EP{{XX}}/*.png` - All episode shots
-- `SHOT_LIST_EP{{XX}}.json` - Shot specifications
-- `SHOT_QA_REPORT_EP{{XX}}.md` - Individual shot QA
-- `CANON_DB.json` - Visual canon
-- `CHARACTER_REFS/*/refs/*.png` - Reference images
+## Inputs
 
-## Outputs Produced
-- `VISUAL_CONTINUITY_REPORT_EP{{XX}}.md`
-- Drift alerts and correction recommendations
+- `SHOTS_EP{{XX}}/*.png` — all generated episode shots
+- `SHOT_LIST_EP{{XX}}.json` — shot specifications with character/location references
+- `SHOT_QA_REPORT_EP{{XX}}.md` — individual shot QA results
+- `CANON_DB.json` — visual canon (locked descriptions, negative prompts)
+- `CHARACTER_REFS/*/refs/*.png` — character reference images
 
-## Continuity Dimensions
+## Outputs
 
-### 1. Character Continuity
-- Same character looks consistent across all appearances
-- Outfit consistency within scenes
-- Expression/pose progression makes sense
-
-### 2. Location Continuity
-- Same location looks consistent across all shots
-- Time-of-day matches within scenes
-- Props/furniture don't move unexpectedly
-
-### 3. Scene Continuity
-- Shots within a scene are visually cohesive
-- Lighting consistent within scene
-- Color grading consistent
-
-### 4. Style Continuity
-- Overall aesthetic maintained
-- Color palette consistent
-- Mood appropriate throughout
+- `VISUAL_CONTINUITY_REPORT_EP{{XX}}.md` — scored report with drift alerts and correction recommendations
 
 ## Process
 
-### Step 1: Group Shots
+### Step 1: Group Shots into Threads
 
-Organize shots by:
-- Scene (same location, continuous time)
-- Character (all appearances of each character)
-- Location (all shots at each location)
+Organize all episode shots into three analysis threads:
+
+- **Scene thread**: shots sharing location + continuous time
+- **Character thread**: all appearances of each character across the episode
+- **Location thread**: all shots at each location regardless of scene
 
 ### Step 2: Character Thread Analysis
 
-For each character:
-1. Collect all shots featuring character
-2. Compare character appearance across shots
-3. Identify drift patterns
-4. Flag significant inconsistencies
+For each character, collect all shots and compare sequentially:
 
-**Check Points**:
-- Face consistency
-- Hair consistency
-- Outfit consistency (within same scene)
-- Body proportions
-- Age appearance
+| Check | Within Scene | Across Scenes (Same Day) | Across Episode |
+|-------|-------------|-------------------------|----------------|
+| Face features | Identical | Consistent | Recognizable |
+| Hair | Identical | Consistent | Consistent |
+| Outfit | Identical | Can change if justified | Flexible |
+| Body proportions | Identical | Consistent | Consistent |
+
+Flag inconsistencies as drift events with shot IDs and severity.
 
 ### Step 3: Scene Thread Analysis
 
-For each scene:
-1. Collect all shots in scene
-2. Verify temporal continuity
-3. Check spatial consistency
-4. Validate lighting continuity
+For each scene, verify internal cohesion:
 
-**Check Points**:
-- Lighting angle doesn't jump
-- Props don't move unexpectedly
-- Character positions make sense
-- Background consistent
+- Lighting angle and color temperature stay consistent between shots
+- Props and furniture maintain position (no unexplained movement)
+- Character spatial positions follow logical blocking
+- Background elements remain stable
 
 ### Step 4: Location Thread Analysis
 
-For each location:
-1. Collect all shots at location
-2. Compare architectural elements
-3. Verify key features present
-4. Check time-of-day consistency
-
-**Check Points**:
-- Key architectural features
-- Furniture/prop placement
-- Window positions
-- Color of walls/surfaces
+For each location appearing in multiple scenes, compare architectural elements, key features (windows, furniture), and wall/surface colors across all shots. Verify time-of-day rendering matches the shot list specifications.
 
 ### Step 5: Drift Detection
 
-Calculate drift metrics:
+Classify detected issues into three drift types:
 
-**Progressive Drift**:
-- Character slowly changes over episode
-- Detected by comparing first vs. last appearance
-
-**Sudden Drift**:
-- Abrupt change between adjacent shots
-- Detected by sequential comparison
-
-**Pattern Drift**:
-- Consistent error across multiple shots
-- Detected by comparing against reference
+- **Progressive drift**: character or location slowly changes over the episode (compare first vs. last appearance)
+- **Sudden drift**: abrupt change between adjacent shots (sequential comparison)
+- **Pattern drift**: consistent error across multiple shots (compare against locked reference images)
 
 ### Step 6: Generate Report
 
-```markdown
-# Visual Continuity Report: EP{{XX}}
+Write `VISUAL_CONTINUITY_REPORT_EP{{XX}}.md` with:
 
-## Summary
-- Overall Continuity Score: {{0-100}}
-- Characters: {{SCORE}}
-- Locations: {{SCORE}}
-- Scenes: {{SCORE}}
-- Style: {{SCORE}}
+- **Summary scores** (0–100) for overall continuity, characters, locations, scenes, and style
+- **Critical issues** with affected shot IDs, description, and recommended action (regenerate, update refs)
+- **Drift patterns** showing each character/location's consistency timeline
+- **Prioritized corrections**: Critical (breaks story clarity) → High (noticeable distraction) → Medium (visible but not distracting) → Low (acceptable variance)
 
-## Critical Issues
+### Step 7: Flag Reference Updates
 
-### Character Drift: {{CHARACTER}}
-- First appearance: SC01_SH03
-- Drift detected: SC05_SH02 onward
-- Issue: Hair color shifted darker
-- Action: Regenerate SC05+ with corrected refs
+If generated shots are consistently better than references, flag those improvements for the reference-library-updater skill to incorporate.
 
-## Scene Continuity Issues
+## End-of-Clip Continuity (Video Production)
 
-### Scene 03
-- Shots affected: SH04, SH06
-- Issue: Lighting angle inconsistent
-- Action: Regenerate with matched lighting
+When validating video clips (not just still shots), continuity must also be checked BETWEEN clips:
 
-## Drift Patterns
+1. Extract last frame: `ffmpeg -sseof -1 -i clip.mp4 -update 1 -q:v 2 last_frame.png`
+2. Review the extracted frame for character position, state, and expression
+3. Decide: **Continue** (flows naturally) → **Bridge clip** (gap needs transitional video) → **New start frame** (new location or major change)
 
-### {{CHARACTER}} Over Episode
-[Visual timeline or scores showing consistency]
-
-### {{LOCATION}} Across Scenes
-[Visual timeline or scores]
-
-## Recommendations
-
-### High Priority
-1. Regenerate shots: [list]
-2. Update references: [if refs are causing drift]
-
-### Medium Priority
-1. Review and potentially regenerate: [list]
-
-### Acceptable Variance
-[List of minor issues that don't require action]
-```
-
-### Step 7: Prioritize Corrections
-
-Rank issues by:
-1. **Critical**: Breaks story clarity
-2. **High**: Noticeable distraction
-3. **Medium**: Visible but not distracting
-4. **Low**: Minor, acceptable variance
-
-### Step 8: Update Canon if Needed
-
-If generated shots are consistently better than references:
-- Flag for reference-library-updater
-- Document what works better
-
-## Continuity Rules
-
-### Within Scene (STRICT)
-- Characters must look identical
-- Outfits cannot change
-- Props cannot move
-- Lighting must match
-
-### Across Scenes, Same Day (MODERATE)
-- Characters should look consistent
-- Outfits can change if justified
-- Minor lighting variation acceptable
-
-### Across Episode (FLEXIBLE)
-- Characters recognizable
-- Style consistent
-- Overall aesthetic maintained
-
-## Common Continuity Errors
-
-### Character Issues
-- Face features drifting
-- Hair changing
-- Age appearing different
-- Outfit changing mid-scene
-
-### Location Issues
-- Architecture changing
-- Props moving
-- Lighting direction flipping
-- Color of surfaces changing
-
-### Scene Issues
-- Shot-to-shot jumps
-- Lighting inconsistency
-- Color grading shifts
-
-## End-of-Clip Continuity Review (Video Production)
-
-When generating video clips, continuity must be validated BETWEEN clips, not just within shots.
-
-### Workflow
-
-```
-Generate Clip N → Extract Last Frame → Claude Reviews → Decision:
-    ├─ Continue to Clip N+1 (if continuity is good)
-    ├─ Generate Bridge Clip (if gap needs bridging)
-    └─ Generate New Frame(s) → New Bridge Clip (for exceptional continuity)
-```
-
-### Review Process
-
-After each clip is generated:
-
-1. **Extract last frame** using ffmpeg:
-   ```bash
-   ffmpeg -sseof -1 -i clip.mp4 -update 1 -q:v 2 last_frame.png
-   ```
-
-2. **Claude reviews** the extracted frame:
-   - What is the character's position/state/expression?
-   - Does this flow naturally into the next clip's requirements?
-   - Are there any continuity breaks?
-
-3. **Decision**:
-   - **Continue**: Last frame flows naturally into next clip's start frame
-   - **Bridge needed**: Gap exists but can be bridged with additional video
-   - **New frames needed**: Generate supporting frame(s) using Nano Banana Pro
-
-### Bridge Clip Strategy
-
-When a bridge clip is needed:
-
-1. Use extracted last frame as start frame (strategy: `last_frame`)
-2. Write prompts that transition FROM the current state TO the next clip's expected state
-3. Keep prompts START FRAME AWARE - describe continuation, not contradiction
-
-### Continuity Decision Criteria
-
-| Scenario | Decision |
-|----------|----------|
-| Character in same position, same framing | Continue |
-| Character in similar position, different framing | Continue (cut handles it) |
-| Character needs to move to new position | Bridge clip |
-| Significant time/action gap | Bridge clip |
-| New location | New generated start frame |
+Bridge clips use the extracted last frame as their start frame and prompt a transition TO the next clip's expected state.
 
 ## Notes
 
-- Perfect continuity is impossible with current tech
-- Focus on maintaining character recognition
-- Location minor drift is less noticeable
-- Scene boundaries can hide more variance
-- Some drift is acceptable if not distracting
-- Progressive drift is harder to catch than sudden
-- **End-of-clip review is essential for video production**
+- Perfect continuity is impossible with current AI generation — focus on character recognition and scene-level cohesion
+- Progressive drift is harder to catch than sudden drift; always compare first vs. last appearance
+- Scene boundaries naturally hide more variance than within-scene cuts
+- Strict continuity rules apply within scenes; flexibility increases across scenes and across the episode
