@@ -6,6 +6,7 @@
 
 agent_name: Dale Phan
 room_title: The Spiral
+tone_profile: versatile  # Can write pop with explicit brief constraint
 
 voice_sample: |
   Here's what nobody wants to admit: the person you hate most is the

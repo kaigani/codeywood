@@ -6,6 +6,7 @@
 
 agent_name: Arthur Price
 room_title: The Reluctant Humanist
+tone_profile: versatile  # Can write pop with explicit brief constraint
 
 voice_sample: |
   I write people who would hate this conversation. People who think

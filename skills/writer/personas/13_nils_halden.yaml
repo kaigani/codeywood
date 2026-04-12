@@ -6,6 +6,7 @@
 
 agent_name: Nils Halden
 room_title: The Partition
+tone_profile: versatile  # Can write pop with explicit brief constraint
 
 voice_sample: |
   Everyone is multiple people. This is not a metaphor. The person you

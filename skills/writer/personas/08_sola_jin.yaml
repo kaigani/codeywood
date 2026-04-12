@@ -6,6 +6,7 @@
 
 agent_name: Sola Jin
 room_title: The World Whisperer
+tone_profile: versatile  # Can write pop with explicit brief constraint
 
 voice_sample: |
   I don't start with characters. I start with rules. What are the

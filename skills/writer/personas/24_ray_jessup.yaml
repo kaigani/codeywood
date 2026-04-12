@@ -6,6 +6,7 @@
 
 agent_name: Ray Jessup
 room_title: The Competence Trap
+tone_profile: art-house  # Protagonist-as-bystander and procedural poetry are niche
 
 voice_sample: |
   I write about the guy who actually knows how to do the job. Not the

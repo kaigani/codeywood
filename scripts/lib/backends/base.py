@@ -44,6 +44,7 @@ class VideoBackend(ABC):
         duration_seconds: float,
         negative_prompt: str = "",
         seed: Optional[int] = None,
+        reference_audio: Optional[Path] = None,
         **backend_kwargs,
     ) -> VideoResult:
         """
@@ -55,6 +56,7 @@ class VideoBackend(ABC):
             duration_seconds: Desired clip duration in seconds
             negative_prompt: Negative prompt text
             seed: Random seed for reproducibility
+            reference_audio: Optional path to a voice reference WAV for audio-driven generation
             **backend_kwargs: Backend-specific parameters (elements, multi_prompt, etc.)
 
         Returns:

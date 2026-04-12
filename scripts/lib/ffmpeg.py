@@ -63,11 +63,15 @@ def concatenate_clips(clips: List[Path], output_path: Path) -> Optional[Path]:
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    # Write concat file
+    # Write concat file with absolute paths (relative paths break when ffmpeg
+    # runs from a different cwd)
     concat_file = output_path.parent / "concat_list.txt"
     with open(concat_file, "w") as f:
         for clip in clips:
-            f.write(f"file '{clip}'\n")
+            abs_path = Path(clip).resolve()
+            # Escape single quotes in paths for ffmpeg concat format
+            escaped = str(abs_path).replace("'", "'\\''")
+            f.write(f"file '{escaped}'\n")
 
     # Re-encode to ensure consistent encoding across all clips.
     # Stream copy (-c copy) fails when clips have mismatched resolution,
@@ -94,7 +98,7 @@ def concatenate_clips(clips: List[Path], output_path: Path) -> Optional[Path]:
     else:
         print(f"✗ Assembly failed")
         if result.stderr:
-            print(result.stderr[:500])
+            print(result.stderr[-1500:])
         return None
 
 
@@ -967,4 +971,411 @@ def image_to_clip(image_path: Path, output_path: Path,
     print(f"  image_to_clip failed for {image_path.name}")
     if result.stderr:
         print(result.stderr[:500])
+    return None
+
+
+def concatenate_clips_filter(
+    clips: List[Path],
+    output_path: Path,
+    width: int = 1280,
+    height: int = 720,
+    fps: int = 25,
+    sample_rate: int = 44100,
+) -> Optional[Path]:
+    """
+    Concatenate clips using ffmpeg's concat FILTER (not demuxer).
+
+    The concat filter resamples and re-times audio/video together, avoiding
+    the timestamp drift that the demuxer can produce when clips have slight
+    PTS gaps. Slower than the demuxer but produces frame-accurate sync.
+
+    All clips are forced to the target resolution/fps/audio format inline.
+
+    Args:
+        clips: Ordered list of clip paths
+        output_path: Output video path
+        width, height, fps: Target video format
+        sample_rate: Target audio sample rate
+
+    Returns:
+        Path to concatenated video, or None on failure.
+    """
+    if not clips:
+        print("No clips to concatenate")
+        return None
+
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    n = len(clips)
+    inputs = []
+    for clip in clips:
+        inputs.extend(["-i", str(Path(clip).resolve())])
+
+    # Build filter graph: scale+pad each video, resample each audio,
+    # then concat them all together
+    filter_parts = []
+    concat_inputs = []
+
+    for i in range(n):
+        # Video: scale to fit, pad to exact dims, set sar+fps+pixfmt
+        filter_parts.append(
+            f"[{i}:v]scale={width}:{height}:force_original_aspect_ratio=decrease,"
+            f"pad={width}:{height}:(ow-iw)/2:(oh-ih)/2:color=black,"
+            f"setsar=1,fps={fps},format=yuv420p,setpts=PTS-STARTPTS[v{i}]"
+        )
+        # Audio: resample to target sample rate, stereo, reset PTS
+        filter_parts.append(
+            f"[{i}:a]aresample={sample_rate},aformat=sample_fmts=fltp:channel_layouts=stereo,asetpts=PTS-STARTPTS[a{i}]"
+        )
+        concat_inputs.append(f"[v{i}][a{i}]")
+
+    concat_filter = "".join(concat_inputs) + f"concat=n={n}:v=1:a=1[vout][aout]"
+    filter_complex = ";".join(filter_parts) + ";" + concat_filter
+
+    cmd = [
+        "ffmpeg", "-y",
+        *inputs,
+        "-filter_complex", filter_complex,
+        "-map", "[vout]", "-map", "[aout]",
+        "-c:v", "libx264", "-preset", "fast", "-crf", "18",
+        "-pix_fmt", "yuv420p",
+        "-r", str(fps),
+        "-c:a", "aac", "-b:a", "192k", "-ar", str(sample_rate), "-ac", "2",
+        str(output_path)
+    ]
+
+    print(f"\nConcatenating {n} clips with concat filter (frame-accurate)...")
+    result = subprocess.run(cmd, capture_output=True, text=True)
+
+    if result.returncode == 0 and output_path.exists():
+        print(f"✓ Assembled: {output_path}")
+        return output_path
+
+    print(f"✗ Filter concat failed")
+    if result.stderr:
+        print(result.stderr[-1500:])
+    return None
+
+
+def normalize_clip(
+    input_path: Path,
+    output_path: Path,
+    width: int = 1280,
+    height: int = 720,
+    fps: int = 25,
+    sample_rate: int = 44100,
+) -> Optional[Path]:
+    """
+    Normalize a clip to a standard format for clean concatenation.
+
+    Re-encodes video to target resolution + frame rate (with letterbox/pad if needed),
+    and audio to standard sample rate. If the clip has no audio, adds a silent track.
+
+    Args:
+        input_path: Source video
+        output_path: Output path
+        width: Target width (default 1280)
+        height: Target height (default 720)
+        fps: Target frame rate (default 25)
+        sample_rate: Target audio sample rate (default 44100)
+
+    Returns:
+        Path to normalized clip, or None on failure
+    """
+    input_path = Path(input_path)
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    # Detect if input has audio
+    probe = subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "a:0",
+         "-show_entries", "stream=codec_type", "-of", "csv=p=0", str(input_path)],
+        capture_output=True, text=True
+    )
+    has_audio_track = "audio" in (probe.stdout or "")
+
+    # Video filter: scale to fit, pad to exact dimensions, set frame rate, pixel format
+    vf = (
+        f"scale={width}:{height}:force_original_aspect_ratio=decrease,"
+        f"pad={width}:{height}:(ow-iw)/2:(oh-ih)/2:color=black,"
+        f"setsar=1,"
+        f"fps={fps},"
+        f"format=yuv420p"
+    )
+
+    cmd = ["ffmpeg", "-y", "-i", str(input_path)]
+
+    if not has_audio_track:
+        # Add silent audio track
+        cmd.extend([
+            "-f", "lavfi",
+            "-i", f"anullsrc=channel_layout=stereo:sample_rate={sample_rate}",
+            "-shortest",
+        ])
+
+    cmd.extend([
+        "-vf", vf,
+        "-c:v", "libx264", "-preset", "fast", "-crf", "18",
+        "-c:a", "aac", "-b:a", "192k", "-ar", str(sample_rate), "-ac", "2",
+        "-r", str(fps),
+        "-pix_fmt", "yuv420p",
+        str(output_path)
+    ])
+
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode == 0 and output_path.exists():
+        return output_path
+
+    print(f"  normalize_clip failed for {input_path.name}")
+    if result.stderr:
+        print(result.stderr[-500:])
+    return None
+
+
+def composite_pip(
+    background: Path,
+    overlay: Path,
+    output_path: Path,
+    position: str = "bottom_left",
+    scale: float = 0.25,
+    bg_volume: float = 0.25,
+    overlay_volume: float = 1.0,
+) -> Optional[Path]:
+    """
+    Picture-in-picture composite: overlay a smaller video over a background.
+
+    Args:
+        background: Path to background video (full-screen)
+        overlay: Path to overlay video (scaled down)
+        output_path: Path for output
+        position: Overlay position — "bottom_left", "bottom_right", "top_left", "top_right"
+        scale: Overlay size relative to background width (0.25 = 25%)
+        bg_volume: Background audio volume multiplier (0.25 = -12dB)
+        overlay_volume: Overlay audio volume multiplier (1.0 = full)
+
+    Returns:
+        Path to output video, or None on failure
+    """
+    background, overlay = Path(background), Path(overlay)
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    # Detect which inputs have audio
+    def has_audio(p: Path) -> bool:
+        probe = subprocess.run(
+            ["ffprobe", "-v", "error", "-select_streams", "a:0",
+             "-show_entries", "stream=codec_type", "-of", "csv=p=0", str(p)],
+            capture_output=True, text=True
+        )
+        return "audio" in (probe.stdout or "")
+
+    bg_has_audio = has_audio(background)
+    ov_has_audio = has_audio(overlay)
+
+    # Calculate position offsets (with 2% margin from edges)
+    margin = "0.02*W"
+    positions = {
+        "bottom_left": f"x={margin}:y=H-h-{margin}",
+        "bottom_right": f"x=W-w-{margin}:y=H-h-{margin}",
+        "top_left": f"x={margin}:y={margin}",
+        "top_right": f"x=W-w-{margin}:y={margin}",
+    }
+    pos = positions.get(position, positions["bottom_left"])
+
+    # Build filter graph based on which inputs have audio
+    video_filter = (
+        f"[1:v]scale=iw*{scale}:-1[pip];"
+        f"[0:v][pip]overlay={pos}:shortest=1[vout]"
+    )
+
+    audio_maps = []
+    if bg_has_audio and ov_has_audio:
+        audio_filter = (
+            f";[0:a]volume={bg_volume}[a0];"
+            f"[1:a]volume={overlay_volume}[a1];"
+            f"[a0][a1]amix=inputs=2:duration=shortest:dropout_transition=0[aout]"
+        )
+        audio_maps = ["-map", "[aout]"]
+    elif ov_has_audio:
+        audio_filter = f";[1:a]volume={overlay_volume}[aout]"
+        audio_maps = ["-map", "[aout]"]
+    elif bg_has_audio:
+        audio_filter = f";[0:a]volume={bg_volume}[aout]"
+        audio_maps = ["-map", "[aout]"]
+    else:
+        audio_filter = ""
+
+    filter_complex = video_filter + audio_filter
+
+    cmd = [
+        "ffmpeg", "-y",
+        "-i", str(background),
+        "-i", str(overlay),
+        "-filter_complex", filter_complex,
+        "-map", "[vout]",
+        *audio_maps,
+        "-c:v", "libx264", "-preset", "fast", "-crf", "18",
+    ]
+    if audio_maps:
+        cmd.extend(["-c:a", "aac", "-b:a", "192k"])
+    cmd.append(str(output_path))
+
+    print(f"\nPiP: {overlay.name} over {background.name} ({position}, {scale:.0%})...")
+    result = subprocess.run(cmd, capture_output=True, text=True)
+
+    if result.returncode == 0 and output_path.exists():
+        print(f"  PiP saved: {output_path}")
+        return output_path
+
+    print(f"  PiP failed")
+    if result.stderr:
+        print(result.stderr[:500])
+    return None
+
+
+def composite_overlay(
+    background: Path,
+    overlay_image: Path,
+    output_path: Path,
+    fade_in_s: float = 0.5,
+    fade_out_s: float = 0.5,
+    hold_s: float = 4.0,
+    start_s: float = 0.0,
+) -> Optional[Path]:
+    """
+    Composite a PNG overlay (e.g., lower-third) over a video with fade in/out.
+
+    Args:
+        background: Path to background video
+        overlay_image: Path to PNG overlay (should have transparency or green-screen)
+        output_path: Path for output
+        fade_in_s: Fade-in duration in seconds
+        fade_out_s: Fade-out duration in seconds
+        hold_s: How long the overlay is fully visible (between fades)
+        start_s: When the overlay appears (seconds into the video)
+
+    Returns:
+        Path to output video, or None on failure
+    """
+    background = Path(background)
+    overlay_image = Path(overlay_image)
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    total_overlay = fade_in_s + hold_s + fade_out_s
+    end_s = start_s + total_overlay
+
+    # Fade the overlay alpha: ramp up, hold, ramp down
+    filter_complex = (
+        f"[1:v]format=rgba,"
+        f"fade=t=in:st=0:d={fade_in_s}:alpha=1,"
+        f"fade=t=out:st={fade_in_s + hold_s}:d={fade_out_s}:alpha=1[ov];"
+        f"[0:v][ov]overlay=0:0:enable='between(t,{start_s},{end_s})'[vout]"
+    )
+
+    cmd = [
+        "ffmpeg", "-y",
+        "-i", str(background),
+        "-i", str(overlay_image),
+        "-filter_complex", filter_complex,
+        "-map", "[vout]", "-map", "0:a?",
+        "-c:v", "libx264", "-preset", "fast", "-crf", "18",
+        "-c:a", "copy",
+        str(output_path)
+    ]
+
+    print(f"\nOverlay: {overlay_image.name} over {background.name} ({start_s}s-{end_s:.1f}s)...")
+    result = subprocess.run(cmd, capture_output=True, text=True)
+
+    if result.returncode == 0 and output_path.exists():
+        print(f"  Overlay saved: {output_path}")
+        return output_path
+
+    print(f"  Overlay failed")
+    if result.stderr:
+        print(result.stderr[:500])
+    return None
+
+
+def fill_vertical_video(
+    video_path: Path,
+    output_path: Path,
+    target_width: int = 1280,
+    target_height: int = 720,
+    blur_strength: int = 20,
+    darken: float = 0.75,
+) -> Optional[Path]:
+    """
+    Fill a vertical (portrait) video into a landscape frame.
+
+    Places the original video centered over a zoomed-in, blurred, and
+    darkened copy of itself as background. This avoids black letterbox bars.
+
+    Args:
+        video_path: Path to vertical input video
+        output_path: Path for output
+        target_width: Output width (default 1280)
+        target_height: Output height (default 720)
+        blur_strength: Gaussian blur radius for background (default 20)
+        darken: Background brightness multiplier (0.75 = 25% darker)
+
+    Returns:
+        Path to output video, or None on failure
+    """
+    video_path = Path(video_path)
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    # Background: scale to fill, crop to target, blur, darken
+    # Foreground: scale to fit height, center horizontally
+    filter_complex = (
+        # Background: scale to fill the target (crop overflow), blur, darken
+        f"[0:v]scale={target_width}:{target_height}:force_original_aspect_ratio=increase,"
+        f"crop={target_width}:{target_height},"
+        f"boxblur={blur_strength}:{blur_strength},"
+        f"eq=brightness={darken - 1.0}:saturation=0.7[bg];"
+        # Foreground: scale to fit within target
+        f"[0:v]scale={target_width}:{target_height}:force_original_aspect_ratio=decrease[fg];"
+        # Overlay foreground centered on background
+        f"[bg][fg]overlay=(W-w)/2:(H-h)/2[vout]"
+    )
+
+    cmd = [
+        "ffmpeg", "-y",
+        "-i", str(video_path),
+        "-filter_complex", filter_complex,
+        "-map", "[vout]", "-map", "0:a?",
+        "-c:v", "libx264", "-preset", "fast", "-crf", "18",
+        "-c:a", "aac", "-b:a", "192k",
+        str(output_path)
+    ]
+
+    print(f"\nFill vertical: {video_path.name} -> {target_width}x{target_height}...")
+    result = subprocess.run(cmd, capture_output=True, text=True)
+
+    if result.returncode == 0 and output_path.exists():
+        print(f"  Filled: {output_path}")
+        return output_path
+
+    print(f"  Fill vertical failed")
+    if result.stderr:
+        print(result.stderr[:500])
+    return None
+
+
+def probe_dimensions(video_path: Path) -> Optional[tuple]:
+    """Probe video width and height. Returns (width, height) or None."""
+    cmd = [
+        "ffprobe", "-v", "error",
+        "-select_streams", "v:0",
+        "-show_entries", "stream=width,height",
+        "-of", "csv=p=0",
+        str(video_path)
+    ]
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode == 0 and result.stdout.strip():
+        parts = result.stdout.strip().split(",")
+        if len(parts) == 2:
+            return (int(parts[0]), int(parts[1]))
     return None

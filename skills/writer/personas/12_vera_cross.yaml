@@ -6,6 +6,7 @@
 
 agent_name: Vera Cross
 room_title: The Clock
+tone_profile: versatile  # Can write pop with explicit brief constraint
 
 voice_sample: |
   Here is the hardest scene in drama: two people need the same thing

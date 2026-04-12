@@ -6,6 +6,7 @@
 
 agent_name: Declan Lowe
 room_title: The Pressure Cook
+tone_profile: versatile  # Can write pop with explicit brief constraint
 
 voice_sample: |
   You want to know a character? Put them in the weeds. Put six things

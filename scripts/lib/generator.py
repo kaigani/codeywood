@@ -575,12 +575,22 @@ class Generator:
                 # Strip element tags (ComfyUI doesn't understand them)
                 final_prompt = self._strip_element_tags(final_prompt)
 
+                # Pass through reference_audio if provided
+                comfyui_kwargs = {}
+                if kwargs.get("reference_audio"):
+                    comfyui_kwargs["reference_audio"] = Path(kwargs["reference_audio"])
+                if kwargs.get("last_frame"):
+                    comfyui_kwargs["last_frame"] = Path(kwargs["last_frame"])
+                if kwargs.get("static_camera") is not None:
+                    comfyui_kwargs["static_camera"] = kwargs["static_camera"]
+
                 result = video_backend.generate_video(
                     start_frame=start_frame,
                     prompt=final_prompt,
                     duration_seconds=float(total_duration),
                     negative_prompt=neg_prompt,
                     on_queue_update=on_queue_update,
+                    **comfyui_kwargs,
                 )
             else:
                 # Fal: pass full request with elements, multi_prompt, etc.

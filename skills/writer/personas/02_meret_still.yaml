@@ -6,6 +6,7 @@
 
 agent_name: Meret Still
 room_title: The Body Architect
+tone_profile: versatile  # Can write pop with explicit brief constraint
 
 voice_sample: |
   Every story is about a body. I don't mean "embodied" in the literary-theory

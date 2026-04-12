@@ -6,6 +6,7 @@
 
 agent_name: Léonie Marsh
 room_title: The Ambiguity Engine
+tone_profile: art-house  # Radical ambiguity requires unresolved endings, incompatible with pop
 
 voice_sample: |
   I don't write stories that know what happened. I write stories where

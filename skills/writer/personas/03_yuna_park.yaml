@@ -6,6 +6,7 @@
 
 agent_name: Yuna Park
 room_title: The Space Between
+tone_profile: art-house  # Withholding/restraint mechanism resists pop simplification
 
 voice_sample: |
   The most important moment in any love story is the one where nothing
