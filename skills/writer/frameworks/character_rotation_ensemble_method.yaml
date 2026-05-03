@@ -1,0 +1,331 @@
+metadata:
+  framework_name: "Character Rotation Ensemble Framework"
+  methodology_name: "Character Rotation Ensemble Method"
+  methodology_family: "Ensemble/Multi-Protagonist"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "TV episode"
+    - "TV pilot"
+    - "anthology"
+    - "web series"
+    - "anime"
+  best_for:
+    - "stories centered on a singular event affecting multiple people"
+    - "narratives exploring a single theme through diverse perspectives"
+    - "hyperlink cinema"
+    - "ensemble dramas"
+  not_ideal_for:
+    - "single-protagonist hero journeys"
+    - "linear character studies"
+  target_lengths:
+    - "90-120 minute feature"
+    - "45-60 minute episode"
+  core_principle: "The narrative focus rotates through a predefined ensemble, where the primary 'protagonist' is the intersection of their arcs and the central event/theme."
+  primary_story_unit: "The Rotation (The period of focus on a/a specific character/group)"
+  primary_success_metric: "Thematic and narrative cohesion achieved through the convergence of disparate character arcs."
+
+framework_overview:
+  summary: "A structural template for stories where no single character holds the spotlight for the duration, but rather the 'camera' rotates through an ensemble to reveal a larger truth or event."
+  what_this_framework_helps_create:
+    - "Multi-perspective narratives"
+    - "Hyperlink/interconnected plots"
+    - "Thematic deep-dives"
+  what_it_prioritizes:
+    - "Thematic unity"
+    - "Interconnectivity"
+    - "The central event/anchor"
+  what_it_deemphasizes:
+    - "Single-character hero arcs"
+    - "Linear progression"
+
+use_when:
+  - "The event is more important than any single person's reaction to it."
+  - "The theme can only be fully understood by seeing it through different social/moral lenses."
+  - "You want to create a sense of 'world-scale' or 'community impact'."
+
+avoid_when:
+  - "The story relies on a single character's deep psychological transformation."
+  - "The plot is a simple, linear progression of cause and effect for one person."
+
+core_principles:
+  - "The Anchor: A central event, location, or theme that remains constant across all rotations."
+  - "The Hand-off: The mechanical or narrative way the focus shifts from Character A to Character B."
+  - "The Collision: The moment where the separate arcs physically or emotionally intersect."
+  - "The Rotation: Each segment must advance the central event, even if the character's personal arc is secondary."
+
+workflow:
+  - step: 1
+    name: "Define the Anchor"
+    goal: "Establish the gravity that holds the ensemble together."
+    instructions:
+      - "Identify the central event, location, or crisis."
+      - "Define the thematic question the anchor imposes on the world."
+    output: "The Anchor Definition"
+  - step: 2
+    name: "Cast the Ensemble"
+    goal: "Select characters who represent different facets of the Anchor."
+    instructions:
+      - "Assign each character a unique perspective on the Anchor."
+      - "Ensure no two characters represent the same thematic viewpoint."
+    output: "Ensemble Roster"
+  - step: 3
+    name: "Map the Rotations"
+    goal: "Determine the sequence of focus."
+    instructions:
+      - "Decide the order of character focus."
+      - "Plan the 'Hand-off' points between segments."
+    output: "Rotation Sequence"
+  - step: 4
+    name: "Design the Intersections"
+    goal: "Create the 'Collision' points."
+    instructions:
+      - "Identify where Character A's actions impact Character B's rotation."
+      - "Plan the climax where all arcs converge."
+    output: "Collision Map"
+
+story_inputs:
+  premise: "<The central event and its impact on the group>"
+  logline: "<A single sentence capturing the anchor, the ensemble, and the stakes>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Crime Thriller / Social Drama>"
+  tone: "<e.g., Gritty, Observational, Melancholic>"
+  target_length: "<e.g., 110 pages>"
+  audience: "<e.g., Adult Drama enthusiasts>"
+  rating: "<e.g., R>"
+  production_constraints: []
+  creative_abilities: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  the_anchor:
+    event_description: "<What is happening that no one can ignore?>"
+    spatial_context: "<Where is this happening? (A city, a house, a courtroom)>"
+    thematic_pressure: "<What moral or physical pressure does this event exert on the characters?>"
+    constancy_factor: "<What element remains unchanged regardless of which character we follow?>"
+    impact_radius: "<How far does the ripple effect of this event reach?>"
+    temporal_duration: "<How long does the central event/crisis last in the story's timeline?>"
+  the_ensemble_matrix:
+    character_selection_logic:
+      thematic_representation: "<How each character embodies a specific facet of the theme>"
+      perspective_diversity: "<Ensuring a range of social, moral, or economic viewpoints>"
+    character_details:
+      - name: "<Character Name>"
+        perspective_type: "<e/g., The Victim, The Bystander, The Perpetrator, The Investigator>"
+        relationship_to_anchor: "<How does the central event specifically affect them?>"
+        thematic_function: "<What specific side of the theme do they represent?>"
+        interconnectivity_nodes: ["<Character X>", "<Character Y>"]
+    interconnectivity_rules:
+      dependency_threshold: "<Minimum number of connections required per character>"
+      conflict_density: "<Required level of friction between ensemble members>"
+  rotation_logic:
+    sequence_type: "<Linear progression | Interwoven fragments | Chronological overlap>"
+    transition_mechanics:
+      - type: "<e.g., Visual Match-cut | Physical Hand-off | Shared Object | News Broadcast>"
+        from_character: "<Name>"
+        to_character: "<Name>"
+        trigger_event: "<What happens to force the camera to move?>"
+    pacing_control:
+      information_asymmetry: "<How much does Character A know that Character B does not?>"
+      momentum_shifts: "<How the intensity of the rotation changes as we approach the collision>"
+  collision_design:
+    convergence_point: "<The specific moment/place where all arcs meet>"
+    climax_intensity: "<The scale of the final impact on the anchor>"
+    resolution_scope: "<How the aftermath affects the ensemble as a whole>"
+
+beats_or_units:
+  - id: "rotation_01"
+    name: "Focus: <Character Name>"
+    order: 1
+    purpose: "Introduce the Anchor through the lens of <Character Name>."
+    approximate_position: "Opening"
+    writer_prompt: "How does this character first encounter the central tension?"
+    story_function: "Establish the stakes and the reality of the Anchor."
+    visual_function: "<e.g., Wide shots of the setting, close-ups of the character's reaction>"
+    emotional_function: "<e.g., Dread, Confusion, Curiosity>"
+    required_decisions:
+      - "What is this character's immediate goal?"
+      - "How does their rotation end to facilitate a hand-off?"
+    fields_to_complete:
+      character_state_at_start: ""
+      key_action_in_rotation: ""
+      the_hand_off_trigger: ""
+    diagnostic_questions:
+      - "Does this rotation introduce a new piece of the central event?"
+      - "Is the transition to the next character seamless or intentionally jarring?"
+    completion_criteria:
+      - "The character's arc segment must conclude with a pivot toward another character or the central event."
+    common_failure_modes:
+      - "The character feels like a cameo rather than a focal point."
+      - "The rotation lacks a sense of momentum."
+
+  - id: "rotation_02"
+    name: "Focus: <Character Name>"
+    order: 2
+    purpose: "Expand the scope of the Anchor via <Character Name>."
+    approximate_position: "<e.g., Mid-point>"
+    writer_prompt: "<How does this character's perspective complicate the established reality?>"
+    story_function: "Introduce a conflicting viewpoint or a secondary consequence of the Anchor."
+    visual_function: "<e.g., Shift in color palette or camera movement style>"
+    emotional_function: "<e.g., Tension, Revelation, or Disbelief>"
+    required_decisions:
+      - "How does this character's knowledge differ from the previous character?"
+      - "What specific piece of the 'Collision' is foreshadowed here?"
+    fields_to_complete:
+      character_connection_to_previous: ""
+      new_information_revealed: ""
+      the_hand_off_trigger: ""
+    diagnostic_questions:
+      - "Does this rotation add a new layer to the central event?"
+      - "Is the character's connection to the ensemble clearly established?"
+    completion_criteria:
+      - "The rotation must provide a new piece of the thematic puzzle."
+    common_failure_modes:
+      - "The character is redundant to the first rotation."
+      - "The rotation fails to advance the central event."
+
+character_design:
+  methodology_role: "Characters are defined by their relationship to the Anchor and their connection to other ensemble members."
+  characters:
+    - name: ""
+      ensemble_role: "<e.g., The Catalyst, The Mirror, The Consequence>"
+      thematic_weight: "<How much does this character's arc contribute to the final resolution?>"
+      dependency_map:
+        - character_name: ""
+          nature_of_connection: "<e.g., Antagonistic, Familial, Accidental>"
+
+world_design:
+  methodology_role: "The world must act as a pressure cooker for the ensemble."
+  fields:
+    environmental_pressure: "<How does the setting exacerbate the central event?>"
+    social_ecosystem: "<How do the different character's unions create a web of tension?>"
+
+theme_design:
+  methodology_role: "The theme is the 'glue' that prevents the rotation from feeling like a collection of random short stories."
+  fields:
+    central_argument: "<The core debate the ensemble is unknowingly participating in>"
+    thematic_convergence: "<How the different perspectives eventually reach a consensus or a tragic realization>"
+
+visual_storytelling:
+  methodology_role: "Visual motifs must bridge the gaps between different character rotations."
+  image_system:
+    recurring_visual_anchor: "<An object, color, or sound that appears in every rotation>"
+    transition_motifs: ["<e.g., Match-cuts on movement>", "<e.g., Zooming out from one person to reveal another>"]
+  visual_rules:
+    - "Use consistent lighting/color palettes to unify disparate locations."
+    - "Use shared objects to signal the 'Hand-off'."
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either advance the Anchor or deepen a character's connection to the Ensemble."
+    - "Avoid 'dead' scenes that only focus on internal monologue without external impact on the web."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: ""
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Ensure characters from different rotations occasionally occupy the same space."
+  avoid_rules:
+    - "Avoid characters who have no impact on the central event (The 'Floater' problem)."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Ensure the narrative architecture supports the ensemble rotation."
+    instructions:
+      - "Verify the sequence of rotations is logical."
+      - "Check the strength of the 'Hand-off' points."
+    questions:
+      - "Does the story structure lead inevitably to the Collision?"
+    success_criteria:
+      - "The sequence of rotations creates a sense of mounting tension."
+  - name: "character_pass"
+    goal: "Ensure no character is an island."
+    instructions:
+      - "Trace the line from Character A to Character B."
+    questions:
+      - "If I removed Character C, would the plot of Character A still work?"
+    success_criteria:
+      - "Every character's arc is tangibly affected by at least one other character's arc."
+  - name: "theme_pass"
+    goal: "Verify the 'Anchor' is visible in every rotation."
+    instructions:
+      - "Highlight every instance where the central event is mentioned or visually present."
+    questions:
+      - "Is the central event driving the action, or is it just background noise?"
+    success_criteria:
+      - "The central event/theme is the primary driver of all character decisions."
+  - name: "visual_storytelling_pass"
+    goal: "Ensure visual continuity across disparate character segments."
+    instructions:
+      - "Audit the use of recurring visual anchors."
+      - "Check transition motifs for effectiveness."
+    questions:
+      - "Do the visual transitions feel like part of the narrative language?"
+    success_criteria:
+      - "The visual language bridges the gaps between different character rotations."
+  - name: "rotation_logic_pass"
+    goal: "Ensure information flow and pacing are optimized."
+    instructions:
+      - "Map the distribution of information across the ensemble."
+      - "Check for information overload or lack of revelation."
+    questions:
+      - "Is the audience being given just enough information to stay engaged without being overwhelmed?"
+    success_criteria:
+      - "The audience experiences the 'revelation' of the central event alongside the ensemble."
+
+validation_checklist:
+  - "Does the 'Anchor' provide enough tension to sustain multiple perspectives?"
+  - "Is the 'Hand-off' mechanism clear and narratively satisfying?"
+  - "Does the 'Collision' (climax) involve the primary threads of the ensemble?"
+  - "Does the story avoid 'The Floater' syndrome (characters with no impact)?"
+  - "Is the thematic argument consistent across all character rotations?"
+  - "Are the visual motifs recurring and recognizable?"
+  - "Does each rotation introduce a new piece of the central event?"
+  - "Is the spatial/temporal logic of the event consistent?"
+
+  - "Are the transitions between characters motivated by narrative or visual triggers?"
+  - "Does the climax resolve the tension created by the Anchor?"
+
+failure_modes:
+  - failure_mode: "The Fragmented Narrative"
+    symptom: "The audience feels like they are watching three different movies that don't belong together."
+    likely_cause: "Weak thematic glue or lack of 'Collision' planning."
+    fix: "Strengthen the 'Anchor' and introduce more shared objects/motifs."
+  - failure_mode: "The Protagonist Vacuum"
+    symptom: "The audience has no emotional anchor to care about the outcome."
+    likely_cause: "The characters are too much like 'functions' and not enough like 'people'."
+    fix: "Deepen the personal stakes within the first rotation."
+  - failure_mode: "The Static Anchor"
+    symptom: "The central event feels like background noise rather than a driving force."
+    likely_cause: "The event lacks impact on the characters' immediate decisions."
+    fix: "Increase the 'Thematic Pressure' and 'Impact Radius' of the Anchor."
+
+adaptation_notes:
+  feature_film: "Focus on a heavy 'Collision' in the third act."
+  short_film: "Limit the ensemble to 3-4 characters to avoid fragmentation."
+  tv_episode: "Each episode can focus on one 'Rotation' while maintaining the larger season 'Anchor'."
+  tv_pilot: "The pilot must establish the 'Hand-off' logic and the 'Anchor' clearly."
+  anime: "Use high-impact visual motifs and distinct character 'color palettes' to signal rotations."
+  adult_animation: "Leverage the 'Anchor' to explore more extreme thematic or social consequences."
+  anthology: "The 'Anchor' (e.g., a specific hotel) must be the most robust element."
+  game_cinematic: "Ensure the 'Collision' point is visually spectacular to reward player progression."
+
+yaml_usage_notes:
+  how_to_use: "Start with 'The Anchor'. Do not attempt to write characters until the central event is defined."
+  recommended_population_order:
+    - "the_anchor"
+    - "the_ensemble_matrix"
+    - "rotation_logic"
+    - "beats_or_units"
+  minimum_viable_completion: "An Anchor, an Ensemble, and a Collision Map."
+  signs_framework_is_ready_for_scene_outline: "When you can trace a single thread of cause-and-effect from the first character's rotation to the final collision."

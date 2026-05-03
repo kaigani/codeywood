@@ -1,0 +1,381 @@
+metadata:
+  methodology_name: "Anthology Punch Method"
+  framework_name: "Anthology Punch Method"
+  methodology_family: "High-Impact Short Form"
+  version: "1.0"
+  target_media:
+    - "short film"
+    - "anime (segment)"
+    - "anthology episode"
+    - "web series (segment)"
+    - "adult animation"
+    - "game cinematic"
+  target_genres:
+    - "high-concept horror"
+    - "surrealist sci-fi"
+    - "twist-driven drama"
+    - "experimental shorts"
+  target_lengths:
+    - "1-minute shorts"
+    - "5-15 minute segments"
+    - "22-minute episodes"
+  core_principle: "Maximum narrative impact through a singular, arresting visual and a transformative logic-shift."
+  primary_story_unit: "The Narrative Punch (The Twist/Impact Point)"
+  primary_success_metric: "The Afterimage (The lingering resonance of the and final image)."
+
+framework_overview:
+  summary: "A methodology for compressed storytelling where a single rule is introduced via a visual hook, escalated to a breaking point, and subverted by a twist."
+  prioritizes:
+    - "Visual immediacy"
+    - "Conceptual clarity"
+    - "Subversion of expectation"
+    - "Thematic resonance through imagery"
+  deemphasizes:
+    - "Complex character backstories"
+    - "Subplots"
+    - "Dialogue-driven exposition"
+
+use_when:
+  - "Writing for anthologies (e.g., Black Mirror, Love, Death & Robots)"
+  - "Developing short films with limited character development time"
+  - "Creating high-concept social media shorts"
+  - "Designing 'one-shot' cinematic sequences"
+
+avoid_when:
+  - "Developing long-form character-driven dramas"
+  - "Stories requiring heavy political or historical exposition"
+  - "Narratives dependent on long-term relationship development"
+
+core_principles:
+  - "The Hook is Visual: The first frame must communicate stakes or strangeness."
+  - "The Rule is Singular: One clear, unbreakable logic governs the segment."
+  - "Escalation is Kinetic: Tension must move physically or visually toward a breaking point."
+  - "The Twist is Recontextualizing: The twist must change the meaning of the 'Rule'."
+  - "The Afterimage is the Goal: The story ends when the final image settles."
+
+workflow:
+  - step: 1
+    name: "The Visual Seed"
+    goal: "Identify an arresting, impossible, or high-tension image."
+    instructions: ["Identify a single frame that stops a viewer from scrolling."]
+    output: "The Hook Image"
+  - step: 2
+    name: "The Logic Imposition"
+    goal: "Establish the 'World Rule'."
+    instructions: ["Define one specific law that governs this image/situation."]
+    output: "The World Rule"
+  - step: 3
+    name: "The Pressure Test"
+    goal: "Escalate the application of the rule."
+    instructions: ["Force the character/setting to confront the extreme consequence of the rule."]
+    output: "The Escalation Sequence"
+  - step: 4
+    name: "The Subversion"
+    goal: "Execute the 'Punch'."
+    instructions: ["Reveal information that recontextualizes the 'Rule' or the 'Hook'."]
+    output: "The Twist"
+  - step: 5
+    name: "The Lingering Note"
+    goal: "Create the 'Afterimage'."
+    instructions: ["Design a final, silent, or heavy image that carries the weight of the twist."]
+    output: "The Final Afterimage"
+
+story_inputs:
+  premise: "[text]"
+  logline: "[text]"
+  medium: "[text]"
+  genre: "[text]"
+  tone: "[text]"
+  target_length: "[text]"
+  audience: "[text]"
+  rating: "[text]"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  stage_1_the_hook:
+    logic_flow: "Visual Introduction"
+    decision_forcing_fields:
+      visual_anchor_type: "Macro/Wide/Close-up"
+      sensory_priority: "Sound/Texture/Light"
+      anomaly_intensity: "Subtle/Obvious"
+      frame_composition_style: "Symmetrical/Chaotic"
+  stage_2_the_rule:
+    logic_flow: "Rule Imposition"
+    decision_forcing_fields:
+      rule_complexity: "Singular/Binary"
+      demonstration_method: "Action/Consequence/Environment"
+      rule_visibility: "Hidden/Manifest"
+      consequence_immediacy: "Instant/Delayed"
+  stage_3_the_escalation:
+    logic_flow: "Kinetic Pressure"
+    decision_forcing_fields:
+      tension_gradient: "Linear/Exponential"
+      physical_scale_shift: "Micro/Macro"
+      breaking_point_threshold: "Physical/Psychological"
+      editing_rhythm: "Staccato/Slow-burn"
+  stage_4_the_punch:
+    logic_flow: "Narrative Subversion"
+    decision_forcing_fields:
+      recontextualization_depth: "Surface/Fundamental"
+      twist_mechanism: "Reveal/Misdirection/Perspective-shift"
+      irony_type: "Tragic/Absurdist/Horrific"
+      clue_retention: "Obvious/Hidden"
+  stage_5_the_afterimage:
+    logic_flow: "Thematic Resonance"
+    decision_forcing_fields:
+      thematic_echo_strength: "Direct/Metaphorical"
+      visual_stasis_duration: "Brief/Lingering"
+      emotional_residue: "Dread/Awe/Melancholy"
+      symbolic_object_focus: "Character/Environment/Artifact"
+
+beats_or_units:
+  - id: "unit_01"
+    name: "The Hook Image"
+    order: 1
+    purpose: "Immediate audience capture and establishment of 'The Strange'."
+    approximate_position: "0% - 10%"
+    writer_prompt: "What is the first thing the audience sees that is impossible, terrifying, or beautiful?"
+    story_function: "Establishment of the status quo/anomaly."
+    visual_function: "Establishing shot / Macro detail / High-contrast composition."
+    emotional_function: "Curiosity, Dread, or Awe."
+    required_decisions:
+      - "Primary color palette"
+      - "Central object/entity"
+    fields_to_complete:
+      visual_description: "[text]"
+      sensory_details: ["[sound]", "[texture]", "[lighting]"]
+    diagnostic_questions:
+      - "Is this image strong enough to stand alone without dialogue?"
+      - "Does this image immediately suggest that something is 'different'?"
+    completion_criteria:
+      - "The image contains a clear, identifiable anomaly or high-stakes situation."
+    common_failure_modes:
+      - "Too much exposition before the visual is shown."
+      - "The image is generic and lacks 'stopping power'."
+  - id: "unit_02"
+    name: "The World Rule"
+    order: 2
+    purpose: "Defining the boundaries of the narrative logic."
+    approximate_position: "10% - 25%"
+    writer_prompt: "What is the one law that cannot be unable to be broken in this world?"
+    story_function: "Establishing the 'Game' the characters are playing."
+    visual_function: "How the rule manifests in the environment."
+    emotional_function: "Establishing the 'Cost' or 'Constraint'."
+    required_decisions:
+      - "Is the rule intuitive or does it require a demonstration?"
+    fields_to_complete:
+      the_rule_definition: "[text]"
+      demonstration_action: "[text]"
+    diagnostic_questions:
+      - "Is the rule simple enough to be understood in seconds?"
+      - "Does the rule create inherent conflict?"
+    completion_criteria:
+      - "The audience understands the 'logic' of the scene without dialogue."
+    common_failure_modes:
+      - "The rule is too complex or has too many exceptions."
+      - "The rule is explained through heavy narration (telling, not showing)."
+  - id: "unit_03"
+    name: "The Escalation"
+    order: 3
+    purpose: "Driving the tension toward a breaking point."
+    approximate_position: "25% - 80%"
+    writer_prompt: "How does the rule push the character into an inescapable corner?"
+    story_function: "Increasing the stakes and testing the rule's limits."
+    visual_function: "Faster editing, tighter shots, or crushing stillness."
+    emotional_function: "Anxiety, claustrophobia, or mounting dread."
+    required_decisions:
+      - "What is the 'Point of No Return'?"
+    fields_to_complete:
+      escalation_steps:
+        - "[step_1]"
+        - "[step_2]"
+        - "[step_3]"
+    diagnostic_questions:
+      - "Is the tension rising, or is it just repeating the same beat?"
+      - "Is the character actively struggling against the rule?"
+    completion_criteria:
+      - "A sequence of events that makes the 'Rule' feel increasingly dangerous or absurd."
+    common_failure_modes:
+      - "The escalation is static (nothing changes/moves)."
+      - "The character is passive and just waits for things to happen."
+  - id: "unit_04"
+    name: "The Punch (The Twist)"
+    order: 4
+    purpose: "The sudden recontextualization of everything seen so far."
+    approximate_position: "80% - 95%"
+    writer_prompt: "What truth makes the 'Rule' or the 'Hook' mean something entirely different?"
+    story_function: "The narrative payoff/subversion."
+    visual_function: "A reveal, a change in perspective, or a sudden shift in lighting/scale."
+    emotional_lag: "Shock, Irony, or Horror."
+    required_decisions:
+      - "Does the twist rely on a lie, or a misunderstanding of the rule?"
+    fields_to_complete:
+      the_revelation: "[text]"
+      recontextualized_element: "[text]"
+    diagnostic_questions:
+      - "Is the twist 'fair' (was the clue there all along)?"
+      - "Does the twist change the emotional meaning of the story?"
+    completion_criteria:
+      - "The audience experiences a 'shift' in their understanding of the situation."
+    common_failure_modes:
+      - "The twist is 'deus ex machina' (it comes from nowhere)."
+      - "The twist is too predictable."
+  - id: "unit_05"
+    name: "The Afterimage"
+    order: 5
+    purpose: "The lingering emotional resonance."
+    approximate_position: "95% - 100%"
+    writer_prompt: "What is the final, silent image that stays with the viewer?"
+    story_function: "Thematic summation."
+    visual_function: "A wide shot, a well-placed slow zoom, or a lingering close-up on a symbolic object."
+    emotional_function: "Melancholy, Dread, or Catharsis."
+    required_decisions:
+      - "Thematic echo type"
+    fields_to_complete:
+      final_image_description: "[text]"
+      thematic_echo: "[text]"
+    diagnostic_questions:
+      - "Does this image allow the audience a moment to breathe and process the twist?"
+      - "Is it visually distinct from the 'Hook Image'?"
+    completion_criteria:
+      - "The story ends on a visual note that leaves the audience in thought."
+    common_failure_modes:
+      - "Ending too abruptly on an action beat without reflection."
+      - "The ending is too 'explained' (the character says what they feel)."
+
+character_design:
+  methodology_role: "Characters are vessels for the Rule and the Twist."
+  characters:
+    - role: "The Vessel (Protagonist)"
+      archetype: "[e.g., The Victim, The Observer, The Enforcer]"
+      visible_goal: "[What they are trying to do within the rule]"
+      vulnerability_to_rule: "[How the rule specifically threatens them]"
+      emotional_arc: "[Usually a descent or a realization, not growth]"
+
+world_design:
+  methodology_role: "The World is the antagonist; the Rule is the weapon."
+  fields:
+    the_governing_lag: "[The singular, unbreakable rule]"
+    visual_atmosphere: "[The aesthetic of the rule's manifestation]"
+    sensory_constraints: ["[sound]", "[lighting]", "[texture]"]
+
+theme_design:
+  methodology_role: "Theme is revealed through the friction between the Rule and the Twist."
+  fields:
+    central_irony: "[The gap between what the rule promises and what it delivers]"
+    thematic_question: "[What question does the twist answer?]"
+    thematic_afterimage: "[How the final image answers the question]"
+
+visual_storytelling:
+  methodology_role: "Primary driver of narrative."
+  image_system:
+    hook_visuals: ["[list of key visual elements for the hook]"]
+    twist_visuals: ["[list of visual clues/reveals for the twist]"]
+    afterimage_motifs: ["[symbols that recur from hook to afterimage]"]
+  visual_rules:
+    - "Avoid dialogue where a visual can explain the rule."
+    - "Use scale shifts (tiny to huge) to emphasize the twist."
+
+scene_generation_rules:
+  scene_lag:
+    principles:
+      - "Every scene must serve the Rule or the Escalation."
+      - "Minimize character dialogue; maximize environmental storytelling."
+    template:
+      scene_id: "[text]"
+      beat_or_unit: "[text]"
+      location: "[text]"
+      characters_present: []
+      visible_goal: "[text]"
+      conflict_or_pressure: "[text]"
+      turn: "[text]"
+      visual_anchor: "[text]"
+      emotional_shift: "[text]"
+      exits_with: "[text]"
+    do_rules:
+      - "Show the rule being applied to something small before something large."
+      - "Use shadows/lighting to hide the 'Twist' clues."
+    avoid_rules:
+      - "Do not use 'As you know...' dialogue to explain the world."
+      - "Do not introduce new characters in the final act."
+
+revision_passes:
+  - name: "The Clarity Pass"
+    goal: "Ensure the Rule is unmistakable."
+    instructions: ["Remove any dialogue that explains the rule. Replace with visual evidence."]
+    questions: ["If I muted the audio, would the audience still understand the rule?"]
+    success_criteria: ["The rule is understood through action/environment only."]
+  - name: "The Impact Pass"
+    goal: "Strengthen the Twist/Punch."
+    instructions: ["Check if the twist recontextualizes the Hook."]
+    questions: ["Does the twist make the opening image feel different?"]
+    success_criteria: ["The opening image and closing image feel like two sides of the same coin."]
+  - name: "The Character Pass"
+    goal: "Verify the character functions as a vessel."
+    instructions: ["Ensure the character's actions are driven by the rule's constraints."]
+    questions: ["Is the character's struggle a direct result of the world'lag?"]
+    success_criteria: ["The character's vulnerability is visually evident."]
+  - name: "The Theme Pass"
+    goal: "Ensure thematic resonance in the afterimage."
+    instructions: ["Check the final image against the central irony."]
+    questions: ["Does the final image answer the thematic question?"]
+    success_criteria: ["The final image leaves a lingering thematic echo."]
+  - name: "The Visual Storytelling Pass"
+    goal: "Maximize visual communication."
+    instructions: ["Audit all dialogue-heavy moments for visual alternatives."]
+    questions: ["Can this information be conveyed through lighting, scale, or texture?"]
+    success_criteria: ["Dialogue is minimized; visual storytelling is maximized."]
+  - name: "The Logic Subversion Pass"
+    goal: "Ensure the twist is a recontextualization, not a random event."
+    instructions: ["Trace the clues from the hook to the twist."]
+    questions: ["Is the twist 'fair' to the audience?"]
+    success_criteria: ["The twist changes the meaning of the established rule."]
+
+validation_checklist:
+  - "Does the story start with a striking visual (The Hook)?"
+  - "Is there a single, clear, unbreakable rule (The Law)?"
+  - "Does the tension physically or visually escalate (The Pressure)?"
+  - "Does the twist change the meaning of the rule (The Punch)?"
+  - "Does the story end on a resonant, non-dialogue image (The Afterimage)?"
+  - "Is the rule visually demonstrable without narration?"
+  - "Is the character's role tied to the rule's constraints?"
+  - "Does the twist avoid 'deus ex machina' tropes?"
+  - "Is the visual anchor in the hook mirrored or subverted in the afterimage?"
+  - "Are the sensory details (sound/texture/light) utilized to establish the rule?"
+  - "Is the escalation sequence moving toward a clear breaking point?"
+  - "Is the central irony of the story present in the final frame?"
+  - "Does the visual composition support the emotional shift of the beat?"
+
+failure_modes:
+  - failure_mode: "The Explanatory Trap"
+    symptom: "Heavy dialogue or narration explaining how the world works."
+    likely_cause: "Lack of confidence in visual storytelling."
+    fix: "Delete the dialogue; storyboard a visual demonstration of the rule."
+  - failure_mode: "The Hollow Twist"
+    symptom: "The twist is surprising but doesn't matter to the story."
+    likely_cause: "The twist is a random event rather than a recontextualization of the rule."
+    fix: "Ensure the twist is a direct consequence or reveal of the established Rule."
+  - failure_mode: "The Endless Loop"
+    symptom: "The escalation feels repetitive and lacks momentum."
+    likely_cause: "The stakes aren't increasing; the character is just doing the same thing."
+    fix: "Introduce a new, more extreme consequence of the rule in each beat."
+
+adaptation_notes:
+  feature_film: "Use as a structure for high-concept 'set pieces' or opening sequences."
+  short_film: "This is the primary structural mode for the entire film."
+  tv_episode: "Ideal for 'Black Mirror' style standalone episodes."
+  use_to_establish_the_hook_of_a_series_central_conceit: "Use to establish the 'hook' of a series' central conceit."
+  anime: "Perfect for 'omnipresent' or 'experimental' short segments within an anthology series."
+  adult_animation: "Use for high-concept, surrealist, or visceral visual experiments."
+  anthology: "The fundamental building block of every segment."
+  game_cinematic: "Use to establish a 'world rule' through a single, impactful cutscene."
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'story_inputs' first, then move through the 'beats_or_units' sequentially."
+  recommended_population_order: ["Hook Image, World Rule, Twist, Afterimage, Escalation"]
+  minimum_viable_completion: ["Hook, Rule, Twist, Afterimage"]
+  signs_framework_is_ready_for_scene_outline: "When the 'Twist' and 'Afterimage' are clearly defined and visually mapped."

@@ -1,0 +1,173 @@
+metadata:
+  framework_name: "Moral Argument Method Template"
+  methodology_name: "Moral Argument Method"
+  methodology_family: "Thematic/Philosophical Dramaturgy"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv_pilot"
+    - "anime"
+    - "short_film"
+    - "drama"
+  best_for:
+    - "character studies"
+    - "tragedies"
+    - "high-concept sci-fi"
+    - "political thrillers"
+    - "philosophical horror"
+  not_ideal_for:
+    - "purely procedural action"
+    - "escapist fantasy without stakes"
+    - "slapstick comedy"
+  target_lengths:
+    - "90-120 minutes"
+    - "30-60 minute episodes"
+  core_principle: "The plot is a physical manifestation of a debate between two opposing moral or philosophical viewpoints."
+  primary_story_unit: "The Moral Choice"
+  primary_success_metric: "The resolution of the story provides a definitive, earned verdict on the central moral question."
+framework_overview:
+  summary: "This framework treats the screenplay as a trial where the characters are the evidence, the plot is the prosecution/defense, and the climax is the verdict."
+  what_this_framework_helps_create:
+    - "Deeply resonant themes"
+    - "Unforgettable, principled antagonists"
+    - "Character arcs driven by internal ethics rather than external whims"
+  what_it_prioritizes:
+    - "Thematic integrity"
+    - "Philosophical conflict"
+    - "Character transformation through moral crisis"
+  what_it_deemphasizes:
+    - "Random action sequences"
+    - "Incidental subplots"
+    - "Plot twists that lack thematic consequence"
+use_when:
+  - "You have a strong message or idea you want to explore."
+  - "You want the antagonist to be 'right' in their own way."
+  - "The protagonist's internal change is the most important part of the story."
+avoid_when:
+  - "The story is driven purely by physical spectacle or external mystery."
+  - "The conflict is purely 'Good vs. Evil' without any nuance or shared values."
+core_principles:
+  - "The Thesis: The protagonist's initial, flawed moral worldview."
+  - "The Antithesis: The opposing, challenging moral worldview (often represented by the antagonist)."
+  - "The Moral Question: The central 'Should/Must' question the story asks the audience."
+  - "The Temptation: The moment the protagonist is offered the 'easier' but morally compromising path."
+  - "The Verdict: The final action/choice that proves which side of the argument is sustainable or true."
+workflow:
+  - step: 1
+    name: "Define the Argument"
+    goal: "Establish the intellectual foundation of the story."
+    instructions:
+      - "Identify a central moral tension (e.g., Security vs. Freedom)."
+      - "Formulate the 'Moral Question' as a question the audience cannot easily answer."
+    output: "The Moral Question"
+  - step: 2
+    name: "Construct the Thesis and Antithesis"
+    goal: "Create the two sides of the debate."
+    instructions:
+      - "Define the Protagonist's initial belief (Thesis)."
+      - "Define the Antagonist's opposing belief (Antithesis)."
+    output: "Character/Ideology Mapping"
+  - step: 3
+    name: "Map the Moral Pressure"
+    goal: "Design a plot that forces the characters to defend their views."
+    instructions:
+      - "Create escalating stakes that make the 'wrong' side look attractive."
+    output: "Plot Outline"
+  - step: 4
+    name: "The Verdict"
+    goal: "Determine the story's conclusion."
+    instructions:
+      - "Decide if the Thesis wins, the Antithesis wins, or a Synthesis is reached."
+    output: "Climax and Resolution"
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+methodology_structure:
+  the_thesis_establishment:
+    central_moral_question: "<What question does the story pressure-test?>"
+    protagonist_initial_stance: "<The protagonist's starting belief system.>"
+    the_flaw: "<The specific error or blind spot in the protagonist's worldview.>"
+    supporting_evidence: "<Plot elements that reinforce the protagonist's current, flawed logic.>"
+    blind_spot_definition: "<The specific consequence the protagonist is ignoring.>"
+  the_antithesis_introduction:
+    antagonist_stance: "<The opposing, challenging moral worldview.>"
+    compelling_logic: "<Why the antagonist's argument is difficult to dismiss.>"
+    the_clash_point: "<The specific moment where the two ideologies collide.>"
+    threat_level: "<The degree to which the antagonist's victory would destroy the protagonist's world.>"
+  the_moral_pressure_escalation:
+    escalation_mechanism: "<How the plot forces the character to reconsider their ethics.>"
+    temptation_type: "<The nature of the 'easy' but morally compromising path.>"
+    stakes_increase: "<How the cost of maintaining the thesis grows over time.>"
+    character_erosion_rate: "<The speed at which the character's conviction is wearing down.>"
+  the_verdict_resolution:
+    final_choice_type: "<The nature of the irreversible decision.>"
+    consequence_nature: "<The cost of the chosen path.>"
+    thematic_synthesis: "<The new, evolved understanding reached by the end.>"
+    afterimage_definition: "<The final visual symbol of the resolved argument.>"
+  the_stakes_of_the_argument:
+    personal_stakes: "<What does the protagonist lose if they abandon their belief?>"
+    world_stakes: "<How does the victory of one side change the reality of the setting?>"
+    existential_stakes: "<What is the fundamental truth at risk of being erased?>"
+beats_or_units:
+  - id: "setup_thesis"
+    name: "The Thesis Established"
+    order: 1
+    purpose: "Show the protagonist living by their initial, flawed moral code."
+    approximate_position: "Act 1"
+    writer_prompt: "<How does the protagonist's current belief system dictate their daily actions and relationships?>"
+    story_function: "Establish the status quo and the 'flawed' morality."
+    visual_function: "<What visual symbols or environments represent the protagonist's current ideology?>"
+    emotional_function: "Comfort/Stagnation"
+    required_decisions:
+      - "What is the protagonist's specific moral blind spot?"
+    fields_to_complete:
+      protagonist_belief: "<write here>"
+    diagnostic_questions:
+      - "Is the protagonist's starting belief too obviously 'wrong' or 'evil'?"
+      - "Does the audience see the logic (even if flawed) in their behavior?"
+    completion_criteria:
+      - "The protagonist's worldview is clearly demonstrated through action, not just dialogue."
+    common_failure_modes:
+      - "Making the protagonist a 'blank slate' without an opinion."
+  - id: "introduction_of_antithesis"
+    name: "The Antithesis Emerges"
+    order: 2
+    purpose: "Introduce the opposing force that challenges the protagonist's worldview."
+    approximate_position: "Inciting Incident / Act 1 Transition"
+    writer_prompt: "<How does the antagonist/conflict force the protagonist to defend their thesis?>"
+    story_function: "Disrupt the status_quo with a competing truth."
+    visual_function: "<How does the antagonist's presence visually clash with the protagonist's world?>"
+    emotional_function: "Doubt/Threat"
+    required_decisions:
+      - "How much 'truth' does the antagonist possess?"
+    fields_to_complete:
+      antagonist_logic: "<write here>"
+    diagnostic_questions:
+      - "Is the antagonist's argument something the audience might actually agree with?"
+    completion_criteria:
+      - "The protagonist's initial belief is no longer sufficient to handle the new reality."
+    common_failure_modes:
+      - "Creating a 'cartoon villain' who has no logical moral basis."
+  - id: "the_moral_temptation"
+    name: "The Moral Temptation"
+    order: 3
+    purpose: "Offer the protagonist the chance to adopt the antithesis to achieve their goal."
+    approximate_position: "Midpoint"
+    writer_prompt: "<What way can the protagonist 'win' the external plot if they sacrifice their internal morals?>"
+    story_function: "Test the strength of the protagonist's conviction."
+    visual_function: "<A moment of luxury, power, or ease that feels 'tainted' or 'wrong'?>"
+    emotional_function: "Temptation/Conflict"
+    required_decisions:
+      - ""

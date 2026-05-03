@@ -1,0 +1,435 @@
+metadata:
+  framework_name: "Ending-First Template"
+  methodology_name: "Ending-First Method"
+  methodology_family: "Reverse-Engineering Narrative"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "tv_episode"
+    - "anime"
+    - "web series"
+  best_for:
+    - "high-concept plots"
+    - "tragedies"
+    - "twist-heavy narratives"
+    - "character studies with profound transformations"
+  not_ideal_for:
+    - "episodic procedural-heavy stories"
+    - "purely observational vignettes"
+  target_lengths:
+    - "short-form to feature-length"
+  core_principle: "Narrative inevitability through backward causality."
+  primary_story_unit: "The Consequence"
+  primary_success_metric: "The sense that the ending was both surprising and inevitable."
+
+framework_overview:
+  summary: "A methodology where the writer identifies the final emotional and physical state of the story before constructing the path that leads to it."
+  what_this_consequently_helps_create:
+    - "Tight thematic resonance"
+    - "Stronger causal links between scenes"
+    - "Elimination of 'middle-sag' by ensuring every beat serves the end"
+    - "Effective foreshadowing"
+  what_it_prioritizes:
+    - "Resolution"
+    - "Character Transformation"
+    - "Thematic Verdict"
+  what_it_deemphasizes:
+    - "Randomly occurring obstacles"
+    - "Incidental subplots"
+    - "Character traits that don't impact the climax"
+
+use_when:
+  - "The ending is the most powerful part of your idea."
+  - "You have a specific 'final image' in mind."
+  - "You are struggling with plot holes or lack of direction."
+
+avoid_when:
+  - "The story is driven by pure character exploration without a clear goal."
+  - "The story is an anthology of loosely connected events."
+
+core_principles:
+  - "The End dictates the Beginning."
+  - "Every beat must be a prerequisite for the Climax."
+  - "The Climax is the moment the 'Initial State' is irrevocably destroyed."
+  - "Causality is a chain of 'Because of that' moving backwards from the end."
+
+workflow:
+  - step: 1
+    name: "The Destination"
+    goal: "Define the final state of the world and character."
+    instructions:
+      - "Identify the final image."
+      - "Determine the emotional residue of the story."
+    output: "The Resolution Block"
+  - step: 2
+    name: "The Crucible"
+    goal: "Define the peak conflict that forces the resolution."
+    instructions:
+      - "Work backward from the end to the moment of greatest tension."
+    output: "The Climax Block"
+  - step: 3
+    name: "The Catalyst"
+    goal: "Identify the spark that makes the journey possible."
+    instructions:
+      - "Define the disruption of the status quo."
+    output: "The Inciting Incident Block"
+  - step: 4
+    name: "The Foundation"
+    goal: "Establish the character's starting flaws and the world's rules."
+    instructions:
+      - "Create a setup that makes the final transformation necessary."
+    output: "The Setup Block"
+  - step: 5
+    name: "The Causal Chain"
+    goal: "Connect the blocks using backward logic."
+    instructions:
+      - "Ensure every beat is a necessary consequence of the previous one, working toward the end."
+    output: "The Full Outline"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write or select from suitable_media>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  phase_1_the_resolution:
+    purpose: "To establish the 'After' state."
+    decision_forcing_fields:
+      final_image_impact: "How does this image visually summarize the change?"
+      emotional_residue_type: "Is the feeling hollow, triumphant, or uneasy?"
+      world_permanence: "Is this change permanent or temporary?"
+    fields_to_complete:
+      final_image: "<The last thing the audience sees>"
+      final_character_state: "<How has the protagonist changed physically/emotionally?>"
+      world_state: "<What is the new reality of the setting?>"
+      emotional_residue: "<The feeling left in the audience: e.g., hollow, triumphant, uneasy>"
+    diagnostic_questions:
+      - "Is this state a direct consequence of the Climax?"
+      - "Does this image visually represent the theme?"
+    completion_criteria: "The final state must be qualitatively different from the existing starting state."
+
+  phase_2_the_climax:
+    purpose: "The moment of maximum pressure where the 'End' is decided."
+    decision_forcing_fields:
+      choice_irreversibility: "Can the character go back after this decision?"
+      cost_magnitude: "Is the price paid high enough to justify the resolution?"
+      truth_revelation: "Does this moment reveal the character's core flaw or strength?"
+    fields_to_complete:
+      the_crucible: "<The specific event/confrontation that forces the final choice>"
+      the_ultimate_choice: "<The decision the protagonist makes that seals their fate>"
+      the_cost_paid: "<What is lost in order to achieve the resolution?>"
+      the_moment_of_truth: "<The point where the protagonist's flaw or strength is revealed>"
+    diagnostic_questions:
+      - "Does the choice made here directly lead to the Resolution defined in Phase 1?"
+      - "Is the tension at its absolute peak?"
+    completion_criteria: "The Climax must be the only way the Resolution could have happened."
+
+  phase_3_the_midpoint_pivot:
+    purpose: "The point of no return that shifts the story from 'reacting' to 'acting'."
+    decision_forcing_fields:
+      agency_shift: "Does the character move from passive to active?"
+      stakes_escalation: "How much more is at risk now?"
+      strategy_reversal: "What old method must be abandoned?"
+    fields_to_complete:
+      the_shift: "<What changes in the protagonist's understanding or strategy?>"
+      the_new_stakes: "<How do the consequences of failure increase?>"
+      the_point_of_no_return: "<The event that makes returning to the 'Status Quor' impossible>"
+    diagnostic_questions:
+      - "Does this beat push the character toward the Climax?"
+      - "Does this beat raise the difficulty of the ultimate choice?"
+    completion_criteria: "The character's trajectory must be permanently altered here."
+
+  phase_4_the_inciting_incident:
+    purpose: "The disruption that begins the backward chain."
+    decision_forcing_fields:
+      disruption_scale: "Is the disruption large enough to demand a response?"
+      necessity_factor: "Why can the character not simply ignore this?"
+      causal_link_to_end: "How does this event plant the seeds for the final resolution?"
+    fields_to_complete:
+      the_disruption: "<The event that breaks the status quo>"
+      the_call_to_action: "<Why the character cannot ignore this event>"
+      the_initial_reaction: "<The character's first attempt to resolve the disruption>"
+    diagnostic_questions:
+      - "Does this event create the necessity for the journey that ends in the Climax?"
+    completion_criteria: "The incident must plant the seeds of the final conflict."
+
+  phase_5_the_setup:
+    purpose: "The baseline required to make the transformation meaningful."
+    decision_forcing_fields:
+      flaw_visibility: "Is the flaw established clearly enough to be visible in the Climax?"
+      contrast_potential: "Is the initial state the polar opposite of the final state?"
+      world_rule_establishment: "Are the rules that will be broken later established here?"
+    fields_to_complete:
+      the_initial_state: "<The protagonist's life before the disruption>"
+      the_internal_flaw: "<The psychological or moral weakness that must be overcome>"
+      the_unmet_need: "<What the character lacks that the ending will eventually provide>"
+      the_world_rules: "<The constraints of the setting that will be tested in the Climax>"
+    diagnostic_questions:
+      - "Is the 'Initial State' the polar opposite of the 'Final State'?"
+      - "Is the flaw established clearly enough to be visible in the Climax?"
+    completion_criteria: "The setup must provide all the ingredients needed for the Climax to be impactful."
+
+beats_or_units:
+  - id: 1
+    name: "The Resolution"
+    order: 1
+    purpose: "Establish the final state of the world and character."
+    approximate_position: "End"
+    writer_prompt: "Describe the final image and the emotional residue left in the audience."
+    story_function: "Conclusion and thematic verdict."
+    visual_function: "Visual period at the end of the narrative."
+    emotional_function: "Catharsis or lingering unease."
+    required_decisions:
+      - "Final visual motif"
+      - "Emotional tone"
+    fields_to_complete:
+      final_image: "<The last thing the audience sees>"
+      emotional_residue: "<The feeling left in the audience>"
+    diagnostic_questions:
+      - "Is this state a direct consequence of the Climax?"
+    completion_criteria:
+      - "The image is visually distinct from the setup."
+      - "The emotion matches the thematic argument."
+    common_failure_modes:
+      - "The ending feels unearned or random."
+
+  - id: 2
+    name: "The Climax"
+    order: 2
+    purpose: "The moment of maximum pressure where the 'End' is decided."
+    approximate_position: "Climax"
+    writer_prompt: "What is the ultimate choice and what is the cost paid?"
+    story_function: "The peak of the causal chain."
+    visual_function: "High-contrast, kinetic, or intense imagery."
+    emotional_function: "Maximum tension and release."
+    required_decisions:
+      - "The protagonist's choice"
+      - "The sacrifice required"
+    fields_to_complete:
+      the_ultimate_choice: "<The decision that seals their fate>"
+      the_cost_paid: "<What is lost in order to achieve the resolution?>"
+    diagnostic_questions:
+      - "Does the choice made here directly lead to the Resolution?"
+    completion_criteria:
+      - "The choice is irrevocable."
+      - "The cost is significant."
+    common_failure_modes:
+      - "The choice is made for the character by external forces."
+
+  - id: 3
+    name: "The Midpoint Pivot"
+    order: 3
+    purpose: "Shift the story from reacting to acting."
+    approximate_position: "Midpoint"
+    writer_prompt: "What event makes returning to the status quo impossible?"
+    story_function: "The point of no return."
+    visual_function: "A shift in visual language or pacing."
+    emotional_function: "Increased urgency and stakes."
+    required_decisions:
+      - "The new strategy"
+      - "The escalation of stakes"
+    fields_to_complete:
+      the_point_of_no_return: "<The event that makes returning impossible>"
+      the_new_stakes: "<How the consequences of failure increase?>"
+    diagnostic_questions:
+      - "Does this beat push the character toward the Climax?"
+    completion_criteria:
+      - "The character's trajectory is permanently altered."
+    common_failure_modes:
+      - "The character remains reactive rather than proactive."
+
+  - id: 4
+    name: "The Inciting Incident"
+    order: 4
+    purpose: "The disruption that begins the backward chain."
+    approximate_position: "Beginning/Inciting Incident"
+    writer_prompt: "What event breaks the status quo and demands a response?"
+    story_function: "The catalyst for the journey."
+    visual_function: "A disruption of the established aesthetic."
+    emotional_function: "Disruption of peace/stability."
+    required_decisions:
+      - "The nature of the disruption"
+      - "The character's immediate reaction"
+    fields_to_complete:
+      the_disruption: "<The event that breaks the status quo>"
+      the_call_to_action: "<Why the character cannot ignore this event>"
+    diagnostic_questions:
+      - "Does this event create the necessity for the journey?"
+    completion_criteria:
+      - "The event is unavoidable."
+      - "The event connects to the eventual Climax."
+    common_failure_modes:
+      - "The incident is too small to drive a full narrative."
+
+  - id: 5
+    name: "The Setup"
+    order: 5
+    purpose: "Establish the baseline required for transformation."
+    approximate_position: "Opening"
+    writer_prompt: "Define the character's flaw and the world's rules."
+    story_function: "The foundation of the causal chain."
+    visual_unfunction: "Establishment of the 'Initial State' aesthetic."
+    emotional_function: "Establishing the 'before' state."
+    required_decisions:
+      - "The internal flaw"
+      - "The world's constraints"
+    fields_to_complete:
+      the_initial_state: "<The protagonist's life before the disruption>"
+      the_internal_flaw: "<The psychological or moral weakness>"
+    diagnostic_questions:
+      - "Is the 'Initial State' the polar opposite of the 'Final State'?"
+    completion_criteria:
+      - "The flaw is clearly established."
+      - "The world rules are defined."
+    common_failure_modes:
+      - "The setup is irrelevant to the eventual climax."
+
+character_design:
+  methodology_role: "Character is defined by the arc from Phase 5 to Phase 1."
+  characters:
+    - name: "<write here>"
+      initial_state: "<The character at the start of Phase 5>"
+      internal_flaw: "<The weakness they carry into the Climax>"
+      the_transformation: "<The specific change that occurs at the Climax>"
+      final_state: "<The character as seen in the Resolution>"
+      relationship_to_ending: "<How their personal arc drives the story's resolution?>"
+
+world_design:
+  methodology_role: "The world provides the constraints that make the Climax necessary."
+  design_elements:
+    rules_of_reality: "<The fundamental laws of the setting>"
+    societal_constraints: "<The pressures that force the character's hand>"
+    environmental_stakes: "<How the setting itself threatens the character>"
+    evolution_of_world: "<How the world changes from Setup to Resolution>"
+
+theme_design:
+  methodology_role: "Theme is the 'Verdict' proven by the ending."
+  fields:
+    central_argument: "<What is the story trying to prove?>"
+    the_false_belief: "<What the character believes at the start (Phase 5)>"
+    the_proven_truth: "<What the character learns/proves at the end (Phase 1)>"
+    thematic_visual_motif: "<An image or object that evolves from the Setup to the Resolution>"
+
+visual_storytelling:
+  methodology_role: "Visuals must track the reversal of the character's state."
+  image_system:
+    setup_aesthetic: "<Visual language of the status quo: e/g., cramped, muted, static>"
+    climax_aesthetic: "<Visual language of the crucible: e/g., chaotic, high-contrast, kinetic>"
+    resolution_aesthetic: "<Visual language of the after-state: e/g., expansive, bright, or hollow>"
+  recurring_motifs: []
+  final_image: "<The definitive visual period at the end of the story>"
+
+scene_generation_rules:
+  rule_1_causality: "Every scene must be a 'Because of that' consequence of the previous scene."
+  rule_2_visual_tracking: "Visual motifs must evolve in alignment with the character's transformation."
+  rule_3_climax_alignment: "Every scene must contribute to the mounting pressure of the Climax."
+  rule_4_no_randomness: "Eliminate any scene that does not directly serve the established end-state."
+
+revision_passes:
+  - name: "The Causal Audit"
+    goal: "Ensure no 'random' events exist."
+    instructions:
+      - "Trace every beat from the Climax backward to the Setup."
+    questions:
+      - "Can I say 'Because of [Previous Beat], [This Beat] happened' for every single step?"
+    success_criteria:
+      - "Every beat is a logical consequence of the one preceding it."
+  - name: "The Transformation Check"
+    goal: "Verify the character arc matches the plot arc."
+    instructions:
+      - "Compare the 'Initial State' (Phase 5) with the 'Final State' (Phase 1)."
+    questions:
+      - "Is the change profound enough to justify the Climax?"
+      - "Is the change earned by the 'Cost Paid' in the Climax?"
+    success_criteria:
+      - "The character's internal change is the engine of the plot's resolution."
+  - name: "The Structure Pass"
+    goal: "Ensure the narrative architecture is sound."
+    instructions:
+      - "Check the transition between the Midpoint and the Climax."
+      - "Verify the Inciting Incident triggers the correct trajectory."
+    questions:
+      - "Is there any 'sagging' in the middle of the causal chain?"
+      - "Does the structure support the intended pacing?"
+    success_criteria:
+      - "The story moves with increasing momentum toward the end."
+  - name: "The Theme Pass"
+    goal: "Confirm the thematic verdict is clearly proven."
+    instructions:
+      - "Analyze the 'False Belief' against the 'Final Image'."
+    questions:
+      - "Does the ending provide a definitive answer to the central argument?"
+      - "Is the theme visible in the character's choice?"
+    success_criteria:
+      - "The story's conclusion leaves no doubt about its thematic message."
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure visual language tracks the character's arc."
+    instructions:
+      - "Review the aesthetic shift from Setup to Climax to Resolution."
+    questions:
+      - "Does the visual style evolve alongside the character's internal state?"
+      - "Are the recurring motifs effectively utilized?"
+    success_criteria:
+      - "The visual progression reinforces the narrative transformation."
+
+validation_checklist:
+  - "Does the story end where it was intended to end?"
+  - "Is the ending a direct result of the Climax's choice?"
+  - "Is the 'Initial State' fundamentally incompatible with the 'Final State'?"
+  - "Does the 'Inciting Incident' provide the necessary momentum for the 'Climax'?"
+  - "Can every beat be linked via 'Because of that' logic?"
+  - "Is the character's internal flaw visible during the Climax?"
+  - "Does the visual motif evolve from the Setup to the Resolution?"
+  - "Is the thematic verdict clearly proven by the final image?"
+  - "Is the cost paid in the Climax significant enough to justify the resolution?"
+  - "Does the Midpoint Pivot move the character from reactive to proactive?"
+  - "Are the world rules established in the Setup tested in the Climax?"
+  - "Is the final image qualitatively different from the opening image?"
+
+failure_modes:
+  - failure_mode: "The Unearned Ending"
+    symptom: "The ending feels like a 'Deus Ex Machina' or a random accident."
+    likely_cause: "The Climax didn't involve a choice or a cost paid by the protagonist."
+    fix: "Ensure the protagonist's action/choice is the primary cause of the resolution."
+  - failure_mode: "The Disconnected Setup"
+    symptom: "The beginning of the story feels irrelevant to the end."
+    likely_cause: "The character's initial flaw was not properly linked to the Climax's tension."
+    fix: "Rebuild the Setup to explicitly introduce the weakness that the Climax will test."
+  - failure_mode: "The Middle Sag"
+    symptom: "The story loses momentum between the Inciting Incident and the Midpoint."
+    likely_cause: "Events are happening *to* the character rather than being *caused* by the character's reaction to the disruption."
+    fix: "Ensure every beat in the middle is a 'Because of that' reaction to the previous beat."
+
+adaptation_notes:
+  feature_film: "Focus on the 'Cost Paid' to ensure the scale of the Climax matches the budget."
+  short_film: "Keep the Causal Chain extremely tight; minimize the number of beats between Setup and Resolution."
+  tv_episode: "Ensure the 'Resolution' leaves enough 'Initial State' tension to seed the next episode."
+  tv_pilot: "Establish the 'Initial State' and 'Inciting Incident' with enough weight to promise a long-term journey."
+  anime: "Emphasize the visual transformation and the 'Moment of Truth' through highly stylized imagery."
+  adult_animation: "Use the 'World Rules' to push the boundaries of the setting's logic and consequence."
+  anthology: "Each entry must follow the full reverse-engineering loop independently."
+  game_cinematic: "Ensure the 'Ultimate Choice' is visually impactful and clearly communicates the character's new state."
+
+yaml_usage_notes:
+  how_to_use: "Do NOT start with the Premise. Start with the Resolution. Populate the phases in reverse order: Phase 1 -> Phase 2 -> Phase 3 -> Phase 4 -> Phase 5."
+  recommended_population_order:
+    - "Phase 1 (The Destination)"
+    - "Phase 2 (The Crucible)"
+    - "Phase 3 (The Pivot)"
+    - "Phase 4 (The Catalyst)"
+    - "Phase 5 (The Foundation)"
+    - "Character & Theme Design"
+  minimum_viable_completion: "A completed Phase 1, 2, and 5."
+  signs_framework_is_ready_for_scene_outline: "When you can trace a straight line of causality from the Setup to the Resolution without any 'and then' moments."

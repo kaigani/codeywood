@@ -1,0 +1,356 @@
+metadata:
+  framework_name: "Non-Linear / Puzzle Structure Architect"
+  methodology_name: "Non-Linear / Puzzle Structure"
+  methodology_family: "Structural Fragmentation"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "anime"
+    - "undisclosed"
+    - "anthology"
+    - "game cinematic"
+  best_for:
+    - "mystery"
+    - "psychological thriller"
+    - "trauma-based narratives"
+    - "unreliable narrator stories"
+    - "detective procedurals"
+  not_ideal_for:
+    - "high-octane action-only plots"
+    - "straightforward hero's journey"
+    - "simple episodic comedy"
+  target_lengths:
+    - "short film"
+    - "feature film"
+  core_principle: "The narrative is a puzzle where the audience must reconstruct the 'True Chronology' by synthesizing fragmented, out-of-order information reveals."
+  primary_story_unit: "The Fragment (A self-contained unit of information)"
+  primary_success_metric: "The 'Aha!' Moment (The moment the audience's mental reconstruction aligns with the actual truth)."
+
+framework_overview:
+  summary: "A methodology for constructing narratives that intentionally withhold or rebless information to create mystery, tension, or psychological depth."
+  what_this_framework_helps_create:
+    - "Complex, layered mysteries"
+    - "Stories about memory, trauma, or perception"
+    - "Narratives where the 'How' or 'Why' is more important than the 'What'"
+  what_it_prioritizes:
+    - "Information management"
+    - "Thematic resonance through repetition"
+    - "The tension between 'Known' and 'Unknown'"
+  what_it_deemphasizes:
+    - "Linear momentum"
+    - "Simple cause-and-effect progression"
+
+use_when:
+  - "The protagonist is trying to solve a past event"
+  - "The narrative subject is an unreliable narrator"
+  - "The story's theme is about the fragmentation of identity or memory"
+  - "The 'reveal' is the emotional climax of the story"
+
+avoid_when:
+  - "The plot relies purely on rapid-und fire physical progression"
+  - "The audience needs immediate, clear context to care about the stakes"
+  - "The complexity of the structure obscures the emotional core of the characters"
+
+core_principles:
+  - "The Dual Timeline: There is a 'True Chronology' (what happened) and a 'Narrative Chronology' (what is shown)."
+  - "Information Withholding: Every fragment must either provide a piece of the puzzle or introduce a new, confusing variable."
+  - "The Anchor: Each time period/fragment must have a distinct visual, auditory, or thematic marker to prevent audience disorientation."
+  - "The Synthesis: The climax occurs when the final piece of information makes the entire sequence of fragments make sense."
+
+workflow:
+  - step: 1
+    name: "Establish the True Chronology"
+    goal: "Define the linear reality."
+    instructions:
+      - "Write the story as if it were a simple, linear, chronological event."
+      - "Identify the 'Beginning, Middle, and End' of the actual events."
+    output: "The Chronological Spine"
+  - step: 2
+    name: "Identify the Information Gaps"
+    goal: "Determine what the audience *shouldn't* know yet."
+    instructions:
+      - "Identify key plot points that, if revealed too early, would spoil the mystery."
+      - "Decide which characters are withholding information."
+    output: "The Mystery Ledger"
+  - step: 3
+    name: "Design the Fragments"
+    goal: "Break the spine into pieces."
+    instructions:
+      - "Select specific moments from the True Chronology to present out of order."
+      - "Assign each fragment a 'Narrative Order' index."
+    output: "The Fragment Map"
+  - step: 4
+    name: "Create the Anchors"
+    goal: "Ensure audience orientation."
+    instructions:
+      - "Assign visual/auditory markers to differentiate time periods or perspectives."
+    output: "The Orientation Guide"
+  - step: 5
+    name: "The Synthesis Test"
+    goal: "Verify the payoff."
+    instructions:
+      - "Trace the path of information from the first fragment to the last."
+    output: "The Reveal Logic Check"
+
+story_inputs:
+  premise: "<The core concept of the mystery/puzzle>"
+  logline: "<The narrative hook involving the reconstruction of truth>"
+  medium: "<e._g. Feature Film>"
+  genre: "<e.g. Neo-Noir / Psychological Thriller>"
+  tone: "<e.g. Fragmented, Disorienting, Melancholic>"
+  target_length: "<e.g. 110 pages>"
+  audience: "<e.g. Adult, Mystery Lovers>"
+  rating: "<e.g. R>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: ["Memento", "Rashomon", "Pulp Fiction"]
+  must_include: ["A central mystery", "A recurring visual motif"]
+  must_avoid: ["Expository flashbacks that explain everything too clearly"]
+
+methodology_structure:
+  the_chronological_spine:
+    description: "The absolute truth. The sequence of events as they actually occurred in time."
+    causality_logic: "<How event A strictly necessitates event B>"
+    temporal_anchor_points: "<Specific dates or eras defining this segment>"
+    information_density: "<High/Medium/Low amount of truth revealed here>"
+    events:
+      - event_id: "start_01"
+        timestamp: "<Time 0: The Inciting Incident in reality>"
+        description: "<What actually happened?>"
+        consequence: "<How this leads to the next real event>"
+      - event_id: "mid_01"
+        timestamp: "<Time 1: The turning point in reality>"
+        description: "<The truth of the middle period>"
+        consequence: "<The weight of the truth>"
+      - event_id: "end_01"
+        timestamp: "<Time 2: The resolution in reality>"
+        description: "<The finality of the actual events>"
+        consequence: "<The ultimate impact on the world>"
+
+  the_narrative_presentation:
+    description: "The order in which the audience experiences the fragments."
+    fragment_transition_type: "<Match Cut | Hard Cut | Dissolve | Audio Bridge>"
+    audience_knowledge_delta: "<The amount of new information learned vs. what was already known>"
+    visual_signature_strength: "<How distinct the era's look is from others>"
+    fragment_sequence:
+      - fragment_id: "frag_01"
+        presentation_order: 1
+        chronological_link: "<Which event in the spine does this belong to?>"
+        information_provided: "<What piece of the puzzle is revealed here?>"
+        information_withheld: "<What does this fragment intentionally obscure or confuse?>"
+        visual_anchor: "<How do we recognize this time period/state? (e.g. Sepia, Handheld, High Contrast)>"
+        emotional_impact: "<How should the audience feel about this specific piece?>"
+        diagnostic_question: "Does this fragment provide a clue or just a distraction?"
+
+  the_information_ledger:
+    description: "A tracking system for the audience's knowledge."
+    clue_reliability_index: "<Is this clue trustworthy or a red herring?>"
+    misdirection_level: "<How much does this clue lead the audience away from the truth?>"
+    revelation_impact_score: "<1-10 scale of how much this changes the audience's perception>"
+    clues:
+      - clue_id: "clue_01"
+        description: "<A specific piece of evidence/truth>"
+        revealed_in_fragment: "<Fragment ID>"
+        audience_status_at_start: "<Unaware | Suspecting | Confused>"
+        audience_status_at_end: "<Aware | Convinced | Re-evaluated>"
+
+beats_or_units:
+  - id: "unit_01"
+    name: "The Hook Fragment"
+    order: 1
+    purpose: "Establish the central mystery and the 'unsolved' state."
+    approximate_position: "Opening"
+    writer_prompt: "Write a scene that presents a profound question or a disturbing visual without providing the context of how it happened."
+    story_function: "Inciting Incident of the Narrative Chronology."
+    visual_function: "Establish the primary visual signature of the 'present' or 'unsolved' era."
+    emotional_function: "Intrigue and immediate tension."
+    required_decisions:
+      - "Which piece of information is being withheld?"
+      - "What is the primary visual anchor for this era?"
+    fields_to_complete:
+      - "fragment_id"
+      - "visual_anchor_usage"
+    diagnostic_questions:
+      - "Does this scene provide too much context too early?"
+      - "Is the mystery compelling enough to sustain interest?"
+    completion_criteria:
+      - "The audience is left with at least one unanswered question."
+    common_failure_modes:
+      - "Over-explanation of the mystery."
+  - id: "unit_02"
+    name: "The Contextual Fragment"
+    order: 2
+    purpose: "Provide foundational information about the characters or setting."
+    approximate_position: "Early-Mid"
+    writer_prompt: "Introduce a character in a moment of stability that will later be disrupted by the truth."
+    story_function: "Building empathy and establishing the 'Normal' before the 'Fracture'."
+    visual_subject: "Warm lighting, stable camera work."
+    emotional_function: "Establishing stakes and emotional connection."
+    required_decisions:
+      - "Which character's perspective are we seeing?"
+      - "Which clue from the ledger is introduced here?"
+    fields_to_complete:
+      - "chronological_index"
+      - "information_revealed"
+    diagnostic_questions:
+      - "Is this fragment too much like a standard linear scene?"
+    completion_criteria:
+      - "The audience understands the character's baseline motivation."
+    common_failure_modes:
+      - "Boring exposition that lacks narrative tension."
+  - id: "unit_03"
+    name: "The Red Herring Fragment"
+    order: 3
+    purpose: "Misdirect the audience's reconstruction of the timeline."
+    approximate_position: "Mid"
+    writer_prompt: "Present a piece of evidence that seems to link two events but actually points to a false conclusion."
+    story_function: "Increasing complexity and preventing early resolution."
+    visual_function: "Use a visual motif that mimics a real clue but is slightly 'off'."
+    emotional_unsettling: "Confusion and growing suspicion."
+    required_decisions:
+      - "What is the false connection being suggested?"
+      - "How does this fragment interact with the 'Information Ledger'?"
+    fields_to_complete:
+      - "mystery_maintained"
+      - "information_withheld"
+    diagnostic_questions:
+      - "Is the misdirection too obvious?"
+    completion_criteria:
+      - "The audience forms a hypothesis that is later proven wrong."
+    common_failure_modes:
+      - "The red herring is so confusing it breaks the audience's engagement."
+
+character_design:
+  methodology_role: "Characters are either 'The Investigators' (piecing it together) or 'The Subjects' (the pieces of the puzzle)."
+  characters:
+    - name: "<Name>"
+      role: "<Investigator | Subject | Unreliable Narrator | Catalyst>"
+      knowledge_level: "<What do they know that the audience doesn't?>"
+      subjective_bias: "<How does their perspective distort the truth of the fragments they appear in?>"
+      connection_to_mystery: "<How they are tied to the 'True Chronology'>"
+
+world_design:
+  methodology_role: "The world must facilitate the disorientation or the tracking of time."
+  fields:
+    temporal_logic: "<How does time work in this story? Is it a/a loop? A fracture? A regression?>"
+    sensory_anchors:
+      visual_differentiation: "<Color grading, aspect ratio, or lighting shifts per era>"
+      auditory_differentiation: "<Soundscapes, era-specific music, or recurring motifs>"
+    environmental_decay: "<Does the world physically change as we move through the timeline?>"
+
+theme_design:
+  methodology_role: "The theme is often the 'Lesson' learned once the puzzle is solved."
+  fields:
+    central_question: "<e.g. Can the truth ever truly be known?>"
+    the_illusion: "<What false reality is the audience (and characters) believing during the middle fragments?>"
+    the_revelation: "<What truth is revealed that changes the meaning of all previous fragments?>"
+
+visual_storytelling:
+  methodology_role: "Visuals must act as the 'glue' for the fragmented narrative."
+  image_system:
+    recurring_motifs: ["<An object that appears in every era, changing meaning as we progress>"]
+    symbolic_transition: "<How does a cut from one time period to another use a visual match (Match Cut)?>"
+  visual_rules:
+    - "Rule 1: Never use a transition that explains the timeline; use one that complicates it."
+    - "Rule 2: Every time period must have a unique 'Visual Signature'."
+
+scene_generation_rules:
+  scene_principles:
+    - "Each scene must serve as a 'Data Point'."
+    - "Avoid 'Pure Exposition' scenes; replace with 'Discovery' scenes."
+  scene_template:
+    scene_id: ""
+    fragment_id: ""
+    chronological_index: ""
+    presentation_index: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    information_revealed: ""
+    mystery_maintained: ""
+    visual_anchor_usage: ""
+    emotional_shift: ""
+    exits_with: "<A question or a cliffhanger for the next fragment>"
+  do_rules:
+    - "Do use Match Cuts to link disparate eras."
+    - "Do use recurring objects to provide continuity."
+  avoid_rules:
+    - "Avoid 'The Explainer Character' who simply narrates the timeline."
+    - "Avoid presenting the 'True Chronology' in the first 10 minutes."
+
+revision_passes:
+  - name: "The Chronological Integrity Pass"
+    goal: "Ensure the 'True Story' is actually a good story."
+    instructions: ["Read the 'True Chronology' spine as a single linear script."]
+    questions: ["Is the underlying plot satisfying on its own?"]
+    success_criteria: ["The spine has a clear beginning, middle, and end."]
+  - name: "The Character Consistency Pass"
+    goal: "Ensure characters remain grounded despite fragmented presentation."
+    instructions: ["Trace a single character's arc through the fragments in chronological order."]
+    questions: ["Does their motivation remain consistent across time jumps?"]
+    success_criteria: ["The character's emotional evolution is legible."]
+  - name: "The Theme Resonance Pass"
+    goal: "Ensure the structural complexity serves the theme."
+    instructions: ["Identify the central theme and check if every fragment reinforces it."]
+    questions: ["Is the fragmentation a gimmick, or does it mirror the theme of brokenness/memory?"]
+    success_criteria: ["The structure and theme are inseparable."]
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure the audience can navigate the timeline visually."
+    instructions: ["Review all transitions and era-specific visual markers."]
+    questions: ["Are the visual signatures distinct enough to prevent confusion?"]
+    success_criteria: ["The audience can identify the era within seconds of a scene start."]
+  - name: "The Information Flow Pass"
+    goal: "Check for spoilers and confusion."
+    instructions: ["Trace the audience's knowledge fragment by fragment."]
+    questions: ["Did we reveal the 'Big Twist' too early? Is there a period of 'Dead Information' where nothing is learned?"]
+    success_criteria: ["Information builds or shifts, never stagnates."]
+
+validation_checklist:
+  - "Does the 'True Chronology' exist and function as a complete narrative?"
+  - "Does every fragment contribute a specific piece of the puzzle?"
+  - "Are the visual/auditory anchors strong enough to prevent disorientation?"
+  - "Is the 'Aha!' moment a direct consequence of the information revealed in the final fragments?"
+  - "Does the 'Information Ledger' show a clear progression of discovery?"
+  - "Is the 'True Chronology' distinct from the 'Narrative Chronology'?"
+  - "Does every character have a clear connection to the central mystery?"
+  - "Are the red herrings distinguishable from actual clues?"
+  - "Is the visual signature of each era/fragment unmistakable?"
+  - "Does the climax provide a resolution to the 'True Chronology' timeline?"
+  - "Is the information density manageable for the audience?"
+  - "Does the theme resonate through the repetition of motifs?"
+
+failure_modes:
+  - failure_mode: "The Confusion Trap"
+    symptom: "The audience stops trying to solve the puzzle because they are lost."
+    likely_cause: "Lack of strong visual/audation anchors or too many simultaneous timelines."
+    fix: "Strengthen the 'Orientation Guide' and simplify the number of active time periods."
+  - failure_mode: "The Empty Puzzle"
+    symptom: "The audience solves the mystery too early, making the rest of the film boring."
+    likely_cause: "Revealing the 'True Chronology' pieces too sequentially or clearly."
+    fix: "Introduce 'Red Herring' fragments that provide false connections."
+  - failure_mode: "The Structural Gimmick"
+    symptom: "The story is interesting to look at, but the characters and themes feel hollow."
+    likely_cause: "Focusing entirely on the 'Shuffle' and neglecting the 'Spine'."
+    fix: "Re-focus on the 'True Chronology' and ensure the emotional stakes are high."
+
+adaptation_notes:
+  feature_film: "Use 2-3 distinct timelines max to maintain complexity without losing the audience."
+  short_film: "Focus on a single, powerful 'Reversal' where a single fragment changes everything."
+  tv_episode: "Use the non-linear structure to bridge the gap between the 'Case of the Week' and the 'Series Mythos'."
+  tv_pilot: "Establish the 'Rules of the Puzzle' early so the audience knows how to play along."
+  anime: "Utilize extreme stylistic shifts (e.g., animation style changes) to signal timeline shifts."
+  adult_animation: "Use surrealist visual shifts to represent the fragmentation of the psyche."
+  anthology: "Use a recurring character or object to link disparate, non-linear stories."
+  game_cinematic: "Use the non-linear structure to mirror the player's discovery of lore items in the game world."
+
+yaml_usage_notes:
+  how_to_use: "Start with the 'True Chronology'. Do not attempt to fragment the story until the linear version is solid."
+  recommended_population_order:
+    - "1. True Chronology"
+    - "2. Information Ledger"
+    - "3. Fragment Map"
+    - "4. Visual Anchors"
+  minimum_viable_completion: "A completed 'True Chronology' and a 'Fragment Map' with at least 3 fragments."
+  signs_framework_is_ready_for_scene_outline: "When you can trace a line of 'Information Revealed' from the first fragment to the final reveal."

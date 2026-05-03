@@ -1,0 +1,385 @@
+metadata:
+  framework_name: "Horror Pressure-Cooker Template"
+  methodology_name: "Horror Pressure-Cooker Method"
+  methodology_family: "Sub-genre/Structural Tension"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "anime"
+    - "adult animation"
+    - "game cinematic"
+    - "anthology short"
+  best_for:
+    - "claustrophobic horror"
+    - "survival horror"
+    - "psychological thriller"
+    - "slasher"
+    - "contained single-location narratives"
+  not_ideal_for:
+    - "epic fantasy"
+    - "adventure/quest narratives"
+    - "wide-scale war epics"
+  target_lengths:
+    - "7-minute short"
+    - "90-minute feature"
+  core_principle: "The systematic reduction of agency, space, and resources to force a psychological or physical breaking point."
+  primary_story_unit: "The Escalation Cycle"
+  primary_success_metric: "Sustained, rising atmospheric dread and the feeling of inescapable entrapment."
+
+framework_overview:
+  summary: "The Pressure-Cooker Method focuses on the 'tightening of the screws.' It is not about the threat itself, but about the diminishing ability of the characters to escape, hide, or resist that threat."
+  what_this_framework_helps_create:
+    - "Intense, claustrophobic tension"
+    - "High-stakes character breakdowns"
+    - "A sense of inevitable doom"
+    - "Efficient, single-location storytelling"
+  what_it_prefers:
+    - "Isolation"
+    - "Resource depletion"
+    - "Shrinking safe zones"
+    - "Sensory deprivation"
+  what_it_deemphasizes:
+    - "Expansive worldbuilding"
+    - "Subplots unrelated to the primary trap"
+    - "Character escapism"
+
+use_when:
+  - "You have a limited budget/location"
+  - "You want to focus on psychological breakdown"
+  - "You want to maximize tension through proximity"
+
+avoid_when:
+  - "The story requires frequent travel between disparate locations"
+  - "The protagonist's primary strength is mobility/flight"
+
+core_principles:
+  - "The Container: The physical or psychological boundaries that cannot be breached."
+  - "The Breach: The moment the 'safe' world is compromised by the threat."
+  - "The Shrinking Perimeter: The progressive loss of 'safe' areas within the container."
+  - "The Depletion: The dwindling of vital resources (ammo, light, oxygen, allies, sanity, time)."
+  - "The Breaking Point: The moment when resistance is no longer an option and only confrontation remains."
+
+workflow:
+  - step: 1
+    name: "Define the Container"
+    goal: "Establish the boundaries of the trap."
+    instructions:
+      - "Identify the primary location or psychological state."
+      - "Determine the 'walls' (physical or social) that prevent escape."
+    output: "The Container Definition"
+  - step: 2
+    name: "Identify the Pressure Gauges"
+    goal: "Determine how tension will be measured and increased."
+    instructions:
+      - "Choose 2-3 sensory or environmental triggers that will escalate."
+    output: "Pressure Gauge List"
+  - step: 3
+    name: "Map the Shrinking Perimeter"
+    goal: "Plan the loss of safe zones."
+    instructions:
+      - "Outline the progression from 'wide/safe' to 'narrow/deadly'."
+    output: "Zone Degradation Map"
+  - step: 4
+    name: "The Breaking Point Setup"
+    goal: "Ensure the characters are uniquely vulnerable to the specific trap."
+    instructions:
+      - "Align character flaws with the mechanics of the container."
+    output: "Character-Trap Synergy"
+
+story_inputs:
+  premise: "<The core 'what if' of the trap>"
+  logline: "<Protagonist + Container + Threat + The Stakes>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Sci-Fi Horror>"
+  tone: "<e.g., Claustrophobic, Gritty, Nihilistic>"
+  target_length: "<e.g., 90 minutes>"
+  audience: "<e.g., Horror enthusiasts>"
+  rating: "<e.g., R>"
+  production_constraints:
+    - "<e.g., Single interior location only>"
+    - "<e.g., Max 4 actors>"
+  creative_constraints:
+    - "<e.g., No jump scares; only dread>"
+  reference_points:
+    - "<e.g., The Thing, Alien, Misery>"
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  stage_1_the_container_definition:
+    boundary_mechanics: "<What defines the edge of the story's world?>"
+    insulation_logic: "<What prevents the characters from calling for help?>"
+    environmental_pressure: "<How does the container itself exert force (heat, cold, dark, pressure, silence)?>"
+    escape_prevention_status: "<What is the current state of the exits?>"
+    containment_integrity: "<How much damage can the container take before failing?>"
+  stage_2_the_breach_execution:
+    trigger_event: "<The specific moment the seal is broken?>"
+    isolation_method: "<How is the connection to the outside world severed?>"
+    initial_resource_loss: "<What is the first thing taken away from the characters?>"
+    threat_visibility_threshold: "<How much of the threat is revealed during the breach?>"
+    panic_catalyst: "<What specific sensory input triggers the first wave of panic?>"
+  stage_3_the_encroachment_management:
+    perimeter_reduction_plan: "<How does the playable area shrink over time?>"
+    resource_depletion_sequence: "<The order in which vital resources are exhausted?>"
+    sensory_degradation_steps: "<The progression of sight, sound, or touch loss?>"
+    social_erosion_triggers: "<How group dynamics are destroyed by confinement?>"
+    zone_degradation_map: "<The list of rooms/areas becoming uninhabitable?>"
+  stage_4_the_breaking_point_resolution:
+    confrontation_mechanic: "<How the character and threat finally meet?>"
+    final_resource_state: "<The state of the last remaining resource at the climax?>"
+    character_breaking_point_trigger: "<The psychological event that forces the final action?>"
+    outcome_determinant: "<The factor that decides survival or death?>"
+    climax_intensity_scale: "<The peak level of sensory/physical pressure?>"
+
+beats_or_units:
+  - id: "the_setup"
+    name: "The Illusion of Safety"
+    order: 1
+    purpose: "Establish the baseline of the container before the pressure begins."
+    approximate_position: "Act 1"
+    writer_prompt: "<Show the characters operating within the container as if they are in control. What is their 'normal'?>"
+    story_function: "Establish the rules and the 'safe' zones."
+    visual_function: "<Use wider shots, stable camera, and more light to imply stability.>"
+    emotional_function: "False security, mundane tension."
+    required_decisions:
+      - "What is the 'normal' state of the container?"
+      - "What is the first subtle sign that the seal is broken?"
+    fields_to_complete:
+      baseline_safety: "<write here>"
+      the_first_crack: "<write here>"
+    diagnostic_questions:
+      - "Do we understand the rules of this space yet?"
+      - "Is the 'safety' fragile enough to be believable?"
+    completion_criteria:
+      - "The audience knows the boundaries and the characters' initial status quo."
+    common_failure_modes:
+      - "Making the characters too comfortable, making the threat's arrival feel unearned."
+
+  - id: "the_breach"
+    name: "The Breach/Isolation"
+    order: 2
+    purpose: "Sever the connection to the outside world."
+    approximate_position: "Inciting Incident"
+    writer_prompt: "<The door locks, the radio dies, the storm hits, the oxygen seals. How are they trapped?>"
+    story_function: "Establish the impossibility of escape."
+    visual_function: "<Tighten the frame. Introduce shadows or flickering lights.>"
+    emotional_function: "Panic, realization, disorientation."
+    required_decisions:
+      - "What specific mechanism prevents escape?"
+      - "Is the isolation sudden or gradual?"
+    fields_to_complete:
+      escape_mechanism_failure: "<write here>"
+      initial_panic_trigger: "<write here>"
+    diagnostic_questions:
+      - "Is there any way for the characters to call for help that hasn't been addressed?"
+      - "Does the breach fundamentally change the environment?"
+    completion_criteria:
+      - "The characters are officially 'in the pot'."
+    common_failure_modes:
+      - "Leaving a 'too easy' way out (e.g., a working cell phone)."
+
+  - id: "the_encroachment"
+    name: "The Shrinking Perimeter"
+    order: 3
+    purpose: "Systematically remove safe zones and resources."
+    approximate_position: "Act 2"
+    writer_prompt: "<The lights go out in the hallway. The oxygen in Room B is gone. The monster has entered the vents.>"
+    story_function: "Increase the pressure by reducing the playable area."
+    visual_function: "<Use extreme close-ups and claustrophobic framing.>"
+    emotional_function: "Dread, claustrophobia, desperation."
+    required_decisions:
+      - "Which zone is lost first?"
+      - "Which resource is lost next?"
+    fields_to_complete:
+      lost_zone_1: "<write here>"
+      lost_resource_1: "<write here>"
+    diagnostic_questions:
+      - "Is the loss of space/resource directly linked to the threat's progress?"
+      - "Is the tension rising, or is it plateauing?"
+    completion_criteria:
+      - "The characters are forced into a single, final, vulnerable location."
+    common_failure_matches:
+      - "Losing too much too fast, leaving no room for further escalation."
+
+  - id: "the_breaking_point"
+    name: "The Critical Mass"
+    order: 4
+    purpose: "The final confrontation where the pressure forces an explosion/collapse."
+    approximate_position: "Climax"
+    writer_prompt: "<No more hiding. No more running. The threat and the character meet in the final, smallest space.>"
+    story_function: "Resolution through confrontation or total destruction."
+    visual_function: "<Chaos, strobe, extreme shadows, or total darkness/silence.>"
+    emotional_function: "Terror, catharsis, or nihilistic acceptance."
+    required_decisions:
+      - "Does the character fight back or succumb?"
+      - "Is the ending a survival or a tragedy?"
+    fields_to_complete:
+      final_confrontation_mechanic: "<write here>"
+      the_final_outcome: "<write here>"
+    diagnostic_questions:
+      - "Was the character's failure/success a direct result of the pressure applied?"
+      - "Is the ending as inevitable as the setup suggested?"
+    completion_abilities:
+      - "The 'pressure' has been released via the climax."
+    common_failure_modes:
+      - "A 'deus ex machina' escape that ignores the established trap."
+
+character_design:
+  methodology_role: "Characters must be 'vessels' for the pressure; their psychological cracks must mirror the environmental cracks."
+  characters:
+    - name: "<Protagonist Name>"
+      vulnerability_type: "<e.g., Claustrophobia, guilt, physical injury>"
+      hidden_secret: "<Something that makes them harder to trust in a confined space>"
+      resource_dependency: "<What do they need most that is currently running out?>"
+      breaking_point_behavior: "<How do they act when the pressure is at 100%?>"
+
+world_design:
+  methodology_role: "The world is the antagonist. The environment is a machine designed to crush."
+  fields:
+    the_trap_mechanics: "<How does the environment physically compress the characters?>"
+    sensory_rules: "<What can/cannot be heard, seen, or smelled in this space?>"
+    environmental_hazards: ["<List of hazards like darkness, heat, toxic gas, etc.>"]
+
+theme_design:
+  methodology_role: "The theme is the 'moral' of the pressure—what happens to the human soul under extreme weight?"
+  fields:
+    central_pressure_question: "<e.g., Does isolation reveal our true selves or just our cowardice?>"
+    the_false_hope: "<The belief that escape is possible through [X]>"
+    the_grim_reality: "<The realization that escape was never an option due to [Y]>"
+
+visual_storytelling:
+  methodology_role: "Visuals must enforce the feeling of shrinking space and encroaching darkness."
+  image_system:
+    framing_progression: "<From wide/stable to tight/unstable/handheld.>"
+    lighting_progression: "<From high-key/clear to low-key/obscured/flickering.>"
+    color_palette: "<From natural/warm to sickly/cold/monochromatic.>"
+  visual_rules:
+    - "Never show the full threat until the perimeter has shrunk to its minimum."
+    - "Use shadows to create 'phantom' zones of danger."
+  recurring_motifs:
+    - "<e.g., The sound of a ticking clock, the sight of a closing door, the feeling of breath on a neck.>"
+  final_image: "<An image that represents the permanent change or the finality of the trap.>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either reduce a resource, shrink a safe zone, or increase the threat's visibility."
+    - "Dialogue should be sparse; the environment should 'speak' through sound and light."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: "<What is being taken away in this scene?>"
+    turn: "<How does the safety of the character change?>"
+    visual_anchor: "<A specific object or shadow that emphasizes the trap>"
+    emotional_shift: ""
+    exits_with: "<The new, smaller boundary of the story>"
+  do_rules:
+    - "Use sound to imply the threat is 'just outside' the frame."
+    - "Focus on the physical sensations of the characters (sweat, shaking, heavy breathing)."
+  avoid_rules:
+    - "Avoid long scenes of characters simply discussing their problems without environmental pressure."
+    - "Avoid characters leaving the 'Container' without a catastrophic consequence."
+
+revision_passes:
+  - name: "The Escape Audit"
+    goal: "Ensure the trap is actually inescapable."
+    instructions:
+      - "Review every scene for 'accidental exits' or easy solutions."
+    questions:
+      - "Could a character have simply called the police?"
+      - "Is there a window that isn't barred?"
+    success_criteria:
+      - "No way out exists that hasn't been explicitly broken."
+  - name: "The Tension Gradient Check"
+    goal: "Ensure the pressure is rising, not fluctuating."
+    instructions:
+      - "Map the 'Pressure Gauge' levels across the script."
+    questions:
+      - "Does the tension dip too low in Act 2?"
+      - "Is the climax more intense than the breach?"
+    success_criteria:
+      - "A consistent upward trajectory of dread."
+  - name: "The Character Breakdown Pass"
+    goal: "Verify character psychological decay mirrors environmental decay."
+    instructions:
+      - "Check if character decisions are driven by the loss of resources/space."
+    questions:
+      - "Does the character's secret become a liability as the space shrinks?"
+      - "Is their breaking point behavior consistent with the established pressure?"
+    success_criteria:
+      - "Character arc is inextricably linked to the container's degradation."
+  - name: "The Theme Resonance Pass"
+    goal: "Ensure the 'moral' of the pressure is clear."
+    instructions:
+      - "Identify the central pressure question and track its answer through the plot."
+    questions:
+      - "Does the ending answer the central pressure question?"
+      - "Is the 'grim reality' palpable in the final scene?"
+    success_criteria:
+      - "Thematic payoff is achieved through the resolution of the trap."
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure visual elements enforce claustrophobia."
+    instructions:
+      - "Audit the lighting and framing progression."
+    questions:
+      - "Does the lighting become progressively more obscured?"
+      - "Are the shots becoming tighter as the perimeter shrinks?"
+    success_criteria:
+      - "The visual language communicates the shrinking safe zone without dialogue."
+  - name: "The Pressure Gradient Pass"
+    goal: "Ensure the methodology's specific mechanics are functioning."
+    instructions:
+      - "Verify every 'Pressure Gauge' is actively being depleted."
+    questions:
+      - "Is every resource loss impactful?"
+      - "Is the loss of space clearly visualized?"
+    success_s_criteria:
+      - "The 'Pressure Gauges' are all depleted by the climax."
+
+validation_checklist:
+  - "Is the primary location clearly defined and bounded?"
+  - "Is there a clear mechanism for isolation?"
+  - "Are the 'Pressure Gauges' (resources/space) actively depleting?"
+  - "Does the character's internal breakdown mirror the environmental breakdown?"
+  - "Is the final confrontation the inevitable result of the accumulated pressure?"
+  - "Is the lighting progression mapped from high-key to low-key?"
+  - "Is the framing progression mapped from wide to tight?"
+  - "Are all 'lost zones' clearly differentiated from the initial setup?"
+  - "Is the threat's visibility appropriately restricted?"
+  - "Does the sound design utilize silence and proximity-based noise?"
+  - "Is the 'Breach' event clearly established as a point of no return?"
+  - "Are the character's resource dependencies addressed in the depletion sequence?"
+
+failure_modes:
+  - failure_mode: "The Open Door"
+    symptom: "The audience feels the characters could have escaped easily."
+    likely_cause: "Failing to establish the 'Breach' or 'Isolation' mechanics effectively."
+    fix: "Introduce a structural or social barrier that is explicitly unbreachable."
+  - failure_mode: "The Plateau"
+    symptom: "The middle of the story feels repetitive or stagnant."
+    likely_cause: "Not enough 'Shrinking Perimeter' or 'Resource Depletion' events."
+    fix: "Introduce a new layer of environmental decay or a loss of a key ally."
+  - failure_mode: "The Action Pivot"
+    symptom: "The story turns into a standard combat/slasher movie, losing the dread."
+    likely_cause: "Too much focus on the threat's power and not enough on the character's vulnerability."
+    fix: "Re-center the scenes on the character's inability to fight back."
+
+adaptation_notes:
+  feature_film: ["Focus on the long-term depletion of psychological stability."]
+  short_film: ["Focus on a single, sudden, and violent 'Breach' and 'Breaking Point'."]
+  tv_episode: ["Use the 'Container' as a recurring setting for an anthology or a seasonal 'trap'."]
+  tv_pilot: ["Establish the 'Container' rules and the 'Breach' as the hook for the series."]
+  anime: ["Emphasize stylized sensory deprivation and surreal environmental shifts."]
+  adult_animation: ["Use extreme, visceral visual metaphors for the 'pressure' being applied."]
+  anthology: ["Each segment should feature a different 'Container' type (e.g., a room, a car, a deep-sea sub)."]
+  game_cinematic: ["Focus on the loss of player agency and the visual shrinking of the playable area."]
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'story_inputs' first, then move through the 'methodology_structure' to build the trap."
+  recommended_population_order: ["story_inputs", "the_container", "the_threat_profile", "beats_or_units"]
+  minimum_viable_completion: ["The Container, The Breach, and The Breaking Point."]
+  signs_framework_is_ready_for_scene_outline: ["You have a clear list of 'Lost Zones' and 'Depleted Resources' to use as plot beats."]

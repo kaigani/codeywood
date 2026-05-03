@@ -151,13 +151,65 @@ def generate_t2v(comfyui_url, prompt, negative_prompt, frame_count,
         print(f"  ERROR: Connection error: {e}")
         return None
 
+    # Synchronous response (legacy): 200 + video bytes
     if response.status_code == 200 and len(response.content) > MIN_FILE_SIZE:
         return response.content
-    else:
-        print(f"  ERROR: HTTP {response.status_code}, {len(response.content)} bytes")
-        if response.status_code != 200:
-            print(f"  {response.text[:300]}")
-        return None
+
+    # Async response (current): 200 or 202 with {job_id, status, position}
+    if response.status_code in (200, 202):
+        try:
+            job_data = response.json()
+            job_id = job_data.get("job_id")
+        except Exception:
+            job_id = None
+
+        if job_id:
+            print(f"  Job queued: {job_id}, polling...")
+            elapsed = 0
+            poll_interval = 5
+            while elapsed < timeout:
+                time.sleep(poll_interval)
+                elapsed += poll_interval
+                try:
+                    poll_resp = requests.get(f"{comfyui_url}/jobs/{job_id}", timeout=30)
+                except Exception:
+                    continue
+                if poll_resp.status_code != 200:
+                    continue
+                try:
+                    status_data = poll_resp.json()
+                    status = status_data.get("status", "")
+                except Exception:
+                    ct = poll_resp.headers.get("content-type", "")
+                    if "video" in ct and len(poll_resp.content) > MIN_FILE_SIZE:
+                        return poll_resp.content
+                    continue
+                if status == "completed":
+                    try:
+                        result_resp = requests.get(
+                            f"{comfyui_url}/jobs/{job_id}/result", timeout=120
+                        )
+                        if result_resp.status_code == 200 and len(result_resp.content) > MIN_FILE_SIZE:
+                            return result_resp.content
+                        print(f"  ERROR: Result download failed: HTTP {result_resp.status_code}")
+                        return None
+                    except Exception as e:
+                        print(f"  ERROR: Result download error: {e}")
+                        return None
+                if status in ("failed", "error"):
+                    err = status_data.get("error", "unknown")
+                    print(f"  ERROR: Job failed: {err}")
+                    return None
+                if elapsed % 30 == 0:
+                    pos = status_data.get("position", "?")
+                    print(f"    ... waiting ({elapsed}s, status={status}, position={pos})")
+            print(f"  ERROR: Job timed out after {timeout}s")
+            return None
+
+    print(f"  ERROR: HTTP {response.status_code}, {len(response.content)} bytes")
+    if response.status_code != 200:
+        print(f"  {response.text[:300]}")
+    return None
 
 
 def safe_filename(name):

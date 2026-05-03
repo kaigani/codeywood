@@ -1,0 +1,348 @@
+metadata:
+  framework_name: "Reverse Chronology Framework"
+  methodology_name: "Reverse Chronology Method"
+  methodology_family: "Non-Linear Narrative"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "anime"
+    - "anthology"
+    - "game cinematic"
+  best_for:
+    - "tragedies"
+    - "mysteries"
+    - "investigative dramas"
+    - "psychological character studies"
+  not_ideal_for:
+    - "high-octane action-adventure"
+    - "simple hero's journey"
+    - "episodic procedural"
+  target_lengths:
+    - "short film"
+    - "feature film"
+  core_principle: "Retrospective Causality: The narrative drive is not 'what happens next,' but 'why did this happen?'"
+  primary_story_unit: "The Causal Link (The Recontextualization)"
+  primary_success_metric: "The emotional/logical impact of the final revelation (the chronological beginning)."
+
+framework_overview:
+  summary: "A structural template for stories told in reverse order, where each subsequent scene provides the cause for the preceding scene's effect."
+  what_this_framework_helps_create:
+    - "Narratives driven by investigation and revelation."
+    - "Stories that recontextualize character actions through hindsight."
+    - "Deeply impactful tragic or ironic conclusions."
+  what_it_prioritizes:
+    - "Causal logic."
+    - "Information management (withholding vs. revealing)."
+    - "Thematic irony."
+  what_it_deemphasphasies:
+    - "Forward-moving plot momentum."
+    - "Traditional 'climax' as an action-based resolution."
+
+use_when:
+  - "The 'Why' is more important than the 'What'."
+  - "The ending is known and is the most powerful emotional anchor."
+  - "The story is about the unraveling of a mystery or a tragedy."
+
+avoid_when:
+  - "The plot relies on suspense regarding future events."
+  - "The audience needs to experience a sense of escalating physical stakes."
+  - "The story lacks a strong, singular 'Origin Event'."
+
+core_principles:
+  - "The End is the Starting Point: The story begins with the consequence."
+  - "Causality is Backward-Facing: Each beat must explain the existence of the beat that preceded it in the script."
+  - "Recontextualization is the Primary Engine: New information must change the audience's emotional interpretation of previous scenes."
+  - "The Reveal is the Resolution: The climax is the discovery of the initial cause."
+
+workflow:
+  - step: 1
+    name: "Define the Terminal State"
+    goal: "Establish the final image/consequence."
+    instructions:
+      - "Determine the chronological end of the story (the first scene the audience sees)."
+      - "Identify the state of the characters and the world at this moment."
+    output: "The End-State Description"
+  - step: 2
+    name: "Define the Origin Point"
+    goal: "Establish the catalyst."
+    instructions:
+      - "Determine the chronological beginning of the story (the last scene the audience sees)."
+      - "Identify the event or decision that set the entire tragedy/mystery in motion."
+    output: "The Origin Event"
+  - step: 3
+    name: "Backward Mapping"
+    goal: "Build the causal chain."
+    instructions:
+      - "Work backward from the Terminal State toward the Origin Point."
+      - "For every 'Effect' (Scene A), brainstorm a 'Cause' (Scene B)."
+    output: "The Causal Chain Outline"
+  - step: 4
+    name: "Information Layering"
+    goal: "Manage audience knowledge."
+    instructions:
+      - "Decide what information is withheld in early (chronologically late) scenes."
+      - "Ensure each backward step provides a 'key' that unlocks a previous scene."
+    output: "Information Reveal Map"
+
+story_inputs:
+  premise: "<The core concept of the reversal>"
+  logline: "<The story told in its reverse-causality essence>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Neo-Noir>"
+  tone: "<e.g., Melancholic, Dread, Investigative>"
+  target_length: "<e.g., 9lag 90 minutes>"
+  audience: "<e.g., Adult, Mystery Lovers>"
+  rating: "<e.g., R>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  narrative_arc_type: "Retrospective Investigation"
+  structure_phases:
+    phase_1_the_consequence:
+      focus: "Establishing the mystery and the emotional weight of the aftermath."
+      decision_forcing_fields:
+        mystery_depth: "<How much is left unexplained?>"
+        visual_anchor_strength: "<How iconic is the opening image?>"
+        emotional_baseline: "<The starting mood of the audience>"
+        information_void_level: "<The scale of the missing context>"
+        causal_dependency_weight: "<How much does this scene rely on future reveals?>"
+    phase_2_the_unraveling:
+      focus: "The gradual introduction of causes that recontextualize the aftermath."
+      decision_forcing_fields:
+        recontextualization_frequency: "<How often does meaning shift?>"
+        information_leak_rate: "<How fast are secrets being revealed?>"
+        character_regression_depth: "<How far back are we going in the character's arc?>"
+        clue_density: "<The ratio of evidence to narrative beats>"
+        tension_gradient: "<The direction of rising/falling tension>"
+    phase_3_the_catalyst:
+      focus: "The revelation of the true motive, error, or event that makes the tragedy inevitable."
+      decision_forcing_fields:
+        origin_impact_score: "<The magnitude of the starting event>"
+        causal_closure_type: "<How cleanly does it close the loop?>"
+        thematic_resolution_mode: "<How the theme is finalized>"
+        irony_intensity: "<The strength of the tragic gap>"
+        temporal_loop_integrity: "<The connection between start and end>"
+
+beats_or_units:
+  - id: "beat_0_terminal_state"
+    name: "The Terminal State"
+    order: 0
+    purpose: "To present the 'Result' that the rest of the story will explain."
+    approximate_position: "Script Start / Chronological End"
+    writer_prompt: "What is the broken world or the broken person we see first?"
+    story_function: "Establishes the mystery and the stakes."
+    visual_function: "The 'Aftermath' image (e.g., a crime scene, a funeral, an empty room)."
+    emotional_function: "Shock, grief, or confusion."
+    required_decisions:
+      - "What is the visible wound?"
+      - "What is the primary unanswered question?"
+    fields_to_complete:
+      visible_consequence: "<write here>"
+      unanswered_question: "<write here>"
+      emotional_anchor: "<write here>"
+    diagnostic_questions:
+      - "Is this image strong enough to sustain curiosity?"
+      - "Does this scene feel like it's missing something?"
+    completion_criteria:
+      - "A clear, haunting image of the 'End' is established."
+    common_failure_modes:
+      - "Providing too much context, removing the mystery."
+
+  - id: "beat_n_causal_link"
+    name: "The Causal Link"
+    order: "<n>"
+    purpose: "To provide the 'Why' for the preceding beat."
+    approximate_position: "Intermediate"
+    writer_prompt: "What event happened chronologically before the previous scene that makes it possible?"
+    story_function: "Progressive revelation of causality."
+    visual_function: "A 'Pre-event' image that contrasts with the 'Aftermath' image."
+    emotional_function: "Recontextualization (e.g., turning pity into horror, or confusion into clarity)."
+    required_decisions:
+      - "What new piece of information is revealed?"
+      - "How does this change the meaning of the previous beat?"
+    fields_to_complete:
+      preceding_effect_observed: "<The scene that happened 'after' this one in the script>"
+      newly_revealed_cause: "<The event/choice in this scene>"
+      recontextual_impact: "<How the audience's view of the 'Effect' changes>"
+      information_withheld: "<What we still don't know>"
+    diagnostic_questions:
+      - "Does this beat actually explain the previous beat, or is it just a random flashback?"
+      - "Is the emotional shift significant?"
+    completion_criteria:
+      - "A logical link is forged between the current beat and the previous script beat."
+    common_failure_modes:
+      - "Non-sequitur: The 'cause' doesn't actually lead to the 'effect'."
+      - "Information Overload: Explaining too much too early."
+
+  - id: "beat_final_origin"
+    name: "The Origin Point"
+    order: "Final"
+    purpose: "To reveal the true catalyst."
+    approximate_position: "Script End / Chronological Beginning"
+    writer_prompt: "What was the first domino to fall?"
+    story_function: "Resolution through revelation."
+    visual_function: "The 'Before' image (e.g., a smile, a clean slate, a moment of innocence)."
+    emotional_function: "Tragic irony, catharsis, or devastating clarity."
+    required_decisions:
+      - "The 'Truth' that changes everything."
+    fields_to_complete:
+      the_catalyst_event: "<write here>"
+      the_tragic_irony: "<write here>"
+      final_image_expression: "<How the start and end visually mirror or contrast each other>"
+    diagnostic_questions:
+      - "Does this revelation make the 'Terminal State' feel inevitable?"
+      - "Is the emotional impact earned by the preceding chain?"
+    completion_criteria:
+      - "The loop is closed; the 'Why' is answered."
+    common_failure_modes:
+      - "The 'Origin' is a twist that has no connection to the '..'Terminal State'."
+
+character_design:
+  methodology_role: "The character's arc is a 'Reverse Arc' (from broken/changed back to pristine/ignorant)."
+  characters:
+    - name: "<Protagonist Name>"
+      degraded_state: "<How they appear in the first scene (The End)>"
+      pristine_state: "<How they appeared in the last scene (The Beginning)>"
+      the_irreversible_choice: "<The moment in the middle that changed them forever>"
+      hidden_motive: "<The truth revealed only in the final beat>"
+
+world_design:
+  methodology_role: "The world moves from 'Ruined' to 'Intact'."
+  fields:
+    decay_progression: "<How the environment or society regresses from the end to the beginning>"
+    clue_system: "<Visual elements that appear as 'mysteries' in the start and 'obvious clues' in the end>"
+
+theme_design:
+  methodology_role: "The theme is the 'Lesson learned in hindsight'."
+  fields:
+    central_irony: "<The gap between what the character thought they were doing and what they were actually doing>"
+    the_inevitability_factor: "<The sense that once the first domino fell, the end was certain>"
+
+visual_storytelling:
+  methodology_role: "Visuals must facilitate the 'Retrospective' feeling."
+  image_system:
+    motifs:
+      - "<An object that changes meaning as we move backward>"
+    color_palette_shift:
+      from_script_start: "<e.g., Desaturated, Cold, Harsh>"
+      to_script_end: "<e.g., Vibrant, Warm, Saturated>"
+  visual_rules:
+    - "Use visual 'anchors' (objects/locations) that appear in both the first and last scenes to create a sense of a closed loop."
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must contain a 'Causal Seed' for the scene that follows it in the script."
+    - "Avoid 'Information Dumping'; use the reverse structure to drip-feed the 'Why'."
+  scene_template:
+    scene_id: ""
+    chronological_order: "<Where this sits in the timeline>"
+    script_order: "<Where this sits in the viewing order>"
+    visible_consequence: "<What we are seeing the aftermath of>"
+    new_causal_input: "<What we are learning is the cause>"
+    recontextualization_level: "<Low | Medium | High>"
+  do_rules:
+    - "Ensure the 'End' is visually and emotionally arresting."
+  int_rules:
+    - "Focus on the 'Cost' of the actions revealed."
+  avoid_rules:
+    - "Do not use 'Flashback' as a way to add random info; every flashback must be a 'Step Backward' in the chain."
+
+revision_passes:
+  - name: "The Causality Audit"
+    goal: "Ensure logical integrity."
+    instructions:
+      - "Trace the story from the first scene to the last."
+      - "Check: Does Scene B (later in script) actually cause Scene A (earlier in script)?"
+    questions:
+      - "Is there any 'magic' or 'unexplained' leap in logic?"
+    success_criteria: "Every scene is a direct consequence of the one following it in the script."
+
+  - name: "The Character Regression Pass"
+    goal: "Ensure the character's reverse arc is impactful."
+    instructions:
+      - "Compare the character's state in the first scene to the last."
+      - "Identify the moment of irreversible change."
+    questions:
+      - "Does the character's 'pristine' state feel significantly different from their 'degraded' state?"
+    success_criteria: "The character's transformation is clearly visible through the reverse timeline."
+
+  - name: "The Theme and Irony Pass"
+    goal: "Verify the thematic weight of the reversal."
+    instructions:
+      - "Analyze the gap between the 'Origin' and the 'Terminal State'."
+      - "Check for thematic consistency."
+    questions:
+      - "Does the final revelation reinforce the central irony?"
+    success_criteria: "The ending provides a profound thematic realization."
+
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure visual motifs support the structure."
+    instructions:
+      - "Check for recurring visual anchors."
+      - "Evaluate the color palette shift."
+    questions:
+      - "Do the visual changes signal the movement through time?"
+    success_criteria: "The audience can visually track the progression of time/causality."
+
+  - name: "The Causal Integrity Pass"
+    goal: "Prevent structural collapse."
+    instructions:
+      - "Verify that no information is revealed that contradicts the established 'End'."
+      - "Ensure every 'Why' is answered by a 'How'."
+    questions:
+     - "Are there any plot holes created by the reverse order?"
+    success_criteria: "The causal chain is airtight and leaves no logical gaps."
+
+validation_checklist:
+  - "Does the story start with a clear, compelling consequence?"
+  - "Does every beat provide a 'Why' for a previous 'What'?"
+  - "Is the 'Origin Event' powerful enough to justify the 'Terminal State'?"
+  - "Is the information management preventing spoilers while building dread/curiosity?"
+  - "Are visual anchors present in both the first and last scenes?"
+  - "Does the character's arc move from broken back to pristine?"
+  - "Does the world design show a regression from ruin to intact?"
+  - "Is the central irony clearly defined?"
+  - "Does the color palette shift significantly between script start and end?"
+  - "Are all 'Causal Seeds' present in each scene?"
+  - "Is the 'Why' answered by the final beat?"
+  - "Is the 'How' established through the intermediate beats?"
+
+failure_modes:
+  - failure_mode: "The Gimmick Trap"
+    symptom: "The audience feels the structure is being used just to be 'clever'."
+    likely_cause: "The causal links are weak or arbitrary."
+    fix: "Strengthen the emotional connection between the cause and the effect."
+  - failure_mode: "The Confusion Fog"
+    symptom: "The audience loses track of what is actually happening."
+    likely_cause: "Too many simultaneous timelines or lack of visual anchors."
+    fix: "Use recurring characters, locations, or objects to anchor the timeline."
+  - failure_mode: "The Spoilage Error"
+    symptom: "The mystery is lost because the 'Why' is revealed too early."
+    likely_cause: "Information layering is poorly managed in the middle beats."
+    fix: "Re-evaluate the information reveal map to withhold key details until later in the script."
+
+adaptation_notes:
+  feature_film: "Focus on a single, large-scale tragedy or mystery."
+  short_film: "Focus on one singular, powerful 'Reversal' of a single moment."
+  tv_episode: "Use the reverse structure to solve a specific case within a larger arc."
+  tv_pilot: "Establish the 'Terminal State' as the status quo for the series."
+  anime: "Utilize high-contrast visual motifs to signal the shift in time/perspective."
+  adult_animation: "Leverage surrealist visual shifts to represent psychological regression."
+  anthology: "Each segment can use a different 'Reverse' anchor (e.g., one mystery, one tragedy)."
+  game_cinematic: "Use the reverse structure to reveal the player's past actions."
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'Terminal State' and 'Origin Point' first. Then, build the 'Causal Link' beats one by one, working backwards."
+  recommended_population_order:
+    - "Terminal State"
+    - "Origin Point"
+    - "Causal Chain (Intermediate Beats)"
+    - "Character/World Design"
+  minimum_viable_completion: "A completed 'Causal Link' list from the end to the beginning."
+  signs_framework_is_ready_for_scene_outline: "When every beat in the 'Causal Link' has a clearly defined 'Newly Revealed Cause' that recontextualizes a 'Preceding Effect'."

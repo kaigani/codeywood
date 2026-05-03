@@ -1,0 +1,404 @@
+metadata:
+  framework_name: "Scene Card / Index Card Method Template"
+  methodology_name: "Scene Card / SS/Index Card Method"
+  methodology_family: "Structural Modularism"
+  version: "1.1"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "TV episode"
+    - "TV pilot"
+    - "anime"
+    - "manga"
+    - "web series"
+  best_for:
+    - "complex plotting"
+    - "pacing management"
+    - "ensuring causal logic"
+    - "identifying structural gaps"
+  not_ideal_for:
+    - "experimental stream-of-consciousness"
+    - "character studies without plot"
+    - "highly improvisational narratives"
+  target_lengths:
+    - "any"
+  core_principle: "The story is a chain of discrete, functional units (cards) where each unit's output serves as the next unit's input."
+  primary_story_unit: "The Scene Card"
+  primary_success_metric: "Causal Continuity and Value Shift"
+
+framework_overview:
+  summary: "A modular approach to storytelling that treats scenes as individual, manipulatable units to ensure structural integrity, pacing, and logical progression."
+  what_this_framework_helps_create:
+    - "A bulletproof plot structure"
+    - "A clear sense of narrative momentum"
+    - "A roadmap for production/storyboarding"
+  what_it_prioritizes:
+    - "Causality (Because of that...)"
+    - "Dramatic change (Value shifts)"
+    - "Pacing (Card density)"
+  what_it_deemphasizes:
+    - "Prose-level detail"
+    - "Internal monologue (unless it drives action)"
+    - "Atmospheric filler"
+
+use_when:
+  - "The plot feels 'episodic' or disconnected"
+  - "The middle of the story feels saggy"
+  - "You have many great ideas but no cohesive structure"
+  - "You need to visualize the 'beats' of a screenplay or storyboard"
+
+avoid_when:
+  - "You are in the 'discovery writing' phase"
+  - "The story is purely character-driven with no external conflict"
+
+core_principles:
+  - "Causality: No scene should happen 'and then'; it must happen 'therefore' or 'but'."
+  - "Value Shift: Every scene must transition the story's state from positive to negative, or vice versa."
+  - "Atomization: Break the story down into the smallest possible units of dramatic change."
+  - "The Chain: Each card must have a clear 'In' (input) and 'Out' (output)."
+
+workflow:
+  - step: 1
+    name: "Brainstorming Raw Beats"
+    goal: "Identify all 'must-have' moments."
+    instructions:
+      - "List every major plot point, character revelation, and climax."
+      - "Do not worry about order yet."
+    output: "A list of unordered story fragments."
+  - step: 2
+    name: "Atomic Card Creation"
+    goal: "Define the functional DNA of each scene."
+    instructions:
+      - "Create one card for every beat."
+      - "Define the conflict and the change occurring within that specific card."
+    output: "A deck of individual scene cards."
+  - step: 3
+    name: "Sequencing & Chain Building"
+    goal: "Establish causal links."
+    instructions:
+      - "Arrange cards in a linear timeline."
+      - "Test the connection between Card A and Card B using 'Therefore' or 'But'."
+    output: "A structured narrative string."
+  - step: 4
+    name: "Grouping (Sequencing/Acts)"
+    goal: "Create larger structural blocks."
+    instructions:
+      - "Group cards into sequences (e.g., The Heist Sequence, The Escape Sequence)."
+      - "Identify Act breaks where the stakes or direction shift significantly."
+    output: "A multi-layered story architecture."
+  - step: 5
+    name: "Stress Testing"
+    goal: "Identify structural weaknesses."
+    instructions:
+      - "Look for 'floating cards' (scenes that don't affect the outcome)."
+      - "Look for 'logic gaps' (jumps in time or motivation that aren't explained)."
+    output: "A finalized, production-ready outline."
+
+beats_or_units:
+  - id: "BEAT_01"
+    name: "Brainstorming Raw Beats"
+    order: 1
+    purpose: "Capture all creative impulses before structural constraints are applied."
+    approximate_position: "Pre-production / Ideation"
+    writer_prompt: "What are the most impactful moments you can imagine for this story?"
+    story_function: "Content Generation"
+    visual_function: "Concept Art/Moodboarding"
+    emotional_function: "Excitement/Inspiration"
+    required_decisions:
+      - "Which ideas are core to the premise?"
+      - "Which ideas are purely decorative?"
+    fields_to_complete:
+      - "raw_idea_list"
+      - "key_character_moments"
+    diagnostic_questions:
+      - "Are any ideas too disconnected from the genre?"
+      - "Are we missing a climax?"
+    completion_criteria:
+      - "A comprehensive list of all potential narrative nodes."
+    common_failure_modes:
+      - "Over-reliance on tropes without unique twists."
+  - id: "BEAT_02"
+    name: "Atomic Card Creation"
+    order: 2
+    purpose: "Transform abstract ideas into functional, actionable scene units."
+    approximate_position: "Structural Drafting"
+    writer_prompt: "For each idea, what is the specific change that occurs?"
+    story_function: "Structural Foundation"
+    visual_function: "Shot List Preparation"
+    emotional_function: "Clarity/Focus"
+    required_decisions:
+      - "What is the specific 'In' and 'Out' for this card?"
+      - "What is the primary conflict type?"
+    fields_to_complete:
+      - "card_id"
+      - "value_shift_parameters"
+    diagnostic_questions:
+      - "Does this card have a clear conflict?"
+      - "Is the change measurable?"
+    completion_criteria:
+      - "A complete deck of cards, each with defined inputs and outputs."
+    common_failure_modes:
+      - "Creating 'empty cards' that lack dramatic change."
+  - id: "BEAT_03"
+    name: "Sequencing & Chain Building"
+    order: 3
+    purpose: "Establish the causal 'Therefore/But' logic between cards."
+    approximate_position: "Structural Assembly"
+    writer_prompt: "Connect Card A to Card B. Does B happen *because* of A, or *despite* A?"
+    story_function: "Narrative Momentum"
+    visual_function: "Pacing/Rhythm"
+    emotional_function: "Tension/Suspense"
+    required_decisions:
+      - "Should this transition be a 'Therefore' or a 'But'?"
+      - "Is the sequence logical?"
+    fields_to_complete:
+      - "causal_link_type"
+      - "sequence_order"
+    diagnostic_questions:
+      - "Are there any 'And Then' gaps in the chain?"
+      - "Does the momentum stall anywhere?"
+    completion_criteria:
+      - "A linear, logically connected chain of cards."
+    common_failure_modes:
+      - "The 'And Then' trap (episodic storytelling)."
+  - id: "BEAT_04"
+    name: "Grouping (Sequencing/Acts)"
+    order: 4
+    purpose: "Organize individual cards into larger, cohesive narrative blocks."
+    approximate_position: "Macro-Structure"
+    writer_prompt: "Where does the tension peak enough to warrant an Act break?"
+    story_function: "Pacing/Architecture"
+    visual_function: "Set/Location Grouping"
+    emotional_function: "Catharsis/Release"
+    required_decisions:
+      - "Where are the major plot pivots?"
+      - "How do we group these cards into sequences?"
+    fields_to_complete:
+      - "act_boundaries"
+      - "sequence_titles"
+    diagnostic_questions:
+      - "Is the second act too long or saggy?"
+      - "Do the act breaks coincide with major value shifts?"
+    completion_criteria:
+      - "A multi-layered architecture of Acts and Sequences."
+    common_failure_modes:
+      - "Imbalanced act lengths."
+  - id: "BEAT_05"
+    name: "Stress Testing"
+    order: 5
+    purpose: "Identify and fix structural weaknesses before full drafting."
+    approximate_position: "Final Review"
+    writer_prompt: "If I remove this card, does the rest of the story collapse?"
+    story_function: "Quality Assurance"
+    visual_function: "Production Feasibility"
+    emotional_function: "Confidence"
+    required_decisions:
+      - "Which cards are redundant?"
+      - "Where are the logic gaps?"
+    fields_to_complete:
+      - "identified_weaknesses"
+      - "fix_plan"
+    diagnostic_questions:
+      - "Are there any 'floating cards'?"
+      - "Is the climax earned by the preceding cards?"
+    completion_criteria:
+      - "A production-ready, structurally sound outline."
+    common_failure_modes:
+      - "Ignoring logic gaps to preserve 'cool' scenes."
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write/paste here>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  description: "The following template represents the data required for a single 'Index Card', expanded by structural phase."
+  setup_card_logic:
+    metadata:
+      card_id: "<e.g., SC_001_SETUP>"
+      sequence_group: "<e.g., Act 1 / The Inciting Incident>"
+    content:
+      slugline: "<Location, Time of Day>"
+      summary: "<One sentence: What happens in this scene?>"
+      dramatic_action: "<The physical or verbal movement that drives the scene>"
+    mechanics:
+      input_trigger: "<The established status quo being disrupted?>"
+      output_consequence: "<The new state of the world or character?>"
+      conflict_type: "<e.g., Man vs Self>"
+      the_turn: "<The moment the setup breaks>"
+      value_shift:
+        from: "<Stable/Safe>"
+        to: "<Unstable/Endangered>"
+    visual_storytelling:
+      key_image: "<The establishing shot/iconic image>"
+      composition_note: "<e.g., Wide shot to show isolation>"
+    diagnostic_checks:
+      causality_test: "<Does this disrupt the status quo?>"
+      redundancy_check: "<Is this essential for establishing the world?>"
+  confrontation_card_logic:
+    metadata:
+      card_id: "<e.g., SC_050_MIDPOINT>"
+      sequence_group: "<e.g., Act 2 / The Escalation>"
+    content:
+      slugline: "<Location, Time of Day>"
+      summary: "<One sentence: What happens in this scene?>"
+      dramatic_action: "<The physical or verbal movement that drives the scene>"
+    mechanics:
+      input_trigger: "<The consequence of the previous card?>"
+      output_consequence: "<The new complication or higher stakes?>"
+      conflict_type: "<e.g., Man vs Man>"
+      the_turn: "<The moment the stakes escalate>"
+      value_shift:
+        from: "<Unstable/Endangered>"
+        to: "<Desperate/Critical>"
+    visual_storytelling:
+      key_image: "<The image of rising tension>"
+      composition_note: "<e.g., Tight close-ups to increase claustrophobia>"
+    diagnostic_checks:
+      causality_test: "<Does this follow 'Therefore' or 'But'?>"
+      redundancy_check: "<Does this move the plot forward or just add filler?>"
+  resolution_card_logic:
+    metadata:
+      card_id: "<e.g., SC_100_CLIMAX>"
+      sequence_group: "<e.g., Act 3 / The Resolution>"
+    content:
+      slugline: "<Location, Time of Day>"
+      summary: "<One sentence: What happens in this scene?>"
+      dramatic_action: "<The final confrontation/resolution>"
+    mechanics:
+      input_trigger: "<The peak of the conflict from the previous card?>"
+      output_consequence: "<The final state of the characters/world?>"
+      conflict_type: "<e.g., Man vs Fate>"
+      the_turn: "<The final resolution of the conflict>"
+      value_shift:
+        from: "<Critical/Desperate>"
+        to: "<New Normal/Resolved>"
+    visual_storytelling:
+      key_image: "<The final thematic image>"
+      composition_note: "<e.g., Wide shot showing the aftermath>"
+    diagnostic_checks:
+      causality_test: "<Is this the logical conclusion of the chain?>"
+      redundancy_check: "<Does this provide the necessary closure?>"
+
+character_design:
+  methodology_role: "Characters are the engines of the value shifts in each card."
+  characters:
+    - name: "<write here>"
+      motivation_per_card: "<How does their desire change as cards progress?>"
+      arc_trajectory: "<The macro-level value shift from Card 1 to Final Card>"
+
+world_design:
+  methodology_role: "The world provides the 'pressure' or 'constraints' for the cards."
+  fields:
+    rules_of_engagement: "<What physical or social laws must every scene obey?>"
+    environmental_pressure: "<How does the setting actively interfere with the characters' goals?>"
+
+theme_design:
+  methodology_role: "Theme is the 'argument' being played out through the sequence of cards."
+  fields:
+    central_argument: "<What is the debate the story is having?>"
+    thematic_progression: "<How does the sequence of cards move from a 'false' theme to a 'true' theme?>"
+
+visual_storytelling:
+  methodology_role: "Visual motifs provide the glue that connects disparate cards."
+  image_system:
+    recurring_motifs: []
+    visual_continuity_rules: []
+  final_image: "<The visual echo of the first card's image, showing the completed arc>"
+
+scene_generation_rules:
+  scene_principles:
+    - "No scene should exist solely for exposition; if exposition is needed, it must be wrapped in conflict."
+    - "Every scene must have a 'point of no return' or a 'point of change'."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: ""
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Ensure every card has a clear 'Exit State'."
+    - "Use the 'Therefore/But' test for every transition."
+  avoid_rules:
+    - "Avoid 'And Then' transitions (e.g., 'He went to the store AND THEN he met a girl')."
+    - "Avoid 'Empty Cards' (scenes that provide atmosphere but no narrative movement)."
+
+revision_passes:
+  - name: "The Domino Pass"
+    goal: "Verify Causal Logic"
+    instructions:
+      - "Read only the 'output_consequence' of every card in order."
+      - "Check if the chain holds together without gaps."
+    questions:
+      - "Is there any point where a character acts without a clear 'input_trigger'?"
+      - "Are there any 'leaps of faith' required by the audience?"
+    success_criteria: "Every card's consequence directly necessitates the next card's trigger."
+  - name: "The Value Shift Pass"
+    goal: "Verify Dramatic Tension"
+    instructions:
+      - "Review the 'from' and 'to' fields for every card."
+    questions:
+      - "Are there too many scenes where the value stays the same (e.g., Good to Good)?"
+      - "Is the tension escalating or stagnating?"
+    success_criteria: "A visible 'sawtooth' pattern of rising and falling stakes."
+  - name: "The Redundancy Pass"
+    goal: "Optimize Pacing"
+    instructions:
+      - "Identify any cards that can be merged or deleted without breaking the 'Domino Pass'."
+    questions:
+      - "Does this scene move the plot or change a character?"
+    success_criteria: "A lean, high-impact sequence of events."
+  - name: "The Character Pass"
+    goal: "Verify Character Consistency and Arc"
+    instructions:
+      - "Trace a single character's motivation through every card."
+      - "Check if their actions in each card align with their established arc."
+    questions:
+      - "Does a character's sudden change in motivation feel unearned?"
+      - "Is the character's 'input_trigger' present in their internal state?"
+    success_criteria: "A seamless, believable evolution of character agency and desire."
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure Visual Cohesion and Motif Usage"
+    instructions:
+      - "Review the 'key_image' and 'visual_anchor' of every card."
+      - "Check for the presence of recurring motifs."
+    questions:
+      - "Are the visual anchors reinforcing the emotional shift?"
+      - "Is the visual language consistent with the genre?"
+    success_criteria: "A unified visual language that supports the narrative's themes."
+  - name: "The Causality Pass"
+    goal: "Eliminate 'And Then' logic"
+    instructions:
+      - "Audit every transition between cards."
+      - "Replace every instance of 'And Then' with 'Therefore' or 'But'."
+    questions:
+      - "Can any transition be replaced with 'But' to increase tension?"
+      - "Does every 'Therefore' lead to a meaningful consequence?"
+    success_criteria: "A 100% 'Therefore/But' transition rate across the entire deck."
+
+validation_checklist:
+  - "Does every card have a clear conflict?"
+  - "Is the 'Therefore/But' logic applied to every transition?"
+  - "Does the protagonist's value shift align with the story's climax?"
+  - "Is there a clear 'Inciting Incident' card and a 'Climax' card?"
+  - "Can the story be summarized by reading only the 'summary' field of each card?"
+  - "Does every card have a defined 'input_trigger'?"
+  - "Does every card have a defined 'output_consequence'?"
+  - "Is there a visible 'sawtooth' pattern of value shifts?"
+  - "Are there any 'floating cards' that do not impact the story?"

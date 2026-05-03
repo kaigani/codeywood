@@ -1,0 +1,113 @@
+metadata:
+  framework_name: "Frame Story Method Template"
+  methodology_name: "Frame Story Method"
+  methodology_family: "Embedded Narrative / Envelope Narrative"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "tv episode"
+    - "anime"
+    - "anthology"
+    - "game cinematic"
+  best_for:
+    - "mythic storytelling"
+    - "mystery/revelation plots"
+    - "character studies through memory"
+    - "anthology series"
+    - "historical/legendary retellings"
+  not_ideal_for:
+    - "purely linear action-driven plots"
+    - "stories where the 'present' has no impact on the 'past'"
+  target_lengths:
+    - "any"
+  core_principle: "The structural and thematic integration of an outer 'frame' narrative and one or more inner 'nested' narratives."
+  primary_story_unit: "The Narrative Layer"
+  primary_success_metric: "Thematic and causal resonance between the Frame and the Nested Story."
+
+framework_overview:
+  summary: "A methodology for developing stories that exist in two or more chronological or contextual layers, where the act of telling the story is as important as the story being told."
+  what_this_con_framework_helps_create:
+    - "Stories with deep thematic layering"
+    - "Narratives that explore perspective and subjectivity"
+    - "Plots that use 'revelation' as a primary driver"
+  what_it_prioritizes:
+    - "The relationship between the storyteller and the listener"
+    - "Thematic mirroring between layers"
+    - "The impact of the nested story on the frame's characters"
+  what_it_deemphasizes:
+    - "Linear, uninterrupted progression"
+    - "Single-perspective continuity"
+
+use_when:
+  - "The 'how' and 'why' of a story are as important as the 'what'."
+  - "You want to use a different visual/tonal style for memories/legends vs. reality."
+  - "The protagonist's perspective is shaped by a specific history or myth."
+
+avoid_when:
+  - "The frame is merely a 'prologue' that never returns (that is a Prologue, not a Frame)."
+  - "The inner story has no impact on the characters in the outer story."
+  - "The two layers feel like two completely unrelated scripts joined together."
+
+core_principles:
+  - "The Bridge: There must be a functional reason why the inner story is being/told in the frame."
+  - "Thematic Mirroring: The inner story should act as a metaphor, a warning, or a revelation for the frame's conflict."
+  - "Structural Symmetry: The climax of the inner story should ideally trigger a pivot or climax in the frame."
+  - "Layered Stakes: The stakes of the inner story (the 'legend') should parallel or complicate the stakes of the frame (the 'reality')."
+
+workflow:
+  - step: 1
+    name: "Define the Frame (The Envelope)"
+    goal: "Establish the 'Present Day' or 'Contextual' reality."
+    instructions:
+      - "Identify the setting and characters who are physically present in the 'now'."
+      - "Determine the tension in the frame before the story begins."
+    output: "Frame Context"
+  - step: 2
+    name: "Define the Nested Story (The Core)"
+    goal: "Establish the 'Tale' or 'Memory'."
+    instructions:
+      - "Develop the primary plot being recounted."
+      - "Ensure this story has its own complete arc (Beginning, Middle, End)."
+    output: "Nested Narrative Arc"
+  - step: 3
+    name: "Establish the Bridge (The Nexus)"
+    goal: "Connect the two layers."
+    instructions:
+      - "Determine the catalyst: What causes the storyteller to speak?"
+      - "Determine the listener: How does the listener's presence/reaction shape the telling?"
+    output: "The Connection Mechanism"
+  - step: 4
+    name: "Map Parallelism"
+    goal: "Ensure thematic unity."
+    instructions:
+      - "Identify how the inner story's climax reflects or resolves the frame's tension."
+    output: "Thematic Map"
+
+story_inputs:
+  premise: "<The high-level concept of both layers>"
+  logline: "<The logline that encapsulates the interplay between layers>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Gothic Horror>"
+  tone: "<e.g., Melancholic, Suspenseful>"
+  target_length: "<e.g., 90 minutes>"
+  audience: "<e.g., Adult/Mature>"
+  rating: "<e.g., R>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  layer_alpha_the_frame:
+    purpose: "The 'Real' world/The Present."
+    characters:
+      storyteller:
+        identity: "<Who is telling the story?>"
+        motivation_to_lag: "<Why are they telling it NOW?>"
+        hidden_agenda: "<Are they manipulating the listener with this story?>"
+      listener:
+        identity: "<Who is hearing the story?>"
+        vulnerability: "<Why are they susceptible to this story?>"

@@ -1,0 +1,416 @@
+metadata:
+  framework_name: "Teaser–Act Break–Tag Structure Template"
+  methodology_name: "Teaser–Act Break–Tag Structure"
+  methodology_family: "Episodic Pacing & Hook-Based Structure"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "TV pilot"
+    - "TV episode"
+    - "web series"
+    - "anime"
+    - "anthology short"
+    - "adult animation"
+  best_for:
+    - "High-tension narratives"
+    - "Mystery/Thriller/Horror"
+    - "Procedurals"
+    - "Content requiring frequent 're-engagement' points"
+  not_ideal_for:
+    - "Slow-burn character studies"
+    - "Continuous-flow feature films"
+    - "Experimental non-linear narratives"
+  target_lengths:
+    - "22-minute episode"
+    - "45-minute episode"
+    - "Short-form digital content"
+  core_principle: "Rhythmic tension management through strategic interruptions and cliffhangers."
+  primary_story_unit: "The Beat-to-Break progression"
+  primary_success_metric: "Viewer retention through peak-tension transitions."
+
+framework_overview:
+  summary: "A structural methodology designed to maximize engagement by punctuating the narrative with high-impact 'hooks' (Teasers), tension-escalating 'interruptions' (Act Breaks), and resonant 'afterimages' (Tags)."
+  what_this_framework_helps_create:
+    - "High-retention episodic scripts"
+    - "Narratives with clear rhythmic peaks"
+    - "Stories that master the 'cliffhanger' mechanic"
+  what_it_prioritizes:
+    - "Information gaps"
+    - "Tension spikes"
+    - "Visual/Emotional resets"
+  what_it_deemphasizes:
+    - "Long-form atmospheric builds without interruption"
+    - "Structural subtlety in favor of rhythmic impact"
+
+use_when:
+  - "Writing for platforms with high drop-off risks (YouTube, TikTok, Web Series)"
+  - "Developing episodic TV where commercial/ad-break pacing is required"
+  - "Creating high-concept genre fiction (Horror, Thriller, Action)"
+
+avoid_when:
+  - "Writing a single-arc feature film where breaks feel artificial"
+  - "Developing 'slice of' stories where tension spikes disrupt the mood"
+
+core_principles:
+  - "The Teaser must establish the 'Promise of the Premise' immediately."
+  - "Every Act Break must create a 'Point of No Return' or an 'Information Gap'."
+  - "The Tag must provide either 'Cathartic Resolution' or 'The Looming Threat'."
+  - "Tension must follow an upward staircase pattern, interrupted by resets."
+
+workflow:
+  - step: 1
+    name: "The Hook Identification"
+    goal: "Define the core-driven tension."
+    instructions:
+      - "Identify the primary mystery or threat."
+      - "Determine the 'Visual Hook' that can anchor the Teaser."
+    output: "Teaser Concept"
+  - step: 2
+    name: "The Interruption Mapping"
+    goal: "Plan the escalation spikes."
+    instructions:
+      - "Identify key plot revelations."
+      - "Place these revelations at the end of Act segments to force an Act Break."
+    output: "Act Break Roadmap"
+  - step: 3
+    name: "The Tag Construction"
+    goal: "Determine the emotional residue."
+    instructions:
+      - "Decide if the episode ends on a 'Stinger' (setup) or 'rag' (closure)."
+    output: "Tag Concept"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<e.g., TV Episode>"
+  genre: "<write here>"
+  tone: "<write/describe tone>"
+  target_length: "<write/describe length>"
+  audience: "<write/describe audience>"
+  rating: "<write/describe rating>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  structure_type: "Interrupted Escalation"
+  logic: "The story is a series of escalating tensions, where each segment ends by making the previous status quo impossible to maintain."
+  teaser_dynamics:
+    hook_intensity: "High/Immediate"
+    information_gap_size: "Critical/Unresolved"
+    visual_impact_level: "Maximum"
+    promise_definition: "The core promise of the episode's central conflict."
+  act_dynamics:
+    conflict_escalation_rate: "Incremental/Increasing"
+    character_pressure_index: "Rising/Intense"
+    world_stability_metric: "Decreasing/Unstable"
+    progression_type: "Linear/Consequence-driven"
+  break_dynamics:
+    pivot_magnitude: "High/Irreversible"
+    tension_spike_threshold: "Threshold of no return"
+    re_engagement_necessity: "Essential for retention"
+    information_delivery_mode: "Revelation/Disruption"
+  tag_dynamics:
+    emotional_residue_type: "Lingering/Resonant"
+    future_setup_strength: "High/Low"
+    closure_vs_cliffhanger_ratio: "Variable/Context-dependent"
+    thematic_reinforcement_level: "High"
+
+beats_or_units:
+  - id: "teaser"
+    name: "The Teaser (Cold Open)"
+    order: 0
+    purpose: "Establish tone, stakes, and the 'Hook'."
+    approximate_position: "0% - 5% of runtime"
+    writer_prompt: "What is the most arresting image or event that proves the stakes are real?"
+    story_function: "Inciting Incident or immediate threat introduction."
+    visual_function: "High-impact, high-contrast, or high-mystery imagery."
+    emotional_function: "Shock, curiosity, or dread."
+    required_decisions:
+      - "What is the 'Hook'?"
+      - "What information is withheld to ensure the viewer stays for Act 1?"
+    fields_to_complete:
+      hook_type: "<e.g., visual shock, mystery, character peril>"
+      immediate_threat: "<what is happening right now?>"
+      the_promise: "<what does this teaser promise the audience will see later?>"
+    diagnostic_questions:
+      - "Does this teaser end on a question or a cliffhanger?"
+      - "Is the tone established within the first 30 seconds?"
+    completion_criteria:
+      - "The viewer must feel an urgent need to know 'what happens next'."
+    common_failure_modes:
+      - "The 'False Start': A teaser that is too long and contains no actual hook."
+      - "The 'Irrelevant Shock': A shock that has no connection to the episode's main plot."
+
+  - id: "act_1"
+    name: "Act 1: The Setup"
+    order: 1
+    purpose: "Introduce characters, world, and the primary conflict."
+    approximate_position: "5% - 25%"
+    writer_prompt: "How do we see the characters' lives disrupted by the Teaser?"
+    story_function: "Establishing the new status quo."
+    visual_function: "Establishing shots, character introductions, routine vs. disruption."
+    emotional_function: "Empathy, grounding, growing unease."
+    required_decisions:
+      - "What is the primary obstacle?"
+      - "How does the character react to the Teaser's event?"
+    fields_to_complete:
+      protagonist_status_quo: "<how things were before the teaser>"
+      the_complication: "<the first obstacle encountered>"
+    diagnostic_questions:
+      - "Are the characters' motivations clear?"
+      - "Is the world-building integrated or expository?"
+    completion_criteria:
+      - "The characters are committed to a course of action."
+    common_failure_modes:
+      - "Expository Dump: Using Act 1 only to explain the world."
+      - "Stagnant Setup: Failing to move the plot toward the first break."
+
+  - id: "act_break_1"
+    name: "Act Break 1 (The First Pivot)"
+    order: 2
+    purpose: "Escalate the stakes and force a change in direction."
+    approximate_position: "25%"
+    writer_prompt: "What revelation makes the characters' current plan impossible?"
+    story_function: "A shift from 'investigation' to 'pursuit' or 'reaction'."
+    visual_function: "A sudden shift in lighting, scale, or character movement."
+    emotional_function: "Surprise, realization, or panic."
+    required_decisions:
+      - "What is the specific revelation?"
+      - "How does this change the character's immediate goal?"
+    fields_to_complete:
+      the_revelation: "<the new information or event>"
+      the_pivot: "<how the characters must now change their approach>"
+    diagnostic_questions:
+      - "Does this break create a 'gap' in the audience's knowledge?"
+      - "Is the transition visually distinct?"
+    completion_criteria:
+      - "The episode's trajectory has fundamentally changed."
+    common_failure_modes:
+      - "The 'Flat Break': A transition that provides information but no tension."
+      - "The 'Unearned Pivot': A change that lacks logical cause."
+
+  - id: "act_2"
+    name: "Act 2: The Escalation"
+    order: 3
+    purpose: "Deepen the conflict and increase pressure."
+    approximate_position: "25% - 75%"
+    writer_prompt: "How does the pressure mount as the characters try (and fail) to solve the problem?"
+    story_function: "The 'struggle' phase; increasing complexity."
+    visual_function: "Tightening shots, increased kinetic energy, more chaotic environments."
+    emotional_function: "Frustration, desperation, mounting dread."
+    required_decisions:
+      - "What is the midpoint shift?"
+      - "How do the stakes increase?"
+    fields_to_complete:
+      rising_obstacles: ["<obstacle 1>", "<obstacle 2>"]
+      midpoint_shift: "<a major event that raises the stakes even higher>"
+    diagnostic_questions:
+      - "Is the tension higher now than it was in Act 1?"
+      - "Are the characters being pushed into harder corners?"
+    completion_criteria:
+      - "The characters are pushed to their psychological or physical limits."
+    common_failure_modes:
+      - "Repetitive Conflict: The characters facing the same type of obstacle repeatedly."
+      - "The 'Slowing Middle': Losing momentum due to lack of new information."
+
+  - id: "act_break_2"
+    name: "Act Break 2 (The Point of No Return)"
+    order: 4
+    purpose: "The 'All Is Lost' moment or the final, most dangerous complication."
+    approximate_position: "75%"
+    writer_prompt: "What is the most devastating thing that could happen to the protagonist right now?"
+    story_function: "The final push toward the climax."
+    visual_function: "High-intensity imagery, often a visual 'loss' (destruction, injury, departure)."
+    emotional_function: "Despair, urgency, or extreme realization."
+    required_decisions:
+      - "What is the catastrophe?"
+      - "What is the final choice required?"
+    fields_to_complete:
+      the_catastrophe: "<the event that breaks the characters' spirit or plan>"
+      the_final_choice: "<the decision they must make to survive/win>"
+    diagnostic_questions:
+      - "Does this break make the climax feel inevitable or impossible?"
+      - "Is the emotional weight sufficient for a second break?"
+    completion_criteria:
+      - "The characters have no choice but to face the climax."
+    common_failure_modes:
+      - "The 'Deus Ex Machina' Break: A break that solves a problem too easily."
+      - "The 'Low-Stakes Break': A break that doesn't actually threaten the protagonist."
+
+  - id: "act_3"
+    name: "Act 3: The Climax"
+    order: 5
+    purpose: "Resolution of the immediate conflict."
+    approximate_position: "75% - 95%"
+    writer_prompt: "How do the characters use what they've learned to confront the threat?"
+    story_function: "The final confrontation/resolution."
+    visual_function: "The largest, most significant set pieces or emotional confrontations."
+    emotional_function: "Catharsis, triumph, or tragedy."
+    required_decisions:
+      - "How is the primary threat defeated or accepted?"
+      - "What is the cost of the victory?"
+    fields_to_complete:
+      climax_action: "<the final struggle>"
+      resolution_of_conflict: "<how the primary threat is addressed>"
+    diagnostic_questions:
+      - "Does the climax answer the question posed in the Teaser?"
+      - "Is the resolution earned by the character's growth?"
+    completion_criteria:
+      - "The central conflict of the episode is resolved."
+    common_failure_modes:
+      - "Anti-climax: The conflict resolves without significant struggle."
+      - "The 'Unresolved Climax': The main threat is ignored in favor of side plots."
+
+  - id: "tag"
+    name: "The Tag (The Afterimage)"
+    order: 6
+    purpose: "Provide emotional closure or a 'stinger' for the next episode."
+    approximate_position: "95% - 100%"
+    writer_prompt: "What image or line of dialogue will linger in the viewer's mind after the screen goes black?"
+    story_function: "Resolution/Epilogue or Setup for the next episode."
+    visual_function: "A lingering, symbolic, or haunting image."
+    emotional_function: "Lingering dread, relief, or a 'hook' for the future."
+    required_decisions:
+      - "Is this a resolution or a setup?"
+      - "What is the final visual anchor?"
+    fields_to_complete:
+      tag_type: "<e.g., character moment, stinger, mystery reveal>"
+      the_afterimage: "<the final visual or line of dialogue>"
+    diagnostic_questions:
+      - "Does this tag serve the episode's theme OR the series' overarching plot?"
+      - "Does it leave the audience wanting more?"
+    completion_criteria:
+      - "The audience is left with a sense of 'completion' or 'unanswered curiosity'."
+    common_failure_modes:
+      - "The 'Information Overload': Using the tag to explain too much, killing the mystery."
+      - "The 'Anti-Climactic Tag': A tag that completely deflates the tension of the climax."
+
+character_design:
+  methodology_role: "Characters are defined by their reactions to the structural interruptions."
+  characters:
+    - name: "<name>"
+      reaction_to_teaser: "<how the hook changes them>"
+      reaction_to_breaks: "<how each pivot alters their strategy>"
+      final_state: "<how they are different by the Tag>"
+
+world_design:
+  methodology_role: "The world must provide the 'mechanics' for the breaks to occur."
+  fields:
+    rules_of_engagement: "<what are the stakes of the world?>"
+    environmental_threats: []
+
+theme_design:
+  methodology_role: "The theme is the 'connective tissue' between the disparate beats."
+  fields:
+    central_argument: "<the debate the story is having>"
+    thematic_resonance_in_tag: "<how the final image proves the theme>"
+
+visual_storytelling:
+  methodology_role: "Visuals drive the 'Hooks' and 'Breaks'."
+  image_system:
+    teaser_hook_image: "<the primary visual grabber>"
+    break_transition_visuals: ["visual_A", "visual_B"]
+    tag_afterimage: "<the final lingering shot>"
+
+revision_passes:
+  - name: "The Tension Pass"
+    goal: "Ensure every break actually functions as an interruption."
+    instructions:
+      - "Read the transition from every Act to the next."
+      - "Ask: 'Does this end on a question?'"
+    questions:
+      - "Are any breaks too quiet?"
+      - "Is the momentum stalling in Act 2?"
+    success_criteria:
+      - "Every break creates a physiological urge to continue watching."
+
+  - name: "The Thematic Thread Pass"
+    goal: "Ensure the episode isn't just a series of random shocks."
+    instructions:
+      - "Trace the theme from the Teaser to the Tag."
+    questions:
+      - "Does the Tag reflect the Teaser's promise?"
+    success_criteria:
+      - "The structural peaks all serve the central argument."
+
+  - name: "The Character Pass"
+    goal: "Verify character agency through structural shifts."
+    instructions:
+      - "Check if character decisions drive the breaks or if breaks just happen to them."
+    questions:
+      - "Is the character reacting or just being moved by plot?"
+      - "Does the character's internal state change with each act?"
+    success_criteria:
+      - "The character's evolution is visible through the structural pivots."
+
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure visual hooks and breaks are impactful."
+    instructions:
+      - "Review the visual function of each beat."
+    questions:
+      - "Are the transitions visually distinct?"
+      - "Does the teaser image contrast with the tag image?"
+    success_criteria:
+      - "The visual language reinforces the structural tension."
+
+  - name: "The Pacing Pass"
+    goal: "Ensure the rhythm of the 'Interrupted Escalation' is maintained."
+    instructions:
+      - "Map the time spent in each act against the tension level."
+    questions:
+      - "Is Act 2 dragging?"
+      - "Is the Teaser too long for the intended medium?"
+    success_criteria:
+      - "The rhythm of tension spikes and resets is consistent with the target medium."
+
+validation_checklist:
+  - "Teaser establishes a clear, immediate hook."
+  - "Every Act Break contains a significant change in information or stakes."
+  - "The character's path is directly shaped by the structural pivots."
+  - "The Tag provides a sense of 'aftermath' or 'next-step' curiosity."
+  - "The pacing follows an upward trajectory of tension."
+  - "The Teaser's visual promise is addressed in the Climax."
+  - "The Act Breaks are clearly distinguishable from standard scene transitions."
+  - "The 'Information Gap' is maintained until the appropriate moment."
+  - "The Tag reinforces the central thematic argument."
+  - "The transition from Act 2 to Act 3 feels like a final push."
+  - "The visual style of the Teaser matches the tone of the Tag."
+  - "No Act Break relies solely on dialogue to create tension."
+
+failure_modes:
+  - failure_mode: "The 'Broken Rhythm'"
+    symptom: "The story feels like a series of unrelated incidents."
+    likely_cause: "Lack of thematic or character-driven connection between acts."
+    fix: "Ensure each break is a direct consequence of the character's attempt to solve the previous problem."
+  - failure_mode: "The 'Empty Promise'"
+    symptom: "The Teaser is exciting, but the episode fails to address it."
+    likely_cause: "The Teaser was a 'false hook' unrelated to the main plot."
+    fix: "Align the Teaser's promise with the episode's central conflict."
+  - failure_mode: "The 'Static Protagonist'"
+    symptom: "The character remains unchanged despite massive structural shifts."
+    likely_cause: "The breaks are external plot points only, lacking internal impact."
+    fix: "Ensure each Act Break forces a psychological or strategic change in the protagonist."
+
+adaptation_notes:
+  feature_film: "Use much more subtle transitions; avoid 'hard' breaks that feel like commercials."
+  short_film: "The Teaser and the Story are often one and the same; focus on the 'Tag' as the emotional payoff."
+  tv_episode: "Standardize breaks to align with commercial/ad-break pacing requirements."
+  tv_pilot: "The Teaser must establish the series' long-term promise, not just the episode's."
+  anime: "Emphasize 'Visual Hooks' and 'Stinger' Tags to maintain high-energy engagement."
+  adult_animation: "Use the Tag for tonal shifts or dark comedic afterimages."
+  anthology: "Each unit must be a self-contained 'Teaser-Break-Tag' cycle."
+  game_cinematic: "The 'Break' should function as a transition into gameplay or a new level state."
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'Story Inputs' first, then move through the 'Methodology Structure' unit by unit."
+  recommended_population_order:
+    - "story_inputs"
+    - "methodology_structure (Teaser -> Act 1 -> Break 1...)"
+    - "character_design"
+    - "visual_storytelling"
+    - "revision_passes"
+  minimum_viable_completion: "At least the 'Teaser', 'Act Breaks', and 'Tag' must be defined to validate the structure."
+  signs_framework_is_ready_for_scene_outline: "When every 'required_decisions' field in the 'beats_or_units' section is filled with a concrete plot point."

@@ -1,0 +1,424 @@
+metadata:
+  framework_name: "Freytag's Pyramid Development Template"
+  methodology_name: "Freytag's Pyramid"
+  methodology_family: "Classical Dramatic Structure"
+  version: "1.0"
+  target_narrative_type: "story development"
+  core_principle: "The structural pivot (Peripeteia) must fundamentally and irreversibly shift the narrative momentum from ascent to descent."
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "TV episode"
+    - "anime"
+    - "anthology short"
+  best_for:
+    - "tragedies"
+    - "high-tension dramas"
+    - "stories with a clear turning point"
+    - "character-driven arcs with inevitable consequences"
+  not_ideal_for:
+    - "episodic procedurals"
+    - "non-linear experimental narratives"
+    - "picaresque adventures"
+  primary_story_unit: "The Tension Arc"
+  primary_success_metric: "A definitive, irreversible turning point shifting momentum from ascent to descent."
+
+framework_overview:
+  summary: "A structural template based on Gustav Freytag's theory of dramatic tension, focusing on the ascent of complications toward a central pivot and the subsequent fallout."
+  prioritizes:
+    - "Tension escalation"
+    - "Structural symmetry"
+    - "The pivotal moment of reversal (perimiteteia)"
+  deemphasphas_subplots: "Subplots unrelated to the central tension arc"
+  deemphasphas_growth: "Character growth that does not impact the structural pivot"
+
+use_when:
+  - "Writing stories where the protagonist's fate is decided at a single, high-stakes moment."
+  - "Creating tragedies where momentum shifts from prosperity to ruin."
+  - "Developing short-form narratives requiring immediate engagement and clear resolution."
+
+avoid_when:
+  - "Writing 'slice of life' stories lacking a central conflict or turning point."
+  - "Developing multi-season arcs where the climax is spread across many episodes."
+
+core_principles:
+  - "The Ascent: Complications must increase pressure on the protagonist."
+  - "The Pivot: The Climax is the moment the story's direction changes."
+  - "The Descent: Climax consequences must lead toward a new equilibrium."
+  - "Symmetry: Tension built in the rising action must be resolved or exhausted in the falling action."
+
+workflow:
+  - step: 1
+    name: "Establish the Status Quo"
+    goal: "Define the baseline before disruption."
+    instructions:
+      - "Identify characters and their current world."
+      - "Define the 'normal' tension level."
+    output: "Exposition parameters."
+  - step: 2
+    name: "The Disruption"
+    goal: "Introduce the catalyst."
+    instructions:
+      - "Identify the event breaking the status quo."
+      - "Determine immediate stakes."
+    output: "Inciting Incident definition."
+  - step: 3
+    name: "The Escalation"
+    goal: "Build the upward slope."
+    instructions:
+      - "Create escalating complications."
+      - "Ensure each complication increases pressure."
+    output: "Rising Action sequence."
+  - step: 4
+    name: "The Pivot"
+    goal: "Execute the Climax."
+    instructions:
+      - "Identify the irreversible moment."
+      - "Ensure the direction of tension shifts from rising to falling."
+    output: "Climax definition."
+  - step: 5
+    name: "The Fallout"
+    goal: "Navigate the downward slope."
+    instructions:
+      - "Show the consequences of the pivot."
+      - "Dissipode tension toward a new state."
+    output: "Falling Action and Denouement."
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  description: "A six-stage symmetrical arc centered on a structural pivot."
+  stages:
+    exposition_stage:
+      focus: "Establishing the baseline"
+      logic_flow: "World-building and character grounding"
+      tension_level: "Low/Stable"
+    inciting_incident_stage:
+      focus: "The Catalyst"
+      logic_flow: "Disruption of the status quo"
+      tension_level: "Rising/Sudden"
+    rising_action_stage:
+      focus: "The Ascent"
+      logic_flow: "Escalating complications and mounting pressure"
+      tension_level: "Increasing/High"
+    climax_stage:
+      focus: "The Pivot"
+      logic_flow: "The irreversible reversal of fortune"
+      tension_level: "Peak/Maximum"
+    falling_action_stage:
+      focus: "The Descent"
+      logic_flow: "Consequences and fallout of the pivot"
+      tension_level: "Decreasing/Unraveling"
+    denouement_stage:
+      focus: "The Resolution"
+      logic_flow: "Establishment of a new equilibrium"
+      tension_level: "New Baseline/Stable"
+
+beats_or_units:
+  - id: "exposition"
+    name: "Exposition"
+    order: 1
+    purpose: "Establish the world and baseline tension."
+    approximate_position: "0% - 15%"
+    writer_prompt: "What is the world like before the storm hits?"
+    story_function: "Grounding the audience and establishing stakes."
+    visual_function: "Establishing stable, peaceful, and established imagery."
+    emotional_function: "Creating empathy for the status quo."
+    required_decisions:
+      - "What is the character's primary drive in their normal life?"
+      - "What is the setting's primary mood?"
+    fields_to_complete:
+      status_quo_description: "<write here>"
+      character_baseline: "<write here>"
+      world_rules: "<write here>"
+    diagnostic_questions:
+      - "Is the world interesting enough to care when disrupted?"
+      - "Are the stakes of the 'normal' life clearly defined?"
+    completion_criteria:
+      - "The audience understands the character's starting point."
+    common_failure_modes:
+      - "Info-dumping."
+      - "Lack of character connection."
+
+  - id: "inciting_incident"
+    name: "Inciting Incident"
+    order: 2
+    purpose: "Disrupt the status quo."
+    approximate_position: "15% - 25%"
+    writer_prompt: "What event makes returning to normal life impossible?"
+    story_function: "The catalyst for the narrative arc."
+    visual_function: "A visual rupture or sudden change in composition."
+    emotional_function: "Shock, confusion, or a call to action."
+    required_decisions:
+      - "Is the event irreversible?"
+      - "Does it challenge the character's stability?"
+    fields_to_complete:
+      the_event: "<write here>"
+      the_disruption_effect: "<write here>"
+    diagnostic_questions:
+      - "Does this event force the character to act?"
+      - "Is the tension clearly higher than in the exposition?"
+    completion_criteria:
+      - "The character's 'normal' is officially broken."
+    common_failure_modes:
+      - "The incident is too small to warrant the story."
+      - "The character ignores the incident without reason."
+
+  - id: "rising_action"
+    name: "Rising Action"
+    order: 3
+    purpose: "Escalate complications and tension."
+    approximate_position: "25% - 75%"
+    writer_prompt: "What obstacles push the character closer to the breaking point?"
+    story_function: "Building the energy of the pyramid."
+    visual_function: "Increasingly chaotic or high-intensity imagery."
+    emotional_function: "Anxiety, determination, or mounting dread."
+    required_decisions:
+      - "What is the 'staircase' of stakes?"
+      - "How does each complication drive the climax?"
+    fields_to_complete:
+      complication_1: "<write here>"
+      complication_2: "<write here>"
+      complication_3: "<write here>"
+    diagnostic_questions:
+      - "Is the tension actually increasing?"
+      - "Are obstacles related to the central conflict?"
+    completion_criteria:
+      - "A clear upward trajectory of stakes is established."
+    common_failure_modes:
+      - "Episodic complications that do not build on each other."
+      - "The 'plateau' effect where tension stays stagnant."
+
+  - id: "climax"
+    name: "The Climax (The Pivot)"
+    order: 4
+    purpose: "The turning point where tension peaks and shifts direction."
+    approximate_position: "75% - 85%"
+    writer_prompt: "What is the decisive moment where the character's fate is sealed?"
+    story_function: "The structural pivot (Peripeteia)."
+    visual_function: "The most intense or symbolically heavy moment."
+    emotional_lag: "Catharsis, realization, or revelation."
+    required_decisions:
+      - "What is the reversal of fortune?"
+      - "Is the outcome irreversible?"
+    fields_to_complete:
+      the_decisive_action: "<write here>"
+      the_reversal_type: "<e.g., triumph, tragedy, realization>"
+      the_new_reality: "<write here>"
+    diagnostic_questions:
+      - "Does this moment change the story's momentum?"
+      - "Is the tension at its absolute maximum?"
+    completion_criteria:
+      - "The protagonist's situation has fundamentally changed."
+    common_failure_modes:
+      - "The 'False Climax' (no change in direction)."
+      - "The Climax is just another complication."
+
+  - id: "falling_action"
+    name: "Falling Action"
+    order: 5
+    purpose: "Explore the consequences of the climax."
+    approximate_position: "85% - 95%"
+    writer_prompt: "How does the character deal with the aftermath of the pivot?"
+    story_function: "The descent of the pyramid; dissipating tension."
+    visual_function: "Slowing down or wider, more stable shots."
+    emotional_function: "Relief, grief, or resignation."
+    required_decisions:
+      - "Which secondary threads need closure?"
+      - "How is the new tension handled?"
+    fields_to_complete:
+      the_aftermath: "<write here>"
+      unresolved_threads_closure: "<write here>"
+    diagnostic_questions:
+      - "Is the tension effectively decreasing?"
+      - "Are we seeing the direct impact of the climax?"
+    completion_criteria:
+      - "The immediate consequences of the climax are visible."
+    common_failure_modes:
+      - "The tension stays too high (refusal to end)."
+      - "The falling action feels like a separate story."
+
+  - id: "denouement"
+    name: "Denouement / Resolution"
+    order: 6
+    purpose: "Establish the new equilibrium."
+    approximate_position: "95% - 100%"
+    writer_prompt: "What is the new 'normal'?"
+    story_function: "Closing the loop and providing closure."
+    visual_function: "A final image encapsulating the new reality."
+    emotional_function: "Finality or a lingering question."
+    required_decisions:
+      - "What is the final emotional note?"
+    fields_to_complete:
+      the_new_status_quo: "<write here>"
+      final_visual_image: "<write here>"
+    diagnostic_questions:
+      - "Does the ending reflect the change from the climax?"
+      - "Is the 'new normal' distinguishable from the 'old normal'?"
+    completion_criteria:
+      - "The story reaches a state of rest or a new state of tension."
+    common_failure_modes:
+      - "Deus Ex Machina (unearned resolution)."
+      - "Ending too abruptly without showing the new equilibrium."
+
+character_design:
+  methodology_role: "Characters must be defined by their relationship to rising and falling tension."
+  characters:
+    - name: "<write here>"
+      starting_state: "<How they exist in the Exposition>"
+      catalyst_reaction: "<How they respond to the Inciting Incident>"
+      climax_role: "<How they drive or suffer the Pivot>"
+      final_state: "<How they are changed in the Denouement>"
+
+world_design:
+  methodology_role: "The world must reflect the structural shift from stability to disruption to new equilibrium."
+  elements:
+    status_quo_environment: "<The stable world before the pivot>"
+    disruption_impact: "<How the world changes during the ascent>"
+    new_equilibrium_state: "<The altered world after the descent>"
+
+theme_design:
+  methodology_role: "Theme is the moral argument revealed through the tension of the climb and the fallout of the fall."
+  fields:
+    central_argument: "<What truth is being tested by the structural arc?>"
+    the_ascent_argument: "<What belief is pushed to the limit during the rising action?>"
+    the_pivot_revelation: "<What truth is revealed at the moment of reversal?>"
+
+visual_storytelling:
+  methodology_role: "Visual energy should mirror the pyramid's slope."
+  image_system:
+    ascending_visuals: ["Increasingly tight shots", "High-contrast lighting", "Rapid editing"]
+    descending_visuals: ["Wider shots", "Stabilized lighting", "Slower pacing"]
+  recurring_motifs: []
+  final_image: "<The image that summarizes the new equilibrium>"
+
+scene_generation_rules:
+  - "Every scene must either contribute to the upward pressure (Ascent) or the downward consequence (Descent)."
+  - "No scene should exist that does not impact the character's trajectory toward the Pivot."
+  - "The Climax scene must visually and narratively break the established pattern of the Rising Action."
+
+revision_passes:
+  - name: "The Tension Audit"
+    goal: "Ensure the upward/downward slope is functional."
+    instructions:
+      - "Map tension levels (1-1lam) for every beat."
+      - "Check if the Climax marks a change in direction."
+    questions:
+      - "Is there a plateau in the rising action?"
+      - "Does the tension drop too fast or too slow?"
+    success_criteria:
+      - "A clear, non-flat tension graph."
+
+  - name: "The Pivot Check"
+    goal: "Validate the Climax."
+    instructions:
+      - "Examine the Climax in isolation."
+    questions:
+      - "Does the character's fate change irrevocably?"
+      - "Is the consequence of this moment the engine for the falling action?"
+    success_criteria:
+      - "The Climax acts as a structural hinge."
+
+  - name: "The Structure Pass"
+    goal: "Ensure structural symmetry."
+    instructions:
+      - "Verify the weight of the Ascent matches the weight of the Descent."
+      - "Check for any orphaned subplots."
+    questions:
+      - "Does the falling action feel like a direct consequence of the climax?"
+      - "Is the exposition sufficiently balanced by the denouement?"
+    success_criteria:
+      - "A symmetrical narrative arc."
+
+  - name: "The Character Pass"
+    goal: "Ensure character-driven momentum."
+    instructions:
+      - "Trace the character's internal change against the external tension."
+    questions:
+      - "Does the character's agency drive the climax?"
+      - "Is the character's transformation visible in the denouement?"
+    success_criteria:
+      - "Character arc and structural arc are synchronized."
+
+  - name: "The Theme Pass"
+    goal: "Ensure thematic resonance."
+    instructions:
+      - "Check if the pivot reveals the central argument."
+    questions:
+      - "Is the theme proven or refuted by the climax?"
+      - "Does the final image reinforce the theme?"
+    success_criteria:
+      - "Thematic clarity through structural resolution."
+
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure visual-structural alignment."
+    instructions:
+      - "Audit the visual language against the tension levels."
+    questions:
+      - "Do the shots tighten as the tension rises?"
+      - "Does the lighting shift to reflect the reversal?"
+    success_criteria:
+      - "Visuals mirror the narrative slope."
+
+validation_checklist:
+  - "Does the Exposition establish a clear 'before'?"
+  - "Does the Inciting Incident disrupt that 'before'?"
+  - "Do the complications in the Rising Action escalate in stakes?"
+  - "Does the Climax function as a turning point (Peripeteia)?"
+  - "Does the Falling Action address the consequences of the Climax?"
+  - "Does the Denouement present a new, altered equilibrium?"
+  - "Is the tension level at the Climax the absolute peak of the story?"
+  - "Is the direction of momentum clearly reversed after the Climax?"
+  - "Does the character's internal state change in tandem with the external plot?"
+  - "Are the visual motifs consistent with the tension arc?"
+  - "Is the 'new normal' in the Denouement distinct from the 'old normal' in the Exposition?"
+  - "Does every scene contribute to either the Ascent or the Descent?"
+
+failure_modes:
+  - failure_mode: "The Flatline"
+    symptical: "No sense of rising or falling tension."
+    likely_cause: "Lack of escalating complications or a climax that doesn't change anything."
+    fix: "Introduce higher-stakes obstacles and a more impactful reversal."
+  - failure_mode: "The Endless Ascent"
+    symptom: "The story feels like it never reaches resolution."
+    likely_cause: "No clear Climax/Pivot; the story just keeps increasing in intensity."
+    fix: "Force a decisive moment that breaks the momentum and leads to consequences."
+  - failure_mode: "The Sudden Drop"
+    symptom: "The story ends immediately after the climax with no fallout."
+    likely_cause: "Skipping the Falling Action/Denoument."
+    fix: "Add scenes that explore the emotional and physical aftermath of the pivot."
+
+adaptation_notes:
+  feature_film: ["Use the Rising Action for 3-4 major sequences/acts."]
+  short_film: ["Focus heavily on a rapid transition from Inciting Incident to Climax."]
+  tv_episode: ["The episode follows the pyramid, but the series follows a larger, multi-pyramid arc."]
+  tv_pilot: ["The Denouement must establish a new status quo that invites further episodes."]
+  anime: ["Emphasize the visual 'burst' of the Climax and the thematic weight of the Denouement."]
+  adult_animation: ["Use the structural pivot to drive high-impact, visceral character shifts."]
+  anthology: ["Each segment must be a complete, self-contained pyramid."]
+  game_cinematic: ["The Climax should serve as the transition into the next gameplay loop or state."]
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'story_inputs' first, then work through 'beats_or_units' chronologically."
+  recommended_population_order:
+    - "story_inputs"
+    - "beats_or_units (Exposition -> Inciting Incident -> ...)"
+    - "character_design"
+    - "world_design"
+    - "theme_design"
+    - "visual_storytelling"
+  minimum_viable_completion: "At minimum, complete the 'fields_to_complete' for all beats in the methodology_structure."
+  readiness_criteria: "When the 'Climax' and 'The Reversal' are clearly defined and the 'Rising Action' complications are mapped."

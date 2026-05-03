@@ -1,0 +1,329 @@
+metadata:
+  framework_name: "Board-Scale Structural Architect"
+  methodology_name: "Board-Driven Story Method"
+  methodology_family: "Spatial/Structural Plotting"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "TV pilot"
+    - "TV episode"
+    - "web series"
+    - "anime"
+    - "manga"
+    - "short film"
+  best_for:
+    - "Complex plotting"
+    - "Pacing management"
+    - "Identifying structural gaps"
+    - "Visualizing narrative density"
+  not_ideal_for:
+    - "Character studies without plot"
+    - "Experimental stream-of-consciousness"
+    - "Improvisational/Discovery writing (without prior planning)"
+  target_lengths:
+    - "Short-form to Feature-length"
+  core_principle: "Narrative causality and pacing are functions of spatial arrangement and connection density."
+  primary_story_undit: "The Beat Card"
+  primary_success_metric: "Structural Cohesion (No 'floating' cards; every card is tethered to the arc via causality)."
+
+framework_overview:
+  summary: "A methodology that treats story elements as physical or digital units (cards) that can be moved, clustered, and connected to visualize the architecture of a narrative."
+  what_this_framework_helps_create:
+    - "A visible map of narrative momentum"
+    - "Identification of 'dead zones' in pacing"
+    - "Verification of cause-and-effect chains"
+    - "Structural balance between acts/sequences"
+  what_it_prioritizes:
+    - "Causality (The 'Because of that' logic)"
+    - "Pacing (The density of events)"
+    - "Structural symmetry"
+  what_it_deemphasizes:
+    - "Prose/Dialogue detail"
+    - "Internal monologue"
+    - "Atmospheric descriptions (until the board is stable)"
+
+use_when:
+  - "The plot feels 'episodic' or disconnected"
+  - "The second act feels like it's sagging"
+  - "You have many great ideas but no cohesive structure"
+  - "You need to manage complex, multi-strand subplots"
+
+avoid_when:
+  - "The story is purely character-driven with no external conflict"
+  - "You are in the 'discovery writing' phase and haven't found the 'what'"
+
+core_principles:
+  - "The String Principle: Every card must be connected to the previous card by a causal link."
+  - "The Cluster Principle: Scenes naturally group into sequences; sequences group into acts."
+  - "The Gap Principle: Empty space on the board represents narrative vacuum or missed opportunities for tension."
+  - "The Anchor Principle: Major character beats and thematic motifs must be visible as 'overlay' layers on the board."
+
+workflow:
+  - step: 1
+    name: "Brainstorming (The Raw Pile)"
+    goal: "Generate all possible narrative atoms."
+    instructions:
+      - "Write every idea, character beat, or set piece on individual, unorganized cards."
+    output: "A disorganized pile of story fragments."
+  - step: 2
+    name: "The First Sort (Categorization)"
+    goal: "Identify the building blocks."
+    instructions:
+      - "Group cards into 'Character,' 'World,' 'Plot,' and 'Theme' piles."
+    output: "Categorized card sets."
+  - step: 3
+    name: "The Sequence Build (The Chain)"
+    goal: "Establish primary causality."
+    instructions:
+      - "Arrange cards in a linear path, using strings or arrows to represent 'Therefore' or 'But'."
+    output: "A linear narrative spine."
+  - step: 4
+    name: "Clustering (The Architecture)"
+    goal: "Create structural units (Acts/Sequences)."
+    instructions:
+      - "Group sequences of cards into larger blocks representing Acts or major narrative shifts."
+    output: "A multi-layered structural map."
+  - step: 5
+    name: "Gap Analysis (The Audit)"
+    goal: "Identify structural weaknesses."
+    instructions:
+      - "Look for 'floating cards' (no connections) or 'voids' (large gaps in momentum)."
+    output: "A list of required new cards/beats."
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write/select: feature, short, etc.>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  board_layers:
+    spine_layer:
+      layer_name: "The Spine (Plot)"
+      description: "The primary causal chain of events."
+      logic_type: "Linear Causality"
+      connection_requirement: "Mandatory"
+      tension_driver: "Primary"
+      visual_weight: "High"
+    subplot_layer:
+      layer_name: "The Subplot Strands"
+      description: "Secondary threads that weave in and out of the spine."
+      logic_type: "Intersecting Loops"
+      connection_requirement: "Conditional"
+      tension_driver: "Secondary"
+      visual_weight: "Medium"
+    character_layer:
+      layer_name: "Character Arc Overlays"
+      description: "Cards representing internal shifts, realizations, or wounds."
+      logic_type: "Parallel Evolution"
+      connection_requirement: "Event-Triggered"
+      tension_driver: "Internal"
+      visual_weight: "Medium"
+    thematic_layer:
+      layer_name: "Thematic Anchors"
+      description: "Visual motifs or recurring images that reinforce the theme."
+      logic_type: "Patterned Reinforcement"
+      connection_requirement: "Overlay"
+      tension_driver: "Subliminal"
+      visual_weight: "Low"
+  spatial_logic_rules:
+    - rule: "Proximity = Importance"
+      description: "Cards clustered tightly together represent high-intensity sequences."
+    - rule: "The Tension String"
+      description: "A physical or visual line must connect the 'Inciting Incident' card to the 'Climax' card."
+    - rule: "The Collision"
+      description: "Subplots should physically intersect with the main spine at critical junctures."
+
+beats_or_units:
+  - id: "beat_card_template"
+    name: "The Atomic Beat"
+    order: 1
+    purpose: "The fundamental unit of the board."
+    approximate_position: "The individual card."
+    writer_prompt: "What is the single, most important action or shift occurring in this unit?"
+    story_function: "<e.g., Inciting Incident, Midpoint, Reversal, Climax>"
+    visual_function: "<The key image or movement that defines this beat>"
+    emotional_function: "<The shift in character's internal state>"
+    required_decisions:
+      - "Does this card move the plot forward?"
+      - "Is this card a consequence of the previous card?"
+    fields_to_complete:
+      card_front:
+        title: "<Short, punchcrypt title>"
+        action_summary: "<One sentence: Who does what?>"
+      card_back:
+        characters_present: []
+        conflict_type: "<e.g., Man vs Self, Man vs Nature>"
+        the_turn: "<What changes by the end of this card?>"
+        causal_link_in: "<What event forced this to happen?>"
+        causal_link_out: "<What does this event trigger next?>"
+        visual_anchor: "<A single image to remember this beat by>"
+    diagnostic_questions:
+      - "If I remove this card, does the chain break?"
+      - "Is there any 'filler' here that doesn't connect to another card?"
+    completion_criteria:
+      - "Every card has a 'causal_link_in' and 'causal_link_out'."
+    common_failure_modes:
+      - "The Floating Card: A card that exists but isn't connected to the spine."
+      - "The Leap: A connection that is too large/unearned (e.g., jumping from 'Meeting' to 'Marriage' without the 'Dating' cards)."
+
+character_design:
+  methodology_role: "Character arcs are treated as parallel 'strings' of cards that intersect with the plot spine."
+  characters:
+    - name: "<write here>"
+      arc_start_state: "<The character's initial status/wound>"
+      arc_end_state: "<The character's transformed state>"
+      key_arc_cards:
+        - beat_id: "<Reference to a specific Plot Card>"
+          significance: "<How this plot event triggers a character shift>"
+
+world_design:
+  methodology_role: "World elements are 'Anchor Cards' that provide the context for all other cards."
+  fields:
+    rules_of_the_world: []
+    environmental_pressures: "<What external force acts on the plot cards?>"
+
+theme_design:
+  methodology_role: "Theme is the 'Varnish'—the recurring pattern found when looking at the board as a whole."
+  fields:
+    central_argument: "<The tension between two opposing ideas>"
+    thematic_motifs:
+      - motif_name: "<e.g., Water, Shadows, Clocks>"
+        placement_on_board: "<Which sequences/cards use this motif?>"
+
+visual_storytelling:
+  methodology_role: "The Board itself is a visual tool for the writer."
+  image_system:
+    color_coding:
+      plot_spines: "<e.g., Blue>"
+      subplots: "<e.g., Green>"
+      character_arcs: "<e.g., Red>"
+    visual_rules:
+      - "Use arrows for 'Therefore' (Causality)."
+      - "Use jagged lines for 'But' (Conflict/Interruption)."
+      - "Use clusters for 'Sequences'."
+  recurring_motifs: []
+  final_image: "<The image that summarizes the completed board>"
+
+scene_generation_rules:
+  scene_principles:
+    - "A scene is the expansion of a single Beat Card."
+    - "Every scene must honor the 'causal_link_out' of its card."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: ""
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Ensure the 'Turn' is visible in the action."
+    - "Keep the 'Causal Link' clear."
+  avoid_rules:
+    - "Do not write scenes that don't have a corresponding card on the board."
+    - "Avoid 'Floating Scenes' that are purely atmospheric and don't connect to the spine."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Test structural integrity."
+    instructions:
+      - "Physically/Digitally move cards around. If the story still works, the structure is weak. If it breaks, you've found the essential spine."
+    questions:
+      - "Which cards are indispensable?"
+      - "Which cards can be merged?"
+    success_criteria: "A sequence that is logically unshakeable."
+  - name: "character_pass"
+    goal: "Verify arc intersection."
+    instructions:
+      - "Check every character arc card against the plot spine."
+    questions:
+      - "Does the plot event actually force a character change?"
+      - "Are there characters present in scenes who have no arc cards?"
+    success_criteria: "Every character's internal shift is tethered to a plot event."
+  - name: "theme_pass"
+    goal: "Ensure thematic resonance."
+    instructions:
+      - "Scan the board for recurring motifs and thematic anchors."
+    questions:
+      - "Is the central argument visible in the clusters?"
+      - "Are the motifs placed at high-impact junctures?"
+    success_criteria: "Thematic motifs are present in at least 3 major sequences."
+  - name: "visual_storytelling_pass"
+    goal: "Audit visual clarity."
+    instructions:
+      - "Review the color-coding and connection lines."
+    questions:
+      - "Are the 'But' and 'Therefore' lines clearly distinguishable?"
+      - "Can a stranger understand the plot flow just by looking at the arrows?"
+    success_criteria: "The board is readable without reading the card text."
+  - name: "causality_pass"
+    goal: "Verify the String Principle."
+    instructions:
+      - "Trace every 'string' from the start to the end. Look for leaps in logic."
+    questions:
+      - "Is there a 'But' or a 'Therefore' between every single card?"
+    success_criteria: "Zero 'Floating Cards' remaining."
+
+validation_checklist:
+  - "Every card has a clear 'Causal Link In'."
+  - "Every card has a clear 'Causal Link Out'."
+  - "The 'Climax' card is the logical result of the preceding chain."
+  - "Subplots physically intersect with the main spine."
+  - "The 'Gap Analysis' has been completed and all voids filled."
+  - "Every character arc card is connected to a plot spine card."
+  - "No 'Floating Cards' exist without a causal connection."
+  - "Thematic motifs are mapped to specific sequences."
+  - "Visual anchors are defined for every beat."
+  - "The 'Turn' is clearly identified for every beat."
+  - "The tension distribution is rhythmic (no massive gaps or extreme clutter)."
+  - "All character 'start' and 'end' states are represented by cards."
+  - "The 'Inciting Incident' is clearly tethered to the 'Climax'."
+  - "The board adheres to the defined spatial logic rules."
+
+failure_modes:
+  - failure_mode: "The Stringless Narrative"
+    symptom: "The story feels like a collection of interesting but unrelated events."
+    likely_cause: "Lack of 'Therefore/But' logic between cards."
+    fix: "Force-connect cards using causal conjunctions."
+  - failure_mode: "The Avalanche"
+    symptom: "The story moves too fast; no emotional weight is felt."
+    likely_cause: "Too many action cards with no character/thematic anchor cards."
+    fix: "Insert 'Reaction' or 'Reflection' cards into the sequence."
+  - failure_mode: "The Infinite Second Act"
+    symptom: "The middle of the story feels repetitive and directionless."
+    likely_cause: "A lack of 'Major Turn' cards (Midpoints) to shift the direction of the strings."
+    fix: "Introduce a high-impact 'Reversal' card to re-orient the spine."
+
+adaptation_notes:
+  feature_film: "Focus on a single, heavy spine with 2-3 supporting strands."
+  short_film: "Focus on extreme density; every card must be a 'Pivot' card."
+  tv_episode: "Focus on the 'A-Story' spine with 'B' and 'C' strands intersecting."
+  tv_pilot: "Focus on the 'Setup' cards and the 'Promise of the Premise' string."
+  anime: "Emphasize 'Visual Anchor' and 'Thematic Motif' layers for high-impact imagery."
+  adult_animation: "Focus on sharp, high-contrast thematic anchors and rapid-fire causal links."
+  anthology: "Each episode is a separate, self-contained board."
+  game_cinematic: "Focus on the 'Causal Link' between player action and narrative beat."
+
+yaml_usage_notes:
+  how_to_use: "Use this as a template for a digital board (Miro/Trello) or a physical corkboard setup."
+  recommended_population_order:
+    - "1. Story Inputs"
+    - "2. Brainstorming (The Pile)"
+    - "3. The Beat Card Template (Populating the cards)"
+    - "4. The Sequence Build"
+  minimum_viable_completion: "A completed 'Spine' with 'Causal Link In/Out' for every card."
+  signs_framework_is_ready_for_scene_outline: "When you can trace a single continuous line from the first card to the last without any 'floating' or 'unconnected' cards."

@@ -1,0 +1,315 @@
+metadata:
+  framework_name: "Scriptment Development Framework"
+  methodology_name: "Scriptment Method"
+  methodology_family: "Hybrid Narrative Expansion"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "action/sci-fi/horror animation"
+    - "high-concept short film"
+    - "game cinematic"
+    - "TV pilot"
+  best_for:
+    - "action-heavy narratives"
+    - "visually-driven storytelling"
+    - "complex plotting requiring structural verification"
+    - "writers who struggle with 'talking head' scenes"
+  not_ideal_for:
+    - "dialogue-centric chamber dramas"
+    - "minimalist experimental shorts"
+  target_lengths:
+    - "90-120 page feature"
+    - "20-30 minute episode"
+  core_principle: "Narrative momentum is driven by physical action and visual progression, using prose to bridge the gap between a beat sheet and a screenplay."
+  primary_story_unit: "The Action-Driven Sequence"
+  primary_success_metric: "The ability to understand the entire plot, character arc, and emotional stakes through visual action alone, without any dialogue."
+
+framework_overview:
+  summary: "The Scriptment Method is a hybrid development stage where the writer expands a beat sheet into detailed, prose-based sequences. It prioritizes 'what happens' and 'how it looks' over 'what is said,' allowing the writer to solve structural and cinematic problems before the dialogue phase."
+  what_this_framework_helps_create:
+    - "A robust, visually-mapped narrative blueprint"
+    - "A clear sense of pacing and physical choreography"
+    - "Structural integrity check via action-based causality"
+  what_it_prioritizes:
+    - "Visual storytelling"
+    - "Physical conflict"
+    - "Environmental interaction"
+    - "Causal momentum"
+  what_it_deemphasizes:
+    - "Dialogue rhythm"
+    - "Subtextual verbal cues"
+    - "Verbal exposition"
+
+use_when:
+  - "The story relies on high-stakes physical movement or spectacle."
+  - "The plot is complex and requires a clear 'chain of events' to be verified."
+  - "The writer needs to 'see' the movie before writing the script."
+
+avoid_when:
+  - "The story's primary tension is purely intellectual or verbal (e.g., a courtroom drama or a debate)."
+  - "The character development is entirely internal/monologue-based."
+
+core_principles:
+  - "Action is the primary driver of plot."
+  - "If it can be shown, do not say it."
+  - "Every sequence must contain a physical or environmental change."
+  - "Dialogue is a secondary layer applied only after the action is solidified."
+
+workflow:
+  - step: 1
+    name: "The Spine Construction"
+    goal: "Establish the structural landmarks."
+    instructions:
+      - "Identify the major plot beats (Inciting Incident, Midpoint, etc.)."
+    output: "A high-level beat sheet."
+  - step: 2
+    name: "Sequence Expansion (The Scriptment Phase)"
+    goal: "Expand beats into prose-heavy sequences."
+    instructions:
+      - "For every beat, write a detailed prose description of the action, movement, and visual shifts."
+      - "Focus on the 'choreography' of the scene."
+    output: "The Scriptment (Prose-based narrative)."
+  - step: 3
+    name: "The Dialogue Layering"
+    goal: "Introduce necessary verbal elements."
+    instructions:
+      - "Identify where dialogue is required to advance plot or reveal character."
+      - "Keep dialogue minimal and subservient to the action."
+    output: "A functional screenplay draft."
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write or select from metadata>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  spine_construction_stage:
+    causal_link_verification: "<Does Event A physically necessitate Event B?>"
+    structural_milestone_check: "<Are the major turning points clearly defined?>"
+    pacing_assessment_logic: "<Is the interval between beats sufficient for tension building?>"
+    narrative_anchor_identification: "<Identify the primary physical driver for each beat>"
+  sequence_expansion_stage:
+    action_density_audit: "<Is there enough physical movement to sustain the prose length?>"
+    environmental_interaction_mapping: "<How does the setting change during the sequence?>"
+    visual_motif_integration_check: "<Are recurring visual elements present in the prose?>"
+    choreography_detail_level: "<Is the movement granular enough for a director to follow?>"
+  dialogue_layering_stage:
+    dialogue_necessity_filter: "<Does this line provide information that cannot be seen?>"
+    verbal_to_visual_ratio_check: "<Is the dialogue secondary to the action?%>"
+    character_voice_consistency_audit: "<Does the minimal dialogue match the established physical persona?>"
+
+beats_or_units:
+  - id: "sequence_01"
+    name: "Sequence Block: The Inciting Incident"
+    order: 1
+    purpose: "To establish the physical reality and immediate conflict of the sequence."
+    approximate_position: "Opening/Act 1"
+    writer_prompt: "Describe the physical movement and environmental changes in this sequence as if directing a silent film."
+    story_function: "Disrupts the status quo through a physical event."
+    visual_function: "Establishes the visual baseline and the first major shift in lighting or scale."
+    emotional_function: "Shock, confusion, or sudden realization."
+    required_decisions:
+      - "What is the physical catalyst for this sequence?"
+      - "What is the environmental obstacle?"
+      - "How does the character's posture change after the event?"
+    fields_to_complete:
+      prose_narrative: "<Detailed prose description of the action/events>"
+      action_choreography: "<Breakdown of physical movements/combat/travel/interaction>"
+      pivotal_visual_moment: "<The one image that defines this sequence>"
+      placeholder_dialogue: "<Only essential lines of dialogue to anchor the action>"
+    diagnostic_questions:
+      - "Can this sequence be understood if the sound is muted?"
+      - "Does the physical movement of the characters reflect their internal state?"
+    completion_criteria:
+      - "The sequence has a clear beginning, middle, and end."
+      - "The physical stakes are explicitly visible."
+    common_failure_modes:
+      - "The 'Talking Head' Error: The sequence is just characters standing and talking."
+      - "The 'Empty Spectacle' Error: Action occurs but has no impact on character or plot."
+  - id: "sequence_02"
+    name: "Sequence Block: The Climax"
+    order: 2
+    purpose: "To resolve the primary physical conflict through maximum escalation."
+    approximate_position: "End of Act 3"
+    writer_prompt: "Describe the peak of physical struggle and the final environmental transformation."
+    story_function: "The ultimate confrontation that resolves the central tension."
+    visual_function: "The most complex and visually intense sequence of the film."
+    emotional_function: "Catharsis, exhaustion, or tragic realization."
+    required_decisions:
+      - "What is the final physical cost of this victory/defeat?"
+      - "How does the environment reflect the resolution?"
+    fields_to_complete:
+      prose_narrative: "<Detailed prose description of the action/events>"
+      action_choreography: "<Breakdown of physical movements/combat/travel/interaction>"
+      pivotal_visual_moment: "<The one image that defines this sequence>"
+      placeholder_dialogue: "<Only essential lines of dialogue to anchor the action>"
+    diagnostic_questions:
+      - "Is the physical resolution earned by the preceding action?"
+      - "Does the visual scale match the narrative importance?"
+    completion_criteria:
+      - "The primary conflict is physically concluded."
+      - "The visual motif of the film reaches its final state."
+    common_failure_modes:
+      - "The 'Deus Ex Machina' Error: An external physical force solves the problem without character agency."
+      - "The 'Anti-Climax' Error: The physical tension dissipates too quickly."
+
+character_design:
+  methodology_role: "Characters are defined by their physical agency and reactions to pressure."
+  characters:
+    - name: "<write here>"
+      physical_manifestation: "<How does their personality show in their movement/posture?>"
+      action_style: "<Aggressive, evasive, methodical, etc.?>"
+      primary_motivation_visualized: "<How do we see them pursuing their goal physically?>"
+      vulnerability: "<A physical or environmental weakness?>"
+
+world_design:
+  methodology_role: "The environment is an active participant/antagonist in the scriptment."
+  fields:
+    environmental_hazards: ["<list potential physical obstacles>"]
+    sensory_landscape: "<The textures, sounds, and lighting that define the action space>"
+    world_rules_of_physics: "<Any specific rules that govern the action/combat/magic?>"
+
+theme_design:
+  methodology_role: "Theme is expressed through the outcome of physical struggles."
+  fields:
+    central_conflict_type: "<e.g., Man vs. Nature, Man vs. Machine>"
+    thematic_action_mirror: "<How a specific action sequence visually represents the theme?>"
+
+visual_storytelling:
+  methodology_role: "The primary driver of the scriptment."
+  image_system:
+    key_visual_motifs: []
+    lighting_as_narrative: "<How light/shadow shifts with the plot>"
+    compositional_shifts: "<How framing changes as tension increases>"
+  visual_rules:
+    - "<e.g., Always use low angles during moments of physical dominance.>"
+  recurring_motifs: []
+  final_image: "<The definitive visual resolution of the story's physical journey>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must involve a physical change in the environment or character position."
+    - "Dialogue must never explain what the action is already showing."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: ""
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Use verbs of motion (lunges, retreats, smashes, crawls)."
+    - "Focus on the impact of objects and environments."
+  avoid_rules:
+    - "Avoid internal monologues or abstract thoughts that cannot be enough to be seen."
+    - "Avoid 'heavy' exposition dumps via dialogue."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Verify the causal chain of the plot."
+    instructions:
+      - "Trace the physical consequence of every major beat."
+    questions:
+      - "Does every action lead logically to the next?"
+      - "Are there any gaps in the physical progression?"
+    success_criteria:
+      - "The plot is a seamless chain of cause and effect."
+  - name: "character_pass"
+    goal: "Ensure physical agency is consistent."
+    instructions:
+      - "Check if character movements align with their established action style."
+    questions:
+      - "Does the character act in a way that is physically consistent with their design?"
+      - "Are their motivations visible through their physical choices?"
+    success_criteria:
+      - "Character actions are driven by visible, physical needs."
+  - name: "theme_pass"
+    goal: "Align physical struggle with thematic intent."
+    instructions:
+      - "Identify the central conflict type and check for its visual representation."
+    questions:
+      - "Does the physical resolution mirror the thematic resolution?"
+    success_criteria:
+      - "The theme is palpable through the outcome of the action."
+  - name: "visual_storytelling_pass"
+    goal: "Maximize visual clarity and impact."
+    instructions:
+      - "Review the scriptment as if it were a silent film."
+    questions:
+      - "Is the story intelligible without dialogue?"
+      - "Are the visual motifs recurring and impactful?"
+    success_criteria:
+      - "The story is fully intelligible through action alone."
+  - name: "scriptment_expansion_pass"
+    goal: "Ensure prose depth and choreography detail."
+    instructions:
+      - "Audit the prose for specific, observable physical movements."
+    questions:
+      - "Is the choreography detailed enough for a storyboard artist?"
+      - "Is the environmental interaction explicit?"
+    success_criteria:
+      - "The prose provides a clear blueprint for visual execution."
+
+validation_checklist:
+  - "Does every sequence have a clear physical 'turn'?"
+  - "Is the 'Action-to-Dialogue' ratio skewed toward action?"
+  - "Are the character's motivations visible through their choices and movements?"
+  - "Is the environment being used as a tool or an obstacle?"
+  - "Can the plot be understood without reading the dialogue?"
+  - "Is there a measurable shift in physical energy in every sequence?"
+  - "Are the lighting shifts aligned with the emotional beats?"
+  - "Does the physical scale of the action match the stakes?"
+  - "Are the character's physical vulnerabilities exploited in the action?"
+  - "Is the causal chain between beats unbroken?"
+  - "Are the visual motifs clearly established in the first act?"
+  - "Does the final image resolve the physical journey?"
+
+failure_modes:
+  - failure_mode: "The Prose Trap"
+    symptom: "The scriptment reads like a novel/short story rather than a film blueprint."
+    likely_cause: "Focusing too much on internal thoughts and not enough on external action."
+    fix: "Rewrite passages using only observable, externalized actions."
+  - failure_mode: "The Static Script"
+    symptom: "The plot is progressing, but nothing 'happens' visually."
+    likely_cause: "Over-reliance on dialogue to move the story forward."
+    fix: "Introduce a physical complication or environmental change to every static scene."
+  - failure_mode: "The Environmental Ghost"
+    symptom: "The setting feels like a static backdrop rather than an active element."
+    likely_cause: "Failure to integrate environmental hazards or changes into the choreography."
+    fix: "Force characters to interact with, or be affected by, the physical surroundings in every beat."
+
+adaptation_notes:
+  feature_film: "Focus on large-scale sequence expansion and mid-point shifts."
+  short_film: "Focus on a single, highly concentrated physical escalation."
+  tv_episode: "Ensure each 'block' can function as a self-contained mini-arc."
+  tv_pilot: "Emphasize the establishment of the 'world rules' through action."
+  anime: "Focus heavily on 'Choreography' and 'Visual Motifs' (Sakuga-ready beats)."
+  adult_animation: "Emphasize exaggerated physical consequences and environmental destruction."
+  anthology: "Focus on a singular, impactful visual concept per entry."
+  game_cinematic: "Focus on 'Environmental Interaction' and 'Player-Character' spatial relationship."
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'story_inputs' first, then use the 'beats_or_units' to expand your outline into the prose-heavy 'Scriptment' format."
+  recommended_population_order:
+    - "Metadata/Inputs"
+    - "Character/World Design"
+    - "The Spine (Beat Sheet)"
+    - "Sequence Expansion (The Meat)"
+    - "Revision Passes"
+  minimum_viable_completion: "A completed 'beats_or_units' section with 'prose_narrative' and 'action_choreography' filled for all major beats."
+  signs_framework_is_ready_for_scene_outline: "When you can read the 'prose_narrative' and 'action_choreography' and immediately know exactly what the camera needs to capture."

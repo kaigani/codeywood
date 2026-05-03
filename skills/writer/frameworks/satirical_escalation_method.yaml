@@ -1,0 +1,32 @@
+metadata:
+  framework_name: "Satirical Escalation Template"
+  methodology_name: "Satirical Escalation Method"
+  methodology_family: "Satire / Black Comedy"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "adult animation"
+    - "tv episode"
+    - "web series"
+    - "anthology short"
+  best_for:
+    - "social commentary"
+    - "political satire"
+    - "black comedy"
+    - "absurdist drama"
+  not_ideal_for:
+    - "sincere hero's journey"
+    - "purely escapist fantasy"
+    - "earnest romance"
+  target_lengths:
+    - "short film"
+    - "feature film"
+    - "tv episode"
+  core_principle: "The logical, increasingly extreme expansion of a recognizable social or personal absurdity until the system/logic collapses."
+  primary_story_unit: "The Escalation Tier"
+  primary_success_metric: "The degree to which the absurdity exposes a profound, uncomfortable truth."
+
+framework_overview:
+  summary: ""

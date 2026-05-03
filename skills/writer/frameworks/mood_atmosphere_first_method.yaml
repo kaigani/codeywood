@@ -1,0 +1,368 @@
+metadata:
+  framework_name: "Mood / Atmosphere First Method"
+  methodology_name: "Mood / Atmosphere First Method"
+  methodology_family: "Sensory-Driven Narrative"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "short film"
+    - "feature film"
+    - "anime"
+    - "horror"
+    - "noir"
+    - "experimental animation"
+    - "anthology short"
+    - "game cinematic"
+  best_for:
+    - "establishing immersive worlds"
+    - "character-driven emotional studies"
+    - "high-concept aesthetic narratives"
+    - "psychological thrillers"
+  not_ideal_for:
+    - "plot-heavy procedural dramas"
+    - "high-action-driven spectacles"
+    - "hard sci-fi/logic-driven puzzles"
+  target_lengths:
+    - "any"
+  core_principle: "The narrative is an inevitable consequence of the established sensory and emotional environment."
+  primary_story_unite: "The Sensory Beat"
+  primary_success_metric: "Immersion and Emotional Resonance"
+
+framework_overview:
+  summary: "A methodology where the aesthetic, sensory, and emotional 'vibe' is established before any plot or character motivations are defined. The structure is built to sustain and escalate a specific feeling."
+  what_this_framework_helps_create:
+    - "Deeply immersive settings"
+    - "Visceral emotional impact"
+    - "Aesthetic-driven storytelling"
+  what_it_prioritizes:
+    - "Sensory texture"
+    - "Visual metaphors"
+    - "Emotional resonance"
+    - "Environmental storytelling"
+  what_it_deemphasizes:
+    - "Explicit plot mechanics"
+    - "Dialogue-driven exposition"
+    - "External conflict-driven structure"
+
+use_when:
+  - "The feeling of the world is more important than the sequence of events."
+  - "The setting is a character in its own right."
+  - "You have a striking visual or auditory image but no plot."
+  - "The goal is to evoke dread, wonder, nostalgia, or melancholy."
+
+avoid_when:
+  - "The story relies on complex, interlocking plot twists."
+  - "The narrative is driven by heavy dialogue and intellectual debate."
+  - "The audience's primary engagement is with 'what happens next' rather than 'how it feels'."
+
+core_principles:
+  - "Sensory Primacy: Every narrative beat must be anchored in a sensory detail."
+  - "Atmospheric Consistency: The 'vibe' must be maintained or intentionally ruptured."
+  - "Environmental Determinism: Characters act based on the pressures of their environment."
+  - "Visual Metaphor: The external world must mirror the internal emotional state."
+
+workflow:
+  - step: 1
+    name: "The Sensory Palette"
+    goal: "Define the raw sensory ingredients of the story."
+    instructions:
+      - "Identify the dominant colors, textures, sounds, and smells."
+      - "Determine the lighting temperature and density."
+    output: "Sensory Palette Document"
+  - step: 2
+    name: "The Atmospheric Anchor"
+    goal: "Distill the palette into a single, core emotional state."
+    instructions:
+      - "Summarize the 'vibe' in three adjectives."
+      - "Define the 'feeling' the audience should have upon entering the world."
+    output: "Atmospheric Anchor Statement"
+  - step: 3
+    name: "Environmental Texture"
+    goal: "Build the world as a vessel for the mood."
+    instructions:
+      - "Define how the environment exerts pressure on inhabitants."
+      - "Create 'sensory landmarks' in the setting."
+    output: "World Design Framework"
+  - step: 4
+    name: "Character Resonance"
+    goal: "Create characters that are products of the atmosphere."
+    instructions:
+      - "Define how the character's physical presence interacts with the sensory palette."
+      - "Determine how the atmosphere dictates their internal struggles."
+    output: "Character Design Profiles"
+  - step: 5
+    name: "Narrative Drift"
+    goal: "Introduce movement through atmospheric shifts."
+    instructions:
+      - "Identify where the established mood is threatened or escalated."
+      - "Map out beats as 'sensory ruptures'."
+    output: "Atmospheric Beat Sheet"
+
+story_inputs:
+  premise: "<The core idea, expressed as a feeling or image>"
+  logline: "<The narrative arc, if any, that emerges from the mood>"
+  medium: "<e.g., Anime, Short Film, etc.>"
+  genre: "<e.g., Gothic Horror, Dreamcore, Noir>"
+  tone: "<The intended emotional impact>"
+  target_length: "<e.g., 10-minute short>"
+  audience: "<Who is/is not meant to feel this?>"
+  rating: "<Age appropriateness>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points:
+    - "<Visual reference 1>"
+    - "<Sonic reference 1>"
+  must_include:
+    - "<A specific sensory detail or image>"
+  must_avoid:
+    - "<A specific tone or aesthetic element>"
+
+methodology_structure:
+  phase_one_sensory_foundation:
+    visual_layer:
+      color_palette: "<dominant colors and their emotional weight>"
+      lighting_style: "<e.g., high contrast, diffused, flickering, neon, naturalistic>"
+      texture_density: "<e.g., gritty, slimy, velvet, sharp, dusty>"
+      compositional_logic: "<e.g., claustrophobic/tight, vast/empty, symmetrical/unsettling>"
+    auditory_layer:
+      soundscape_layers: ["ambient drone", "sharp interruptions", "silence/void"]
+      musical_dna: "<instrumentation, tempo, or tonal quality>"
+      foley_emphasis: "<which sounds should be unnaturally loud or tactile?>"
+      silence_usage: "<how silence is used to create tension or emptiness>"
+    tactile_layer:
+      scent_profile: "<the scents that define the setting>"
+      temperature_range: "<the physical sensation of the air/environment>"
+      humidity_level: "<e.g., bone-dry, oppressive moisture, misty>"
+      physical_resistance: "<how the environment physically resists movement>"
+  phase_two_emotional_anchoring:
+    core_vibe:
+      primary_emotion: "<e.g., Dread, Awe, Loneliness>"
+      sub_emotions: []
+      vibe_statement: "<A single sentence describing the 'soul' of the story>"
+    audience_impact:
+      intended_reaction: "<What the audience should feel physically/emotionally>"
+      emotional_trajectory: "<The intended shift from start to finish>"
+      sensory_trigger_mapping: "<Which sensory details trigger which emotions?>"
+
+beats_or_units:
+  - id: "sensory_introduction"
+    name: "The First Impression"
+    order: 1
+    purpose: "To establish the sensory rules and the baseline mood."
+    approximate_position: "Opening"
+    writer_prompt: "Show, don't tell, the sensory palette through a single, lingering image."
+    story_function: "World immersion and tone setting."
+    visual_function: "Establishing lighting, color, and texture."
+    emotional_function: "Initial emotional anchoring."
+    required_decisions:
+      - "What is the first sound the audience hears?"
+      - "What is the first color they see?"
+      - "What is the primary texture of the opening shot?"
+    fields_to_complete:
+      anchor_image: "<write here>"
+      sensory_focus: "<write here>"
+      baseline_vibe: "<write here>"
+    diagnostic_questions:
+      - "Does this image communicate the core emotion without dialogue?"
+      - "Is the sensory information too dense for an opening?"
+    completion_criteria:
+      - "The audience knows exactly what 'kind' of world this is."
+      - "The primary sensory anchor is established."
+    common_failure_modes:
+      - "Too much information (overwhelming the senses)."
+      - "Too little information (lack of immersion)."
+
+  - id: "atmospheric_rupture"
+    name: "The Sensory Shift"
+    order: 2
+    purpose: "To introduce tension by breaking the established sensory pattern."
+    approximate_position: "Inciting Incident"
+    writer_prompt: "Introduce a sound, light, or texture that does not belong in the established palette."
+    story_function: "Triggering the narrative movement."
+    visual_function: "Visual or auditory dissonance."
+    emotional_function: "Transition from stability to unease/wonder."
+    required_decisions:
+      - "What specific sensory rule is being broken?"
+      - "How does the character react to this dissonance?"
+      - "Does the disruption introduce a new color or sound?"
+    fields_to_complete:
+      the_disruption: "<write here>"
+      resulting_feeling: "<write here>"
+      rupture_intensity: "<write here>"
+    diagnostic_questions:
+      - "Is the disruption jarring enough to cause change, and consistent enough to feel part of the world?"
+      - "Does the disruption threaten the established 'vibe'?"
+    completion_criteria:
+      - "The established 'vibe' has been fundamentally altered."
+      - "The disruption creates a clear narrative pivot."
+    common_failure_modes:
+      - "The disruption is too subtle to be noticed."
+      - "The disruption is so extreme it breaks the world's internal logic."
+
+character_design:
+  methodology_role: "Characters are sensory extensions of the environment."
+  characters:
+    - name: "<write here>"
+      sensory_presence: "<How do they sound/smell/look? Do they clash with or complement the world?>"
+      emotional_echo: "<How do they embody the core atmosphere?>"
+      physical_vulnerability: "<How does the environment physically affect them?>"
+      internal_vibe: "<The internal emotional texture of the character>"
+
+world_design:
+  methodology_role: "The world is the primary driver of the narrative."
+  fields:
+    environmental_storytelling: "<How does the decay/growth/structure of the world tell the past?>"
+    sensory_density: "<How much sensory information is packed into each location?>"
+    atmospheric_pressure: "<How does the setting force characters to act or feel?>"
+
+theme_design:
+  methodology_role: "Theme is expressed through recurring sensory motifs."
+  fields:
+    central_sensory_metaphor: "<A recurring image/sound that represents the theme>"
+    thematic_dissonance: "<The tension between the beautiful and the grotesque, or the calm and the chaotic>"
+
+visual_storytelling:
+  methodology_role: "The primary language of the story."
+  image_system:
+    motifs: []
+    recurring_textures: []
+    lighting_progression: "<How does the light change as the story progresses?>"
+  visual_rules:
+    - "<e.g., Never use warm colors in the second act.>"
+    - "<e.g., Always use handheld, shaky camera for the disruption beats.>"
+  final_image: "<The image that lingers after the sensory experience ends>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must have a dominant sensory focus."
+    - "Conflict is often a clash of textures or temperatures."
+    - "Dialogue should be secondary to the soundscape."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    sensory_anchor: "<The primary sight/sound/smell of this scene>"
+    visible_goal: ""
+    conflict_or_pressure: "<The atmospheric pressure applied to the characters>"
+    turn: "<How the mood shifts within the scene>"
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: "<The lingering sensation left behind>"
+  do_rules:
+    - "Use tactile descriptions."
+    - "Focus on the 'weight' of the air."
+  avoid_rules:
+    - "Avoid heavy, explanatory dialogue."
+    - "Avoid sterile, clinical descriptions."
+
+revision_passes:
+  - name: "The Sensory Audit"
+    goal: "Ensure sensory consistency."
+    instructions:
+      - "Read through the framework and highlight every sensory detail."
+      - "Check if any detail contradicts the established 'Atmospheric Anchor'."
+    questions:
+      - "Is there a 'sensory void' where the audience might lose immersion?"
+    success_criteria:
+      - "All sensory details reinforce the core emotion."
+
+  - name: "The Emotional Resonance Pass"
+    goal: "Ensure the plot serves the mood."
+    instructions:
+      - "Identify every plot beat."
+      - "Ask: 'Does this beat exist to move the plot, or to deepen the feeling?'"
+    questions:
+      - "Are we moving too fast for the atmosphere to breathe?"
+    success_criteria:
+      - "The narrative progression feels like an organic expansion of the mood."
+
+  - name: "The Character-Environment Pass"
+    goal: "Verify character integration."
+    instructions:
+      - "Review character profiles against the sensory palette."
+      - "Check for characters that feel 'dropped in' without environmental connection."
+    questions:
+      - "Does the character's physical presence reflect the world's textures?"
+    success_criteria:
+      - "Characters feel like biological or psychological products of their setting."
+
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure visual language is cohesive."
+    instructions:
+      - "Map the lighting progression against the narrative beats."
+      - "Check if visual motifs are recurring and meaningful."
+
+    questions:
+      - "Does the visual language evolve with the narrative tension?"
+    success_criteria:
+      - "The visual arc mirrors the emotional arc."
+
+  - name: "The Theme/Metaphor Pass"
+    goal: "Confirm thematic depth through imagery."
+    instructions:
+      - "Identify all recurring sensory motifs."
+      - "Check if these motifs align with the central theme."
+    questions:
+      - "Is the central sensory metaphor clearly identifiable?"
+    success_criteria:
+      - "The theme is felt through the senses, not just stated in dialogue."
+
+  - name: "The Sensory Consistency Pass"
+    goal: "Prevent sensory overload or confusion."
+    instructions:
+      - "Audit the soundscape and color palette for competing, clashing elements."
+      - "Ensure no single scene contains more than three dominant sensory anchors."
+    questions:
+      - "Are there too many competing textures or sounds?"
+    success_criteria:
+      - "The sensory experience is focused and intentional."
+
+validation_checklist:
+  - "Is the 'Atmospheric Anchor' clearly defined?"
+  - "Does every character have a sensory connection to the world?"
+  - "Is the 'Sensory Shift' a logical consequence of the established palette?"
+  - "Does the final image echo the initial sensory impression?"
+  - "Is there a clear 'sensory void' anywhere in the narrative?"
+  - "Is dialogue secondary to the soundscape and visual texture?"
+  - "Are all textures described in a tactile, physical way?"
+  - "Does the lighting progression follow the narrative arc?"
+  - "Are the soundscape layers clearly defined and purposeful?"
+  - "Is the environmental pressure applied to characters in every scene?"
+  - "Are visual metaphors aligned with the central theme?"
+  - "Is the 'vibe' statement achievable through the chosen palette?"
+
+failure_modes:
+  - failure_mode: "The Empty Vibe"
+    symptom: "The story looks beautiful but lacks any narrative momentum or stakes."
+    likely_cause: "Over-focusing on aesthetics while neglecting the 'Sensory Shift' or 'Narrative Drift'."
+    fix: "Introduce a disruption that forces character action."
+  - failure_mode: "Sensory Overload"
+    symptom: "The audience feels exhausted or confused by too many competing textures/sounds."
+    likely_cause: "Lack of 'Sensory Anchors' or too many conflicting 'Sensory Rules'."
+    fix: "Simplify the palette; choose one or two dominant textures."
+  - failure_mode: "The Generic Aesthetic"
+    symptom: "The story feels like a collection of clichés (e.g., 'standard noir')."
+    likely_cause: "Failing to define unique, specific sensory details (smells, specific lighting temperatures)."
+    fix: "Deepen the 'Sensory Palette' with hyper-specific, unexpected details."
+
+adaptation_notes:
+  feature_film: "Use the palette to define the entire visual language of the film."
+  short_film: "Focus intensely on a single, powerful sensory rupture."
+  tv_episode: "Establish a 'sensory baseline' that can be returned to each week."
+  tv_pilot: "Use the palette to establish the 'rules' of the world's reality."
+  anime: "Emphasize the 'Soundscape' and 'Visual Metaphor' layers."
+  adult_animation: "Use extreme textures and lighting to push the boundaries of the atmosphere."
+  anthology: "Each entry must have a completely unique, self-contained Sensory Palette."
+  game_cinematic: "Focus on the 'Tactile' and 'Environmental Pressure' to bridge the gap to gameplay."
+
+yaml_usage_notes:
+  how_to_use: "Start with the 'Sensory Palette' and 'Atmational Anchor' before even thinking about characters."
+  recommended_population_order:
+    - "Sensory Palette"
+    - "Atmospheric Anchor"
+    - "World Design"
+    - "Character Design"
+    - "Beats (as Sensory Shifts)"
+  minimum_viable_completion: "A completed 'Sensory Palette' and 'Atmospheric Anchor'."
+  signs_framework_is_ready_for_scene_outline: "When you can 'feel' the setting and 'hear' the silence of the world clearly in your mind."

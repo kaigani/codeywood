@@ -1,0 +1,306 @@
+metadata:
+  framework_name: "Page-Target Structural Mapping Template"
+  methodology_name: "Page-Target Structural Mapping"
+  methodology_family: "Structural/Architectural"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "tv_episode"
+    - "anime"
+    - "manga"
+  best_for:
+    - "tightly paced genre narratives"
+    - "ensuring structural integrity"
+    - "preventing middle-act sag"
+    - "managing narrative momentum"
+  not_ideal_for:
+    - "experimental/non-linear narratives"
+    - "stream-of-consciousness prose"
+    - "character studies without plot-driven pivots"
+  target_lengths:
+    - "90-120 page features"
+    - "2_minute episodes"
+    - "45-minute episodes"
+  core_principle: "Structural integrity is achieved by anchoring critical narrative pivots to specific, mathematically calculated page/time targets to ensure optimal pacing and momentum."
+  primary_story_unit: "The Target Beat (A narrative event tied to a specific temporal marker)"
+  primary_success_metric: "Structural Interval Consistency (The distribution of tension/beats across the total duration)"
+
+framework_overview:
+  summary: "A methodology focused on the mathematical distribution of plot points. It treats the screenplay as a temporal map where every major beat must hit a pre-calculated 'target' to maintain genre-appropriate pacing."
+  what_this_framework_helps_create:
+    - "A blueprint of narrative milestones"
+    - "A pacing-controlled outline"
+    - "A structural audit of the story's momentum"
+  what_it_prioritizes:
+    - "Temporal precision"
+    - "Narrative momentum"
+    - "Structural rhythm"
+  what_it_deemphasizes:
+    - "Subplot expansion (unless mapped to a target)"
+    - "Atmospheric drift"
+    - "Character introspection (unless it drives a structural pivot)"
+
+use_when:
+  - "Writing high-stakes action, thriller, or horror where pacing is critical."
+  - "When a story feels 'lost' or 'sagging' in the middle."
+  - "When transitioning from a concept to a concrete, beat-by-beat outline."
+
+avoid_when:
+  - "Writing character-driven dramas where the 'plot' is secondary to internal shifts."
+  - "Working on anthology pieces with no unified temporal structure."
+
+core_principles:
+  - "The Anchor Principle: Every major beat must have a designated target page/minute."
+  - "The Interval Rule: The distance between beats must be calculated to prevent 'structural vacuum' or 'narrative crowding'."
+  - "The Pivot Requirement: A beat is only valid if it changes the direction of the story's momentum."
+
+workflow:
+  - step: 1
+    name: "Establish Total Duration"
+    goal: "Define the boundaries of the map."
+    instructions:
+      - "Determine total target page count or runtime."
+    output: "Total Duration Constant"
+  - step: 2
+    name: "Identify Primary Milestones"
+    goal: "Set the non-negotiable structural anchors."
+    instructions:
+      - "Identify the Inciting Incident, Plot Point 1, Midpoint, Plot Point 2, and Climax."
+    output: "Primary Milestone List"
+  - step: 3
+    name: "Calculate Target Intervals"
+    goal: "Distribute milestones across the timeline."
+    instructions:
+      - "Assign specific page/minute targets to each milestone based on genre standards."
+    output: "Structural Map Template"
+  - step: 4
+    name: "Populate Secondary Beats"
+    goal: "Fill the gaps between anchors."
+    instructions:
+      - "Add supporting beats that bridge the distance between primary milestones."
+    output: "Complete Structural Map"
+  - step: 5
+    name: "The Interval Audit"
+    goal: "Verify pacing."
+    instructions:
+      - "Check the 'page distance' between every beat to ensure no segment is too long or too dense."
+    output: "Validated Structural Map"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write/select media>"
+  genre: "<write/select genre>"
+  tone: "<write here>"
+  target_length: "<e.g., 105 pages / 110 minutes>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  structural_map_type: "Temporal Distribution"
+  map_units:
+    - unit_id: "Act_1_Anchor"
+      target_page_marker: "<e.g., Page 25>"
+      description: "<write here>"
+      tension_baseline: "<Initial tension level>"
+      pivot_type: "<e.g., Inciting Incident / Call to Adventure>"
+      character_status_quo: "<The state of the protagonist before the pivot>"
+      momentum_direction: "<Direction of story movement post-pivot>"
+    - unit_id: "Midpoint_Anchor"
+      target_page_marker: "<e.g., Page 55>"
+      description: "<write here>"
+      tension_peak_requirement: "<Required intensity level>"
+      reversal_type: "<e.g., Shift from Reactive to Proactive>"
+      stakes_escalation_level: "<Magnitude of increased danger/consequence>"
+      protagonist_shift_type: "<Internal or external change required>"
+    - unit_id: "Act_2_End_Anchor"
+      target_page_marker: "<e.g., Page 85>"
+      description: "<write here>"
+      tension_threshold: "<Minimum tension required to sustain climax>"
+      climax_setup_requirement: "<What must be established here for the finale?>"
+      consequence_weight: "<The weight of the final decision>"
+      momentum_acceleration_rate: "<Rate of pacing increase toward the end>"
+
+beats_or_units:
+  - id: "BEAT_001"
+    name: "The Inciting Incident"
+    order: 1
+    purpose: "To disrupt the protagonist's status quo and initiate the narrative journey."
+    approximate_position: "Page 10-15"
+    target_page_marker: "Page 12"
+    writer_prompt: "What external event forces the protagonist to acknowledge a problem they can no longer ignore?"
+    story_function: "Disruption"
+    visual_function: "A sudden, jarring change in the established environment or character routine."
+    emotional_function: "Shock, curiosity, or sudden dread."
+    required_decisions:
+      - "Does the protagonist attempt to return to the status quo or accept the disruption?"
+      - "Is the consequence of this event immediate or delayed?"
+    fields_to_complete:
+      event_description: "<write here>"
+      consequence_of_beat: "<How does this beat change the trajectory toward the next target?>"
+    diagnostic_questions:
+      - "Is this beat occurring too late to allow for the subsequent sequence?"
+      - "Does the 'page distance' from the previous beat exceed the genre's pacing threshold?"
+    completion_criteria:
+      - "The event is tied to a specific page number."
+      - "The event clearly alters the story's momentum."
+    common_failure_modes:
+      - "The 'Floating Beat': A beat that has no specific target page, causing structural drift."
+      - "The 'Cluttered Interval': Too many beats assigned to a single page range, causing rushed pacing."
+
+character_design:
+  methodology_role: "Characters are the engines of momentum between targets."
+  characters:
+    - name: "<write here>"
+      momentum_role: "<How does this character drive the story toward the next target?>"
+      internal_pivot: "<What internal change is required to hit the next structural milestone?>"
+      agency_level: "<High | Medium | Low (relative to the beat targets)>"
+
+world_design:
+  methodology_role: "The world provides the constraints that force the timing of beats."
+  fields:
+    environmental_pressure: "<What external force dictates the urgency of the timeline?>"
+    rule_of_consequence: "<How does the world react when a beat target is missed or reached?>"
+
+theme_design:
+  method_role: "Theme is the 'why' behind the 'when'."
+  fields:
+    thematic_argument_progression: "<How does the argument evolve from the first target to the final target?>"
+    thematic_climax_target: "<The page/minute where the thematic resolution is finalized?>"
+
+visual_storytelling:
+  methodology_role: "Visual anchors that signal the arrival of a structural milestone."
+  image_system:
+    milestone_visual_anchors:
+      - target_page: "<write here>"
+        visual_signal: "<What image tells the audience we have entered a new structural phase?>"
+  visual_rules:
+    - "Use high-contrast composition for 'Reversal' beats."
+    - "Use expanding scale/scope for 'Midpoint' beats."
+  recurring_motifs: []
+  final_image: "<The image that closes the map and resolves the tension of the final target.>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must contribute to the movement toward the next Target Beat."
+    - "Scenes that do not advance the 'Page-Target' must be pruned."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: "<Which target beat does this scene serve?>"
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: "<The moment the scene moves the needle toward the next target>"
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: "<The state of the story as it moves toward the next page target>"
+  do_rules:
+    - "Ensure every scene has a clear 'temporal' impact."
+  avoid_rules:
+    - "Avoid 'stalling' scenes that exist solely for atmosphere without affecting the target map."
+
+revision_passes:
+  - name: "The Interval Audit"
+    goal: "Check for pacing drift."
+    instructions:
+      - "Calculate the page distance between every beat in the map."
+    questions:
+      - "Are there any gaps larger than [X] pages?"
+      - "Are there any clusters of beats that feel too dense?"
+    success_criteria:
+      - "All intervals fall within the established genre-standard range."
+  - name: "The Character Hand-off Pass"
+    goal: "Ensure character agency drives the structural pivots."
+    instructions:
+      - "Review each primary milestone."
+      - "Verify that the character's actions (not just external events) trigger the next target."
+    questions:
+      - "Is the protagonist reacting to the world, or driving the momentum?"
+      - "Does the character's internal pivot align with the structural pivot?"
+    success_criteria:
+      - "Every major structural pivot is linked to a character decision or action."
+  - name: "The Theme Resonance Pass"
+    goal: "Align thematic argument with structural progression."
+    instructions:
+      - "Map the thematic argument to the primary milestones."
+    questions:
+      - "Does the thematic tension peak at the same time as the narrative tension?"
+      - "Is the resolution of the theme tied to the final target page?"
+    success_criteria:
+      - "Thematic climax and narrative climax occur at the same temporal marker."
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure visual anchors signal the arrival of a structural milestone."
+    instructions:
+      - "Audit the visual_storytelling section against the beat list."
+    questions:
+      - "Are the visual signals distinct enough to be noticed by the audience?"
+      - "Do the visual anchors match the emotional function of the beats?"
+    success_criteria:
+      - "Every primary milestone has a corresponding, identifiable visual signal."
+  - name: "The Temporal Interval Pass"
+    goal: "Verify mathematical distribution of beats."
+    instructions:
+      - "Check the mathematical delta between all target_page_markers."
+    questions:
+      - "Does any interval exceed the maximum allowed 'structural vacuum'?"
+      - "Is the density of beats consistent with the genre's pacing requirements?"
+    success_criteria:
+      - "No interval deviates from the genre-standard distribution by more than 10%."
+
+validation_checklist:
+  - "All primary milestones have a fixed target page/minute."
+  - "The distance between the Inciting Incident and the Midpoint is mathematically sound."
+  - "No 'floating beats' exist without a page assignment."
+  - "The final beat aligns with the total target duration."
+  - "Every beat has a clearly defined visual anchor."
+  - "The tension level increases or stabilizes according to the genre standard."
+  - "Character agency is present in every primary pivot."
+  - "No two primary milestones overlap in their temporal targets."
+  - "The 'page distance' between secondary beats does not exceed the 'structural vacuum' threshold."
+  - "The thematic argument reaches its peak at the climax target."
+  - "Every scene in the outline maps to a specific beat or unit."
+  - "The 'reversal' beats contain a clear change in narrative direction."
+  - "All secondary beats have a defined 'consequence_of_beat' field."
+
+failure_modes:
+  - failure_mode: "Structural Drift"
+    symptom: "The story feels like it is wandering; the climax happens much later than planned."
+    likely_cause: "Failure to enforce page targets for secondary beats."
+    fix: "Re-anchor all beats to the master timeline."
+  - failure_mode: "The Sagging Middle"
+    symptom: "A massive gap of pages with no significant structural pivots."
+    likely_cause: "Lack of secondary target beats in the second act."
+    fix: "Inject 'Mid-Act' complications at specific page markers."
+  - failure_mode: "Narrative Compression"
+    symptom: "The story feels rushed; events happen too quickly to breathe."
+    likely_cause: "Too many target beats assigned to a narrow page range."
+    fix: "Merge beats or expand the interval between them."
+
+adaptation_notes:
+  feature_film: "Focus on the 3-act/8-sequence distribution."
+  short_film: "Focus on extreme interval density; every page is a pivot."
+  tv_episode: "Focus on the 'Act Break' targets to maintain commercial/structural rhythm."
+  tv_pilot: "Focus on establishing the 'Status Quo' target and the 'Inciting Incident' target to set up the series engine."
+  anime: "Focus on 'Episode Milestone' targets to ensure cliffhanger-ready pacing."
+  adult_animation: "Focus on high-impact, rapid-fire beat distribution to match comedic or intense pacing."
+  anthology: "Focus on the 'Mini-Map' for each segment."
+  game_cinematic: "Focus on 'Player Agency' targets vs. 'Narrative Beat' targets."
+
+yaml_usage_notes:
+  how_to_use: "Start with the 'Total Duration' and 'Primary Milestones' before adding any character or plot detail."
+  recommended_population_order:
+    - "1. Metadata"
+    - "2. Total Duration"
+    - "3. Primary Milestones (with targets)"
+    - "4. Secondary Beats (with targets)"
+    - "5. Character/Theme/World (as they relate to the targets)"
+  minimum_viable_completion: "A completed 'methodology_structure' with page targets and 'beats_or_units' with event descriptions."
+  signs_framework_is_ready_for_scene_outline: "When the 'Interval Audit' pass returns zero 'Structural Vacuum' or 'Narrative Crowding' errors."

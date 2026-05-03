@@ -1,0 +1,354 @@
+metadata:
+  framework_name: "Promise of the Premise Template"
+  methodology_name: "Promise of the Premise Method"
+  methodology_family: "Contractual/Expectation-Driven Storytelling"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "tv_episode"
+    - "anime"
+    - "game_cinematic"
+    - "adult_animation"
+  best_for:
+    - "high-concept plots"
+    - "genre-driven narratives"
+    - "marketing-heavy stories"
+    - "stories with a strong 'hook'"
+  not_ideal_for:
+    - "purely character-driven vignettes"
+    - "experimental non-narrative works"
+    - "abstract surrealism"
+  target_lengths:
+    - "short-form to feature-length"
+  core_principle: "The narrative must establish a 'contract' with the audience through the premise and deliver a meaningful fulfillment or intentional subversion of that contract by the climax."
+  primary_story_unite: "The Promise-Payoff Loop"
+  primary_success_metric: "The degree to which the resolution honors or meaningfully recontextualizes the initial setup."
+
+framework_overview:
+  summary: "The Promise of the Premise Method focuses on the 'Audience Contract.' It posits that the moment a story presents its central hook (the premise), it makes a promise to the viewer about what kind of experience they will have. The entire structure is designed to escalate the stakes of that promise and ultimately deliver a payoff that satisfies the established logic."
+  what_this_framework_helps_create:
+    - "Cohesive, high-concept narratives"
+    - "Satisfying, earned endings"
+    - "Strongly paced, causal plot progressions"
+  what_it_prioritizes:
+    - "Causality"
+    - "Expectation management"
+    - "Thematic payoff"
+  what_it_deemphasizes:
+    - "Randomly occurring external events"
+    - "Character arcs that have no impact on the central premise"
+
+use_when:
+  - "When you have a 'killer concept' or 'high concept' idea."
+  - "When writing in established genres (Horror, Heist, Romance, etc.)."
+  - "When the story's strength lies in its 'What If?' scenario."
+
+avoid_when:
+  - "When the story is an observational character study with no clear conflict."
+  - "When the plot is meant to be purely unpredictable and disconnected from the setup."
+
+core_principles:
+  - "The Setup is the Contract: What you show in the much first 10% dictates the audience's expectations."
+  - "The Escalation is the Test: Every beat must increase the pressure on the established promise."
+  - "The Payoff is the Debt: The climax must 'pay' the audience for their investment in the premise."
+  - "Subversion requires Setup: You can only subvert a promise if the audience truly believed it was being made."
+
+workflow:
+  - step: 1
+    name: "Defining the Promise"
+    goal: "Identify the core 'What If' and the genre expectation."
+    instructions:
+      - "Isolate the central hook of your idea."
+      - "Determine what the audience expects to see happen because of this hook."
+    output: "The Premise Statement"
+  - step: 2
+    name: "Establishing the Setup"
+    goal: "Create the visual and narrative evidence for the promise."
+    instructions:
+      - "Identify the 'rules' of the premise."
+      - "Introduce the characters in a way that makes the promise unavoidable."
+    output: "The Setup Beat Sheet"
+  - step: 3
+    name: "Mapping the Escalation"
+    goal: "Create a chain of causality that tests the premise."
+    instructions:
+      - "Ensure every complication arises directly from the mechanics of the promise."
+    output: "The Escalation Sequence"
+  - step: 4
+    name: "Designing the Payoff"
+    goal: "Determine the resolution of the promise."
+    instructions:
+      - "Decide if the promise is fulfilled, broken, or subverted."
+    output: "The Climax and Resolution Plan"
+
+story_inputs:
+  premise: "<The central 'What If' or hook>"
+  the_promise: "<What the audience expects to happen (e.g., 'A detective will catch the killer using only his sense of smell')>"
+  the_payoff_type: "<fulfillment | subversion | tragic_failure | expansion>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  contract_phase:
+    description: "The Setup & The Inciting Incident"
+    focus: "Establishing the rules and the initial hook."
+    logic_flow: "Rule Introduction -> Visual Proof -> Character Vulnerability"
+    decision_points:
+      - "Is the rule visually demonstrable?"
+      - "Is the cost of the rule established?"
+  testing_phase:
+    description: "The Complications & Midpoint"
+    focus: "Increasing the pressure on the established promise."
+    logic_flow: "Minor Complication -> Rule Expansion -> Midpoint Shift"
+    decision_points:
+      - "Does this complication arise from the premise?"
+      - "Does the scope of the promise expand here?"
+  resolution_phase:
+    description: "The Crisis, Climax, & Payoff"
+    focus: "Resolving the tension and settling the audience debt."
+    logic_flow: "Final Test -> Climax -> Resolution/Subversion"
+    decision_points:
+      - "Is the payoff a fulfillment or a subversion?"
+      - "Does the resolution honor the initial setup?"
+
+beats_or_units:
+  - id: "setup_the_contract"
+    name: "The Premise Establishment"
+    order: 1
+    purpose: "To present the 'rules' and the 'hook' to the audience."
+    approximate_position: "0% - 10%"
+    writer_prompt: "How do you visually demonstrate the central mechanic or situation that defines this story?"
+    story_function: "Establishes the status quo and the potential for conflict."
+    visual_function: "Introduce the 'impossible' or 'unique' element of the world."
+    emotional_function: "Curiosity, intrigue, or dread."
+    required_decisions:
+      - "What is the 'Rule' of this world?"
+      - "What is the 'Cost' of this rule?"
+    fields_to_complete:
+      visual_hook: "<The first image that signals the promise>"
+      the_rule: "<The logic the audience must accept>"
+    diagnostic_questions:
+      - "Is the promise clear enough to be summarized in one sentence?"
+      - "Have you shown, rather than told, the mechanics of the premise?"
+    completion_criteria:
+      - "The audience knows exactly what kind of story they are in."
+    common_failure_modes:
+      - "The 'Empty Promise': Introducing a hook that never actually affects the plot."
+      - "The 'Delayed Promise': Taking too long to get to the central concept."
+
+  - id: "inciting_incident_activation"
+    name: "The Promise Becomes Active"
+    order: 2
+    purpose: "To force the protagonist into the contract."
+    approximate_position: "10% - 15%"
+    writer_prompt: "What event makes it impossible for the protagonist to ignore the premise?"
+    story_function: "Triggers the movement from status quo to pursuit."
+    visual_function: "A disruption of the established visual order."
+    emotional_function: "Urgency, fear, or excitement."
+    required_decisions:
+      - "How is the protagonist's life irrevocably changed by the premise?"
+    fields_to_complete:
+      the_trigger: "<The event that starts the engine>"
+      the_point_of_no_return: "<Why they can't walk away>"
+    diagnostic_questions:
+      - "Does this event directly engage with the 'Rule' established in the setup?"
+    completion_criteria:
+      - "The protagonist is now 'on the hook'."
+    common_failure_modes:
+      - "The 'Passive Protagonist': The incident happens, but the character doesn't commit to the promise."
+
+  - id: "escalation_testing"
+    name: "The Testing of the Promise"
+    order: 3
+    purpose: "To increase the stakes and prove the promise is difficult to keep."
+    approximate_position: "15% - 75%"
+    writer_prompt: "How can you use the rules of your premise to create increasingly difficult obstacles?"
+    story_function: "Progressive complication and expansion of stakes."
+    visual_function: "Increasingly chaotic or high-stakes environments."
+    emotional_function: "Tension, frustration, and mounting pressure."
+    required_decisions:
+      - "What is the 'Price' of continuing the pursuit?"
+    fields_to_complete:
+      complication_1: "<A minor test of the promise>"
+      complication_2: "<A major test of the promise>"
+      midpoint_expansion: "<How the scope of the promise grows>"
+    diagnostic_questions:
+      - "Is each complication a direct consequence of the premise's rules?"
+      - "Are we merely repeating beats, or is the 'contract' being pushed to its limit?"
+    completion_criteria:
+      - "The protagonist's original method of handling the premise is no longer sufficient."
+    common_failure_modes:
+      - "The 'Random Obstacle': A problem arises that has nothing to do with the central premise."
+
+  - id: "the_payoff"
+    name: "The Fulfillment or Subversion"
+    order: 4
+    purpose: "To resolve the tension created by the promise."
+    approximate_position: "85% - 100%"
+    writer_prompt: "Does the protagonist succeed by using the premise, or do they fail because the premise was a lie?"
+    story_function: "Resolution of the central conflict and the 'debt' to the audience."
+    visual_function: "The ultimate visual expression of the promise (e.g., the final showdown, the final embrace)."
+    emotional_function: "Catharsis, shock, or tragedy."
+    required_decisions:
+      - "Will you fulfill the promise (Satisfaction) or subvert it (Twist)?"
+    fields_to_complete:
+      the_final_test: "<The moment the promise is tested one last time>"
+      the_payoff_outcome: "<What actually happens to the promise?>"
+      the_afterimage: "<The final image that lingers after the contract is settled>"
+    diagnostic_questions:
+      - "Does this ending feel 'earned' based on the setup?"
+      - "If you subverted the promise, was the setup strong enough to make the subversion meaningful?"
+    completion_criteria:
+      - "The tension established in the setup is fully resolved."
+    common_failure_modes:
+      - "The 'Deus Ex Machina': A resolution that ignores the rules of the premise."
+      - "The 'Unearned Twist': A subversion that feels like a cheat because the setup didn't support it."
+
+character_design:
+  methodology_role: "Characters must be 'Agents of the Promise'—their traits must either facilitate or hinder the fulfillment of the premise."
+  characters:
+    - name: "<Protagonist>"
+      role_in_promise: "<How do they embody the premise? (e.g., The skeptic, the expert, the victim)>"
+      internal_conflict: "<How does their personal need clash with the premise's demands?>"
+      visible_competence: "<What skill do they have that is required by the promise?>"
+    - name: "<Antagonist/Antagonistic Force>"
+      role_in_promise: "<How do they represent the failure or the extreme version of the promise?>"
+      pressure_point: "<How do they specifically target the protagonist's ability to fulfill the promise?>"
+
+world_design:
+  methodology_role: "The world must be the 'Arena of the Promise'."
+  fields:
+    the_mechanic: "<The fundamental law or phenomenon that drives the premise>"
+    the_boundary: "<The limits of what the premise can or cannot do>"
+    the_consequence: "<What happens to the world if the promise is broken?>"
+
+theme_design:
+  methodology_role: "The theme is the 'Moral of the Promise'."
+  fields:
+    central_argument: "<The debate between the 'True' and 'False' way to handle the premise>"
+    thematic_payoff: "<How the resolution of the promise proves the theme>"
+
+visual_storytelling:
+  methodology_role: "Visuals must reinforce the 'Contract' and the 'Payoff'."
+  image_system:
+    the_signature_motif: "<A recurring visual element that signals the promise is active>"
+    the_setup_image: "<The image that defines the status quo>"
+    the_payoff_image: "<The image that resolves the setup_image>"
+  visual_rules:
+    - "<Rule 1: e.g., Use color to signal when the premise's magic/mechanic is working.>"
+
+revision_passes:
+  - name: "The Contract Audit"
+    goal: "Ensure no promises are made that aren't kept."
+    instructions:
+      - "List every 'hook' introduced in the first 15%."
+      - "Trace each hook to a specific beat in the climax."
+    questions:
+      - "Did I introduce a character/element that disappeared without purpose?"
+      - "Is there a 'dangling thread' from the setup?"
+    success_criteria:
+      - "Every setup element has a corresponding payoff or meaningful exit."
+
+  - name: "The Causality Check"
+    goal: "Remove random external plot points."
+    instructions:
+      - "Examine every major plot beat."
+      - "Ask: 'Could this have happened without the premise?'"
+    questions:
+      - "If I removed the central hook, would the story still function? (If yes, the premise is too weak.)"
+    success_criteria:
+      - "Every beat is a direct consequence of the premise or the character's reaction to it."
+
+  - name: "The Theme Pass"
+    goal: "Ensure the payoff delivers the intended moral argument."
+    instructions:
+      - "Identify the central argument in the theme_design section."
+      - "Verify the climax explicitly demonstrates the outcome of this argument."
+    questions:
+      - "Does the resolution of the promise prove the theme?"
+      - "Is the theme lost in the mechanics of the plot?"
+    success_criteria:
+      - "The resolution provides a clear thematic conclusion."
+
+  - name: "The Visual Storytelling Pass"
+    goal: "Align visual motifs with the narrative contract."
+    instructions:
+      - "Review the image_system for consistency."
+      - "Check if visual rules are applied to all major beats."
+    questions:
+      - "Does the payoff_image visually resolve the setup_image?"
+      - "Are the visual cues for the premise's mechanics clear?"
+    success_criteria:
+      - "The visual language reinforces the premise without dialogue."
+
+  - name: "The Promise-Payoff Integrity Pass"
+    goal: "Verify the structural integrity of the 'Audience Contract'."
+    instructions:
+      - "Compare the initial 'the_promise' input to the 'the_payoff_outcome' field."
+      - "Check for any 'unearned' subversions."
+    questions:
+      - "Is the payoff type (fulfillment/subversion) consistent with the setup?"
+      - "Did the escalation actually test the specific rule established in the setup?"
+    success_criteria:
+      - "The audience's expectations are met, exceeded, or meaningfully subverted."
+
+validation_checklist:
+  - "The premise is clearly identifiable within the first 10%."
+  - "The 'Rules' of the story are established visually and logically."
+  - "The protagonist's primary struggle is inextricably linked to the premise."
+  - "The climax provides a direct resolution to the tension established by the hook."
+  - "The ending (fulfillment or subversion) is supported by the established setup."
+  - "Every complication in the escalation phase is a direct consequence of the premise's rules."
+  - "The 'Cost' of the premise's rules is clearly demonstrated."
+  - "The visual motif signals the activation of the premise's mechanics."
+  - "The antagonist's pressure point targets the protagonist's ability to fulfill the promise."
+  - "The thematic argument is resolved through the outcome of the promise."
+  - "No 'Empty Promises' (hooks without mechanical impact) exist in the setup."
+  - "No 'Random Obstacles' (events unrelated to the premise) exist in the escalation."
+  - "The 'Point of No Return' is clearly established in the inciting incident."
+
+failure_modes:
+  - failure_mode: "The Empty Promise"
+    symptom: "The audience feels 'cheated' or 'bored' because the hook never does anything."
+    likely_cause: "The setup was all 'flavor' and no 'mechanic'."
+    fix: "Ensure the hook creates active, difficult obstacles for the character."
+  - failure_mode: "The Random Twist"
+    symptom: "The ending is shocking but feels unearned or disconnected."
+    likely_cause: "Subverting the promise without providing the necessary 'false' setup."
+    fix: "Plant the seeds of the subversion within the 'Rules' of the world early on."
+  - failure_mode: "The Passive Protagonist"
+    symptom: "The story moves forward, but the character seems to be a passenger to the premise."
+    likely_cause: "The character's agency is ignored in favor of the premise's mechanics."
+    fix: "Ensure the character's decisions are the primary drivers of the escalation."
+
+adaptation_notes:
+  feature_film: "Focus on the 'Big Payoff'—the climax must be an epic resolution of the premise."
+  short_film: "The promise must be established almost immediately (within seconds) due to lack of time."
+  tv_episode: "The promise is often a 'Problem of the Week' that is resolved by the end of the hour."
+  tv_pilot: "The promise is the 'Series Promise'—what the show will be about for multiple seasons."
+  anime: "The promise often involves a 'Power System' or 'World Rule' that must be strictly adhered to."
+  adult_animation: "The promise can leverage more extreme subversions or visceral visual payoffs."
+  anthology: "Each segment must contain a self-contained, complete Promise-Payoff loop."
+  game_cinematic: "The promise must align with the player's interactive agency and mechanical expectations."
+
+yaml_usage_notes:
+  how_to_use: "Start with 'story_inputs'. Once the premise and promise are defined, move to 'beats_or_units' to build the structure."
+  recommended_population_order:
+    - "story_inputs (Premise/Promise)"
+    - "methodology_structure (The Plan)"
+    - "beats_or_units (The Skeleton)"
+    - "character_design (The Agents)"
+    - "revision_passes (The Refinement)"
+  minimum_viable_completion: "A completed 'story_inputs' and 'beats_or_units' (Setup, Escalation, Payoff) section."
+  signs_framework_is_ready_for_scene_outline: "When every beat in 'beats_or_units' can be traced back to a 'Rule' or 'Requirement' in the 'story_inputs'."

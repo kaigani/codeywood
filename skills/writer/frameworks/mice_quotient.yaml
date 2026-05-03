@@ -1,0 +1,348 @@
+metadata:
+  framework_name: "MICE Quotient Template"
+  methodology_name: "MICE Quotient"
+  methodology_family: "Narrative Engine Identification"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media: ["feature film", "short film", "TV episode", "TV pilot", "anime", "manga", "web series", "game cinematic"]
+  best_for: ["identifying plot momentum", "establishing stakes", "defining narrative drive", "preventing plot drift"]
+  not_ideal_for: ["character studies without external conflict", "purely atmospheric vignettes"]
+  target_undetermined: ""
+  core_principle: "A story's momentum is driven by one of four specific types of conflict: Mistake, Inquiry, Crisis, or Exception."
+  primary_story_unit: "The Narrative Engine (The Driving Force)"
+  primary_success_metric: "The consistency of the plot's momentum relative to the chosen MICE type."
+
+framework_overview:
+  summary: "The MICE Quotient is a method for identifying the fundamental 'engine' that drives a story's plot. By choosing one of the four types, a writer can ensure that every beat, character choice, and revelation serves to advance the specific type of tension established at the start."
+  what_this_framework_helps_create:
+    - "A clear identification of the story's primary tension."
+    - "A roadmap for escalating stakes based on the chosen engine."
+    - "A way to prevent 'middle-act sag' by checking if beats align with the MICE type."
+  what_it_prioritizes:
+    - "Narrative momentum"
+    - "Causal progression"
+    - "Thematic consistency"
+  what_it_deemphasizes:
+    - "Character backstory (unless it feeds the engine)"
+    - "Worldbuilding (unless it creates the engine's friction)"
+
+use_when:
+  - "The plot feels aimless or lacks a clear 'point'."
+  - "The stakes feel disconnected from the characters' actions."
+  - "You have a great character but don't know what the story is actually 'about' in terms of movement."
+
+avoid_when:
+  - "Writing experimental, non-linear, or purely aesthetic works where causality is intentionally absent."
+
+core_principles:
+  - "Every story is driven by a specific type of tension (M, I, C, or E)."
+  - "The engine must be identified early to maintain structural integrity."
+  - "The resolution must directly address the specific type of tension introduced (e.g., an Inquiry must end in revelation, not just survival)."
+
+workflow:
+  - step: 1
+    name: "Premise Definition"
+    goal: "Establish the raw materials."
+    instructions: ["Define the character, setting, and basic conflict."]
+    output: "Initial Story Input"
+  - step: 2
+    name: "Engine Identification"
+    goal: "Select the MICE type that best fits the premise."
+    instructions: ["Analyze if the story is about fixing an error, solving a mystery, surviving a threat, or managing an anomaly."]
+    output: "MICE Type Assignment"
+  - step: 3
+    name: "Engine Mapping"
+    goal: "Populate the specific requirements of the chosen MICE type."
+    instructions: ["Use the methodology_structure section to define the escalation and resolution of the chosen engine."]
+    output: "Structured Plot Framework"
+  - step: 4
+    name: "Validation & Stress Test"
+    goal: "Ensure no 'engine drift' occurs."
+    instructions: ["Check all planned beats against the chosen MICE type."]
+    output: "Finalized Story Framework"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_contraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  engine_selection:
+    type: "<Select one: Mistake | Inquiry | Crisis | Exception>"
+    description: "<Briefly describe how this type functions in your specific story>"
+    decision_logic:
+      primary_driver: "<Identify the core driver: Error, Question, Threat, or Anomaly>"
+      tension_source: "<Internal vs External>"
+      resolution_requirement: "<What must happen to close the loop?>"
+  
+  engines:
+    mistake_engine:
+      description: "The character does something wrong and must fix the consequences."
+      components:
+        the_error: "<What specific action or omission caused the problem?>"
+        the_consequence: "<What is the immediate, visible fallout of the error?>"
+        the_escalation: "<How does the attempt to fix the error actually make things worse?>"
+        the_cleanup: "<What is the final, irreversible resolution of the error?>"
+      decision_forcing_fields:
+        causality_check: "<Is the error directly linked to character agency?>"
+        consequence_weight: "<Is the fallout significant enough to drive the plot?>"
+        repair_difficulty: "<Does the fix require increasing sacrifice?>"
+      diagnostic_questions:
+        - "Is the character's error preventable, or was it a tragic inevitability?"
+        - "Does the 'fix' create a new, larger mistake?"
+      failure_modes:
+        - "The error is too small to matter."
+        - "The character fixes the error too easily (no tension)."
+        - "The error is actually just a 'Crisis' in disguise."
+
+    inquiry_engine:
+      description: "The character seeks information or an answer to a mystery."
+      components:
+        the_question: "<What is the central mystery or unknown? (The 'Whodunnable' or 'What is it?')"
+        the_clues: ["<List potential breadcrumbs or waypoints>"]
+        the_false_lead: "<What information leads the character (and audience) astray?>"
+        the_revelation: "<What is the truth that changes everything?>"
+      decision_forcing_fields:
+        information_asymmetry: "<What does the character know vs what the audience knows?>"
+        clue_validity: "<Are the clues logically connected to the final revelation?>"
+        revelation_impact: "<Does the truth fundamentally alter the character's world?>"
+      diagnostic_questions:
+        - "Is the answer something the character could have known from the start?"
+        - "Does the discovery of the truth create a new conflict?"
+      failure_modes:
+        - "The mystery is solved too quickly."
+        - "The answer is a 'Deus Ex Machina' that lacks evidence."
+        - "The investigation lacks personal stakes for the character."
+
+    crisis_engine:
+      description: "The character is under extreme pressure and must survive/overcome a threat."
+      components:
+        the_threat: "<What is the external force or catastrophe pressing upon the character?>"
+        the_pressure_points: ["<List the moments where the threat becomes unavoidable>"]
+        the_survival_mechanic: "<What is the character's primary way of resisting or enduring?>"
+        the_climax_confrontation: "<The moment where the threat must be faced head-on?>"
+      decision_forcing_fields:
+        threat_inevitability: "<How unavoidable is the pressure on the character?>"
+        agency_maintenance: "<Does the character act or merely react?>"
+        resource_depletion: "<How does the threat strip away the character's options?>"
+      diagnostic_questions:
+        - "Is the threat a passive force or an active antagonist?"
+        - "Are the stakes high enough to justify the character's extreme actions?"
+      failure_modes:
+        - "The threat is overwhelming with no way to fight back (lack of agency)."
+        - "The threat is resolved by luck rather than character action."
+        - "The 'Crisis' is just a series of disconnected action scenes."
+
+    exception_engine:
+      description: "The character is an anomaly, an outlier, or 'special' and must navigate their difference."
+      components:
+        the_anomaly: "<What makes the character/element different from the norm?>"
+        the_norm_friction: "<How does the standard world/society react to this difference?>"
+        the_integration_or_rejection: "<Does the character join the world or find their own path?>"
+        the_status_quo_shift: "<How is the world or the character permanently changed by this existence?>"
+      decision_forcing_fields:
+        anomaly_definition: "<Is the difference biological, social, or magical?>"
+        friction_intensity: "<How much does the norm resist the exception?>"
+        consequence_of_existence: "<What is the cost of being different?>"
+      diagnostic_questions:
+        - "Is the 'specialness' of the/character a burden or a gift?"
+        - "Does the story explore the cost of being an exception?"
+      failure_modes:
+        - "The character is 'special' only because the plot requires it (Mary Sue/Gary Stu)."
+        - "The friction with the norm is too low to create drama."
+        - "The character's difference has no impact on the plot."
+
+beats_or_units:
+  - id: "unit_01"
+    name: "The Catalyst"
+    order: 1
+    purpose: "To trigger the engine and establish the initial state of the M/I/C/E type."
+    approximate_position: "0% - 15%"
+    writer_prompt: "What event forces the character to confront the error, question, threat, or anomaly?"
+    story_function: "Establishes the engine and the primary conflict."
+    visual_function: "The first disruption of the established visual status quo."
+    emotional_function: "Shock, curiosity, fear, or realization."
+    required_decisions: ["Type of engine", "Immediate consequence", "Character's first reaction"]
+    fields_to_complete:
+      trigger_event: "<string>"
+      initial_impact: "<string>"
+    diagnostic_questions: ["Is the engine clearly visible here?", "Is the stakes-setting immediate?"]
+    completion_criteria: ["Engine is identified", "Character is engaged"]
+    common_failure_modes: ["The catalyst is too subtle", "The catalyst happens too late"]
+
+  - id: "unit_02"
+    name: "The Escalation"
+    order: 2
+    purpose: "To increase the pressure and complexity of the engine's requirements."
+    approximate_position: "15% - 50%"
+    writer_prompt: "How does the character's attempt to handle the catalyst make the situation more complex or dangerous?"
+    story_function: "Builds tension and expands the scope of the conflict."
+    visual_function: "Increasingly chaotic or high-contrast imagery."
+    emotional_function: "Anxiety, determination, or mounting dread."
+    required_decisions: ["New complication", "Increased stakes", "Resource loss"]
+    fields_to_complete:
+      complication_detail: "<string>"
+      escalation_magnitude: "<string>"
+    diagnostic_questions: ["Is the tension rising?", "Are the stakes growing?"]
+    completion_criteria: ["Complexity has increased", "The character is more deeply committed"]
+    common_failure_modes: ["Repetitive beats", "Lack of meaningful change"]
+
+  - id: "unit_03"
+    name: "The Climax"
+    order: 3
+    purpose: "The ultimate confrontation with the engine's driver."
+    approximate_position: "50% - 90%"
+    writer_prompt: "What is the moment where the character can no longer avoid the error, question, threat, or anomaly?"
+    story_function: "The peak of the engine's tension and the moment of truth."
+    visual_function: "The most intense, visually significant sequence of the story."
+    emotional_function: "Catharsis, terror, or profound revelation."
+    required_decisions: ["Final choice", "The cost of victory/defeat", "The resolution of the engine"]
+    fields_to_complete:
+      climax_action: "<string>"
+      the_turning_point: "<string>"
+    diagnostic_questions: ["Is this the highest point of tension?", "Does it resolve the engine?"]
+    completion_criteria: ["The engine is resolved", "The tension reaches its peak"]
+    common_failure_modes: ["Anti-climactic resolution", "Resolution feels unearned"]
+
+  - id: "unit_04"
+    name: "The Resolution"
+    order: 4
+    purpose: "To show the new status quo resulting from the engine's resolution."
+    approximate_position: "90% - 100%"
+    writer_prompt: "How has the world or character been permanently altered by the resolution of the engine?"
+    story_function: "Provides closure and thematic resonance."
+    visual_function: "A return to a new, altered visual stability."
+    emotional_function: "Relief, sadness, or acceptance."
+    required_decisions: ["New status quo", "Thematic takeaway"]
+    fields_to_complete:
+      new_reality: "<string>"
+      thematic_closure: "<string>"
+    diagnostic_questions: ["Is the change permanent?", "Does it reflect the theme?"]
+    completion_criteria: ["The engine is closed", "The audience feels closure"]
+    common_failure_modes: ["Abrupt ending", "Lack of thematic connection"]
+
+character_design:
+  methodology_role: "Characters must be designed as the 'Agent' of the chosen MICE type."
+  characters:
+    - name: "<write here>"
+      m_i_c_e_alignment: "<How does this character embody the chosen engine?>"
+      primary_motivation: "<What drives them toward the error, the question, the survival, or the anomaly?>"
+      vulnerability: "<What makes them susceptible to the engine's pressure?>"
+      agency: "<How do their specific choices drive the engine forward?>"
+
+world_design:
+  methodology_role: "The world must provide the 'Friction' for the chosen engine."
+  fields:
+    engine_environment: "<How does the setting facilitate the M/I/C/E type? (e.g., a noir setting for Inquiry, a war zone for Crisis)>"
+    rules_of_the_world: ["<List rules that make the M/I/C/E type difficult or possible>"]
+    societal_pressure: "<How does the world react to the engine's progression?>"
+
+theme_design:
+  methodology_role: "The theme is the 'Lesson' or 'Meaning' derived from the engine's resolution."
+  fields:
+    central_question: "<The question the engine's resolution answers>"
+    thematic_argument: "<The stance the story takes once the M/I/C/E engine reaches its end>"
+
+visual_storytelling:
+  methodology_role: "Visuals must reinforce the 'Presence' or 'Absence' of the engine's driver."
+  image_system:
+    mistake_visuals: "<Visual motifs of decay, cracks, or unraveling>"
+    inquiry_visuals: "<Visual motifs of searching, shadows, or fragmented images>"
+    crisis_visuals: "<Visual motifs of claustrophobia, heat, or overwhelming scale>"
+    exception_visuals: "<Visual motifs of light, color contrast, or isolation>"
+  final_image: "<An image that encapsulates the resolution of the engine>"
+
+scene_generation_rules:
+  - rule_id: "rule_01"
+    name: "The Engine Alignment Rule"
+    description: "Every scene must either advance the engine or complicate the character's ability to resolve it."
+    instruction: "Ask: 'Does this scene move the M/I/C/E engine forward or increase the friction?'"
+  - rule_id: "rule_02"
+    name: "The Tension Delta Rule"
+    description: "Each scene must change the level of tension within the engine."
+    instruction: "Ensure the scene does not leave the character in the same state of tension as the previous scene."
+  - rule_id: "rule_03"
+    name: "The Information/Action Rule"
+    description: "Inquiry scenes must provide information; Crisis/Mistake scenes must provide action/consequence."
+    instruction: "Verify that the scene type matches the engine's primary driver."
+
+revision_passes:
+  - name: "Structure Pass"
+    goal: "Ensure the narrative beats follow the MICE progression."
+    instructions: ["Map every beat to the 4 units.", "Check for engine drift."]
+    questions: ["Are there beats that feel like a different engine type?", "Is the escalation logical?"]
+    success_criteria: ["Every beat serves the primary engine."]
+  - name: "Character Pass"
+    goal: "Verify character agency and alignment."
+    instructions: ["Check if character choices drive the engine.", "Ensure vulnerability is present."]
+    questions: ["Is the character reacting or acting?", "Does the character's flaw drive the error/question/threat?"]
+    success_criteria: ["Character actions are the primary cause of engine movement."]
+  - name: "Theme Pass"
+    goal: "Ensure the engine's resolution delivers the intended meaning."
+    instructions: ["Compare the resolution to the central question.", "Check for thematic consistency."]
+    questions: ["Does the resolution answer the thematic question?", "Is the theme visible in the engine's end?"]
+    success_criteria: ["Thematic argument is clearly stated through the engine's outcome."]
+  - name: "Visual Storytelling Pass"
+    goal: "Ensure visual motifs reinforce the engine type."
+    instructions: ["Review image system for M/I/C/E motifs.", "Check the final image."]
+    questions: ["Do the visuals match the engine's tension?", "Is the visual language consistent?"]
+    success_criteria: ["Visuals provide subtextual reinforcement of the engine."]
+  - name: "Engine Consistency Pass"
+    goal: "Eliminate 'Engine Drift'."
+    instructions: ["Review all major plot points.", "Identify any 'intruder' engines."]
+    questions: ["Are there beats that feel like a different engine type?", "Does the tension type shift unexpectedly?"]
+    success_criteria: ["No secondary engine types are driving the plot."]
+
+validation_checklist:
+  - "Is the MICE type clearly identifiable in the first 10% of the story?"
+  - "Does the character's primary action directly impact the engine?"
+  - "Is the resolution a direct consequence of the engine's progression?"
+  - "Does the story avoid switching engines mid-way?"
+  - "Is the tension increasing through the Escalation unit?"
+  - "Does the Climax address the specific driver (Error, Question, Threat, or Anomaly)?"
+  - "Are the visual motifs consistent with the chosen engine type?"
+  - "Is the character's agency visible in the engine's progression?"
+  - "Does the resolution provide a clear change in the status quo?"
+  - "Is the thematic argument supported by the engine's outcome?"
+  - "Are the stakes high enough to justify the engine's complexity?"
+  - "Does the world design provide sufficient friction for the engine?"
+
+failure_modes:
+  - failure_mode: "Engine Mismatch"
+    symptom: "The story feels like it's about two different things."
+    likely_cause: "Starting with an Inquiry but ending with a purely reactive Crisis."
+    fix: "Re-align all beats to the primary engine type."
+  - failure_mode: "The Hollow Engine"
+    symptom: "The plot moves, but the audience doesn't care."
+    likely_cause: "The M/I/C/E type is present, but the character's personal stakes are missing."
+    fix: "Tie the engine's progression to the character's internal flaws or needs."
+  - failure_mode: "The Static Engine"
+    symptom: "The plot feels stuck or repetitive."
+    likely_cause: "The escalation unit fails to introduce new complications or higher stakes."
+    fix: "Introduce a new layer of consequence or a new piece of critical information."
+
+adaptation_notes:
+  feature_film: "Requires a full 4-unit progression with high-scale resolution."
+  short_film: "Focus on a single, sharp application of one MICE type. No time for engine shifts."
+  tv_episode: "The engine must be resolved within the episode, though it may seed a larger series engine."
+  tv_pilot: "The engine establishes the 'status quo' of the series' driving force."
+  anime: "Often uses 'Exception' or 'Crisis' engines with high visual spectacle and scale."
+  adult_animation: "Can utilize 'Mistake' or 'Exception' engines with more complex, mature thematic consequences."
+  anthology: "Each entry must be a self-contained, complete MICE engine cycle."
+  game_cinematic: "The engine must be visually and narratively compressed to establish immediate stakes."
+
+yaml_usage_notes:
+  how_to_use: "Do not attempt to fill all engines. Choose ONE engine type and only complete that specific section."
+  recommended_population_order: ["story_inputs", "methodology_structure (Engine Selection)", "character_design", "theme_design", "methodology_structure (Engine Details)"]
+  minimum_viable_completion: ["Engine Selection", "The primary components of that engine", "Character alignment"]
+  signs_framework_is_ready_for_scene_outline: "When every major plot point in your outline can be categorized as 'Advancing the [Chosen] Engine'."

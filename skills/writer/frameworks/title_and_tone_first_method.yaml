@@ -1,0 +1,323 @@
+metadata:
+  framework_name: "Title-and-Tone First Framework"
+  methodology_name: "Title-and-Tone First Method"
+  methodology_family: "Aesthetic-Driven Development"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "short film"
+    - "feature film"
+    - "anime"
+    - "adult animation"
+    - "anthology short"
+    - "game cinematic"
+  best_for:
+    - "high-concept horror"
+    - "stylized action"
+    - "mood-driven drama"
+    - "experimental shorts"
+  not_ideal_for:
+    - "strictly procedural mysteries"
+    - "heavy plot-driven thrillers"
+    - "complex multi-POV epics"
+  target_lengths:
+    - "any"
+  core_principle: "The narrative arc is an expansion of the tension between a linguistic hook (the Title) and a sensory atmosphere (the Tone)."
+  primary_story_undit: "The Tonal Anchor (the moment where title and tone become inseparable)"
+  primary_success_metric: "Tonal Resonance (the feeling that the story could not have had any other title or mood)"
+
+framework_overview:
+  summary: "A methodology that reverses traditional top-down plotting. Instead of starting with a premise, the creator starts with a 'vibe'—a specific title and a specific aesthetic/emotional atmosphere—and derives the plot, characters, and world from the necessity of fulfilling the promise made by that title and tone."
+  what_this_framework_helps_create:
+    - "Memorable, 'sticky' branding"
+    - "Highly cohesive aesthetic worlds"
+    - "Atmospheric, immersive storytelling"
+    - "Stories with a strong sense of inevitability"
+  what_it_prioritizes:
+    - "Sensory consistency"
+    - "Emotional resonance"
+    - "Aesthetic identity"
+  what_it_deemphasizes:
+    - "Complex plot mechanics"
+    - "Character backstories (unless they serve the tone)"
+    - "Logical puzzle-solving"
+
+use_when:
+  - "When you have a striking image or a haunting phrase in mind."
+  - "When the 'feeling' of the piece is more important than the 'mechanics' of the plot."
+  - "When designing for highly visual mediums like anime or adult animation."
+
+avoid_when:
+  - "When the plot is a complex logic puzzle (e.g., whodunnit) where the title is purely functional."
+  - "When the story relies on heavy world-building that contradicts the initial aesthetic hook."
+
+core_principles:
+  - "The Title is a promise to the audience."
+  - "The Tone is the environment in which that promise is kept or broken."
+  - "Every plot beat must either reinforce the tone or provide a necessary, tonal-consistent disruption."
+  - "Character motivations should be and must be driven by the pressures of the established atmosphere."
+
+workflow:
+  - step: 1
+    name: "The Linguistic Seed"
+    goal: "Generate and select a title that carries inherent dramatic tension."
+    instructions:
+      - "Brainstorm titles that imply conflict, irony, or mystery."
+      - "Select one that feels 'heavy' with potential."
+    output: "Selected Title"
+  - step: 2
+    name: "The Sensory Expansion"
+    goal: "Define the emotional and aesthetic atmosphere (The Tone)."
+    instructions:
+      - "Determine the primary emotions (e.g., dread, nostalgia, euphoria)."
+      - "Assign sensory textures (e.g., gritty, neon, soft-focus, cold)."
+    output: "Tone Profile"
+  - step: 3
+    name: "The Tonal Anchor"
+    goal: "Identify the central image/moment where the title and tone meet."
+    instructions:
+      - "Create a single visual or auditory 'snapshot' that embodies the title and the tone simultaneously."
+    output: "The Anchor Image"
+  - step: 4
+    name: "Derivative Development"
+    goal: "Build characters and plot from the Anchor."
+    instructions:
+      - "Ask: 'What kind of person lives in this atmosphere?'"
+      - "Ask: 'What event would shatter this specific tone?'"
+    output: "Draft Outline"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  title_analysis:
+    literal_meaning: "<What does the title say on the surface?>"
+    metaphorical_implication: "<What does the title suggest about the deeper theme?>"
+    tonal_promise: "<What mood does this specific word choice promise the audience?>"
+    irony_potential: "<How can the story subvert the literal meaning of the title?>"
+  tone_definition:
+    emotional_frequency: "<e.g., Melancholic, Aggressive, Whimsical, Claustrophobic>"
+    sensory_palette:
+      visuals: "<Colors, lighting, textures, grain, sharpness>"
+      audio: "<Soundscapes, silence, musicality, dissonance, rhythm>"
+      tactile: "<Temperature, weight, humidity, grit>"
+    aesthetic_style: "<e.g., Noir, Vaporwave, Gothic, Minimalism>"
+  the_tonal_anchor:
+    anchor_description: "<The single most important image/sound/moment that defines the project>"
+    justification: "<How does this specific anchor satisfy the Title and the Tone?>"
+    sensory_convergence: "<How do the visual and auditory elements merge in this moment?>"
+    narrative_weight: "<Why is this moment the pivot for the entire story's promise?>"
+
+beats_or_units:
+  - id: "the_inciting_atmosphere"
+    name: "The Atmospheric Setup"
+    order: 1
+    purpose: "To establish the 'status quo' of the tone."
+    approximate_position: "Beginning"
+    writer_prompt: "Show the world functioning in its natural, tonal state."
+    story_function: "Establishes the baseline texture of the world."
+    visual_function: "Introduce the primary color palette and lighting logic."
+    emotional_function: "Immerse the audience in the promised mood."
+    required_decisions:
+      - "What is the 'default' sensory experience of this world?"
+      - "What is the primary lighting source?"
+    fields_to_complete:
+      sensory_baseline: "<write here>"
+    diagnostic_questions:
+      - "Does this scene feel like the title?"
+      - "Is the atmosphere established without dialogue?"
+    completion_criteria:
+      - "The audience understands the 'vibe' without needing dialogue."
+    common_failure_modes:
+      - "Over-explaining the mood via dialogue instead of showing it via atmosphere."
+
+  - id: "the_tonal_disruption"
+    name: "The Tonal Breach"
+    order: 2
+    purpose: "To introduce an event that challenges the established atmosphere."
+    approximate_position: "Inciting Incident"
+    writer_prompt: "Introduce an element that is 'wrong' or 'out of place' within the established tone."
+    story_function: "Forces the characters to react to a change in their sensory/emotional reality."
+    visual_function: "Introduce a jarring visual contrast (e.g., a bright color in a dark world)."
+    emotional_function: "Shift the audience from immersion to unease/curiosity."
+    required_decisions:
+      - "How does the disruption maintain the 'flavor' of the title?"
+      - "What sensory element is being violated?"
+    fields_to_complete:
+      disruption_element: "<write here>"
+    diagnostic_questions:
+      - "Is this disruption too generic, or is it specific to this title/tone?"
+      - "Does the disruption create a new, secondary tension?"
+    completion_criteria:
+      - "The established 'comfort' of the tone is visibly or audibly compromised."
+    common_failure_modes:
+      - "The disruption is so jarring it feels like a different movie entirely."
+
+character_design:
+  methodology_role: "Characters are vessels for the tone."
+  characters:
+    - name: "<write here>"
+      tonal_alignment: "<Does this character embody the tone or resist it?>"
+      sensory_trait: "<A physical or behavioral trait that reinforces the atmosphere (e.g., a heavy, slow gait for a melancholic character)>"
+      internal_conflict: "<How their desire clashes with the world's atmosphere?>"
+
+world_design:
+  methodology_role: "The world is the physical manifestation of the tone."
+  fields:
+    environmental_pressure: "<How does the atmosphere physically affect the characters?>"
+    sensument_rules: "<What are the 'laws' of the sound and sight in this world?>"
+
+theme_design:
+  methodology_role: "Theme is the 'why' behind the title's metaphor."
+  fields:
+    central_metaphor: "<How the title's words represent the story's truth?>"
+    thematic_resolution: "<How the ending provides a final, definitive statement on the title's promise?>"
+
+visual_storytelling:
+  methodology_role: "The primary driver of the methodology."
+  image_system:
+    motifs: ["<Recurring visual symbols that echo the title>"]
+    lighting_logic: "<How light and shadow define the emotional boundaries>"
+    color_language: "<What specific colors represent safety vs. danger in this tone?>"
+  visual_rules:
+    - "<e.g., Never use warm colors in this story unless they signify death.>"
+  recurring_motifs: []
+  final_image: "<An image that leaves the 'afterimage' of the title in the viewer's mind.>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must have a 'sensory weight'."
+    - "If a scene doesn't contribute to the tone, it is disposable."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: ""
+    visual_anchor: "<What is the key image of this scene?>"
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Use texture-heavy descriptions."
+    - "Prioritize sound design in your planning."
+  avoid_rules:
+    - "Avoid 'talking head' scenes that lack environmental interaction."
+
+revision_passes:
+  - name: "The Tonal Drift Check"
+    goal: "Ensure the story hasn't wandered away from the initial title/tone."
+    instructions:
+      - "Read the plot summary."
+      - "Check every major beat against the Title's promise."
+    questions:
+      - "Is there any part of this story that feels like a different genre?"
+      - "Does the plot feel like it could exist under a different title?"
+    success_criteria:
+      - "The plot and tone are inseparable."
+
+  - name: "The Sensory Audit"
+    goal: "Strengthen the sensory immersion."
+    instructions:
+      - "Go through every scene and identify one specific sound or texture to emphasize."
+      - "Verify the color palette consistency."
+    questions:
+      - "Are we relying too much on dialogue to tell the audience how to feel?"
+      - "Is there a sensory 'void' in any major sequence?"
+    success_criteria:
+      - "The 'vibe' is palpable through action and imagery alone."
+
+  - name: "The Character-Atmosphere Alignment Pass"
+    goal: "Ensure characters are not 'floating' above the setting."
+    instructions:
+      - "Review character actions against the environmental pressure."
+      - "Check if character traits reinforce the visual motifs."
+    questions:
+      - "Does the character's movement match the world's rhythm?"
+      - "Is the character's conflict a direct result of the tone?"
+    success_criteria:
+      - "Characters feel like organic extensions of the world."
+
+  - name: "The Visual Storytelling Pass"
+    goal: "Maximize the impact of the image system."
+    instructions:
+      - "Audit the use of lighting and color language."
+      - "Ensure motifs are recurring and meaningful."
+    questions:
+      - "Are the visual rules being followed or intentionally broken for impact?"
+      - "Is the 'final image' sufficiently powerful?"
+    success_criteria:
+      - "The visual language communicates the story's subtext."
+
+  - name: "The Title-Promise Verification Pass"
+    goal: "The methodology-specific check for structural integrity."
+    instructions:
+      - "Compare the final resolution to the initial Title Analysis."
+      - "Check the 'Tonal Anchor' for presence in the climax."
+    questions:
+      - "Does the ending fulfill the linguistic promise of the title?"
+      - "Is the irony or literal meaning of the title resolved?"
+    success_criteria:
+      - "The story achieves Tonal Resonance."
+
+validation_checklist:
+  - "Does the title act as a container for the plot?"
+  - "Can the story be told with the dialogue removed and still feel like the same movie?"
+  - "Is the 'Tonal Anchor' present or at least strongly implied?"
+  - "Does the ending justify the 'promise' made by the title?"
+  - "Are the sensory textures (tactile, audio, visual) explicitly defined?"
+  - "Does every character have a sensory trait linked to the tone?"
+  - "Is the 'Tonal Breach' clearly distinguishable from the 'Atmospheric Setup'?"
+  - "Are the visual rules (e.g., color restrictions) consistently applied?"
+  - "Does the theme directly relate to the title's metaphor?"
+  - "Is the 'sensory weight' present in every scene template?"
+  - "Does the lighting logic support the emotional frequency?"
+  - "Is the 'irony potential' of the title utilized in the plot?"
+
+failure_modes:
+  - failure_mode: "The Hollow Title"
+    symptom: "A great title with a generic, plot-only story."
+    likely_cause: "Focusing on plot beats before establishing the sensory impact of the title."
+    fix: "Re-examine the title's metaphor and inject it into the character motivations."
+  - failure_mode: "Aesthetic Overload"
+    symptom: "The tone is so thick it smothers the narrative momentum."
+    likely_cause: "Prioritizing atmosphere over the necessity of the 'Tonal Breach'."
+    fix: "Introduce more active, high-stakes conflict that uses the atmosphere as a weapon."
+  - failure_mode: "The Tonal Disconnect"
+    symptom: "The story feels like two different movies joined together."
+    likely_cause: "Failure to apply the 'Tonal Drift Check' during the transition from setup to breach."
+    fix: "Ensure the disruption element shares the same 'sensory DNA' as the setup."
+
+adaptation_notes:
+  feature_film: "Use the tone to define the entire visual language/cinematography."
+  short_film: "Focus heavily on the 'Tonal Anchor' as the singular point of impact."
+  tv_episode: "Ensure the 'vibe' is consistent with the series' established 'brand'."
+  tv_pilot: "Establish the 'Atmospheric Setup' as a repeatable template for future episodes."
+  anime: "Use the tone to drive character design and supernatural/visual effects."
+  adult_animation: "Leverage extreme sensory textures and stylized color palettes to push boundaries."
+  anthology: "The Title and Tone are the only constants; use them to unify disparate plots."
+  game_cinematic: "Translate the 'sensory palette' into environmental assets and particle effects."
+
+yaml_usage_notes:
+  how_to_use: "Start with the 'title_analysis' and 'tone_definition' sections. Do not touch 'beats_or_units' until the 'the_tonal_anchor' is finalized."
+  recommended_population_order:
+    - "title_analysis"
+    - "tone_definition"
+    - "the_tonal_anchor"
+    - "character_design"
+    - "beats_or_units"
+  minimum_viable_completion: "A completed 'title_analysis' and 'tone_definition' is enough to begin sketching a concept."
+  signs_framework_is_ready_for_scene_outline: "When you can describe a scene using only three adjectives and a single object."

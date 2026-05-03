@@ -1,0 +1,78 @@
+metadata:
+  framework_name: "General Beat Sheet Template"
+  methodology_name: "General Beat Sheet Method"
+  methodology_family: "Structural Milestone"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "TV episode"
+    - "TV pilot"
+    - "anime"
+    - "web series"
+  best_for:
+    - "establishing narrative momentum"
+    - "defining structural turning points"
+    - "ensuring causal progression"
+    - "pacing management"
+  not_ideal_for:
+    - "experimental/non-linear narratives"
+    - "character studies without plot"
+    - "stream-of-consciousness writing"
+  target_lengths:
+    - "any"
+  core_principle: "Narrative momentum is achieved through a sequence of causal milestones that escalate tension and force character change."
+  primary_story_unit: "The Beat (a significant structural turning point)"
+  primary_success_metric: "Causal Connectivity (Each beat must be a direct consequence of the previous beat or a necessary reaction to it.)"
+
+framework_overview:
+  summary: "A structural framework used to map out the major plot milestones of a story to ensure a cohesive arc, proper pacing, and logical progression."
+  what_this_causal_framework_helps_create:
+    - "A clear beginning, middle, and end"
+    - "A roadmap for escalating stakes"
+    - "A blueprint for character transformation"
+  what_it_prioritizes:
+    - "Plot progression"
+    - "Structural integrity"
+    - "Causality"
+  what_it_deemphasizes:
+    - "Subplot expansion"
+    - "Granular scene dialogue"
+    - "Atmospheric worldbuilding (unless it impacts a beat)"
+
+use_when:
+  - "Starting a new story concept"
+  - "Fixing 'sagging middle' issues"
+  - "Checking if a story has enough conflict to sustain its length"
+  - "Communicating story structure to producers/collaborators"
+
+avoid_when:
+  - "Writing highly experimental or 'slice of life' stories where plot is secondary"
+  - "Developing purely character-driven vignettes without a clear arc"
+
+core_principles:
+  - "Causality: 'Therefore' and 'But' are more important than 'And then'."
+  - "Escalation: Stakes must increase or complexity must deepen with every major beat."
+  - "The Turning Point: Every beat must fundamentally change the direction of the story or the character's situation."
+  - "Reaction/Action: Characters must react to events, and those reactions must trigger new events."
+
+workflow:
+  - step: 1
+    name: "Premise Crystallization"
+    goal: "Define the core conflict and characters."
+    instructions:
+      - "Identify the protagonist, their goal, and the primary obstacle."
+    output: "Logline"
+  - step: 2
+    name: "Beat Identification"
+    goal: "Map the major milestones."
+    instructions:
+      - "Identify the 5-8 essential turning points that move the story from start to finish."
+    output: "Beat Sheet Outline"
+  - step: 3
+    name: "Expansion"
+    goal: "Connect the beats with connective tissue."
+    instructions:
+      - "Determine what happens between beats to ensure the 'therefore/but' logic holds."
+    output: "Expanded Beat"

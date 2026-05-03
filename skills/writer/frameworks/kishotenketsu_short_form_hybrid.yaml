@@ -1,0 +1,379 @@
+metadata:
+  framework_name: "Kishōtenketsu-Short Form Hybrid"
+  methodology_name: "Kishōtenketsu-Short Form Hybrid"
+  methodology_family: "Non-Conflict Structuralism"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "short film"
+    - "anime short"
+    - "web series"
+    - "anthology short"
+    - "art film"
+    - "advertising/spec"
+  best_for:
+    - "atmospheric storytelling"
+    - "slice-of-life"
+    - "surrealism"
+    - "emotional vignettes"
+    - "high-concept visual reveals"
+  not_ideal_for:
+    - "high-octane action-driven plots"
+    - "traditional hero's journey-dependent epics"
+    - "procedural/mystery-driven narratives"
+  target_lengths:
+    - "30 seconds to 15 minutes"
+  core_principle: "Narrative progression through expansion and recontextualization rather than external conflict."
+  primary_story_unit: "The Ten (The Pivot/Twist)"
+  primary_success_metric: "The emotional or intellectual resonance of the recontextualization."
+
+framework_overview:
+  summary: "A framework for stories that move from establishment (Ki) to expansion (Shō) to a transformative pivot (Ten) and finally to a new state of understanding (Ketsu)."
+  what_this_framework_helps_create:
+    - "Stories that rely on perspective shifts."
+    - "Atmospheric pieces where the setting or mood is the protagonist."
+    - "Narratives that evoke wonder,, or melancholy without needing a 'villain'."
+  what_it_prioritizes:
+    - "Visual metaphor"
+    - "Thematic resonance"
+    - "The 'Ten' (The Pivot)"
+    - "The 'Afterimage' (The lingering feeling)"
+  what_it_deemphasizes:
+    - "External conflict/protagonist vs. antagonist"
+    - "Overcoming obstacles"
+    - "Character growth through struggle"
+
+use_when:
+  - "You have a powerful image or concept that changes meaning when viewed differently."
+  - "The story is about a realization rather than a victory."
+  - "The setting or environment is the primary driver of the narrative."
+
+avoid_when:
+  - "The story requires a clear antagonist to drive the plot."
+  - "The plot is entirely dependent on a character overcoming a physical hurdle."
+
+core_principles:
+  - "Avoidance of forced conflict: The 'Ten' is a change in state or perspective, not necessarily a fight."
+  - "Expansion over Escalation: The 'Shō' section should deepen the world, not just raise the stakes."
+  - "Recontextualization: The 'Ten' must make the 'Ki' and 'Shō' parts mean something different."
+  - "The Afterimage: The 'Ketsu' should leave the audience with a lingering visual or emotional residue."
+
+workflow:
+  - step: 1
+    name: "The Foundation (Ki)"
+    goal: "Establish the baseline reality."
+    instructions:
+      - "Define the stable environment."
+      - "Introduce the 'anchor' character or object."
+      - "Set the sensory tone (sound, light, texture)."
+    output: "The Status Quo"
+  - step: 2
+    name: "The Expansion (Shō)"
+    goal: "Deepen the established reality without disrupting it."
+    instructions:
+      - "Add detail to the world established in Ki."
+      - "Show the routine or the 'flow' of the setting."
+      - "Introduce subtle complexity or beauty."
+    output: "The Expanded Reality"
+  - step: 3
+    name: "The Pivot (Ten)"
+    goal: "Introduce the disruptive element or new perspective."
+    instructions:
+      - "Introduce an element that does not 'fight' the previous parts but 'redefines' them."
+      - "Shift the camera, the time, or the logic."
+      - "Force the audience to re-evaluate everything they just saw."
+    output: "The Recontextualization"
+  - step: 4
+    name: "The Integration (Ketsu)"
+    goal: "Resolve the tension between the old reality and the new reality."
+    instructions:
+      - "Show the 'new normal'."
+      - "Provide the emotional 'afterimage'."
+      - "Close the loop visually."
+    output: "The Final State"
+
+story_inputs:
+  premise: "<the core idea>"
+  logline: "<the narrative arc in one sentence>"
+  medium: "<e.g., Anime Short>"
+  genre: "<e.g., Magical Realism>"
+  tone: "<e.g., Melancholic, Whimsical, Eerie>"
+  target_length: "<e.g., 5 minutes>"
+  audience: "<e.g., Adult Animation Enthusiasts>"
+  rating: "<e.g., PG>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  description: "The four-act progression of Kishōtenketsu."
+  structure_type: "Non-Conflict Expansion"
+  ki_phase:
+    establishment_logic: "Defining the immutable rules of the environment."
+    sensory_anchoring: "Selecting the primary tactile and auditory identifiers."
+    environmental_stability: "Ensuring the baseline is perceived as 'normal'."
+  sho_phase:
+    expansion_depth: "Adding layers of detail to the established Ki."
+    rhythmic_progintension: "Developing the tempo and flow of the routine."
+    complexity_layering: "Introducing nuances that deepen immersion."
+  ten_phase:
+    pivot_mechanism: "The introduction of the disruptive or transformative element."
+    recontextualization_trigger: "The specific moment the perspective shifts."
+    logic_disruption: "The bending or breaking of the established Ki rules."
+  ketsu_phase:
+    integration_resolution: "Merging the original reality with the new perspective."
+    afterimage_creation: "Designing the lingering emotional or visual residue."
+    loop_closure: "Finalizing the visual connection between start and end."
+
+beats_or_units:
+  - id: "ki"
+    name: "Ki (Introduction)"
+    order: 1
+    purpose: "Establishment of the 'Known World'."
+    approximate_position: "0% - 25%"
+    writer_prompt: "What is the baseline? What is the visual anchor that defines this world?"
+    story_function: "Sets the rules, the mood, and the subject."
+    visual_function: "Establishing shots, stable compositions, repetitive motions."
+    emotional_function: "Comfort, boredom, curiosity, or stillness."
+    required_decisions:
+      - "What is the primary sensory texture?"
+      - "Who/what is the focal point?"
+    fields_to_complete:
+      subject_identity: "<who or what are we watching?>"
+      environmental_rules: "<what is the logic of this space?>"
+      sensory_anchor: "<a specific sound, color, or texture?>"
+    diagnostic_questions:
+      - "Is the setting clear enough to be recontextualized later?"
+      - "Is there enough detail to make the audience care about this 'normal'?"
+    completion_criteria:
+      - "The audience understands the 'rules' of the scene."
+    common_failure_modes:
+      - "Too much exposition (explaining instead of showing)."
+      - "Lack of clarity (the audience doesn't know what the 'normal' is)."
+
+  - id: "sho"
+    name: "Shō (Development)"
+    order: 2
+    purpose: "Expansion and deepening of the Ki."
+    approximate_position: "25% - 50%"
+    writer_prompt: "How can we explore the corners of this world? What are the nuances of this routine?"
+    story_function: "Building familiarity and emotional investment."
+    visual_function: "Close-ups, macro shots, rhythmic editing, expanding the scope."
+    emotional_function: "Intimacy, immersion, or growing tension (without conflict)."
+    required_decisions:
+      - "What new detail complicates the initial simplicity?"
+    fields_to_complete:
+      expanded_detail: "<a new layer of the world revealed>"
+      rhythm_pattern: "<the tempo of the movement/editing>"
+    diagnostic_questions:
+      - "Are we just repeating Ki, or are we adding depth?"
+      - "Is the audience becoming more 'embedded' in the atmosphere?"
+    completion_criteria:
+      - "The world feels lived-in and complete."
+    common_failure_modes:
+      - "Stagnation (just repeating the intro)."
+      - "False Escalation (introducing conflict that doesn't belong to this structure)."
+
+  - id: "ten"
+    name: "Ten (The Pivot/Twist)"
+    order: 3
+    purpose: "The disruption or the introduction of the 'Other'."
+    approximate_position: "50% - 80%"
+    writer_prompt: "What unexpected element or perspective shift changes the meaning of the first two parts?"
+    story_function: "Recontextualization of the narrative."
+    visual_function: "Sudden change in scale, lighting, color palette, or camera angle (e.g., wide to macro, or sudden color burst)."
+    emotional_function: "Shock, revelation, irony, or epiphany."
+    required_decisions:
+      - "What is the 'Pivot Point'?"
+      - "How does this change the meaning of the 'Ki'?"
+    fields_to_complete:
+      the_pivot_event: "<the arrival of the new element/perspective>"
+      recontextual_logic: "<how the old info now means something else>"
+      visual_shift_trigger: "<the specific visual change that signals the shift>"
+    diagnostic_questions:
+      - "Does this 'Ten' feel like a random accident, or does it relate to the themes of Ki/Sho?"
+      - "Does the audience feel a 'click' of realization?"
+    completion_criteria:
+      - "The viewer's understanding of the story has fundamentally changed."
+    common_failure_modes:
+      - "The 'Deus Ex Machina' error (the twist is too disconnected from the premise)."
+      - "The 'Confusion' error (the twist is so random it breaks the narrative logic)."
+
+  - id: "ketsu"
+    name: "Ketsu (Conclusion/Integration)"
+    order: 4
+    purpose: "The new state of being/The Afterimage."
+    approximate_position: "80% - 100%"
+    writer_prompt: "How do the pieces fit together now? What is the final image that lingers?"
+    story_function: "Resolution and emotional resonance."
+    visual_function: "Final wide shot, a lingering close-up, a fade to a specific color."
+    emotional_function: "Catharsis, melancholy, peace, or lingering unease."
+    required_decisions:
+      - "What is the final 'state' of the subject?"
+    fields_to_complete:
+      the_new_normal: "<the integrated reality>"
+      the_afterimage: "<the final visual/emotional note>"
+    diagnostic_questions:
+      - "Does the ending feel earned by the pivot?"
+      - "Is the final image powerful enough to stand alone?"
+    completion_criteria:
+      - "The loop between Ki and Ten is closed."
+    common_failure_modes:
+      - "Abrupt ending (cutting before the integration is felt)."
+      - "Failure to resolve the 'Ten' (leaving the audience confused rather than moved)."
+
+character_design:
+  methodology_role: "Characters are observers or vessels for the environment/theme."
+  characters:
+    - name: "<name>"
+      role: "<Observer | Participant | Element of the world>"
+      sensory_presence: "<how they are heard/seen/felt>"
+      reaction_to_ten: "<how their perspective shifts>"
+
+world_design:
+  methodology_role: "The world is the primary driver of the narrative."
+  fields:
+    atmosphere: "<the primary mood>"
+    sensory_palette:
+      colors: []
+      sounds: []
+      textures: []
+    logic_of_the_unseen: "<what exists but isn't shown until the Ten?>"
+
+theme_design:
+  methodology_role: "Theme is revealed through the interaction of Ki and Ten."
+  fields:
+    central_observation: "<the basic truth of the Ki stage>"
+    the_revelation: "<the truth revealed by the Ten stage>"
+    thematic_resonance: "<the lingering question or feeling>"
+
+visual_storytelling:
+  methodology_role: "Visuals must carry the weight of the narrative shift."
+  image_system:
+    composition_style: "<e.g., Static/Symmetrical vs. Handheld/Chaotic>"
+    color_progression: "<e.g., Monochromatic -> Vibrant>"
+  visual_rules:
+    - "<rule 1: e.g., Never show the character's face until the Ten stage>"
+    - "<rule 2: e.g., Use extreme close-ups for the Shō stage>"
+  recurring_motifs: []
+  final_image: "<the definitive image of the Ketsu>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Focus on texture and detail over action."
+    - "Every scene in Shō must deepen the 'vibe' of Ki."
+    - "The Ten must be a visual/perceptual rupture."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: "<Note: Use 'Atmospheric Pressure' instead of 'Conflict' if possible>"
+    turn: "<How does this scene move toward or away from the Ten?>"
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Use environmental sounds to signal transitions."
+    - "Focus on the 'smallness' of things in the Shō stage."
+  avoid_rules:
+    - "Avoid heavy dialogue-driven exposition."
+    - "Avoid 'Hero vs Villain' tropes."
+
+revision_passes:
+  - name: "The Structure Pass"
+    goal: "Ensure the four-act progression is logically sound."
+    instructions:
+      - "Verify the transition from Ki to Sho is additive."
+      - "Check that the Ten provides a clear rupture."
+    questions:
+      - "Is the progression clearly moving from establishment to expansion?"
+    success_criteria:
+      - "The narrative arc follows the Kishōtenketsu logic."
+  - name: "The Character Pass"
+    goal: "Ensure characters serve as effective vessels for the theme."
+    instructions:
+      - "Check if the character's role is tied to the environment."
+      - "Ensure their reaction to the Ten is impactful."
+    questions:
+      - "Does the character's presence enhance the atmosphere?"
+    success_criteria:
+      - "The character is an integral part of the world's logic."
+  - name: "The Theme Pass"
+    goal: "Verify the thematic revelation is clear."
+    instructions:
+      - "Compare the Ki stage truth to the Ten stage truth."
+      - "Check for thematic resonance in the Ketsu."
+    questions:
+      - "Is the 'revelation' identifiable?"
+    success_criteria:
+      - "The theme is communicated through visual/situational shifts."
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure visuals carry the narrative weight."
+    instructions:
+      - "Review the color and lighting progression."
+      - "Check for visual anchors in the Ki stage."
+    questions:
+      - "Do the visuals signal the Ten stage shift?"
+    success_criteria:
+      - "The visual shift is unmistakable and meaningful."
+  - name: "The Recontextualization Pass"
+    goal: "Ensure the Ten stage fundamentally changes the Ki/Sho meaning."
+    instructions:
+      - "Re-read the Ki stage through the lens of the Ten stage."
+      - "Check if the 'afterimage' is present."
+    questions:
+      - "Does the beginning look different after seeing the end?"
+    success_criteria:
+      - "The audience experiences a cognitive shift in understanding."
+
+validation_checklist:
+  - "Is the 'Ki' stage clearly established?"
+  - "Does the 'Shō' stage add depth without introducing external conflict?"
+  - "Does the 'Ten' introduce a shift in perspective or logic?"
+  - "Does the 'Ketsu' integrate the 'Ten' into a new understanding?"
+  - "Is the 'Afterimage' visually or emotionally distinct?"
+  - "Are sensory anchors (sound, texture, color) present in the Ki stage?"
+  - "Is the visual shift in the Ten stage unmistakable?"
+  - "Does the story avoid forced 'Hero vs Villain' tropes?"
+  - "Is the recontextualization logic sound and earned?"
+  - "Is the rhythm of the Shō stage consistent with the Ki stage?"
+  - "Does the final image provide a sense of closure or lingering resonance?"
+  - "Are the character roles clearly defined as observers or participants?"
+
+failure_modes:
+  - failure_mode: "The Random Event"
+    symptom: "The Ten feels like a random accident with no thematic link."
+    likely_cause: "The Ten is not connected to the established elements of Ki."
+    fix: "Ensure the Ten uses elements/motifs introduced in Ki/Shō."
+  - failure_mode: "The Conflict Trap"
+    symptom: "The story becomes a standard struggle/battle."
+    likely_cause: "Introducing an antagonist who actively opposes the protagonist."
+    fix: "Replace opposition with 'Expansion' or 'Discovery'."
+  - failure_mode: "The Static Loop"
+    symptom: "The story feels repetitive and lacks progression."
+    likely_cause: "The Shō stage fails to add new layers or complexity."
+    fix: "Introduce a new sensory detail or environmental nuance in Shō."
+
+adaptation_notes:
+  feature_film: "Use for 'High Concept' or 'Atmospheric' features (e.g., Sci-Fi/Surrealism)."
+  short_film: "The ideal format for this methodology."
+  tv_episode: "Use for 'Bottle Episodes' or 'Anthology' episodes."
+  tv_pilot: "Use to establish a world's logic that can be expanded in future episodes."
+  anime: "Highly effective for 'Experimental' or 'Slice-of-Life' shorts."
+  adult_animation: "Use for 'Surreal' or 'Psychological' vignettes."
+  anthology: "The core structure for an anthology series."
+  game_cinematic: "Ideal for 'Environmental Storytelling' cutscenes."
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'story_inputs' first, then work through the 'beats_or_units' sequentially."
+  recommended_population_order:
+    - "story_inputs"
+    - "methodology_structure (Ki -> Shō -> Ten -> Ketsu)"
+    - "visual_storytelling"
+    - "theme_design"
+  minimum_viable_completion: "A completed 'beats_or_units' section with a functional 'Ten' pivot."
+  signs_framework_is_ready_for_scene_outline: "When the 'recontextualization_logic' field is clearly defined."

@@ -1,0 +1,77 @@
+metadata:
+  framework_name: "Aristotelian Unity Template"
+  methodology_name: "Aristotelian Unity / Classical Dramatic Method"
+  methodology_family: "Classical/Formalist"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "short film"
+    - "feature film"
+    - "stage play"
+    - "anthology short"
+    - "drama"
+  best_for:
+    - "high-stakes tragedies"
+    - "single-location thrillers"
+    - "character studies"
+    - "contained intensives"
+  not_ideal_for:
+    - "epic fantasy sagas"
+    - "multi-protagonist ensemble series"
+    - "episodic procedural"
+  target_lengths:
+    - "short film"
+    - "feature film"
+  core_principle: "Unity of Action, Time, and Place through causal necessity."
+  primary_story_unit: "The Single Action"
+  primary_success_metric: "Catharsis (Emotional purging through pity and fear)"
+
+framework_overview:
+  summary: "A methodology focused on creating a closed, intense, and logically unbreakable dramatic loop."
+  what_this_framework_helps_create:
+    - "Tight, high-tension narratives"
+    - "Stories with inescapable momentum"
+    - "Deeply focused character arcs"
+  what_it_prioritizes:
+    - "Causality (A leads to B leads to C)"
+    - "Singular focus (No distracting subplots)"
+    - "Structural integrity (The unities)"
+  what_it_deemphasizes:
+    - "World-building expansion"
+    - "Subplot complexity"
+    - "Temporal jumps or sprawling locations"
+
+use_when:
+  - "Writing a short film where every second counts."
+  - "Creating a 'bottle episode' or single-location thriller."
+  - "Developing a tragedy where the protagonist's fate is sealed."
+
+avoid_when:
+  - "Developing sprawling multi-generational epics."
+  - "Writing 'slice of life' stories that lack a central driving action."
+  - "Creating 'adventure' stories that rely on constant travel and new settings."
+
+core_principles:
+  - "Unity of Action: One main plot, no extraneous subplots."
+  - "Unity of Time: The story occurs within a single, continuous timeframe (usually 24 hours)."
+  - "Unity of Place: The story unfolds in a single physical location or a single cohesive setting."
+  - "Causality: Every event must be a direct consequence of the preceding event."
+  - "Peripeteia: A sudden reversal of fortune."
+  - "Anagnorisis: A moment of critical discovery or recognition."
+  - "Catharsis: The purging of the audience's emotions (pity and fear)."
+
+workflow:
+  - step: 1
+    name: "Define the Single Action"
+    goal: "Identify the core conflict that cannot be ignored."
+    instructions:
+      - "Identify the one central struggle that drives the entire narrative."
+      - "Ensure this action is self-contained."
+    output: "The Core Action Statement"
+  - step: 2
+    name: "Establish the Unities"
+    goal: "Set the boundaries of the dramatic container."
+    instructions:
+      - "Define the single location."
+      - "Define the continuous timeframe."
+    output: "The Dramatic Container"

@@ -1,0 +1,331 @@
+metadata:
+  framework_name: "Character Web Method Template"
+  methodology_name: "Character Web Method"
+  methodology_family: "Relational-Driven Narrative"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv_pilot"
+    - "tv_episode"
+    - "anime"
+    - "adult_animation"
+    - "web_series"
+    - "game_cinematic"
+  best_for:
+    - "ensemble casts"
+    - "drama"
+    - "soap opera/melodrama"
+    - "mystery"
+    - "psychological thriller"
+  not_ideal_for:
+    - "high-concept action with minimal dialogue"
+    - "procedural/monster-of-the-week (unless character-focused)"
+    - "solo-protagonist survival stories"
+  target_lengths:
+    - "any"
+  core_principle: "Plot is the emergent consequence of shifting tensions within a and network of interconnected characters."
+  primary_story_unit: "The Relationship (The Edge)"
+  primary_success_metric: "The 'Vibration' Test: When one character changes or acts, does the entire web react?"
+
+framework_overview:
+  summary: "A methodology that prioritizes the construction of a complex network of character dependencies, conflicts, and secrets over a linear plot beat list."
+  what_this_framework_helps_create:
+    - "Deeply interconnected ensembles"
+    - "Organic plot progression driven by character choice"
+    - "High-stakes interpersonal drama"
+  what_it_prioritizes:
+    - "Character dynamics"
+    - "Power imbalances"
+    - "Hidden agendas"
+    - "Relational causality"
+  what_it_deemphasizes:
+    - "External plot milestones"
+    - "Incidental action"
+    - "Disconnected subplots"
+
+use_when:
+  - "The story's tension comes from 'who knows what about whom'."
+  - "The protagonist's journey is defined by their changing social/familial standing."
+  - "The climax is a collision of multiple character arcs rather than a single physical battle."
+
+avoid_when:
+  - "The story is driven by a singular, external, non-human force (e.g., a natural disaster) with no social impact."
+  - "The characters are purely archetypal vessels for plot movement."
+
+core_principles:
+  - "No character exists in a vacuum; every character must be a 'node' connected to at least two others."
+  - "Every 'edge' (relationship) must contain a 'tension point' (conflict or dependency)."
+  - "Plot movement is measured by the disruption of established links in the web."
+  - "The 'Web' must tighten as the story progresses (increasing density of secrets or stakes)."
+
+workflow:
+  - step: 1
+    name: "Node Identification"
+    goal: "Define the primary actors in the web."
+    instructions:
+      - "Identify the core characters required for the central conflict."
+      - "Define their internal drivers (desire/need) and their external visibility (mask/secret)."
+    output: "Character List"
+  - step: 2
+    name: "Edge Weaving"
+    goal: "Establish the initial state of the network."
+    instructions:
+      - "Map the connections between every node."
+      - "Define the power dynamics and the 'glue' (what keeps them together) and the 'friction' (what pulls them apart)."
+    output: "Relationship Map"
+  - step: 3
+    name: "The Catalyst/Disruption"
+    goal: "Introduce an event that breaks an existing link."
+    instructions:
+      - "Identify an event that forces a character to act against their established role in the web."
+      - "Trace how this action forces other characters to react to protect or attack their own links."
+    output: "Inciting Incident/Disruption Event"
+  - step: 4
+    name: "The Vibration Trace"
+    goal: "Map the plot through consequence."
+    instructions:
+      - "Follow the ripple effect of each decision through the web."
+      - "Ensure every plot beat is a direct result of a character trying to preserve or destroy a relationship."
+    output: "Relational Plot Outline"
+
+story_inputs:
+  premise: "<the core idea>"
+  logline: "<the single sentence summary>"
+  medium: "<e.:: feature film>"
+  genre: "<e.:: psychological drama>"
+  tone: "<e.:: claustrophobic, tense>"
+  target_length: "<e.:: 11able pages>"
+  audience: "<e.:: adults>"
+  rating: "<e.:: R>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  stage_1_node_definition:
+    instruction: "Define each character as a 'Node' in the web. Focus on their impact on others."
+    decision_forcing_fields:
+      node_utility_score: "<1-10, how vital is this node to the web's stability?>"
+      social_gravity: "<how much do other characters naturally gravitate toward or flee from this person?>"
+      relational_debt_level: "<how much do they owe to the web (guilt, money, life, secrets)?>"
+    characters:
+      - name: "<character_name>"
+        archetype: "<role in the web, e.g., The Anchor, The Disruptor, The Parasite>"
+        internal_driver:
+          visible_want: "<what they pursue openly>"
+          hidden_need: "<what they actually require to be whole>"
+        social_impact:
+          the_mask: "<how they present to the web>"
+          the_secret: "<what they hide from the web>"
+          the_leverage: "<what others can use against them>"
+        relational_status:
+          primary_dependency: "<who they need to survive/succeed?>"
+          primary_threat: "<who they fear or oppose?>"
+
+  stage_2_edge_weaving:
+    instruction: "Define the 'Edges' (the connections) between nodes. Every edge must have friction."
+    decision_forcing_fields:
+      edge_stability_index: "<is this link hardening or eroding?>"
+      tension_density: "<how many secrets/conflicts exist on this specific edge?>"
+      power_asymmetry_check: "<is the power shift imminent?>"
+    relationships:
+      - connection: "<Character A> <-> <Character B>"
+        type: "<e.:: Ally, Enemy, Lover, Mentor, Captive, Rival, etc.>"
+        power_dynamic:
+          leader: "<who holds the influence?>"
+          follower: "<who is dependent?>"
+          imbalance_score: "<1-10, where 10 is extreme disparity>"
+        tension_elements:
+          the_glue: "<what keeps this link intact despite conflict?>"
+          the_friction: "<the primary source of conflict between these two?>"
+          shared_history: "<a specific event that defines this link>"
+        hidden_dimension:
+          unconveyed_truth: "<something one knows that the other does not>"
+          potential_break_point: "<what specific event would sever this link?>"
+
+  stage_3_disruption_mapping:
+    instruction: "Map the plot beats as 'Disruptions' to the existing web structure."
+    decision_forcing_fields:
+      disruption_magnitude: "<how much of the web is affected?>"
+      ripple_radius: "<number of nodes impacted?>"
+      structural_permanence: "<is this a temporary tremor or a permanent break?>"
+    web_disruptions:
+      - disruption_id: "<e.:: disruption_01>"
+        event_description: "<what happened?>"
+        affected_nodes: []
+        broken_links: ["<which relationship was damaged?>"]
+        new_links: ["<which new, unexpected connection was formed?>"]
+        consequence_ripple: "<how does this force Character C to change their behavior towards Character D?>"
+        visual_representation: "<how is the tension/break visible in the scene (e.g., a physical distance, a broken object, a look)>"
+
+beats_or_units:
+  - id: "disruption_01"
+    name: "<event_description_from_input>"
+    order: 1
+    purpose: "<consequence_ripple_from_input>"
+    approximate_position: "<e.:: Act 1, Inciting Incident>"
+    writer_prompt: "<write the scene where the established power dynamic is first challenged by the event.>"
+    story_function: "<broken_links_from_input>"
+    visual_function: "<visual_representation_from_input>"
+    emotional_function: "<the primary emotion felt by the most affected node>"
+    required_decisions:
+      - "Which character's secret is most at risk here?"
+      - "How does the power imbalance shift after this event?"
+    fields_to_complete:
+      affected_nodes: []
+      new_links: []
+    diagnostic_questions:
+      - "Does this event force a character to act against their 'mask'?"
+      - "Is the ripple effect visible in at least two other nodes?"
+    completion_criteria:
+      - "The disruption is clearly documented."
+      - "The consequence for the web is measurable."
+    common_failure_modes:
+      - "The disruption is too small to affect the web."
+      - "The disruption only affects one character without ripple effects."
+
+character_design:
+  methodology_role: "Central. Characters are defined by their utility to the web."
+  fields:
+    social_gravity: "<how much do other characters naturally gravitate toward or flee from this person?>"
+    relational_debt: "<what do they owe to the web (guilt, money, life, secrets)?>"
+
+world_design:
+  methodology_role: "The setting must act as the 'container' or 'pressure cooker' for the web."
+  fields:
+    the_container: "<the physical or social space that prevents characters from leaving the web>"
+    social_rules: "<the laws/norms that govern how characters must interact>"
+    environmental_pressure: "<how the setting forces characters into closer proximity>"
+
+theme_design:
+  methodology_role: "Theme is the 'moral argument' played out through character collisions."
+  fields:
+    central_argument: "<the clash of values between the web's primary nodes>"
+    the_test: "<the situation that forces the characters to choose between their 'glue' and their 'friction'>"
+
+visual_storytelling:
+  methodology_role: "Visuals must communicate the 'geometry' of the web."
+  image_system:
+    composition_rules:
+      - "<e.:: Use proximity to indicate intimacy or threat.>"
+      - "<e.:: Use framing (e.g., characters behind bars/windows) to show isolation within the web.>"
+    visual_motifs:
+      - "<e.:: Threads, webs, knots, or tangled vines.>"
+      - "<e.:: Shadows that obscure faces (the 'mask').>"
+    the_geometry_of_power: "<how to visually represent the power imbalance between nodes in a shot.>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must involve at least one 'Edge' (relationship) being tested."
+    - "A scene is successful if it changes the 'tension level' of a connection."
+  scene_template:
+    scene_id: ""
+    involved_nodes: []
+    active_edge: "<which relationship is the focus?>"
+    current_dynamic: "<e.:: Stable, Eroding, Exploding, or Forming>"
+    the_pressure: "<what external or internal force is pushing these characters together?>"
+    the_turn: "<how does the power dynamic shift by the end of the scene?>"
+    visual_anchor: "<an object or gesture that symbolizes the state of the relationship>"
+  do_rules:
+    - "Focus on subtext (the 'unspoken truth' field)."
+    - "Ensure every character present has a 'leverage' stake in the conversation."
+  avoid_rules:
+    - "Avoid 'information dumps' that don't involve a character trying to manipulate another."
+    - "Avoid scenes where characters interact without any underlying tension or hidden agenda."
+
+revision_passes:
+  - name: "The Tension Pass"
+    goal: "Ensure no relationship is 'too safe'."
+    instructions:
+      - "Look at every 'Edge'. If a relationship is purely positive, add a secret or a debt."
+    questions:
+      - "Is there any link in this web that could be severed without affecting the plot? (If yes, fix it.)"
+    success_criteria:
+      - "Every connection has a potential breaking point."
+  - name: "The Dependency Pass"
+    goal: "Check for 'Floating Nodes'."
+    instructions:
+      - "Verify that every character is connected to at least two others."
+    questions:
+      - "If Character X were removed, would the web still function?"
+    success_criteria:
+      - "The removal of any major node causes a systemic collapse."
+  - name: "The Structure Pass"
+    goal: "Ensure narrative continuity through disruptions."
+    instructions:
+      - "Trace the chain of disruptions from the first to the last."
+      - "Check if the 'ripple effects' actually lead to the next disruption."
+    questions:
+      - "Is the plot a logical consequence of the web's breaking?"
+    success_criteria:
+      - "The plot progression is a direct result of relational decay."
+  - name: "The Theme Pass"
+    goal: "Ensure the moral argument is visible in the collisions."
+    instructions:
+      - "Identify the central argument."
+      - "Check if every major character clash represents a side of that argument."
+    questions:
+      - "Is the theme being argued, or just stated?"
+    success_criteria:
+      - "The climax forces a thematic resolution through character choice."
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure the geometry of power is visually encoded."
+    instructions:
+      - "Review the visual motifs list."
+      - "Check if the scene compositions reflect the current power imbalance."
+    questions:
+      - "Can a viewer understand the tension without hearing the dialogue?"
+    success_criteria:
+      - "Visual motifs and framing reinforce the relational state."
+
+validation_checklist:
+  - "Does every character have a 'leverage' point?"
+  - "Is the 'Inciting Incident' a disruption of a specific relationship?"
+  - "Does the climax involve the simultaneous collapse of multiple 'Edges'?"
+  - "Is the 'Theme' expressed through the conflict of character values?"
+  - "Does every node connect to at least two other nodes?"
+  - "Does every edge contain a source of friction or tension?"
+  - "Is the 'vibration' of a disruption measurable across the web?"
+  - "Are the 'masks' and 'secrets' clearly defined for all primary nodes?"
+  - "Does the setting act as a 'pressure cooker' for the characters?"
+  - "Is the power imbalance score clearly documented for all key edges?"
+  - "Are the visual motifs (threads, knots, shadows) integrated into the scene descriptions?"
+  - "Does the plot avoid 'information dumps' in favor of 'manipulation attempts'?"
+
+failure_modes:
+  - failure_mode: "The Floating Character"
+    symptom: "A character feels like they are in a different movie."
+    likely_cause: "Lack of established 'Edges' or 'Dependencies'."
+    fix: "Assign them a debt, a secret, or a rivalry with a core node."
+  - failure_mode: "The Static Web"
+    symptom: "The plot feels like a series of repetitive arguments."
+    likely_cause: "The 'Edges' are not being disrupted; the tension level isn't rising."
+    fix: "Introduce a 'Web Disruption' that forces a fundamental change in a power dynamic."
+  - failure_mode: "The Single-Threaded Story"
+    symptom: "The story is just about one person's problem."
+    likely_cause: "The 'Web' is actually just a line (A -> B -> C)."
+    fix: "Create cross-connections (A <-> C) to create a network instead of a chain."
+
+adaptation_notes:
+  feature_film: "Focus on a tight, high-density web of 4-6 characters."
+  short_film: "Focus on a single, high-impact disruption that fundamentally alters one edge."
+  tv_episode: "Establish a micro-web that is disrupted and resolved within the runtime."
+  tv_pilot: "Establish the 'Initial State' of the web and the 'First Disruption' clearly."
+  anime: "Use visual motifs (e.g., magical bonds or ancestral curses) to make the 'Edges' literal and visible."
+  adult_animation: "Use extreme visual distortions or surrealism to represent broken edges or psychological breaks."
+  anthology: "Each episode must feature a self-contained web that is disrupted and resolved."
+  game_cinematic: "Ensure the web's tension is palpable in the character's physical movements and environmental interaction."
+
+yaml_usage_notes:
+  how_to_use: "Start with 'Nodes', then 'Edges', then 'Disruptions'. Do not attempt to write plot beats before the web is mapped."
+  recommended_population_order:
+    - "story_inputs"
+    - "methodology_structure.stage_1_node_definition"
+    - "methodology_structure.stage_2_edge_weaving"
+    - "methodology_structure.stage_3_disruption_mapping"
+    - "theme_design"
+  minimum_viable_completion: "A completed 'Nodes' and 'Edges' section with at least 3 nodes and 4 edges."
+  signs_framework_is_ready_for_scene_outline: "When you can trace a 'ripple effect' from an event through at least three different characters."

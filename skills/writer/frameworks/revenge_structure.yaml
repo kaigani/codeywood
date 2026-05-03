@@ -1,0 +1,455 @@
+metadata:
+  framework_name: "Revenge Structure Template"
+  methodology_name: "Revenge Structure"
+  methodology_family: "Archetypal Narrative"
+version: "1.0"
+created_for: "story development"
+suitable_media:
+  - "feature film"
+  - "short film"
+  - "anime"
+  - "adult animation"
+  - "game cinematic"
+  - "web series"
+best_for:
+  - "high-stakes character studies"
+  - "action-thrillers"
+  - "tragedies"
+  - "noir"
+not_ideal_for:
+  - "lighthearted comedies"
+  - "purely whimsical fantasy"
+  - "slice-of-life"
+target_lengths:
+  - "90-minute feature"
+  - "20-minute short"
+  - "episodic arc"
+core_principle: "The transformation of a protagonist through the cycle of injury, pursuit, and the ultimate cost of retribution."
+primary_story_unit: "The Escalation of Violence/Consequence"
+primary_success_metric: "The emotional and moral weight of the 'Price Paid' for vengeance."
+
+framework_overview:
+  summary: "A structural framework centered on a protagonist driven by a traumatic loss or injustice to seek retribution against an antagonist, exploring the themes of justice vs. vengeance and the erosion of self."
+  what_this_framework_helps_create:
+    - "High-tension character arcs"
+    - "Visceral, consequence-driven plots"
+    - "Moral ambiguity and tragic resonance"
+  what_it_prioritizes:
+    - "The causal link between the 'Wound' and the 'Action'"
+    - "The psychological decay of the protagonist"
+    - "The escalation of stakes"
+  what_it_deemphasizes:
+    - "Subplots unrelated to the central pursuit"
+    - "Character growth that does not involve loss or change"
+
+use_when:
+  - "The protagonist's primary motivation is reactive rather than proactive."
+  - "The story explores the consequences of obsession."
+  - "The plot is driven by a/an specific, irreversible event."
+
+avoid_when:
+  - "The protagonist's goals are purely opportunistic."
+  - "The story requires a high degree of moral purity from the lead."
+  - "The conflict can be resolved through simple negotiation or diplomacy."
+
+core_principles:
+  - "The Wound must be irreversible and profound."
+  - "The Pursuit must demand a sacrifice of the protagonist's former self."
+  - "The Antagonist must be the direct cause of the Wound."
+  - "The Resolution must reveal the true cost of the vengeance."
+
+workflow:
+  - step: 1
+    name: "The Infliction"
+    goal: "Establish the baseline and the destruction of it."
+    instructions:
+      - "Define the protagonist's 'Normal' world."
+      - "Execute the 'Wound'—the event that breaks the world."
+    output: "The Inciting Trauma"
+  - step: 2
+    name: "The Vow"
+    goal: "Establish the commitment to the path."
+    instructions:
+      - "Create the moment where the protagonist chooses pursuit over recovery."
+    output: "The Point of No Return"
+  - step: 3
+    name: "The Descent"
+    goal: "Map the escalation and the loss of humanity."
+    instructions:
+      - "Structure beats that show the protagonist gaining power/proximity but losing morality/connection."
+    output: "The Escalation Outline"
+  - step: 4
+    name: "The Reckoning"
+    goal: "The collision of the two forces."
+    instructions:
+      - "Design the confrontation where the 'Wound' and the 'Action' meet."
+    output: "The Climax Structure"
+  - step: 5
+    name: "The Aftermath"
+    goal: "Determine the final cost."
+    instructions:
+      - "Evaluate what is left of the protagonist once the target is gone."
+    output: "The Thematic Resolution"
+
+story_inputs:
+  premise: "<The core idea of the revenge cycle>"
+  logline: "<Protagonist + Inciting Wound + Antagonist + The Cost>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Neo-Noir>"
+  tone: "<e.g., Bleak, Visceral, Melancholic>"
+  target_length: "<e.g., 110 pages>"
+  audience: "<e/g., Mature/Adult>"
+  rating: "<e.g., R/TV-MA>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include:
+    - "A specific, identifiable loss"
+    - "A visible transformation in the protagonist"
+  must_avoid:
+    - "A 'cheap' or easily fixable wound"
+    - "A protagonist who remains unchanged by the violence"
+
+methodology_structure:
+  the_wound_phase:
+    description: "The destruction of the status quo."
+    elements:
+      - name: "The Status Quo"
+        purpose: "To establish what is at stake."
+        fields_to_complete:
+          protagonist_identity_pre_trauma: "<Who were they before the violence?>"
+          the_anchor: "<What was the one thing keeping them grounded/human?>"
+      - name: "The Infliction"
+        purpose: "The primary trauma."
+        fields_to_complete:
+          the_act: "<What was done?>"
+          the_loss: "<What was taken (life, limb, dignity, family, honor)?>"
+          the_antagonist_signature: "<How does this act reflect the antagonist's nature?>"
+    decision_forcing_fields:
+      irreversibility_index: "<Scale of 1-10 of how much the world can never return to normal>"
+      trauma_viscerality: "<Description of the sensory impact of the wound>"
+      moral_baseline: "<The specific virtue that is about to be tested>"
+  the_vow_phase:
+    description: "The transition from victim to hunter."
+    elements:
+      - name: "The Catalyst of Choice"
+        purpose: "The moment the protagonist accepts the path."
+        fields_to_complete:
+          the_failed_alternative: "<Why can't they just walk away or heal?>"
+          the_oath: "<What is the internal or external promise made?>"
+    decision_forcing_fields:
+      point_of_no_return: "<The specific action that makes retreat impossible>"
+      vow_type: "<Internal/Psychological vs External/Public>"
+      consequence_awareness: "<Does the protagonist know the cost of this choice?>"
+  the_descent_phase:
+    description: "The escalation of the hunt and the erosion of the self."
+    elements:
+      - name: "The First Strike"
+        purpose: "Testing the new, violent identity."
+        fields_to_complete:
+          success_of_violence: "<Does it provide satisfaction or only more hunger?>"
+          collateral_damage: "<Who else is hurt by this first step?>"
+      - name: "The Escalation Ladder"
+        purpose: "Increasing the stakes and the cost."
+        fields_to_complete:
+          step_1_loss: "<What small part of their humanity is sacrificed here?>"
+          step_2_loss: "<What important relationship is severed here?>"
+          step_3_loss: "<What physical or social standing is destroyed here?>"
+    decision_forcing_fields:
+      moral_erosion_rate: "<How quickly is the protagonist losing their original virtues?>"
+      resource_depletion: "<What physical or social assets are being burned to fuel the hunt?>"
+      antagonist_proximity: "<How much closer is the protagonist getting to the target?>"
+  the_confrontation_phase:
+    description: "The collision of the hunter and the hunted."
+    elements:
+      - name: "The Meeting"
+        purpose: "The physical and moral climax."
+        fields_to_complete:
+          the_meeting: "<The moment the two forces occupy the same space?>"
+          the_revelation: "<What truth about the wound or the antagonist is revealed here?>"
+          the_execution: "<The act of retribution itself?>"
+    decision_forcing_fields:
+      lethal_intent_level: "<The level of violence required to resolve the conflict>"
+      truth_weight: "<The psychological impact of the revelation>"
+      climax_setting_symbolism: "<How the environment reflects the collision>"
+  the_aftermath_phase:
+    description: "The evaluation of the cost."
+    elements:
+      - name: "The Hollow Victory"
+        purpose: "The thematic resolution."
+        fields_to_complete:
+          the_empty_state: "<What is left of the protagonist now that the target is gone?>"
+          the_final_image: "<A visual representation of the cost (e.g., a scarred face, an empty house)>"
+    decision_forcing_fields:
+      residual_trauma_level: "<The lasting psychological scarring>"
+      surviving_connections: "<What, if anything, remains of their original world?>"
+      thematic_closure: "<Does the ending prove or disprove the central question?>"
+
+beats_or_units:
+  - id: "beat_01"
+    name: "The Golden Era"
+    order: 1
+    purpose: "Establish the 'Before' state."
+    approximate_position: "Opening"
+    writer_prompt: "Show the protagonist in a moment of peace or stability, specifically highlighting what they stand to lose."
+    story_function: "Establish empathy and stakes."
+    visual_function: "Warmth, light, stability, connection."
+    emotional_function: "Safety, contentment, or deceptive calm."
+    required_decisions:
+      - "What is the protagonist's primary virtue before the fall?"
+    fields_to_complete:
+      the_anchor_point: "<write here>"
+      the_pre_trauma_status: "<write here>"
+    diagnostic_questions:
+      - "Does the audience care enough about this person to mourn their loss?"
+    completion_criteria:
+      - "The audience understands the protagonist's 'Normal'."
+    common_failure_modes:
+      - "Making the protagonist too perfect/unrelatable."
+
+  - id: "beat_02"
+    name: "The Infliction"
+    order: 2
+    purpose: "The destruction of the status quo."
+    approximate_position: "Inciting Incident"
+    writer_prompt: "Execute the trauma. It must be visceral and irreversible."
+    story_function: "Create the motivation for the entire plot."
+    visual_function: "Chaos, sudden darkness, violence, or jarring shifts in composition."
+    emotional_function: "Shock, horror, grief, rage."
+    required_decisions:
+      - "Is the loss permanent?"
+    fields_to_complete:
+      the_wound_description: "<write here>"
+      the_antagonist_presence: "<write here>"
+    diagnostic_questions:
+      - "Is the trauma significant enough to justify a life-altering pursuit?"
+    completion_criteria:
+      - "The protagonist's world is fundamentally broken."
+    common_failure_modes:
+      - "The wound is too minor or can be resolved with a simple apology/fine."
+
+  - id: "beat_03"
+    name: "The Descent"
+    order: 3
+    purpose: "The process of becoming the monster."
+    approximate_position: "Rising Action"
+    writer_prompt: "Map out the steps where the protagonist trades their humanity for information or power."
+    story_function: "Drive the plot through escalation and tension."
+    visual_function: "Increasingly gritty, shadows, blood, isolation, physical scarring."
+    emotional_function: "Obsession, dread, numbness, ferocity."
+    required_decisions:
+      - "What is the 'point of no return' where they can never go back to their old life?"
+    fields_to_complete:
+      the_first_sacrifice: "<write here>"
+      the_escalation_milestone: "<write here>"
+    diagnostic_questions:
+      - "Is the protagonist becoming more like the antagonist?"
+    completion_criteria:
+      - "The protagonist is unrecognizable from the 'Golden Era' version."
+    common_failure_modes:
+      - "The protagonist is just 'doing tasks' without losing anything personal."
+
+  - id: "beat_04"
+    name: "The Reckoning"
+    order: 4
+    purpose: "The physical and moral climax."
+    approximate_position: "Climax"
+    writer_prompt: "The protagonist and antagonist meet. The violence must be the culmination of the accumulated rage."
+    story_function: "Resolve the external conflict."
+    visual_function: "High contrast, intense action, claustrophobic or epic scale."
+    emotional_function: "Catharsis, terror, realization, hollow triumph."
+    required_decisions:
+      - "Does the protagonist kill the antagonist or fail to?"
+    fields_to_complete:
+      the_climax_action: "<write here>"
+      the_truth_revealed: "<write here>"
+    diagnostic_questions:
+      - "Does the climax address the 'Wound' or just the 'Antagonist'?"
+    completion_criteria:
+      - "The antagonist is dealt with, one way or another."
+    common_failure_modes:
+      - "The victory feels too 'easy' or lacks emotional weight."
+
+  - id: "beat_05"
+    name: "The Void"
+    order: 5
+    purpose: "The final evaluation of the cost."
+    approximate_position: "Resolution"
+    writer_prompt: "Show the protagonist in the aftermath. They have won, but at what cost?"
+    story_function: "Resolve the internal/thematic conflict."
+    visual_function: "Empty landscapes, silence, lingering shadows, a single, haunting image."
+    emotional_function: "Melancholy, emptiness, exhaustion, or the start of a new cycle."
+    required_decisions:
+      - "Is the ending a tragedy or a hollow victory?"
+    fields_to_complete:
+      the_final_state: "<write here>"
+      the_lingering_image: "<write here>"
+    diagnostic_questions:
+      - "Does the ending reflect the theme of the cost of vengeance?"
+    completion_criteria:
+      - "The audience understands the final state of the protagonist's soul."
+    common_failure_modes:
+      - "A 'happy ending' that ignores the damage done during the descent."
+
+character_design:
+  methodology_role: "The transformation from Victim to Avenger."
+  characters:
+    - role: "The Protagonist (The Avenger)"
+      fields:
+        pre_trauma_virtue: "<What was their best quality?>"
+        the_wound_impact: "<How did the trauma change their psyche?>"
+        the_price_paid: "<What part of themselves did they trade for vengeance?>"
+        the_master_parallel: "<How are they now similar to the antagonist?>"
+    - role: "The Antagonist (The Inflictor)"
+      fields:
+        the_cruelty_type: "<Is it cold/calculated or hot/chaotic?>"
+        the_connection: "<Why is their crime personal to the protagonist?>"
+        the_mirror_quality: "<What trait do they share with the protagonist?>"
+
+world_design:
+  methodology_role: "The environment of decay and consequence."
+  fields:
+    the_moral_climate: "<Is the world indifferent, corrupt, or actively hostile?>"
+    the_echo_locations: "<Places that remind the protagonist of the wound?>"
+    the_cycle_setting: "<Does the setting suggest the violence will repeat?>"
+
+theme_design:
+  methodological_role: "The philosophical argument of the revenge cycle."
+  fields:
+    central_question: "<Does vengeance bring justice or merely more destruction?>"
+    the_temptation: "<The false idea that revenge will heal the wound?>"
+    the_truth: "<The reality that revenge only creates a void?>"
+
+visual_storytelling:
+  methodology_role: "Visualizing the erosion of the self."
+  image_system:
+    color_progression: "<e.g., Warm/Saturated -> Desaturated/Cold/Grey?>"
+    symbolic_motifs: ["Blood", "Scars", "Broken objects", "Empty spaces"]
+  visual_rules:
+    - "As the protagonist loses humanity, the lighting should become harsher/more high-contrast."
+    - "Use recurring visual 'reminders' of the wound in the background of the Descent phase."
+  final_image: "<A single, powerful image that encapsulates the 'Aftermath' phase.>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene in the 'Descent' must involve a trade-off (power for morality)."
+    - "Every scene in the 'Infliction' must heighten the sense of loss."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: "<How does the protagonist move closer to or further from their target?>"
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Focus on the physical toll of the pursuit."
+    - "Ensure the antagonist's shadow looms over even the 'quiet' scenes."
+  avoid_rules:
+    - "Avoid scenes of 'pure' triumph without a corresponding loss."
+
+revision_passes:
+  - name: "The Justification Pass"
+    goal: "Ensure the scale of the crime matches the scale of the pursuit."
+    instructions:
+      - "Review the 'Wound' and the 'Descent'."
+    questions:
+      - "Is the protagonist's extreme behavior earned by the trauma?"
+    success_criteria:
+      - "The audience accepts the protagonist's obsession as 'logical' within the context of their pain."
+  - name: "The Cost Pass"
+    goal: "Ensure the theme of loss is present in every act."
+    instructions:
+      - "Check every major beat for a 'sacrifice' or 'loss' element."
+    questions:
+      - "Is the protagonist losing something essential in every stage of the hunt?"
+    success_criteria:
+      - "The 'Aftermath' feels earned by the accumulation of losses."
+  - name: "The Structure Pass"
+    goal: "Verify the causal chain from Wound to Reckoning."
+    instructions:
+      - "Trace the logic from the initial trauma to the final confrontation."
+    questions:
+      - "Does every major plot beat stem directly from the consequences of the previous one?"
+    success_criteria:
+      - "The plot feels inevitable rather than episodic."
+  - name: "The Character Pass"
+    goal: "Ensure the protagonist's transformation is visible and impactful."
+    instructions:
+      - "Compare the 'Golden Era' character traits to the 'Aftermath' state."
+    questions:
+      - "Is the change in the protagonist's psyche reflected in their actions and dialogue?"
+    success_criteria:
+      - "The protagonist is fundamentally different by the end of the story."
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure the visual language mirrors the psychological decay."
+    instructions:
+      - "Audit the color, lighting, and motifs against the 'Descent' phase."
+    questions:
+      - "Do the visual shifts reinforce the loss of humanity?"
+    success_criteria:
+      - "The visual progression provides a subconscious narrative of decay."
+  - name: "The Revenge Logic Pass"
+    goal: "Ensure the 'Price Paid' is the central focus."
+    instructions:
+      - "Analyze the climax and aftermath for the presence of a heavy cost."
+    questions:
+      - "Is the victory hollow or purely celebratory?"
+    success_criteria:
+      - "The resolution leaves the audience with a sense of tragic consequence."
+
+validation_checklist:
+  - "Is the 'Wound' permanent and irreversible?"
+  - "Does the protagonist undergo a visible psychological/moral transformation?"
+  - "Is the antagonist the direct cause of the inciting trauma?"
+  - "Does the climax resolve the external conflict while complicating the internal one?"
+  - "Does the ending emphasize the 'Price Paid'?"
+  - "Is the 'Vow' a clear point of no return?"
+  - "Does the 'Descent' show a measurable loss of humanity or resources?"
+  - "Is the 'Aftermath' visually and emotionally distinct from the 'Golden Era'?"
+  - "Does the 'Infliction' establish the stakes through a loss of the 'Anchor'?"
+  - "Is the antagonist's presence felt even in the absence of direct interaction?"
+  - "Does the 'Reckoning' address the original 'Wound'?"
+  - "Is the 'Aftermath' state characterized by a sense of emptiness or hollow victory?"
+
+failure_modes:
+  - failure_mode: "The Trivial Wound"
+    symptom: "The protagonist's pursuit feels unhinged or irrational to the audience."
+    likely_cause: "The initial trauma lacks enough weight or personal impact."
+    fix: "Increase the personal stakes or the cruelty of the act."
+  - failure_mode: "The Unearned Victory"
+    symptom: "The ending feels 'too happy' or lacks emotional resonance."
+    likely_cause: "The protagonist hasn't sacrificed enough to achieve the goal."
+    fix: "Introduce a major loss (person, limb, or soul) during the Descent."
+  - failure_mode: "The Heroic Avenger"
+    symptom: "The protagonist remains a 'good person' throughout the story."
+    likely_cause: "The 'Descent' lacks real moral consequences or collateral damage."
+    fix: "Force the protagonist to make a choice that harms an innocent to get closer to the target."
+
+adaptation_notes:
+  feature_film: "Focus on the massive scale of the 'Aftermath' and the 'Reckoning'."
+  short_film: "Focus intensely on a single, sharp 'Wound' and a single, sudden 'Reckoning'."
+  tv_episode: "Use the 'Wound' as the setup for a single-episode arc of pursuit."
+  tv_pilot: "The 'Wound' should be the catalyst for a season-long 'Descent'."
+  anime: "Emphasize the visual 'Transformation' and the 'Power-up' at the cost of the self."
+  adult_animation: "Leverage visceral, graphic depictions of the 'Infliction' to establish the weight of the trauma."
+  anthology: "Each entry should be a self-contained cycle of Wound -> Pursuit -> Void."
+  game_cinematic: "Focus on the 'Infliction' as the player's motivation to engage with the gameplay loop."
+
+yaml_usage_notes:
+  how_to_use: "Fill out the 'story_inputs' first, then move through the 'methodology_structure' chronologically."
+  recommended_population_order:
+    - "story_inputs"
+    - "methodology_structure"
+    - "beats_or_units"
+    - "character_design"
+  minimum_viable_completion:
+    - "The Wound"
+    - "The Vow"
+    - "The Cost"
+  signs_framework_is_ready_for_scene_outline:
+    - "The 'Price Paid' is clearly defined."
+    - "The 'Aftermath' state is visually and emotionally distinct from the 'Golden Era'."

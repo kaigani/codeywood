@@ -1,0 +1,427 @@
+metadata:
+  framework_name: "Hyperlink/Network Narrative Template"
+  methodology_name: "Hyperlink / Network Narrative"
+  methodology_family: "Non-Linear / Ensemble / Mosaic"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv episode"
+    - "anthology"
+    - "web series"
+    - "anime"
+    - "game cinematic"
+  best_for:
+    - "ensemble casts"
+    - "mystery/thriller"
+    - "social commentary"
+    - "fate/destiny themes"
+    - "butterfly effect stories"
+  not_ideal_for:
+    - "character studies with single protagonists"
+    - "linear hero's journey"
+    - "low-budget single-location dramas"
+  target_lengths:
+    - "90-120 minute feature"
+    - "60-minute anthology episode"
+  core_principle: "Convergence through causality and thematic resonance."
+  primary_story_unit: "The Strand (Individual Plotline) and The Link (The Intersection)."
+  primary_success_metric: "The 'Aha!' moment where disparate threads reveal a singular, unified pattern."
+
+framework_overview:
+  summary: "A framework for developing stories where multiple, seemingly independent narrative strands are woven together through shared events, objects, or themes, eventually converging into a unified whole."
+  what_this_framework_helps_create:
+    - "Complex webs of causality"
+    - "Ensemble-driven narratives"
+    - "Thematic depth through repetition"
+    - "Structural satisfaction via convergence"
+  what_it_prioritizes:
+    - "Interconnectivity"
+    - "Causal ripples (The Butterfly Effect)"
+    - "Thematic echoes"
+    - "Shared catalysts"
+  what_it_deemphasizes:
+    - "A single protagonist's linear growth"
+    - "Isolated character arcs"
+
+use_when:
+  - "You have multiple interesting stories that share a common theme or event."
+  - "You want to explore how a single action affects people in different social strata."
+  - "You want to create a sense of cosmic irony, fate, or interconnectedness."
+
+avoid_when:
+  - "The connections between stories feel forced or arbitrary."
+  - "The convergence does not provide a narrative payoff for the individual strands."
+  - "The complexity outweighs the emotional clarity of the central theme."
+
+core_principles:
+  - "The Web: Every strand must eventually contribute to the structural integrity of the whole."
+  - "The Catalyst: A central event, object, or person that acts as the 'gravity' for all strands."
+  - "Causality: Action in Strand A must create a ripple that impacts Strand B."
+  - "Thematic Echo: Similar emotional beats or visual motifs should repeat across different strands to create unity."
+
+workflow:
+  - step: 1
+    name: "Define the Catalyst/Gravity"
+    goal: "Establish the central force that pulls the strands together."
+    instructions:
+      - "Identify a single event, or concept that touches all characters."
+    output: "The Central Anchor"
+  - step: 2
+    name: "Populate the Strands"
+    goal: "Develop the individual narrative threads."
+    instructions:
+      - "Create 3-5 distinct character arcs that seem independent at first."
+    output: "Preliminary Strand Outlines"
+  - step: 3
+    name: "Map the Intersections"
+    goal: "Engineer the points of contact."
+    instructions:
+      - "Determine where and how Strand A meets Strand B (physically, causally, or thematically)."
+    output: "The Connection Map"
+  - step: 4
+    name: "Sequence Convergence"
+    goal: "Structure the escalation toward the climax."
+    instructions:
+      - "Organize the strands so that the frequency of intersections increases as the story progresses."
+    output: "The Networked Beat Sheet"
+
+story_inputs:
+  premise: "<The overarching concept of the web>"
+  logline: "<A logline that captures the scale and the convergence point>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Neo-noir / Crime / Drama>"
+  tone: "<e.g., Melancholic / Frenetic / Tense>"
+  target_length: "<e.g., 110 pages>"
+  audience: "<e.g., Adult / Mature>"
+  rating: "<e.g., R>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: ["e.g., Pulp Fiction, Babel, Crash, Magnolia"]
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  the_central_anchor:
+    type: "Event | Object | Person | Concept"
+    description: "<The 'Sun' around which all strands orbit>"
+    impact_on_world: "<How this anchor disrupts the status quo>"
+    visibility: "<Is the anchor overt (a car crash) or covert (a shared secret)?>"
+    causal_potency: "<The magnitude of the ripple effect this anchor generates>"
+    temporal_scope: "<How long the influence of this anchor lasts in the narrative>"
+
+  the_strands:
+    strand_count: 0
+    strands:
+      - id: "strand_01"
+        protagonist: "<Name/Role>"
+        starting_state: "<Where they begin in the web>"
+        internal_arc: "<The personal journey>"
+        external_arc: "<The plot journey>"
+        relationship_to_anchor: "<How they are affected by the central event/object>"
+        causal_output: "<What action they take that impacts another strand?>"
+        connection_points: []
+        strand_weight: "<How much screen time/importance relative to the whole>"
+        narrative_arc_type: "<Linear | Cyclical | Degenerative>"
+
+  the_intersections:
+    intersection_points:
+      - id: "intersection_alpha"
+        strands_involved: []
+        type: "Physical | Causal | Thematic | Visual"
+        description: "<What actually happens at this meeting point?>"
+        consequence: "<How this meeting changes the trajectory of the involved strands>"
+        visual_anchor: "<A shared image or object used here>"
+        collision_intensity: "<Low (glance) | Medium (interaction) | High (clash)>"
+        narrative_shift_type: "<Character change | Plot pivot | World change>"
+
+beats_or_units:
+  - id: "unit_01"
+    name: "The Anchor Establishment"
+    order: 1
+    purpose: "Introduce the central force and the initial state of the web."
+    approximate_position: "Opening Sequence"
+    writer_prompt: "Show the catalyst in action and how it subtly disturbs the status quo."
+    story_function: "Establish the 'gravity' of the story."
+    visual_function: "Introduce the primary visual motif or recurring object."
+    emotional_function: "Establish the baseline tension or atmosphere."
+    required_decisions:
+      - "Determine the visibility level of the anchor."
+      - "Decide if the anchor is an event or an object."
+    fields_to_complete:
+      anchor_type: ""
+      initial_atmosphere: ""
+    diagnostic_questions:
+      - "Is the anchor's presence felt even before it is explicitly seen?"
+      - "Does the opening scene establish the scale of the potential web?"
+    completion_criteria:
+      - "The central anchor is clearly identified."
+      - "The primary visual motif is established."
+    common_failure_modes:
+      - "The anchor is too obscure to be understood."
+      - "The anchor lacks sufficient impact to justify the ensemble."
+
+  - id: "unit_02"
+    name: "The Strand Introduction"
+    order: 2
+    purpose: "Introduce the independent threads and their protagonists."
+    approximate_position: "First Act"
+    writer_prompt: "Develop characters in their isolated environments before they are touched by the web."
+    story_function: "Establish character agency and individual stakes."
+    visual_function: "Establish distinct visual identities for each strand."
+    emotional_function: "Create empathy for disparate characters."
+    required_decisions:
+      - "Define the starting state of each protagonist."
+      - "Assign a 'weight' to each strand."
+    fields_to_complete:
+      strand_list: []
+      protagonist_arcs: {}
+    diagnostic_questions:
+      - "Are the characters interesting enough to sustain a solo plot?"
+      - "Is there enough distinction between the strands?"
+    completion_criteria:
+      - "All primary strands have a defined protagonist and goal."
+    common_failure_modes:
+      - "Strands feel too similar, reducing the impact of later intersections."
+      - "Protagonists lack enough agency to drive their own plots."
+
+  - id: "unit_03"
+    name: "The First Ripple"
+    order: 3
+    purpose: "Initiate the first causal connection between strands."
+    approximate_position: "Mid-First Act"
+    writer_prompt: "An action in Strand A must leave a trace that Strand B encounters."
+    story_function: "Begin the process of convergence."
+    visual_function: "Introduce a shared object or visual echo."
+    emotional_function: "Introduce the feeling of 'unseen' connection."
+    required_decisions:
+      - "Choose the type of intersection (Physical, Causal, or Thematic)."
+      - "Determine the consequence of the first ripple."
+    fields_to_complete:
+      ripple_event: ""
+      affected_strand: ""
+    diagnostic_questions:
+      - "Is the connection logical or does it feel like a coincidence?"
+      - "Does the ripple change the trajectory of the second strand?"
+    completion_criteria:
+      - "At least one intersection point is documented."
+    common_failure_modes:
+      - "The connection is too subtle to be noticed by the audience."
+      - "The connection is too 'Deus Ex Machina'."
+
+  - id: "unit_04"
+    name: "The Expanding Web"
+    order: 4
+    purpose: "Increase the frequency and complexity of intersections."
+    approximate_position: "Second Act"
+    writer_prompt: "As the strands collide, the web should become denser and more chaotic."
+    story_function: "Escalate the stakes and the complexity of the narrative."
+    visual_function: "Increase the use of shared motifs and visual parallels."
+    emotional_function: "Build tension through the sense of inescapable fate."
+    required_decisions:
+      - "Map the secondary and tertiary intersections."
+      - "Balance the weight of the strands as they collide."
+    fields_to_complete:
+      intersection_map: {}
+      complexity_index: ""
+    diagnostic_questions:
+      - "Is the frequency of intersections increasing?"
+      - "Are the characters' lives becoming more entangled?"
+    completion_criteria:
+      - "A complete connection map exists for all strands."
+    common_failure_modes:
+      - "The web becomes too complex to follow."
+      - "One strand begins to dominate the others entirely."
+
+  - id: "unit_05"
+    name: "The Convergence Climax"
+    order: 5
+    purpose: "Bring all strands into a singular, unified moment of impact."
+    approximate_position: "Third Act"
+    writer_prompt: "The paths of all characters must collide at the epicenter of the anchor."
+    story_function: "Resolve the central conflict and the web's tension."
+    visual_function: "A massive visual payoff using all established motifs."
+    emotional_function: "The 'Aha!' moment of profound realization or tragedy."
+    required_decisions:
+      - "Determine the finality of the convergence."
+      - "Decide the ultimate fate of the anchor."
+    fields_to_complete:
+      climax_description: ""
+      resolution_type: ""
+    diagnostic_questions:
+      - "Does the climax address every major strand?"
+      - "Is the resolution a direct result of the accumulated ripples?"
+    completion_criteria:
+      - "The final intersection point is reached."
+      - "The central anchor's influence is fully realized."
+    common_failure_modes:
+      - "The climax only resolves one strand, leaving others orphaned."
+      - "The convergence feels unearned or purely accidental."
+
+character_design:
+  methodology_role: "Characters act as nodes in a network; their importance is measured by their 'Impact Radius'."
+  characters:
+    - name: "<Name>"
+      role: "<Protagonist / Antagonist / Catalyst / Observer>"
+      impact_radius: "<How many other strands/characters do they touch?>"
+      connection_nodes: []
+      hidden_connection: "<A secret link to another character that isn't revealed until later>"
+      agency_level: "<How much do their actions drive the 'ripple effect'?>"
+
+world_design:
+  methodology_role: "The world must feel like a closed system where everything is reachable."
+  fields:
+    shared_geography: "<The specific setting that allows for convergence (e.g., a single city block, a transit hub)>"
+    social_strata: "<The range of different worlds being connected (e.g., wealthy vs. impoverished)>"
+    environmental_pressure: "<A shared external force (e.g., a storm, a heatwave, a lockdown)>"
+
+theme_design:
+  methodology_role: "Theme is the 'glue' that makes the connections feel meaningful rather than random."
+  fields:
+    central_thematic_question: "<e.g., Is anyone truly an island?>"
+    thematic_echoes:
+      - pattern: "<e.g., The motif of 'unanswered calls'>"
+        strand_a_usage: "<How it appears in Strand A>"
+        strand_b_usage: "<How it appears in Strand B>"
+    argument: "<The debate the web of stories is attempting to resolve>"
+
+visual_storytelling:
+  methodology_role: "Visual motifs provide subconscious evidence of connectivity."
+  image_system:
+    shared_motifs: ["<e.g., A recurring red umbrella>", "<e.g., The sound of a specific siren>"]
+    visual_parallels:
+      - description: "<e.g., Two characters performing the same mundane action in different locations>"
+    compositional_links: "<e.g., Using the same framing for different characters to suggest shared fate>"
+  final_image: "<An image that encapsulates the entire web in one frame>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either advance a strand or facilitate a connection."
+    - "Avoid 'filler' scenes that do not contribute to the web's complexity."
+    - "Use 'Causal Bridges': A character leaves a scene in a way that directly enables a character in a different strand to act."
+  scene_template:
+    scene_id: ""
+    strand_id: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: ""
+    visual_anchor: ""
+    emotional_shift: ""
+    causal_ripple: "<What event in this scene will impact a different strand later?>"
+  do_rules:
+    - "Increase the frequency of intersections as you approach the climax."
+    - "Ensure the 'weight' of each strand is balanced so one doesn't feel like a subplot."
+  avoid_rules:
+    - "Do not introduce a new, disconnected strand too late in the script."
+    - "Avoid 'Deus Ex Machina' connections (connections that happen by pure luck without prior setup)."
+
+revision_passes:
+  - name: "The Connectivity Pass"
+    goal: "Ensure the web is structurally sound."
+    instructions:
+      - "Trace the path from Strand A to Strand C. Is there a logical or causal chain?"
+    questions:
+      - "Are there any 'orphan strands' that don't connect to the main web?"
+      - "Do the connections feel earned or merely convenient?"
+    success_criteria:
+      - "Every strand has at least one physical or causal link to the central anchor."
+
+  - name: "The Thematic Resonance Pass"
+    goal: "Strengthen the 'glue'."
+    instructions:
+      - "Look for opportunities to repeat visual or auditory motifs across different strands."
+    questions:
+      - "Does the theme emerge naturally from the intersections?"
+    success_criteria:
+      - "The story feels like a single unit despite having multiple plots."
+
+  - name: "The Structure Pass"
+    goal: "Verify the pacing of convergence."
+    instructions:
+      - "Check the density of intersections across the timeline."
+    questions:
+      - "Does the frequency of meetings increase toward the end?"
+      - "Is the introduction of the anchor appropriately timed?"
+    success_criteria:
+      - "The narrative tension escalates through increasing connectivity."
+
+  - name: "The Character Pass"
+    goal: "Ensure character agency drives the plot."
+    instructions:
+      - "Audit each character's 'causal output'."
+    questions:
+      - "Are characters reacting to the anchor, or are they driving the ripples?"
+      - "Do characters feel like distinct nodes or just plot devices?"
+    success_criteria:
+      - "Every character's actions have a measurable impact on another strand."
+
+  - name: "The Visual Storytelling Pass"
+    goal: "Audit the visual cohesion of the web."
+    instructions:
+      - "Identify all recurring visual motifs and their distribution."
+    questions:
+      - "Are the visual parallels recognizable across different strands?"
+      - "Does the final image unify the established motifs?"
+    success_criteria:
+      - "The visual language provides a subconscious sense of unity."
+
+  - name: "The Causality Pass"
+    goal: "Eliminate coincidental connections."
+    instructions:
+      - "Trace every intersection back to a specific preceding action."
+    questions:
+      - "Is there a 'butterfly effect' chain for every major collision?"
+      - "Are there any connections that rely solely on 'luck'?"
+    success_criteria:
+      - "Every intersection is justified by a prior causal ripple."
+
+validation_checklist:
+  - "Does every strand eventually intersect with the central anchor?"
+  - "Is there a clear 'ripple effect' where an action in one plot changes another?"
+  - "Does the climax provide a resolution that addresses the entire web, not just one strand?"
+  - "Are the connections between characters/events foreshadowed?"
+  - "Is the central anchor's impact clearly visible in the character arcs?"
+  - "Are the visual motifs consistently applied across different strands?"
+  - "Does each strand have a distinct and identifiable protagonist?"
+  - "Is the geographical setting conducive to the required intersections?"
+  - "Is the 'weight' of each strand balanced to avoid subplots?"
+  - "Are the thematic echoes present in at least two different strands?"
+  - "Does the frequency of intersections increase as the story progresses?"
+  - "Are there any 'orphan strands' that lack a connection to the web?"
+
+failure_modes:
+  - failure_mode: "The String of Pearls"
+    symptom: "The story feels like a series of disconnected vignettes."
+    likely_cause: "Lack of causal ripples; strands are too isolated."
+    fix: "Introduce an event in Strand A that physically or logically forces a character in Strand B to react."
+  - failure_mode: "The Forced Collision"
+    symptom: "Characters meet in a way that feels ridiculous or unearned."
+    likely_cause: "Ignoring geography or character motivations to force a meeting."
+    fix: "Build the 'pathway' to the intersection through smaller, logical waypoints."
+  - failure_mode: "The Overwhelming Web"
+    symptom: "The audience loses track of who is who or why they matter."
+    likely_cause: "Too many strands or too much complexity without a clear central anchor."
+    fix: "Reduce the strand count or strengthen the visibility of the central anchor."
+
+adaptation_notes:
+  feature_film: "Focus on 3-5 high-impact strands with a heavy climax."
+  short_film: "Limit to 2 strands; focus on a single, powerful 'collision'."
+  tv_episode: "Use the 'Procedural Hyperlink'—one crime/event affecting several local lives."
+  tv_pilot: "Establish the 'Web' as the series' primary engine; use the pilot to introduce the nodes."
+  anime: "Utilize visual motifs and extreme 'Butterfly Effect' sequences (e.g., cosmic scale)."
+  adult_animation: "Use stark visual contrasts and heavy thematic echoes to bridge disparate tones."
+  anthology: "Focus on the 'Thematic Glue' as the only thing connecting disparate stories."
+  game_cinematic: "Use 'Causal Ripples' to explain how player actions in one area affect another."
+
+yaml_usage_notes:
+  how_to_use: "Start with the 'Central Anchor' and 'The Strands' before attempting to map 'Intersections'."
+  recommended_population_order:
+    - "Central Anchor"
+    - "The Strands"
+    - "The Intersections"
+    - "Character Design (Nodes)"
+    - "Theme/Visual Motifs"
+  minimum_viable_completion: "A defined Anchor, 3 Strands, and 2 Intersections."
+  signs_framework_is_ready_for_scene_outline: "When you can trace a line of causality from the first scene of Strand A to the final scene of Strand C."

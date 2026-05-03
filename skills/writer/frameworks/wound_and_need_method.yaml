@@ -1,0 +1,329 @@
+metadata:
+  framework_name: "Wound-and-Need Template"
+  methodology_name: "Wound-and-Need Method"
+  methodology_family: "Character-Driven Psychological Arc"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv_pilot"
+    - "anime"
+    - "short_film"
+    - "adult_animation"
+  best_for:
+    - "character studies"
+    - "dramas"
+    - "psychological thrillers"
+    - "tragedies"
+  not_ideal_for:
+    - "purely procedural action"
+    - "high-concept concept-driven horror"
+    - "episodic comedy without arc"
+  target_lengths:
+    - "90-120 minutes"
+    - "22-45 minutes"
+  core_principle: "The external plot is a crucible designed to force a character to confront a past trauma (The Wound) and embrace a necessary internal change (The Need) by abandoning a false belief (The Lie)."
+  primary_story_unit: "The Psychological Transformation"
+  primary_success_metric: "The alignment between the character's internal deficit and the external plot's pressure."
+
+framework_overview:
+  summary: "A framework focused on the internal architecture of a character, where the plot serves as the mechanism for psychological resolution or destruction."
+  what_this_framework_helps_create:
+    - "Deeply resonant character arcs"
+    - "Thematic cohesion between plot and character"
+    - "High-stakes emotional conflict"
+  what_it_prioritizes:
+    - "Internal causality"
+    - "Psychological consistency"
+    - "Thematic resonance"
+  what_it_deemphasphasizes:
+    - "External spectacle for spectacle's sake"
+    - "Incidental plot twists"
+
+use_when:
+  - "The character's personality is the engine of the story."
+  - "The ending is defined by a change in the character's worldview."
+  - "The theme is a moral or psychological argument."
+
+avoid_when:
+  - "The story is driven by external, non-character-related forces (e.g., natural disasters, cosmic horror)."
+  - "The protagonist is a static vessel for the audience (e.g., classic action heroes)."
+
+core_principles:
+  - "The Wound: A past trauma that shaped the character's current identity."
+  - "The Lie: The false belief the character holds to protect themselves from the Wound."
+  - "The Want: The external, tangible goal the character pursues to satisfy the Lie."
+  - "The Need: The internal truth/growth required to heal the Wound (which the character initially resists)."
+  - "The Crucible: The plot events that make the Lie impossible to maintain."
+
+workflow:
+  - step: 1
+    name: "Identify the Wound"
+    goal: "Establish the character's psychological origin."
+    instructions:
+      - "Define a formative, painful event."
+      - "Determine how this event created a defensive psychological scar."
+    output: "The Wound Definition"
+  - step: 2
+    name: "Construct the Lie and the Want"
+    goal: "Create the character's starting state and driving motivation."
+    instructions:
+      - "Translate the Wound into a false belief (The Lie)."
+      - "Create an external goal (The Want) that is a direct, misguided attempt to protect the Lie."
+    output: "The Character's False Drive"
+  - step: 3
+    name: "Define the Need and the Truth"
+    goal: "Establish the resolution/transformation path."
+    instructions:
+      - "Identify what the character must learn to become whole."
+      - "Ensure the Need directly contradicts the Lie."
+    output: "The Character's Arc Destination"
+  - step: 4
+    name: "Design the Crucible (The Plot)"
+    goal: "Align external events with internal pressures."
+    instructions:
+      - "Map plot beats that specifically target the character's Lie."
+      - "Ensure the climax forces a choice between the Want and the 'Need'."
+    output: "The Plot/Arc Integration"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  arc_architecture:
+    the_wound:
+      event_description: "<The specific past trauma/event>"
+      the_ghost: "<The lingering presence or memory of the wound>"
+      psychological_impact: "<How it changed the character's perception of reality>"
+    the_lie:
+      statement_of_lie: "<e.g., 'I can only trust myself', 'Love is a weakness', 'Success justifies cruelty'>"
+      defense_mechanism: "<The specific behavior the character uses to uphold the Lie>"
+    the_want:
+      external_objective: "<The tangible thing they are chasing in the plot>"
+      misguided_logic: "<How the Want is supposed to solve the Wound without the character knowing it>"
+    the_need:
+      internal_truth: "<The realization required for healing>"
+      the_cost_of_need: "<What the character must sacrifice (usually their comfort or their Want) to achieve the Need>"
+  evolutionary_stages:
+    stage_1_stagnation:
+      focus: "The maintenance of the Lie through routine and defense."
+      key_decision: "How does the character's behavior reinforce the Lie?"
+      psychological_state: "Defensive, closed, stable."
+      external_indicator: "Routine, repetitive actions, and established boundaries."
+      risk_factor: "The danger of the Wound being exposed by external change."
+    stage_2_disruption:
+      focus: "The erosion of the Lie via external pressure."
+      key_decision: "Which specific event targets the character's primary defense?"
+      psychological_state: "Anxious, reactive, questioning."
+      external_indicator: "Disruption of routine, new obstacles, and loss of control."
+      risk_factor: "The character retreating into deeper, more dangerous isolation."
+    stage_3_confrontation:
+      focus: "The intense pressure of the Crucible forcing the Need."
+      key_decision: "Does the character attempt to fix the Wound using the Want?"
+      psychological_state: "Desperate, intense, transformative."
+      external_indicator: "High-stakes conflict, loss of resources, and physical danger."
+      risk_factor: "Total psychological collapse or permanent stagnation."
+    stage_4_resolution:
+      focus: "The final choice between the Lie and the Need."
+      key_decision: "What is the ultimate cost of the Need?"
+      psychological_state: "Cathartic, resolved, or tragic."
+      external_indicator: "The final confrontation and the aftermath of the choice."
+      risk_factor: "Failure to learn, leading to a tragic end."
+
+beats_or_units:
+  - id: "inciting_incident"
+    name: "The Crack in the Lie"
+    order: 1
+    purpose: "To introduce an external force that the character's Lie cannot easily dismiss."
+    approximate_position: "25%"
+    writer_prompt: "<How does the plot disrupt the character's status quo/defense mechanism?>"
+    story_function: "Disrupts the character's equilibrium."
+    visual_function: "<A visual symbol of the disruption or a breach of the character's 'safe' space>"
+    emotional_function: "Anxiety, confusion, or defensive irritation."
+    required_decisions:
+      - "Which part of the Lie is being tested?"
+    fields_to_complete:
+      disruption_event: "<write here>"
+      initial_reaction: "<write here>"
+    diagnostic_questions:
+      - "Does this event force the character to acknowledge a truth they've been avoiding?"
+    completion_criteria:
+      - "The character's routine/defense is no longer sufficient."
+    common_failure_modes:
+      - "The incident is purely external and doesn't touch the character's psychology."
+
+  - id: "midpoint"
+    name: "The Confrontation of Truth"
+    order: 2
+    purpose: "To force the character to see the Need, even if they aren't ready to accept it."
+    approximate_position: "50%"
+    writer_prompt: "<What event makes the character realize their old way of operating is failing?>"
+    story_function: "Shifts the character from reactive to proactive (or desperate)."
+    visual_function: "<A visual metaphor for the character's 'mask' slipping or breaking>"
+    emotional_function: "Crisis, realization, or overwhelming dread."
+    required_decisions:
+      - "Does the character double down on the Lie or start to glimpse the Need?"
+    fields_to_complete:
+      the_revelation: "<write here>"
+      the_consequence: "<write here>"
+    diagnostic_questions:
+      - "Is the character now forced to deal with the reality of their Wound?"
+    completion_criteria:
+      - "The stakes are now internal as much as they are external."
+    common_failure_modes:
+      - "The midpoint is just a plot escalation without psychological weight."
+
+  - id: "climax"
+    name: "The Ultimate Choice"
+    order: 3
+    purpose: "The final battle between the Want and the Need."
+    approximate_position: "90%"
+    writer_prompt: "<What choice must the character make: achieve their Want by clinging to the Lie, or achieve their Need by sacrificing the Want?>"
+    story_function: "Resolves the character arc and the plot simultaneously."
+    visual_function: "<A visual representation of the character's transformation or their destruction>"
+    emotional_function: "Catharsis, tragedy, or epiphany."
+    required_decisions:
+      - "Does the character succeed (Transformation) or fail (Tragedy)?"
+    fields_to_complete:
+      the_sacrifice: "<write here>"
+      the_final_outcome: "<write here>"
+    diagnostic_questions:
+      - "Is the character's victory/defeat a direct result of their psychological growth/stagnation?"
+    completion_criteria:
+      - "The Lie is officially dead or proven fatal."
+    common_failure_modes:
+      - "The climax is won through luck or external help rather than character choice."
+
+character_design:
+  methodology_role: "The engine of the story's causality."
+  characters:
+    - name: "<Protagonist Name>"
+      wound: "<write here>"
+      lie: "<write here>"
+      want: "<write here>"
+      need: "<write here>"
+      shadow_self: "<The version of the character if they fully succumb to the Lie>"
+    - name: "<Antagonist/Opponent Name>"
+      role_in_arc: "<How they represent the temptation of the Lie or the pressure of the Need?>"
+      connection_to_wound: "<Do they share a wound, or do they represent the person who inflicted the wound?>"
+
+world_design:
+  methodology_role: "The environment that reinforces the theme and tests the Lie."
+  fields:
+    thematic_environment: "<How does the setting reflect the character's internal state?>"
+    symbolic_locations:
+      - location: "<write here>"
+        symbolism: "<write here>"
+    world_rules: "<Are there rules in this world that make the Lie harder to maintain?>"
+
+theme_design:
+  methodology_role: "The argument between the Lie and the Need."
+  fields:
+    central_argument: "<The conflict between the false belief and the truth>"
+    thematic_question: "<What question does the story ask the audience regarding the character's choice?>"
+    thematic_resolution: "<The answer provided by the character's final choice>"
+
+visual_storytelling:
+  methodology_role: "Externalizing the internal struggle."
+  image_system:
+    motif_of_the_wound: "<A recurring visual/sound that reminds the audience of the trauma>"
+    motif_of_the_need: "<A recurring visual/sound that suggests growth or truth>"
+  visual_rules:
+    - "Use lighting/color to differentiate between 'The Lie' (safety/stagnation) and 'The Need' (danger/growth)."
+  recurring_motifs: []
+  final_image: "<An image that shows the character's new state of being (or their end)>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either pressure the Lie or reveal the Need."
+    - "Avoid scenes that are purely 'moving the plot' without affecting the character's psychological state."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: "<How does this scene challenge the character's Lie?>"
+    turn: "<How does the character's internal state shift in this scene?>"
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Make the character's defense mechanism visible through action."
+    - "Ensure the external obstacles are mirrors of the internal Wound."
+  avoid_rules:
+    - "Do not explain the Wound through dialogue; show it through the character's inability to act/love/trust."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Ensure the plot beats are a direct consequence of the character's psychological state."
+    instructions:
+      - "Trace every major plot beat back to its impact on the character's Wound."
+    questions:
+      - "If we removed the Wound, would the plot still happen?"
+    success_criteria:
+      - "The plot feels like an inevitable consequence of the character's psychology."
+  - name: "character_pass"
+    goal: "Ensure the character's transformation is earned and consistent."
+    instructions:
+      - "Check if the character is 'accidentally' acting according to their Need too soon."
+      - "Verify the defense mechanisms are consistent with the established Wound."
+    questions:
+      - "Is the character's resistance to the truth believable?"
+    success_criteria:
+      - "The character's transformation feels earned and difficult."
+  - name: "theme_pass"
+    goal: "Ensure the central argument is clear and resolved."
+    instructions:
+      - "Identify the central question asked by the conflict between Lie and Need."
+      - "Check if the resolution provides a definitive answer to that question."
+    questions:
+      - "Does the ending support the intended thematic argument?"
+    success_criteria:
+      - "The resolution of the plot and the resolution of the character arc are one and the same."
+  - name: "visual_storytelling_pass"
+    goal: "Ensure the internal struggle is externalized visually."
+    instructions:
+      - "Audit the use of motifs for the Wound and the Need."
+      - "Check if lighting and color shifts align with the character's psychological state."
+    questions:
+      - "Can the audience understand the character's internal state without dialogue?"
+    success_criteria:
+      - "The visual language reinforces the psychological arc."
+  - name: "psychological_integrity_pass"
+    goal: "Ensure the character's 'Shadow Self' is properly utilized."
+    instructions:
+      - "Check for moments where the character nearly succumbs to the Shadow Self."
+      - "Ensure the 'Cost of the Need' is appropriately high."
+    questions:
+      - "Is the temptation of the Lie still present in the final act?"
+    success_criteria:
+      - "The character's choice feels like a genuine struggle against their own nature."
+
+validation_checklist:
+  - "Does the protagonist have a clear, tangible Want?"
+  - "Is the protagonist's Lie a direct consequence of their Wound?"
+  - "Does the plot force the character to choose between their Want and their Need?"
+  - "Is the climax a moment of psychological decision rather than just physical action?"
+  - "Does the protagonist's defense mechanism manifest in observable actions?"
+  - "Is the 'Cost of the Need' high enough to create significant stakes?"
+  - "Does the Antagonist's role represent the temptation of the Lie or the pressure of the Need?"
+  - "Is the setting/world reinforcing the central thematic argument?"
+  - "Are the visual motifs for the Wound and the Need clearly distinguishable?"
+  - "Does the character's 'Shadow Self' serve as a clear warning of failure?"
+  - "Is the 'Want' a misguided attempt to satisfy the 'Wound'?"
+  - "Does the Midpoint force a realization of the 'Need'?"
+
+failure_: ""

@@ -1,0 +1,402 @@
+metadata:
+  framework_name: "Bottle Structure Template"
+  methodology_name: "Bottle Structure"
+  methodology_family: "Containment-Based Storytelling"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "tv episode"
+    - "anime"
+    - "undisclosed"
+    - "horror"
+    - "thriller"
+  best_for:
+    - "low-budget productions"
+    - "character-driven psychological studies"
+    - "high-tension claustrophobic narratives"
+    - "single-location dramas"
+  not_ideal_for:
+    - "epic adventures"
+    - "world-spanning journeys"
+    - "ensemble-driven multi-location sagas"
+  target_lengths:
+    - "short film"
+    - "feature film"
+    - "tv episode"
+  core_principle: "The escalation of tension through the compression of space, cast, and resources."
+  primary_story_unit: "The Pressure Cooker (The Enclosure)"
+  primary_success_metric: "The degree of psychological or physical breakdown resulting from containment."
+
+framework_overview:
+  summary: "A methodology designed to maximize dramatic tension by trapping characters in a closed system where escape is impossible, undesirable, or blocked, forcing a confrontation with internal or external pressures."
+  what_this_framework_helps_create:
+    - "Intense, high-stakes character studies"
+    - "Economical, high-impact narratives"
+    - "Claustrophobic atmosphere"
+  what_it_prioritizes:
+    - "Environmental pressure"
+    - "Character breakdown"
+    - "Resource depletion"
+    - "Internal conflict escalation"
+  what_it_deemphasizes:
+    - "Expansive worldbuilding"
+    - "Large-scale action"
+    - "External journey progression"
+
+use_when:
+  - "Budget is a primary constraint"
+  - "The goal is to explore how characters react to extreme stress"
+  - "The story relies on a single, powerful setting"
+  - "The plot is driven by secrets, claustrophobia, or siege"
+
+avoid_when:
+  - "The story requires a sense of wanderlust or discovery"
+  - "The primary conflict is resolved by leaving the current location"
+  - "The narrative requires a massive, shifting cast"
+
+core_principles:
+  - "The Enclosure: The boundaries of the story must be clearly defined and inescapable."
+  - "The Pressure: An external or internal force must actively compress the characters within the enclosure."
+  - "The Depletion: Tension is maintained by the dwindling of vital resources (air, food, light, trust, ammunition, time)."
+  - "The Rupture: The climax must be the moment the containment fails or the characters break."
+
+workflow:
+  - step: 1
+    name: "Define the Container"
+    goal: "Establish the physical and psychological boundaries of the story."
+    instructions:
+      - "Define the primary location."
+      - "Determine the 'rules of containment' (Why can't they leave? Is it physical, social, or psychological?)"
+    output: "The Enclosure Profile"
+  - step: 2
+    name: "Identify the Pressure"
+    goal: "Determine what is forcing the characters into conflict."
+    instructions:
+      - "Identify the external threat (the siege, the storm, the monster)."
+      - "Identify the internal threat (the secret, the madness, the betrayal)."
+    output: "The Pressure Vector"
+  - step: 3
+    name: "Cast the Pressure Cooker"
+    goal: "Select a limited cast with high-friction relationships."
+    instructions:
+      - "Choose characters who cannot coexist peacefully under pressure."
+    output: "The Cast List"
+  - step: 4
+    name: "Map the Depletion"
+    goal: "Create a timeline of dwindling resources/options."
+    instructions:
+      - "List what is being lost as the story progresses."
+    output: "The Scarcity Timeline"
+  - step: 5
+    name: "Structure the Breakdown"
+    goal: "Plot the escalation from status quo to rupture."
+    instructions:
+      - "Apply the Bottle Beats (Enclosed -> Breach -> Siege -> Erosion -> Rupture)."
+    output: "The Beat Sheet"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write or select from suitable_media>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints:
+    - "Location: <write here>"
+    - "Cast Size: <write here>"
+    - "Budget Tier: <write here>"
+  creative_constraints:
+    - "Inescapable element: <write here>"
+    - "Time limit: <write here>"
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  logic_flow: "The story moves from 'The Status Quo of the Enclosure' to 'The Total Rupture of the Self/System'."
+  enclosure_setup_logic:
+    boundary_definition: "<physical vs psychological limits>"
+    containment_rules: "<the logic of why escape is impossible>"
+    initial_resource_baseline: "<what is available at the start>"
+    character_equilibrium: "<the fragile peace before the breach>"
+  breach_catalyst_logic:
+    intrusion_mechanism: "<how the outside enters the inside>"
+    equilibrium_disruption_score: "<magnitude of the change>"
+    immediate_consequence_vector: "<the first domino to fall>"
+    escape_impediment_increase: "<how much harder it is to leave now>"
+  siege_lockdown_logic:
+    lockdown_mechanism: "<the physical or social sealing of the space>"
+    threat_intensification_rate: "<how fast the threat is pressing inward>"
+    resource_vulnerability_index: "<which resources are now at risk>"
+    character_isolation_level: "<how much the group is forced into proximity>"
+  erosion_depletion_logic:
+    depletion_timeline: "<the sequence of losing vital elements>"
+    internal_fracture_point: "<when trust or morality breaks>"
+    environmental_decay_rate: "<the physical degradation of the space>"
+    psychological_attrition_level: "<the mental state of the survivors>"
+  rupture_climax_logic:
+    breaking_point_trigger: "<the final catalyst for the rupture>"
+    containment_failure_type: "<physical destruction vs psychological snap>"
+    outcome_resolution_state: "<what remains after the pressure is released>"
+    post_rupture_environment: "<the new, altered reality>"
+
+beats_or_units:
+  - id: "the_enclosure"
+    name: "The Enclosure (The Setup)"
+    order: 1
+    purpose: "Establish the 'normal' within the confined space and the rules of the container."
+    approximate_position: "Opening"
+    writer_prompt: "Show the characters inhabiting the space. Establish the boundaries and the existing tension/routine."
+    story_function: "Establates the baseline before the pressure is applied."
+    visual_function: "Wide/Medium shots establishing the limits of the room/area. Sensory details of the space."
+    emotional_function: "Comfort, boredom, or a fragile, existing tension."
+    required_decisions:
+      - "What is the physical boundary?"
+      - "What is the psychological boundary?"
+    fields_to_complete:
+      status_quo: "<how they lived before the breach>"
+      the_walls: "<what defines the edge of the story>"
+    diagnostic_questions:
+      - "Do we understand why they are here?"
+      - "Do we understand why they cannot simply walk away?"
+    completion_criteria:
+      - "The audience understands the 'rules' of the space."
+    common_failure_modes:
+      - "The space feels too large or unrestricted."
+      - "The characters seem too comfortable with the lack of escape."
+
+  - id: "the_breach"
+    name: "The Breach (The Catalyst)"
+    order: 2
+    purpose: "Introduce the element that disrupts the enclosure's equilibrium."
+    approximate_position: "Inciting Incident"
+    writer_prompt: "Something enters the space, or a realization occurs that makes the current state impossible to maintain."
+    story_function: "The introduction of the primary conflict/threat."
+    visual_function: "A change in lighting, a sound from outside, a physical intrusion, or a sudden change in the environment (e.g., a leak, a lock jamming)."
+    emotional_function: "Shock, intrusion, sudden anxiety."
+    required_decisions:
+      - "Is the breach external (an intruder) or internal (a discovery)?"
+    fields_to_complete:
+      the_intrusion: "<what or who entered/changed?>"
+      the_immediate_consequence: "<what changed instantly?>"
+    diagnostic_questions:
+      - "Does this breach make escape harder or more dangerous?"
+    completion_criteria:
+      - "The status quo is permanently broken."
+    common_failure_modes:
+      - "The breach is something that could be easily ignored or bypassed."
+
+  - id: "the_siege"
+    name: "The Siege (The Lockdown)"
+    order: 3
+    purpose: "Establish the inability to leave and the intensification of the threat."
+    approximate_position: "Rising Action"
+    writer_prompt: "The exits are blocked. The characters are now trapped with the threat. The walls are closing in."
+    story_function: "Increasing the stakes by removing all options for flight."
+    visual_function: "Tighter shots, more claustrophobic framing, shadows encroaching."
+    emotional_function: "Dread, entrapment, mounting panic."
+    required_decisions:
+      - "How is the exit physically or psychologically blocked?"
+    fields_to_complete:
+      the_lockdown_mechanism: "<how are they trapped?>"
+      the_escalating_threat: "<how is the threat pressing against the walls?>"
+    diagnostic_questions:
+      - "Is the 'trapped' feeling visceral?"
+    completion_criteria:
+      - "The characters have accepted that they cannot leave."
+    common_failure_modes:
+      - "The characters are 'trapped' but clearly could leave if they just tried (logic error)."
+
+  - id: "the_erosion"
+    name: "The Erosion (The Depletion)"
+    order: 4
+    purpose: "The wearing down of characters, resources, and trust."
+    approximate_position: "Midpoint to Crisis"
+    writer_prompt: "The air is running out, the food is gone, the light is dying, and the characters are turning on each enough."
+    story_function: "Driving the conflict from external (the threat) to internal (the people)."
+    visual_function: "Dimming lights, messier environments, physical decay of characters (sweat, wounds, grime)."
+    emotional_function: "Desperation, irritability, paranoia, exhaustion."
+    required_decisions:
+      - "Which resource is the first to go?"
+      - "Which character's morality breaks first?"
+    fields_to_complete:
+      depleted_resource_1: "<e.g., oxygen, ammunition, trust>"
+      depleted_resource_2: "<e.g., sanity, food, time>"
+      the_internal_fracture: "<the moment the group splits>"
+    diagnostic_questions:
+      - "Is the tension rising because things are being lost?"
+    completion_criteria:
+      - "The characters are at their lowest physical or mental ebb."
+    common_failure_modes:
+      - "The erosion feels repetitive rather than progressive."
+
+  - id: "the_rupture"
+    name: "The Rupture (The Climax)"
+    order: 5
+    purpose: "The breaking of the container or the breaking of the character."
+    approximate_position: "Climax"
+    writer_prompt: "The pressure becomes too great. The walls break, the door is kicked in, or the character's mind snaps."
+    story_function: "The final confrontation where the conflict is resolved through destruction."
+    visual_function: "Explosive movement, high-contrast lighting, chaotic camera work, destruction of the setting."
+    emotional_function: "Catharsis, horror, devastation, or release."
+    required_decisions:
+      - "Does the rupture result in escape, death, or a new, worse state of being?"
+    fields_to_complete:
+      the_breaking_point: "<the specific moment of impact>"
+      the_outcome_of_the_rupture: "<what is left standing?>"
+    diagnostic_questions:
+      - "Is the resolution a direct result of the accumulated pressure?"
+    completion_criteria:
+      - "The 'Bottle' is no longer the same as it was in the setup."
+    common_failure_modes:
+      - "The climax feels like it could have happened anywhere, not specifically because of the containment."
+
+character_design:
+  methodology_role: "Characters must function as 'pressure valves' or 'fuel' for the tension."
+  characters:
+    - name: "<write here>"
+      role_in_enclosure: "<e.g., The Leader, The Victim, The Instigator, The Secret-Keeper>"
+      relationship_to_the_walls: "<How do they view the confinement?>"
+      the_breaking_point: "<What specific pressure causes them to snap?>"
+      internal_pressure: "<What secret or guilt are they carrying into the bottle?>"
+      utility_to_tension: "<How does their presence make the situation harder for others?>"
+
+world_design:
+  methodology_role: "The setting is the primary antagonist."
+  fields:
+    the_perimeter: "<The physical limits of the space>"
+    sensory_load: "<The smells, sounds, and temperatures that contribute to claustrophobia>"
+    resource_inventory: "<What is available at the start vs. what is needed to survive?>"
+    the_exit_denial: "<The specific reason why the exit is non-viable>"
+
+theme_design:
+  methodology_role: "The theme is the 'residue' left after the pressure is released."
+  fields:
+    central_pressure_question: "<e.g., Does isolation reveal our true nature or hide it?>"
+    the_false_safety: "<What the characters thought they had before the breach>"
+    the_brutal_truth: "<What the characters learned through the erosion>"
+
+visual_storytelling:
+  methodology_role: "Visuals must reinforce the sensation of shrinking space."
+  image_system:
+    framing_progression: "<From wide/open to tight/extreme close-up>"
+    lighting_progression: "<From stable/bright to flickering/dim/shadowy>"
+    color_palette: "<From natural/calm to high-contrast/strained/monochromatic>"
+  recurring_motifs:
+    - "<e.g., The ticking clock, the dripping water, the encroaching shadow>"
+  final_image: "<The image of what remains after the rupture>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either increase the pressure or deplete a resource."
+    - "Characters should never be allowed to 'rest' without a new threat emerging."
+    - "The setting must be an active participant in every scene."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: ""
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Use the environment to obstruct characters."
+    - "Focus on micro-expressions of stress."
+  avoid_rules:
+    - "Do not allow characters to leave the primary location."
+    - "Do not introduce 'deus ex machina' escapes."
+
+revision_passes:
+  - name: "The Escape Check"
+    goal: "Ensure the containment is logically sound."
+    instructions:
+      - "Review every scene. Is there an unstated way for a character to just leave?"
+    questions:
+      - "Is the exit blocked by a physical, social, or psychological barrier that is unshakeable?"
+    success_criteria:
+      - "The audience feels the hopelessness of the situation."
+  - name: "The Tension Audit"
+    goal: "Ensure the pressure is actually increasing."
+    instructions:
+      - "Trace the 'Resource/Trust' levels from start to finish."
+    questions:
+      - "Is the tension plateauing, or is it steadily rising toward the rupture?"
+    success_criteria:
+      - "The 'Erosion' phase shows a measurable decline in safety/sanity."
+  - name: "The Character Breakdown Pass"
+    goal: "Verify that character arcs are driven by environmental pressure."
+    instructions:
+      - "Check if character changes are reactive to the enclosure's depletion."
+    questions:
+      - "Does the character's internal secret collide with the external threat?"
+    success_criteria:
+      - "Character evolution is a direct consequence of the 'Pressure Cooker'."
+  - name: "The Visual Compression Pass"
+    goal: "Ensure the visual language reinforces the shrinking space."
+    instructions:
+      - "Audit the framing and lighting progression."
+    questions:
+      - "Does the camera move from wide/observational to tight/intrusive?"
+    success_criteria:
+      - "The visual claustrophobia matches the narrative tension."
+  - name: "The Theme Residue Pass"
+    goal: "Ensure the theme is the logical result of the rupture."
+    instructions:
+      - "Compare the initial 'False Safety' to the final 'Brutal Truth'."
+    questions:
+      - "Is the thematic conclusion earned by the characters' suffering?"
+    success_criteria:
+      - "The theme feels like the inevitable residue of the pressure."
+
+validation_checklist:
+  - "Is the primary location clearly defined?"
+  - "Is the reason for containment inescapable?"
+  - "Does the cast size feel appropriately constrained?"
+  - "Does the story feature a clear depletion of a vital resource?"
+  - "Does the climax directly involve the 'breaking' of the enclosure or the character?"
+  - "Is the 'Breach' an irreversible event?"
+  - "Does the lighting progression move from stable to unstable?"
+  - "Is the 'Erosion' phase distinct from the 'Siege' phase?"
+  - "Does the setting act as an active antagonist?"
+  - "Are the 'Rules of the Enclosure' established in the first act?"
+  - "Is there a measurable decline in character morality or trust?"
+  - "Does the visual framing tighten as the story progresses?"
+  - "Is the 'Resource Depletion' timeline clearly mapped?"
+
+failure_modes:
+  - failure_mode: "The Open Window"
+    symptom: "The audience realizes the characters could just walk out."
+    likely_cause: "Weak establishment of the 'Rules of the Enclosure'."
+    fix: "Introduce a physical or psychological consequence to leaving."
+  - failure_mode: "The Static Pressure"
+    symptom: "The story feels like the same argument repeated for 90 minutes."
+    likely_cause: "Failure to implement the 'Erosion' or 'Depletion' phase."
+    fix: "Remove a resource or a character's ability to function."
+  - failure_mode: "The Externalized Conflict"
+    symptom: "The tension comes from a threat far away, not the threat inside the room."
+    likely_cause: "Focusing too much on the 'Breach' and not enough on the 'Siege'."
+    fix: "Bring the consequences of the threat into the immediate physical space."
+
+adaptation_notes:
+  feature_film: "Focus on the psychological breakdown of a larger group."
+  short_film: "Focus on a single, sharp, high-impact rupture."
+  tv_episode: "Focus on the 'Siege' and 'Erosion' phases, leaving the 'Rupture' for the season finale."
+  tv_pilot: "Establish the enclosure and the breach, setting up the season-long siege."
+  anime: "Use high-concept environmental traps (e.g., a magical barrier) to enforce the enclosure."
+  adult_animation: "Use extreme visual metaphors for the 'Erosion' of the psyche."
+  anthology: "Each episode uses a different 'Container' and different 'Rules of Containment'."
+  game_cinematic: "Use the enclosure to limit the player's perspective and heighten environmental storytelling."
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'Story Inputs' first, then move through the 'Methodology Structure' beats sequentially."
+  recommended_population_order:
+    - "Enclosure -> Breach -> Siege -> Erosion -> Rupture"
+  minimum_viable_completion: "A completed 'Enclosure' and 'Breach' with a defined 'Breaking Point'."
+  signs_framework_is_ready_for_scene_outline: "When the 'Depletion' timeline and 'The Breaking Point' are clearly defined."

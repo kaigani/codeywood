@@ -1,0 +1,412 @@
+metadata:
+  framework_name: "Procedural Structure Template"
+  methodology_name: "Procedural Structure"
+  methodology_family: "Formulaic/Episodic"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "TV episode"
+    - "TV pilot"
+    - "anthology short"
+    - "web series"
+    - "crime drama"
+    - "medical drama"
+    - "police procedural"
+  best_for:
+    - "Episodic storytelling"
+    - "Case-based narratives"
+    - "Character-driven mystery"
+    - "High-concept investigative loops"
+  not_ideal_for:
+    - "Serialized epic dramas"
+    - "Character studies without external conflict"
+    - "Non-linear experimental narratives"
+  target_lengths:
+    - "22-minute episode"
+    - "44-minute episode"
+    - "Short film (mystery/investigative)"
+  core_principle: "The reliable cycle of discovery, investigation, complication, and resolution."
+  primary_story_unit: "The Case/The Incident"
+  primary_success_metric: "Satisfying resolution of the immediate problem while maintaining the integrity of the series' status quo."
+
+framework_overview:
+  summary: "A framework designed to build stories around a repeatable, predictable, yet engaging loop of problem-solving."
+  what_this_framework_helps_create:
+    - "A sense of rhythm and reliability"
+    - "Clear stakes for each episode"
+    - "Effective use of archetypal characters"
+    - "Structured tension escalation"
+  what_it_prioritizes:
+    - "The investigation/discovery process"
+    - "The resolution of the 'Case of the Week'"
+    - "The maintenance of the protagonist's competence"
+  what_it_deemphasizes:
+    - "Long-term serialized character arcs (unless used as subplots)"
+    - "Ambiguous or unresolved endings"
+
+use_when:
+  - "Writing episodic television"
+  - "Developing a series with a 'monster/case of the week' format"
+  - "Creating stories where the setting/institution is as much a character as the leads"
+  - "When the goal is high-engagement, high-clarity storytelling"
+
+avoid_when:
+  - "Writing high-fantasy epics where the world changes permanently every episode"
+  - "Developing character-driven 'slice of life' stories without external pressure"
+  - "Creating experimental narratives that reject structural repetition"
+
+core_principles:
+  - "The Loop: Every story must follow a recognizable cycle of incident -> investigation -> resolution."
+  - "The Status Quo: The end of the story should ideally return the world to a state of equilibrium (even if characters are internally changed)."
+  - "The Competence: The protagonist's primary appeal is their ability to navigate the procedural loop."
+  - "The Pattern: The audience should be able to predict the *type* of story, even if they don't know the *outcome*."
+
+workflow:
+  - step: 1
+    name: "The Incident Definition"
+    goal: "Establish the disruption to the status quo."
+    instructions:
+      - "Define the crime, medical emergency, or mystery."
+    output: "The Case Premise"
+  - step: 2
+    name: "The Investigator Mapping"
+    goal: "Define the tools and characters used to solve the case."
+    instructions:
+      - "Identify the lead, the partner, and the specialist."
+    output: "Character/Role Framework"
+  - step: 3
+    name: "The Beat Loop Construction"
+    goal: "Map the progression from discovery to resolution."
+    instructions:
+      - "Identify the clues, the red herrings, and the climax."
+    output: "Structural Outline"
+  - step: 4
+    name: "The Complication Injection"
+    goal: "Ensure the case cannot be solved easily."
+    instructions:
+      - "Introduce personal stakes or procedural obstacles."
+    output: "Conflict Layering"
+
+story_inputs:
+  premise: "<The core 'What if' of the episode/case>"
+  logline: "<The Case + The Investigator + The Stakes>"
+  medium: "<e.g., TV Episode>"
+  genre: "<e.g., Noir, Medical, Sci-Fi Procedural>"
+  tone: "<e.g., Gritty, Humorous, Clinical, Melancholic>"
+  target_length: "<e.g., 45 minutes>"
+  audience: "<e.g., Adult, Procedural fans>"
+  rating: "<e.g., TV-MA, PG-13>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include:
+    - "<A specific piece of evidence/clue>"
+    - "<A specific character interaction>"
+  must_avoid:
+    - "<A trope to avoid>"
+
+methodology_structure:
+  structure_type: "The Procedural Loop"
+  phase_1_the_call:
+    focus: "Establishing the disruption and the stakes."
+    investigative_trigger: "<The event that breaks the peace>"
+    stake_level: "<Personal vs. Professional>"
+    resource_deployment: "<Who is called to the scene?>"
+    initial_complexity: "<Low/Medium/High>"
+  phase_2_the_investigation:
+    focus: "Gathering information and building the 'map' of the mystery."
+    evidence_type: "<Forensic, Testimonial, Digital, etc.>"
+    information_flow: "<Linear vs. Fragmented>"
+    specialist_integration: "<Which expert is needed?>"
+    red_herring_density: "<How many false leads are present?>"
+  phase_3_the_pivot:
+    focus: "The moment the initial theory fails or personal stakes collide with the case."
+    complication_nature: "<Procedural error, New evidence, Personal threat>"
+    theory_invalidation: "<What specific clue breaks the current theory?>"
+    tension_multiplier: "<How much harder does this make the case?>"
+    character_vulnerability: "<How does this affect the lead's competence?>"
+  phase_4_the_confrontation:
+    focus: "The direct encounter with the truth/culprit/problem."
+    climax_type: "<Physical, Intellectual, or Emotional confrontation>"
+    resolution_mechanism: "<The specific skill or tool used to win>"
+    consequence_level: "<Permanent change vs. Temporary fix>"
+    truth_revelation: "<The final piece of the puzzle>"
+  phase_5_the_reset:
+    focus: "Closing the case and returning to the status quo."
+    emotional_residue: "<What remains after the dust settles?>"
+    status_quo_stability: "<Is the institution changed or the same?>"
+    continuity_hook: "<What is left for the next episode?>"
+    final_image_type: "<Lingering, Triumphant, or Somber>"
+
+beats_or_units:
+  - id: "beat_01"
+    name: "The Inciting Incident (The Discovery)"
+    order: 1
+    purpose: "To present the problem that requires the protagonist's expertise."
+    approximate_position: "0-10%"
+    writer_prompt: "<What event or discovery forces the protagonist to act?>"
+    story_function: "Disruption of status quo."
+    visual_function: "<The 'Crime Scene' or 'Emergency Room' image>"
+    emotional_function: "<Shock, Dread, or Curiosity>"
+    required_decisions:
+      - "How much information is immediately available?"
+      - "Is the protagonist personally involved or just professionally involved?"
+    fields_to_complete:
+      the_event: "<write here>"
+      the_evidence: "<write/identify here>"
+      initial_stakes: "<write/identify here>"
+    diagnostic_questions:
+      - "Is the problem clearly defined?"
+      - "Is there an immediate sense of urgency?"
+    completion_criteria:
+      - "The problem is stated"
+      - "The characters are mobilized"
+    common_failure_modes:
+      - "The incident is too vague"
+      - "The stakes are too low"
+
+  - id: "beat_02"
+    name: "The Investigation (The Search)"
+    order: 2
+    purpose: "To explore the world and gather clues."
+    approximate_position: "10-40%"
+    writer_prompt: "<What clues are found? Who are the first suspects/witnesses?>"
+    story_function: "Information gathering and expansion of the world."
+    visual_function: "<Interrogations, lab work, searching locations>"
+    emotional_function: "<Curiosity, frustration, mounting tension>"
+    required_decisions:
+      - "What is the first 'false lead'?"
+      - "Which specialist/expert is brought in?"
+    fields_to_complete:
+      clue_alpha: "<write here>"
+      clue_beta: "<write here>"
+      suspect_list: []
+    diagnostic_questions:
+      - "Are we moving from known to unknown?"
+      - "Is the pace of discovery increasing?"
+    completion_criteria:
+      - "A significant new piece of information changes the direction of the search"
+    common_failure_modes:
+      - "The investigation feels like a random list of events"
+      - "No progress is made"
+
+  - id: "beat_03"
+    name: "The Complication (The Pivot)"
+    order: 3
+    purpose: "To raise the stakes and invalidate the current theory."
+    approximate_position: "40-60%"
+    writer_prompt: "<What goes wrong? What makes the case much harder or much more personal?>"
+    story_function: "Escalation and emotional complication."
+    visual_function: "<A sudden death, a lost piece of evidence, a betrayal>"
+    emotional_function: "<Panic, betrayal, doubt, high tension>"
+    required_decisions:
+      - "Does the complication affect the protagonist's job or their personal life?"
+      - "Does it introduce a 'Red Herring'?"
+    fields_to_complete:
+      the_pivot: "<write here>"
+      the_new_stake: "<write here>"
+    diagnostic_questions:
+      - "Does this make the resolution more difficult?"
+      - "Does this force the characters to change their strategy?"
+    completion_criteria:
+      - "The previous 'solution' is no longer viable"
+    common_failure_modes:
+      - "The complication is a 'deus ex machina' that actually makes things easier"
+
+  - id: "beat_04"
+    name: "The Climax (The Confrontation)"
+    order: 4
+    purpose: "To resolve the tension through action or revelation."
+    approximate_position: "60-90%"
+    writer_prompt: "<The final confrontation with the culprit/illness/problem. How does the truth emerge?>"
+    story_function: "Resolution of the central conflict."
+    visual_function: "<The arrest, the successful surgery, the final reveal>"
+    emotional_function: "<Catharsis, relief, or tragedy>"
+    required_decisions:
+      - "Is the resolution a physical confrontation or an intellectual one?"
+      - "Does the protagonist use their specific expertise to win?"
+    fields_to_complete:
+      the_moment_of_truth: "<write here>"
+      the_final_action: "<write here>"
+    diagnostic_questions:
+      - "Is the resolution earned by the protagonist's actions?"
+      - "Is the tension at its absolute peak?"
+    completion_criteria:
+      - "The mystery is solved"
+      - "The threat is neutralized"
+    common_failure_modes:
+      - "The resolution is too easy"
+      - "The 'twist' is revealed too late to matter"
+
+  - id: "beat_05"
+    name: "The Aftermath (The Reset)"
+    order: 5
+    approximate_position: "90-100%"
+    purpose: "To show the impact of the case and return to status quo."
+    writer_prompt: "<How do the characters reflect on what happened? What is the final image?>"
+    story_function: "Emotional closure and series continuity."
+    visual_function: "<The characters walking away, a quiet moment in the office, a lingering shot of the crime scene>"
+    emotional_function: "<Melancholy, satisfaction, or exhaustion>"
+    required_decisions:
+      - "Is the emotional arc of the episode closed?"
+      - "Is there a hook for the next case?"
+    fields_to_complete:
+      the_emotional_residue: "<write here>"
+      the_status_quo_return: "<write here>"
+    diagnostic_questions:
+      - "Is there a sense of closure for the 'Case of the Week'?"
+      - "Does the episode end on a note that prepares us for the next one?"
+    completion_criteria:
+      - "The loop is closed"
+    common_failure_modes:
+      - "The ending feels rushed"
+      - "The characters' growth is ignored"
+
+character_design:
+  methodology_role: "Archetypal/Functional"
+  characters:
+    - role: "The Lead (The Expert)"
+      traits: ["Competence", "Methodology", "Internal Conflict"]
+      function: "Driving the investigation/procedure."
+    - role: "The Partner/Counterpart"
+      traits: ["Complementary Skills", "Emotional Anchor"]
+      function: "Providing perspective and friction."
+    - role: "The Specialist"
+      traits: ["Niche Knowledge", "Eccentricity"]
+      function: "Providing the 'key' to the complication."
+    - role: "The Antagonist/Subject"
+      traits: ["The Obstacle", "The Mystery"]
+      function: "Representing the disruption to the status quo."
+
+world_design:
+  methodology_role: "The Institution"
+  fields:
+    the_institution: "<The Hospital, The Precinct, The Lab, etc.>"
+    rules_of_the_world: ["How do they investigate?", "What are the legal/ethical boundaries?"]
+    the_environment: "<The atmosphere of the workspace>"
+
+theme_design:
+  method_role: "The Moral Verdict"
+  fields:
+    the_moral_question: "<What ethical dilemma does this case present?>"
+    the_verdict: "<What does the resolution say about justice/truth/humanity?>"
+
+visual_storytelling:
+  methodology_role: "Evidence and Atmosphere"
+  image_system:
+    clue_visuals: ["Macro shots of evidence", "Data screens", "Forensic details"]
+    environment_visuals: ["Sterile/Clinical", "Gritty/Urban", "High-tech/Futuristic"]
+  recurring_motifs: ["The sound of the siren", "The flash of the camera", "The beep of the monitor"]
+  final_image: "<The image that lingers after the case is closed>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either reveal a clue or deepen a complication."
+    - "Avoid 'talking heads'—ensure characters are performing a procedural task (e.g., examining a body, typing, driving)."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: ""
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Show the work (the science, the legwork)."
+    - "Use the setting to create pressure (e.g., a ticking clock)."
+  avoid_rules:
+    - "Avoid purely expository scenes without action/discovery."
+    - "Avoid solving the case through pure luck."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Ensure the rhythm is satisfying."
+    instructions:
+      - "Check the spacing of the beats."
+      - "Verify the investigation length vs. climax length."
+    questions:
+      - "Does the audience feel the 'loop' working?"
+    success_criteria:
+      - "A balanced, rhythmic progression of tension."
+  - name: "character_pass"
+    goal: "Ensure character roles are functional and distinct."
+    instructions:
+      - "Check if the specialist provides a unique utility."
+      - "Verify the lead's competence is demonstrated."
+    questions:
+      - "Does every character contribute to the procedural resolution?"
+    success_criteria:
+      - "All archetypes serve a clear narrative purpose."
+  - name: "theme_pass"
+    goal: "Ensure the moral verdict is clear."
+    instructions:
+      - "Review the resolution against the initial moral question."
+    questions:
+      - "Does the case outcome reinforce the series' thematic core?"
+    success_criteria:
+      - "The resolution provides a clear thematic statement."
+  - name: "visual_storytelling_pass"
+    goal: "Ensure visual evidence drives the plot."
+    instructions:
+      - "Check for 'clue-heavy' visual moments."
+      - "Verify the environment reinforces the tone."
+    questions:
+      - "Can the story be understood even if the dialogue is muted?"
+    success_criteria:
+      - "The visual evidence is integral to the investigation."
+  - name: "procedural_logic_pass"
+    goal: "Ensure the investigation follows the established rules of the institution."
+    instructions:
+      - "Verify that the methods used are consistent with the setting (e.g., medical/police)."
+      - "Check that no 'magic' solutions bypass the procedural work."
+    questions:
+      - "Is the investigation grounded in the established expertise of the characters?"
+    success_criteria:
+      - "The resolution is a direct result of procedural competence."
+
+validation_checklist:
+  - "Is the central problem clearly established in the first 10%?"
+  - "Does the protagonist use their specific expertise to drive the plot?"
+  - "Is there a clear 'pivot' or 'twist' that changes the direction of the case?"
+  - "Does the resolution directly address the clues presented earlier?"
+  - "Is the status quo restored (or at least stabilized) by the end?"
+  - "Are the red herrings clearly distinguishable from actual clues?"
+  - "Does the complication increase the personal or professional stakes?"
+  - "Is the 'institution' or 'setting' clearly defined through character action?"
+  - "Does the visual storytelling include macro/detail shots of evidence?"
+  - "Is the transition from investigation to climax earned through legwork?"
+  - "Does the episode end with a sense of closure for the case?"
+  - "Is there a potential hook or lingering question for the next episode?"
+
+failure_modes:
+  - failure_mode: "The Easy Win"
+    symptom: "The case is solved without much struggle."
+    likely_cause: "Lack of a strong 'Complication' or 'Red Herring'."
+    fix: "Introduce a piece of evidence that contradicts the initial theory."
+  - failure_mode: "The Procedural Drift"
+    symptom: "The story wanders through unrelated investigations."
+    likely_cause: "Too many side-characters or subplots without connection to the main case."
+    fix: "Tie every sub-investigation back to the central 'Incident'."
+  - failure_mode: "The Unearned Twist"
+    symptom: "The culprit is revealed out of nowhere."
+    likely_cause: "The twist is not supported by earlier clues (the 'Cheating' mode)."
+    fix: "Plant 'hidden' clues in the 'Investigation' phase that only make sense after the reveal."
+
+adaptation_notes:
+  feature_film: ["Focus on one massive, high-stakes case."]
+  short_film: ["Compress the loop; move from Discovery to Climax rapidly."]
+  tv_episode: ["The standard template; focus on the 45-minute rhythm."]
+  tv_pilot: ["Must establish the 'Loop' and the 'Institution' for future use."]
+  anime: ["Emphasize the 'Specialist' characters and visual 'Clue' motifs."]
+  adult_animation: ["Can utilize more visceral/graphic 'Incident' imagery."]
+  anthology: ["Every episode must reset the 'Institution' or 'World' entirely."]
+  game_cinematic: ["Focus on the 'Discovery' and 'Confrontation' beats."]
+
+yaml_usage_notes:
+  how_to_use: ["Start with the 'Story Inputs' to define the case, then populate the 'Beats' sequentially."]
+  recommended_population_order: ["Story Inputs, Character Design, Beats, Theme Design"]
+  minimum_viable_completion: ["A completed 'Beats' section with 'The Incident' and 'The Climax'."]
+  signs_framework_is_ready_for_scene_outline: ["All 'Required Decisions' in the Beats section have been answered."]

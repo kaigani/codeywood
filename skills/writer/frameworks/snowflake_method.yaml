@@ -1,0 +1,92 @@
+metadata:
+  framework_name: "Snowflake Expansion Template"
+  methodology_name: "Snowflake Method"
+  methodology_family: "Iterative Expansion"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "novel"
+    - "tv_pilot"
+    - "anime"
+    - "game_cinematic"
+  best_for:
+    - "plot-heavy narratives"
+    - "complex multi-character webs"
+    - "writers prone to 'middle-sag'"
+    - "architect-style writers"
+  not_ideal_for:
+    - "discovery writing (pantsing)"
+    - "character studies without plot"
+    - "experimental non-linear vignettes"
+  target_lengths:
+    - "short film"
+    - "feature film"
+    - "epic series"
+  core_principle: "Building complexity through controlled, incremental expansion from a single seed."
+  primary_story_unit: "The Narrative Sentence/Paragraph"
+  primary_success_metric: "Structural integrity maintained from seed to scene list."
+
+framework_overview:
+  summary: "A top-down approach to story construction that begins with a single sentence and expands outward in layers of increasing detail."
+  what_this_expand_helps_create:
+    - "A robust, pre-vetted plot structure"
+    - "A cohesive cast of characters tied to plot milestones"
+    - "A detailed scene list derived from a proven synopsis"
+  what_it_prioritizes:
+    - "Structural stability"
+    - "Causal progression"
+    - "Clarity of premise"
+  what_it_deemphasizes:
+    - "Spontaneous character movement"
+    - "Atmospheric worldbuilding without plot relevance"
+
+use_when:
+  - "The premise is strong but the middle is missing"
+  - "The story feels too large or unmanageable to start writing"
+  - "You have many characters and need to ensure they all serve the plot"
+
+avoid_when:
+  - "You are writing purely to discover the story through prose"
+  - "The story is a single-scene character study"
+
+core_principles:
+  - "Start small: Never expand until the previous layer is structurally sound."
+  - "Expansion is additive: Every new layer must reinforce the previous layer."
+  - "The Seed is Sacred: The core conflict/premise should not be lost in the expansion."
+
+workflow:
+  - step: 1
+    name: "The Seed"
+    goal: "Define the core impact."
+    instructions:
+      - "Write a single sentence describing the story."
+      - "Do not use character names; use descriptions (e.g., 'A disgraced detective')."
+      - "Focus on the central conflict and the stakes."
+    output: "One-sentence summary"
+  - step: 2
+    name: "The Skeleton"
+    goal: "Map the narrative arc."
+    instructions:
+      - "Expand the seed into a single paragraph."
+      - "Structure the paragraph: Setup -> Disaster 1 -> Disaster 2 -> Disaster 3 -> Climax -> Resolution."
+    output: "One-paragraph synopsis"
+  - step: 3
+    name: "The Cast"
+    goal: "Define the engines of the plot."
+    instructions:
+      - "Create a summary for each major character."
+      - "Identify their motivation, goal, and the conflict that stops them."
+    output: "Character summaries"
+  - step: 4
+    name: "The Expansion"
+    goal: "Develop the narrative beats."
+    instructions:
+      - "Take every sentence from your Step 2 paragraph."
+      - "Expand each sentence into its own full paragraph."
+    output: "Multi-paragraph expanded synopsis"
+  - step: 5
+    name: "The Deep Dive"
+    goal: ""
+    instructions: []
+    output: ""

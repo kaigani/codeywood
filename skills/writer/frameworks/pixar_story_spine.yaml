@@ -1,0 +1,433 @@
+metadata:
+  framework_name: "Pixar Story Spine Template"
+  methodology_name: "Pixar Story Spine"
+  methodology_family: "Causal Narrative Structure"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "animated short"
+    - "web series"
+    - "game cinematic"
+  best_for:
+    - "establishing clear character arcs"
+    - "ensuring tight plot causality"
+    - "structuring simple, high-impact narratives"
+    - "testing narrative momentum"
+  not_ideal_for:
+    - "complex multi-protagonist epics"
+    - "non-linear experimental narratives"
+    - "purely atmospheric/vignette-based stories"
+  target_lengths:
+    - "short film"
+    - "feature film"
+    - "animated sequence"
+  core_principle: "Causality-driven progression: Every event must be a direct consequence of the preceding event, linked by the logic of 'Because of that'."
+  primary_story_unit: "The Causal Chain"
+  primary_success_metric: "The elimination of 'And then' in favor of 'Because of that'."
+
+framework_overview:
+  summary: "A structural framework based on the way Pixar writers develop stories, focusing on a chain of events where each beat is triggered by the consequence of the previous one."
+  what_this_framework_helps_create:
+    - "Tight, logical plot progression"
+    - "Clear character transformation"
+    - "Strong narrative momentum"
+  what_it_prioritizes:
+    - "Causality"
+    - "Consequence"
+    - "Change"
+  what_it_deemphasphasizes:
+    - "Subplots (unless they also follow the spine)"
+    - "Randomly occurring coincidences"
+    - "Static character studies"
+
+use_when:
+  - "Starting a new story from a simple premise"
+  - "Fixing a 'sagging middle' in a screenplay"
+  - "Checking if a plot feels episodic rather than integrated"
+
+avoid_when:
+  - "Writing highly complex, ensemble-driven political dramas"
+  - "Developing anthology structures where segments are unrelated"
+
+core_principles:
+  - "The 'And Then' Rule: If an event happens 'and then' another happens, the story is failing. It must happen 'because of that'."
+  - "The Chain of Consequence: Each beat must tighten the pressure on the protagonist."
+  - "The Transformation Anchor: The 'Ever since then' must reflect a fundamental change from the 'Once upon a time'."
+
+workflow:
+  - step: 1
+    name: "Establish the Baseline"
+    goal: "Define the status quo."
+    instructions:
+      - "Define the protagonist and their world."
+      - "Define the routine that is about be broken."
+    output: "Once upon a time / Every day"
+  - step: 2
+    name: "The Catalyst"
+    goal: "Introduce the disruption."
+    instructions:
+      - "Identify the event that breaks the routine."
+    output: "One day"
+  - step: 3
+    name: "The Causal Chain"
+    goal: "Build momentum through consequences."
+    instructions:
+      - "For every action, identify the direct, unavoidable consequence."
+      - "Escalate the stakes with each link."
+    output: "Because of that (x3)"
+  - step: 4
+    name: "The Resolution"
+    goal: "Close the loop and show the new reality."
+    instructions:
+      - "Reach the peak of the tension."
+      - "Show the permanent change in the world or character."
+    output: "Until finally / And ever since then"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  description: "The 8-beat causal chain."
+  structure_type: "Linear Causal Progression"
+  stage_setup:
+    focus: "Establishing the Baseline"
+    decision_drivers:
+      - "protagonist_identity"
+      - "world_rules"
+      - "baseline_stagnation"
+    logic_gate: "Is the status quo clearly defined and stable?"
+  stage_catalyst:
+    focus: "The Disruption"
+    decision_drivers:
+      - "event_impact"
+      - "irreversibility"
+      - "immediate_reaction"
+    logic_gate: "Does the event make the 'Every day' impossible to continue?"
+  stage_escalation:
+    focus: "The Causal Chain"
+    decision_drivers:
+      - "consequence_logic"
+      - "stakes_escalation"
+      - "obstacle_complexity"
+      - "character_agency"
+    logic_gate: "Is every beat a direct consequence of the previous one?"
+  stage_resolution:
+    focus: "The New Equilibrium"
+    decision_drivers:
+      - "climax_outcome"
+      - "permanent_change"
+      - "thematic_closure"
+    logic_gate: "Is the difference between the start and end unmistakable?"
+
+beats_or_units:
+  - id: "beat_01"
+    name: "Once upon a time"
+    order: 1
+    purpose: "Establish the status quo and character's baseline state."
+    approximate_position: "Beginning"
+    writer_prompt: "<Who is the protagonist and what is their world like?>"
+    story_function: "Contextualization"
+    visual_function: "Establishing shots, character introduction, establishing the 'normal' aesthetic."
+    emotional_function: "Empathy/Connection to the character's starting point."
+    required_decisions:
+      - "Protagonist's primary trait"
+      - "The setting's primary rule"
+    fields_to_complete:
+      protagonist_name: "<write here>"
+      world_setting: "<write here>"
+      baseline_status: "<write here>"
+    diagnostic_questions:
+      - "Is the character's starting state clearly defined?"
+      - "Do we understand what they stand to lose?"
+    completion_criteria:
+      - "The audience understands the 'before' state."
+    common_failure_modes:
+      - "Starting too late (missing the baseline)"
+      - "Character is too generic to care about"
+
+  - id: "beat_02"
+    name: "Every day"
+    order: 2
+    purpose: "Show the routine and the character's lack of growth/stagnation."
+    approximate_position: "Beginning"
+    writer_prompt: "<What is the repetitive nature of their life? What is their 'normal' conflict?>"
+    story_function: "Establishing Stakes & Routine"
+    visual_function: "Montage of daily life, repetitive visual motifs."
+    emotional_function: "Establishing comfort or underlying dissatisfaction."
+    required_decisions:
+      - "The specific routine to be broken"
+    fields_to_complete:
+      daily_routine: "<write here>"
+      internal_stagnation: "<write here>"
+    diagnostic_questions:
+      - "Does this routine feel lived-in?"
+      - "Is there a visible hint of the need for change?"
+    completion_criteria:
+      - "The routine is established enough that its disruption will matter."
+    common_failure_modes:
+      - "Too much exposition without action"
+
+  - id: "beat_03"
+    name: "One day"
+    order: 3
+    purpose: "The Inciting Incident that disrupts the status quo."
+    approximate_position: "Inciting Incident"
+    writer_prompt: "<What specific event happens that makes 'every day' impossible to continue?>"
+    story_function: "Catalyst"
+    visual_function: "A sudden change in lighting, sound, or composition; a disruptive character or object entering the frame."
+    emotional_function: "Shock, curiosity, or sudden dread."
+    required_decisions:
+      - "The nature of the disruption"
+      - "The immediate reaction of the protagonist"
+    fields_to_complete:
+      the_event: "<write here>"
+      immediate_consequence: "<write here>"
+    diagnostic_questions:
+      - "Is this event powerful enough to force the character out of their routine?"
+    completion_criteria:
+      - "The status quo is officially broken."
+    common_failure_modes:
+      - "The event is too small to drive a whole story"
+      - "The event happens by pure coincidence with no impact on the character"
+
+  - id: "beat_04"
+    name: "Because of that"
+    order: 4
+    purpose: "First consequence of the inciting incident; the first step into the new world."
+    approximate_position: "Rising Action"
+    writer_prompt: "<Because the 'One day' event happened, what is the first thing the character MUST do or encounter?>"
+    story_function: "Reaction/Escalation"
+    visual_function: "Movement away from the 'normal' setting into a new environment."
+    emotional_function: "Uncertainty, beginning of the struggle."
+    required_decisions:
+      - "The character's first choice"
+    fields_to_complete:
+      action_taken: "<write here>"
+      new_complication: "<write here>"
+    diagnostic_questions:
+      - "Is this action a direct result of the 'One day' event?"
+    completion_criteria:
+      - "A new problem has been created by the character's attempt to solve the first one."
+    common_failure_modes:
+      - "The 'And then' trap: The character does something unrelated to the catalyst."
+
+  - id: "beat_05"
+    name: "Because of that"
+    order: 5
+    purpose: "Second consequence; escalating the stakes and complexity."
+    approximate_position: "Rising Action"
+    writer_prompt: "<Because of the previous action, how does the situation become more difficult or the stakes higher?>"
+    story_function: "Escalation"
+    visual_function: "Increased visual chaos, tighter framing, or more intense color palettes."
+    emotional_function: "Increasing tension, pressure, or desperation."
+    required_decisions:
+      - "The introduction of a secondary obstacle or antagonist force."
+    fields_to_complete:
+      escalated_consequence: "<write here>"
+      rising_pressure: "<write here>"
+    diagnostic_questions:
+      - "Is the character's situation getting harder, not just different?"
+    completion_criteria:
+      - "The character can no longer retreat to their original 'Every day' state."
+    common_failure_modes:
+      - "The complication is a random accident rather than a consequence of the character's previous choice."
+
+  - id: "beat_06"
+    name: "Because of that"
+    order: 6
+    purpose: "The third consequence; leading directly into the climax."
+    approximate_position: "Climax/Crisis"
+    writer_prompt: "<Because of the mounting pressure, what is the final, unavoidable confrontation or decision?>"
+    story_function: "Crisis"
+    visual_function: "High-intensity imagery; the peak of the visual metaphor."
+    emotional_function: "Maximum tension, fear of failure, or moment of truth."
+    required_decisions:
+      - "The character's 'all-in' moment"
+    fields_to_complete:
+      the_breaking_point: "<write here>"
+      the_final_choice: "<write here>"
+    diagnostic_questions:
+      - "Does this choice force a permanent change?"
+    completion_criteria:
+      - "The character is forced to face the core conflict of the story."
+    common_failure_modes:
+      - "The character is saved by luck rather than their own choice/consequence."
+
+  - id: "beat_07"
+    name: "Until finally"
+    order: 7
+    purpose: "The Climax; the resolution of the primary conflict."
+    approximate_position: "Climax"
+    writer_prompt: "<What happens when the tension finally breaks? How is the conflict resolved?>"
+    story_function: "Resolution of Conflict"
+    visual_function: "The explosion of action or the profound silence after the storm; the resolution of visual tension."
+    emotional_function: "Catharsis, relief, tragedy, or epiphany."
+    required_decisions:
+      - "The outcome of the final choice"
+    fields_to_complete:
+      the_climax_event: "<write here>"
+      the_resolution_of_conflict: "<write here>"
+    diagnostic_questions:
+      - "Does the resolution directly answer the tension created in the 'Because of that' beats?"
+    completion_criteria:
+      - "The primary conflict is settled."
+    common_failure_modes:
+      - "The conflict is resolved by a 'Deus Ex Machina'."
+
+  - id: "beat_08"
+    name: "And ever since then"
+    order: 8
+    purpose: "The New Status Quo; showing the lasting impact of the journey."
+    approximate_position: "Resolution/Aftermath"
+    writer_prompt: "<How has the world or the character changed permanently? What is the new 'Every day'?>"
+    story_function: "New Equilibrium"
+    visual_function: "A visual echo of the 'Once upon a time' beat, but with a visible difference."
+    emotional_function: "Reflection, peace, or a new kind of longing."
+    required_decisions:
+      - "The verification of the new state"
+    fields_to_complete:
+      the_new_normal: "<write here>"
+      the_permanent_change: "<write here>"
+    diagnostic_questions:
+      - "Is the difference between the 'Once upon a time' and 'Ever since then' unmistakable?"
+    completion_criteria:
+      - "The character's arc is visibly complete."
+    common_failure_modes:
+      - "The character ends up exactly where they started without any growth."
+
+character_design:
+  methodology_role: "The engine of change."
+  characters:
+    - name: "<write here>"
+      starting_state: "<Who were they in 'Once upon a time'?>"
+      the_need: "<What internal change is required to survive the 'Because of that' chain?>"
+      the_transformation: "<How are they different in 'And ever since then'?>"
+
+world_design:
+  methodology_role: "The arena of consequence."
+  fields:
+    rules_of_the_world: "<What rules must be obeyed for the 'Because of that' logic to work?>"
+    the_disrupting_element: "<What part of the world changes during the 'One day' beat?>"
+
+theme_design:
+  methodly_role: "The truth revealed by the change."
+  fields:
+    central_argument: "<What is the story trying to prove through this chain of events?>"
+    the_lesson_learned: "<What does the 'And ever since then' teach the audience?>"
+
+visual_storytelling:
+  methodology_role: "Visualizing the causal chain."
+  image_system:
+    motif_of_stagnation: "<Visuals for 'Every day' (e.g., muted colors, circular motions)>"
+    motif_of_disruption: "<Visuals for 'One day' (e.g., sharp angles, bright light)>"
+    motif_of_transformation: "<Visuals for 'Ever since then' (e.s., vibrant colors, expansive shots)>"
+  final_image: "<An image that encapsulates the new reality>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either be a 'Because of that' (consequence) or a 'Because of that' (setup for the next consequence)."
+    - "Avoid scenes that simply 'pass the time' without moving the chain."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    visible_goal: ""
+    action_taken: ""
+    consequence_produced: "<This is the most important field: What 'Because of that' does this scene trigger?>"
+    emotional_shift: ""
+  do_rules:
+    - "Ensure every scene has a causal link to the previous one."
+    - "Use scenes to escalate the 'Because of that' pressure."
+  avoid_rules:
+    - "Do not include scenes that are 'And then' (unconnected events)."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Verify the causal chain integrity."
+    instructions:
+      - "Read the completed spine aloud."
+      - "Replace every 'And then' with 'Because of that'."
+    questions:
+      - "Does each beat logically follow the previous one?"
+      - "Are there any gaps in the chain?"
+    success_criteria:
+      - "The entire spine can be read as a single, unbroken chain of logic."
+  - name: "character_pass"
+    goal: "Ensure character arc alignment with the spine."
+    instructions:
+      - "Compare the 'Once upon a time' state to the 'Ever since then' state."
+      - "Check if the 'Because of that' beats force the character to act."
+    questions:
+      - "Is the transformation earned?"
+      - "Does the character's need drive the plot?"
+    success_criteria:
+      - "The character's internal change is the engine of the plot."
+  - name: "theme_pass"
+    goal: "Verify thematic resonance."
+    instructions:
+      - "Identify the central argument."
+      - "Check if the resolution proves the argument."
+    questions:
+      - "Is the lesson learned clear?"
+      - "Does the ending support the theme?"
+    success_criteria:
+      - "The final state reflects the thematic truth."
+  - name: "visual_storytelling_pass"
+    goal: "Align visual motifs with narrative beats."
+    instructions:
+      - "Check color palettes against the stages of the spine."
+      - "Verify visual motifs for stagnation vs. disruption."
+    questions:
+      - "Do the visuals mirror the tension?"
+      - "Is the change visually obvious?"
+    success_criteria:
+      - "The visual language reinforces the causal progression."
+  - name: "causality_audit_pass"
+    goal: "Eliminate 'And then' thinking."
+    instructions:
+      - "Audit every beat for 'And then' logic."
+      - "Identify any coincidences that lack a 'Because of that' trigger."
+    questions:
+      - "Are there any random accidents?"
+      - "Is every event a direct consequence?"
+    success_criteria:
+      - "The elimination of 'And then' in favor of 'Because of that'."
+
+validation_checklist:
+  - "Is the protagonist's starting state clearly established?"
+  - "Is the 'One day' event a true disruption?"
+  - "Does every 'Because of that' beat escalate the stakes?"
+  - "Is the 'Until finally' a direct result of the preceding chain?"
+  - "Is the 'Ever since then' a measurable change from the 'Once upon a time'?"
+  - "Is the causal link between every beat unbroken?"
+  - "Are there any 'And then' moments that need fixing?"
+  - "Does the character's internal need drive the external action?"
+  - "Is the visual motif of stagnation distinct from the motif of transformation?"
+  - "Does the theme emerge from the resolution of the conflict?"
+  - "Is the world's rule set consistent throughout the chain?"
+  - "Does the climax represent the highest point of tension?"
+  - "Is the character's agency present in the 'Because of that' beats?"
+  - "Is the resolution a consequence of the character's choices?"
+
+failure_modes:
+  - failure_mode: "The Episodic Trap"
+    symptom: "The story feels like a series of unrelated events."
+    likely_cause: "Using 'And then' instead of 'Because of that'."
+    fix: "Re-write the beats to ensure the second event is a reaction to the first."
+  - failure_mode: "The Passive Protagonist"
+    symptom: "Things happen to the character, but they don't cause anything."
+    likely_cause: "The 'Because of that' beats are all external accidents."
+    fix: "Ensure the character's choices are the driving force behind the consequences."

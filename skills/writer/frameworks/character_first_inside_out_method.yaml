@@ -1,0 +1,42 @@
+metadata:
+  framework_name: "Character-First / Inside-Out Template"
+  methodology_name: "Character-First / Inside-Out Method"
+  methodology_family: "Psychological/Character-Driven"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv_pilot"
+    - "anime"
+    - "short_film"
+    - "game_cinematic"
+  best_for:
+    - "character studies"
+    - "dramas"
+    - "psychological thrillers"
+    - "coming-of-age stories"
+  not_ideal_for:
+    - "high-concept procedural"
+    - "purely plot-driven action"
+    - "anthology shorts with no recurring character"
+  target_lengths:
+    - "90-120 minutes"
+    - "22-44 minute episodes"
+  core_principle: "Plot is the externalization of internal psychological conflict; the story is the process of a character's internal wound being forced into the light by external pressure."
+  primary_story_unit: "The Character Arc (Internal Change)"
+  primary_success_metric: "The degree to which the external climax is a direct result of an internal psychological choice."
+
+framework_overview:
+  summary: "A methodology where the narrative structure is derived from the protagonist's psychological architecture. Instead of asking 'what happens?', we ask 'what is the character's wound, and what external event forces them to confront it?'"
+  what_this_framework_helps_create:
+    - "Deeply resonant character arcs"
+    - "Cohesive plot-theme integration"
+    - "Organic, non-arbitrary plot beats"
+    - "High emotional stakes"
+  what_it_prioritizes:
+    - "Psychological causality"
+    - "Character agency"
+    - "Internal-to-external transition"
+  what_it_deemphasizes:
+    - "External spectacle without personal stakes"
+    - "Arbit"

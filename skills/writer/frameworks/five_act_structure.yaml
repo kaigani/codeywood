@@ -1,0 +1,401 @@
+metadata:
+  framework_name: "Five-Act Structure Development Template"
+  methodology_name: "Five-Act Structure"
+  methodology_family: "Classical/Dramatic Structure"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv_pilot"
+    - "tv_episode"
+    - "anime"
+    - "stage_play"
+    - "short_film"
+  best_for:
+    - "tragedy"
+    - "complex character arcs"
+    - "epic narratives"
+    - "stories with a central pivot or reversal"
+    - "high-stakes drama"
+  not_ideal_for:
+    - "simple linear adventures"
+    - "extremely short-form content"
+    - "purely procedural narratives"
+  target_lengths:
+    - "90-120 minute feature"
+    - "45-60 minute drama episode"
+  core_principle: "The narrative is driven by a/an central, irreversible pivot (the Climax/Reversal) that fundamentally shifts the protagonist's trajectory from ascent to descent, or vice versa."
+  primary_story_unit: "The Act (as a distinct movement of tension and consequence)"
+  primary_success_metric: "The structural impact of the Act 3 reversal on the inevitable conclusion."
+
+framework_overview:
+  summary: "A sophisticated structural model that expands upon the three-act model by isolating the 'turning point' into its own dedicated movement, allowing for a deeper exploration of consequences and the 'falling action' or 'aftermath' of a central crisis."
+  capabilities:
+    - "Narratives with a profound sense of inevitability."
+    - "Stories where a single decision or event changes the entire nature of the conflict."
+    - "Complex tragedies or epic transformations."
+  priorities:
+    - "The 'Peripeteia' (sudden reversal of fortune)."
+    - "The 'Anagnorisis' (moment of discovery/recognition)."
+    - "The 'weight of consequences' (the descending or rising action)."
+  deemphases:
+    - "Simple, repetitive escalation without structural shifts."
+    - "Happy endings that lack a cost or a fundamental change in the world's logic."
+
+use_when:
+  - "The story hinges on a massive, life-altering revelation or event in the middle."
+  - "The protagonist's journey is as much about the 'aftermath' as it is about the 'struggle'."
+  - "You want to explore the 'downward spiral' or 'hard-won ascent' in detail."
+
+avoid_when:
+  - "The plot is a straight line of increasing tension with no major structural pivot."
+  - "The story is too short to sustain five distinct movements."
+
+core_principles:
+  - "The Pivot: Act 3 must act as a hinge that changes the direction of the story's energy."
+  - "Inevitability: The trajectory established in the first two acts should make the third act's reversal feel both shocking and earned."
+  - "Consequence: The final two acts must be the direct, heavy result of the pivot in Act 3."
+
+workflow:
+  - step: 1
+    name: "Foundation"
+    goal: "Define the core elements."
+    instructions:
+      - "Identify the protagonist's initial state and their fatal flaw or driving desire."
+      - "Determine the 'Pivot Point'—the event that will break the existing world."
+    output: "story_inputs"
+  - step: 2
+    name: "Structural Mapping"
+    goal: "Populate the five acts."
+    instructions:
+      - "Draft the setup, the escalation, the pivot, the fallout, and the resolution."
+    output: "methodology_structure"
+  - step: 3
+    name: "Thematic Alignment"
+    goal: "Ensure the pivot tests the theme."
+    instructions:
+      - "Verify that the character's recognition (Anagnorisis) matches the story's central question."
+    output: "theme_design"
+  - step: 4
+    name: "Refinement"
+    goal: "Check for pacing and logic."
+    instructions:
+      - "Perform revision passes focusing on the transition between Act 3 and Act 4."
+    output: "final_framework"
+
+story_inputs:
+  premise: "<string>"
+  logline: "<string>"
+  medium: "<string>"
+  genre: "<string>"
+  tone: "<string>"
+  target_length: "<string>"
+  audience: "<string>"
+  rating: "<string>"
+  constraints:
+    production: []
+    creative: []
+  reference_points: []
+  requirements:
+    must_include: []
+    must_avoid: []
+
+methodology_structure:
+  description: "The Five-Act progression focusing on the central reversal."
+  structure_type: "Classical Five-Act"
+  act_1_setup:
+    tension_vector: "stable"
+    character_state: "unaware"
+    world_logic: "established"
+    conflict_nature: "latent"
+    visual_style: "symmetrical"
+  act_2_complication:
+    tension_vector: "rising"
+    character_state: "reactive"
+    world_logic: "strained"
+    conflict_nature: "active"
+    visual_style: "increasingly_chaotic"
+  act_3_pivot:
+    tension_vector: "reversing"
+    character_state: "shocked"
+    world_logic: "broken"
+    conflict_nature: "transformative"
+    visual_style: "high_impact"
+  act_4_consequence:
+    tension_vector: "descending"
+    character_state: "struggling"
+    world_logic: "unstable"
+    conflict_nature: "consequential"
+    visual_style: "decaying"
+  act_5_resolution:
+    tension_vector: "settling"
+    character_state: "transformed"
+    world_logic: "new_normal"
+    conflict_nature: "resolved"
+    visual_style: "asymmetrical"
+
+beats_or_units:
+  - id: "act_1"
+    name: "Exposition (The Setup)"
+    order: 1
+    purpose: "Establish the status quo, the world's rules, and the protagonist's initial state."
+    approximate_position: "0% - 20%"
+    writer_prompt: "What is the 'normal' that is about and about to be destroyed?"
+    story_function: "Establish characters, setting, and the inciting incident."
+    visual_function: "Establish the visual baseline and the 'safety' of the world."
+    emotional_function: "Establish empathy and the stakes of losing the status quo."
+    required_decisions:
+      - "What is the Inciting Incident?"
+      - "What is the protagonist's 'Internal Lack'?"
+    fields_to_complete:
+      status_quo: "<string>"
+      inciting_incident: "<string>"
+      protagonist_flaw: "<string>"
+    diagnostic_questions:
+      - "Is the world clearly defined before it is disrupted?"
+      - "Does the audience understand what the protagonist stands to lose?"
+    completion_criteria:
+      - "The inciting incident has occurred and cannot be ignored."
+    common_failure_modes:
+      - "Too much exposition without action."
+      - "Failure to establish the stakes early."
+
+  - id: "act_2"
+    name: "Complication (The Rising Action)"
+    order: 2
+    purpose: "Escalate the conflict and increase the pressure on the protagonist."
+    approximate_position: "20% - 40%"
+    writer_prompt: "How does the protagonist attempt to fix the problem, and why does it make things worse?"
+    story_function: "Introduce obstacles, secondary characters, and rising stakes."
+    visual_function: "Increasingly chaotic or high-pressure imagery."
+    emotional_function: "Building tension, anxiety, and false hope."
+    required_decisions:
+      - "What is the first major obstacle?"
+      - "How does the protagonist's flaw lead to a mistake?"
+    fields_to_complete:
+      escalation_points: []
+      the_false_victory: "<string>"
+    diagnostic_questions:
+      - "Is the tension rising, or is the story looping?"
+      - "Is the protagonist actively making choices that lead to the pivot?"
+    completion_criteria:
+      - "The protagonist has reached a point where they cannot return to the status_quo."
+    common_failure_modes:
+      - "Lack of meaningful escalation."
+      - "Protagonist being too passive."
+
+  - id: "act_3"
+    name: "The Pivot (The Climax/Reversal)"
+    order: 3
+    purpose: "The central turning point where the direction of the story fundamentally shifts."
+    approximate_position: "40% - 60%"
+    writer_prompt: "What event or revelation causes the protagonist's fortune to reverse (Peripeteia)?"
+    story_function: "The moment of maximum tension and the introduction of the 'new' reality."
+    visual_function: "A visually striking, high-impact event or revelation."
+    emotional_function: "Shock, realization, or a devastating shift in perspective (Anagnorisis)."
+    required_decisions:
+      - "What is the 'Point of No Return'?"
+      - "What is revealed that changes everything?"
+    fields_to_complete:
+      the_reversal: "<string>"
+      the_recognition: "<string>"
+    diagnostic_questions:
+      - "Does this event change the genre or the stakes of the story?"
+      - "Is the reversal a result of the protagonist's own actions/flaws?"
+    completion_criteria:
+      - "The narrative trajectory has officially flipped (e.g., from hope to despair)."
+    common_failure_modes:
+      - "The 'pivot' is too small to change the story's direction."
+      - "The reversal feels like a 'Deus Ex Machina'."
+
+  - id: "act_4"
+    name: "Falling Action (The Consequence/The Descent)"
+    order: 4
+    purpose: "Explore the direct, often devastating, consequences of the Act 3 pivot."
+    approximate_position: "60% - 80%"
+    writer_prompt: "As the protagonist deals with the fallout, how does the world crumble or transform around them?"
+    story_function: "The struggle to deal with the new reality; the 'downlag' or 'the climb'."
+    visual_function: "Imagery of decay, aftermath, or the grueling reality of the new state."
+    emotional_function: "Dread, grief, or the exhausting reality of the struggle."
+    required_decisions:
+      - "What is the most significant loss in this act?"
+      - "How does the protagonist attempt to adapt to the new reality?"
+    fields_to_complete:
+      consequences: []
+      the_final_struggle: "<string>"
+    diagnostic_questions:
+      - "Is the momentum slowing down too much, or is the 'weight' of the pivot being felt?"
+      - "Are the characters reacting to the change in Act 3?"
+    completion_criteria:
+      - "The characters have reached the final confrontation or the final state of being."
+    common_failure_modes:
+      - "The act feels like 'filler' between the climax and the end."
+      - "The tension dissipates entirely instead of transforming into 'consequence tension'."
+
+  - id: "act_5"
+    name: "Resolution (The Catastrophe/New Normal)"
+    order: 5
+    purpose: "The final settlement of the conflict and the establishment of a new status quo."
+    approximate_position: "80% - 100%"
+    writer_prompt: "What is the final image that shows us the/the world has been permanently altered?"
+    story_function: "Finality, resolution of the thematic argument, and the 'new' status quo."
+    visual_function: "A mirror image of the Act 1 setup, but fundamentally changed."
+    emotional_function: "Catharsis, tragedy, or profound peace/emptiness."
+    required_decisions:
+      - "What is the final fate of the protagonist?"
+      - "Is the thematic question answered?"
+    fields_to_complete:
+      final_outcome: "<string>"
+      the_new_status_quo: "<string>"
+    diagnostic_questions:
+      - "Does the ending feel like the inevitable result of the Act 3 pivot?"
+      - "Is there a sense of closure, even if it is a tragic one?"
+    completion_criteria:
+      - "The central conflict is resolved and the thematic argument is closed."
+    common_failure_modes:
+      - "An unearned happy ending that ignores the Act 3 devastation."
+      - "An ending that fails to provide a sense of 'new' stability."
+
+character_design:
+  methodology_role: "Characters must be engines of the pivot; their internal arc must mirror the structural reversal."
+  character_template:
+    name: "<string>"
+    role: "<Protagonist | Antagonist | Foil | Catalyst>"
+    internal_flaw: "<The trait that causes the Act 3 reversal>"
+    external_goal: "<The goal that is rendered impossible or transformed by Act 3>"
+    arc_type: "<Ascent | Descent | Transformation>"
+    anagnorisis_moment: "<The moment they realize the truth in Act 3>"
+
+world_design:
+  methodology_role: "The world must have a 'logic' that is fundamentally broken or rewritten by the Act 3 pivot."
+  fields:
+    pre_pivot_rules: "<The rules of the world in Act 1>"
+    post_pivot_rules: "<The new reality/chaos in Act 5>"
+    the_broken_promise: "<What social or natural law was violated by the pivot?>"
+
+theme_design:
+  methodology_role: "The theme is the 'argument' tested by the pivot."
+  fields:
+    central_question: "<What question does the story pressure-test?>"
+    initial_belief: "<The protagonist's false belief in Act 1>"
+    the_pivot_test: "<How the Act 3 event forces the protagonist to confront the truth>"
+    final_truth: "<The ultimate answer revealed in Act 5>"
+
+visual_storytelling:
+  methodology_role: "Visual motifs should track the structural shift from Setup to Aftermath."
+  motif_system:
+    act_1_visual_lag: "<e.g., Order, Symmetry, Brightness>"
+    act_3_visual_pivot: "<e.g., Shattering, Darkness, Chaos>"
+    act_5_visual_motif: "<e.g., Asymmetry, Shadows, Reconstructed Order>"
+  recurring_motifs: []
+  final_image: "<The image that encapsulates the new reality>"
+
+scene_generation_rules:
+  principles:
+    - "Every scene must either move the character toward the pivot or demonstrate the weight of its aftermath."
+    - "In Acts 1-2, scenes should build 'False Hope'."
+    - "In Acts 4-5, scenes should demonstrate 'Inevitability'."
+  template:
+    scene_id: "<string>"
+    beat_or_unit: "<string>"
+    location: "<string>"
+    characters_present: []
+    visible_goal: "<string>"
+    conflict_or_pressure: "<string>"
+    turn: "<string>"
+    visual_anchor: "<string>"
+    emotional_shift: "<string>"
+    exits_with: "<string>"
+  do_rules:
+    - "Ensure the pivot scene is the most visually and emotionally significant."
+    - "Use Act 4 to show the 'cost' of the protagonist's actions."
+  avoid_rules:
+    - "Avoid 'filler' scenes that don't contribute to the structural movement."
+    - "Avoid introducing new major plot pivots in Act  or 5."
+
+revision_passes:
+  - name: "The Pivot Audit"
+    goal: "Ensure the Act 3 reversal is structurally sound."
+    instructions:
+      - "Trace the causality from the Act 1 flaw to the Act 3 reversal."
+    questions:
+      - "Is the reversal a result of character choice or random luck?"
+      - "Does the reversal fundamentally change the genre/stakes?"
+    success_criteria:
+      - "The pivot feels like a 'trap' the character set for themselves."
+  - name: "The Consequence Check"
+    goal: "Strengthen the connection between Act 3 and Act 4."
+    instructions:
+      - "Review Act 4 scenes to ensure they are 'echoes' of the Act 3 disaster."
+    questions:
+      - "Are the characters actively struggling with the change, or just moving through it?"
+    success_criteria:
+      - "The weight of the pivot is felt in every scene of the falling action."
+  - name: "The Structure Pass"
+    goal: "Verify the five-act integrity."
+    instructions:
+      - "Check the transition points between all five acts."
+    questions:
+      - "Does each act serve a distinct structural purpose?"
+      - "Is the transition from Act 2 to Act 3 sufficiently impactful?"
+    success_criteria:
+      - "The narrative moves through five clearly identifiable movements."
+  - name: "The Character Pass"
+    goal: "Ensure character arcs mirror the structural reversal."
+    instructions:
+      - "Map the protagonist's internal state against the structural beats."
+    questions:
+      - "Does the character's internal change align with the external pivot?"
+      - "Is the Anagnorisis moment clearly defined?"
+    success_criteria:
+      - "The character's internal arc is inseparable from the plot's reversal."
+  - name: "The Theme Pass"
+    goal: "Ensure the pivot tests the central thematic question."
+    instructions:
+      - "Analyze the Act 3 event through the lens of the story's central question."
+    questions:
+      - "Does the pivot force the character to confront their false belief?"
+      - "Is the final truth a logical consequence of the pivot?"
+    success_criteria:
+      - "The story's resolution provides a definitive answer to the theme."
+  - name: "The Visual Storytelling Pass"
+    goal: "Align visual motifs with structural shifts."
+    instructions:
+      - "Review the visual motifs for each act."
+    questions:
+      - "Do the visual motifs evolve alongside the narrative tension?"
+      - "Is the visual shift in Act 3 striking enough?"
+    success_criteria:
+      - "The visual language reinforces the structural reversal."
+
+validation_checklist:
+  - "Does the story have five distinct movements?"
+  - "Is there a clear 'reversal' in Act 3?"
+  - "Does the protagonist undergo a significant internal change (Anagnorisis)?"
+  - "Does the ending reflect the new reality established by the pivot?"
+  - "Is the 'Aftermath' (Act 4) substantial enough to justify the 5-act structure?"
+  - "Is the Inciting Incident clearly established in Act 1?"
+  - "Does the Act 2 escalation lead directly to the Act 3 pivot?"
+  - "Is the protagonist's internal flaw the primary driver of the reversal?"
+  - "Does the visual motif shift significantly during the pivot?"
+  - "Is the 'new normal' in Act 5 a logical consequence of the Act 3 event?"
+  - "Are the stakes clearly defined and raised throughout the first two acts?"
+  - "Does the resolution provide thematic closure?"
+
+failure_modes:
+  - failure_mode: "The 3-Act Trap"
+    symptom: "The story feels like a standard 3-act story with extra scenes."
+    likely_cause: "The Act 3 pivot is too weak to change the story's trajectory."
+    fix: "Make the pivot more radical; change the genre or the fundamental stakes."
+  - failure_mode: "The Sagging Middle"
+    symptom: "Act 2 and Act 4 feel like they are just waiting for the next plot point."
+    likely_cause: "Lack of escalating complications or lack of heavy consequences."
+    fix: "Increase the 'cost' of the protagonist's actions in Act 2 and the 'weight' of the loss in Act 4."
+  - failure_mode: "The Random Twist"
+    symptom: "The pivot feels unearned or disconnected from the character."
+    likely_cause: "The pivot is an external event that doesn't interact with the character's flaw."
+    fix: "Tie the pivot directly to a decision or failure of the protagonist."
+
+adaptation_notes:
+  feature_film: "Focus on a high-impact, cinematic pivot that redefines the film's genre (e.g., a thriller becoming a tragedy)."
+  short_film: "Condense the acts; ensure the pivot is the 'heart' of the story."

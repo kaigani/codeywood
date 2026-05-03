@@ -1,0 +1,369 @@
+metadata:
+  framework_name: "Theme-First Method Template"
+  methodology_name: "Theme-First Method"
+  methodology_family: "Argument-Driven Storytelling"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "tv_pilot"
+    - "anime"
+    - "adult_animation"
+    - "prestige_drama"
+  best_for:
+    - "character studies"
+    - "high-concept allegories"
+    - "philosophical sci-fi"
+    - "tragedies"
+  not_ideal_for:
+    - "purely procedural content"
+    - "action-spectacle without subtext"
+    - "low-stakes episodic comedy"
+  target_lengths:
+    - "short_film"
+    - "feature_film"
+    - "limited_series"
+  core_principle: "The story is not a sequence of events, but a structured argument intended to test a central thematic question."
+  primary_story_unit: "The Thematic Argument"
+  primary_success_metric: "Thematic Resonance and Resolution"
+
+framework_overview:
+  summary: "A development methodology where the central theme is established before the plot or characters. The plot serves as the crucible, and the characters serve as the opposing viewpoints in a philosophical debate."
+  what_this_framework_helps_create:
+    - "Deeply resonant narratives"
+    - "Cohesive character arcs tied to meaning"
+    - "Subtext-rich dialogue and imagery"
+  what_it_prioritizes:
+    - "Thematic integrity"
+    - "Character transformation as ideological shift"
+    - "Structural causality driven by moral choice"
+  what_it_deemphasizes:
+    - "Random plot twists"
+    - "Incidental action"
+    - "Character traits without thematic purpose"
+
+use_when:
+  - "You have a strong message or philosophical question."
+  - "You want the ending to feel inevitable and earned."
+  - "You want to create a 'prestige' or 'intellectual' tone."
+
+avoid_when:
+  - "The story is purely driven by kinetic action or physical spectacle."
+  - "The plot relies on 'mystery box' mechanics where the theme is irrelevant to the solution."
+
+core_principles:
+  - "Theme is the foundation, not an afterthought."
+  - "Characters are vessels for different answers to the thematic question."
+  - "Plot is the pressure applied to characters to force a thematic decision."
+  - "The climax is the moment of thematic synthesis or final judgment."
+
+workflow:
+  - step: 1
+    name: "Identify the Thematic Question"
+    goal: "Establish the central philosophical inquiry."
+    instructions:
+      - "Formulate a question that has no easy right or wrong answer."
+      - "Ensure the question is 'unanswerable' without experiencing the story's conflict."
+    output: "Thematic Question"
+  - step: 2
+    name: "Define the Argumentative Positions"
+    goal: "Assign characters to specific answers to the question."
+    instructions:
+      - "Assign one character to represent the 'Thesis' (The False/Initial Belief)."
+      - "Assign another to represent the 'Antithesis' (The Opposing/Challenging Belief)."
+      - "Identify the 'Synthesis' (The Truth revealed by the story)."
+    output: "Character-Theme Mapping"
+  - step: 3
+    name: "Construct the Crucible (Plot)"
+    goal: "Design events that force the characters to choose between positions."
+    instructions:
+      - "Create obstacles that make the 'Thesis' impossible to maintain."
+      - "Create stakes that make the 'Antithesis' tempting or dangerous."
+    output: "Thematic Beat Sheet"
+  - step: 4
+    name: "Visual and Symbolic Layering"
+    goal: "Encode the theme into the setting and imagery."
+    instructions:
+      - "Identify recurring motifs that represent the conflict."
+    output: "Visual Metaphor Map"
+
+story_inputs:
+  premise: "<The core situation>"
+  logline: "<The character, goal, and central conflict>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Neo-Noir>"
+  tone: "<e_g., Melancholic, Cynical, Hopeful>"
+  target_length: "<e.g., 110 pages>"
+  audience: "<e.g., Adult Drama enthusiasts>"
+  rating: "<e.g., R>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  stage_1_thematic_foundation:
+    thematic_question: "<The central 'Should/Must/Can' question? e.g., Can justice exist without vengeance?>"
+    thesis_definition: "<The initial, flawed, or easy answer presented at the start.>"
+    antithesis_definition: "<The challenging, disruptive, or opposing answer.>"
+    synthesis_target: "<The complex, hard-won truth revealed by the end.>"
+    thematic_irony_seed: "<How the characters' attempts to follow their belief lead to their undoing.>"
+  stage_2_argumentative_mapping:
+    character_alignment: "<Which characters embody the Thesis, Antithesis, or Synthesis?>"
+    ideological_stakes: "<What is lost if the wrong side wins?>"
+    conflict_vectors: "<How do the characters' beliefs physically clash?>"
+    arc_direction: "<The trajectory from misbelief to realization.>"
+  stage_3_crucible_construction:
+    plot_pressure_points: "<Events that specifically target the character's misbelief.>"
+    event_causality: "<How one thematic choice necessitates the next plot beat.>"
+    choice_consequences: "<The cost of maintaining the Thesis vs. adopting the Antithesis.>"
+    climax_intensity: "<The scale of the final thematic judgment.>"
+  stage_4_symbolic_encoding:
+    motif_selection: "<Recurring objects or sounds representing the conflict.>"
+    visual_contrast_plan: "<How lighting/color shifts as the theme evolves.>"
+    sensory_anchors: "<Specific smells, textures, or sounds tied to the argument.>"
+    landscape_metaphor: "<How the setting mirrors the internal struggle.>"
+
+beats_or_units:
+  - id: "thematic_setup"
+    name: "The Thesis Established"
+    order: 1
+    purpose: "Introduce the protagonist's initial, incomplete understanding of the world."
+    approximate_position: "Act I"
+    writer_prompt: "<How does the protagonist demonstrate their current (flawed) belief through action?>"
+    story_function: "Establishes the status quo and the character's 'blind spot'."
+    visual_function: "<Use imagery that feels stable but perhaps hollow or stagnant.>"
+    emotional_function: "<Comfort, certainty, or false security.>"
+    required_decisions:
+      - "What is the character's specific 'misbelief'?"
+    fields_to_complete:
+      protagonist_belief: "<write here>"
+      world_status_quo: "<write here>"
+    diagnostic_questions:
+      - "Is the character's belief clearly tied to the central question?"
+      - "Is this belief something the audience can initially empathize with, even if it's wrong?"
+    completion_criteria:
+      - "Thematic question is introduced via character action."
+    common_failure_modes:
+      - "The character is too perfect/right, leaving no room for growth."
+
+  - id: "thematic_disruption"
+    name: "The Antithesis Emerges"
+    order: 2
+    purpose: "Introduce a force, character, or event that challenges the Thesis."
+    approximate_position: "Inciting Incident / Act I transition"
+    writer_prompt: "<What event or person makes the protagonist's current way of life impossible?>"
+    story_function: "Forces the protagonist to engage with the opposing side of the argument."
+    visual_function: "<Introduce visual discord, shadow, or instability.>"
+    emotional_function: "<Confusion, dread, or curiosity.>"
+    required_decisions:
+      - "Which character/event represents the Antithesis?"
+    fields_to_complete:
+      disrupting_force: "<write here>"
+      thematic_friction: "<write here>"
+    diagnostic_questions:
+      - "Does this disruption directly attack the protagonist's core belief?"
+    completion_criteria:
+      - "The protagonist can no longer ignore the thematic question."
+    common_failure_modes:
+      - "The disruption is purely physical and lacks ideological weight."
+
+  - id: "thematic_crucible"
+    name: "The Escalation of Argument"
+    order: 3
+    purpose: "The plot forces the characters to defend their positions through increasingly difficult choices."
+    approximate_position: "Act II"
+    writer_prompt: "<What sequence of events forces the characters to sacrifice something to maintain their belief?>"
+    story_function: "Tests the durability of the Thesis and the strength of the Antithesis."
+    visual_function: "<Increasingly complex or claustrophobic compositions.>"
+    emotional_function: "<Pressure, desperation, or mounting tension.>"
+    required_decisions:
+      - "What is the 'point of no return' regarding the thematic choice?"
+    fields_to_complete:
+      escalation_points: []
+      cost_of_belief: "<write here>"
+    diagnostic_questions:
+      - "Are the stakes purely about survival, or are they about the cost of the character's soul/ideology?"
+    completion_criteria:
+      - "The conflict has moved from external struggle to internal ideological crisis."
+    common_failure_modes:
+      - "The plot becomes a series of random obstacles unrelated to the theme."
+
+  - id: "thematic_resolution"
+    name: "The Synthesis/Judgment"
+    order: 4
+    purpose: "The final confrontation where the characters' beliefs are proven or disproven."
+    approximate_position: "Climax / Act III"
+    writer_prompt: "<What final, irreversible action proves which side of the argument is 'true' in this world?>"
+    story_function: "Provides the final answer to the thematic question."
+    visual_function: "<A final, iconic image that summarizes the new reality.>"
+    emotional_function: "<Catharsis, tragedy, or profound realization.>"
+    required_decisions:
+      - "Does the character succeed or fail based on their thematic growth?"
+    fields_to_complete:
+      final_choice: "<write here>"
+      thematic_outcome: "<write here>"
+    diagnostic_questions:
+      - "Does the ending answer the question asked in Act I?"
+      - "Is the resolution a result of character choice rather than luck?"
+    completion_criteria:
+      - "The thematic question is answered through action."
+    common_failure_modes:
+      - "The 'Deus Ex Machina' provides an answer that the characters didn't earn."
+
+character_design:
+  methodology_role: "Characters are ideological vessels."
+  characters:
+    - name: "<Protagonist>"
+      thematic_role: "<Thesis Holder>"
+      initial_misbelief: "<What they believe at the start?>"
+      thematic_blind_spot: "<What they refuse to see about the question?>"
+      thematic_arc: "<From Thesis $\\rightarrow$ Crisis $\\rightarrow$ Synthesis?>"
+      defining_choice: "<The action that proves their new belief.>"
+    - name: "<Antagonist/Opponent>"
+      thematic_role: "<Antithesis Holder>"
+      thematic_conviction: "<The opposing truth they represent?>"
+      relationship_to_protagonist: "<How do their opposing beliefs create friction?>"
+
+world_design:
+  methodology_role: "The world is the Crucible/Testing Ground."
+  fields:
+    thematic_environment: "<How does the setting/society enforce the thematic question?>"
+    symbolic_landscape: "<How do the physical locations mirror the internal struggle?>"
+    social_rules: "<What laws or customs represent the 'Thesis' of this world?>"
+
+theme_design:
+  methodology_role: "The Core Engine."
+  fields:
+    central_question: "<The primary inquiry.>"
+    thesis_statement: "<The 'wrong' or 'incomplete' answer.>"
+    antithesis_statement: "<The 'challenging' or 'dangerous' answer.>"
+    synthesis_statement: "<The 'true' or 'evolved' answer.>"
+    thematic_irony: "<The gap between what characters want and what the theme demands.>"
+
+visual_storytelling:
+  methodology_role: "Visual Metaphor and Symbolism."
+  image_system:
+    recurring_motifs: ["<Symbol 1: Represents Thesis>", "<Symbol 2: Represents Antithesis>"]
+    visual_contrast: "<How does the lighting/color shift as the theme evolves?>"
+  visual_rules:
+    - "<e.g., Use high-contrast lighting to represent the moral struggle.>"
+  final_image: "<An image that encapsulates the final thematic state.>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either reinforce the Thesis, challenge it with the Antithesis, or move toward the Synthesis."
+    - "Avoid 'filler' scenes that do not move the thematic argument forward."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    thematic_pressure: "<What part of the argument is being pressured here?>"
+    turn: "<How does the 'argument' change in this scene?>"
+    visual_anchor: "<A symbolic object or lighting choice for this scene.>"
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Focus on the cost of a character's decision."
+  avoid_rules:
+    - "Avoid scenes that are purely about plot mechanics without character conviction."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Ensure the plot serves the argument."
+    instructions:
+      - "Verify that every major plot beat is a direct consequence of a thematic choice."
+      - "Check that the escalation of conflict mirrors the escalation of the argument."
+    questions:
+      - "Does the plot feel like a series of random events, or a sequence of thematic tests?"
+    success_criteria:
+      - "The plot is structurally inseparable from the thematic question."
+  - name: "character_pass"
+    goal: "Ensure characters are ideological vessels, not just archetypes."
+    instructions:
+      - "Review each character's actions against their assigned thematic role."
+      - "Check for character traits that lack thematic purpose."
+    questions:
+      - "Is every character's primary motivation tied to their stance on the central question?"
+    success_criteria:
+      - "Character motivations are driven by ideological conflict."
+  - name: "theme_pass"
+    goal: "Remove 'on-the-nose' dialogue and preaching."
+    instructions:
+      - "Identify where characters are 'preaching' the theme and replace it with action/imagery."
+      - "Ensure the theme is felt through tension, not heard through monologues."
+    questions:
+      - "Are we saying the theme, or are we showing the consequences of it?"
+    success_criteria:
+      - "The theme is embedded in subtext and action rather than explicit dialogue."
+  - name: "visual_storytelling_pass"
+    goal: "Ensure visual metaphors reinforce the argument."
+    instructions:
+      - "Check that lighting and color shifts align with the character's ideological evolution."
+      - "Verify that recurring motifs are consistently applied."
+    questions:
+      - "Does the visual language change as the character moves from Thesis to Synthesis?"
+    success_criteria:
+      - "The visual narrative provides a parallel track to the thematic argument."
+  - name: "thematic_argument_pass"
+    goal: "Verify the integrity of the final synthesis."
+    instructions:
+      - "Analyze the climax to ensure the resolution is a logical result of the established argument."
+      - "Check that the 'Synthesis' is not a cheap or unearned resolution."
+    questions:
+      - "Does the final choice represent a genuine evolution of the character's belief?"
+    success_criteria:
+      - "The ending provides a profound, earned answer to the initial question."
+
+validation_checklist:
+  - "Is the central question clearly identifiable?"
+  - "Do the characters represent opposing sides of the argument?"
+  - "Does the plot force a choice between these sides?"
+  - "Is the resolution an answer to the initial question?"
+  - "Is the ending a result of character growth/change rather than external luck?"
+  - "Does the visual language mirror the thematic shift?"
+  - "Is the antithesis a credible and dangerous threat to the thesis?"
+  - "Does the setting act as a crucible for the characters?"
+  - "Are the thematic motifs consistently applied throughout the story?"
+  - "Is the thematic irony present in the character's journey?"
+  - "Does the climax provide a moment of thematic judgment?"
+  - "Are all character actions driven by their ideological positions?"
+
+failure_modes:
+  - failure_mode: "The Preacher"
+    symptom: "Characters give long speeches about the theme."
+    likely_cause: "Lack of visual metaphor or action-based argument."
+    fix: "Translate the dialogue into a difficult, physical choice."
+  - failure_mode: "The Randomizer"
+    symptom: "The plot feels like a series of unrelated accidents."
+    likely_cause: "Plot is not being driven by the thematic pressure."
+    fix: "Ensure every obstacle is a direct challenge to a character's belief."
+  - failure_mode: "The Moral Vacuum"
+    symptom: "The story is exciting but leaves the audience feeling empty."
+    likely_cause: "No central question or stakes were ever established."
+    fix: "Define the 'Thesis' and 'Antithesis' before writing the next beat."
+
+adaptation_notes:
+  feature_film: ["Ensure the scale of the 'Crucible' matches the cinematic scope."]
+  short_film: ["Focus on a single, sharp thematic punch rather than a complex argument."]
+  tv_episode: ["The theme should be resolved within the episode, but leave the series-long question open."]
+  tv_pilot: ["Establish the 'Thesis' and the 'Antithesis' as the primary engine for the series."]
+  anime: ["Utilize high-concept visual metaphors and exaggerated character archetypes."]
+  adult_animation: ["Use mature, visceral imagery to represent the 'cost' of the thematic choice."]
+  anthology: ["Each episode must be a self-contained thematic experiment."]
+  game_cinematic: ["The player's choices should ideally mirror the 'Synthesis' or 'Thesis' paths."]
+
+yaml_usage_notes:
+  how_to_use: ["Start with the 'theme_design' section. Do not touch 'beats' until the 'thematic_engine' is solid."]
+  recommended_population_order:
+    - "theme_design"
+    - "character_design"
+    - "methodology_structure"
+    - "beats_or_units"
+    - "visual_storytelling"
+  minimum_viable_completion: ["theme_design, character_design, and the 'thematic_disruption' beat."]
+  signs_framework_is_ready_for_scene_outline: ["When every character's 'choice' in the beat sheet is clearly linked to their 'misbelief'."]

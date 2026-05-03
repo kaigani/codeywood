@@ -1,0 +1,371 @@
+metadata:
+  framework_name: "Three-Act Structure Template"
+  methodology_name: "Three-Act Structure"
+  methodology_family: "Classical Dramatic Structure"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "TV episode"
+    - "short film"
+    - "game cinematic"
+    - "anime"
+  best_for:
+    - "linear narratives"
+    - "character-driven drama"
+    - "high-stakes adventure"
+    - "conflict-oriented plots"
+  not_ideal_for:
+    - "experimental non-linear narratives"
+    - "purely episodic/static anthologies"
+    - "slice-of-life without central conflict"
+  target_lengths:
+    - "90-120 minute feature"
+    - "22-44 minute episode"
+  core_principle: "The progression of tension through three distinct phases: Setup, Confrontation, and Resolution, driven by a fundamental change in the protagonist's status quo."
+  primary_story_unit: "The Plot Point"
+  primary_success_metric: "Narrative momentum and the resolution of the central dramatic question."
+
+framework_overview:
+  summary: "A blueprint for organizing narrative tension by dividing a story into three parts: Act I (The Setup), Act II (The Confrontation), and Act III (The Resolution)."
+  what_this_framework_helps_create:
+    - "A clear sense of causality"
+    - "Escalating stakes"
+    - "A measurable character arc"
+    - "A satisfying narrative payoff"
+  what_it_prioritizes:
+    - "Conflict escalation"
+    - "Structural turning points"
+    - "Character transformation"
+  what_it_deemphasizes:
+    - "Subplots that do not impact the main arc"
+    - "Static character moments"
+    - "Information dumps without dramatic consequence"
+
+use_when:
+  - "You have a clear protagonist and a central conflict."
+  - "You need to ensure the story doesn't 'sag' in the middle."
+  - "You want to ensure the ending feels earned by the setup."
+
+avoid_when:
+  - "The story is purely atmospheric or lacks a central goal."
+  - "The narrative is intentionally circular or lacks progression."
+
+core_principles:
+  - "Inciting Incident: An event that disrupts the status quo and launches the journey."
+  - "Progressive Complications: Each obstacle must be harder than the previous obstacle."
+  - "The Midpoint: A major shift that changes the protagonist from reactive to proactive."
+  - "The Climax: The final confrontation where the central conflict is decided."
+  - "Causality: Every beat must be a consequence of the previous beat ('Therefore' or 'But')."
+
+workflow:
+  - step: 1
+    name: "Foundation"
+    goal: "Define the core elements."
+    instructions:
+      - "Identify the protagonist, their goal, and the central conflict."
+    output: "Premise and Logline"
+  - step: 2
+    name: "Beat Mapping"
+    goal: "Establish the structural pillars."
+    instructions:
+      - "Define the Inciting Incident, Plot Point 1, Midpoint, Plot Point 2, and Climax."
+    output: "Structural Skeleton"
+  - step: 3
+    name: "Act Expansion"
+    goal: "Populate the acts with sequences."
+    instructions:
+      - "Develop the rising action and the consequences of each beat."
+    output: "Detailed Beat Sheet"
+  - step: 4
+    name: "Character & Theme Integration"
+    goal: "Ensure the plot serves the soul of the story."
+    instructions:
+      - "Align the character's internal arc with the external plot beats."
+    output: "Integrated Story Framework"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  act_i_setup:
+    name: "Act I: The Setup"
+    function: "Establish the world, the characters, and the disruption of the status quo."
+    decision_forcing_fields:
+      status_quo_stability: "How unshakeable is the protagonist's current life?"
+      inciting_event_magnitude: "Is the disruption life-altering or merely inconvenient?"
+      threshold_difficulty: "How much resistance exists to leaving the known world?"
+      character_vulnerability_level: "How exposed is the protagonist to the coming change?"
+  act_ii_conforming:
+    name: "Act II: The Confrontation"
+    function: "The protagonist engages with the new world, facing rising obstacles and internal struggle."
+    decision_forcing_fields:
+      stakes_escalation_rate: "How quickly do the consequences of failure increase?"
+      midpoint_pivot_type: "Is the shift reactive-to-proactive or a change in direction?"
+      antagonist_pressure_intensity: "How much direct pressure is applied by the opposition?"
+      resource_depletion_rate: "How much of the protagonist's strength/allies are lost?"
+  act_iii_resolution:
+    name: "Act III: The Resolution"
+    function: "The final struggle and the establishment of a new status quo."
+    decision_forcing_fields:
+      climax_stakes_peak: "What is the absolute highest cost of the final confrontation?"
+      thematic_resolution_clarity: "How clearly does the outcome prove the central argument?"
+      new_status_quo_stability: "How permanent is the change brought about by the climax?"
+
+beats_or_units:
+  - id: "inciting_incident"
+    name: "Inciting Incident"
+    order: 1
+    purpose: "To disrupt the protagonist's world and present a problem/opportunity."
+    approximate_position: "10-15%"
+    writer_prompt: "What event happens that makes it impossible for the protagonist to return to their normal life?"
+    story_function: "Catalyst for the entire plot."
+    visual_function: "Disruption of visual stability or routine."
+    emotional_function: "Shock, curiosity, dread, or sudden motivation."
+    required_decisions:
+      - "Is the event irreversible?"
+      - "Does the protagonist have a choice to engage or ignore?"
+    fields_to_complete:
+      event_description: "<write here>"
+      consequence_of_ignoring: "<write here>"
+    diagnostic_questions:
+      - "Does this event force the protagonist out of their comfort zone?"
+      - "Is the stakes-setting clear here?"
+    completion_criteria:
+      - "The status quo is officially broken."
+    common_failure_modes:
+      - "The incident is too small to drive a whole story."
+      - "The incident happens too late in Act I."
+
+  - id: "plot_point_1"
+    name: "Plot Point 1 / Crossing the Threshold"
+    order: 2
+    purpose: "To commit the protagonist to the journey/conflict."
+    approximate_position: "25%"
+    writer_prompt: "What decision or event forces the protagonist to leave their known world and enter the 'new' world of the story?"
+    story_function: "Transition from Act I to Act II."
+    visual_function: "Shift in setting, lighting, or visual motif."
+    emotional_function: "Determination, fear, or resignation."
+    required_decisions:
+      - "Is the protagonist now 'all in'?"
+    fields_to_complete:
+      the_point_of_no_return: "<write here>"
+      new_world_rules: "<write here>"
+    diagnostic_questions:
+      - "Can the protagonist still go back to the way things were?"
+    completion_criteria:
+      - "The protagonist is now actively pursuing the goal or fleeing the threat."
+    common_failure_modes:
+      - "The protagonist is still 'drifting' without a clear direction."
+
+  - id: "midpoint"
+    name: "The Midpoint"
+    order: 3
+    purpose: "To raise the stakes and shift the protagonist's strategy."
+    approximate_position: "50%"
+    writer_prompt: "What major event changes the nature of the conflict or reveals a truth that changes the protagonist's approach?"
+    story_function: "Shift from reactive to proactive behavior."
+    visual_function: "A shift in color palette or visual intensity to signal new stakes."
+    emotional_function: "A realization, a surge of false confidence, or a crushing blow."
+    required_decisions:
+      - "Does the protagonist change from 'surviving' to 'attacking'?"
+    fields_to_complete:
+      the_revelation: "<write here>"
+      shift_in_tactic: "<write here>"
+    diagnostic_questions:
+      - "Does this event make the original goal much harder or much more complex?"
+    completion_criteria:
+      - "The protagonist is no longer just reacting to the antagonist; they are actively pursuing a new plan."
+    common_failure_modes:
+      - "The Midpoint is just a repeat of the Inciting Incident."
+      - "The stakes don't actually increase."
+
+  - id: "plot_point_2"
+    name: "Plot Point 2 / The Low Point"
+    order: 4
+    approximate_position: "75%"
+    purpose: "To push the protagonist to their absolute limit before the final confrontation."
+    writer_prompt: "What happens that makes the protagonist feel they have failed and that all hope is lost?"
+    story_function: "Transition from Act II to Act III."
+    visual_function: "Visuals of loss, darkness, or isolation."
+    emotional_function: "Despair, grief, or total isolation."
+    required_decisions:
+      - "Is the protagonist forced to confront their internal flaw to move forward?"
+    fields_to_complete:
+      the_loss: "<write here>"
+      the_final_spark: "<write here>"
+    diagnostic_questions:
+      - "Is the protagonist forced to confront their internal flaw to move forward?"
+    completion_criteria:
+      - "The protagonist must find a new way to fight or accept their fate."
+    common_failure_modes:
+      - "The 'low point' isn't actually low enough."
+
+  - id: "climax"
+    name: "The Climax"
+    order: 5
+    approximate_position: "90%"
+    purpose: "The final resolution of the central conflict."
+    writer_prompt: "How does the protagonist face their antagonist/problem one last time, using everything they have learned?"
+    story_function: "Resolution of the dramatic question."
+    visual_function: "High-contrast, dynamic, and climactic imagery."
+    emotional_function: "Catharsis, tension release, or tragedy."
+    required_decisions:
+      - "Does the protagonist use their learned growth to win?"
+      - "Is the cost of victory clearly established?"
+    fields_to_complete:
+      the_final_choice: "<write here>"
+      the_outcome: "<write here>"
+    diagnostic_questions:
+      - "Does the climax directly address the Inciting Incident?"
+    completion_criteria:
+      - "The central conflict is resolved (win or lose)."
+    common_failure_modes:
+      - "The hero wins through pure luck (Deus Ex Machina)."
+      - "The climax feels disconnected from the rest of the story."
+
+character_design:
+  methodology_role: "The character's internal arc must mirror the external structural beats."
+  characters:
+    - name: "<write here>"
+      internal_flaw: "<What is preventing them from succeeding?>"
+      external_goal: "<What are they trying to achieve physically?>"
+      arc_start_state: "<How do they behave in Act I?>"
+      arc_midpoint_shift: "<How does the Midpoint change their mindset?>"
+      arc_end_state: "<How have they changed by the Climax?>"
+
+world_design:
+  methodology_role: "The environment must evolve alongside the narrative tension."
+  act_i_environment: "The established status quo; familiar, safe, or stagnant."
+  act_ii_environment: "The 'new world'; unpredictable, dangerous, or transformative."
+  act_iii_environment: "The crucible; high-stakes, compressed, and decisive."
+
+theme_design:
+  methodology_role: "The theme is the 'argument' proven by the resolution of the 3-Act structure."
+  fields:
+    central_dramatic_question: "<e.g., Can one man find justice in a corrupt system?>"
+    the_argument: "<What two opposing values are being tested?>"
+    the_verdict: "<What does the Climax prove is the 'right' or 'true' way?>"
+
+visual_storytelling:
+  methodology_role: "Visual cues must signal the structural transitions between acts."
+  act_i_visuals: "Stable framing, natural lighting, familiar motifs."
+  act_ii_visuals: "Dynamic movement, increased contrast, introduction of new visual motifs."
+  act_iii_visuals: "High tension, extreme lighting/shadows, climactic visual payoff."
+
+scene_generation_rules:
+  methodology_role: "Every scene must adhere to the causality and tension requirements."
+  causality_rule: "Every scene must follow the 'Therefore' or 'but' logic."
+  tension_rule: "Each scene must either increase the stakes or complicate the protagonist's path."
+  pacing_rule: "Minimize static scenes that do not advance the plot or character arc."
+
+revision_passes:
+  - name: "The Pacing Pass"
+    goal: "Ensure Act II doesn't sag."
+    instructions:
+      - "Check the distance between the Inciting Incident and the Midpoint."
+      - "Ensure every scene in Act II raises the stakes."
+    questions:
+      - "Is there a clear sense of momentum in the middle?"
+    success_criteria:
+      - "No scenes feel 'filler' or stagnant."
+  - name: "The Causality Pass"
+    goal: "Ensure 'Therefore/But' logic."
+    instructions:
+      - "Read the beat sheet and replace 'And then' with 'Therefore' or 'But'."
+    questions:
+      - "Does every beat lead logically to the next?"
+    success_criteria:
+      - "The story feels like an inevitable chain of events."
+  - name: "The Character Pass"
+    goal: "Ensure internal arc alignment."
+    instructions:
+      - "Verify that every major plot beat forces a change in the character's mindset."
+    questions:
+      - "Is the character's growth visible through their actions in Act II and III?"
+    success_criteria:
+      - "The character's internal change is the engine of the plot."
+  - name: "The Theme Pass"
+    goal: "Ensure thematic resonance."
+    instructions:
+      - "Check if the climax provides a definitive answer to the central dramatic question."
+    questions:
+      - "Does the resolution support the intended argument?"
+    success_criteria:
+      - "The story's conclusion feels thematically earned."
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure visual-structural alignment."
+    instructions:
+      - "Check if visual motifs and lighting shifts correspond to act transitions."
+    questions:
+      - "Do the visuals signal the shift from the status quo to the new world?"
+    success_criteria:
+      - "The visual language reinforces the narrative tension."
+  - name: "The Tension Progression Pass"
+    goal: "Ensure escalating stakes."
+    instructions:
+      - "Audit each beat to ensure the difficulty level is increasing."
+    questions:
+      - "Is the climax significantly more difficult than the inciting incident?"
+    success_criteria:
+      - "A measurable upward trajectory of difficulty and stakes."
+
+validation_checklist:
+  - "Does the Inciting Incident disrupt the status quo?"
+  - "Does the protagonist cross a point of no return in Act I?"
+  - "Does the Midpoint significantly raise the stakes or shift the strategy?"
+  - "Is the 'All is Lost' moment a consequence of the protagonist's flaws or actions?"
+  - "Does the Climax resolve the original conflict established in Act I?"
+  - "Does the character arc mirror the external structural beats?"
+  - "Is the 'Therefore/But' logic consistent across all beats?"
+  - "Does the setting evolve alongside the narrative tension?"
+  - "Is the central dramatic question answered by the resolution?"
+  - "Are the stakes higher in Act II than in Act I?"
+  - "Does the climax avoid a Deus Ex Machina resolution?"
+  - "Is the protagonist's internal flaw addressed in the climax?"
+
+failure_modes:
+  - failure_mode: "The Sagging Middle"
+    symptom: "The story loses tension between the Midpoint and Plot Point 2."
+    likely_cause: "Lack of escalating obstacles or repetitive conflict."
+    fix: "Introduce a new complication or a major revelation at the Midpoint."
+  - failure_mode: "The Rushed Ending"
+    symptom: "The Climax happens and is over too quickly without emotional weight."
+    likely_cause: "Lack of preparation in Act II; the hero hasn't 'earned' the win."
+    fix: "Ensure the protagonist undergoes a significant struggle/loss in Act II to justify the final climax."
+  - failure_mode: "The Static Protagonist"
+    symptom: "The story ends, but the character is exactly the same as they were in Act I."
+    likely_cause: "The plot beats were treated as external events rather than internal catalysts."
+    fix: "Re-map the beats to ensure each one forces a psychological or behavioral shift."
+
+adaptation_notes:
+  feature_film: "Focus on the 3-act beats as the primary structural pillars."
+  short_film: "Compress the acts; the Inciting Incident may happen almost immediately."
+  tv_episode: "The 3-act structure applies to the episode, but often serves a larger seasonal arc."
+  tv_pilot: "The structure must establish the engine for future episodes."
+  anime: "Often utilizes expanded Act II sequences with high-intensity 'encounters'."
+  adult_animation: "Can leverage the structure for dark comedy or high-concept satire."
+  anthology: "Each segment should follow its own 3-act cycle."
+  game_cinematic: "Structure must allow for player agency/interaction points."
+
+yaml_usage_notes:
+  how_to_use: "Fill out the 'story_inputs' first, then move to 'beats_or_units' chronologically."
+  recommended_population_order:
+    - "story_inputs"
+    - "character_design"
+    - "beats_or_units"
+    - "theme_design"
+  minimum_viable_completion: "A completed 'beats_or_units' section for the 5 core beats."
+  signs_framework_is_ready_for_scene_outline: "When the 'causality' check (Therefore/But) passes for all beats."

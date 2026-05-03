@@ -1,0 +1,319 @@
+metadata:
+  framework_name: "Nutshell Technique Template"
+  methodology_name: "Jill Chamberlain’s Nutshell Technique"
+  methodology_family: "Structural Logic & Recontextualization"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "tv_episode"
+    - "anime"
+    - "mystery"
+    - "thriller"
+    - "psychological drama"
+  best_for:
+    - "stories relying on a major revelation or twist"
+    - "character-driven stories where perception is reality"
+    - "high-concept plots that hinge on a single truth"
+  not_ideal_for:
+    - "straightforward procedural action"
+    - "slice-of-life without thematic shifts"
+    - "episodic adventures without a central mystery/revelation"
+  target_lengths:
+    - "short film"
+    - "feature film"
+    - "tv episode"
+  core_principle: "Thematic recontextualization through the revelation of a hidden truth that shatters the protagonist's initial belief."
+  primary_story_unit: "The Relationship between the Setup (The Lie) and the Revelation (The Truth)"
+  primary_success_metric: "Does the twist/revelation fundamentally change the meaning of everything that came before it?"
+
+framework_overview:
+  summary: "The Nutshell Technique focuses on creating a story where a character's initial understanding of their world is proven wrong by a pivotal revelation, forcing a total re-evaluation of their journey."
+  what_this_framework_helps_create:
+    - "A cohesive, logically sound twist"
+    - "Character arcs rooted in psychological shifts"
+    - "Thematic depth through irony and recontextualization"
+  what_it_prioritizes:
+    - "Causal logic"
+    - "Character perception"
+    - "Thematic impact"
+  what_it_deemphasphasizes:
+    - "Random plot twists"
+    - "Action for action's sake"
+    - "Incidental subplots"
+
+use_when:
+  - "You have a great twist but no way to make it feel earned."
+  - "Your story feels like a series of events rather than a cohesive arc."
+  - "You want to ensure your protagonist's internal change matches the external plot."
+
+avoid_when:
+  - "The twist is a 'deus ex machina' that doesn't affect the character's agency."
+  - "The story is purely procedural and doesn't require a change in perspective."
+
+core_principles:
+  - "The Story is a Lie: The first half of the story must be built on a premise that is eventually proven false."
+  - "The Revelation is the Pivot: The twist must not just be a surprise; it must be a recontextualization."
+  - "The Character is the Bridge: The character's growth is measured by their ability to transition from the 'Old Truth' to the 'New Truth'."
+
+workflow:
+  - step: 1
+    name: "Define the False Reality"
+    goal: "Establish the character's initial belief and the world as they perceive it."
+    instructions:
+      - "Identify what the character believes to be true about themselves or their situation."
+      - "Define the 'setup' that supports this false belief."
+    output: "The Setup (The Lie)"
+  - step: 2
+    name: "Identify the Hidden Truth"
+    goal: "Determine the revelation that will shatter the setup."
+    instructions:
+      - "Determine the actual reality that has been hidden from the character."
+    output: "The Revelation (The Truth)"
+  - step: 3
+    name: "Construct the Recontextualization"
+    goal: "Map how the truth changes the meaning of the setup."
+    instructions:
+      - "List key events from the first half and explain how they look different once the truth is known."
+    output: "The Recontextualization Map"
+  - step: 4
+    name: "Build the Structural Bridge"
+    goal: "Populate the beats that lead from the Lie to the Truth and finally to the New Reality."
+    instructions:
+      - "Fill out the methodology_structure section."
+    output: "The Complete Nutshell Outline"
+
+story_inputs:
+  premise: "<The core idea of the story>"
+  logline: "<Protagonist + Goal + Conflict + The Twist/Reverberation>"
+  medium: "<feature film | short film | etc.>"
+  genre: "<genre>"
+  tone: "<tone>"
+  target_length: "<length>"
+  audience: "<audience>"
+  rating: "<rating>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  the_setup:
+    description: "The world as the protagonist perceives it."
+    elements:
+      initial_belief: "<What does the character believe is true?>"
+      perceived_reality: "<What is the status quo based on this belief?>"
+      supporting_evidence: ["<List clues/events that reinforce the false belief>"]
+      the_lie_definition: "<The specific, actionable false belief held by the protagonist>"
+      character_blind_spot: "<The specific psychological gap preventing them from seeing the truth>"
+      world_illusion: "<The external environmental factor that masks the truth>"
+  the_disturbance:
+    description: "The first cracks in the false belief."
+    elements:
+      inciting_incident: "<The event that introduces doubt?>"
+      rising_pressure: "<How does the character try to maintain the lie?>"
+      clue_planting: "<The specific piece of information that contradicts the lie but is misinterpreted?>"
+      doubt_intensity: "<The scale of the character's internal conflict between old and new info?>"
+      character_reaction: "<The character's defensive mechanism against the truth?>"
+  the_revelation:
+    description: "The 'Nutshell' moment where the truth is revealed."
+    elements:
+      the_truth: "<What is the actual reality?>"
+      the_moment_of_impact: "<The specific event/discovery that reveals the truth?>"
+      recontextualization_effect: "<How does this change the meaning of the 'Supporting Evidence' listed above?>"
+      information_source: "<The character or event that delivers the truth?>"
+      consequence_magnitude: "<The degree to which the character's world is destroyed?>"
+  the_consequence:
+    description: "The struggle to exist in the new reality."
+    elements:
+      new_conflict: "<The conflict arising from the character's inability to handle the truth?>"
+      the_climax: "<The final confrontation where the character must choose between the old self and the new reality?>"
+      resolution: "<The final state of the character and their world?>"
+      character_transformation_degree: "<The measurable change in the character's identity?>"
+      new_world_status: "<The state of the environment after the truth is accepted?>"
+
+beats_or_units:
+  - id: "setup_phase"
+    name: "The False Foundation"
+    order: 1
+    purpose: "Establish the character's misconception and the stakes of that misconception."
+    approximate_position: "Act 1"
+    writer_prompt: "<Describe the character's life and the specific 'Lie' they live by.>"
+    story_function: "Establishes the baseline for the eventual change."
+    visual_function: "<How do we visually see the character's false security or ignorance?>"
+    emotional_function: "<What emotion is the audience feeling (e.g., comfort, false peace, denial)?>"
+    required_decisions:
+      - "What is the specific, actionable false belief?"
+      - "What is the cost if this belief is proven wrong?"
+    fields_to_complete:
+      character_blind_spot: "<write here>"
+      world_illusion: "<write here>"
+    diagnostic_questions:
+      - "Is the character's belief active or passive?"
+      - "Does the audience believe this lie along with the character (or are they in on the secret)?"
+    completion_criteria:
+      - "The character's motivation is clearly tied to their false belief."
+    common_failure_annotated:
+      - "The character is too passive; they don't actually 'believe' anything, they just happen to be there."
+
+  - id: "revelation_phase"
+    name: "The Shattering"
+    order: 2
+    purpose: "To pivot the story from the 'Lie' to the 'Truth'."
+    approximate_position: "Midpoint / End of Act 2"
+    writer_prompt: "<What is the moment where the character can no longer deny the truth?>"
+    story_function: "The structural pivot point."
+    visual_function: "<A visual metaphor for the breaking of the old world.>"
+    emotional_function: "<Shock, dread, or profound realization.>"
+    required_decisions:
+      - "What piece of information is the 'smoking gun'?"
+    fields_to_complete:
+      the_reveal: "<write here>"
+      immediate_consequence: "<write here>"
+    diagnostic_questions:
+      - "Does this reveal change the character's goal?"
+      - "Is the truth hidden in plain sight through previous clues?"
+    completion_criteria:
+      - "The revelation must make the previous act's events look different."
+    common_failure_annotated:
+      - "The 'Twist for Twist's Sake'—the reveal is shocking but irrelevant to the character's arc."
+
+character_design:
+  methodology_role: "The character is the vessel for the thematic shift."
+  characters:
+    - name: "<Protagonist Name>"
+      initial_belief: "<The Lie they hold>"
+      hidden_need: "<The Truth they must accept>"
+      visible_want: "<What they pursue based on the Lie>"
+      blind_spot: "<What they refuse to see?>"
+      aftermath_state: "<Who they become after the revelation?>"
+
+world_design:
+  methodology_role: "The environment must facilitate both the illusion and the eventual revelation."
+  layers:
+    the_veneer: "<The surface-level appearance of the world that supports the Lie>"
+    the_undercurrent: "<The subtle, hidden elements of the world that hint at the Truth>"
+    environmental_clues: ["<List specific environmental details that change meaning after the reveal>"]
+
+theme_design:
+  method_role: "The tension between the Lie and the Truth."
+  fields:
+    central_argument: "<The debate between the False Belief and the Revealed Truth>"
+    thematic_irony: "<How the character's attempt to protect the Lie actually leads to the Truth?>"
+
+visual_storytelling:
+  methodology_role: "Visual cues that support the two different realities."
+  image_system:
+    the_illusion: "<Visual motifs, colors, or lighting that represent the False Reality>"
+    the_reality: "<Visual motifs, colors, or lighting that represent the Truth>"
+  visual_rules:
+    - "Use shadows/obscurity to represent the hidden truth in Act 1."
+    - "Use harsh, clear, or 'unfiltered' lighting to represent the revelation."
+  final_image: "<An image that expresses the character's new understanding of the world.>"
+
+scene_generation_rules:
+  rule_set:
+    - name: "Clue Integration"
+      instruction: "Every scene in Act 1 must contain a piece of 'misleading evidence' that only makes sense in the context of the Truth."
+    - name: "The Recontextualization Anchor"
+      instruction: "Identify one specific object or line of dialogue in every scene that will be 're-read' by the audience after the revelation."
+    - name: "The Blind Spot Enforcement"
+      instruction: "Avoid scenes where the character actively investigates the truth unless it is a failed attempt to reinforce the Lie."
+
+revision_passes:
+  - name: "The Structure Pass"
+    goal: "Ensure the narrative arc follows the transition from Lie to Truth."
+    instructions:
+      - "Check if the transition from Setup to Revelation is clearly demarcated."
+      - "Verify that the Consequence phase is sufficiently distinct from the Setup."
+    questions:
+      - "Is the story's pivot point clearly identifiable?"
+    success_criteria:
+      - "The story follows a clear trajectory of discovery and re-evaluation."
+
+  - name: "The Character Pass"
+    goal: "Ensure the character's internal change matches the external plot."
+    instructions:
+      - "Trace the character's belief from the initial Lie to the final acceptance of the Truth."
+    questions:
+      - "Does the character's behavior change fundamentally after the revelation?"
+    success_criteria:
+      - "The character's arc is the engine of the story's structural shift."
+
+  - name: "The Theme Pass"
+    goal: "Ensure the thematic argument is present in the tension between the Lie and the Truth."
+    instructions:
+      - "Identify the central debate in the dialogue and plot."
+    questions:
+      - "Is the theme more than just a message; is it a conflict between two opposing realities?"
+    success_criteria:
+      - "The theme is realized through the recontextualization of the plot."
+
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure visual motifs support the two different realities."
+    instructions:
+      - "Audit the lighting and color palettes for the two distinct phases of the story."
+    questions:
+      - "Can the audience visually distinguish between the 'World of the Lie' and the 'World of the Truth'?"
+    success_criteria:
+      - "Visuals provide subconscious clues to the coming revelation."
+
+  - name: "The Recontextualization Pass"
+    goal: "Ensure the first act is meaningful in light of the second."
+    instructions:
+      - "Re-read the setup beats while keeping the 'Truth' at the forefront of your mind."
+    questions:
+      - "Does a scene from Act 1 take on a new, darker, or more tragic meaning now?"
+    success_criteria:
+      - "The audience experiences a 'second viewing' feeling during the first viewing."
+
+validation_checklist:
+  - "Does the protagonist have a specific, identifiable false belief?"
+  - "Is the 'Truth' a direct contradiction or a profound expansion of the 'Lie'?"
+  - "Does the revelation fundamentally change the protagonist's immediate goal?"
+  - "Are there clues planted in the 'Setup' that only make sense after the 'Revelation'?"
+  - "Does the character's resolution reflect their acceptance (or failure to accept) the Truth?"
+  - "Is the 'Truth' logically connected to the 'Lie' (not a random coincidence)?"
+  - "Does the revelation recontextualize at least one major Act 1 event?"
+  - "Is the 'Truth' hidden in plain sight through previous clues?"
+  - "Does the character's agency drive the discovery of the truth?"
+  - "Is the 'New Reality' fundamentally different from the 'Old Reality'?"
+  - "Does the 'Disturbance' phase introduce enough doubt to make the 'Revelation' feel earned?"
+  - "Is the 'Consequence' phase large enough to justify the scale of the 'Revelation'?"
+
+failure_modes:
+  - failure_mode: "The Random Twist"
+    symptric: "The audience feels cheated or confused."
+    likely_cause: "The twist is an external event with no connection to the character's established belief."
+    fix: "Tie the information in the twist to a character flaw or a blind spot established in Act 1."
+  - failure_mode: "The Static Character"
+    symptric: "The story ends, but the character feels the same."
+    likely_cause: "The character learns the truth but doesn't let it change their behavior or goals."
+    fix: "Ensure the 'New Reality' forces a choice that the 'Old Self' could never make."
+  - failure_mode: "The Information Dump"
+    symptric: "The revelation feels like a lecture rather than a discovery."
+    likely_cause: "The truth is delivered via dialogue or exposition rather than through character action or discovery."
+    fix: "Make the revelation a consequence of the character's investigation or a direct impact of an event."
+
+adaptation_notes:
+  feature_film: "Use the Midpoint for the primary revelation to allow for a full Act 3 struggle."
+  short_film: "The revelation and the resolution often happen almost simultaneously; focus on a single, sharp impact."
+  tv_episode: "The 'Truth' can be a localized version of a larger series-long 'Lie'."
+  tv_pilot: "The 'Lie' must establish the status quo that will be disrupted for the rest of the season."
+  anime: "Emphasize the visual transformation of the world/character alongside the psychological shift."
+  adult_animation: "Use the recontextualization to subvert genre expectations or tonal safety."
+  anthology: "Each entry must have a self-contained, complete cycle of Lie to Truth."
+  game_cinematic: "The revelation should trigger a shift in gameplay mechanics or environmental interaction."
+
+yaml_usage_notes:
+  how_to_use: "Start with 'story_inputs', then move to 'methodology_structure'. Do not attempt to write beats until the 'Truth' and 'Lie' are clearly defined."
+  recommended_population_order:
+    - "story_inputs"
+    - "character_design (initial_belief/blind_spot)"
+    - "methodology_structure (the_setup -> the_revelation -> the_consequence)"
+    - "theme_design"
+    - "visual_storytelling"
+  minimum_viable_completion: "A completed 'methodology_structure' with a defined 'initial_belief' and 'the_truth'."
+  signs_framework_is_ready_for_scene_outline: "When you can explain how a specific scene in Act 1 will look different to an audience member who has just witnessed the 'revelation_phase'."

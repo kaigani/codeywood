@@ -1,0 +1,322 @@
+metadata:
+  framework_name: "A/B/C Plot Structure Template"
+  methodology_name: "A/B/C Plot Structure"
+  methodology_family: "Multi-Strand Narrative Architecture"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "TV pilot"
+    - "TV episode"
+    - "anime"
+    - "web series"
+    - "game cinematic"
+  best_for:
+    - "ensemble casts"
+    - "complex worldbuilding"
+    - "thematic layering"
+    - "long-form episodic storytelling"
+  not_ideal_for:
+    - "minimalist single-character shorts"
+    - "linear, single-track monomyths"
+  target_lengths:
+    - "90-120 minute features"
+    - "40-60 minute TV episodes"
+  core_principle: "Narrative Convergence: The art of weaving independent narrative strands so they collide to be a unified thematic and emotional climax."
+  primary_story_unit: "The Strand"
+  primary_success_metric: "Interdependence (The degree to which the removal of one plot renders the others hollow or incomplete)."
+
+framework_overview:
+  summary: "A framework for managing multiple simultaneous narrative threads (A, B, and C plots) to ensure complexity does not lead to fragmentation."
+  what_this_framework_helps_create:
+    - "A sense of a living, breathing world"
+    - "Thematic resonance across different character perspectives"
+    - "Controlled pacing through alternating narrative focus"
+    - "High-impact climax through plot convergence"
+  what_it_prioritizes:
+    - "Interconnectivity"
+    - "Thematic unity"
+    - "Structural balance"
+  what_it_deemphasizes:
+    - "Isolated subplots"
+    - "Incidental character arcs"
+    - "Narrative 'filler'"
+
+use_when:
+  - "The story has an ensemble cast with distinct goals."
+  - "The theme is too complex to be expressed through a single character's arc."
+  - "The setting requires secondary stories to establish scale or stakes."
+
+avoid_when:
+  - "The story is a tight, single-focus character study."
+  - "The runtime is too short to allow for plot introduction and development."
+  - "The subplots do not share a common thematic or causal DNA."
+
+core_principles:
+  - "A-Plot Dominance: The A-Plot must drive the primary stakes and the main protagonist's journey."
+  - "B-Plot Support: The B-Plot should provide emotional depth, thematic counterpoint, or complication to the A-Plot."
+  - "C-Plot Texture: The C-Plot provides world-scale, atmospheric tension, or a 'ticking clock' that affects the larger ecosystem."
+  - "Convergence: All plots must eventually intersect, either physically, emotionally, or through consequence."
+  - "The 'Collision' rule: An event in Plot C must force a dimension of change in Plot A."
+
+workflow:
+  - step: 1
+    name: "Define the A-Plot Anchor"
+    goal: "Establish the primary narrative engine."
+    instructions:
+      - "Identify the protagonist and their primary external goal."
+      - "Define the central conflict that dictates the story's main trajectory."
+    output: "A-Plot Foundation"
+  - step: 2
+    name: "Architect the B and C Strands"
+    goal: "Develop supporting layers that complement the A-Plot."
+    instructions:
+      - "Create the B-Plot to challenge the A-Plot's themes or emotional stability."
+      - "Create the C-Plot to expand the world or increase the stakes for the environment."
+    output: "Complete Strand Map"
+  - step: 3
+    name: "Map the Intersections"
+    goal: "Identify where and how the plots collide."
+    instructions:
+      - "Identify 'Collision Points' where characters from different plots interact."
+      - "Determine how a victory/loss in one plot impacts the others."
+    output: "Convergence Map"
+  - step: 4
+    name: "Pacing and Alternation"
+    goal: "Distribute plot focus across the timeline."
+    instructions:
+      - "Sequence scenes to ensure no plot stays dormant for too long."
+      - "Ensure the 'weight' of the scenes matches the plot's importance (A > B > C)."
+    output: "Draft Beat Sheet"
+
+story_inputs:
+  premise: "<the core idea>"
+  logline: "<one sentence summary>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Sci-Fi Noir>"
+  tone: "<e.g., Melancholic, Tense>"
+  target_length: "<e.g., 110 pages>"
+  audience: "<e.g., Mature Adult>"
+  rating: "<e.g., R>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  strand_architecture:
+    plot_a:
+      role: "The Primary Engine"
+      protagonist: "<name>"
+      primary_goal: "<what they want>"
+      external_conflict: "<what stops them>"
+      stakes: "<what is lost if they fail>"
+      thematic_function: "<how this represents the core theme>"
+    plot_b:
+      role: "The Emotional/Relational Counterpoint"
+      protagonist: "<name>"
+      primary_goal: "<what they want>"
+      relationship_to_a_plot: "<e.g., Romantic, Rival, Mentor, Distraction>"
+      internal_conflict: "<the emotional struggle>"
+      thematic_function: "<how this complicates the theme>"
+    plot_c:
+      role: "The World/Environmental Pressure"
+      protagonist_or_group: "<name/group>"
+      primary_driver: "<e.g., A looming war, a natural disaster, a systemic corruption>"
+      connection_to_a_plot: "<how the world state affects the hero>"
+      thematic_function: "<how this provides the scale/context>"
+  intersection_mapping:
+    collision_points:
+      - point_id: "<e.g., Midpoint Collision>"
+        plots_involved: ["A", "B"]
+        event_description: "<what happens when they meet?>"
+        consequence_for_a: "<how the hero's path changes>"
+        consequence_for_b: "<how the secondary character's path changes>"
+        visual_anchor: "<a shared image or object that links them>"
+      - point_id: "<e.g., The Climax Convergence>"
+        plots_involved: ["A", "B", "C"]
+        event_description: "<the final intersection>"
+        thematic_resolution: "<how all themes are reconciled here>"
+
+beats_or_units:
+  - id: "BEAT_01_INCITING_INCIDENT"
+    name: "The Catalyst of Convergence"
+    order: 1
+    purpose: "To disrupt the status quo of the A-Plot and introduce the first hint of B/C interference."
+    approximate_position: "10-15%"
+    writer_prompt: "Write a scene where an event from the C-Plot (environmental/world) physically or socially impacts the A-Plot protagonist's daily routine."
+    story_function: "Initiates the primary conflict and establishes the scale of the world."
+    visual_function: "Introduce a visual motif that will recur in all three plots."
+    emotional_function: "Instill a sense of urgency or unease in the audience."
+    required_decisions:
+      - "Which plot provides the initial disruption?"
+      - "How much of the B-plot is revealed here?"
+    fields_to_complete:
+      - "disruption_type"
+      - "protagonist_reaction"
+    diagnostic_questions:
+      - "Is the disruption too small to drive a feature-length story?"
+      - "Does this event feel isolated from the other plots?"
+    completion_criteria:
+      - "The A-plot protagonist's goal is no longer achievable without addressing the disruption."
+    common_failure_modes:
+      - "The incident is too localized and fails to hint at the larger C-plot stakes."
+  - id: "BEAT_02_MIDPOINT_COLLISION"
+    name: "The Midpoint Collision"
+    order: 2
+    purpose: "To force the B-Plot and A-Plot into a shared space or shared consequence."
+    approximate_position: "50%"
+    writer_prompt: "Create a confrontation where the B-Plot protagonist's failure directly complicates the A-Plot protagonist's current mission."
+    story_function: "Raises the stakes and shifts the narrative from reactive to proactive."
+    visual_function: "Use a change in lighting or color palette to signal the shift in narrative weight."
+    emotional_function: "Create a sense of 'no turning back' for all involved characters."
+    required_decisions:
+      - "Which character's perspective takes the lead during this collision?"
+      - "What is the shared physical location for this intersection?"
+    fields_to_complete:
+      - "collision_consequence"
+      - "shared_visual_motif_usage"
+    diagnostic_questions:
+      - "Does this collision feel like a coincidence or a causal necessity?"
+      - "Is the B-plot character's agency present in this scene?"
+    completion_criteria:
+      - "The A-plot and B-plot are now inextricably linked by a shared problem."
+    common_lag_modes:
+      - "The collision is purely dialogue-based and lacks physical or environmental impact."
+
+character_design:
+  methodology_role: "Character as the bridge between plots."
+  characters:
+    - name: "<name>"
+      primary_plot_assignment: "<A, B, or C>"
+      secondary_plot_influence: "<Does this character impact another plot?>"
+      cross_plot_motivation: "<What drives them to interact with other strands?>"
+      arc_relation: "<How their growth mirrors or opposes the A-plot hero?>"
+
+theme_design:
+  methodology_role: "Theme as the glue that prevents fragmentation."
+  fields:
+    central_theme: "<the core message>"
+    thematic_argument_a: "<how the A-plot tests the theme>"
+    thematic_argument_b: "<how the B-plot provides a different perspective on the theme>"
+    thematic_argument_c: "<how the C-plot provides the macro-scale version of the theme>"
+    thematic_irony: "<the tension between the plots' outcomes and the theme>"
+
+visual_storytelling:
+  methodology_role: "Visual motifs to signal plot transitions."
+  image_system:
+    plot_a_visual_motif: "<e.g., Sharp edges, high contrast, cold colors>"
+    plot_b_visual_motif: "<e.g., Soft focus, warm colors, handheld camera>"
+    plot_c_visual_motif: "<e.g., Wide shots, epic scale, desaturated colors>"
+  recurring_motifs:
+    - "<an object that appears in all three plots>"
+    - "<a sound/musical motif that signals convergence>"
+  final_image: "<the image where all three narrative threads are visually resolved>"
+
+revision_passes:
+  - name: "The Relevance Pass"
+    goal: "Eliminate 'floating' subplots."
+    instructions:
+      - "Examine every B and C plot beat."
+      - "Ask: 'If I deleted this, would the A-plot still reach its original climax?'"
+    questions:
+      - "Does Plot C actively pressure Plot A?"
+      - "Is Plot B providing emotional stakes that Plot A lacks?"
+    success_criteria:
+      - "Every beat in B and C has a direct or indirect causal link to A."
+  - name: "The Convergence Pass"
+    goal: "Ensure the climax feels earned and unified."
+    instructions:
+      - "Trace the threads from the climax backward to their origins."
+    questions:
+      - "Are the characters from Plot B/C present or felt during the A-plot climax?"
+      - "Does the resolution of the C-plot provide the 'tools' or 'consequences' for the A-plot resolution?"
+    success_criteria:
+      - "The climax is a single, massive event that resolves or impacts all three strands."
+  - name: "The Structure Pass"
+    goal: "Verify the integrity of the A/B/C hierarchy."
+    instructions:
+      - "Check the relative weight of scenes across all three plots."
+    questions:
+      - "Does the A-plot dominate the runtime as intended?"
+      - "Are the transitions between plots smooth or jarringly disconnected?"
+    success_criteria:
+      - "The A-plot remains the primary driver of the narrative momentum."
+  - name: "The Character Pass"
+    goal: "Ensure characters are not just plot devices."
+    instructions:
+      - "Review character motivations in the context of the intersection points."
+    questions:
+      - "Does a character's presence in another plot feel earned by their motivation?"
+      - "Are the B and C protagonists driving their own arcs?"
+    success_criteria:
+      - "Every character's presence in a collision point is motivated by their internal or external goals."
+  - name: "The Theme Pass"
+    goal: "Ensure thematic unity across all strands."
+    instructions:
+      - "Compare the thematic arguments of A, B, and C."
+    questions:
+      - "Do the three plots argue different sides of the same central theme?"
+      - "Is the thematic irony clearly visible in the convergence?"
+    success_criteria:
+      - "The resolution of all three plots provides a complete answer to the central thematic question."
+  - name: "The Visual Storytelling Pass"
+    goal: "Verify visual motifs signal plot shifts effectively."
+    instructions:
+      - "Audit the use of color, lighting, and framing across plot transitions."
+    questions:
+      - "Can the audience distinguish which plot they are watching based on visual cues alone?"
+      - "Does the visual motif of the C-plot scale appropriately during the climax?"
+    success_criteria:
+      - "Visual motifs are consistent and aid in navigating the multi-strand structure."
+
+validation_checklist:
+  - "Does the A-Plot contain the highest stakes?"
+  - "Does the B-Plot avoid being a 'distruction' and instead act as a 'complication'?"
+  - "Is the C-Plot integrated into the narrative, or does it feel like a separate short film?"
+  - "Are there clear 'Collision Points' identified in the structure?"
+  - "Does the thematic argument remain consistent across all three strands?"
+  - "Is the A-Plot protagonist's primary goal clearly defined?"
+  - "Does every B-Plot beat have a causal link to the A-Plot or C-Plot?"
+  - "Is the C-Plot's 'ticking clock' or environmental pressure palpable?"
+  - "Are the visual motifs for each plot distinct and identifiable?"
+  - "Does the climax resolve or significantly impact all three narrative threads?"
+  - "Is the 'Collision Rule' (C-event forces A-decision) present in the script?"
+  - "Are the character motivations for cross-plot interactions clearly documented?"
+
+failure_modes:
+  - failure_mode: "The Detached C-Plot"
+    symptom: "The audience feels like they are watching three different movies."
+    likely_cause: "The C-plot lacks causal or character-based links to the A-plot."
+    fix: "Introduce a character or event from Plot C that physically interrupts Plot A."
+  - failure_mode: "The B-Plot Stagnation"
+    symptom: "The secondary plot feels like 'filler' or 'breather' scenes with no momentum."
+    likely_cause: "The B-plot lacks its own internal stakes or progression."
+    fix: "Give the B-plot protagonist a concrete, time-sensitive goal."
+  - failure_mode: "The Overcrowded Climax"
+    symptom: "The ending feels messy, confusing, or rushed."
+    likely_cause: "Too many independent resolutions are being forced into one scene."
+    fix: "Focus the climax on the A-plot, using the results of B and C as the 'environment' or 'context' of the resolution."
+
+adaptation_notes:
+  feature_film: "Keep B and C plots tight; ensure they converge by the end of Act 2."
+  short_film: "Reduce to A and B plots only; focus on a single, high-impact collision."
+  tv_episode: "Use B and C plots to seed future episodes (the 'Long-Arc' method)."
+  tv_pilot: "Focus on establishing the *potential* for convergence; don't resolve everything yet."
+  anime: "Use C-plots for expansive world-building/lore that justifies the protagonist's struggle."
+  adult_animation: "Use the C-plot to provide satirical or systemic context to the A-plot's personal drama."
+  anthology: "Treat each episode as a single-strand A-plot, but use a recurring C-plot (the 'Overarching Mythos')."
+  game_cinematic: "Ensure the C-plot environmental stakes are visually tied to the player's immediate gameplay objectives."
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'story_inputs' first, then build the 'methodology_structure' strand by strand, and finally map the 'intersection_mapping'."
+  recommended_population_order:
+    - "1. story_inputs"
+    - "2. methodology_structure (Plot A)"
+    - "3. methodology_structure (Plot B/C)"
+    - "4. intersection_mapping"
+    - "5. character_design"
+    - "6. theme_design"
+  minimum_viable_completion: "At minimum, define the A-Plot and at least one intersection point with a B-Plot."
+  signs_framework_is_ready_for_scene_outline: "When every beat in the 'intersection_mapping' has a clearly defined 'consequence_for_a'."

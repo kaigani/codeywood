@@ -1,0 +1,105 @@
+metadata:
+  framework_name: "Tragedy Structure Template"
+  methodology_name: "Tragedy Structure"
+  methodology_family: "Classical & Modern Tragedy"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "TV drama"
+    - "anime"
+    - "adult animation"
+    - "short film"
+  best_for:
+    - "character-driven dramas"
+    - "high-stakes moral explorations"
+    - "stories of inevitable downfall"
+    - "exploration of consequence and hubris"
+  not_ideal_for:
+    - "action-adventure (without moral weight)"
+    - "purely escapist comedy"
+    - "high fantasy (unless focused on the fall of a hero)"
+  target_lengths:
+    - "90-120 minute feature"
+    - "60-minute prestige drama episode"
+  core_principle: "The inevitable descent of a protagonist from a position of potential, power, or stability into ruin, driven by an internal flaw (Hamartia) or an inescapable fate."
+  primary_story_unit: "The Moral Arc of Decline"
+  primary_success_metric: "Catharsis: The audience feels a profound release of $pity$ and $fear$ through the protagonist's destruction."
+
+framework_overview:
+  summary: "A structural framework designed to map the trajectory of a protagonist's downfall. It focuses on the interplay between character flaw, pivotal error, and the reversal of fortune."
+  what_this_prototype_helps_create:
+    - "A sense of tragic inevitability."
+    - "A profound connection between character morality and plot outcome."
+    - "A powerful emotional impact through the loss of something significant."
+  what_it_prioritizes:
+    - "Internal cause (Hamastia) as the driver of external effect (Catastrophe)."
+    - "The turning point (Peripeteia) where success becomes the engine of failure."
+    - "The moment of realization (Anagnorisis)."
+  what_it_deemphasizes:
+    - "Happy endings or easy resolutions."
+    - "External coincidences that resolve conflict without character agency."
+
+use_when:
+  - "The story is about the cost of ambition, power, or obsession."
+  - "The protagonist's greatest strength is also their greatest weakness."
+  - "You want to explore the 'unmaking' of a person or a society."
+
+avoid_when:
+  - "The protagonist is purely a victim of circumstance with no agency."
+  - "The story requires a triumphant, restorative conclusion."
+
+core_principles:
+  - "Hamartia: The fatal flaw or error in judgment that triggers the decline."
+  - "Hubris: Excessive pride or defiance of moral/natural order."
+  - "Peripeteia: The sudden reversal of fortune; the moment the hero's actions begin to work against them."
+  - "Anagnorisis: The tragic realization of the truth or the protagonist's role in their own destruction."
+  - "Catharsis: The emotional purging experienced by the audience at the end."
+
+workflow:
+  - step: 1
+    name: "The Foundation of Stature"
+    goal: "Establish what is at stake by defining the protagonist's initial height."
+    instructions:
+      - "Define the protagonist's social, moral, or personal 'high point'."
+      - "Identify the 'world' they inhabit before the decay begins."
+    output: "Character Profile & Initial Status Quo"
+  - step: 2
+    name: "The Seed of Destruction"
+    goal: "Introduce the flaw and the first error."
+    instructions:
+      - "Identify the Hamartia."
+      - "Map the first decision that prioritizes the flaw over the stable world."
+    output: "The Inciting Error"
+  - step: 3
+    name: "The Pivot (Peripeteia)"
+    goal: "Design the reversal of fortune."
+    instructions:
+      - "Ensure the reversal is a direct consequence of the protagonist's previous 'successes'."
+    output: "The Turning Point Beat"
+  - step: 4
+    name: "The Descent and Realization"
+    goal: "Map the accelerating collapse and the moment of truth."
+    instructions:
+      - "Draft the Anagnorisis—the moment the hero sees the wreckage they created."
+    output: "The Recognition Beat"
+  - step: 5
+    name: "The Catastrophe"
+    goal: "Execute the final destruction."
+    instructions:
+      - "Ensure the ending is the logical, unavoidable conclusion of the established flaw."
+    output: "The Final Image/Catastrophe"
+
+story_inputs:
+  premise: "<The core idea of the tragedy>"
+  logline: "<The protagonist, their flaw, and the inevitable consequence>"
+  medium: "<feature | short | tv | etc.>"
+  genre: "<e.g., Noir, Period Drama, Sci-Fi Tragedy>"
+  tone: "<e.g., Somber, Fatalistic, Grandiose, Gritty>"
+  target_length: "<e.g., 110 pages>"
+  audience: "<e.g., Adult, Mature, Prestige Drama seekers>"
+rating: "<e.g., R, TV-MA>"
+production_constraints: []
+creative_constraints: []
+reference_points: []
+must_include: []

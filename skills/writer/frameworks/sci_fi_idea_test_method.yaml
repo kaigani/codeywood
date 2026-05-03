@@ -1,0 +1,413 @@
+metadata:
+  framework_name: "Sci-Fi Idea-Test Method"
+  methodology_name: "Sci-Fi Idea-Test Method"
+  methodology_family: "Speculative Stress-Testing"
+  version: "1.0"
+  created_for: "concept validation and world-logic development"
+  suitable_media:
+    - "feature film"
+    - "tv_pilot"
+    - "anime"
+    - "game_cinematic"
+    - "short_film"
+  best_for:
+    - "high-concept sci-fi"
+    - "hard science fiction"
+    - "speculative fiction"
+    - "cyberpunk"
+    - "space opera"
+  not_ideal_for:
+    - "low-concept fantasy"
+    - "contemporary drama"
+    - "period pieces"
+  target_lengths:
+    - "any"
+  core_principle: "The integrity of the narrative is derived from the logical consistency and the ripple-effect consequences of a single 'Novum' (the speculative change)."
+  primary_story_unite: "The Ripple Effect"
+  primary_success_metric: "Internal Logic Stability & Consequence Depth"
+
+framework_overview:
+  summary: "A methodology designed to move from a 'What If' seed to a robust, logically consistent narrative framework by stress-testing the implications of a speculative element."
+  what_this_framework_helps_create:
+    - "A logically airtight speculative premise"
+    - "A world that feels reactive to its own technology/rules"
+    - "Conflict derived from systemic change rather than arbitrary plot points"
+  what_it_prioritizes:
+    - "Internal consistency"
+    - "Consequence mapping"
+    - "The 'Cost' of progress"
+  what_it_deemphasizes:
+    - "Character backstory (unless impacted by the Novum)"
+    - "Traditional hero's journey beats (until the world logic is set)"
+
+use_when:
+  - "You have a 'What If' idea but no plot."
+  - "The technology or event is the driver of the story."
+  - "You want to avoid 'Magic Tech' syndrome (technology that solves plot problems without cost)."
+
+avoid_when:
+  - "The speculative element is purely aesthetic/background."
+  - "The story is character-driven without environmental impact."
+
+core_principles:
+  - "The Novum Rule: Every speculative change must have a logical mechanism and a measurable cost."
+  - "The Ripple Rule: A change in technology/physics must affect the economy, the social hierarchy, and the individual biology/psychology."
+  - "The Constraint Rule: The story's tension lives in what the technology *cannot* do or what it *breaks*."
+
+workflow:
+  - step: 1
+    name: "The Seed"
+    goal: "Define the core speculative element."
+    instructions:
+      - "Identify the single 'Novum' (the change to reality)."
+      - "Define its mechanism (how it works) and its accessibility (who has it)."
+    output: "The Speculative Seed"
+  - step: 2
+    name: "The Ripple Mapping"
+    goal: "Trace the impact of the Novum across different scales."
+    instructions:
+      - "Map the impact on the Macro (Society/Economy) and the Micro (Individual/Biological)."
+    output: "Consequence Matrix"
+  - step: 3
+    name: "The Friction Identification"
+    goal: "Locate the conflict within the new reality."
+    instructions:
+      - "Identify the 'Winners' and 'Losers' of the Novum."
+      - "Define the 'Unintended Consequence' that creates the central crisis."
+    output: "Conflict Framework"
+  - step: 4
+    name: "The Boundary Test"
+    goal: "Establish the limits to prevent plot holes."
+    instructions:
+      - "Determine the breaking point of the technology/rule."
+    output: "Rules of Reality"
+
+story_inputs:
+  premise: "<The initial 'What If' statement>"
+  logline: "<The story driven by the consequence of the 'What If'>"
+  medium: "<e.g., Feature, Anime, etc.>"
+  genre: "<e.g., Cyberpunk, Hard Sci-Fi, etc.>"
+  tone: "<e.g., Nihilistic, Wonder-filled, Clinical, etc.>"
+  target_t_length: "<e.g., 120 pages>"
+  audience: "<e.g., Adult, Sci-Fi enthusiasts>"
+  rating: "<e.g., PG-13, R>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  phase_1_the_novum:
+    description: "Defining the fundamental change to reality."
+    decision_forcing_fields:
+      novum_definition: "<What is the new thing/rule/tech?>"
+      mechanism_of_action: "<How does it physically/scientifically function?>"
+      accessibility_scale: "<Is it universal, elite-only, or accidental?>"
+      the_disruption: "<What specific existing reality does this replace or break?>"
+    diagnostic_questions:
+      - "Is this just magic with a different name, or does it have a functional cost?"
+      - "Does this technology solve a problem, or does it create a new, more complex one?"
+    completion_criteria: "The Novum must be defined with enough detail that its limitations are obvious."
+
+  phase_2_the_ripple_effect:
+    description: "Tracing the consequences through the layers of existence."
+    decision_forcing_fields:
+      impact_on_power: "<How does this change who is in a position of authority?>"
+      impact_on_economy: "<What industry dies? What industry is born?>"
+      impact_on_culture: "<How do religions, art, or laws adapt?>"
+      impact_on_biology: "<Does it change the human body or mind?>"
+      impact_on_psychology: "<How does it change human relationships or perception of time/space?>"
+      impact_on_daily_life: "<What is a mundane task now? What is a mundane task now impossible?>"
+    diagnostic_questions:
+      - "Have you identified a 'Loser' class created by this change?"
+      - "Is the change felt at the dinner table, not just in the lab?"
+    completion_criteria: "At least three distinct layers of impact must be documented."
+
+  phase_3_the_friction_and_cost:
+    description: "Locating the dramatic engine."
+    decision_forcing_fields:
+      the_unintended_consequence: "<The 'Side Effect' that drives the plot>"
+      the_primary_conflict_type: "<e.g., Man vs. Tech, Man vs. Society, Man vs. Nature>"
+      the_cost_of_use: "<What must be sacrificed to utilize the Novum?>"
+      the_moral_dilemma: "<The ethical question raised by the Novum's existence?>"
+    diagnostic_questions:
+      - "Is the conflict a direct result of the Novum, or is it just happening 'near' it?"
+      - "Does the protagonist's goal require them to use/fight the Novum?"
+    completion_criteria: "The conflict must be inextricable from the Novum's existence."
+
+  phase_4_the_boundary_test:
+    description: "Establishing the failure states."
+    decision_forcing_fields:
+      the_failure_mode: "<What happens when the technology/rule breaks?>"
+      the_limitation: "<What is the one thing the Novum absolutely cannot do?>"
+      the_irreversible_point: "<What change to the Novum makes the world unrecoverable?>"
+    diagnostic_questions:
+      - "If the hero uses the Novum to solve the problem, does it actually create a bigger problem?"
+      - "Are the rules of the tech consistent across all scenes?"
+    completion_criteria: "The 'Rules of Reality' must be set so they cannot be violated for convenience."
+
+beats_or_units:
+  - id: 1
+    name: "The Seed"
+    order: 1
+    purpose: "Establish the fundamental speculative change."
+    approximate_position: "Opening / Inciting Incident"
+    writer_prompt: "Define the single rule or technology that breaks the current reality."
+    story_function: "Establates the premise and the 'What If'."
+    visual_function: "Introduce the visual hook of the Novum."
+    emotional_function: "Evoke wonder, dread, or curiosity."
+    required_decisions:
+      - "Mechanism of action"
+      - "Accessibility"
+      - "The primary cost"
+    fields_to_complete:
+      novum_definition: ""
+      mechanism: ""
+      accessibility: ""
+    diagnostic_questions:
+      - "Is the Novum clearly distinguishable from magic?"
+      - "Is the cost of the Novum immediately apparent?"
+    completion_criteria:
+      - "The Novum is defined with physical/logical constraints."
+      - "The scope of the change is established."
+    common_failure_modes:
+      - "The Magic Tech Trap: The tech works without any cost or limitation."
+
+  - id: 2
+    name: "The Ripple Mapping"
+    order: 2
+    purpose: "Expand the impact of the Novum to the world."
+    approximate_position: "World Building / Setup"
+    writer_prompt: "Trace how the Novum changes the economy, social hierarchy, and biology."
+    story_function: "Builds the reactive ecosystem of the setting."
+    visual_function: "Show the environmental and architectural changes."
+    emotional_function: "Create a sense of scale and systemic consequence."
+    required_decisions:
+      - "Macro-societal impact"
+      - "Micro-individual impact"
+      - "Economic shifts"
+    fields_to_complete:
+      impact_on_power: ""
+      impact_on_economy: ""
+      impact_on_biology: ""
+    diagnostic_questions:
+      - "Is the change felt at the individual level?"
+      - "Have you identified a 'Loser' class?"
+    completion_criteria:
+      - "At least three layers of impact (Macro, Micro, Social) are documented."
+    common_failure_modes:
+      - "The Empty Spectacle: The world looks cool but the characters are unaffected."
+
+  - id: 3
+    name: "The Friction Identification"
+    order: 3
+    purpose: "Generate the central conflict from the Novum's side effects."
+    approximate_pattern: "Rising Action"
+    writer_prompt: "Identify the unintended consequence that creates the crisis."
+    story_function: "Drives the plot through systemic friction."
+    visual_function: "Visualizing the breakdown of the 'New Normal'."
+    emotional_function: "Generate tension, ethical dilemma, and urgency."
+    required_decisions:
+      - "The primary conflict type"
+      - "The moral dilemma"
+      - "The unintended consequence"
+    fields_to_complete:
+      unintended_consequence: ""
+      conflict_type: ""
+      moral_dilemma: ""
+    diagnostic_questions:
+      - "Is the conflict a direct result of the Novum?"
+      - "Does the protagonist's goal require them to interact with the Novum?"
+    completion_criteria:
+      - "The conflict is inextricable from the Novum's existence."
+    common_failure_modes:
+      - "The Logical Collapse: The plot requires the tech to work one way, then another."
+
+  - id: 4
+    name: "The Boundary Test"
+    order: 4
+    purpose: "Define the limits and failure states of the technology/rule."
+    approximate_position: "Climax / Resolution"
+    writer_prompt: "Determine the breaking point of the technology or rule."
+    story_function: "Ensures narrative stability and prevents plot holes."
+
+    visual_function: "The visual representation of the technology failing."
+    emotional_function: "Heighten stakes through the threat of irreversible change."
+    required_decisions:
+      - "The failure mode"
+      - "The absolute limitation"
+      - "The irreversible point"
+    fields_to_complete:
+      failure_mode: ""
+      limitation: ""
+      irreversible_point: ""
+    diagnostic_questions:
+      - "If the hero uses the Novum to solve the problem, does it create a bigger problem?"
+      - "Are the rules consistent across all scenes?"
+    completion_criteria:
+      - "The 'Rules of Reality' are set so they cannot be violated for convenience."
+    common_failure_modes:
+      - "The Deus Ex Machina: The tech suddenly works in a way it never has before."
+
+character_design:
+  methodology_role: "Characters are defined by their relationship to the Novum."
+  characters:
+    - role: "The Proponent"
+      description: "<Character who benefits from the Novum>"
+      motivation: "<How the Novum empowers them>"
+      burden: "<The hidden cost they pay>"
+    - role: "The Opponent"
+      description: "<Character who is threatened by the Novum>"
+      motivation: "<How they seek to revert or regulate the change>"
+      method: "<How they use the old world to fight the new>"
+    - role: "The Catalyst"
+      description: "<Character caught in the ripple effect>"
+      internal_conflict: "<The tension between their humanity and the new reality>"
+
+world_design:
+  methodology_role: "The world is a reactive ecosystem to the Novum."
+  fields:
+    the_new_normal: "<The baseline state of the world post-Novum>"
+    infrastructure_of_the_novum: "<How the world is physically built to support the change>"
+    the_remnants: "<What of the 'Old World' still exists and why?>"
+
+theme_design:
+  methodology_role: "The philosophical argument generated by the speculative change."
+  fields:
+    central_philosophical_question: "<e.g., Does immortality strip life of meaning?>"
+    the_technological_temptation: "<The 'False Answer' offered by the Novum>"
+    the_human_truth: "<The 'True Answer' revealed by the story's resolution>"
+
+visual_storytelling:
+  methodology_role: "Visualizing the impossible and the changed."
+  image_system:
+    visual_manifestation_of_novum: "<How is the tech/change visually distinct from the old world?>"
+    the_aesthetic_of_consequence: "<e.g., High-tech/Low-life, Sterile/Clinical, Overgrown/Decayed>"
+    visual_metaphor: "<A recurring image representing the cost of the Novum>"
+  visual_rules:
+    - "<Rule 1: e.g., Always show the physical toll of the tech on the user.>"
+    - "<Rule 2: e.g., Use lighting to distinguish between 'Old World' and 'New World' zones.>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must demonstrate a ripple effect of the Novum."
+    - "Avoid 'Info-Dumping'; show the technology through its failures or its mundane uses."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_use_of_novum: "<How is the speculative element present in this scene?>"
+    consequence_shown: "<What ripple effect is being demonstrated here?>"
+    conflict_source: "<Is the tension coming from the tech or the people?>"
+    visual_anchor: "<A specific object or effect that grounds the sci-fi element>"
+  do_rules:
+    - "Show the cost of the technology in every use."
+    - "Focus on the 'unintended' consequences in action scenes."
+  avoid_rules:
+    - "Do not allow the technology to work perfectly without explanation."
+    - "Do not introduce a new 'rule' mid-story without a setup."
+
+revision_passes:
+  - name: "The Consistency Pass"
+    goal: "Ensure no 'Magic Tech' syndrome."
+    instructions:
+      - "Check every use of the Novum against the 'Limitation' field."
+      - "Verify that every use of technology incurs its stated cost."
+    questions:
+      - "Did the tech solve a problem too easily?"
+      - "Did it violate a stated rule?"
+    success_criteria:
+      - "All tech-driven solutions have an equal or greater cost."
+  - name: "The Human/Scale Pass"
+    goal: "Ensure the ripple effect reaches the characters."
+    instructions:
+      - "Trace the macro-societal change down to the protagonist's personal stakes."
+    questions:
+      - "Does the character care about this change on a personal level?"
+      - "Is the scope too large to feel intimate?"
+    success_criteria:
+      - "The character's primary conflict is a direct result of the Novum."
+  - name: "The Structure Pass"
+    goal: "Ensure the narrative follows the logic of the Novum's expansion."
+    instructions:
+      - "Verify the progression from Seed to Ripple to Friction to Boundary."
+    questions:
+      - "Does the plot move from the introduction of the tech to its consequences?"
+      - "Is the climax a direct result of the technology's failure or limit?"
+    success_criteria:
+      - "The plot structure mirrors the expansion of the Novum's impact."
+  - name: "The Theme Pass"
+    goal: "Ensure the speculative element drives the philosophical argument."
+    instructions:
+      - "Check if the central question is answered by the resolution of the Novum's conflict."
+    questions:
+      - "Is the theme a direct consequence of the speculative premise?"
+      - "Does the technology represent a temptation or a truth?"
+    success_criteria:
+      - "The story's resolution provides a definitive stance on the Novum's ethical impact."
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure the Novum is visually integrated into the world."
+    instructions:
+      - "Audit every scene for the presence of the visual manifestation of the Novum."
+    questions:
+      - "Is the 'New Normal' visually distinct from the 'Old World'?"
+      - "Are the visual metaphors for 'Cost' present in the imagery?"
+    success_criteria:
+      - "The technology and its consequences are visible through environmental and character cues."
+  - name: "The Methodology-Specific Pass (The Ripple Audit)"
+    goal: "Verify the depth of the consequence mapping."
+    instructions:
+      - "Review the Consequence Matrix against the character's daily life."
+    questions:
+      - "Is the change felt at the dinner table, not just in the lab?"
+      - "Are the winners and losers of the technology clearly represented in the cast?"
+    success_criteria:
+      - "The macro-scale changes are reflected in micro-scale character struggles."
+
+validation_checklist:
+  - "Is the Novum clearly defined?"
+  - "Is the 'Cost' of the Novum established and consistent?"
+  - "Are the 'Winners' and 'Losers' of the change identified?"
+  - "Does the technology/rule have a clear failure state?"
+  - "Is the central theme a direct consequence of the speculative premise?"
+  - "Is the mechanism of action non-magical and logically sound?"
+  - "Does the ripple effect reach the micro/individual level?"
+  - "Is the economic impact of the Novum documented?"
+  - "Is the social hierarchy shift clearly mapped?"
+  - "Does the protagonist's motivation stem from the Novum?"
+  - "Is the 'unintended consequence' driving the central crisis?"
+  - "Are the boundaries of the technology's power strictly enforced?"
+  - "Is the visual manifestation of the Novum distinct and recurring?"
+  - "Does the technology have a measurable physical or psychological penalty?"
+
+failure_modes:
+  - failure_mode: "The Magic Tech Trap"
+    symptom: "The technology solves every plot complication instantly."
+    likely_cause: "Lack of defined 'Limitation' or 'Cost' in the framework."
+    fix: "Introduce a physical, economic, or psychological penalty for use."
+  - failure_mode: "The Empty Spectacle"
+    symptom: "The world looks cool but the characters are unaffected by the change."
+    likely_cause: "Failure to map the 'Micro' ripple effects."
+    fix: "Force the Novum to impact the character's biology, relationships, or daily routine."
+  - failure_mode: "The Logical Collapse"
+    symptom: "The plot requires the tech to work one way, then another."
+    likely_cause: "Lack of a 'Boundary Test' phase."
+    fix: "Strictly adhere to the 'Rules of Reality' established in Phase 4."
+
+adaptation_notes:
+  feature_film: "Focus on one major ripple effect and one primary cost."
+  short_film: "Focus on a single, striking moment of the Novum's failure/consequence."
+  tv_episode: "Focus on a single, contained consequence of the Novum within a single setting."
+  tv_pilot: "Establish the 'New Normal' and the 'Unintended Consequence' that will drive the season."
+  anime: "Emphasize the visual manifestation and the biological/power-scaling limits."
+  adult_animation: "Use the Novum to explore more visceral, graphic, or complex societal decay."
+  anthology: "Use the same Novum to explore different 'Ripple Effects' in different time periods or locations."
+  game_cinematic: "Focus on the interaction between the player/character and the mechanics of the Novum."
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'Story Inputs' first, then move through the 'Methodology Structure' phases sequentially."
+  recommended_population_order: ["story_inputs", "phase_1_the_novum", "phase_2_the_ripple_effect", "phase_3_the_friction_and_cost", "phase_4_the_boundary_test", "character_design"]
+  minimum_viable_completion: "The framework is ready for outlining once Phase 3 (Friction) and Phase 4 (Boundary) are complete."
+  signs_framework_is_ready_for_scene_outline: "You can describe a scene where the technology fails and it creates a character crisis."

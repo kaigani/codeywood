@@ -1,0 +1,130 @@
+metadata:
+  framework_name: "Monster / Threat Cycle Template"
+  methodology_name: "Monster / $Threat Cycle Method"
+  methodology_family: "Pressure-Driven Tension"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "anime"
+    - "horror anthology"
+    - "game cinematic"
+    - "survival horror"
+  best_for:
+    - "Horror"
+    - "Survival Thriller"
+    - "Creature Features"
+    - "Action-Disaster"
+    - "Slasher"
+  not_ideal_for:
+    - "Character Dramas"
+    - "Romantic Comedies"
+    - "High Fantasy (Political focus)"
+  target_lengths:
+    - "7-minute short"
+    - "90-minute feature"
+  core_principle: "The narrative tension is a/direct function of the threat's lifecycle and the characters' diminishing ability to resist it."
+  primary_story_unit: "The Threat Wave (Incubation -> Manifestation -> Escalation -> Confrontation -> Aftermath)"
+  primary_success_metric: "The measurable increase in character vulnerability and environmental claustrophobia as the threat matures."
+
+framework_overview:
+  summary: "A structural framework designed to manage the escalation of an external antagonist or environmental force through a predictable but terrifying lifecycle."
+  what_this_framework_helps_create:
+    - "A sense of inescapable dread"
+    - "A clear progression of stakes"
+    - "A logic-driven monster/threat behavior"
+    - "Effective use of isolation and resource depletion"
+  what_it_prioritizes:
+    - "The mechanics of the threat"
+    - "The erosion of safety"
+    - "The physical and psychological impact of the threat"
+  what_it_deemphasizes:
+    - "Subplots unrelated to survival"
+    - "Character backstories that do not impact current vulnerability"
+
+use_when:
+  - "The antagonist is a physical or environmental force (Monster, Virus, Storm, Slasher, Alien)."
+  - "The setting is inherently isolated or contained (The Arena)."
+  - "The plot is driven by the struggle to survive rather than the struggle to achieve a social goal."
+
+avoid_when:
+  - "The conflict is primarily interpersonal or verbal."
+  - "The protagonist has unlimited resources and no way to be trapped."
+  - "The threat can be resolved through dialogue or diplomacy without physical consequence."
+
+core_principles:
+  - "The Threat must have 'Rules' (What it can/cannot do, what it hunts, what it fears)."
+  - "The Arena must be 'Degradable' (The environment must become more dangerous/less safe as the story progresses)."
+  - "The Characters must be 'Depletable' (Physical strength, weapons, allies, and sanity must diminish)."
+  - "The Cycle must follow a trajectory of increasing visibility and decreasing escape options."
+
+workflow:
+  - step: 1
+    name: "Threat Definition"
+    goal: "Establish the 'Rules of Engagement' for the antagonist."
+    instructions:
+      - "Define the origin and nature of the threat."
+      - "Establish the 'Unbeatable' vs 'Vulnerable' parameters."
+    output: "Threat Profile"
+  - step: 2
+    name: "Arena Construction"
+    goal: "Create a container for the tension."
+    instructions:
+      - "Define the boundaries of the setting."
+      - "Identify how the setting fails as the threat grows."
+    output: "Environment/Arena Logic"
+  - step: 3
+    name: "Cycle Mapping"
+    goal: "Plot the 5 stages of the threat's lifecycle."
+    instructions:
+      - "Map the transition from subtle signs to total chaos."
+    output: "The Threat Cycle Outline"
+  - step: 4
+    name: "Character Vulnerability Mapping"
+    goal: "Align character assets with the threat's progression."
+    instructions:
+      - "Determine which characters are 'Resources' and which are 'Sacrifices'."
+    output: "Character Survival Trajectory"
+
+story_inputs:
+  premise: "<The core idea of the encounter>"
+  logline: "<Protagonist + Threat + Arena + Stakes>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Sci-Fi Horror>"
+  tone: "<e.g., Gritty, Claustrophobic, Visceral>"
+  target_length: "<e.g., 100 pages>"
+  audience: "<e._audience>"
+  rating: "<e.g., R-Rated/Mature>"
+  production_constraints:
+    - "<e.g., Single location only>"
+    - "<e.g., Minimal creature VFX>"
+  creative_constraints:
+    - "<e.g., The monster must remain unseen until Act 3>"
+  reference_points:
+    - "<e.g., Alien (1979), The Thing (1982)>"
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  incubation_stage:
+    detection_method: "<How do characters first realize something is wrong?>"
+    visibility_level_act_1: "<High visibility/Safe zones>"
+    resource_initial_state: "<Abundant weapons/food/communication>"
+    threat_presence_indicator: "<Subtle, non-lethal signs>"
+  manifestation_stage:
+    nature_of_threat: "<Is it biological, supernatural, technological, or environmental?>"
+    containment_type: "<e.g., Physical isolation, Digital lockdown, Biological quarantine, Blizzard>"
+    sensory_triggers: "<What attracts the threat?>"
+    visibility_level_act_2: "<Diminished light/Obscured sight/Broken barriers>"
+  escalation_stage:
+    evolution_path: "<Does the threat grow, mutate, or multiply during the story?>"
+    lethality_scale: "<How does the threat kill? (Infor, Physical trauma, Psychological erosion)>"
+    limitations: "<What can the threat NOT do/reach/see?>"
+    resource_depletion_mechanism: "<How are resources lost? (The monster eats them, the storm destroys them)>"
+    visibility_level_act_3: "<Total darkness/Complete exposure/No escape>"
+  confrontation_stage:
+    threat_rules_enforcement: "<How are the established rules tested in the climax?>"
+    arena_hazard_intensity: "<The peak level of environmental danger>"
+    combat_mechanics: "<The specific way the characters fight back or succumb>"
+    resource_final_state: ""

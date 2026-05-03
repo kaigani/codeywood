@@ -1,0 +1,279 @@
+metadata:
+  framework_name: "Allegorical Structure Template"
+  methodology_name: "Allegorical Structure"
+  methodology_family: "Symbolic/Thematic Narratives"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "anime"
+    - "adult animation"
+    - "graphic novel"
+    - "anthology"
+  best_for:
+    - "social commentary"
+    - "political satire"
+    - "moral fables"
+    - "psychological studies"
+    - "high-concept sci-fi"
+  not_ideal_for:
+    - "purely procedural action"
+    - "low-subtext escapism"
+    - "character studies lacking external stakes"
+  target_lengths:
+    - "short film"
+    - "feature film"
+  core_principle: "The Dual-Layer Narrative: Every physical action, character trait, and setting element must function simultaneously as a literal event and a symbolic representation of a deeper truth."
+  primary_story_unit: "The Symbolic Correspondence"
+  primary_success_metric: "The seamless integration of surface plot and subtextual meaning without losing narrative tension."
+
+framework_overview:
+  summary: "A framework for constructing stories where the plot serves as a/an metaphor for larger social, political, or moral realities."
+  what_this_framework_helps_create:
+    - "Stories with profound resonance"
+    - "Layered meaning"
+    - "Memorable visual motifs"
+    - "Intellectual and emotional depth"
+  what_it_prioritizes:
+    - "Thematic consistency"
+    - "Symbolic mapping"
+    - "Structural parallelism"
+  what_it_deemphasizes:
+    - "Literalism"
+    - "Surface-level coincidence"
+    - "Unconnected action"
+
+use_when:
+  - "You have a message or 'argument' you want to explore through action."
+  - "You want to critique a real-world issue without being explicitly didactic."
+  - "The setting itself is a microcosm of a larger world."
+
+avoid_when:
+  - "The allegory is so heavy-handed that the surface plot becomes boring or non-functional."
+  - "The literal stakes are non-existent or lack emotional weight."
+
+core_principles:
+  - "The Rule of Two: Every significant plot beat must have a literal meaning and a symbolic meaning."
+  - "The Mirror Principle: The character's internal struggle must mirror the external world's conflict."
+  - "The Integrity of the Surface: The story must be a compelling, functional narrative even if the audience misses the allegory."
+  - "The Microcosm Constraint: The boundaries of the story world should represent the scale of the theme."
+
+workflow:
+  - step: 1
+    name: "Define the Core Argument"
+    goal: "Identify the truth or critique you are exploring."
+    instructions:
+      - "Determine the central moral, political, or social question."
+      - "Decide what the 'true' answer is (the story's stance)."
+    output: "Thematic Thesis"
+  - step: 2
+    name: "Construct the Surface Narrative"
+    goal: "Create a functional, high-stakes plot."
+    instructions:
+      - "Develop a literal conflict (e.g., a monster attack, a heist, a survival situation)."
+      - "Ensure the literal stakes are emotionally resonant."
+    output: "Literal Plot Outline"
+  - step: 3
+    name: "Establish Symbolic Mapping"
+    goal: "Link the surface to the depth."
+    instructions:
+      - "Assign characters to represent specific social/moral archetypes."
+      - "Assign settings to represent specific systemic structures."
+      - "Assign key events to represent specific historical or social shifts."
+    output: "Allegorical Mapping Document"
+  - step: 4
+    name: "Visual/Motif Integration"
+    goal: "Embed the allegory in the sensory experience."
+    instructions:
+      - "Identify recurring visual elements that signal the subtext."
+    output: "Visual Motif List"
+  - step: 5
+    name: "Validation and Refinement"
+    goal: "Check for heavy-handedness or narrative emptiness."
+    instructions:
+      - "Run the 'Literal-Only Test'."
+    output: "Finalized Allegorical Framework"
+
+story_inputs:
+  premise: "<The literal 'what happens' of the story>"
+  logline: "<The literal tension/conflict/goal>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Sci-Fi / Horror>"
+  tone: "<e.g., Dreadful, Satirical, Melancholic>"
+  target_length: "<e.g., 90 minutes>"
+  audience: "<e.g., Adults interested in social commentary>"
+  ing_rating: "<e.g., R>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points:
+    - "<e.g., 'Parasite' for class struggle>"
+    - "<e.g., 'The Platform' for systemic hierarchy>"
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  thesis_development_stage:
+    argument_definition: "<The core question being interrogated>"
+    stance_clarity: "<The definitive answer the story provides>"
+    complexity_calibration: "<How nuanced or direct the argument is>"
+    audience_resonance_target: "<The specific emotional response to the truth>"
+  surface_narrative_stage:
+    conflict_architecture: "<The physical mechanics of the struggle>"
+    stakes_escalation_logic: "<How the literal danger increases>"
+    protagonist_drive_definition: "<The literal motivation of the lead>"
+    climax_mechanics: "<The physical resolution of the plot>"
+  symbolic_mapping_stage:
+    archetype_assignment: "<Mapping characters to social roles>"
+    motif_selection_logic: "<Choosing recurring visual symbols>"
+    environmental_symbolism: "<Mapping setting to systemic structures>"
+    structural_parallelism_check: "<Ensuring plot beats mirror thematic shifts>"
+  sensory_integration_stage:
+    visual_motif_recurrence: "<Frequency and placement of symbols>"
+    lighting_metaphor_logic: "<Using light/shadow for moral ambiguity>"
+    compositional_framing_rules: "<Using space to represent power dynamics>"
+    auditory_subtext_design: "<Using sound to reinforce thematic dread/triumph>"
+
+beats_or_units:
+  - id: "B1"
+    name: "The Inciting Disruption"
+    order: 1
+    purpose: "Introduce the literal conflict and the thematic intrusion."
+    approximate_position: "10-15% of story"
+    writer_prompt: "What event breaks the status quo and signals the theme's arrival?"
+    story_function: "Triggers the protagonist's journey."
+    visual_function: "A sudden change in lighting or environmental stability."
+    emotional_function: "Disruption of peace/safety."
+    required_decisions:
+      - "Literal trigger"
+      - "Symbolic weight"
+    fields_to_complete:
+      event_description: ""
+      symbolic_meaning: ""
+    diagnostic_questions:
+      - "Is the event too small to matter?"
+      - "Is the symbolic connection too obvious?"
+    completion_criteria:
+      - "The event is clearly defined."
+      - "The thematic link is established."
+    common_failure_modes:
+      - "The event lacks literal stakes."
+      - "The event is purely symbolic with no plot impact."
+  - id: "B2"
+    name: "The Midpoint Shift"
+    order: 2
+    purpose: "Escalate the stakes and deepen the allegory."
+    approximate_position: "50% of story"
+    writer_prompt: "What revelation forces the character to see the 'truth' of their situation?"
+    story_function: "Raises the difficulty of the literal goal."
+    visual_function: "A shift in color palette or scale of the environment."
+    emotional_function: "Realization and increased pressure."
+    required_decisions:
+      - "Thematic revelation"
+      - "Plot complication"
+    fields_to_complete:
+      revelation_detail: ""
+      consequence_detail: ""
+    diagnostic_questions:
+      - "Does this change the character's understanding of the world?"
+      - "Does the plot become more difficult?"
+    completion_criteria:
+      - "The stakes are irrevocably raised."
+      - "The subtext becomes harder to ignore."
+    common_failure_modes:
+      - "The shift is purely internal with no external consequence."
+      - "The shift is too predictable."
+  - id: "B3"
+    name: "The Climax"
+    order: 3
+    purpose: "Resolve the literal conflict and deliver the thematic verdict."
+    approximate_position: "85-95% of story"
+    writer_prompt: "How does the final struggle prove or disprove the central argument?"
+    story_function: "The final confrontation of the protagonist and antagonist."
+    visual_function: "The most intense use of recurring motifs."
+    emotional_function: "Catharsis or tragedy."
+    required_decisions:
+      - "Final physical outcome"
+      - "Final thematic resolution"
+    fields_to_complete:
+      climax_action: ""
+      thematic_verdict: ""
+    diagnostic_questions:
+      - "Does the resolution answer the central question?"
+      - "Is the physical victory/defeat earned?"
+    completion_criteria:
+      - "The literal conflict is closed."
+      - "The theme is finalized."
+    common_failure_modes:
+      - "The resolution is a 'deus ex machina'."
+      - "The theme is resolved but the plot is left hanging."
+
+character_design:
+  method_role: "Characters as Archetypes/Representations"
+  characters:
+    - name: "<Character Name>"
+      literal_role: "<e.g., The Protagonist/Survivor>"
+      symbolic_function: "<e.g., Represents the disenfranchised working class>"
+      visible_trait: "<A physical or behavioral trait visible on/on screen>"
+      symbolic_trait: "<How that trait embodies the theme>"
+      internal_conflict: "<The personal struggle that mirrors the systemic struggle>"
+      representative_of: "<Specific group, ideology, or moral concept>"
+
+world_design:
+  method_role: "The World as Microcosm"
+  fields:
+    setting_name: "<Name of the location/world>"
+    literal_function: "<What the setting is (e.g., a space station, a small town)>"
+    symbolic_function: "<What the setting represents (e.g., a closed ecosystem, a stagnant society)>"
+    environmental_rules: "<Rules of the world that mirror social/natural laws>"
+    social_hierarchy: "<How power is distributed in this microcosm?>"
+    sensory_atmosphere: "<How the atmosphere reinforces the theme (e.g., claustrophobic, decaying)>"
+
+theme_design:
+  method_role: "The Central Argument"
+  fields:
+    central_question: "<The core philosophical/moral question being pressured?>"
+    the_thesis: "<The answer the story ultimately provides>"
+    the_antithesis: "<The tempting but 'wrong' or 'dangerous' answer>"
+    the_irony: "<The gap between what characters do and what they represent>"
+
+visual_storytelling:
+  method_role: "Visual Metaphor and Motif"
+  image_system:
+    recurring_motifs:
+      - motif_name: "<e.g., Rising Water>"
+        literal_meaning: "<e.g., A flood in the basement>"
+        symbolic_meaning: "<e.g., The unstoppable spread of corruption>"
+    visual_rules:
+      - "<e.g., Use high-contrast lighting to represent moral clarity vs. ambiguity>"
+      - "<e.g., Characters in shadows represent the 'unseen' parts of society>"
+    composition_prompts:
+      - "<e.g., Use framing to trap characters within the architecture of the world>"
+  final_image:
+    description: "<The image that leaves the audience with the 'afterimage' of the theme>"
+    literal_action: "<What is happening physically?>"
+    symbolic_resolution: "<How it resolves the central question>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must advance the literal plot."
+    - "Every scene must reinforce the symbolic layer."
+    - "Avoid 'talking heads' explaining the theme; show the theme through physical consequence."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: "<The literal objective of the characters>"
+    conflict_or_pressure: "<The obstacle to the literal goal>"
+    turn: "<The shift in the literal situation>"
+    symbolic_shift: "<The shift in the thematic argument/progression>"
+    visual_anchor: "<The image that carries the weight of the subtext>"
+    emotional_shift: "<The change in the characters' state>"
+    exits_with: "<The new state of the microcosm>"
+  do_rules:
+    - "Ensure the physical stakes are life-or-death or highly consequential."
+    - "Use objects as proxies for ideas."
+  avoid_rules:
+    - "Do not use dialogue to explain the metaphor (Avoid 'This flood is just like our politics!')."
+    - "Do not let the allegory become too obvious or heavy-handed."

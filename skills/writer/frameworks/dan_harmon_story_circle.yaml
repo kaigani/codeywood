@@ -1,0 +1,460 @@
+metadata:
+  framework_name: "Dan Harmon Story Circle Template"
+  methodology_name: "Dan Harmon Story Circle"
+  methodology_family: "Monomyth Derivative"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv_episode"
+    - "tv_pilot"
+    - "anime"
+    - "short_film"
+    - "web_series"
+  best_for:
+    - "character-driven arcs"
+    - "episodic structure"
+    - "high-concept transformations"
+    - "tightly paced narratives"
+  not_ideal_for:
+    - "static character studies"
+    - "experimental non-linear narratives without a loop"
+    - "purely procedural stories without personal stakes"
+  target_lengths:
+    - "22-minute episode"
+    - "44-minute episode"
+    - "90-minute feature"
+  core_principle: "A character moves from a state of equilibrium, through a period of chaos and lack, and returns to equilibrium, but fundamentally changed by the price paid."
+  primary_story_unit: "The 8-step cycle/loop"
+  primary_success_metric: "The visible and internal transformation of the protagonist via the 'price' paid during the journey."
+
+framework_overview:
+  summary: "A simplified, 8-step adaptation of the Hero's Journey focusing on the movement between 'The Known' and 'The Unknown' and the psychological cost of change."
+  what_this_framework_helps_create:
+    - "Clear character arcs"
+    - "Logical plot progression"
+    - "Emotional resonance through struggle"
+    - "Satisfying resolution"
+  what_it_prioritizes:
+    - "Character desire and lack"
+    - "The threshold crossing"
+    - "The price of the prize"
+    - "The return to equilibrium"
+  what_it_deemphasizes:
+    - "Extraneous worldbuilding unrelated to the character's need"
+    - "Subplots that do not feed back into the primary loop"
+
+use_when:
+  - "Writing episodic television where characters must face new challenges while maintaining a core identity."
+  - "Developing a character-centric feature film where the internal change is the primary driver."
+  - "Structuring short films that require a complete, impactful arc in a limited timeframe."
+
+avoid_when:
+  - "Writing ensemble-only pieces where no single character undergoes a transformative arc."
+  - "Writing purely external, action-oriented plots that lack psychological depth."
+
+core_principles:
+  - "The Loop: The story must eventually return to a state of stability (the 'You' stage), but it cannot be the same stability as the beginning."
+  - "The Lack: The character's journey is driven by a deficiency or a need, not just a whim."
+  - "The Price: Every gain in the 'Find' stage must be accompanied by a loss or a heavy cost in the 'Take' stage."
+  - "The Threshold: There must be a clear distinction between the 'Known World' and the 'Unknown World'."
+
+methodology_structure:
+  stage_1_you:
+    threshold_type: "Status Quo"
+    stability_index: "High"
+    character_state: "Equilibrium"
+    internal_void_presence: "Latent"
+    environmental_predictability: "High"
+  stage_2_need:
+    threshold_type: "Inciting Incident"
+    instability_index: "Rising"
+    character_state: "Disrupted"
+    internal_void_presence: "Active"
+    environmental_predictability: "Decreasing"
+  stage_3_go:
+    threshold_type: "Crossing"
+    instability_index: "High"
+    character_state: "Transitioning"
+    internal_void_presence: "Driving"
+    environmental_predictability: "Low"
+  stage_4_search:
+    threshold_type: "Adaptation"
+    instability_index: "Fluctuating"
+    character_state: "Struggling"
+    internal_void_presence: "Persistent"
+    environmental_predictability: "Unpredictable"
+  stage_5_find:
+    threshold_type: "Discovery"
+    instability_index: "Peak"
+    character_state: "Enlightened"
+    internal_void_presence: "Satisfied"
+    environmental_predictability: "Clarity"
+  stage_6_take:
+    threshold_type: "Crisis"
+    instability_index: "Extreme"
+    character_state: "Broken"
+    internal_void_presence: "Replaced by Loss"
+    environmental_predictability: "Chaos"
+  stage_7_return:
+    threshold_type: "Reentry"
+    instability_index: "Settling"
+    character_state: "Integrating"
+    internal_void_presence: "Scarred"
+    environmental_predictability: "Re-establishing"
+  stage_8_changed:
+    threshold_type: "New Equilibrium"
+    instability_index: "Stable"
+    character_state: "Transformed"
+    internal_void_presence: "Resolved/Altered"
+    environmental_predictability: "New Normal"
+
+workflow:
+  - step: 1
+    name: "The Status Quo"
+    goal: "Establish the character's baseline and their 'Lack'."
+    instructions:
+      - "Define the character's comfortable but incomplete world."
+      - "Identify the internal or external void they are trying to ignore."
+    output: "Character baseline and primary motivation."
+  - step: 2
+    name: "The Journey Mapping"
+    goal: "Populate the 8 beats."
+    instructions:
+      - "Fill in each stage of the circle sequentially."
+      - "Ensure the 'Take' stage creates a direct consequence for the 'Find' stage."
+    output: "A complete 8-step beat sheet."
+  - step: 3
+    name: "The Stress Test"
+    goal: "Validate the loop's integrity."
+    instructions:
+      - "Check if the character at Step 8 is recognizably different from Step 1."
+      - "Ensure the 'Price' is significant enough to justify the 'Change'."
+    output: "A refined, high-stakes narrative outline."
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write a/an...>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+beats_or_units:
+  - id: "step_1_you"
+    name: "YOU (The Status Quo)"
+    order: 1
+    purpose: "Establish the character in their comfort zone."
+    approximate_position: "Opening"
+    writer_prompt: "Who is the character, and what is their current, albeit incomplete, reality?"
+    story_function: "Establish baseline, stakes, and the character's 'normal'."
+    visual_function: "Establish the visual language of 'The Known World'."
+    emotional_function: "Create empathy and establish the 'Lack'."
+    required_decisions:
+      - "What is the character's defining trait?"
+      - "What is the setting's stability level?"
+    fields_to_complete:
+      character_baseline: "<write here>"
+      the_known_world_description: "<write here>"
+    diagnostic_questions:
+      - "Is the character's current life clearly defined?"
+      - "Can the audience see what they stand to lose if they leave?"
+    completion_criteria:
+      - "The character's environment and personality are established."
+    common_failure_modes:
+      - "Starting in media res without establishing a baseline, making the later change meaningless."
+
+  - id: "step_2_need"
+    name: "NEED (The Inciting Incident/Desire)"
+    order: 2
+    purpose: "Introduce the disruption or the realization of lack."
+    approximate_position: "Inciting Incident"
+    writer_prompt: "What is missing from their life that compels them to act?"
+    story_function: "Drive the character out of the comfort zone."
+    visual_function: "Introduce a visual disruption or a new, unsettling element."
+    emotional_function: "Create tension, longing, or desperation."
+    required_decisions:
+      - "Is the need internal (psychological) or external (physical/situational)?"
+    fields_to_complete:
+      the_unmet_need: "<write here>"
+      the_catalyst: "<write here>"
+    diagnostic_questions:
+      - "Is the need strong enough to force a character out of their comfort zone?"
+      - "Is the 'Need' clearly linked to the 'You' stage?"
+    completion_criteria:
+      - "The character's motivation is unambiguous."
+    common_failure_modes:
+      - "A 'Need' that is too passive; the character waits for things to happen rather than being driven by a void."
+
+  - id: "step_3_go"
+    name: "GO (Crossing the Threshold)"
+    order: 3
+    purpose: "The character enters the unknown."
+    approximate_position: "Plot Point 1"
+    writer_prompt: "How does the character physically or metaphorically leave their world?"
+    story_function: "Commit the character to the journey; no turning back."
+    visual_function: "A visual transition from 'The Known' to 'The Unknown'."
+    emotional_function: "Anxiety, excitement, or dread."
+    required_decisions:
+      - "What is the point of no return?"
+    fields_to_complete:
+      the_threshold_event: "<write here>"
+      the_unknown_world_rules: "<write here>"
+    diagnostic_questions:
+      - "Is the transition visually distinct?"
+      - "Is the character's decision to move 'Go' irreversible?"
+    completion_criteria:
+      - "The character is now operating under a new set of rules/risks."
+    common_failure_modes:
+      - "The character can easily jump back to the 'You' stage at any time."
+
+  - id: "step_4_search"
+    name: "SEARCH (The Road of Trials)"
+    order: 4
+    purpose: "The character adapts to the new world."
+    approximate_position: "Rising Action / Midpoint build"
+    writer_prompt: "What obstacles do they encounter while trying to find what they need?"
+    story_function: "Testing the character; building the world; escalating stakes."
+    visual_function: "A series of increasingly complex or chaotic environments."
+    emotional_function: "Struggle, learning, frustration, adaptation."
+    required_decisions:
+      - "What is the primary obstacle?"
+      - "What skills must the character learn?"
+    fields_to_complete:
+      key_obstacles: []
+      character_adaptation_process: "<write here>"
+    diagnostic_questions:
+      - "Are the trials directly related to the character's 'Need'?"
+      - "Is the character actively changing their tactics?"
+    completion_criteria:
+      - "A series of escalating complications are established."
+    common_failure_modes:
+      - "Random obstacles that don't test the character's specific 'Need'."
+
+  - id: "step_5_find"
+    name: "FIND (The Meeting with the Goddess/The Prize)"
+    order: 5
+    purpose: "The character achieves their goal, but at a turning point."
+    approximate_position: "Midpoint / Climax approach"
+    writer_prompt: "What do they find, and how does it change their understanding of their 'Need'?"
+    story_function: "The peak of the search; the moment of discovery or epiphany."
+    visual_function: "A moment of clarity, beauty, or intense revelation."
+    emotional_function: "Awe, euphoria, or a sudden, heavy realization."
+    required_decisions:
+      - "Is the 'prize' what they thought it was, or something more complex?"
+    fields_to_complete:
+      the_discovery: "<write here>"
+      the_epiphany: "<write here>"
+    diagnostic_questions:
+      - "Is the 'Find' a moment of high tension or high revelation?"
+      - "Does this moment make the 'Take' more difficult?"
+    completion_criteria:
+      - "The character has reached the core of their quest."
+    common_failure_modes:
+      - "The 'Find' is too easy; there is no sense of accomplishment or weight."
+
+  - id: "step_6_take"
+    name: "TAKE (The Price of the Prize)"
+    order: 6
+    purpose: "The character pays the cost of their discovery."
+    approximate_position: "The Climax / The Crisis"
+    writer_prompt: "What must be sacrificed, lost, or broken to keep what was found?"
+    story_function: "The ultimate test of the character's transformation; the 'Heavy Cost'."
+    visual_function: "Destruction, loss, or a stark, stripped-down visual style."
+    emotional_function: "Grief, agony, or the realization of a terrible truth."
+    required_decisions:
+      - "What is the 'Cost'? (A person, a belief, a physical limb, a piece of their old self?)"
+    fields_to_complete:
+      the_sacrifice: "<write here>"
+      the_consequence: "<write here>"
+    diagnostic_questions:
+      - "Is the price high enough to make the 'Change' permanent?"
+      - "Does the 'Take' create a crisis that forces the character back toward the 'You' stage?"
+    completion_criteria:
+      - "The character has been fundamentally altered by loss or cost."
+    common_failure_modes:
+      - "The 'Price' is superficial or doesn't impact the character's core identity."
+
+  - id: "step_7_return"
+    name: "RETURN (The Homecoming)"
+    order: 7
+    purpose: "The character brings the prize/knowledge back to the known world."
+    approximate_position: "Resolution / Falling Action"
+    writer_prompt: "How does the character re-enter their original world with their new burden/gift?"
+    story_function: "Re-establishing the 'You' stage, but with the 'Find' integrated."
+    visual_function: "Revisiting the 'Known World' visuals, but through a new lens."
+    emotional_function: "Exhaustion, integration, or bittersweetness."
+    required_decisions:
+      - "How does the world react to the character's return?"
+    fields_to_complete:
+      the_reentry_event: "<write here>"
+      the_integration_of_knowledge: "<write here>"
+    diagnostic_questions:
+      - "Is the character attempting to return to the old way, or are they forced into a new way?"
+    completion_criteria:
+      - "The character has physically or metaphorically returned to the starting location/state."
+    common_failure_modes:
+      - "The return feels like a reset rather than a progression."
+
+  - id: "step_8_changed"
+    name: "CHANGED (The New Equilibrium)"
+    order: 8
+    purpose: "The final state of the character."
+    approximate_position: "Resolution / Final Image"
+    writer_prompt: "How is the character's new reality visible in their behavior or environment?"
+    story_function: "Closing the loop; showing the permanent impact of the journey."
+    visual_function: "A final image that mirrors the 'You' stage but reveals the change."
+    emotional_function: "Catharsis, irony, or a new, stable peace."
+    required_decisions:
+      - "What is the final, lasting image of the character?"
+    fields_to_complete:
+      the_new_status_quo: "<write here>"
+      the_final_visual_contrast: "<The difference between Step 1 and Step 8>"
+    diagnostic_questions:
+      - "Is the difference between the 'You' and 'Changed' stages undeniable?"
+      - "Does the final image encapsulate the theme of the 'Price' paid?"
+    completion_criteria:
+      - "The loop is closed and the transformation is visually/emotionally evident."
+    common_failure_modes:
+      - "The character ends exactly where they started, rendering the story pointless."
+
+character_design:
+  methodology_role: "The driver of the loop via Need and Change."
+  characters:
+    - name: "<Protagonist Name>"
+      initial_state: "<The 'You' state: habits, flaws, comfort>"
+      the_void: "<The 'Need': what is missing?>"
+      the_prominence: "<The 'Find': what is discovered?>"
+      the_transformation: "<The 'Changed' state: who they become?>"
+      the_price_paid: "<What they lost to achieve the change?>"
+
+world_design:
+  methodology_role: "The distinction between the Known and the Unknown."
+  fields:
+    known_world: "<Visuals, rules, and safety of the 'You' stage>"
+    unknown_world: "<Visuals, chaos, and danger of the 'Search/Find' stages>"
+    the_threshold: "<The visual/physical boundary between the two>"
+
+theme_design:
+  methodology_role: "The philosophical weight of the 'Price'."
+  fields:
+    central_argument: "<What does the 'Take' stage prove about the character's struggle?>"
+    the_cost_of_growth: "<What is the story saying about the necessity of loss?>"
+
+visual_storytelling:
+  methodology_role: "Mapping the movement through space and light."
+  image_system:
+    known_world_aesthetic: "<e.g., Saturated, stable, structured, warm>"
+    unknown_world_aesthetic: "<e.g., Desaturated, chaotic, fragmented, cold>"
+    the_climax_aesthetic: "<e.g., High contrast, intense, stripped back>"
+  recurring_motifs: []
+  final_image: "<A visual callback to Step 1 that highlights Step 8's change>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either move the character closer to the 'Find' or further into the 'Search'."
+    - "Every scene should contribute to the accumulation of the 'Price'."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: ""
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Ensure the 'Take' stage contains the most significant emotional shift."
+    - "Use the 'Go' stage to establish the new rules of the world."
+  avoid_rules:
+    - "Avoid scenes that exist purely for worldbuilding without impacting the character's 'Need'."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Ensure the 8-step loop is logically sound and complete."
+    instructions:
+      - "Verify every stage from You to Changed is present."
+      - "Check for any breaks in the causal chain."
+    questions:
+      - "Does the sequence follow the 8-step progression?"
+      - "Is there any stage missing or skipped?"
+    success_criteria:
+      - "A continuous, unbroken narrative loop."
+  - name: "character_pass"
+    goal: "Validate the internal transformation arc."
+    instructions:
+      - "Compare the character's initial state to their final state."
+      - "Ensure the 'Need' is the primary driver of action."
+    questions:
+      - "Is the character's change significant?"
+      - "Is the 'Need' clearly addressed by the 'Find'?"
+    success_criteria:
+      - "A character arc that feels earned and transformative."
+  - name: "theme_pass"
+    goal: "Ensure the 'Price' communicates the central argument."
+    instructions:
+      - "Analyze the 'Take' stage against the 'Theme' design."
+    questions:
+      - "Does the sacrifice reflect the story's core message?"
+      - "Is the cost high enough to sustain the theme?"
+    success_criteria:
+      - "Thematic resonance between plot and sacrifice."
+  - name: "visual_storytelling_pass"
+    goal: "Confirm visual distinction between worlds."
+    instructions:
+      - "Review the aesthetic shifts between Known and Unknown."
+    questions:
+      - "Is the threshold crossing visually obvious?"
+      - "Does the final image contrast with the opening image?"
+    success_criteria:
+      - "A clear visual journey that mirrors the narrative journey."
+  - name: "loop_integrity_pass"
+    goal: "Ensure the 'Return' stage successfully re-establishes equilibrium."
+    instructions:
+      - "Check the 'Return' and 'Changed' stages for stability."
+    questions:
+      - "Is the new equilibrium stable yet different?"
+      - "Does the loop feel closed?"
+    success_criteria:
+      - "A sense of narrative closure and completion."
+
+validation_checklist:
+  - "Does the character start in a state of 'Lack'?"
+  - "Is there a clear, irreversible transition into the 'Unknown'?"
+  - "Is there a moment of significant discovery ('Find')?"
+  - "Is there a significant, painful cost ('Take')?"
+  - "Does the character return to a state of stability ('Return')?"
+  - "Is the final state fundamentally different from the initial state ('Changed')?"
+  - "Is the 'Need' clearly linked to the 'You' stage?"
+  - "Does the 'Search' stage present escalating complications?"
+  - "Is the 'Price' directly proportional to the 'Find'?"
+  - "Is the 'Known World' visually distinct from the 'Unknown World'?"
+  - "Does the 'Take' stage create a crisis that forces the character back?"
+  - "Is the 'New Equilibrium' a recognizable but altered version of the 'Old Equilibrium'?"
+
+failure_modes:
+  - failure_mode: "The Infinite Loop"
+    symptom: "The character ends the story exactly as they began."
+    likely_cause: "No significant 'Take' or 'Price' was implemented."
+    fix: "Introduce a loss that makes returning to the old way impossible."
+  - failure_mode: "The Aimless Wanderer"
+    symptom: "The 'Search' stage feels like a series of random events."
+    likely_cause: "The 'Need' is not driving the specific obstacles."
+    fix: "Tie each trial in the 'Search' stage to a specific aspect of the character's 'Need'."
+  - failure_mode: "The Unearned Victory"
+    symptom: "The 'Find' feels hollow or unearned."
+    likely_cause: "The 'Search' stage lacked sufficient difficulty or adaptation."
+    fix: "Increase the complexity of the 'Search' and the necessity of character change."
+
+adaptation_notes:
+  feature_film: "Expand the 'Search' and 'Take' stages to encompass the second act's complexity."
+  short_film: "Condense the 'Search' stage; focus heavily on the 'You' to 'Go' transition and the 'Take'."

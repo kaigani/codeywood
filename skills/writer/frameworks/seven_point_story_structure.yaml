@@ -1,0 +1,553 @@
+metadata:
+  framework_name: "Seven-Point Story Structure Template"
+  methodology_name: "Seven-Point Story Structure"
+  methodology_family: "Plot-Mechanics Structure"
+  attribution: "Dan Wells (popularized via the 'Writing Excuses' framework)"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature_film"
+    - "tv_episode"
+    - "tv_pilot"
+    - "novella"
+    - "anime"
+    - "short_film"
+  best_for:
+    - "plot-driven genre fiction"
+    - "mystery, thriller, sci-fi, fantasy"
+    - "writers who want a tight skeleton without the symbolic weight of the monomyth"
+    - "stories where the ending must feel inevitable"
+  not_ideal_for:
+    - "purely associative or stream-of-consciousness narratives"
+    - "slice-of-life work without a clear arc reversal"
+    - "ensemble pieces with no central protagonist"
+  target_lengths:
+    - "30-minute episode"
+    - "60-minute episode"
+    - "90-120 minute feature"
+    - "novel"
+  core_principle: "Build the story backward from its destination. The Resolution and the Hook are equal-and-opposite states; the five middle beats engineer the inevitable transition between them."
+  primary_story_unit: "The seven structural beats (Hook, Plot Turn 1, Pinch Point 1, Midpoint, Pinch Point 2, Plot Turn 2, Resolution)"
+  primary_success_metric: "The Resolution feels both surprising in its specifics and inevitable in its logic, because every beat between Hook and Resolution applied measurable pressure in the same direction."
+
+framework_overview:
+  summary: "A reverse-engineered seven-beat skeleton. The writer defines the Resolution first, then writes the Hook as its mirror image, then locates the Midpoint as the moment the protagonist stops reacting and starts driving, and finally inserts the Plot Turns and Pinch Points that make the transition feel earned."
+  what_this_framework_helps_create:
+    - "Mechanically tight plots with no soft middles"
+    - "Endings that feel earned rather than imposed"
+    - "Clear reversal arcs (the Hook state is replaced by its opposite)"
+    - "Pressure curves that force the protagonist into agency"
+  what_it_prioritizes:
+    - "The Hook–Resolution axis (the story's destination)"
+    - "The Midpoint as the agency pivot"
+    - "Antagonist pressure at the two Pinch Points"
+    - "Causality between every beat (no narrative free-floating)"
+  what_it_deemphasizes:
+    - "Subtext-only or tonally driven stories that resist plot mechanics"
+    - "Symbolic or mythic readings of structure (use the monomyth instead)"
+    - "Detailed worldbuilding that isn't load-bearing for the seven beats"
+
+use_when:
+  - "Drafting a plot-forward genre story (mystery, thriller, sci-fi, fantasy, romance)."
+  - "You can articulate the ending in one sentence but cannot articulate the middle."
+  - "You need a skeleton that explicitly forces the protagonist from reactive to proactive at the Midpoint."
+  - "You want a structure that scales cleanly from a 30-minute episode to a novel."
+
+avoid_when:
+  - "The story's appeal is mood, voice, or atmosphere rather than plot mechanics."
+  - "You do not yet know what the Resolution is — Seven-Point fails without a destination."
+  - "The protagonist is not a single, identifiable agent (ensemble or collective stories struggle with the agency pivot)."
+
+core_principles:
+  - "Reverse-engineer from the Resolution. Define the destination before any other beat."
+  - "Hook is the inverse of Resolution. If the Resolution is 'the protagonist accepts love,' the Hook is 'the protagonist refuses connection.' The two beats name the same axis at opposite ends."
+  - "The Midpoint is the agency pivot. Before the Midpoint, the protagonist reacts to the world. After the Midpoint, the protagonist drives the world."
+  - "Pinch Points apply antagonist pressure. Pinch Point 1 introduces the threat as real and active. Pinch Point 2 makes the threat overwhelming, often through a mentor's death, a betrayal, or a strategic loss."
+  - "Plot Turns mark commitments. Plot Turn 1 commits the protagonist to the journey; Plot Turn 2 commits them to the final solution."
+  - "Every beat must apply causal force toward the next beat. If a beat could be removed without breaking the chain, it does not belong in the seven."
+
+methodology_structure:
+  beat_1_hook:
+    role: "Set the starting state — the protagonist's life as it stands before the story begins."
+    relationship_to_resolution: "Mirror image / opposite condition"
+    protagonist_agency_level: "Inert or reactive; the Hook is the state the protagonist would stay in forever if nothing forced them to move."
+    internal_state: "The flaw, lack, or wrong belief that the Resolution will overturn."
+    primary_question_for_writer: "What is the precise opposite of where this story ends?"
+  beat_2_plot_turn_1:
+    role: "The inciting incident. Force the protagonist out of the Hook state and into the story's main conflict."
+    relationship_to_resolution: "Sets the trajectory; the protagonist now has a goal that, if achieved, leads to (or contrasts with) the Resolution."
+    protagonist_agency_level: "Reactive — the protagonist responds to the disruption rather than choosing it."
+    internal_state: "Disturbed equilibrium; the Hook flaw is still in place but is now under pressure."
+    primary_question_for_writer: "What event makes the Hook state untenable?"
+  beat_3_pinch_point_1:
+    role: "Apply pressure. The antagonist (or antagonistic force) becomes visible and dangerous."
+    relationship_to_resolution: "Establishes the obstacle scale; the protagonist now understands what stands between them and the goal."
+    protagonist_agency_level: "Still reactive; the protagonist is being acted upon, not acting."
+    internal_state: "Fear, doubt, or denial; the protagonist may try to retreat to the Hook state."
+    primary_question_for_writer: "What antagonist action makes the threat undeniable?"
+  beat_4_midpoint:
+    role: "The agency pivot. The protagonist stops reacting and starts driving the plot."
+    relationship_to_resolution: "Locks in the direction toward the Resolution; the protagonist now actively pursues the goal that defines the destination."
+    protagonist_agency_level: "Proactive — the protagonist makes a decision that commits them to acting on the world rather than being acted on."
+    internal_state: "Resolve; the Hook flaw is challenged from inside."
+    primary_question_for_writer: "What revelation or decision converts the protagonist from object to subject?"
+  beat_5_pinch_point_2:
+    role: "Maximum pressure. The antagonist's force overwhelms the protagonist's capacity."
+    relationship_to_resolution: "The 'all is lost' moment that strips the protagonist of allies, plans, or hope."
+    protagonist_agency_level: "Proactive but failing; the protagonist is acting but cannot yet succeed."
+    internal_state: "Despair, rage, grief — usually paired with a mentor's death, a betrayal, or a strategic catastrophe."
+    primary_question_for_writer: "What loss makes the protagonist's previous plan impossible?"
+  beat_6_plot_turn_2:
+    role: "The protagonist acquires the final missing element needed for the Resolution."
+    relationship_to_resolution: "Direct setup; the Resolution is now mechanically possible because the protagonist has the knowledge, ally, weapon, or insight they previously lacked."
+    protagonist_agency_level: "Fully proactive; the protagonist now has both will and means."
+    internal_state: "Clarity; the Hook flaw is replaced by its corrective truth."
+    primary_question_for_writer: "What does the protagonist now have (or know) that they did not have at the Midpoint?"
+  beat_7_resolution:
+    role: "Pay off the Hook. The protagonist enacts the destination state."
+    relationship_to_resolution: "This IS the Resolution. The Hook state is replaced by its opposite, demonstrably."
+    protagonist_agency_level: "Decisive; the protagonist completes the action that defines the new state."
+    internal_state: "Transformed; the Hook flaw has been overturned, with cost."
+    primary_question_for_writer: "How is the Hook state visibly, irreversibly inverted on screen?"
+
+workflow:
+  - step: 1
+    name: "Define the Resolution"
+    goal: "Write the ending in one sentence."
+    instructions:
+      - "Specify the protagonist's external situation at the end (what they have, where they are, who they are with)."
+      - "Specify the protagonist's internal state at the end (what they now believe, accept, or feel)."
+      - "If you cannot answer both halves, the framework will fail — return to premise work first."
+    output: "A one-sentence Resolution statement."
+  - step: 2
+    name: "Write the Hook as the inverse"
+    goal: "State the opening conditions as the precise opposite of the Resolution."
+    instructions:
+      - "For each element of the Resolution (external + internal), name its opposite."
+      - "Confirm the two beats describe the same axis (e.g., loneliness ↔ connection), not different axes."
+    output: "A one-sentence Hook statement that mirrors the Resolution."
+  - step: 3
+    name: "Locate the Midpoint"
+    goal: "Identify the exact moment the protagonist stops reacting and starts driving."
+    instructions:
+      - "Ask: what does the protagonist learn, decide, or accept here that they could not at the start?"
+      - "The Midpoint is rarely the loudest beat — it is the quietest decisive one."
+    output: "A one-sentence Midpoint statement describing the agency shift."
+  - step: 4
+    name: "Place the two Plot Turns"
+    goal: "Mark the entry and the final commitment."
+    instructions:
+      - "Plot Turn 1: the event that ejects the protagonist from the Hook state."
+      - "Plot Turn 2: the event/discovery that makes the Resolution mechanically possible."
+    output: "Two one-sentence Plot Turn statements."
+  - step: 5
+    name: "Place the two Pinch Points"
+    goal: "Map antagonist pressure between the Plot Turns."
+    instructions:
+      - "Pinch Point 1: the threat becomes visible and active."
+      - "Pinch Point 2: the threat becomes overwhelming; the protagonist loses something irreplaceable."
+    output: "Two one-sentence Pinch Point statements."
+  - step: 6
+    name: "Pressure-test the chain"
+    goal: "Verify each beat causes the next."
+    instructions:
+      - "For each adjacent pair, write 'X happens, therefore Y happens.' If you can only write 'and then,' the chain is broken."
+      - "Remove or rewrite any beat that lacks causal force."
+    output: "A causally-linked seven-beat outline."
+  - step: 7
+    name: "Confirm the Hook–Resolution mirror"
+    goal: "Verify the destination state is the inverse of the starting state."
+    instructions:
+      - "Read the Hook and Resolution side by side. The same axis should appear at both ends, with the protagonist on opposite poles."
+      - "If the axes don't match, one of the two needs to be rewritten."
+    output: "A confirmed mirror pair plus a complete seven-beat outline."
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write a/an...>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+beats_or_units:
+  - id: "beat_1_hook"
+    name: "Hook"
+    order: 1
+    purpose: "Establish the protagonist's starting state — the precise opposite of the Resolution."
+    approximate_position: "0% (opening)"
+    writer_prompt: "What does the protagonist's life look like at the moment the Resolution would feel impossible to them?"
+    story_function: "Anchor the axis the story will reverse. Show the flaw, lack, or wrong belief that the Resolution will overturn."
+    visual_function: "Establish a visual signature for the Hook state (composition, palette, environment) that the Resolution can later invert."
+    emotional_function: "Make the Hook state feel believable, even sympathetic — the audience must understand why the protagonist would stay here forever if nothing changed."
+    required_decisions:
+      - "What is the protagonist's external situation in the Hook?"
+      - "What is the protagonist's internal belief or flaw in the Hook?"
+      - "What is the precise axis (e.g., isolation ↔ trust, cowardice ↔ courage) the story will reverse?"
+    fields_to_complete:
+      hook_external_state: "<the protagonist's life situation at start>"
+      hook_internal_state: "<the protagonist's belief/flaw at start>"
+      reversal_axis: "<the named axis whose opposite pole IS the Resolution>"
+      hook_visual_signature: "<the establishing image/composition>"
+    diagnostic_questions:
+      - "If I name the Resolution and the Hook back to back, do they describe the same axis at opposite ends?"
+      - "Can the audience see, in one image, why this state is unsustainable?"
+      - "Is the Hook flaw specific enough that a single decision can later invert it?"
+    completion_criteria:
+      - "Hook external state, internal state, and reversal axis are all stated."
+      - "The Hook visually mirrors the planned Resolution image."
+    common_failure_modes:
+      - "Hook and Resolution describe different axes (e.g., Hook = 'lonely,' Resolution = 'rich') — the story will not feel earned."
+      - "Hook is generic 'normal life' rather than a specific stance against the Resolution."
+
+  - id: "beat_2_plot_turn_1"
+    name: "Plot Turn 1"
+    order: 2
+    purpose: "Eject the protagonist from the Hook state. Begin the main conflict."
+    approximate_position: "~25%"
+    writer_prompt: "What event makes it impossible for the protagonist to stay in the Hook state?"
+    story_function: "Convert the Hook flaw into an active problem. Set the protagonist's first goal."
+    visual_function: "Visually disrupt the Hook signature — break the composition, intrude on the palette, or invade the environment."
+    emotional_function: "Move the audience from sympathy-with-the-Hook to anticipation-of-the-journey."
+    required_decisions:
+      - "What is the inciting event?"
+      - "What goal does the protagonist now pursue (even if they pursue it reactively)?"
+      - "What does the protagonist still believe from the Hook that will need to be overturned?"
+    fields_to_complete:
+      inciting_event: "<the disruption>"
+      first_goal: "<what the protagonist now wants or is forced to want>"
+      retained_hook_flaw: "<the belief still in place that will fail at the Pinch Points>"
+    diagnostic_questions:
+      - "Can the protagonist refuse this event? (If yes, the event is not strong enough.)"
+      - "Does the goal lead, even indirectly, toward the Resolution axis?"
+    completion_criteria:
+      - "The Hook state is no longer available — the protagonist must move."
+    common_failure_modes:
+      - "Inciting event is dramatic but disconnected from the Resolution axis (the protagonist could 'win' without changing)."
+      - "Protagonist is too willing — the entry feels chosen rather than forced."
+
+  - id: "beat_3_pinch_point_1"
+    name: "Pinch Point 1"
+    order: 3
+    purpose: "Make the antagonist force visible and dangerous."
+    approximate_position: "~37%"
+    writer_prompt: "What does the antagonist do that proves the threat is real and active?"
+    story_function: "Establish the obstacle scale. Show the protagonist what they are up against."
+    visual_function: "Reveal the antagonist's visual signature in opposition to the protagonist's; establish the antagonist's spatial/visual dominance."
+    emotional_function: "Plant fear or doubt that may make the protagonist consider retreat to the Hook state."
+    required_decisions:
+      - "What concrete antagonist action lands here?"
+      - "What does the protagonist learn about the threat?"
+      - "What does the protagonist try (and fail) to do in response?"
+    fields_to_complete:
+      antagonist_action: "<the visible threat-establishing event>"
+      protagonist_response: "<the protagonist's reactive attempt>"
+      reveal_about_threat: "<what is now known that was not known before>"
+    diagnostic_questions:
+      - "Is the threat now undeniable, even to the protagonist?"
+      - "Does the protagonist's response demonstrate that the Hook flaw is still in place?"
+    completion_criteria:
+      - "The antagonist has acted, not just been described."
+      - "The protagonist has tried something and the result is incomplete or worse."
+    common_failure_modes:
+      - "Threat is named in dialogue but not enacted — drains stakes."
+      - "Protagonist's response succeeds, eliminating the pressure curve."
+
+  - id: "beat_4_midpoint"
+    name: "Midpoint"
+    order: 4
+    purpose: "Pivot the protagonist from reactive to proactive."
+    approximate_position: "~50%"
+    writer_prompt: "What revelation, decision, or moment of clarity converts the protagonist from object to subject?"
+    story_function: "Lock in the trajectory toward the Resolution. After the Midpoint, the protagonist drives the plot."
+    visual_function: "Mark the pivot visually — a stance change, a crossing of a threshold, or a deliberate framing shift from passive to active."
+    emotional_function: "Replace doubt with resolve; the audience now believes the protagonist could win."
+    required_decisions:
+      - "What does the protagonist now know, choose, or accept that they did not at the start?"
+      - "What is the first proactive action they take?"
+      - "What part of the Hook flaw is internally challenged here?"
+    fields_to_complete:
+      midpoint_revelation: "<the new knowledge/choice/acceptance>"
+      first_proactive_action: "<the concrete shift from reactive to driving>"
+      internal_shift: "<which Hook belief begins to break>"
+    diagnostic_questions:
+      - "Before this beat, is the protagonist being acted on? After it, are they acting on the world?"
+      - "Could you delete this beat without affecting the rest of the story? (If yes, the Midpoint is not loaded enough.)"
+    completion_criteria:
+      - "The protagonist's relationship to the plot has flipped from receiver to driver."
+    common_failure_modes:
+      - "The Midpoint is exciting but does not change the protagonist's agency level."
+      - "The shift is informational only (the protagonist learns something but doesn't act on it)."
+
+  - id: "beat_5_pinch_point_2"
+    name: "Pinch Point 2"
+    order: 5
+    purpose: "Apply maximum pressure. Strip the protagonist of resources."
+    approximate_position: "~62%"
+    writer_prompt: "What loss makes the protagonist's current plan impossible?"
+    story_function: "Force the protagonist to surrender their existing strategy and confront whether they have the internal resources to continue."
+    visual_function: "Visualize the loss — empty space where an ally stood, the destruction of a tool, the antagonist occupying territory the protagonist held."
+    emotional_function: "Despair, grief, or rage — but the protagonist remains active, now without their previous support."
+    required_decisions:
+      - "What is the irreplaceable thing the protagonist loses? (mentor, ally, weapon, plan, belief)"
+      - "What does the antagonist gain?"
+      - "What false belief or attachment from the Hook is finally stripped away here?"
+    fields_to_complete:
+      loss_event: "<what is lost>"
+      antagonist_gain: "<what the antagonist now has>"
+      stripped_attachment: "<the Hook-era belief or dependence that ends here>"
+    diagnostic_questions:
+      - "Is the loss irreplaceable, or could the protagonist easily compensate?"
+      - "Does the protagonist remain proactive, even while grieving?"
+    completion_criteria:
+      - "The protagonist's previous strategy is no longer viable."
+      - "The protagonist's internal flaw has been visibly broken (not yet replaced)."
+    common_failure_modes:
+      - "The 'loss' is recoverable — drains the all-is-lost weight."
+      - "The protagonist regresses to passivity; the Midpoint pivot is undone instead of tested."
+
+  - id: "beat_6_plot_turn_2"
+    name: "Plot Turn 2"
+    order: 6
+    purpose: "Equip the protagonist with the final piece needed for the Resolution."
+    approximate_position: "~75%"
+    writer_prompt: "What does the protagonist now have, know, or accept that makes the Resolution mechanically possible?"
+    story_function: "Bridge the gap between the broken plan of Pinch Point 2 and the achievable Resolution. Provide the missing tool, ally, insight, or willpower."
+    visual_function: "Mark the equipping visually — the artifact discovered, the truth revealed, the protagonist standing in a new posture."
+    emotional_function: "Hope, but earned hope. The audience now believes the Resolution is possible because the protagonist has changed enough to enact it."
+    required_decisions:
+      - "What is acquired here? (knowledge, ally, weapon, courage, acceptance)"
+      - "How does this acquisition connect causally to the Resolution?"
+      - "What corrective truth replaces the Hook-era flaw?"
+    fields_to_complete:
+      acquisition: "<the missing piece>"
+      causal_link_to_resolution: "<why this makes the Resolution possible>"
+      corrective_truth: "<the new belief that replaces the Hook flaw>"
+    diagnostic_questions:
+      - "Is the acquisition specific to this story, or could it be borrowed from any plot?"
+      - "Does the corrective truth directly invert the Hook-era belief?"
+    completion_criteria:
+      - "The Resolution is now mechanically reachable from this point."
+    common_failure_modes:
+      - "The acquisition is a deus ex machina — handed to the protagonist rather than earned through prior beats."
+      - "The corrective truth is unrelated to the Hook flaw, breaking the mirror."
+
+  - id: "beat_7_resolution"
+    name: "Resolution"
+    order: 7
+    purpose: "Pay off the Hook. Enact the inverted state."
+    approximate_position: "~95-100%"
+    writer_prompt: "How is the Hook state visibly, irreversibly inverted in the protagonist's final action?"
+    story_function: "Complete the reversal arc. The protagonist demonstrates the new state — no narration, no exposition, but action."
+    visual_function: "Mirror and invert the Hook visual signature — same composition or environment, opposite stance/palette/posture."
+    emotional_function: "Catharsis grounded in cost. The destination feels both surprising and inevitable."
+    required_decisions:
+      - "What is the protagonist's final action that demonstrates the new state?"
+      - "What is the cost — what has been paid for this inversion?"
+      - "How does the final image mirror and invert the Hook image?"
+    fields_to_complete:
+      final_action: "<the demonstrative act>"
+      cost_paid: "<what the journey took>"
+      mirror_image: "<how the final image inverts the Hook image>"
+    diagnostic_questions:
+      - "Could you place the Hook image and the Resolution image side by side and have the inversion read silently?"
+      - "Does the Resolution feel earned, given the seven beats? (If you have to argue for it, it isn't.)"
+    completion_criteria:
+      - "Hook flaw is overturned through visible action."
+      - "Cost has been registered — the inversion is not free."
+    common_failure_modes:
+      - "The Resolution explains itself in dialogue rather than enacting itself in action."
+      - "The cost is missing — the inversion feels free, undermining the seven-beat pressure curve."
+
+character_design:
+  methodology_role: "The protagonist is the load-bearing element of the Hook–Resolution axis. The character's flaw at the Hook is the only thing the Resolution overturns; if the flaw is undefined, the Resolution has nothing to land on."
+  characters:
+    - name: "<Protagonist Name>"
+      role: "Axis-bearer"
+      hook_flaw: "<the belief, lack, or stance the Resolution will invert>"
+      midpoint_pivot: "<what they decide/learn at the Midpoint>"
+      pinch_point_2_loss: "<what they lose that strips the Hook-era strategy>"
+      plot_turn_2_acquisition: "<the corrective truth/tool acquired>"
+      resolution_state: "<the inverted state at story's end>"
+    - name: "<Antagonist or Antagonistic Force>"
+      role: "Pressure source"
+      pinch_point_1_action: "<the threat-establishing act>"
+      pinch_point_2_action: "<the loss-imposing act>"
+      relationship_to_hook_flaw: "<how the antagonist exploits or embodies the protagonist's Hook flaw>"
+
+world_design:
+  methodology_role: "The world supplies the field on which the Hook–Resolution axis is enacted. World details earn their place by serving the seven beats."
+  fields:
+    hook_setting: "<the visual/environmental signature of the starting state>"
+    resolution_setting: "<the mirrored/inverted setting of the destination>"
+    antagonist_territory: "<the spatial domain the antagonist controls>"
+    midpoint_threshold: "<the location or symbolic space where the agency pivot occurs>"
+    rules_that_make_the_seven_beats_possible: "<the world-logic each beat depends on>"
+
+theme_design:
+  methodology_role: "The theme IS the Hook–Resolution axis stated abstractly. If the theme cannot be named as a single axis (e.g., 'isolation vs. trust'), the seven-beat structure has no thematic anchor."
+  fields:
+    central_axis: "<the abstract version of the Hook–Resolution mirror, e.g., 'fear vs. acceptance'>"
+    statement_at_hook: "<what the Hook state argues thematically>"
+    statement_at_resolution: "<what the Resolution argues, inverting the Hook>"
+    cost_of_inversion: "<what the theme says the change requires>"
+
+visual_storytelling:
+  methodology_role: "The Hook image and the Resolution image must be readable as a mirror pair. The Pinch Points and Midpoint should each have distinct visual signatures that map to their function."
+  image_system:
+    hook_aesthetic: "<the visual signature of the starting state>"
+    resolution_aesthetic: "<the inverted visual signature of the destination>"
+    antagonist_aesthetic: "<the visual signature of the pressure source>"
+    midpoint_aesthetic: "<the visual signature of the agency pivot>"
+  recurring_motifs: []
+  final_image: "<the literal image at the Resolution that mirrors and inverts the Hook image>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must apply force toward the next beat in the sequence."
+    - "Every scene must register the protagonist's current agency level (reactive before Midpoint, proactive after)."
+    - "Antagonist scenes belong at or near the Pinch Points; their absence should be felt elsewhere."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: ""
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Open the story on the Hook image; close it on its mirror."
+    - "Write the Resolution scene before any other scene in the script."
+    - "Test every scene with the question 'Therefore?' linking it to the next."
+  avoid_rules:
+    - "Do not introduce subplots that don't feed back into the Hook–Resolution axis."
+    - "Do not let the antagonist disappear between Pinch Point 1 and Pinch Point 2 — pressure must be continuous."
+    - "Do not solve the Hook flaw before Plot Turn 2; the corrective truth must be earned."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Verify all seven beats are present, in order, and load-bearing."
+    instructions:
+      - "Mark each of the seven beats in the draft. Confirm each is on screen, not implied."
+      - "For each adjacent pair, write 'X happens, therefore Y happens.' If the link is 'and then,' rewrite."
+    questions:
+      - "Are all seven beats present and in order?"
+      - "Is each beat causally linked to the next?"
+      - "Could any beat be deleted without breaking the chain? (If yes, that beat is not load-bearing.)"
+    success_criteria:
+      - "Seven beats, each named, each linked by causality."
+  - name: "character_pass"
+    goal: "Confirm the agency pivot at the Midpoint and the Hook–Resolution mirror in the protagonist."
+    instructions:
+      - "Highlight every protagonist action before the Midpoint vs. after."
+      - "Compare the protagonist's belief at Hook to their belief at Resolution."
+    questions:
+      - "Before the Midpoint, is the protagonist reactive? After, are they proactive?"
+      - "Is the Resolution belief the precise inverse of the Hook belief?"
+    success_criteria:
+      - "A clean reactive-to-proactive pivot."
+      - "A confirmed mirror between Hook flaw and Resolution truth."
+  - name: "theme_pass"
+    goal: "Verify the theme is stated as a single axis and inverted between Hook and Resolution."
+    instructions:
+      - "Name the central axis in one phrase (e.g., 'cowardice vs. courage')."
+      - "Locate the moments where each pole is enacted — not stated."
+    questions:
+      - "Can the theme be named as a single axis?"
+      - "Is each pole of the axis enacted, not narrated?"
+    success_criteria:
+      - "The theme is legible from action alone."
+  - name: "visual_storytelling_pass"
+    goal: "Confirm the Hook and Resolution images form a readable mirror pair."
+    instructions:
+      - "Place the Hook frame and the Resolution frame side by side."
+      - "Identify which compositional/palette/posture elements invert."
+    questions:
+      - "If a viewer saw only those two frames, would they read the inversion?"
+      - "Do the Pinch Points and the Midpoint each have a distinct visual signature?"
+    success_criteria:
+      - "Hook and Resolution form a silent visual mirror."
+  - name: "pressure_curve_pass"
+    goal: "Verify the antagonist's pressure escalates monotonically across the two Pinch Points."
+    instructions:
+      - "Score Pinch Point 1 and Pinch Point 2 on threat severity, stakes, and protagonist resource depletion."
+      - "Confirm Pinch Point 2 is harder than Pinch Point 1 on every axis."
+    questions:
+      - "Does Pinch Point 2 strip something irreplaceable that Pinch Point 1 only threatened?"
+      - "Is the antagonist visible (or felt) continuously between the two beats?"
+    success_criteria:
+      - "Strictly escalating pressure curve from Pinch Point 1 to Pinch Point 2."
+
+validation_checklist:
+  - "The Resolution is stated in one sentence, with both external and internal components."
+  - "The Hook is stated in one sentence and is the precise inverse of the Resolution on a single named axis."
+  - "Plot Turn 1 ejects the protagonist from the Hook state in a way the protagonist cannot refuse."
+  - "Pinch Point 1 makes the antagonist force visible and active, not described."
+  - "The Midpoint converts the protagonist from reactive to proactive."
+  - "Pinch Point 2 strips an irreplaceable resource and breaks the protagonist's previous strategy."
+  - "Plot Turn 2 supplies the corrective truth or tool that makes the Resolution mechanically possible."
+  - "The Resolution enacts (not narrates) the inversion of the Hook state."
+  - "Every adjacent beat pair is linked by 'therefore,' not 'and then.'"
+  - "The Hook and Resolution form a readable visual mirror pair."
+  - "The antagonist's pressure escalates monotonically from Pinch Point 1 to Pinch Point 2."
+  - "The corrective truth at Plot Turn 2 directly inverts the Hook-era flaw."
+  - "The cost paid at the Resolution is registered, not free."
+  - "No beat could be deleted without breaking the causal chain."
+  - "The theme is nameable as a single axis and is enacted at both poles, not stated in dialogue."
+
+failure_modes:
+  - failure_mode: "Mismatched Mirror"
+    symptom: "The Resolution doesn't feel earned even though the plot is tight."
+    likely_cause: "Hook and Resolution describe different axes — they answer different questions."
+    fix: "Rewrite either Hook or Resolution so both name the same axis at opposite poles."
+  - failure_mode: "Soft Midpoint"
+    symptom: "The story sags around the middle; the protagonist seems passive throughout."
+    likely_cause: "The Midpoint delivers information but does not change the protagonist's agency level."
+    fix: "Replace the Midpoint with a decisive action that the protagonist could not have taken before."
+  - failure_mode: "Disappearing Antagonist"
+    symptom: "The threat feels intermittent; the audience forgets the stakes between Pinch Points."
+    likely_cause: "The antagonist is offstage between Pinch Point 1 and Pinch Point 2 with no felt presence."
+    fix: "Insert antagonist consequences — environmental, social, or proxy — into every scene between the two Pinch Points."
+  - failure_mode: "Free Resolution"
+    symptom: "The ending feels rushed or cheap despite the structural beats being present."
+    likely_cause: "No cost is registered at the Resolution; the protagonist gets the new state without paying for it."
+    fix: "Identify what the journey took (a relationship, a belief, a possibility) and stage the cost visibly in the Resolution scene."
+  - failure_mode: "Ornamental Plot Turn 2"
+    symptom: "The protagonist 'gets a thing' near the end but its causal link to the Resolution is unclear."
+    likely_cause: "Plot Turn 2 supplies a narrative trinket rather than the missing piece the Resolution requires."
+    fix: "Re-derive Plot Turn 2 by working backward from the Resolution: what is the one thing without which the Resolution cannot occur?"
+
+adaptation_notes:
+  feature_film: "The seven beats map cleanly to the standard 90–120 minute feature with Plot Turn 1 at ~25%, Midpoint at ~50%, and Plot Turn 2 at ~75%. Use the framework to audit a structure suspected of soft-middle problems."
+  short_film: "Compress to a one-page outline. The Hook and Resolution must be the same composition shown twice with an inversion; the Midpoint becomes a single decisive shot."
+  tv_episode: "Use one full seven-beat cycle per standalone episode. For serialized shows, treat the season as one larger seven-beat structure and let each episode resolve a sub-axis."
+  tv_pilot: "Use the seven beats to engineer the pilot's arc; reserve the Plot Turn 2 acquisition for a series-wide reveal that opens season-long pursuit."
+  anime: "Particularly suited to shōnen and seinen plot-arcs. The Pinch Points map well to mid-arc 'training fails' / 'mentor falls' beats; the Plot Turn 2 acquisition often appears as a power upgrade rooted in earlier setup."
+  adult_animation: "Useful for plot-driven adult animation (sci-fi, crime, satire). Resist the temptation to skip Pinch Point 2 in favor of jokes — the loss beat is what gives the Resolution weight."
+  anthology: "Use one seven-beat cycle per segment. Across an anthology, vary which axis is mirrored to avoid structural monotony."
+  game_cinematic: "Apply across a chapter or major story arc. The Midpoint pivot can be staged as a gameplay mechanic shift (the player's tools or freedoms expand), reinforcing the agency change."
+
+yaml_usage_notes:
+  how_to_use: "Define the Resolution first, then the Hook as its inverse, then the Midpoint, then the two Plot Turns, then the two Pinch Points. Populate beats_or_units in this order, not in narrative order."
+  recommended_population_order:
+    - "Resolution"
+    - "Hook"
+    - "Midpoint"
+    - "Plot Turn 1"
+    - "Plot Turn 2"
+    - "Pinch Point 1"
+    - "Pinch Point 2"
+  minimum_viable_completion:
+    - "Hook, Midpoint, and Resolution defined as a coherent reversal axis."
+    - "At least one Plot Turn and one Pinch Point sketched."
+  signs_framework_is_ready_for_scene_outline: "Every adjacent beat is linked by 'therefore,' the Hook and Resolution read as a silent visual mirror, and you can name the central axis in a single phrase."

@@ -1,0 +1,375 @@
+metadata:
+  framework_name: "The Anatomy of Story Template"
+  methodology_name: "John Truby’s 22 Steps"
+  methodology_family: "Organic/Character-Driven"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv pilot"
+    - "anime"
+    - "game cinematic"
+    - "web series"
+  best_for:
+    - "character-driven dramas"
+    - "complex multi-protagonist stories"
+    - "high-concept moral allegories"
+    - "stories requiring deep psychological resonance"
+  not_ideal_for:
+    - "purely procedural/episodic content without character arc"
+    - "simple gag-based comedy"
+    - "highly episodic anthology structures (unless focused on a single moral argument)"
+  target_lengths:
+    - "90-120 minute feature"
+    - "40-60 minute pilot"
+  core_principle: "Story is an organic growth of a character's psychological need, driving a moral argument through a web of relationships."
+  primary_story_unit: "The Moral Argument"
+  primary_success_metric: "The seamless integration of character weakness, plot progression, and thematic resolution."
+
+framework_overview:
+  summary: "A framework for building stories where plot is not an external force, but an organic consequence of character flaws and the expansion of a relational web."
+  what_this_web_helps_create:
+    - "Deeply interconnected character webs"
+    - "Plots that feel inevitable rather than manufactured"
+    - "Thematic depth through moral conflict"
+  what_it_prioritizes:
+    - "Character weakness and need"
+    - "The Moral Argument (Thesis vs. Antithesis)"
+    - "The Web of Relationships"
+  what_it_deemphasizes:
+    - "External 'beats' that don't impact character psychology"
+    - "Randomly occurring plot twists"
+    - "Generic structural milestones (e.g., 'The Midpoint' as a standalone event)"
+
+use_when:
+  - "The character's internal struggle is the engine of the plot."
+  - "You have a complex world with many characters that need to feel connected."
+  - "The story is about a fundamental truth or moral lesson."
+
+avoid_when:
+  - "The plot is driven by external, non-character-related physics or coincidences."
+  - "The characters are archetypes with no psychological depth or 'need'."
+
+core_principles:
+  - "Organic Growth: Plot must grow from the character's weakness."
+  - "The Moral Argument: The story must test a specific moral proposition."
+  - "The Web: Every character should be linked to the protagonist via a specific relational function."
+  - "Need vs. Desire: The protagonist's external goal (Desire) must be at odds with their internal deficiency (Need)."
+
+workflow:
+  - step: 1
+    name: "The Seed"
+    goal: "Define the psychological core."
+    instructions:
+      - "Identify the protagonist's fundamental psychological weakness."
+      - "Determine the moral argument the story will test."
+    output: "Character Weakness & Moral Argument"
+  - step: 2
+    name: "The Expansion"
+    goal: "Build the web and the opposition."
+    instructions:
+      - "Create the Opponent as a thematic mirror."
+      - "Map the Allies and Adversaries."
+    output: "The Web of Relationships"
+  - step: 3
+    name: "The Progression"
+    goal: "Map the 22-step sequence."
+    instructions:
+      - "Populate the core 7 steps."
+      - "Expand the plot through the subsequent stages of revelation and conflict."
+    output: "The Story Outline"
+  - step: 4
+    name: "The Refinement"
+    goal: "Ensure structural integrity."
+    instructions:
+      - "Check for 'The Plan' and 'The Battle'."
+      - "Verify the 'Self-Revelation' resolves the 'Weakness'."
+    output: "Finalized Story Framework"
+
+story_inputs:
+  premise: "<The core idea>"
+  logline: "<Protagonist + Inciting Incident + Goal + Conflict>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Neo-Noir>"
+  tone: "<e.g., Melancholic, Tense>"
+  target_length: "<e.g., 110 pages>"
+  audience: "<e.g., Mature Adult>"
+  rating: "<e.g., R>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  description: "The 22 steps are a continuous progression. The framework focuses on the 'Core 7' and the 'Expansion' phases."
+  the_core_spine:
+    steps: [1, 2, 3, 4, 5, 6, 7]
+    focus_area: "Establishing the psychological foundation and the primary conflict."
+    primary_driver: "The protagonist's internal weakness and the emergence of the desire."
+    structural_risk: "Creating a plot that is too external or lacks character consequence."
+    interdependency_check: "Does the Inciting Incident directly threaten the character's established weakness?"
+  the_expansion_web:
+    steps: [8, 9, 10, 11, 12, 13]
+    focus_area: "Expanding the cast and complicating the moral argument."
+    primary_driver: "The introduction of allies and adversaries that test the protagonist's values."
+    structural_risk: "Introducing characters that do not serve the central moral argument."
+    interdependency_check: "Does every new character link back to the protagonist's psychological need?"
+  the_climax_resolution:
+    steps: [14, 15, 16, 17, 18, 19, 20, 21, 22]
+    focus_area: "The final confrontation and the resolution of the moral argument."
+    primary_driver: "The collision of the protagonist's plan and the opponent's counter-plan."
+    structural_risk: "A resolution that feels unearned or disconnected from the character's growth."
+    interdependency_check: "Does the final battle force a definitive change in the protagonist's nature?"
+
+beats_or_units:
+  - id: "step_1"
+    name: "Weakness/Need"
+    order: 1
+    purpose: "Establish the psychological deficiency of the protagonist."
+    approximate_position: "Opening / Setup"
+    writer_prompt: "<What is the protagonist's internal flaw or psychological wound?>"
+    story_function: "The engine of the entire story."
+    visual_function: "<How is this weakness visible in their daily habits or environment?>"
+    emotional_function: "Empathy and identification."
+    required_decisions:
+      - "Is the weakness psychological, not just a lack of skill?"
+      - "Is the weakness something that can be overcome or is it a tragedy?"
+    fields_to_complete:
+      psychological_wound: "<write here>"
+      visible_symptom: "<write here>"
+    diagnostic_questions:
+      - "Does this weakness make the protagonist vulnerable?"
+      - "Is the weakness clearly defined before the plot begins?"
+    completion_criteria:
+      - "The weakness must be something that prevents them from being whole."
+    common_failure_modes:
+      - "Making the weakness a 'superpower' in disguise (e.g., 'I care too much')."
+
+  - id: "step_2"
+    name: "Inciting Incident"
+    order: 2
+    purpose: "The event that disrupts the protagonist's world."
+    approximate_position: "Early Plot"
+    writer_prompt: "<What event forces the protagonist to confront their weakness?>"
+    story_function: "Initiates the movement from the old world to the new."
+    visual_function: "<A sudden shift in the visual status quo?>"
+    emotional_function: "Shock, urgency, or disruption."
+    required_decisions:
+      - "Is the event irreversible?"
+      - "Does it directly impact the character's desire?"
+    fields_to_complete:
+      event_description: "<write here>"
+      impact_on_need: "<How does this event threaten their stability?>"
+    diagnostic_questions:
+      - "Does this event directly relate to the protagonist's weakness or desire?"
+      - "Are the stakes of the event high enough to drive the story?"
+    completion_criteria:
+      - "The event must be irreversible."
+    common_failure_modes:
+      - "The event is too minor to force a change in behavior."
+
+  - id: "step_3"
+    name: "Desire"
+    order: 3
+    purpose: "The external goal."
+    approximate_position: "Early Plot / Development"
+    writer_prompt: "<What is the tangible, visible goal the protagonist pursues?>"
+    story_function: "Provides the outward momentum/plot."
+    visual_function: "<What is the physical object or destination the character is chasing?>"
+    emotional_function: "Motivation and drive."
+    required_decisions:
+      - "Is the goal measurable?"
+      - "Does the goal conflict with the character's need?"
+    fields_to_complete:
+      external_goal: "<write here>"
+      misalignment_with_need: "<How does pursuing this goal actually clash with their internal need?>"
+    diagnostic_questions:
+      - "Is the goal something we can see them working toward on screen?"
+      - "Is the goal high-stakes enough to sustain a full narrative?"
+    completion_criteria:
+      - "The desire must be high-stakes."
+    common_failure_modes:
+      - "The goal is too vague or purely internal."
+
+  - id: "step_4"
+    name: "Plan"
+    order: 4
+    purpose: "The strategy to achieve the desire."
+    approximate_position: "Rising Action"
+    writer_prompt: "<What is the protagonist's specific strategy to get what they want?>"
+    story_function: "Sets up the conflict with the Opponent's plan."
+    visual_function: "<The preparation, the gathering of tools, or the map of the journey?>"
+    emotional_function: "Anticipation and tension."
+    required_decisions:
+      - "Is the plan based on the character's existing (flawed) logic?"
+      - "Does the plan leave them vulnerable to the opponent?"
+    fields_to_complete:
+      strategy_details: "<write here>"
+    diagnostic_questions:
+      - "Is the plan flawed because of the character's weakness?"
+      - "Does the plan create new opportunities for conflict?"
+    completion_criteria:
+      - "The plan must be vulnerable to the Opponent's interference."
+    common_failure_modes:
+      - "The plan is too perfect, leaving no room for dramatic failure."
+
+  - id: "step_5"
+    name: "Opponent"
+    order: 5
+    purpose: "The thematic mirror/obstacle."
+    approximate_position: "Mid-point / Escalation"
+    writer_prompt: "<Who or what stands in the way, and how do they represent the 'wrong' side of the moral argument?>"
+    story_function: "Provides the friction and the 'Antithesis'."
+    visual_function: "<The visual presence or shadow of the opposition?>"
+    emotional_function: "Fear, antagonism, or ideological tension."
+    required_decisions:
+      - "Does the opponent have a valid (though flawed) logic?"
+      - "Is the opponent a direct consequence of the protagonist's struggle?"
+    fields_to_complete:
+      opponent_identity: "<write here>"
+      thematic_function: "<How do they embody the opposite of the protagonist's need?>"
+    diagnostic_questions:
+      - "Is the opponent more than just a 'bad guy'? Do they have a valid (though flawed) logic?"
+      - "Does the opponent's existence force the protagonist to change?"
+    completion_criteria:
+      - "The opponent must be a direct consequence of the protagonist's struggle."
+    common_failure_modes:
+      - "The opponent is a generic villain without a thematic connection to the protagonist."
+
+  - id: "step_6"
+    name: "Battle"
+    order: 6
+    purpose: "The clash of plans and values."
+    approximate_position: "Climax"
+    writer_prompt: "<Where do the protagonist's plan and the opponent's plan collide?>"
+    story_function: "The escalation of conflict."
+    visual_function: "<The physical or metaphorical peak of the confrontation?>"
+    emotional_function: "Intensity, desperation, or catharsis."
+    required_decisions:
+      - "Is the battle a clash of personalities/values, or just physical?"
+      - "Does the battle force a choice?"
+    fields_to_complete:
+      climax_of_conflict: "<write here>"
+    diagnostic_questions:
+      - "Is the battle a clash of personalities/values, or just physical?"
+      - "Does the outcome of the battle impact the character's internal state?"
+    completion_criteria:
+      - "The battle must force a choice."
+    common_failure_modes:
+      - "The battle is purely action-oriented without thematic weight."
+
+  - id: "step_7"
+    name: "Self-Revelation"
+    order: 7
+    purpose: "The internal change."
+    approximate_position: "Resolution / Aftermath"
+    writer_prompt: "<What does the protagonist realize about themselves during the battle?>"
+    story_function: "The resolution of the 'Need'."
+    visual_lag: "<A change in the character's expression, posture, or environment?>"
+    emotional_function: "Epiphany, tragedy, or peace."
+    required_decisions:
+      - "Does this revelation directly address the weakness identified in Step 1?"
+      - "Is the revelation permanent?"
+    fields_to_complete:
+      the_realization: "<write here>"
+      change_in_behavior: "<How does this realization change their next action?>"
+    diagnostic_questions:
+      - "Does this revelation directly address the weakness identified in Step 1?"
+      - "Is the change in the character earned by the preceding conflict?"
+    completion_criteria:
+      - "The character must be fundamentally changed (for better or worse)."
+    common_failure_modes:
+      - "The revelation is unearned or comes out of nowhere."
+
+  - id: "step_12"
+    name: "Web of Relationships"
+    order: 12
+    purpose: "The structural connectivity of the cast."
+    approximate_position: "Mid-to-Late Story"
+    writer_prompt: "<How does every character in the story connect back to the protagonist's struggle?>"
+    story_function: "Ensures the story feels like a cohesive ecosystem."
+    visual_function: "<The visual grouping or separation of characters?>"
+    emotional_lag: "<The shifting alliances and tensions within the group?>"
+    required_decisions:
+      - "Are there any 'floating' characters who don't impact the moral argument?"
+      - "Does every character press against the protagonist's need/desire?"
+    fields_to_complete:
+      character_linkages:
+        - character_name: "<write here>"
+          relation_to_protagonist: "<e.g., Mentor, Mirror, Foil, Obstacle>"
+          thematic_purpose: "<write here>"
+    diagnostic_questions:
+      - "Are there any 'floating' characters who don't impact the moral argument?"
+      - "Does the web of characters create a sense of inescapable consequence?"
+    completion_criteria:
+      - "No character should exist solely for exposition; they must all press against the protagonist's need/desire."
+    common_failure_modes:
+      - "Characters exist only to provide information or move the plot without personal stakes."
+
+character_design:
+  methodology_role: "Psychological/Moral Core"
+  characters:
+    - name: "<Protagonist>"
+      weakness: "<write here>"
+      need: "<write/identify here>"
+      desire: "<write/identify here>"
+      moral_flaw: "<write/identify here>"
+    - name: "<Opponent>"
+      strength: "<write here>"
+      weakness: "<write here>"
+      thematic_mirror_function: "<How do they reflect the protagonist's flaw?>"
+    - name: "<Allies/Adversaries>"
+      function: "<write here>"
+
+theme_design:
+  methodology_role: "The Moral Argument"
+  fields:
+    central_moral_question: "<What is the fundamental 'Should/Should Not' of the story?>"
+    thesis: "<The protagonist's initial, flawed belief/way of living>"
+    antithesis: "<The opponent's opposing, equally flawed belief/way of living>"
+    synthesis: "<The new, truth-revealed way of living (or the tragedy of the failure to find it)>"
+
+visual_storytelling:
+  methodology_role: "Visualizing the Internal"
+  image_system:
+    motif_of_weakness: "<A recurring visual symbol of the character's flaw>"
+    motif_of_need: "<A recurring visual symbol of what they lack>"
+  visual_relational_rules:
+    - "Use lighting shifts to signal the transition from 'Desire' to 'Self-Revelation'."
+    - "The environment should reflect the 'Web of Relationships' (e.g., claustrophobic vs. expansive)."
+  final_image: "<An image that visually summarizes the new equilibrium/thematic resolution>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either advance the Desire or pressure the Need."
+    - "Every scene should contribute to the expansion of the Web."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: "<How does the character's status change?>"
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Make sure the character's weakness is visible in their decision-making."
+  avoid_rules:
+    - "Avoid scenes that are purely 'information dumps' without emotional pressure."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Ensure the narrative arc follows the 22-step progression logically."
+    instructions:
+      - "Verify the sequence of the Core 7 steps."
+      - "Check for gaps in the expansion of the web."
+    questions:
+      - "Does the plot move from setup to climax without stalling?"
+    success_criteria:
+      - "The structural milestones are clearly identifiable and logically connected."
+  - name: "character_pass"
+    goal: "Verify the protagonist's psychological arc is complete."
+    instructions: []

@@ -1,0 +1,289 @@
+metadata:
+  framework_name: treatment_first_framework
+  methodology_name: Treatment-First Method
+  methodology_family: Narrative-Driven Development
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - feature_film
+    - tv_pilot
+    - short_film
+    - anime
+    - game_cinematic
+  best_for:
+    - "Complex character arcs"
+    - "High-concept logic testing"
+    - "Ensuring narrative causality"
+    - "Foundational structural integrity"
+  not_ideal_for:
+    - "Dialogue-driven improv-style writing"
+    - "Rapid-fire episodic procedural beats"
+    - "Experimental non-linear fragments (without a prose anchor)"
+  target_lengths:
+    - "Feature length (90-120 pages)"
+    - "TV Pilot (30-60 minutes)"
+  core_principle: "Narrative cohesion is achieved through prose-based causality (Therefore/But) before structural beat-mapping or scene-writing."
+  primary_story_unit: "The Narrative Movement (Prose Block)"
+  primary_success_metric: "Causal Continuity (The absence of 'and then' in favor of 'therefore' or 'but')"
+
+framework_overview:
+  summary: "The Treatment-First Method prioritizes the development of a continuous, prose-based narrative summary that explores the logic, character momentum, and emotional flow of the story before any formal beat sheet or script is drafted."
+  what_this_framework_helps_create:
+    - "A robust, logically sound narrative arc"
+    - "Deeply integrated character change"
+    - "A clear sense of pacing and momentum"
+  what_it_prioritizes:
+    - "Causality"
+    - "Narrative momentum"
+    - "Emotional arc"
+  what_it_deemphasizes:
+    - "Dialogue"
+    - "Technical scene headings"
+    - "Individual beat labels"
+
+use_when:
+  - "When the plot feels 'episodic' or disconnected"
+  - "When character motivations aren't driving the action"
+  - "When you have a great ending but don't know how to get there"
+  - "When the story logic feels fragile"
+
+avoid_when:
+  - "When you are stuck in a 'writer's block'-induced need for quick, small-scale scenes"
+  - "When the story is purely aesthetic/experimental with no narrative arc"
+
+core_principles:
+  - "The Causal Chain: Every event must be the consequence of the previous event (Therefore) or a reaction to a complication (But)."
+  - "Prose-First: If it doesn't work as a readable, flowing story summary, it won't work as a script."
+  - "Character-Driven Momentum: The plot is simply the visible manifestation of the character's internal struggle."
+
+workflow:
+  - step: 1
+    name: "The Foundation"
+    goal: "Establish the DNA of the story."
+    instructions:
+      - "Define the core premise, characters, and theme."
+    output: "Story Inputs"
+  - step: 2
+    name: "The Movement Mapping"
+    goal: "Outline the major narrative shifts."
+    instructions:
+      - "Identify the major blocks of action/change without writing full prose yet."
+    output: "Structural Skeleton"
+  - step: 3
+    name: "The Prose Expansion (The Treatment)"
+    goal: "Write the continuous narrative."
+    instructions:
+      - "Write the story in prose, focusing on the 'Therefore/But' connection between all major actions."
+    output: "The Full Treatment"
+  - step: 4
+    name: "The Causal Audit"
+    goal: "Verify structural integrity."
+    instructions:
+      - "Review the treatment specifically looking for 'and then' transitions."
+    output: "Revised Treatment"
+  - step: 5
+    name: "The Beat Extraction"
+    goal: "Translate prose into a functional beat sheet."
+    instructions:
+      - "Convert the prose blocks into a formal, structured beat sheet for scripting."
+    output: "Final Beat Sheet"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  description: "The Treatment is organized into Narrative Movements rather than static beats. Each movement must be a cohesive prose block."
+  stage_1_causal_seeding:
+    focus: "Establishing the initial 'Therefore' and the disruption."
+    decision_fields:
+      - "protagonist_wound"
+      - "inciting_incident_nature"
+      - "status_quo_definition"
+      - "irreversibility_factor"
+    logic_check: "Does the disruption create a state that cannot be returned to?"
+  stage_2_chain_linking:
+    focus: "Connecting events via 'But' and 'Therefore' links."
+    decision_fields:
+      - "consequence_severity"
+      - "complication_escalation"
+      - "antagonist_reaction"
+      - "causal_link_type"
+    logic_check: "Are there any 'and then' transitions that lack a 'Therefore' or 'But'?"
+  stage_3_prose_expansion:
+    focus: "Fleshing out the movement into narrative prose."
+    decision_fields:
+      - "sensory_anchors"
+      - "emotional_beats"
+      - "character_internal_monologue"
+      - "pacing_rhythm"
+    logic_check: "Does the prose maintain the causal momentum established in the links?"
+
+beats_or_units:
+  - id: "intro_movement"
+    name: "The Status Quo & Disruption"
+    order: 1
+    purpose: "Establish the world, the protagonist's 'normal,' and the inciting incident."
+    approximate_position: "0% - 15%"
+    writer_prompt: "Describe the protagonist's life and the specific event that makes the 'old normal' impossible to maintain."
+    story_function: "Establish stakes and the inciting incident."
+    visual_function: "Establish the visual language of the protagonist's world."
+    emotional_function: "Establish the baseline emotional state before the disruption."
+    required_decisions:
+      - "What is the 'wound' or 'lack' in the protagonist?"
+      - "What is the irreversible nature of the disruption?"
+    fields_to_complete:
+      prose_summary: "<Write the narrative prose here...>"
+      causal_trigger: "<What event 'therefore' or 'but' changed the status quo?>"
+    diagnostic_questions:
+      - "Is the disruption a direct consequence of the character's nature or a random accident?"
+      - "Does the prose clearly show why the character cannot simply go back to how things were?"
+    completion_criteria:
+      - "The disruption has occurred."
+      - "The protagonist's new goal is established."
+    common_failure_modes:
+      - "The disruption is too small to warrant a story."
+      - "The character is passive, merely reacting without intent."
+
+  - id: "escalation_movement"
+    name: "The Progressive Complications"
+    order: 2
+    purpose: "The protagonist attempts to solve the problem, but the world/antagonist pushes back."
+    approximate_position: "15% - 50%"
+    writer_prompt: "Describe the series of attempts, failures, and rising stakes."
+    story_function: "Build tension and expand the world/conflict."
+    visual_function: "Introduce new locations and increasing visual chaos/intensity."
+    emotional_function: "Move from curiosity/uncertainty to mounting pressure/desperation."
+    required_decisions:
+      - "What is the 'Plan A' and why does it fail?"
+      - "How does the antagonist/conflict evolve?"
+    fields_to_complete:
+      prose_summary: "<Write the narrative prose here...>"
+      causal_chain: ["<Event 1> -> [Therefore] -> <Event 2> -> [But] -> <Event 3>"]
+    diagnostic_questions:
+      - "Are these events happening 'and then' (bad) or 'therefore/but' (good)?"
+      - "Is the tension actually rising, or are we just repeating the same type of conflict?"
+    completion_criteria:
+      - "The protagonist is pushed into a point of no return."
+    common_failure_modes:
+      - "The 'and then' trap: A series of unrelated incidents."
+      - "Lack of escalation: The stakes remain static."
+
+  - id: "climax_movement"
+    name: "The Crucible"
+    order: 3
+    purpose: "The final confrontation where the protagonist must face their internal and external conflict simultaneously."
+    approximate_position: "50% - 90%"
+    writer_prompt: "Describe the peak of the conflict and the ultimate choice the protagonist must make."
+    story_function: "Resolution of the central dramatic question."
+    visual_function: "The most visually significant or symbolically dense sequence."
+    emotional_function: "Catharsis, tragedy, or realization."
+    required_decisions:
+      - "What is the ultimate sacrifice required?"
+      - "How does the character's 'wound' resolve or solidify?"
+    fields_to_complete:
+      prose_summary: "<Write the narrative prose here...>"
+      thematic_resolution: "<How does this action prove the theme?>"
+    diagnostic_questions:
+      - "Is the resolution earned through character choice or mere luck?"
+      - "Does the climax mirror or subvert the opening movement?"
+    completion_criteria:
+      - "The central conflict is resolved."
+      - "The protagonist has undergone a visible/internal change."
+    common_failure_modes:
+      - "Deus Ex Machina: An external force solves the problem."
+      - "Lack of connection to the character's initial wound."
+
+character_design:
+  methodology_role: "Characters are the engines of the 'Therefore/But' chain."
+  characters:
+    - name: "<write here>"
+      internal_arc: "<How do they change from the start of the treatment to the end?>"
+      external_drive: "<What action do they take that drives the plot forward?>"
+      causal_impact: "<How does this character's specific flaw/strength 'therefore' cause the next plot point?>"
+      thematic_representative: "<What part of the story's argument do they embody?>"
+
+world_design:
+  methodology_role: "The world provides the 'But' to the character's 'Therefore'."
+  causal_constraints: "<How the world's physics, social laws, or limitations force character decisions.>"
+  environmental_impact: "<How the setting acts as an obstacle or catalyst for the causal chain.>"
+  social_landscape: "<The power structures that create friction for the protagonist.>"
+
+theme_design:
+  methodology_role: "Theme is the 'Why' behind the 'Therefore'."
+  fields:
+    central_argument: "<What is the debate the story is having with itself?>"
+    thematic_proof: "<How does the climax provide the 'answer' to the argument?>"
+    visual_metaphor: "<What recurring image represents this argument?>"
+
+visual_storytelling:
+  methodology_role: "Visuals must mirror the causal progression."
+  primary_motifs:
+    - "<motif 1>"
+    - "<motif 2>"
+  color_narrative: "<How the color palette shifts from the status quo to the climax.>"
+  symbolic_objects:
+    - "<object 1>"
+    - "<object 2>"
+  visual_anchor_points: "<Key visual beats that signal major narrative shifts.>"
+
+scene_generation_rules:
+  - "Every scene must be an extraction of a specific 'Therefore' or 'But' from a movement block."
+  - "A scene cannot introduce a new plot point without a corresponding causal link in the treatment."
+  - "The visual function of the movement block must dictate the lighting and framing of the scene."
+  - "Dialogue should be the final layer, used only to reveal the internal state or external conflict already established in the prose."
+
+revision_passes:
+  - name: "The Structure Pass"
+    goal: "Ensure the narrative arc is complete and logically sound."
+    instructions:
+      - "Check the movement blocks for a clear beginning, middle, and end."
+      - "Verify that the transition between each movement is clearly defined."
+    questions:
+      - "Is there a clear inciting incident?"
+      - "Is the climax a logical conclusion to the established tension?"
+    success_criteria:
+      - "The story arc is structurally complete."
+
+  - name: "The Character Agency Pass"
+    goal: "Ensure the protagonist is driving, not being driven."
+    instructions:
+      - "Highlight every action taken by the protagonist. If they are only reacting to external forces, find ways to make their choices the cause of the next complication."
+    questions:
+      - "Is the protagonist making decisions, or just surviving?"
+      - "Does the protagonist's flaw actively create their own obstacles?"
+    success_criteria:
+      - "The protagonist's choices are the primary engine of the plot's escalation."
+
+  - name: "The Theme Pass"
+    goal: "Ensure the central argument is present and resolved."
+    instructions:
+      - "Trace the central argument from the introduction through to the climax."
+      - "Check if the climax provides a definitive answer or a meaningful subversion of the theme."
+    questions:
+      - "Is the thematic argument clear in the prose?"
+      - "Does the resolution of the conflict reflect the resolution of the theme?"
+    success_criteria:
+      - "The theme is evident in both the setup and the resolution."
+
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure visual elements support the narrative momentum."
+    instructions:
+      - "Review the visual functions of each movement block."
+      - "Check for consistency in motifs and symbolic objects."
+    questions:
+      - "Do the visual metaphors align with the emotional arc?"
+      - "Is the visual language evolving alongside the character's change?"
+    success_criteria:
+      - "Visuals support the narrative progression."

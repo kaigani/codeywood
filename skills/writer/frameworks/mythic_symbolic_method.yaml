@@ -1,0 +1,435 @@
+metadata:
+  framework_name: "Mythic Symbolic Method"
+  methodology_name: "Mythic Symbolic Method"
+  methodology_family: "Archetypal/Symbolic"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "anime"
+    - "adult animation"
+    - "short film"
+    - "game cinematic"
+  best_for:
+    - "High-concept fantasy"
+    - "Psychological drama"
+    - "Surrealist horror"
+    - "Epic myth-retellings"
+  not_ideal_for:
+    - "Procedural crime dramas"
+    - "Purely dialogue-driven stage plays"
+    - "Low-stakes romantic comedies"
+  target_lengths:
+    - "90-120 minute feature"
+    - "10-20 minute short"
+  core_principle: "The narrative is a/an vehicle for universal truths, expressed through the interplay of archetypal characters, symbolic landscapes, and recurring visual motifs that mirror an internal psychological transformation."
+  primary_story_unit: "The Threshold (The transition from one state of being to another)"
+  primary_success_metric: "The resonance between the physical plot events and their underlying symbolic meaning."
+
+framework_overview:
+  summary: "A methodology focused on layering deep, subconscious meaning onto a structural journey. It treats plot beats as manifestations of psychological or spiritual shifts."
+  what_this_framework_helps_create:
+    - "Stories that feel 'timeless' or 'legendary'"
+    - "Deeply resonant character arcs"
+    - "Visually cohesive and metaphorically rich worlds"
+  what_it_prioritizes:
+    - "Archetypal resonance"
+    - "Visual iconography"
+    - "Thematic metaphor"
+    - "Subtextual depth"
+  what_it_deemphaspectivizes:
+    - "Literal plot mechanics"
+    - "Incidental dialogue"
+    - "Purely transactional character motivations"
+
+use_when:
+  - "The story is about a profound internal change."
+  - "The setting can serve as a metaphor for the protagonist's mind."
+  - "You want to use recurring imagery to tell the story without dialogue."
+  - "The genre allows for heightened, non-literal reality."
+
+avoid_when:
+  - "The story relies on complex, technical, or grounded realism."
+  - "The plot is driven by external, non-transformative logistics."
+  - "The characters are meant to be purely 'everyman' without deeper psychological layers."
+
+core_principles:
+  - "The Mirror Principle: The external world must reflect the internal state of the protagonist."
+  - "The Totem Rule: Every key object must carry a secondary layer of symbolic meaning."
+  - "The Archetypal Shadow: Conflict is not just between people, but between the protagonist and their unacknowledged self."
+  - "The Threshold Logic: Progress is measured by the crossing of psychological boundaries, not just physical distance."
+
+workflow:
+  - step: 1
+    name: "Identify the Universal Truth"
+    goal: "Define the core human experience being explored."
+    instructions:
+      - "Determine the central philosophical tension."
+      - "Avoid specific plot points; focus on the human condition (e.g., 'The inevitability of loss')."
+    output: "Thematic Anchor"
+  - step: 2
+    name: "Map the Archetypal Cast"
+    goal: "Assign roles that represent psychological facets."
+    instructions:
+      - "Define the Protagonist, the Shadow, the Herald, and the Mentor."
+    output: "Archetypal Framework"
+  - step: 3
+    name: "Establish the Symbolic Lexicon"
+    goal: "Create a visual language for the story."
+    instructions:
+      - "Identify 3-cal recurring motifs or elemental symbols."
+    output: "Visual/Symbolic Dictionary"
+  - step: 4
+    name: "Structure the Thresholds"
+    goal: "Build the plot around psychological transitions."
+    instructions:
+      - "Map the journey through five distinct states of being."
+    output: "Mythic Structure"
+  - step: 5
+    name: "Layer the Physical Plot"
+    goal: "Flesh out the concrete actions that drive the story."
+    instructions:
+      - "Ensure every physical obstacle correlates to a symbolic struggle."
+    output: "Complete Story Outline"
+
+story_inputs:
+  premise: "<The literal event that triggers the journey>"
+  logline: "<The character, the conflict, and the stakes, flavored with the story's tone>"
+  medium: "<e.g., Anime, Feature Film>"
+  genre: "<e.g., Dark Fantasy, Surrealist Sci-Fi>"
+  tone: "<e.g., Melancholic, Grandiose, Ethereal>"
+  target_length: "<e.g., 110 pages>"
+  audience: "<e.g., Mature, Fans of Jungian themes>"
+  rating: "<e.g., PG-13, R>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points:
+    - "<e.g., Pan's Labyrinth (Symbolic realism)>"
+    - "<e.g., Spirited Away (Archetypal journey)>"
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  approach: "The Five Mythic Thresholds"
+  description: "The story progresses through five stages of psychological evolution, each marked by a change in the character's relationship to reality."
+  stages:
+    primordial_state:
+      focus: "The Illusion of Stability"
+      logic_flow: "Establishment of the False Self"
+      decision_points:
+        - "What is the character's primary psychological defense mechanism?"
+        - "How does the environment physically manifest this defense?"
+        - "What is the specific 'lie' the character tells themselves?"
+    rupture_event:
+      focus: "The Shattering of the Ego"
+      logic_flow: "Introduction of the Shadow"
+      decision_points:
+        - "Which archetype acts as the Herald?"
+        - "How does the physical world begin to fragment?"
+        - "What is the irreversible cost of this change?"
+    labyrinthine_descent:
+      focus: "The Trial of the Subconscious"
+      logic_flow: "Navigating the Shadow"
+      decision_points:
+        - "What is the primary symbolic obstacle in this stage?"
+        - "How does the Mentor guide or mislead the protagonist?"
+        - "What old tool or belief must be discarded?"
+    apotheosis:
+      focus: "The Death and Rebirth"
+      logic_flow: "The Ultimate Confrontation"
+      decision_points:
+        - "What is the ultimate sacrifice required?"
+        - "How is the 'New Truth' visually revealed?"
+        - "How does the lighting/color palette shift to reflect transcendence?"
+    integration:
+      focus: "The Return with Wisdom"
+      logic_flow: "The New Equilibrium"
+      decision_points:
+        - "What is the 'Elixir' or wisdom brought back?"
+        - "How does the world look through the new eyes of the protagonist?"
+        - "What is the final visual contrast to the Primordial State?"
+
+beats_or_units:
+  - id: "threshold_1"
+    name: "The Primordial State (The Known)"
+    order: 1
+    purpose: "Establish the character's initial, unevolved equilibrium and their 'illusion'."
+    approximate_position: "Act 1 / Introduction"
+    writer_prompt: "<What is the character's comfortable but limited reality? What is the 'lie' they believe about themselves?>"
+    story_function: "Establish the status quo and the 'false' self."
+    visual_function: "Use stable, closed, or repetitive compositions. Saturated or overly familiar colors."
+    emotional_function: "Stagnation, safety, or repressed tension."
+    required_decisions:
+      - "Identify the character's 'False Belief'."
+      - "Identify the 'Symbol of Stagnation'."
+    fields_to_complete:
+      false_belief: "<write here>"
+    diagnostic_questions:
+      - "Is the character's current world clearly defined by what they are missing?"
+      - "Does the setting feel like a 'container' or a 'prison'?"
+    completion_criteria:
+      - "The character's internal lack is clearly visible through their environment."
+    common_failure_modes:
+      - "Making the character too happy/content, removing the need for a journey."
+
+  - id: "threshold_2"
+    name: "The Call to Chaos (The Rupture)"
+    order: 2
+    purpose: "Introduce the disruption that forces the character to confront the unknown."
+    approximate_position: "Inciting Incident"
+    writer_prompt: "<What external force shatters the character's illusion? How does the 'Shadow' first appear?>"
+    story_function: "Break the equilibrium and initiate the descent."
+    visual_function: "Introduction of fragmentation, shadows, or unpredictable lighting/weather."
+    emotional_function: "Shock, fear, or disorientation."
+    required_decisions:
+      - "Define the 'Herald' (the messenger of change)."
+      - "Define the 'Rupture Event'."
+    fields_to_complete:
+      herald_character: "<write here>"
+      the_rupture: "<write here>"
+    diagnostic_questions:
+      - "Does the rupture directly threaten the character's 'False Belief'?"
+    completion_criteria:
+      - "The character can no longer return to the 'Primordial State' unchanged."
+    common_failure_modes:
+      - "The disruption is purely physical and lacks psychological weight."
+
+  - id: "threshold_3"
+    name: "The Labyrinth (The Descent/Trial)"
+    order: 3
+    purpose: "The protagonist navigates the complexities of their new reality, facing archetypal trials."
+    approximate_position: "Act 2 / Rising Action"
+    writer_prompt: "<What are the symbolic tests the character must pass? How does the landscape reflect their confusion?>"
+    story_function: "The period of active struggle and the testing of the character's strength."
+    visual_function: "Obscured paths, mirrors, mazes, or shifting environments. Use of 'The Shadow' in lighting."
+    emotional_function: "Dread, confusion, testing, and growth through pain."
+    required_decisions:
+      - "Identify the 'Great Trial' (the hardest test)."
+      - "Identify the 'Mentor's Lesson'."
+    fields_to_complete:
+      the_labyrinth_metaphor: "<write here>"
+      key_trial_event: "<write/describe here>"
+    diagnostic_questions:
+      - "Are the obstacles more than just physical hurdles? Are they mirrors of the character's flaws?"
+    completion_criteria:
+      - "The character has lost their old tools/beliefs and must find new ones."
+    common_failure_modes:
+      - "A series of disconnected adventures that don't build toward a psychological climax."
+
+  - id: "threshold_4"
+    name: "The Apotheosis (The Transformation)"
+    order: 4
+    purpose: "The character faces the ultimate confrontation with their Shadow or the core truth."
+    approximate_position: "Climax"
+    writer_prompt: "<What is the moment of total surrender or total realization? What is destroyed so that something new can be born?>"
+    story_function: "The death of the old self and the birth of the true self."
+    visual_function: "High contrast, blinding light, or total darkness. Use of 'The Sacred' or 'The Sublime' imagery."
+    emotional_function: "Catharsis, terror, or transcendence."
+    required_decisions:
+      - "Define the 'Sacrifice' (what must be given up)."
+      - "Define the 'New Truth'."
+    fields_to_complete:
+      the_sacrifice: "<write here>"
+      the_revelation: "<write here>"
+    diagnostic_questions:
+      - "Is the climax a resolution of the 'False Belief' established in Threshold 1?"
+    completion_criteria:
+      - "The character has undergone an irreversible internal change."
+    common_failure_modes:
+      - "The climax is won through external luck rather than internal transformation."
+
+  - id: "threshold_5"
+    name: "The Integration (The Return)"
+    order: 5
+    purpose: "The character returns to a version of reality, now bearing the 'Elixir' of wisdom."
+    approximate_position: "Resolution"
+    writer_prompt: "<How does the world look now that the character has changed? What is the final image of the 'New Order'?>"
+    story_function: "Establishing the new equilibrium and the lasting impact of the journey."
+    visual_function: "Clarity, wide vistas, or a return to the initial setting but with a different lighting/color palette."
+    emotional_function: "Peace, melancholy, or profound clarity."
+    required_decisions:
+      - "Define the 'Elixir' (the wisdom/gift brought back)."
+    fields_to_complete:
+      the_elixir: "<write here>"
+      final_visual_contrast: "<How does the final image contrast with the first?>"
+    diagnostic_questions:
+      - "Does the ending feel earned by the character's transformation?"
+    completion_criteria:
+      - "The story concludes with a visible manifestation of the 'New Truth'."
+    common_failure_modes:
+      - "A 'reset' ending where nothing has fundamentally changed."
+
+character_design:
+  methodology_role: "Characters act as personified aspects of the theme/psychology."
+  characters:
+    - name: "<Protagonist Name>"
+      archetype: "<e.g., The Orphan, The Warrior, The Seeker>"
+      internal_wound: "<The psychological trauma driving them>"
+      visible_want: "<The external goal>"
+      hidden_need: "<The spiritual/psychological necessity>"
+      shadow_aspect: "<The darker, repressed part of their personality>"
+    - name: "<Antagonist/Shadow Name>"
+      archetype: "<e.g., The Tempter, The Destroyer>"
+      symbolic_function: "<What part of the protagonist's psyche do they represent?>"
+      thematic_argument: "<What opposing truth do they fight for?>"
+    - name: "<Mentor/Herald Name>"
+      archetype: "<e.g., The Wise Elder, The Messenger>"
+      symbolic_function: "<What truth or warning do they carry?>"
+
+world_design:
+  methodology_role: "The world is a physical manifestation of the story's subconscious themes."
+  fields:
+    symbolic_geography: "<How do the different locations represent different psychological states?>"
+    the_sacred_space: "<A location of truth or transcendence>"
+    the_prophane_space: "<A location of stagnation or corruption>"
+    elemental_motifs: "<Use of Fire, Water, Earth, or Air to reinforce themes>"
+    iconography_rules: "<Rules for how objects appear and change throughout the story>"
+
+theme_design:
+  methodology_role: "The core philosophical engine."
+  fields:
+    central_question: "<The question the story pressures-tests (e.g., 'Can one find peace in chaos?')>"
+    the_false_answer: "<The answer the character initially pursues>"
+    the_true_answer: "<The answer the character discovers>"
+    thematic_metaphor: "<The primary image or object that embodies the theme>"
+
+visual_storytelling:
+  methodology_role: "The visual layer that communicates the mythic depth."
+  image_system:
+    recurring_motifs:
+      - "<Motif 1: e.g., Broken Mirrors (Fragmentation)>"
+      - "<Motif 2: e.g., Rising Tides (Overwhelming Emotion)>"
+    color_palette_evolution:
+      initial: "<e.g., Monochromatic, Desaturated>"
+      climax: "<e.g., High Saturation, Primal Colors>"
+      resolution: "<e.g., Warm, Golden, Balanced>"
+    visual_rules:
+      - "<e.g., Shadows must always obscure the character's eyes during moments of lies.>"
+      - "<e.g., Water must appear whenever a character experiences a moment of clarity.>"
+  final_image: "<The single, lingering image that encapsulates the entire mythic journey.>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either advance the physical plot OR deepen the symbolic layer."
+    - "Avoid 'empty' scenes that lack a symbolic or archetypal weight."
+    - "A character's physical movement should mirror their psychological movement."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: "<The psychological shift that occurs in this scene>"
+    visual_anchor: "<The symbolic object or image central to this scene>"
+    emotional_shift: "<From X to Y>"
+    exits_with: "<The new state of the character's psyche>"
+  do_rules:
+    - "Use environmental changes to signal character growth."
+    - "Connect character dialogue to the larger thematic argument."
+  avoid_rules:
+    - "Avoid purely technical or procedural dialogue."
+    - "Avoid scenes where the environment is purely decorative."
+
+revision_passes:
+  - name: "The Archetypal Audit"
+    goal: "Ensure characters are not just people, but symbols."
+    instructions:
+      - "Check if every character's action contributes to the 'Thematic Argument'."
+    questions:
+      - "Is the antagonist just a 'bad guy', or are they a reflection of the hero's flaw?"
+    success_criteria:
+      - "Every character can be mapped to a psychological or mythic function."
+  - name: "The Motif Trace"
+    goal: "Verify the consistency of the visual language."
+    instructions:
+      - "Track every instance of your primary symbols/motifs."
+    questions:
+      - "Does the symbol evolve as the character evolves?"
+    success_criteria:
+      - "The primary motifs undergo a visible transformation by the end."
+  - name: "The Structure Pass"
+    goal: "Ensure the five thresholds are clearly delineated."
+    instructions:
+      - "Verify that each threshold represents a distinct psychological shift."
+    questions:
+      - "Is the transition from the Primordial State to the Rupture clearly impactful?"
+    success_criteria:
+      - "The narrative arc follows a clear progression of psychological evolution."
+  - name: "The Theme Pass"
+    goal: "Confirm the presence of the Universal Truth."
+    instructions:
+      - "Audit all major plot beats for thematic relevance."
+    questions:
+      - "Does the climax resolve the central philosophical question?"
+    success_criteria:
+      - "The story's conclusion provides a definitive answer to the central question."
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure visual motifs are doing the heavy lifting of the subtext."
+    instructions:
+      - "Check if visual changes mirror character changes."
+    questions:
+      - "Can the story be understood visually even if the dialogue were removed?"
+    success_criteria:
+      - "The visual language is self-sufficient in communicating the subtext."
+  - name: "The Mythic Symbolic Pass"
+    goal: "Validate the integration of the symbolic lexicon."
+    instructions:
+      - "Ensure every 'Totem' and 'Mirror' is functioning as intended."
+    questions:
+      - "Are the objects and landscapes serving as more than mere scenery?"
+    success_criteria:
+      - "The environment and objects are inextricably linked to the character's psyche."
+
+validation_checklist:
+  - "Does the physical plot follow the five thresholds?"
+  - "Is there a clear 'False Belief' and a 'True Revelation'?"
+  - "Does the setting reflect the character's internal state?"
+  - "Are the visual motifs integrated into the plot, or just decorative?"
+  - "Is the climax a resolution of the central thematic tension?"
+  - "Does every character represent a specific psychological or mythic function?"
+  - "Is the 'Symbol of Stagnation' clearly established in the first act?"
+  - "Does the 'Herald' character directly trigger the 'Rupture'?"
+  - "Is the 'Great Trial' in the Labyrinth a mirror of the protagonist's shadow?"
+  - "Is the 'Sacrifice' in the Apotheosis a loss of the 'False Self'?"
+  - "Does the 'Elixir' provide a tangible or intangible wisdom to the new world?"
+  - "Is the color palette evolution consistent with the psychological journey?"
+  - "Are the 'Totem' objects carrying secondary symbolic meanings?"
+  - "Does the 'Mirror Principle' hold true across all major locations?"
+  - "Is the 'Thematic Argument' clearly supported by the antagonist's existence?"
+
+failure_modes:
+  - failure_mode: "Symbolic Overload"
+    symptom: "The story feels heavy, pretentious, or confusing."
+    likely_cause: "Too many competing metaphors or symbols."
+    fix: "Strip the story down to one primary symbol and one primary archetype."
+  - failure_mode: "The Literal Trap"
+    symptom: "The story is a standard plot with no deeper meaning."
+    likely_cause: "Focusing entirely on 'what happens next' rather than 'what it means'."
+    fix: "Re-examine every plot beat through the lens of the 'Thresholds'."
+  - failure_mode: "Archetype Cliché"
+    symptom: "The characters feel like cardboard cutouts."
+    likely_cause: "Using archetypes without giving them human complexity/wounds."
+    fix: "Add a 'Humanizing Flaw' that contradicts their mythic role."
+
+adaptation_notes:
+  feature_film: "Focus on a single, grand mythic arc."
+  short_im: "Focus on a single, powerful symbolic 'moment' or 'threshold'."
+  tv_episode: "Each episode should be a single 'threshold' within a larger seasonal myth."
+  tv_pilot: "Establish the 'Primordial State' and the 'Rupture' with heavy emphasis on the 'False Belief'."
+  anime: "Lean heavily into visual iconography and elemental motifs."
+  adult_animation: "Utilize surrealist imagery to represent the 'Labyrinth' and 'Shadow' stages."
+  anthology: "Each segment should explore a different 'Universal Truth' using a different 'Archetypal Set'."
+  game_cinematic: "The player's agency should be the 'Force of Change' that drives the threshold crossings."
+
+yaml_usage_notes:
+  how_to_use: "Begin with the 'Theme Design' and 'Archetypal Cast' before ever writing a plot beat."
+  recommended_population_order:
+    - "Theme Design"
+    - "Character Design"
+    - "World Design"
+    - "Methodology Structure (Thresholds)"
+    - "Visual Storytelling"
+    - "Plot/Beats"
+  minimum_viable_completion: "Theme, Archetypes, and the 5 Thresholds."
+  signs_framework_is_ready_for_scene_outline: "When you can explain how a physical fight in Act 2 is actually a struggle with the protagonist's 'Shadow'."

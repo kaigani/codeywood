@@ -1,0 +1,354 @@
+metadata:
+  framework_name: "Rashomon/Multi-Perspective Template"
+  methodology_name: "Rashomon / Multi-Perspective Method"
+  methodology_family: "Fragmented Narrative / Subjective Realism"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "tv episode"
+    - "anime"
+    - "anthology"
+    - "mystery/crime drama"
+    - "psychological thriller"
+    - "legal drama"
+    - "true crime adaptation"
+  best_for:
+    - "uncovering a/the hidden truth"
+    - "exploring the unreliability of memory"
+    - "demonstrating how bias shapes reality"
+    - "exploring a single traumatic or pivotal event"
+  not_ideal_for:
+    - "linear hero's journey"
+    - "high-speed action-driven plots"
+    - "stories with a single, objective protagonist"
+  target_lengths:
+    - "short film"
+    - "feature film"
+    - "limited series"
+  core_principle: "The truth is not a single point, but the intersection of multiple, conflicting, and biased perceptions."
+  primary_story_unit: "The Perspective (The Lens)"
+  primary_success_metric: "The degree of tension created by the contradictions between accounts and the impact of the final revelation."
+
+framework_overview:
+  summary: "A structural method where a central event is recounted through multiple, often conflicting, viewpoints. The narrative power comes from the gaps, lies, and biases present in each account."
+  what_this_uncover_helps_create:
+    - "A complex web of subjectivity"
+    - "Deeply layered character motivations"
+    - "A mystery that is solved through interpretation rather than just clues"
+  what_it_prioritizes:
+    - "Contradiction"
+    - "Unreliable narration"
+    - "Subjective truth"
+    - "Character bias"
+  what_it_deemphasizes:
+    - "Linear chronological progression"
+    - "Objective, omniscient narration"
+    - "Single-perspective character growth"
+
+use_when:
+  - "The 'truth' of the story is more important than the 'sequence' of the story."
+  - "You want to explore how different characters justify their actions."
+  - "The central event is too large or too mysterious to be seen from one angle."
+
+avoid_when:
+  - "The plot relies on a single, clear-cut hero's progression."
+  - "The mystery can be solved by a single piece of physical evidence alone."
+  - "The audience needs a consistent, reliable emotional anchor to follow the plot."
+
+core_principles:
+  - "The Incident is the anchor; every perspective must orbit it."
+  - "No narrator is entirely neutral; every account is shaped by self-interest, trauma, or ego."
+  - "Contradiction is the engine; if two accounts agree perfectly, the methodology is failing."
+  - "The 'Truth' is often found in the overlap or the silence between accounts."
+
+workflow:
+  - step: 1
+    name: "Define the Anchor Event"
+    goal: "Establish the central, unchangeable occurrence."
+    instructions:
+      - "Identify the pivotal event (the crime, the accident, the meeting)."
+      - "Determine what 'objective' facts are indisputable (e.g., 'A man died')."
+    output: "The Incident Summary"
+  - step: 2
+    name: "Identify the Lenses"
+    goal: "Select the characters whose perspectives will reconstruct the event."
+    instructions:
+      - "Choose characters with conflicting interests or social roles."
+      - "Ensure each character has a reason to lie or misremember."
+    output: "List of Narrators"
+  - step: 3
+    name: "Map the Contradictions"
+    goal: "Create the friction between accounts."
+    instructions:
+      - "For each narrator, decide what they emphasize and what they omit."
+      - "Identify the 'clash points' where two stories cannot both be true."
+    output: "Contradiction Matrix"
+  - step: 4
+    name: "Draft the Perspectives"
+    goal: "Build the individual narrative sequences."
+    instructions:
+      - "Write each 'account' as its own mini-story/sequence."
+    output: "Segmented Narrative Outline"
+
+story_inputs:
+  premise: "<The core concept of the mystery/event>"
+  logline: "<The central conflict involving the event and the search for truth>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Noir/Mystery>"
+  tone: "<e.g., Cynical, Fragmented, Haunting>"
+  target_length: "<e.g., 110 pages>"
+  audience: "<e.g., Adult/Mature>"
+  rating: "<e.g., R>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  the_anchor_event:
+    description: "The objective core of the story."
+    indisputable_facts: []
+    the_physical_setting: "<Where did it happen?>"
+    the_timeline_window: "<The specific duration of the event>"
+    the_consequence: "<The aftermath that forces the investigation>"
+    the_catalyst_for_investigation: "<What forces the perspectives to be revealed?>"
+    the_unalterable_residue: "<The one piece of evidence that cannot be disputed?>"
+  the_narrative_lenses:
+    description: "The collection of viewpoints used to reconstruct the event."
+    total_perspectives: 0
+    perspectives_list: []
+    lens_reliability_index: "<Scale of 1-10: 1 being completely unreliable, 10 being objective>"
+    lens_visual_signature: "<Specific color or lighting motif for this lens>"
+    lens_narrative_agenda: "<What is this character trying to achieve with their version?>"
+  the_contradiction_matrix:
+    description: "The mapping of where stories diverge."
+    points_of_agreement: []
+    points_of_conflict: []
+    the_unseen_element: "<The detail that no one mentions, but is crucial>"
+    the_clash_intensity: "<How much does this contradiction disrupt the established truth?>"
+    the_truth_gap: "<The space between the two most conflicting accounts>"
+
+beats_or_units:
+  - id: "perspective_alpha"
+    name: "The Primary/Surface Account"
+    order: 1
+    purpose: "To establish the 'official' or most widely accepted version of events."
+    approximate_position: "Act 1 / Opening"
+    writer_prompt: "<How does this character want the world to see them?>"
+    story_function: "Establates the status quo and the initial mystery."
+    visual_function: "<Standard lighting, clear composition, 'heroic' or 'victim' framing>"
+    emotional_function: "<Empathy, stability, or surface-level intrigue>"
+    required_decisions:
+      - "What is their specific lie?"
+      - "What is their specific omission?"
+    fields_to_complete:
+      narrator_name: ""
+      intended_impression: ""
+      omitted_truth: ""
+      visual_style: ""
+    diagnostic_questions:
+      - "Is this account too easy to believe?"
+      - "Does this account set up the first major contradiction?"
+    completion_criteria:
+      - "The account is presented as a complete, albeit biased, narrative."
+    common_failure_modes:
+      - "Making the narrator too obviously lying from the first frame."
+
+  - id: "perspective_beta"
+    name: "The Subversive/Alternative Account"
+    order: 2
+    purpose: "To introduce the first major crack in the established narrative."
+    approximate_position: "Act 2"
+    writer_prompt: "<What does this character see that the first character missed or ignored?>"
+    story_function: "Destabilizes the audience's understanding of the event."
+    visual_function: "<Shift in color palette, more handheld/unlagged camera, or tighter/claustrophobic framing>"
+    emotional_function: "<Doubt, suspicion, or realization>"
+    required_decisions:
+      - "Which specific detail from Account 1 is proven false here?"
+    fields_to_complete:
+      narrator_name: ""
+      the_clash_point: "<Which part of Account 1 does this contradict?>"
+      hidden_agenda: ""
+    diagnostic_questions:
+      - "Does this perspective introduce new information or just repeat the old?"
+      - "Does this change the audience's emotional alignment?"
+    completion_criteria:
+      - "The audience no longer trusts the first account."
+    common_failure_modes:
+      - "Introducing a perspective that is just 'the opposite' without adding complexity."
+
+  - id: "perspective_omega"
+    name: "The Revelation/Synthesis Account"
+    order: 3
+    purpose: "To present the most difficult, often most human, or most devastating truth."
+    approximate_position: "Act 3 / Climax"
+    writer_prompt: "<What is the truth that is too painful or too complex for the others to admit?>"
+    story_to_function: "Provides the emotional or philosophical resolution/conclusion."
+
+    visual_function: "<The 'true' lighting—perhaps raw, unadorned, or starkly different from the stylized previous accounts>"
+    emotional_function: "<Catharsis, horror, or profound ambiguity>"
+    required_decisions:
+      - "How does this account reconcile (or permanently break) the previous accounts?"
+    fields_to_complete:
+      narrator_name: ""
+      the_final_truth: ""
+      the_reconciliation: "<How does this explain the previous lies?>"
+    diagnostic_questions:
+      - "Does this account feel earned?"
+      - "Does this reveal the 'why' behind the 'what'?"
+    completion_criteria:
+      - "The event is fully understood, even if the truth is tragic."
+    common_failure_modes:
+      - "Providing a 'deus ex machina' truth that wasn't hinted at in previous perspectives."
+
+character_design:
+  methodology_role: "Each character is a filter/lens, not just a person."
+  characters:
+    - name: ""
+      role_in_event: ""
+      narrative_bias: "<What is their prejudice or skewed perception?>"
+      self_intrest: "<What do they gain by telling the story this way?>"
+      blind_spot: "<What are they physically or emotionally incapable of seeing?>"
+      reliability_rating: "<1-10>"
+
+world_design:
+  methodology_role: "The setting must act as the 'stage' where all versions of the event occurred."
+  fields:
+    the_crime_scene_as_character: "<How does the physical space change depending on who is looking at it?>"
+    atmospheric_consistency: "<What elements remain constant across all perspectives?>"
+    sensory_anchors:
+      - "Sound"
+      - "Smell"
+      - "Weather"
+
+theme_design:
+  methodology_role: "The tension between different 'truths'."
+  fields:
+    central_philosophical_tension: "<e.g., Subjectivity vs. Objectivity>"
+    the_cost_of_truth: "<What is lost when the lies are stripped away?>"
+    the_nature_of_memory: "<How much of the story is about the event vs. the remembering?>"
+
+visual_storytelling:
+  methodology_role: "Using visual language to signal which 'lens' the audience is currently looking through."
+  image_system:
+    color_coding_per_perspective:
+      - perspective: ""
+        palette: ""
+        mood: ""
+    cinematography_shifts:
+      - perspective: ""
+        camera_movement: ""
+        framing_style: ""
+  visual_rules:
+    - "Use specific motifs to represent the 'indisputable facts'."
+    - "Use visual distortion (blur, shadow, overexposure) to represent 'unreliable' segments."
+  recurring_motifs: []
+  final_image: "<An image that captures the ambiguity or the finality of the truth>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must serve one of the perspectives."
+    - "A scene should ideally contain a 'discrepancy'—a detail that contradicts a previous scene."
+  scene_template:
+    scene_id: ""
+    active_perspective: ""
+    event_segment: "<Which part of the incident is being shown?>"
+    the_lie: "<What the character is presenting as truth?>"
+    the_omission: "<What the character is hiding?>"
+    visual_anchor: ""
+    emotional_shift: ""
+  do_rules:
+    - "Ensure every character has a 'moment of truth' that is later contradicted."
+    - "Keep the 'Anchor Event' timeline consistent even if the details are not."
+  avoid_rules:
+    - "Do not allow a character to be 'correct' for the absolutely sake of convenience."
+    - "Avoid introducing a fourth perspective that has no connection to the original conflict."
+
+revision_passes:
+  - name: "The Consistency Check"
+    goal: "Ensure the physical timeline of the event is logically possible."
+    instructions:
+      - "Map all accounts onto a single master timeline."
+    questions:
+      - "Does Character A's version of 2:00 PM physically allow for Character B's version of 2:05 PM?"
+    success_criteria:
+      - "A single, unbroken (though perhaps confusing) timeline exists."
+  - name: "The Bias Audit"
+    goal: "Strengthen the motivation for the lies."
+    instructions:
+      - "Review each narrator's 'Self-Interest' field."
+    questions:
+      - "Is the lie too obvious?"
+      - "Is the character lying for a compelling reason?"
+    success_criteria:
+      - "Every lie is rooted in character survival, ego, or trauma."
+  - name: "The Visual Divergence Pass"
+    goal: "Ensure the medium is utilizing the multi-perspective nature."
+    instructions:
+      - "Check the color and camera movement assignments."
+    questions:
+      - "Can the audience tell which perspective they are in without checking the names?"
+    success_criteria:
+      - "Distinct visual identities for each account."
+  - name: "The Theme/Truth Pass"
+    goal: "Ensure the philosophical weight of the truth is present."
+    instructions:
+      - "Analyze the gap between the 'Surface Account' and the 'Revelation Account'."
+    questions:
+      - "Does the final truth resonate with the central philosophical tension?"
+    success_criteria:
+      - "The revelation provides a profound shift in the story's meaning."
+  - name: "The Perspective Alignment Pass"
+    goal: "Ensure all lenses are orbiting the same central event."
+    instructions:
+      - "Verify that no perspective drifts into a separate, unrelated plot."
+    questions:
+      - "Does every character's account touch the 'Anchor Event'?"
+    success_criteria:
+      - "The central event remains the undisputed gravity of the narrative."
+
+validation_checklist:
+  - "Does the central event have enough ambiguity to support multiple versions?"
+  - "Is there a clear 'contradiction' between at least two major accounts?"
+  - "Does each perspective offer a unique piece of the puzzle?"
+  - "Does the final perspective provide a sense of resolution (even if it is a tragic one)?"
+  - "Is the 'Truth' or 'Synthesis' more profound than the individual lies?"
+  - "Can the audience distinguish between perspectives visually?"
+  - "Is the 'unseen element' impactful to the final revelation?"
+  - "Does the timeline of the 'Anchor Event' remain physically possible across all accounts?"
+  - "Is every character's lie motivated by a clear self-interest or trauma?"
+  - "Does the 'Contradiction Matrix' contain at least one high-intensity clash?"
+  - "Is the 'indisputable fact' clearly established in the opening?"
+  - "Does the visual style of the 'Revelation Account' differ significantly from the 'Surface Account'?"
+
+failure_modes:
+  - failure_mode: "The Redundant Perspective"
+    symptom: "A character's account adds no new information or conflict."
+    likely_cause: "The character lacks a unique bias or agenda."
+    fix: "Introduce a new conflict point or remove the character."
+  - failure_mode: "The Confusion Trap"
+    symptom: "The audience loses track of which version of the event they are watching."
+    likely_cause: "Lack of distinct visual or narrative markers for each perspective."
+    fix: "Assign specific visual motifs or color palettes to each narrator."
+  - failure_mode: "The Trivial Truth"
+    symptom: "The 'revelation' is a minor detail that doesn't change the emotional weight."
+    likely_cause: "The central event was too simple or the stakes were too low."
+    fix: "Raise the stakes of the 'Anchor Event'."
+
+adaptation_notes:
+  feature_film: ["Focus on 3-4 heavy-hitting perspectives."]
+  short_film: ["Limit to 2 perspectives to maintain impact within time."]
+  tv_episode: ["Use one episode to explore one specific perspective of a larger series-wide event."]
+  tv_pilot: ["Use the multi-perspective structure to introduce the ensemble cast's relationship to a central mystery."]
+  anime: ["Utilize extreme stylistic shifts (e.g., changing art styles) to denote different perspectives."]
+  adult_animation: ["Use visceral, hyper-stylized visual distortions to represent psychological trauma in accounts."]
+  anthology: ["Each episode is a different 'Lens' on the same historical event."]
+  game_cinematic: ["Allow the player's actions to determine which 'truth' becomes the canon version."]
+
+yaml_usage_notes:
+  how_to_use: ["Start with the 'Anchor Event' and 'Story Inputs' before moving to 'Beats'."]
+  recommended_population_order: ["Anchor Event, Narrators, Contradictions, Perspectives, Visuals"]
+  minimum_requirements: ["At least 3 perspectives for maximum impact."]

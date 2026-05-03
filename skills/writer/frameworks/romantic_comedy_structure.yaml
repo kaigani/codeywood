@@ -1,0 +1,357 @@
+metadata:
+  framework_name: "Romantic Comedy Structure Template"
+  methodology_name: "Romantic Comedy Structure"
+  methodology_family: "Genre-Specific Beat Sheet"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "tv episode"
+    - "web series"
+    - "romance novels"
+  best_for:
+    - "character-driven comedy"
+    - "high-concept tropes (enemies-to-lovers, fake dating, etc.)"
+    - "ensemble romantic pieces"
+  not_ideal_for:
+    - "tragedies"
+    - "action-thrillers"
+    - "horror"
+  target_lengths:
+    - "90-minute feature"
+    - "22-minute episode"
+  core_principle: "The movement from romantic friction/impossibility to emotional vulnerability and eventual union."
+  primary_story_unit: "The Beat of Connection/Conflict"
+  primary_success_metric: "Emotional payoff and the resolution of the central romantic obstacle."
+
+framework_overview:
+  summary: "A structural guide designed to navigate the specific emotional beats of a romantic comedy, focusing on the chemistry, the obstacle, and the resolution."
+  what_this_framework_helps_create:
+    - "A clear trajectory of romantic tension"
+    - "A functional 'Meet-Cute'"
+    - "A high-stakes 'Crisis' that forces character growth"
+    - "A satisfying 'Grand Gesture'"
+  what_it_prioritizes:
+    - "Character chemistry"
+    - "Thematic resonance of love vs. obstacle"
+    - "Comedic timing and rhythm"
+  what_it_deemphasizes:
+    - "Complex external world-building"
+    - "Secondary plot-driven action"
+
+use_when:
+  - "The story's primary engine is the relationship between two (or more) leads."
+  - "The conflict is driven by character flaws or social/situational barriers."
+  - "The desired tone is optimistic, humorous, or heartwarming."
+
+avoid_when:
+  - "The plot relies on external physical threats (e.g., a war or a heist) rather than relational ones."
+  - "The ending is intended to be purely nihilistic or tragic."
+
+core_principles:
+  - "Chemistry is the engine; conflict is the fuel."
+  - "The 'Obstacle' must be significant enough to justify the separation."
+  - "Characters must change (internally) to be able to accept the partner."
+  - "The resolution must feel earned through a choice, not just a coincidence."
+
+workflow:
+  - step: 1
+    name: "The Setup & Trope Identification"
+    goal: "Define the romantic engine."
+    instructions:
+      - "Identify your central trope (e.g., Enemies to Lovers, Forced Proximity)."
+      - "Define the 'Internal Wound' of both leads."
+    output: "Core Character Dynamics"
+  - step: 2
+    name: "The Collision (Meet-Cute)"
+    goal: "Establish the initial friction/spark."
+    instructions:
+      - "Design a high-impact first encounter."
+    output: "The Meet-Cute Beat"
+  - step: 3
+    name: "The Escalation (Fun & Games)"
+    goal: "Build the connection through shared obstacles."
+    instructions:
+      - "Map out the 'forced' interactions."
+    output: "The Complication Sequence"
+  - step: 4
+    name: "The Breaking Point (Crisis)"
+    goal: "Force the characters to face their fear of intimacy."
+    instructions:
+      - "Trigger the 'Big Misunderstanding' or 'External Obstacle' reveal."
+    output: "The Crisis Beat"
+  - step: 5
+    name: "The Resolution (Grand Gesture)"
+    goal: "Achieve union through character growth."
+    instructions:
+      - "Design a moment where a character overcomes their 'Wound' to win the other."
+    output: "The Resolution"
+
+story_inputs:
+  premise: "<The core 'what if' of the romance>"
+  logline: "<Character A meets Character B, but [Obstacle] prevents them from being together, until [Event/Action] happens.>"
+  medium: "<e.g., Feature Film>"
+  genre: "Romantic Comedy"
+  tone: "<e.g., Witty, Slapstick, Sweet, Cynical, Screwball>"
+  target_length: "<e.g., 100 pages>"
+  audience: "<e.g., Young Adult, Adult, Rom-Com enthusiasts>"
+  rating: "<e.g., PG-13>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: ["<e.g., When Harry Met Sally, 10 Things I Hate About You>"]
+  must_include: ["<e.g., A rainy scene, a wedding, a public apology>"]
+  must_avoid: ["<e.g., Cheating, excessive violence, unresolvable trauma>]"]
+
+methodology_structure:
+  act_one_logic:
+    focus: "Establishing the Void and the Spark"
+    decision_drivers:
+      - "Trope selection"
+      - "Internal Wound definition"
+      - "Initial friction type"
+    structural_goal: "Establish the status quo and disrupt it via the Meet-Cute."
+    tension_type: "Friction/Annoyance"
+  act_two_logic:
+    focus: "The Escalation of Intimacy and the Midpoint Shift"
+    decision_drivers:
+      - "Proximity mechanic"
+      - "Thematic complication"
+      - "The realization moment"
+    structural_goal: "Build connection through shared obstacles, then break it via the Crisis."
+    tension_type: "Intimacy/Vulnerability"
+  act_three_logic:
+    focus: "The Resolution of the Wound and the Grand Gesture"
+    decision_drivers:
+      - "The Grand Gesture design"
+      - "Thematic resolution"
+      - "The final image"
+    structural_goal: "Overcome the internal obstacle to achieve union."
+    tension_type: "Catharsis/Triumph"
+
+beats_or_units:
+  - id: "setup"
+    name: "The Status Quo & The Void"
+    order: 1
+    purpose: "Show the characters' lives as they are—incomplete and lonely."
+    approximate_position: "Act 1"
+    writer_prompt: "What is missing from their lives? What is their 'romantic' defense mechanism?"
+    story_function: "Establish the baseline before the disruption."
+    visual_function: "Show characters in solitary or 'safe' environments."
+    emotional_function: "Empathy for their loneliness or isolation."
+    required_decisions:
+      - "What is the protagonist's 'Romantic Wound'?"
+      - "What is the protagonist's 'External Shield'?"
+    fields_to_complete:
+      protagonist_void: "<What is missing?>"
+      protagonist_shield: "<How do they protect themselves from love?>"
+    diagnostic_questions:
+      - "Do we understand why they are afraid of/unprepared for love?"
+    completion_criteria:
+      - "The audience understands the protagonist's emotional deficit."
+    common_failure_modes:
+      - "Making the character too perfect (no room for growth)."
+      - "Making the character too unlikable (no empathy)."
+
+  - id: "meet_cute"
+    name: "The Meet-Cute / The Collision"
+    order: 2
+    purpose: "Introduce the romantic interest through a memorable, high-friction event."
+    approximate_position: "Early Act 1"
+    writer_prompt: "How do they clash? How is the 'spark' (or the 'annoyance') immediate?"
+    story_function: "The inciting incident of the relationship."
+    visual_function: "High energy, physical comedy, or intense eye contact."
+    emotional_function: "Surprise, irritation, or instant attraction."
+    required_decisions:
+      - "Is the first impression positive, negative, or polarizing?"
+    fields_to_complete:
+      the_collision_event: "<Describe the event>"
+      initial_impression_A: "<How A sees B>"
+      initial_impression_B: "<How B sees A>"
+    diagnostic_questions:
+      - "Does this meeting force them into each other's orbits?"
+    completion_criteria:
+      - "The characters are now 'tethered' by circumstance."
+    common_failure_modes:
+      - "The meeting is too mundane/forgettable."
+
+  - id: "fun_and_games"
+    name: "The Complication (The Fun & Games)"
+    order: 3
+    purpose: "The characters are forced into proximity, leading to developing feelings and mounting tension."
+    approximate_position: "Act 2A"
+    writer_prompt: "What external circumstances (a job, a fake date, a road trip) keep them together?"
+    story_function: "Building the 'Chemistry' and testing the 'Shields'."
+    visual_function: "Increasingly close physical proximity; shared intimate spaces."
+    emotional_function: "Joy, confusion, mounting tension, 'the butterflies'."
+    required_decisions:
+      - "What is the 'Proximity Mechanic'?"
+    fields_to_complete:
+      proximity_mechanic: "<Why can't they leave each other?>"
+      the_first_vulnerability: "<When do they first drop their guard?>"
+      the_rising_tension: "<What small moment signals they are falling?>"
+    diagnostic_questions:
+      - "Is the tension escalating, or are they just hanging out?"
+    completion_criteria:
+      - "The audience believes they could be a couple if only [Obstacle] didn't exist."
+    common_failure_modes:
+      - "The 'Fun & Games' lacks stakes; it's just a series of dates."
+
+  - id: "midpoint_shift"
+    name: "The Midpoint Shift (The Realization)"
+    order: 4
+    purpose: "The relationship shifts from 'fun/forced' to 'real/consequential'."
+    approximate_position: "Midpoint"
+    writer_prompt: "What moment makes them realize: 'Oh no, I actually love this person'?"
+    story_function: "Raising the stakes from 'attraction' to 'vulnerability'."
+    visual_function: "A shift in lighting or tone; a moment of intense, quiet intimacy."
+    emotional_function: "Terror, realization, heightened stakes."
+    required_decisions:
+      - "What is the 'Point of No Return' for their feelings?"
+    fields_to_complete:
+      the_realization_moment: "<Describe the beat>"
+      the_new_danger: "<Why is loving them now more dangerous than before?>"
+    diagnostic_questions:
+      - "Does this beat make the eventual breakup more painful?"
+    completion_criteria:
+      - "The characters are now emotionally 'all in', making the coming crisis devastating."
+    common_failure_modes:
+      - "The shift is too subtle; the characters don't feel the weight of the change."
+
+  - id: "crisis"
+    name: "The Crisis (The Great Misunderstanding/Breakup)"
+    order: 5
+    approximate_position: "End of Act 2"
+    purpose: "The internal wound and external obstacle collide, destroying the relationship."
+    writer_prompt: "How does their greatest fear (e.g., being betrayed, being abandoned) manifest here?"
+    story_function: "The 'All is Lost' moment for the romance."
+    visual_function: "Isolation, rain, distance, physical separation."
+    emotional_function: "Grief, regret, loneliness, heartbreak."
+    required_decisions:
+      - "Is the breakup caused by a Lie, a Secret, or a Choice?"
+    fields_to_complete:
+      the_catalyst: "<The event that breaks them>"
+      the_internal_failure: "<How the protagonist's flaw caused this>"
+    diagnostic_questions:
+      - "Is the breakup avoidable if they had just communicated better?"
+    completion_criteria:
+      - "The characters are back to their 'Status Quo' but with the added weight of loss."
+    common_failure_modes:
+      - "The breakup feels unearned or purely accidental (the 'silly mistake' trope)."
+
+  - id: "grand_gesture"
+    name: "The Grand Gesture & Resolution"
+    order: 6
+    approximate_position: "Act 3"
+    purpose: "A character overcomes their 'Wound' to prove their love and win the other back."
+    writer_prompt: "What is the most 'out of character' or 'vulnerable' thing they can do to show they've changed?"
+    story_function: "The emotional climax and resolution of the theme."
+    visual_function: "Public, high-visibility, or deeply symbolic imagery."
+    emotional_function: "Catharsis, relief, triumph, joy."
+    required_decisions:
+      - "How does the gesture prove the 'Wound' is healed?"
+    fields_to_complete:
+      the_gesture: "<Describe the action>"
+      the_proof_of_change: "<How this action contradicts their old 'Shield'?>"
+      the_final_image: "<The image of them together>"
+    diagnostic_questions:
+      - "Does the gesture require the character to sacrifice something (pride, safety, etc.)?"
+    completion_criteria:
+      - "The characters are reunited and the 'Void' from Act 1 is filled."
+    common_failure_modes:
+      - "The resolution is too easy; no sacrifice was made."
+
+character_design:
+  methodology_role: "The Drivers of Tension"
+  characters:
+    - name: "Protagonist"
+      internal_wound: "<What fear prevents them from love?>"
+      external_shield: "<How do they act to keep people away?>"
+      romantic_goal: "<What do they think they want in a partner?>"
+      actual_need: "<What do they actually need to learn to be happy?>"
+    - name: "Love Interest"
+      internal_wound: "<What fear prevents them from love?>"
+      external_shield: "<How do they act to keep people away?>"
+      romantic_goal: "<What do they think they want in a partner?>"
+      actual_need: "<What do they actually need to learn to be happy?>"
+
+world_design:
+  methodology_role: "The Romantic Backdrop"
+  atmosphere_requirements:
+    - "Cozy or high-energy enough to support the tone"
+    - "A space that facilitates forced proximity"
+  key_locations:
+    - "The 'Safe' Space (Character A's home/office)"
+    - "The 'Shared' Space (The cafe/park/shared project)"
+    - "The 'Public' Space (Where the Grand Gesture happens)"
+  environmental_conflict: "<How does the setting itself impede or facilitate the romance?>"
+
+theme_design:
+  methodology_role: "The Argument"
+  central_argument: "<e.g., Love is worth the risk of heartbreak vs. Safety is better than vulnerability>"
+  thematic_question: "<How do you find trust in a world that can hurt you?>"
+  thematic_expression: "<How is this argument visible in the characters' choices?>"
+
+visual_storytelling:
+  methodology_role: "The Language of Attraction"
+  image_system:
+    proximity_progression:
+      - "Act 1: Physical distance/Barriers"
+      - "Act 2: Uncomfortable/Forced closeness"
+      - "Act 3: Intimate/Natural closeness"
+    eye_contact_evolution: "<From avoidance to intense/vulnerable stares>"
+    color_palette_shift: "<From cold/isolated to warm/shared tones>"
+  recurring_motifs: ["<e.g., A shared song, a specific flower, a recurring joke>"]
+  final_image: "<The visual encapsulation of the union>"
+
+scene_generation_rules:
+  dialogue_rules:
+    - "Use banter to mask vulnerability."
+    - "Subtext should contradict the spoken word during tension."
+  pacing_rules:
+    - "Increase physical proximity as the story progresses."
+    - "Use comedic beats to break heavy emotional moments."
+  action_rules:
+    - "Physical comedy should stem from character traits, not random slapstick."
+
+revision_passes:
+  - name: "The Chemistry Check"
+    goal: "Ensure the spark is palpable."
+    instructions:
+      - "Read the Meet-Cute and the Midpoint alone."
+    questions:
+      - "Is there enough friction to sustain interest?"
+      - "Is the attraction earned or just stated in dialogue?"
+    success_criteria: "The reader 'feels' the tension without being told it exists."
+  - name: "The Obstacle Audit"
+    goal: "Ensure the breakup is devastating."
+    instructions:
+      - "Analyze the Crisis beat against the Internal Wound."
+    questions:
+      - "Is the breakup a direct result of the character's flaw?"
+      - "Is the obstacle too easy to fix with a simple conversation?"
+    success_criteria: "The breakup feels like an inevitable tragedy of character."
+  - name: "The Structure Pass"
+    goal: "Verify the narrative arc integrity."
+    instructions:
+      - "Check the transition between Act 1, 2, and 3."
+    questions:
+      - "Does the Midpoint shift the stakes significantly?"
+      - "Is the Grand Gesture a logical climax to the setup?"
+    success_criteria: "The story moves with clear, escalating momentum."
+  - name: "The Character Pass"
+    goal: "Ensure character growth is visible."
+    instructions:
+      - "Compare the character's 'Shield' in Act 1 to their 'Vulnerability' in Act 3."
+    questions:
+      - "Is the character's internal change evident?"
+      - "Does the resolution require them to abandon their old defense mechanism?"
+    success_criteria: "The character's evolution is the primary driver of the resolution."
+  - name: "The Theme Pass"
+    goal: "Ensure the thematic argument is clear and consistent."
+    instructions:
+      - "Review how the central theme is expressed through characters and plot."
+    questions:
+      - "Does each scene contribute to the thematic argument?"
+      - "Is the thematic question answered by the end of the story?"
+    success_criteria: "The thematic argument is cohesive and resonant throughout the narrative."

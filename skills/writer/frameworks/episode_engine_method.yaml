@@ -1,0 +1,389 @@
+metadata:
+  framework_name: "Episode Engine Method Template"
+  methodology_name: "Episode Engine Method"
+  methodology_family: "Episodic/Series Development"
+  version: "1.0"
+  created_for: "series/episodic story development"
+  suitable_media:
+    - "TV pilot"
+    - "TV episode"
+    - "web series"
+    - "anime"
+    - "anthology"
+  best_for:
+    - "Procedurals"
+    - "Sitcoms"
+    - "Character-driven series with repeatable conflict"
+    - "High-concept episodic sci-fi/fantasy"
+  not_ideal_for:
+    - "Standalone feature films"
+    - "Single-arc limited series (without engine focus)"
+    - "Purely experimental non-narrative shorts"
+  target_lengths:
+    - "22-minute episode"
+    - "44-minute episode"
+    - "Short-form web series"
+  core_principle: "The creation of a repeatable, sustainable conflict loop (The Engine) that generates infinite narrative potential through character friction and environmental pressure."
+  primary_story_unit: "The Episodic Loop"
+  primary_success_metric: "Sustainability (Can this engine generate 50+ episodes without exhausting its primary conflict?)"
+
+framework_overview:
+  summary: "The Episode Engine Method focuses on building the 'Engine'—the underlying mechanism of conflict, setting, and character dynamics that makes a series repeatable. It prioritizes the structural loop of an individual episode and the long-term 'friction' between characters that drives the series forward."
+  what_this_framework_helps_create:
+    - "A sustainable series premise"
+    - "A repeatable episodic structure"
+    - "Character dynamics that naturally spark conflict"
+    - "A clear distinction between episodic (A-plot) and serialized (B-plot) arcs"
+  what_it_prioritizes:
+    - "The Engine (The repeatable conflict)"
+    - "Character Friction (The reactive force)"
+    - "The Reset/Evolution (The end-of-episode state)"
+  what_it_deemphasizes:
+    - "One-off plot twists that break the world"
+    - "Resolving all character arcs in a single episode"
+
+use_when:
+  - "Developing a TV pilot"
+  - "Expanding a single episode idea into a series bible"
+  - "Creating procedural or semi-procedural narratives"
+  - "Building worlds where the setting itself creates the drama"
+
+avoid_when:
+  - "Writing a self-contained tragedy"
+  - "Developing a 'limited series' meant to end strictly with one resolution"
+  - "When the story relies on a single, unrepeatable mystery"
+
+core_principles:
+  - "The Engine: The fundamental conflict that must exist for the show to function."
+  - "The Friction: Characters must be placed in positions where their personalities clash with the Engine."
+
+  - "The Loop: Every episode follows a predictable-but-surprising cycle of disruption and resolution."
+  - "The Status Quo: The baseline state of the world that is disrupted by the episode but must remain stable enough for the next episode."
+  - "The Evolution: While the Engine resets, the characters or their relationships must accumulate 'scar tissue' (long-term change)."
+
+workflow:
+  - step: 1
+    name: "Engine Construction"
+    goal: "Define the repeatable conflict."
+    instructions:
+      - "Identify the primary source of tension (e.g., Law vs. Chaos, Hunger vs. Scarcity, Investigation vs. Deception)."
+      - "Define the 'Arena' where this conflict plays out."
+    output: "The Engine Definition"
+  - step: 2
+    name: "Character Reactants"
+    goal: "Design characters who are naturally incompatible with the Engine or each other."
+    instructions:
+      - "Assign each character a 'Role in the Engine' (e.g., The Catalyst, The Obstacle, The Anchor)."
+    output: "Character Friction Map"
+  - step: 3
+    name: "The Episodic Loop Template"
+    goal: "Create the structural beats for a single episode."
+    instructions:
+      - "Map the progression from Status Quo to Disruption to Resolution/Reset."
+    output: "Beat Sheet Template"
+  - step: 4
+    name: "Pilot/Series Integration"
+    goal: "Apply the Engine to a specific starting point."
+    instructions:
+      - "Draft the pilot using the established engine to ensure the 'machine' is working."
+    output: "Pilot Outline"
+
+story_inputs:
+  series_premise: "<The high-level concept of the show>"
+  engine_definition:
+    primary_conflict_type: "<e.g., Procedural, Relational, Survival, Mystery>"
+    the_catalyst: "<What event or presence triggers the conflict in every episode?>"
+    the_unresolved_tension: "<What element of the engine can never be fully solved?>"
+  medium: "<e.g. TV, Web, Anime>"
+  genre: "<e.g. Sci-Fi, Sitcom, Noir>"
+  tone: "<e.g. Cynical, Whimsical, High-Stakes>"
+  target_length: "<e.g. 30m, 60m>"
+  audience: "<e.g. Adult, YA, Family>"
+  rating: "<e.g. TV-MA, PG>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  engine_mechanics:
+    conflict_trigger: "<The recurring event that initiates the episode loop.>"
+    environmental_pressure: "<The external force or setting rule that makes conflict inevitable.>"
+    resource_scarcity: "<The limiting factor (time, money, information, oxygen) that drives tension.>"
+    consequence_of_failure: "<The stakes if the engine's conflict is not resolved.>"
+  friction_matrix:
+    character_a_vs_engine: "<How Character A's nature clashes with the show's primary conflict.>"
+    character_b_vs_engine: "<How Character B's nature clashes with the show's primary conflict.>"
+    inter_character_friction: "<The specific personality trait in Character A that triggers a reaction in Character B.>"
+    power_imbalance: "<The hierarchy or social tension between the main reactants.>"
+  plot_layers:
+    episodic_a_plot: "<The self-contained problem of the week.>"
+    serialized_b_plot: "<The long-term arc that progresses through the season.>"
+    the_c_plot_flavor: "<The recurring thematic or comedic element.>"
+    resolution_type: "<How the episode ends (e.g., partial victory, stalemate, or reset).>"
+
+beats_or_units:
+  - id: "status_quo"
+    name: "The Baseline"
+    order: 1
+    purpose: "Establish the current state of the characters and the world."
+    approximate_position: "Opening minutes"
+    writer_prompt: "<Show the characters in their 'normal' state before the disruption. What is the routine?>"
+    story_function: "Establishes what is at stake when the disruption occurs."
+    visual_function: "<Use stable, rhythmic, or repetitive imagery to denote routine.>"
+    emotional_function: "<Comfort, boredom, or underlying tension.>"
+    required_decisions:
+      - "What is the 'normal' for this character?"
+      - "What is the current state of the B-plot?"
+    fields_to_complete:
+      current_routine: "<write here>"
+      visible_stability: "<write here>"
+    diagnostic_questions:
+      - "Is the baseline clear enough that we feel the disruption later?"
+    completion_criteria:
+      - "The audience understands the characters' starting point."
+    common_failure_modes:
+      - "Starting 'in media res' without establishing the baseline, making the disruption feel meaningless."
+
+  - id: "the_disruption"
+    name: "The Engine Ignition"
+    order: 2
+    purpose: "Introduce the episode's specific conflict/problem."
+    approximate_position: "Inciting Incident"
+    writer_prompt: "<What event forces the characters to engage with the Engine today?>"
+    story_function: "Triggers the A-plot and disrupts the Status Quo."
+    visual_function: "<A sudden change in lighting, sound, or composition.>"
+    emotional_function: "<Shock, curiosity, or dread.>"
+    required_decisions:
+      - "How does this disruption specifically activate the Engine?"
+    fields_to_complete:
+      the_event: "<write here>"
+      the_impact_on_characters: "<write here>"
+    diagnostic_questions:
+      - "Does this event necessitate action, or could the characters just ignore it?"
+    completion_criteria:
+      - "The A-plot is clearly identified."
+    common_failure_modes:
+      - "The disruption is too small to drive a full episode's worth of action."
+
+  - id: "the_escalation"
+    name: "The Friction Cycle"
+    order: 3
+    purpose: "Increase the pressure through character clashes and complications."
+    approximate_position: "Middle of episode"
+    writer_prompt: "<How do the characters' attempts to solve the problem actually make it worse or more complex?>"
+    story_function: "Uses the 'Friction Matrix' to expand the stakes."
+    visual_function: "<Increasingly chaotic or claustrophobic compositions.>"
+    emotional_function: "<Frustration, mounting tension, or dark comedy.>"
+    required_decisions:
+      - "Which character's flaw is being exploited by the situation?"
+    fields_to_complete:
+      complication_1: "<write here>"
+      complication_2: "<write here>"
+    diagnostic_questions:
+      - "Are the characters making choices, or is the plot just happening to them?"
+    completion_criteria:
+      - "The tension has reached a point where a confrontation is inevitable."
+    common_failure_modes:
+      - "The escalation is purely external (bad luck) rather than internal (character choices)."
+
+  - id: "the_climax"
+    name: "The Engine Peak"
+    order: 4
+    purpose: "The highest point of conflict/friction."
+    approximate_position: "End of Act 3/4"
+    writer_prompt: "<The moment where the character must face the Engine's core difficulty head-on.>"
+    story_function: "Resolves the A-plot tension."
+    visual_function: "<High contrast, dynamic motion, or significant visual payoff.>"
+    emotional_function: "<Catharsis, tragedy, or realization.>"
+    required_decisions:
+      - "Does the resolution come from character growth or character failure?"
+    fields_to_complete:
+      the_confrontation: "<write here>"
+      the_outcome: "<write here>"
+    diagnostic_questions:
+      - "Does the resolution of the A-plot impact the B-plot?"
+    completion_criteria:
+      - "The specific problem of the episode is settled."
+    common_failure_modes:
+      - "The climax is a 'deus ex machina' that ignores the established Engine rules."
+
+  - id: "the_reset"
+    name: "The New Baseline"
+    order: 5
+    purpose: "Return to a state of stability while acknowledging change."
+    approximate_position: "Closing minutes"
+    writer_prompt: "<How has the world/character changed, even if only slightly, after this episode's chaos?>"
+    story_function: "Resets the Status Quo for the next episode while advancing the B-plot."
+    visual_function: "<Mirroring the opening imagery but with a subtle difference.>"
+    emotional_function: "<Resignation, relief, or lingering dread.>"
+    required_decisions:
+      - "What 'scar tissue' is left on the characters?"
+    fields_to_complete:
+      the_new_normal: "<write here>"
+      b_plot_progress: "<write here>"
+    diagnostic_questions:
+      - "Is the world stable enough to allow for a new disruption next week?"
+    completion_criteria:
+      - "The audience feels the episode is 'over' but the series is 'ongoing'."
+    common_failure_modes:
+      - "Resolving too much (ending the series prematurely) or resolving too little (making the episode feel pointless)."
+
+character_design:
+  methodology_role: "Characters as 'Reactants' to the Engine."
+  characters:
+    - name: "<write here>"
+      engine_role: "<e.g., The Investigator, The Disruptor, The Moral Compass, The Wildcard>"
+      primary_friction_point: "<What specific trait makes them clash with the setting or others?>"
+      internal_drive: "<What do they want that the Engine constantly prevents them from having?>"
+      long_term_arc_lag: "<What is the potential for change in their B-plot arc?>"
+
+world_design:
+  methodology_role: "The Arena of the Engine."
+  fields:
+    the_arena: "<The physical or social space where the engine operates.>"
+    the_rules_of_engagement: "<The laws (physical, social, or magical) that make the engine's conflict inevitable.>"
+    the_unreachable_goal: "<A part of the world or a state of being that the characters strive for but the engine prevents.>"
+
+theme_design:
+  methodology_role: "The thematic resonance of the repeated cycle."
+  fields:
+    recurring_thematic_question: "<What question is asked every time the engine ignites?>"
+    thematic_irony: "<How does the engine's very existence mock the characters' desires?>"
+
+visual_storytelling:
+  methodology_role: "Visualizing the cycle."
+  image_system:
+    the_routine_motif: "<Visual cues for the Status Quo.>"
+    the_disruption_motif: "<Visual cues for the Engine Ignition.>"
+    the_scar_tissue_visual: "<How we visually track B-plot progression/character change.>"
+  visual_rules:
+    - "<e.g., Use handheld camera during escalation to increase anxiety.>"
+    - "<e.g., Saturated colors for the 'Normal' vs. Desaturated for the 'Disruption'.>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either fuel the A-plot or advance the B-plot."
+    - "Every scene should feature at least one 'Friction Point' between characters."
+    - "Avoid scenes that only provide information without causing a shift in the 'Engine's' state."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: "<How the power or emotional state shifts?>"
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Use the environment to actively obstruct characters."
+    - "Ensure character dialogue reflects their 'Role in the Engine'."
+  avoid_rules:
+    - "Avoid scenes where characters agree too easily (kills friction)."
+    - "Avoid scenes that resolve a conflict without a cost."
+
+revision_passes:
+  - name: "The Structure Pass"
+    goal: "Verify the integrity of the episodic loop."
+    instructions:
+      - "Check the transition from Status Quo to Disruption."
+      - "Ensure the Reset maintains the series' longevity."
+    questions:
+      - "Does the episode follow the established Engine mechanics?"
+      - "Is the A-plot clearly resolved or reset?"
+    success_criteria:
+      - "The episode structure is recognizable and repeatable."
+  - name: "The Character Pass"
+    goal: "Maximize character-driven drama."
+    instructions:
+      - "Review character interactions in the escalation phase."
+      - "Check if roles in the Friction Matrix are being utilized."
+    questions:
+      - "Are characters being too cooperative?"
+      - "Is the 'Friction Matrix' being utilized?"
+    success_criteria:
+      - "Every major beat is driven by a clash of personalities/values."
+  - name: "The Theme Pass"
+    goal: "Ensure thematic consistency across the episode."
+    instructions:
+      - "Identify the recurring thematic question."
+      - "Check if the episode's resolution answers or complicates that question."
+    questions:
+      - "Does the episode reinforce the series' core thematic irony?"
+    success_criteria:
+      - "The episode's resolution resonates with the series' overarching theme."
+  - name: "The Visual Storytelling Pass"
+    goal: "Align visual motifs with the narrative cycle."
+    instructions:
+      - "Audit the use of lighting and composition motifs."
+      - "Check for visual indicators of 'scar tissue'."
+    questions:
+      - "Are the visual cues for disruption distinct from the baseline?"
+    success_criteria:
+      - "The visual language clearly communicates the Engine's state."
+  - name: "The Engine Sustainability Pass"
+    goal: "Ensure the series isn't running out of steam."
+    instructions:
+      - "Review the Engine definition against the episode's plot."
+      - "Check for potential exhaustion of the primary conflict."
+    questions:
+      - "Is this conflict too specific to one character?"
+      - "Could this conflict happen in a different setting?"
+    success_criteria:
+      - "The Engine feels capable of 50+ episodes."
+
+validation_checklist:
+  - "Does the episode have a clear A-plot disruption?"
+  - "Is the 'Reset' achieved while leaving the 'B-plot' open?"
+  - "Is the character's 'Engine Role' clearly visible in their actions?"
+  - "Does the episode climax through a character choice rather than pure luck?"
+  - "Is the 'Friction Matrix' active in at least two major scenes?"
+  - "Does the visual motif for the 'Status Quo' appear in the opening?"
+  - "Is the 'unresolved tension' of the Engine present in the episode's resolution?"
+  - "Are the environmental pressures of the 'Arena' utilized to obstruct characters?"
+  - "Does the 'scar tissue' of the B-plot advance by at least one measurable step?"
+  - "Is the 'resource scarcity' element clearly driving a character's decision?"
+  - "Does the episode avoid 'deus ex machina' resolutions?"
+  - "Is the 'thematic irony' present in the character's failure or success?"
+
+failure_modes:
+  - failure_mode: "The Exhausted Engine"
+    symptom: "The show feels like it's repeating the same exact plot every week with no variation."
+    likely_cause: "The Engine is too narrow; it lacks 'Expansion' or 'Evolution' mechanics."
+    fix: "Introduce new 'Reactants' (characters) or expand the 'Arena' (world)."
+  - failure_mode: "The Static Cast"
+    symptom: "Characters feel like puppets of the plot rather than drivers of it."
+    likely_cause: "The B-plot/Long-term arc is non-existent."
+    fix: "Implement a 'Scar Tissue' requirement for every episode's resolution."
+  - failure_mode: "The Narrative Drift"
+    symptom: "The episode's plot feels disconnected from the series' core Engine."
+    likely_cause: "The disruption event does not activate the primary conflict mechanics."
+    fix: "Re-align the inciting incident with the established Engine triggers."
+
+adaptation_notes:
+  feature_film: "Not recommended; focus is too much on repetition rather than a single arc."
+  short_film: "Use for 'vignette' style shorts that explore a single moment of an engine."
+  tv_episode: "This is the primary application."
+  tv_pilot: "Focus heavily on establishing the 'Engine' and 'Friction Matrix' clearly."
+  anime: "Excellent for 'Monster of the Week' or 'Battle Shonen' structures."
+  adult_animation: "Use to explore more complex, high-consequence friction in the Engine."
+  anthology: "The 'Engine' becomes the 'Theme' or 'Concept' that binds disparate stories."
+  game_cinematic: "Use to create repeatable dramatic tension in mission-based narratives."
+
+yaml_usage_notes:
+  how_to_use: "Start with the 'Engine' and 'Characters'. Once the machine is built, use the 'Beats' template to design individual episodes."
+  recommended_population_order:
+    - "Engine Definition"
+    - "Character Friction Matrix"
+    - "The Episodic Loop (Beats)"
+    - "The Pilot/Episode Plot"
+  minimum_viable_completion:
+    - "Engine Definition"
+    - "Character Roles"
+    - "One completed Episode Loop"
+  signs_framework_is_ready_for_scene_outline:
+    - "The A-plot and B-plot are clearly differentiated."
+    - "The 'Reset' mechanism is defined."

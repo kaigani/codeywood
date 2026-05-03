@@ -1,0 +1,379 @@
+metadata:
+  framework_name: "Proppian Function Template"
+  methodology_name: "Proppian Function Method"
+  methodology_family: "Structuralism / Morphological Analysis"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "anime"
+    - "game cinematic"
+    - "fantasy/adventure genre"
+  best_for:
+    - "establishing structural integrity"
+    - "building mythic/archetypal journeys"
+    - "defining character roles through action"
+    - "ensuring narrative momentum"
+  not_ideal_for:
+    - "character studies focused on internal monologue"
+    - "slice-of_life without external conflict"
+    - "experimental non-linear narratives that lack causal links"
+  target_lengths:
+    - "any"
+  core_principle: "A story is a fundamental sequence of discrete, irreducible actions (functions) performed by specific character types (spheres of action)."
+  primary_story_unit: "The Function (The action that changes the state of the narrative)"
+  primary_success_metric: "The logical and causal completion of the hero's task through the fulfillment of sequential functions."
+
+framework_overview:
+  summary: "This framework uses Vladimir Propp's morphological analysis to build a story based on what characters *do* rather than who they *are*. It focuses on the sequence of events and the functional roles characters play in the plot."
+  what_this_framework_helps_create:
+    - "A robust, action-driven plot"
+    - "Clear character motivations tied to plot progression"
+    - "A sense of inevitable narrative momentum"
+  what_it_prioritizes:
+    - "Causality"
+    - "Action-Reaction loops"
+    - "Structural milestones"
+  what_it_deemphasizes:
+    - "Internal psychological depth (unless expressed through action)"
+    - "Subplots that do not drive the primary functional sequence"
+
+use_when:
+  - "Writing high-concept adventure, fantasy, or mythic tales."
+  - "When a plot feels 'stagnant' or lacks forward movement."
+  - "When character roles feel interchangeable or purposeless."
+
+avoid_when:
+  - "Writing contemporary realism where 'action' is secondary to 'being'."
+  - "Writing stories where the central conflict is purely internal/psychological."
+
+core_principles:
+  - "Functions are invariant: The action remains the same even if the characters change."
+  - "Characters are defined by their 'Sphere of Action': A character is what they do for the plot."
+  - "Sequence is paramount: The order of functions creates the narrative arc."
+  - "The 'Lack' or 'Misfortune' is the engine of the story."
+
+workflow:
+  - step: 1
+    name: "Identify the Lack"
+    goal: "Define the initial disruption of the status quo."
+    instructions:
+      - "Determine what is missing or what has been violated in the starting state."
+    output: "The Initial Lack/Misfortune"
+  - step: 2
+    name: "Define the Spheres of Action"
+    goal: "Assign characters to functional roles."
+    instructions:
+      - "Identify which characters will act as the Hero, Villain, Donor, etc."
+    output: "Character Role Map"
+  - step: 3
+    name: "Map the Functional Sequence"
+    goal: "Determine the chain of events."
+    instructions:
+      - "Select which of Propp's 31 functions are necessary for this specific story."
+    output: "Functional Plot Outline"
+  - step: 4
+    name: "Establish Causal Links"
+    goal: "Ensure every function is a reaction to a previous one."
+    instructions:
+      - "Verify that 'Function B' happens specifically because 'Function A' occurred."
+    output: "Causal Chain Verification"
+
+story_inputs:
+  premise: "Define the core idea of the disruption and the resulting movement."
+  logline: "Describe the hero's movement from lack to resolution."
+  medium: "The intended format (e.g., feature film, anime)."
+  genre: "The narrative genre (e.g., epic fantasy)."
+  tone: "The emotional atmosphere (e.g., mythic, grim, whimsical)."
+  target_length: "The intended duration or page count."
+  audience: "The target demographic."
+  rating: "The intended age appropriateness."
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  preparatory_phase:
+    functions_to_consider:
+      - function_id: "α (Alpha)"
+        name: "Absentation/Departure"
+        description: "A member of the family leaves the home."
+      - function_id: "β (Beta)"
+        name: "Interdiction/Violation"
+        description: "A rule is set and then broken, creating the 'Lack'."
+    disruption_type: "Identify if the lack is theft, death, or disappearance."
+    rule_violation_severity: "Determine the weight of the broken interdiction."
+    status_quo_stability: "Define how much the initial departure affects the home state."
+    initial_impact_scope: "Determine if the disruption is local or global."
+  agentive_phase:
+    functions_to_consider:
+      - function_id: "γ (Gamma)"
+        name: "Reconnaissance/Information"
+        description: "The villain or hero seeks information about the situation."
+      - function_id: "δ (Delta)"
+        name: "Delivery/The Test"
+        description: "The hero is tested by a Donor to receive a magical agent."
+    hero_engagement_trigger: "What specific event forces the hero to leave the home?"
+    donor_reliability_index: "Is the donor trustworthy or a disguised antagonist?"
+    agent_utility_level: "How essential is the received tool to the final struggle?"
+    initial_obstacle_type: "Identify the first barrier encountered during departure."
+  struggle_phase:
+    functions_to_consider:
+      - function_id: "ε (Epsilon)"
+        name: "The Struggle/Victory"
+        description: "The Hero and Villain engage; the Hero wins."
+      - function_id: "ζ (Zeta)"
+        name: "Liquidation"
+        description: "The initial 'Lack' or 'Misfortune' is resolved."
+    conflict_escalation_rate: "How quickly do the stakes increase during the struggle?"
+    villain_intervention_type: "Does the villain use direct force or manipulation?"
+    climax_pivotal_action: "The single most important function in the struggle."
+    stakes_escalation_factor: "The consequence of failure during the struggle."
+  return_phase:
+    functions_to_consider:
+      - function_id: "η (Eta)"
+        name: "The Return/Recognition"
+        description: "The hero returns, often unrecognized, and is eventually identified."
+    restoration_type: "Is order restored or is a new order established?"
+    recognition_mechanism: "How is the hero's true identity or victory revealed?"
+    new_status_quo_stability: "How permanent is the change brought by the return?"
+    consequence_of_return: "The lasting impact of the liquidation on the hero's world."
+
+beats_or_units:
+  - id: "initial_lack"
+    name: "The Disruption"
+    order: 1
+    purpose: "To create the vacuum that drives the hero's movement."
+    approximate_position: "Opening"
+    writer_prompt: "What has been lost, stolen, or broken in the hero's world?"
+    story_function: "Establishes the 'Lack'."
+    visual_function: "An image of emptiness, destruction, or a broken object."
+    emotional_function: "Instability/Urgency."
+    required_decisions:
+      - "Is the lack internal or external?"
+      - "How does this affect the hero's current status quo?"
+    fields_to_complete:
+      lack_type: "e.g., death, theft, curse, disappearance"
+      initial_state_lag: "Description of the state before the disruption"
+    diagnostic_questions:
+      - "Is the cause of the lack clearly visible?"
+      - "Does this lack necessitate the hero's eventual movement?"
+    completion_criteria:
+      - "The audience understands why the hero cannot stay in the status quo."
+    common_failure_modes:
+      - "The lack is too vague to drive action."
+      - "The hero is not personally affected by the lack."
+
+  - id: "the_donor_encounter"
+    name: "The Test & The Agent"
+    order: 2
+    purpose: "To provide the hero with the tools/knowledge required for the struggle."
+    approximate_position: "Mid-point/Transition"
+    writer_prompt: "Who tests the hero, and what 'magical agent' or information do they receive?"
+    story_function: "Equips the hero for the primary struggle."
+    visual_function: "A moment of transfer: a gift, a secret whispered, a weapon handed over."
+    emotional_function: "Hope/Empowerment/Anxiety."
+    required_decisions:
+      - "What is the price of the information/tool?"
+      - "Is the donor a friend or a disguised antagonist?"
+    fields_to_complete:
+      donor_character: "Identify the character acting as the Donor"
+      the_test: "Describe the trial the hero must pass"
+      the_reward: "Describe the magical agent or information received"
+    diagnostic_questions:
+      - "Does the reward directly enable the hero to face the villain?"
+      - "Is the test earned by the hero's actions?"
+    completion_criteria:
+      - "The hero possesses a new capability or resource."
+    common_failure_modes:
+      - "The hero receives the reward too easily (no tension)."
+      - "The reward is useless in the final struggle."
+
+  - id: "the_struggle_and_resolution"
+    name: "The Climax and Liquidation"
+    order: 3
+    purpose: "To resolve the initial lack through direct confrontation."
+    approximate_position: "Climax"
+    writer_prompt: "How does the hero use the agent to defeat the villain and end the lack?"
+    story_function: "Liquidation of the Lack."
+    visual_function: "A moment of high-stakes action, destruction of the old, or restoration of light."
+    emotional_function: "Catharsis/Resolution."
+    required_decisions:
+      - "Is the victory earned through skill or luck?"
+      - "What is the permanent cost of this victory?"
+    fields_to_complete:
+      climax_action: "The primary physical or functional struggle"
+      resolution_state: "The state of the world after the lack is gone"
+    diagnostic_questions:
+      - "Does the victory directly address the initial lack?"
+      - "Is the villain's defeat functionally necessary?"
+    completion_criteria:
+      - "The initial lack is no longer present."
+    common_failure_modes:
+      - "The victory is too easy."
+      - "The resolution is disconnected from the struggle."
+
+character_design:
+  methodology_role: "Characters are defined by their 'Spheres of Action'."
+  characters:
+    - role: "The Hero"
+      functional_purpose: "What is their primary movement in the plot?"
+      starting_state: "How are they impacted by the initial lack?"
+    - role: "The Villain"
+      functional_purpose: "How do they create or maintain the 'Lack'?"
+      primary_action: "e.g., theft, pursuit, imprisonment"
+    - role: "The Donor"
+      functional_purpose: "How do they facilitate the hero's preparation?"
+      the_test_mechanism: "The specific trial used to test the hero."
+    - role: "The Helper"
+      functional_purpose: "How do they assist in the struggle or return?"
+    - role: "The False Hero"
+      functional_purpose: "How do they attempt to claim the victory or the reward without the merit?"
+
+world_design:
+  methodology_role: "The world is a stage for functional shifts."
+  fields:
+    rule_of_interdiction: "What is the primary law/taboo that, when broken, triggers the story?"
+    geographic_shift: "How does the hero move from the 'Home' to the 'Away' (the site of conflict)?"
+    magical_logic: "What allows the 'magical agents' or 'tools' to function within this world?"
+
+theme_design:
+  methodology_role: "Theme is the moral weight of the functional resolution."
+  fields:
+    functional_argument: "Does the story argue that merit leads to reward, or that power leads to destruction?"
+    the_resolution_truth: "What truth is revealed once the 'Lack' is liquidated?"
+
+visual_storytelling:
+  methodology_role: "Visualizing the transition of states."
+  image_system:
+    symbolic_motifs: ["The Broken Object", "The Gift/Weapon", "The Threshold/Gate"]
+    visual_rules:
+      - "Use color shifts to represent the transition from 'Home' to 'Away'."
+      - "Visualize the 'Lack' through recurring empty spaces or shadows."
+  final_image: "An image representing the 'Liquidation' of the lack and the new status quo."
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must fulfill a specific function or move a character toward a function."
+    - "Avoid 'filler' scenes that do not contribute to the functional sequence."
+  scene_template:
+    scene_id: "Unique identifier for the scene"
+    beat_or_unit: "Identify which Proppian function is being performed"
+    location: "Home | Away | Threshold"
+    characters_present: []
+    visible_goal: "The immediate functional objective"
+    conflict_or_pressure: "What prevents the function from being completed instantly?"
+    turn: "How does the state of the hero change after this scene?"
+    visual_anchor: "An object or action that signifies the function (e.g., a sword being sharpened)"
+    emotional_shift: "e.g., From despair to determination"
+    exits_with: "The new state/information/possession"
+  do_rules:
+    - "Ensure every scene is a reaction to a previous function."
+    - "Focus on the physical manifestation of the function."
+  avoid_rules:
+    - "Do not include scenes of pure character reflection without an accompanying action."
+    - "Do not introduce characters who have no functional role in the sequence."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Ensure structural integrity and causal continuity."
+    instructions:
+      - "Trace the path from 'The Lack' to 'The Liquidation'."
+      - "Check for any missing links in the functional chain."
+    questions:
+      - "Is there any gap where the hero moves without a functional cause?"
+      - "Does the sequence follow the established Proppian phases?"
+    success_criteria:
+      - "A seamless chain of 'Because of [Function A], [Function B] occurs'."
+
+  - name: "character_pass"
+    goal: "Verify character purpose and role clarity."
+    instructions:
+      - "Review each character and strip away their personality, leaving only their actions."
+    questions:
+      - "If I removed this character, would the functional sequence break?"
+      - "Is every character's 'Sphere of Action' clearly defined?"
+    success_criteria:
+      - "Every character is indispensable to the plot's progression."
+
+  - name: "theme_pass"
+    goal: "Ensure thematic resonance through functional resolution."
+    instructions:
+      - "Analyze the final function (Liquidation) against the initial disruption."
+    questions:
+      - "Does the resolution of the 'Lack' prove the story's central argument?"
+      - "Is the theme visible in the characters' actions?"
+    success_criteria:
+      - "The functional resolution provides a clear thematic conclusion."
+
+  - name: "visual_storytelling_pass"
+    goal: "Verify visual continuity and symbolic motifs."
+    instructions:
+      - "Check the use of recurring visual anchors across different functions."
+    questions:
+      - "Are the visual motifs consistent with the functional shifts?"
+      - "Does the visual language reflect the transition from 'Home' to 'Away'?"
+    success_criteria:
+      - "Visuals effectively mirror the underlying functional transitions."
+
+  - name: "functional_chain_pass"
+    goal: "Ensure every event is a reaction to a previous one."
+    instructions:
+      - "Audit every scene for 'Action-Reaction' loops."
+    questions:
+      - "Is every 'Reaction' directly caused by a preceding 'Action'?"
+      - "Are there any 'floating' events that do not drive the sequence?"
+    success_criteria:
+      - "A closed loop of causality where no event is extraneous."
+
+validation_checklist:
+  - "Does the story begin with a clear 'Lack' or 'Violation'?"
+  - "Are the characters' roles defined by their actions rather than just their traits?"
+  - "Is there a clear 'Test' and 'Reward' sequence?"
+  - "Does the 'Struggle' directly address the 'Initial Lack'?"
+  - "Is the 'Liquidation' a logical conclusion to the sequence of functions?"
+  - "Every character has a clearly defined 'Sphere of Action'?"
+  - "The sequence follows a strict causal 'Because of that' logic?"
+  - "The 'Away' setting is distinct and functionally necessary?"
+
+  - "The 'Donor' provides a tool or information that is essential for the struggle?"
+  - "The 'Villain' is the primary source of the initial disruption?"
+  - "The 'Return' establishes a new, stable, or altered status quo?"
+  - "The 'Interdiction' is clearly established and then violated?"
+
+failure_modes:
+  - failure_mode: "The Passive Hero"
+    symptom: "The hero is moved by functions rather than performing them."
+    likely_cause: "The hero lacks an 'Agentive' role; they are only a recipient of functions."
+    fix: "Assign the hero more 'Struggle' or 'Departure' functions."
+  - failure_mode: "The Unearned Victory"
+    symptom: "The 'Lack' is resolved without the 'Test' or 'Struggle' being completed."
+    likely_cause: "Skipping the 'Donor' or 'Testing' functions."
+    fix: "Insert a mandatory 'Test' or 'Acquisition of Agent' beat."
+  - failure_mode: "The Wandering Plot"
+    symptom: "The story has many events, but no sense of progression toward a goal."
+    likely_cause: "Functions are disconnected; there is no causal 'Because of that' link."
+    fix: "Re-map the sequence to ensure each event is a reaction to the previous one."
+
+adaptation_notes:
+  feature_film: "Use the functions to structure the 3-act progression (Setup, Confrontation, Resolution)."
+  short_film: "Focus heavily on a single, tight sequence: Lack -> Test -> Struggle -> Liquidation."
+  tv_episode: "Ensure each episode contains a complete, self-contained functional cycle."
+  tv_pilot: "Use the 'Lack' to establish the long-term driving force for the entire series."
+  anime: "Great for 'Tournament' or 'Quest' arcs where characters undergo repetitive functional cycles."
+  adult_animation: "Use mature themes to complicate the 'Interdiction' and 'Violation' functions."
+  anthology: "Each entry must function as a standalone morphological unit."
+  game_cinematic: "Use functions to justify the player's progression through new mechanics/tools (The Donor/Agent)."
+
+yaml_usage_notes:
+  how_to_use: "Start with the 'Initial Lack' and build outward by identifying the necessary characters (Spheres of Action)."
+  recommended_population_order:
+    - "story_inputs"
+    - "methodology_structure (identifying the sequence)"
+    - "character_design (assigning roles to the sequence)"
+    - "beats_or_units (populating the details of each step)"
+  minimum_viable_completion: "At minimum, define the 'Lack', the 'Hero', the 'Villain', and the 'Liquidation'."
+  signs_framework_is_ready_for_scene_outline: "When you can trace a direct line from the first disruption to the final resolution using only action-based links."

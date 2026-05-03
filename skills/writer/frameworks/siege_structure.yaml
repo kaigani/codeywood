@@ -1,0 +1,455 @@
+metadata:
+  framework_name: "Siege Structure Template"
+  methodology_name: "Siege Structure"
+  methodology_family: "Pressure-Based/Confinement Narratives"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "anime"
+    - "horror"
+    - "larry"
+    - "thriller"
+    - "action"
+    - "adult animation"
+  best_for:
+    - "high-tension survival"
+    - "claustrophobic psychological drama"
+    - "encirclement action"
+    - "home invasion"
+    - "siege warfare"
+  not_ideal_for:
+    - "episodic adventure"
+    - "roaming quest narratives"
+    - "wide-scale epic fantasy with constant travel"
+  target_lengths:
+    - "short film"
+    - "feature film"
+    - "limited series"
+  core_principle: "The narrative tension is derived from the progressive erosion of a perimeter (physical, psychological, or social) by an inexorable external force."
+  primary_story_unite: "The Breach/The Incursion"
+  primary_success_metric: "The measurable increase in pressure and the visible decay of the defense/sanctuary."
+
+framework_overview:
+  summary: "The Siege Structure focuses on a closed system under attack. It moves from the establishment of a 'Sanctuary' to the 'Encirclement' of the threat, through the 'Attrition' of resources and morale, culminating in the 'Breach' and the 'Final Stand/Collapse'."
+  what_this_framework_helps_create:
+    - "High-stakes tension"
+    - "Atmospheric claustrophobia"
+    - "Character breakdown under pressure"
+    - "Escalating dread"
+  what_it_prioritizes:
+    - "The integrity of the perimeter"
+    - "The inevitability of the threat"
+    - "The depletion of resources (physical and mental)"
+  what_it_deemphasizes:
+    - "Character growth through travel"
+    - "Subplots that expand the scope of the world"
+
+use_when:
+  - "The setting is inherently restricted or enclosed."
+  - "The conflict is centered on 'holding the line' rather than 'seeking the enemy'."
+  - "The primary goal is survival or preservation of a specific value/person/place."
+
+avoid_when:
+  - "The protagonist's primary agency comes from leaving the current situation."
+  - "The conflict can be/is resolved through negotiation or avoidance without consequence."
+
+core_principles:
+  - "The Perimeter: There must be a clearly defined boundary (physical, mental, or social) that defines 'safety'."
+  - "The Siege Force: The antagonist or threat must be capable of applying increasing, mounting pressure."
+  - "Attrition: The story must track the loss of something essential (ammo, food, allies, sanity, light, hope)."
+  - "The Inevitability: The threat must feel like it is slowly but surely closing the gap."
+
+workflow:
+  - step: 1
+    name: "Define the Perimeter"
+    goal: "Establish what is at stake and the boundaries of the sanctuary."
+    instructions:
+      - "Identify the physical or metaphorical walls."
+      - "Determine the 'rules of safety' within these walls."
+    output: "The Sanctuary Profile"
+  - step: 2
+    name: "Establish the Siege Force"
+    goal: "Define the nature of the pressure."
+    instructions:
+      - "Determine if the threat is external (monforming, army, killer) or internal (guilt, madness, infection)."
+      - "Define the 'encirclement' mechanism."
+    output: "The Threat Profile"
+  - step: 3
+    name: "Map the Attrition"
+    goal: "Plan the sequence of decay."
+    instructions:
+      - "List resources that will be lost in stages."
+      - "Plan the 'breaches' in the defense."
+    output: "The Decay Timeline"
+  - step: 4
+    name: "The Final Stand/Collapse"
+    goal: "Determine the ultimate resolution of the pressure."
+    instructions:
+      - "Decide if the perimeter holds, is breached, or is destroyed."
+    output: "The Resolution Beat"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_annotated_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  logic_framework:
+    system_type: "Closed-Loop Pressure System"
+    primary_driver: "Resource Depletion & Boundary Erosion"
+    structural_logic: "Incremental Encroachment"
+  phases:
+    - phase_id: "phase_1"
+      name: "The Sanctuary (Establishment)"
+      purpose: "To show the audience what is being protected and why it matters."
+      writer_prompt: "Describe the 'normal' state of the perimeter before the pressure begins."
+      fields_to_complete:
+        the_perimeter: "<physical/mental boundaries>"
+        the_sanctuary_contents: "<who/what is inside and why they are safe>"
+        the_vulnerability: "<the hidden crack in the wall>"
+      diagnostic_questions:
+        - "Does the audience understand the cost of losing this space?"
+        - "Is the safety of the sanctuary clearly defined so its loss can be felt?"
+      completion_criteria: ["The audience knows the stakes and the boundaries."]
+
+    - phase_id: "phase_2"
+      name: "The Encirclement (First Contact)"
+      purpose: "To signal that the perimeter is no longer secure."
+      writer_prompt: "What is the first sign that the outside world has moved in to trap the characters?"
+      fields_to_complete:
+        the_first_sign: "<a sound, a sight, a disappearance>"
+        the_closing_of_the_gap: "<how the escape routes are cut off>"
+        the_initial_reaction: "<panic, denial, or mobilization?>"
+      diagnostic_questions:
+        - "Is the threat clearly identified as an external pressure?"
+        - "Has the 'safety' of Phase 1 been irrevocably compromised?"
+      completion_criteria: ["The characters are officially trapped/surrounded."]
+
+    - phase_id: "phase_3"
+      name: "The Attrition (The Siege)"
+      purpose: "To escalate tension through the depletion of resources and strength."
+      writer_prompt: "List the sequence of losses that occur as the pressure mounts."
+      fields_to_complete:
+        resource_depletion_list:
+          - resource: "<e.g., ammunition, food, light, allies, sanity>"
+            loss_event: "<how it was lost>"
+            impact: "<how this makes the characters more vulnerable>"
+        internal_fracture: "<how the pressure causes the characters to turn on each://themselves>"
+      diagnostic_questions:
+        - "Is each loss more devastating than the last?"
+        - "Is the 'Siege Force' actively responding to the characters' attempts to defend?"
+      completion_criteria: ["The characters are at their lowest point of physical/mental resource."]
+
+    - phase_id: "phase_4"
+      name: "The Breach (The Incursion)"
+      purpose: "The climax where the perimeter fails completely."
+      writer_prompt: "The walls have fallen. What happens when the threat enters the sanctuary?"
+      fields_to_complete:
+        the_point_of_failure: "<the specific moment the defense breaks>"
+        the_chaos_element: "<the sudden shift from 'waiting' to 'fighting/dyint'>"
+        the_irreversible_choice: "<a decision made in the heat of the breach>"
+      diagnostic_questions:
+        - "Is the breach a direct result of the attrition seen in Phase 3?"
+        - "Does the breach force a confrontation that cannot be avoided?"
+      completion_criteria: ["The sanctuary is no longer a sanctuary."]
+
+    - phase_id: "phase_5"
+      name: "The Aftermath (The Ruin/The Remnant)"
+      purpose: "To show the final state of the characters and the world."
+      writer_prompt: "What remains after the pressure has finished its work?"
+      fields_to_complete:
+        the_survivors: "<who/what is left standing?>"
+        the_state_of_the_perimeter: "<is it rebuilt, or is it a graveyard?>"
+        the_thematic_conclusion: "<did the pressure prove or disprove the theme?>"
+      diagnostic_questions:
+        - "Is the ending a logical consequence of the siege's intensity?"
+        - "Does the final image reflect the total erosion of the initial sanctuary?"
+      completion_criteria: ["The tension is resolved through total victory, total defeat, or total transformation."]
+
+beats_or_units:
+  - id: "beat_01"
+    name: "The Sanctuary Establishment"
+    order: 1
+    purpose: "Establish the baseline of safety and the value of the perimeter."
+    approximate_position: "Opening / Act 1 Setup"
+    writer_prompt: "Describe the 'normal' state of the perimeter before the pressure begins."
+    story_function: "Establ/Establishment of stakes and the 'status quo' that is about to be destroyed."
+    visual_function: "Wide, stable shots; warm or controlled lighting; clear boundaries."
+    emotional_function: "Comfort, stability, or a false sense of security."
+    required_decisions:
+      - "What is the physical boundary?"
+      - "Who is the primary inhabitant?"
+      - "What is the one thing that makes this place feel safe?"
+    fields_to_complete:
+      the_perimeter: "<physical/mental boundaries>"
+      the_sanctuary_contents: "<who/what is inside and why they are safe>"
+      the_vulnerability: "<the hidden crack in the wall>"
+    diagnostic_questions:
+      - "Does the audience understand the cost of losing this space?"
+      - "Is the safety of the sanctuary clearly defined so its loss can be felt?"
+    completion_criteria:
+      - "The audience knows the stakes and the boundaries."
+      - "The 'rules' of the sanctuary are established."
+    common_failure_modes:
+      - "The Perimeter is too vague."
+      - "The characters have no reason to stay."
+
+  - id: "beat_02"
+    name: "The Encirclement"
+    order: 2
+    purpose: "Signal that the perimeter is no longer secure."
+    approximate_position: "Inciting Incident / Transition to Act 2"
+    writer_prompt: "What is the first sign that the outside world has moved in to trap the characters?"
+    story_function: "The transition from stability to vulnerability; the closing of the exit."
+    visual_function: "Introduction of shadows; narrowing of the frame; obscured exits."
+    emotional_function: "Unease, realization, creeping dread."
+    required_decisions:
+      - "What is the first sign of the threat?"
+      - "How is the escape route blocked?"
+    fields_to_complete:
+      the_first_sign: "<a sound, a sight, a disappearance>"
+      the_closing_of_the_gap: "<how the escape routes are cut off>"
+      the_initial_reaction: "<panic, denial, or mobilization?>"
+    diagnostic_questions:
+      - "Is the threat clearly identified as an external pressure?"
+      - "Has the 'safety' of Phase 1 been irrevocably compromised?"
+    completion_criteria:
+      - "The characters are officially trapped/surrounded."
+      - "The threat is recognized as an active force."
+    common_failure_modes:
+      - "The threat is too easy to ignore."
+      - "The characters can still easily leave."
+
+  - id: "beat_03"
+    name: "The Attrition"
+    order: 3
+    purpose: "Escalate tension through the depletion of resources and strength."
+    approximate_position: "Midpoint / Act 2 Rising Action"
+    writer_prompt: "List the sequence of losses that occur as the pressure mounts."
+    story_function: "The erosion of the characters' ability to resist; the breakdown of the group."
+    visual_function: "Dimming light; cluttered/messy environments; physical decay of the setting."
+    emotional_function: "Desperation, exhaustion, paranoia, anger."
+    required_decisions:
+      - "What is the first major resource lost?"
+      - "How does this loss affect the group's unity?"
+    fields_to_complete:
+      resource_depletion_list:
+        - resource: "<e.g., ammunition, food, light, allies, sanity>"
+          loss_event: "<how it was lost>"
+          impact: "<how this makes the characters more vulnerable>"
+      internal_fracture: "<how the pressure causes the characters to turn on each://themselves>"
+    diagnostic_questions:
+      - "Is each loss more devastating than the last?"
+      - "Is the 'Siege Force' actively responding to the characters' attempts to defend?"
+    completion_criteria:
+      - "The characters are at their lowest point of physical/mental resource."
+      - "The internal group cohesion is at its breaking point."
+    common_failure_modes:
+      - "The losses feel repetitive or inconsequential."
+      - "The characters are not actually losing anything of value."
+
+  - id: "beat_04"
+    name: "The Breach"
+    order: 4
+    purpose: "The climax where the perimeter fails completely."
+    approximate_position: "Climax / End of Act 2 or Act 3"
+    writer_prompt: "The walls have fallen. What happens when the threat enters the sanctuary?"
+    story_function: "The total collapse of the safety net; the final confrontation."
+    visual_function: "Chaos; handheld camera; sudden shifts in lighting; destruction of the set."
+    emotional_function: "Terror, adrenaline, total loss of control."
+    required_decisions:
+      - "What is the specific point of failure?"
+      - "What is the irreversible choice made during the chaos?"
+    fields_to_complete:
+      the_point_of_failure: "<the specific moment the defense breaks>"
+      the_chaos_element: "<the sudden shift from 'waiting' to 'fighting/dying'>"
+      the_irreversible_choice: "<a decision made in the heat of the breach>"
+    diagnostic_questions:
+      - "Is the breach a direct result of the attrition seen in Phase 3?"
+      - "Does the breach force a confrontation that cannot be avoided?"
+    completion_criteria:
+      - "The sanctuary is no longer a sanctuary."
+      - "The threat and the defenders are in direct, unavoidable contact."
+    common_failure_modes:
+      - "The breach feels random or unearned."
+      - "The breach doesn't actually change the status quo."
+
+  - id: "beat_05"
+    name: "The Aftermath"
+    order: 5
+    purpose: "To show the final state of the characters and the world."
+    approximate_position: "Resolution / Epilogue"
+    writer_prompt: "What remains after the pressure has finished its work?"
+    story_function: "Thematic resolution; showing the permanent impact of the siege."
+    visual_function: "Static, wide shots; stark lighting; empty or ruined spaces."
+    emotional_function: "Resignation, hollow victory, or profound grief."
+    required_decisions:
+      - "Who/what survived?"
+      - "What is the new state of the world?"
+    fields_to_complete:
+      the_survivors: "<who/what is left standing?>"
+      the_state_of_the_perimeter: "<is it rebuilt, or is it a graveyard?>"
+      the_thematic_conclusion: "<did the pressure prove or disprove the theme?>"
+    diagnostic_questions:
+      - "Is the ending a logical consequence of the siege's intensity?"
+      - "Does the final image reflect the total erosion of the initial sanctuary?"
+    completion_criteria:
+      - "The tension is resolved through total victory, total defeat, or total transformation."
+    common_failure_modes:
+      - "The ending feels disconnected from the struggle."
+      - "The thematic point is left unaddressed."
+
+character_design:
+  methodology_role: "Characters are defined by their relationship to the perimeter and their capacity for attrition."
+  characters:
+    - name: "<name>"
+      role: "<Defender | Siege Force | Catalyst | Victim>"
+      defensive_strength: "<what makes them resilient?>"
+      vulnerability_to_attrition: "<what specific pressure breaks them?>"
+      internal_perimeter: "<what psychological boundary are they protecting?>"
+
+world_design:
+  methodology_role: "The world is defined by its boundaries and its points of failure."
+  fields:
+    the_perimeter_definition: "<physical, social, or psychological boundaries>"
+    zones_of_safety: "<areas within the siege that are still 'secure' (for now)>"
+    zones_of_danger: "<areas where the threat is already encroaching>"
+    resource_nodes: ["<list of critical items/places needed to maintain the siege>"]
+
+theme_design:
+  methodology_role: "Theme is expressed through the tension between integrity and decay."
+  fields:
+    central_argument: "<e.g., 'Survival is not worth the loss of humanity'>"
+    the_pressure_test: "<what specific moral/physical question is the siege forcing the characters to answer?>"
+    the_symbolic_wall: "<a visual or object-based representation of the perimeter>"
+
+visual_storytelling:
+  methodology_role: "Visuals must emphasize shrinking space and encroaching shadows."
+  image_system:
+    composition_rules:
+      - "Use increasingly tight framing as the siege progresses."
+      - "Use shadows to represent the 'encroaching' threat."
+      - "Use 'The Breach' as a sudden shift in lighting or camera movement (e.g., from static to handheld)."
+    recurring_motifs: ["<e.g., flickering lights, cracking walls, leaking water, closing doors>"]
+    final_image: "<An image representing the permanent change to the perimeter>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either increase pressure, deplete a resource, or highlight a vulnerability."
+    - "Avoid scenes that provide 'relief' without also showing the cost of that relief."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: ""
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Focus on the sensory details of the enclosure (smell, sound, temperature)."
+    - "Show the physical degradation of the setting."
+  avoid_rules:
+    - "Do not allow characters to leave the siege area without a heavy narrative cost."
+    - "Do not introduce new, unrelated conflicts that distract from the primary pressure."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Ensure the narrative arc follows the progression of enclosure and breach."
+    instructions:
+      - "Verify the transition from Sanctuary to Encirclement."
+      - "Check for a clear climax at the Breach."
+    questions:
+      - "Is the sequence of events logically leading to the collapse?"
+    success_criteria:
+      - "A clear, escalating structural arc."
+  - name: "character_pass"
+    goal: "Ensure characters are being actively eroded by the siege."
+    instructions:
+      - "Review character arcs against the Attrition phase."
+    questions:
+      - "Is the pressure causing internal psychological fractures?"
+    success_criteria:
+      - "Character breakdown is visible and earned."
+  - name: "theme_pass"
+    goal: "Ensure the siege serves the central argument."
+    instructions:
+      - "Check if the 'Pressure Test' is clearly answered by the characters' actions."
+    questions:
+      - "Does the destruction of the perimeter reflect the thematic decay?"
+    success_criteria:
+      - "Thematic resonance is achieved through the physical siege."
+  - name: "visual_storytelling_pass"
+    goal: "Ensure the visual language reinforces the feeling of confinement."
+    instructions:
+      - "Audit the use of framing, lighting, and space."
+    questions:
+      - "Does the visual space feel like it is shrinking?"
+    success_criteria:
+      - "Visuals communicate claustrophobia and encroachment."
+  - name: "attrition_pass"
+    goal: "Ensure the depletion of resources is measurable and impactful."
+    instructions:
+      - "Track every resource loss against the tension level."
+    questions:
+      - "Is there a tangible sense of 'running out' of something essential?"
+    success_criteria:
+      - "A measurable sense of mounting dread through loss."
+
+validation_checklist:
+  - "Is the 'Sanctuary' clearly established with high stakes?"
+  - "Is the 'Siege Force' an active, escalating pressure?"
+  - "Does the 'Attrition' phase visibly deplete the characters' ability to resist?"
+  - "Does the 'Breach' feel like the inevitable result of the pressure?"
+  - "Does the 'Aftermath' reflect the total change in the perimeter's integrity?"
+  - "Are the boundaries of the perimeter clearly defined for the audience?"
+  - "Is there a clear mechanism for how the threat is encroaching?"
+  - "Does every major resource loss have a direct consequence on character safety?"
+  - "Is the internal group conflict a direct result of the external pressure?"
+  - "Are there no easy escape routes available to the protagonists?"
+  - "Does the visual framing tighten as the story progresses?"
+  - "Is the thematic argument being tested by the physical siege?"
+
+failure_modes:
+  - failure_mode: "The Paper Wall"
+    symptom: "The threat is easily ignored or bypassed."
+    likely_cause: "The perimeter is not sufficiently closed or the threat lacks agency."
+    fix: "Strengthen the 'Encirclement' beat; remove escape routes."
+  - failure_mode: "The Static Siege"
+    symptom: "The story feels repetitive and lacks progression."
+    likely_cause: "Lack of 'Attrition'. Nothing is being lost or broken."
+    fix: "Introduce a sequence of resource or character losses."
+  - failure_mode: "The Unearned Breach"
+    symptom: "The climax feels random or disconnected from the buildup."
+    likely_cause: "The breach happened without the preceding 'Attrition' or 'Encirclement'."
+    fix: "Ensure the 'Breach' is the logical consequence of the 'Attrition' phase."
+
+adaptation_notes:
+  feature_film: "Focus on large-scale resource depletion and high-consequence breaches."
+  short_film: "Focus on a single, intense moment of incursion/breach."
+  tv_episode: "The 'Siege' can be one episode of a larger series, or a season-long arc."
+  tv_pilot: "Establish the perimeter and the first sign of encirclement to hook the audience."
+  anime: "Use highly stylized visual 'encroachment' (e.g., expanding shadows, corrupting magic)."
+  adult_animation: "Can explore extreme psychological/visceral degradation of the perimeter."
+  anthology: "Each segment provides a self-contained, closed-system pressure cooker."
+  game_cinematic: "Focus on the physical destruction of the environment and the loss of player-controlled assets."
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'story_inputs' first, then work through the 'methodology_structure' phases sequentially."
+  recommended_population_order: ["story_inputs", "methodology_structure", "character_design", "world_design", "theme_design"]
+  minimum_viable_completion: ["The Perimeter, The Siege Force, The Attrition, and The Breach."]
+  signs_framework_is_ready_for_scene_outline: ["The 'Attrition' list is complete and the 'Breach' is clearly defined."]

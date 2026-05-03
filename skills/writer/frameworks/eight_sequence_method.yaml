@@ -1,0 +1,325 @@
+metadata:
+  methodology_name: "Eight-Sequence Method"
+  core_principle: "A structural approach to breaking a feature-length screenplay into eight distinct blocks (sequences) of roughly 10-15 minutes each, ensuring pacing, tension, and logical progression."
+framework_overview:
+  summary: "A way to manage the 'middle' of a movie..."
+use_when:
+  - "Managing the middle"
+  - "Ensuring pacing"
+  - "Breaking down large narratives"
+avoid_when:
+  - "Experimental non-linear narratives"
+  - "Short films (unless adapted)"
+core_principles:
+  - "Pacing"
+  - "Tension"
+  - "Episodic momentum"
+  - "Mini-climaxes"
+workflow:
+  - "Idea"
+  - "Logline"
+  - "8 Sequences"
+  - "Beat Sheet"
+  - "Scenes"
+story_inputs: []
+methodology_structure:
+  act_1:
+    sequence_1:
+      focus: "Setup/Inciting Incident"
+      decision_forcing_fields:
+        inciting_incident_impact: ""
+        protagonist_status_quo: ""
+        tension_baseline: ""
+    sequence_2:
+      focus: "Complications/Plot Point 1"
+      decision_forcing_fields:
+        plot_point_1_effect: ""
+        new_conflict_introduced: ""
+        character_shift: ""
+  act_2_a:
+    sequence_3:
+      focus: "New World/Rising Action"
+      decision_forcing_fields:
+        world_establishment: ""
+        rising_action_climax: ""
+        character_growth: ""
+    sequence_4:
+      focus: "Midpoint/Turning Point"
+      decision_forcing_fields:
+        midpoint_shift: ""
+        turning_point_effect: ""
+        new_direction: ""
+  act_2_b:
+    sequence_5:
+      focus: "Consequences/Complications"
+      decision_forcing_fields:
+        consequences_of_midpoint: ""
+        new_conflict: ""
+        character_adaptation: ""
+    sequence_6:
+      focus: "Crisis/Plot Point 2"
+      decision_forcing_fields:
+        crisis_point: ""
+        plot_point_2_effect: ""
+        character_resolution: ""
+  act_3:
+    sequence_7:
+      focus: "Climax/Resolution setup"
+      decision_forcing_fields:
+        climax_setup: ""
+        resolution_prep: ""
+        final_conflict: ""
+    sequence_8:
+      focus: "Climax/Resolution"
+      decision_forcing_fields:
+        final_climax: ""
+        story_resolution: ""
+        character_arcs_completion: ""
+beats_or_units:
+  seq_1:
+    id: SEQ_01
+    name: "Sequence 1: Setup"
+    order: 1
+    purpose: "Establish the world and the disruption."
+    approximate_position: "0-12%"
+    writer_prompt: "What is the hero's life like before the storm hits?"
+    story_function: "Exposition and Inciting Incident"
+    visual_function: "Establishing shots and character routine"
+    emotional_function: "Stability and then shock"
+    required_decisions:
+      - "What is the hero's wound?"
+      - "What is the inciting incident?"
+    fields_to_complete:
+      inciting_incident: ""
+      status_quo: ""
+    diagnostic_questions:
+      - "Is the disruption significant enough?"
+    completion_criteria:
+      - "Inciting incident occurs"
+    common_failure_modes:
+      - "Too much exposition"
+  seq_2:
+    id: SEQ_02
+    name: "Sequence 2: Complications/Plot Point 1"
+    order: 2
+    purpose: "Introduce complications and a major plot point."
+    approximate_position: "13-25%"
+    writer_prompt: "What challenges arise after the inciting incident?"
+    story_function: "Rising action leading to Plot Point 1"
+    visual_function: "Increasing tension through visuals"
+    emotional_function: "Building stakes and character conflict"
+    required_decisions:
+      - "What are the initial complications?"
+      - "How does the hero respond?"
+    fields_to_complete:
+      plot_point_1: ""
+      initial_conflict: ""
+    diagnostic_questions:
+      - "Are the complications escalating?"
+    completion_criteria:
+      - "Plot Point 1 occurs"
+    common_failure_modes:
+      - "Complications are too minor"
+  seq_3:
+    id: SEQ_03
+    name: "Sequence 3: New World/Rising Action"
+    order: 3
+    purpose: "Establish a new world and continue rising action."
+    approximate_position: "26-38%"
+    writer_prompt: "How does the hero adapt to the new situation?"
+    story_function: "Deepening conflict and character growth"
+    visual_function: "Exploring the new environment"
+    emotional_function: "Character adjustment and growing stakes"
+    required_decisions:
+      - "What is the new world like?"
+      - "How does the hero change?"
+    fields_to_complete:
+      new_world: ""
+      character_growth: ""
+    diagnostic_questions:
+      - "Is the new world vividly described?"
+    completion_criteria:
+      - "Hero adapts to the new world"
+    common_failure_modes:
+      - "New world is underdeveloped"
+  seq_4:
+    id: SEQ_04
+    name: "Sequence 4: Midpoint/Turning Point"
+    order: 4
+    purpose: "Shift the story with a major turning point."
+    approximate_position: "39-51%"
+    writer_prompt: "What significant change occurs?"
+    story_function: "Midpoint shift and new direction"
+    visual_function: "Visual climax of Act 2a"
+    emotional_function: "Character revelation or crisis"
+    required_decisions:
+      - "What is the midpoint event?"
+      - "How does it affect the hero's journey?"
+    fields_to_complete:
+      midpoint_event: ""
+      character_revelation: ""
+    diagnostic_questions:
+      - "Is the midpoint impactful?"
+    completion_criteria:
+      - "Midpoint occurs"
+    common_failure_modes:
+      - "Midpoint is too subtle"
+  seq_5:
+    id: SEQ_05
+    name: "Sequence 5: Consequences/Complications"
+    order: 5
+    purpose: "Show the consequences of the midpoint."
+    approximate_position: "52-64%"
+    writer_prompt: "What are the results of the midpoint?"
+    story_function: "Continuing conflict and character adaptation"
+    visual_function: "Visual representation of consequences"
+    emotional_function: "Character struggle with new challenges"
+    required_decisions:
+      - "What are the consequences?"
+      - "How does the hero respond?"
+    fields_to_complete:
+      consequences: ""
+      character_response: ""
+    diagnostic_questions:
+      - "Are the consequences clear?"
+    completion_criteria:
+      - "Consequences are shown"
+    common_failure_modes:
+      - "Consequences are unclear"
+  seq_6:
+    id: SEQ_06
+    name: "Sequence 6: Crisis/Plot Point 2"
+    order: 6
+    purpose: "Introduce a major crisis and plot point."
+    approximate_position: "65-77%"
+    writer_prompt: "What is the hero's greatest challenge?"
+    story_function: "Climax of Act 2b"
+    visual_function: "Visual climax of Act 2b"
+    emotional_function: "Hero's darkest moment"
+    required_decisions:
+      - "What is the crisis?"
+      - "How does the hero face it?"
+    fields_to_complete:
+      crisis_event: ""
+      hero_response: ""
+    diagnostic_questions:
+      - "Is the crisis intense enough?"
+    completion_criteria:
+      - "Crisis occurs"
+    common_failure_modes:
+      - "Crisis is too easy to overcome"
+  seq_7:
+    id: SEQ_07
+    name: "Sequence 7: Climax/Resolution setup"
+    order: 7
+    purpose: "Set up the final climax and resolution."
+    approximate_position: "78-90%"
+    writer_prompt: "How does the hero prepare for the final battle?"
+    story_function: "Final preparations and character reflection"
+    visual_function: "Visual preparation for climax"
+    emotional_function: "Character readiness and emotional build-up"
+    required_decisions:
+      - "What are the final preparations?"
+      - "How is the hero emotionally prepared?"
+    fields_to_complete:
+      final_preparations: ""
+      emotional_buildup: ""
+    diagnostic_questions:
+      - "Are the preparations clear?"
+    completion_criteria:
+      - "Hero is ready for climax"
+    common_failure_modes:
+      - "Preparations are rushed"
+  seq_8:
+    id: SEQ_08
+    name: "Sequence 8: Climax/Resolution"
+    order: 8
+    purpose: "Resolve the story with a final climax."
+    approximate_position: "91-100%"
+    writer_prompt: "How does the hero achieve the resolution?"
+    story_function: "Final confrontation and resolution"
+    visual_function: "Visual climax of the film"
+    emotional_function: "Hero's ultimate triumph or sacrifice"
+    required_decisions:
+      - "What is the final conflict?"
+      - "How does the hero resolve it?"
+    fields_to_complete:
+      final_conflict: ""
+      story_resolution: ""
+    diagnostic_questions:
+      - "Is the resolution satisfying?"
+    completion_criteria:
+      - "Resolution occurs"
+    common_failure_modes:
+      - "Resolution feels forced"
+revision_passes:
+  structure_pass:
+    name: "Structure Pass"
+    goal: "Check connectivity"
+    instructions: []
+    questions: []
+    success_criteria: []
+  character_pass:
+    name: "Character Pass"
+    goal: "Develop characters"
+    instructions: []
+    questions: []
+    success_criteria: []
+  theme_pass:
+    name: "Theme Pass"
+    goal: "Ensure thematic consistency"
+    instructions: []
+    questions: []
+    success_criteria: []
+  visual_storytelling_pass:
+    name: "Visual Storytelling Pass"
+    goal: "Enhance visual elements"
+    instructions: []
+    questions: []
+    success_criteria: []
+  pacing_pass:
+    name: "Pacing Pass"
+    goal: "Ensure proper pacing"
+    instructions: []
+    questions: []
+    success_criteria: []
+validation_checklist:
+  - Inciting incident presence.
+  - Plot point 1 presence.
+  - Midpoint presence.
+  - Plot point 2 presence.
+  - Climax presence.
+  - Sequence 1 hook effectiveness.
+  - Sequence 2 hook effectiveness.
+  - Sequence 3 hook effectiveness.
+  - Sequence 4 hook effectiveness.
+  - Sequence 5 hook effectiveness.
+  - Sequence 6 hook effectiveness.
+  - Sequence 7 hook effectiveness.
+  - Sequence 8 resolution clarity.
+failure_modes:
+  sagging_middle:
+    failure_mode: "The Sagging Middle"
+    symptom: "Loss of interest in Act 2"
+    likely_cause: "Lack of Midpoint shift"
+    fix: "Introduce a major complication"
+  episodic_drift:
+    failure_mode: "The Episodic Drift"
+    symptom: "Sequences feel disconnected"
+    likely_cause: "Weak transitions between sequences"
+    fix: "Ensure strong narrative connections"
+  rushed_third_act:
+    failure_mode: "The Rushed Third Act"
+    symptom: "Resolution feels hurried"
+    likely_cause: "Insufficient setup for climax"
+    fix: "Spend more time on preparation and build-up"
+adaptation_notes:
+  feature_film: "Full 8-sequence structure."
+  short_film: "Compressed 2-4 sequence structure."
+  tv_episode: "Standard 8-sequence structure for 60m drama."
+  tv_pilot: "Focus on establishing the world in Seq 1-2."
+  anime: "High emphasis on visual function and action beats."
+  adult_animation: "Emphasis on thematic and character-driven shifts."
+  anthology: "Each episode follows a standalone 8-sequence arc."
+  game_cinematic: "Focus on the transition from gameplay to narrative sequence."
+yaml_usage_notes: []

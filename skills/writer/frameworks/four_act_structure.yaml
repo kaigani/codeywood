@@ -1,0 +1,397 @@
+metadata:
+  framework_name: "Four-Act Structure Template"
+  methodology_name: "Four-Act Structure"
+  methodology_family: "Structural/Beat-Based"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "TV episode"
+    - "anime"
+    - "short film"
+  best_for:
+    - "stories prone to 'sagging middle'"
+    - "character-driven journeys with a massive internal shift"
+    - "high-stakes action or thriller narratives"
+  not_ideal_for:
+    - "experimental non-linear narratives"
+    - "slice-of-life without a central pivot"
+    - "anthology shorts with no overarching arc"
+  target_lengths:
+    - "90-120 minute feature"
+    - "22-44 minute episode"
+  core_principle: "The Midpoint Pivot: Transitioning the protagonist from a reactive state to a proactive state."
+  primary_story_unit: "The Four Acts (Setup, Reaction, Action, Resolution)"
+  primary_success_metric: "A clear, palpable shift in agency and momentum at the Midpoint."
+
+framework_overview:
+  summary: "A structural methodology that splits the traditional second act into two distinct movements: the Reactive Phase (Act 2) and the Proactive Phase (Act 3), preventing middle-act stagnation."
+  what_this_framework_helps_create:
+    - "A clear sense of escalating stakes."
+    - "A definitive turning point in character agency."
+    - "Stronger narrative momentum through the midpoint."
+  what_it_prefers:
+    - "Character agency shift."
+    - "The 'Midpoint Pivot'."
+    - "Escalating pressure."
+  what_it_deemphasizes:
+    - "Subplots that do not impact the central pivot."
+    - "Static character development."
+
+use_when:
+  - "The story feels like it loses steam halfway through."
+  - "The protagonist feels like a passenger in their own story."
+  - "You need a clear 'point of no return' in the center of the narrative."
+
+avoid_when:
+  - "The story is purely episodic with no central conflict resolution."
+  - "The protagonist's journey is purely internal/psychological without external shifts in action."
+
+core_principles:
+  - "Act 1: Establishing the status quo and the disruption."
+  - "Act 2: The protagonist reacts to the disruption, struggling to adapt."
+  - "Act 3: The protagonist stops reacting and begins to act, driving the conflict."
+  - "Act 4: The collision of the protagonist's new agency with the antagonist's power."
+
+workflow:
+  - step: 1
+    name: "The Foundation"
+    goal: "Define the core elements."
+    instructions:
+      - "Identify the protagonist's initial state."
+      - "Define the inciting incident."
+    output: "Story Inputs"
+  - step: 2
+    name: "The Pivot Definition"
+    goal: "Determine the Midpoint shift."
+    instructions:
+      - "Decide exactly what event forces the character to stop running and start fighting."
+    output: "Midpoint Beat"
+  - step: 3
+    name: "The Four-Act Expansion"
+    goal: "Populate the structural beats."
+    instructions:
+      - "Fill out Acts 1 through 4 sequentially."
+    output: "Methodology Structure"
+  - step: 4
+    name: "The Agency Audit"
+    goal: "Ensure the transition from Reactive to Proactive is clear."
+    instructions:
+      - "Review Act 2 vs Act 3 to ensure the character's role has fundamentally changed."
+    output: "Revised Framework"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write and select from suitable_media>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  description: "The core four-act architecture."
+  act_1_setup:
+    act_id: 1
+    name: "Act 1: The Setup (The Status Quo)"
+    purpose: "Introduce the world, the hero, and the disruption."
+    decision_forcing_fields:
+      protagonist_baseline: "<How is the hero defined before the change?>"
+      inciting_incident_impact: "<How much does the disruption threaten the status quo?>"
+      threshold_commitment_type: "<Is the move to Act 2 voluntary or forced?>"
+      world_rules_established: "<What are the non-negotiable laws of this setting?>"
+    beats:
+      - beat_name: "The Ordinary World"
+        description: "<Show the hero's life before the change. What is the flaw or lack?>"
+      - beat_name: "The Inciting Incident"
+        description: "<The event that disrupts the status quo. The 'call to adventure'.>"
+      - beat_name: "The Threshold/Plot Point 1"
+        description: "<The moment the hero commits to the journey or is forced into the new world. The point of no return.>"
+  act_2_reaction:
+    act_id: 2
+    name: "Act 2: The Reaction (The Struggle)"
+    purpose: "The hero is overwhelmed, testing the new world, and reacting to threats."
+    decision_forcing_fields:
+      reactive_strategy: "<What old methods is the hero trying to use?>"
+      antagonist_pressure_level: "<How much is the antagonist pushing back?>"
+      escalation_vector: "<What is the primary source of rising tension?>"
+      failure_frequency: "<How often does the hero's reactive approach fail?>"
+    beats:
+      - beat_name: "The Learning Curve"
+        description: "<The hero tries to use old methods to solve new problems. They are failing or just surviving.>"
+      - beat_name: "Rising Complications"
+        description: "<External pressures increase. The hero is playing defense.>"
+      - beat_name: "The Low Point/Pre-Midpoint"
+        description: "<A moment of near-defeat that makes the old way of living impossible.>"
+  act_3_action:
+    act_id: 3
+    name: "Act 3: The Action (The Counter-Attack)"
+    purpose: "The hero shifts from defense to offense. They find a new way to fight."
+    decision_forcing_fields:
+      pivot_mechanism: "<What specific realization or tool enables the shift?>"
+      proactive_strategy: "<What is the hero's new method of engagement?>"
+      antagonist_counter_move: "<How does the antagonist adapt to the hero's new agency?>"
+      stakes_redefinition: "<How do the stakes change when the hero starts hunting?>"
+    beats:
+      - beat_name: "The Midpoint Pivot"
+        description: "<The massive shift. A realization, a new tool, or a sudden burst of courage that changes the hero's strategy.>"
+      - beat_name: "The Proactive Push"
+        description: "<The hero begins driving the plot. They are no longer just responding; they are hunting/seeking/confronting.>"
+      - beat_name: "The Escalation"
+        description: "<The antagonist reacts to the hero's new agency, raising the stakes to a fever pitch.>"
+  act_4_resolution:
+    act_id: 4
+    name: "Act 4: The Resolution (The Climax)"
+    purpose: "The final collision and the establishment of the new reality."
+    decision_forcing_fields:
+      climax_resolution_type: "<Is the conflict resolved through strength, wit, or sacrifice?>"
+      new_status_quo_definition: "<What does the world look like now?>"
+      thematic_conclusion: "<Does the hero's new agency prove the story's argument?>"
+      consequence_severity: "<What was lost in the pursuit of victory?>"
+    beats:
+      - beat_name: "The Crisis/All is Lost"
+        description: "<The final obstacle that threatens to undo the hero's new proactive strategy.>"
+      - beat_name: "The Climax"
+        description: "<The ultimate confrontation. The hero uses their new agency to resolve the conflict.>"
+      - beat_name: "The New Normal"
+        description: "<The aftermath. Show how the world/hero has been permanently altered by the journey.>"
+
+beats_or_units:
+  - id: "ordinary_world"
+    name: "The Ordinary World"
+    order: 1
+    purpose: "Establish baseline and character flaw."
+    approximate_position: "0-10%"
+    writer_prompt: "<What is the hero's daily routine and what is missing from their soul?>"
+    story_function: "Establishes the status quo to provide contrast for the disruption."
+    visual_function: "<Use stable, familiar, and perhaps stagnant visual motifs.>"
+    emotional_function: "<Comfort, boredom, or repressed dissatisfaction.>"
+    required_decisions:
+      - "What is the hero's primary internal lack?"
+      - "What is the most important relationship in their 'normal' life?"
+    fields_to_complete:
+      character_routine: "<write here>"
+      internal_flaw_manifestation: "<write here>"
+    diagnostic_questions:
+      - "Is the world interesting enough to care about losing?"
+      - "Is the hero's flaw clearly visible here?"
+    completion_criteria:
+      - "The audience understands the hero's starting point."
+    common_failure_modes:
+      - "The world is too generic to create empathy."
+  - id: "inciting_incident"
+    name: "The Inciting Incident"
+    order: 2
+    purpose: "Disrupt the status quo."
+    approximate_position: "10-15%"
+    writer_prompt: "<What event makes it impossible for the hero to return to their old life?>"
+    story_function: "Triggers the movement from Act 1 to Act 2."
+    visual_function: "<A sudden change in lighting, sound, or color palette.>"
+    emotional_function: "<Shock, fear, or sudden excitement."
+    required_decisions:
+      - "Is this event irreversible?"
+      - "Does this event directly challenge the hero's flaw?"
+    fields_to_complete:
+      event_details: "<write here>"
+      immediate_consequence: "<write here>"
+    diagnostic_questions:
+      - "Does this event force a choice?"
+    completion_criteria:
+      - "The status quo is officially broken."
+    common_failure_modes:
+      - "The incident is too small to warrant a full story."
+  - id: "threshold_pp1"
+    name: "The Threshold/Plot Point 1"
+    order: 3
+    purpose: "Commitment to the journey."
+    approximate_position: "20-25%"
+    writer_prompt: "<What choice does the hero make that seals their fate?>"
+    story_lag: "The point of no return."
+    story_function: "Transitions the hero from the known world to the unknown world."
+    visual_function: "<Crossing a physical or metaphorical boundary (a gate, a border, a new city).>"
+    emotional_function: "<Trepidation, determination, or desperation."
+    required_decisions:
+      - "Is the hero entering the new world by choice or by force?"
+      - "What is the cost of this commitment?"
+    fields_to_complete:
+      the_choice: "<write here>"
+      the_cost: "<write here>"
+    diagnostic_questions:
+      - "Can the hero still turn back after this?"
+    completion_criteria:
+      - "The hero is now officially 'in the story'."
+    common_failure_modes:
+      - "The hero enters the new world without any real stakes or commitment."
+  - id: "learning_curve"
+    name: "The Learning Curve"
+    order: 4
+    purpose: "Introduce the new world's rules."
+    approximate_position: "25-35%"
+    writer_prompt: "<How does the hero struggle to apply their old logic to new problems?>"
+    story_function: "Establates the difficulty of the new environment."
+    visual_function: "<Chaotic, disorienting, or overwhelming imagery.>"
+    emotional_function: "<Confusion, frustration, or inadequacy."
+    required_decisions:
+      - "What is the first major mistake the hero makes?"
+      - "Who is the mentor or guide helping them navigate this phase?"
+    fields_to_complete:
+      new_rules_learned: "<write here>"
+      failed_tactic: "<write here>"
+    diagnostic_questions:
+      - "Is the hero's failure clearly linked to their internal flaw?"
+    completion_criteria:
+      - "The hero demonstrates they are not yet prepared for the true conflict."
+    common_failure_modes:
+      - "The hero learns too quickly, removing the tension."
+  - id: 'rising_complications'
+    name: "Rising Complications"
+    order: 5
+    purpose: "Increase pressure and stakes."
+    approximate_position: "35-45%"
+    writer_prompt: "<What external forces are making the hero's situation increasingly untenable?>"
+    story_function: "Builds tension toward the Midpoint."
+    visual_function: "<Increasingly intense action, tighter framing, or darker tones.>"
+    emotional_function: "<Anxiety, mounting pressure, or claustrophobia."
+    required_decisions:
+      - "What is the primary source of the new pressure?"
+      - "How does this complication affect the hero's allies?"
+    fields_to_complete:
+      complication_event: "<write here>"
+      impact_on_allies: "<write here>"
+    diagnostic_questions:
+      - "Are the stakes rising, or is the hero just running in circles?"
+    completion_criteria:
+      - "The hero's reactive strategy is no longer working."
+    common_failure_modes:
+      - "The complications feel disconnected from the main plot."
+  - id: 'low_point_pre_midpoint'
+    name: "The Low Point/Pre-Midpoint"
+    order: 6
+    purpose: "Create the necessity for change."
+    approximate_position: "45-50%"
+    writer_prompt: "<What moment of near-defeat makes the old way of living impossible?>"
+    story_function: "Sets the stage for the Midpoint Pivot."
+    visual_function: "<Diminished lighting, isolation, or a sense of emptiness.>"
+    emotional_function: "<Despair, exhaustion, or hopelessness."
+    required_decisions:
+      - "What is lost during this low point?"
+      - "How does this loss force a change in mindset?"
+    fields_to_complete:
+      the_loss: "<write here>"
+      the_realization: "<write here>"
+    diagnostic_questions:
+      - "Is the hero's defeat significant enough to warrant a pivot?"
+    completion_criteria:
+      - "The hero is at their lowest ebb."
+    common_failure_modes:
+      - "The low point is too easy to recover from."
+  - id: "midpoint_pivot"
+    name: "The Midpoint Pivot"
+    order: 7
+    purpose: "To transform the protagonist from reactive to proactive."
+    approximate_position: "50%"
+    writer_prompt: "<What specific event or realization makes it impossible for the hero to keep just 'reacting' to the conflict?>"
+    story_function: "Structural hinge; shifts the narrative engine from defense to offense."
+    visual_function: "<A sudden shift in energy, lighting, or pacing; a moment of clarity.>"
+    emotional_function: "<From dread/uncertainty to determination/resolve.>"
+    required_decisions:
+      - "Does this event provide the hero with a new resource, knowledge, or mindset?"
+      - "Does this event raise the stakes so they can no longer retreat?"
+    fields_to_complete:
+      event_description: "<write here>"
+      consequence_for_hero: "<write here>"
+      consequence_for_antagonist: "<write here>"
+    diagnostic_questions:
+      - "Is the hero still just 'dealing with things' after this, or are they 'making things happen'?"
+      - "If you removed this beat, would the second half of the and story still feel like a different movie?"
+    completion_criteria:
+      - "The hero's strategy must fundamentally change."
+    common_failure_modes:
+      - "The 'False Midpoint': A big event happens, but the hero stays in a reactive/defensive mode."
+  - id: "proactive_push"
+    name: "The Proactive Push"
+    order: 8
+    purpose: "Demonstrate the new agency."
+    approximate_position: "50-70%"
+    writer_prompt: "<How does the hero begin to drive the plot through their own actions?>"
+    story_function: "Establishes the new direction of the narrative."
+    visual_function: "<Increased movement, faster editing, or more aggressive camera work.>"
+    emotional_function: "<Confidence, aggression, or focused intent."
+    required_decisions:
+      - "What is the hero's first proactive move?"
+      - "How does the antagonist react to this new threat?"
+    fields_to_complete:
+      the_move: "<write here>"
+      antagonist_reaction: "<write here>"
+    diagnostic_questions:
+      - "Is the hero making things happen, or are they still just responding to the antagonist's moves?"
+    completion_criteria:
+      - "The hero is now the primary driver of the plot."
+    common_failure_modes:
+      - "The hero's 'proactive' actions are still just reactive responses to a new threat."
+  - id: "escalation"
+    name: "The Escalation"
+    order: 9
+    purpose: "Raise the stakes to the breaking point."
+    approximate_position: "70-80%"
+    writer_prompt: "<How does the antagonist raise the stakes to a fever pitch?>"
+    story_function: "Builds tension toward the final confrontation."
+    visual_function: "<Intense, high-contrast, or high-action imagery.>"
+    emotional_function: "<Urgency, heightened tension, or extreme pressure."
+    required_decisions:
+      - "What is the ultimate threat introduced here?"
+      - "What is at risk if the hero fails now?"
+    fields_to_complete:
+      the_threat: "<write here>"
+      the_consequence: "<write here>"
+    diagnostic_questions:
+      - "Are the stakes high enough to justify the climax?"
+    completion_criteria:
+      - "The conflict has reached its maximum intensity."
+    common_lag: "The tension plateaus."
+    common_failure_modes:
+      - "The escalation feels unearned or random."
+  - id: "crisis_all_is_lost"
+    name: "The Crisis/All is Lost"
+    order: 10
+    purpose: "The final test of the hero's new agency."
+    approximate_position: "80-85%"
+    writer_prompt: "<What final obstacle threatens to undo the hero's new proactive strategy?>"
+    story_function: "Creates the ultimate tension before the climax."
+    visual_function: "<Darkness, wreckage, or a sense of total loss.>"
+    emotional_function: "<Despair, realization of the true cost, or extreme vulnerability."
+    required_decisions:
+      - "What is the hero's final sacrifice?"
+      - "How does this crisis force the hero to use their agency one last time?"
+    fields_to_complete:
+      the_crisis: "<write here>"
+      the_sacrifice: "<write here>"
+    diagnostic_questions:
+      - "Does this crisis directly challenge the hero's new proactive mindset?"
+    completion_criteria:
+      - "The hero is pushed to the absolute limit."
+    common_failure_modes:
+      - "The crisis is easily solved by the hero's existing skills."
+  - id: "climax"
+    name: "The Climax"
+    order: 11
+    purpose: "The ultimate confrontation and resolution of conflict."
+    approximate_position: "85-95%"
+    writer_prompt: "<How does the hero use their new agency to resolve the conflict?>"
+    story_function: "The narrative payoff."
+    visual_function: "<The most visually dynamic and intense sequence of the story.>"
+    emotional_lag: "The release of tension."
+    emotional_function: "<Catharsis, triumph, or tragic realization."
+    required_decisions:
+      - "How is the antagonist defeated?"
+      - "How does the hero's internal flaw play into the resolution?"
+    fields_to_complete: []
+    diagnostic_questions: []
+    completion_criteria: []
+    common_failure_modes: []

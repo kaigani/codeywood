@@ -1,0 +1,328 @@
+metadata:
+  framework_name: "Logline-First Method Template"
+  methodology_name: "Logline-First Method"
+  methodology_family: "Concept-Driven Development"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "TV pilot"
+    - "anime"
+    - "web series"
+  best_for:
+    - "High-concept premises"
+    - "Genre fiction"
+    - "Pitch preparation"
+    - "Testing story viability before outlining"
+  not_ideal_for:
+    - "Character studies without clear plot"
+    - "Experimental/Abstract narratives"
+    - "Anthologies where plots are disconnected"
+  target_lengths:
+    - "90-120 minutes"
+    - "22-44 minutes"
+  core_principle: "The strength of the narrative engine is determined by the structural integrity of the logline. If the logline lacks irony, stakes, or agency, the screenplay will lack momentum."
+  primary_story_unit: "The Logline (The Narrative Engine)"
+  primary_success_metric: "The presence of a clear, ironic, and high-stakes conflict that necessitates a full-length story."
+
+framework_overview:
+  summary: "A methodology that prioritizes the construction and stress-testing of a single-sentence premise (the logline) as the foundational blueprint for all subsequent character, world, and plot development."
+  what_this_framework_helps_create:
+    - "A structurally sound story engine"
+    - "A clear sense of protagonist agency"
+    - "Marketable high-concept premises"
+    - "A roadmap for conflict-driven plotting"
+  what_it_prioritizes:
+    - "Conflict/Antagonism"
+    - "Irony"
+    - "Stakes"
+    - "Protagonist Drive"
+  what_it_deemphasphasizes:
+    - "Worldbuilding complexity (unless it drives conflict)"
+    - "Subplots (until the main engine is verified)"
+    - "Character backstory (unless it informs the flaw/drive)"
+
+use_when:
+  - "Starting a new project from a seed idea"
+  - "Struggling with a 'sagging middle' in an existing draft"
+  - "Preparing a pitch for producers or executives"
+  - "Determining if a concept is 'big enough' for a feature"
+
+avoid_when:
+  - "Developing character-driven dramas where plot is secondary to internal evolution"
+  - "Writing experimental/avant-garde works that defy traditional conflict structures"
+
+core_principles:
+  - "The Logline is the DNA: If the DNA is mutated, the organism (the script) will die."
+  - "Irony is the Spark: The protagonist's situation should ideally contradict their nature or previous status."
+  - "Action is Mandatory: The protagonist must be the primary driver of the plot, not a reactive observer."
+  - "Stakes are the Fuel: Without a clear cost of failure, the story has no momentum."
+
+workflow:
+  - step: 1
+    name: "Seed Extraction"
+    goal: "Identify the raw ingredients of the idea."
+    instructions:
+      - "List the core elements: Who, What, and the 'What If'."
+    output: "Raw Concept Notes"
+  - step: 2
+    name: "Logline Construction"
+    goal: "Assemble the DNA components into a single, potent sentence."
+    instructions:
+      - "Apply the formula: [Protagonist] + [Inciting Incident] + [Goal] + [Antagonistic Force] + [Stakes]."
+    output: "Draft Logline"
+  - step: 3
+    name: "The Stress Test"
+    goal: "Identify structural weaknesses in the premise."
+    instructions:
+      - "Check for irony, agency, and stakes using the diagnostic questions."
+    output: "Validated Logline"
+  - step: 4
+    name: "Expansion"
+    goal: "Build the world and characters based on the validated engine."
+    instructions:
+      - "Use the logline components to define character flaws and world rules."
+    output: "Story Framework/Outline"
+
+story_inputs:
+  premise: "<the initial 'what if' or seed idea>"
+  logline_draft_v1: "<the first attempt at the sentence>"
+  medium: "<feature | pilot | short | etc.>"
+  genre: "<primary genre>"
+  tone: "<the emotional atmosphere>"
+  audience: "<who is/is this for?>"
+  rating: "<PG | R | TV-MA | etc.>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  logline_components:
+    protagonist_profile:
+      identity: "<who they are (e.g., a disgraced detective, a lonely astronaut)>"
+      defining_trait_or_flaw: "<the trait that makes the conflict harder or more ironic>"
+      status_quo: "<their life before the disruption>"
+      internal_motivation: "<the deep-seated need driving them>"
+      vulnerability: "<the specific weakness an antagonist can exploit>"
+    inciting_incident:
+      the_disruption: "<the event that breaks the status quo>"
+      the_trigger: "<why the protagonist cannot ignore this event>"
+      the_point_of_no_return: "<the threshold that prevents retreating to the status quo>"
+      the_immediate_consequence: "<the first ripple effect of the disruption>"
+    the_pursuit:
+      active_goal: "<what the protagonist is trying to achieve/attain>"
+      the_drive: "<the internal or external pressure forcing the pursuit>"
+      the_obstacle_type: "<physical | psychological | social | environmental>"
+      the_urgency_factor: "<the ticking clock or time-sensitive element>"
+    antagonistic_force:
+      the_obstacle: "<the person, group, or nature standing in the way>"
+      the_pressure: "<how the obstacle actively prevents the goal>"
+      the_counter_logic: "<how the antagonist's goal is the inverse of the hero's>"
+      the_leverage: "<what the antagonist uses to manipulate the hero>"
+    the_stakes:
+      the_consequence: "<what is lost if the protagonist fails?>"
+      the_emotional_cut: "<the personal toll of failure>"
+      the_scale_of_impact: "<personal | local | global | cosmic>"
+      the_irreversibility: "<why the damage cannot be undone>"
+  structural_checks:
+    irony_check:
+      description: "Does the situation contradict the protagonist's nature?"
+      is_present: "<yes | no>"
+      description_of_irony: "<e.g., A pacifist forced to lead an army>"
+      irony_strength_score: "<1-10>"
+    agency_check:
+      description: "Is the protagonist making choices, or just reacting to things happening to them?"
+      is_present: "<yes | no>"
+      evidence_of_choice: "<specific action taken by hero>"
+      reactive_risk_assessment: "<how much of the plot is external vs internal>"
+    scale_check:
+      description: "Are the stakes high enough for the chosen medium/length?"
+      is_sufficient: "<yes | no>"
+      medium_alignment: "<how the stakes match the runtime>"
+      expansion_potential: "<can this scale up or down?>"
+
+beats_or_units:
+  - id: "B01"
+    name: "The Inciting Disruption"
+    order: 1
+    purpose: "To shatter the status quo and introduce the engine's friction."
+    approximate_position: "10-15% of story"
+    writer_prompt: "Describe the moment the protagonist's world changes forever."
+    story_function: "Introduces the primary conflict and the protagonist's new reality."
+    visual_function: "A high-impact event that disrupts the established visual rhythm."
+    emotional_function: "Shock, confusion, or sudden realization."
+    required_decisions:
+      - "Is the disruption irreversible?"
+      - "Does it directly challenge the protagonist's flaw?"
+    fields_to_complete:
+      event_description: ""
+      consequence_to_hero: ""
+    diagnostic_questions:
+      - "Does this event force the hero to act?"
+      - "Is the change visually distinct from the status quo?"
+    completion_criteria:
+      - "The hero's status quo is no longer an option."
+    common_failure_modes:
+      - "The event is too small to warrant a full story."
+      - "The hero can simply walk away from the problem."
+  - id: "B02"
+    name: "The First Choice"
+    order: 2
+    purpose: "To establish protagonist agency and commitment to the goal."
+    approximate_position: "20-25% of story"
+    writer_prompt: "What is the first active step the hero takes to address the disruption?"
+    story_function: "Transitions the hero from reactive to proactive."
+    visual_function: "The hero entering a new, unfamiliar environment or state."
+    emotional_function: "Determination or desperate necessity."
+    required_decisions:
+      - "What is the cost of this first step?"
+      - "How does this choice reveal their flaw?"
+    fields_to_complete:
+      action_taken: ""
+      cost_incurred: ""
+    diagnostic_questions:
+      - "Is the hero making a choice or just being pushed?"
+      - "Does this action escalate the conflict?"
+    completion_criteria:
+      - "The hero has committed to the pursuit."
+    common_failure_modes:
+      - "The hero is still just reacting to external forces."
+
+character_design:
+  methodology_role: "Characters are extensions of the logline's conflict."
+  protagonist:
+    name: "<write here>"
+    internal_conflict: "<how their flaw interferes with their goal>"
+    external_conflict: "<how the antagonist interferes with their goal>"
+    arc_direction: "<from [status quo] and flaw to [new reality] and strength>"
+  antagonist:
+    name: "<write here>"
+    motivation: "<why their goal directly opposes the protagonist's goal>"
+    threat_level: "<physical | psychological | systemic | cosmic>"
+
+world_design:
+  methodology_role: "The world must provide the friction required by the logline."
+  fields:
+    the_arena: "<the setting where the conflict plays out>"
+    the_rules_of_conflict: "<what makes it difficult to achieve the goal in this specific world?>"
+    the_pressure_cooker: "<what environmental factor accelerates the stakes?>"
+
+theme_design:
+  methodology_role: "The theme is the 'why' behind the struggle."
+  fields:
+    central_argument: "<the debate between the protagonist's old way and their new requirement>"
+    thematic_question: "<the question the story asks through the protagonist's struggle>"
+
+visual_storytelling:
+  methodology_role: "Visuals must reinforce the irony and stakes of the logline."
+  elements:
+    visual_irony: "<how the setting or costume contradicts the character's nature>"
+    symbolic_motifs: "<recurring visual elements representing the stakes>"
+    color_palette_shift: "<how the visual tone changes from status quo to conflict>"
+
+scene_generation_rules:
+  rule_1: "Every scene must either advance the pursuit or increase the pressure from the antagonist."
+  rule_2: "No scene should exist solely for exposition; information must be earned through conflict."
+  rule_3: "Visuals must emphasize the 'Scale of Stakes' defined in the logline."
+
+revision_passes:
+  - name: "The Clarity Pass"
+    goal: "Ensure the logline is understandable to a stranger."
+    instructions:
+      - "Remove jargon."
+      - "Ensure every word contributes to the 'engine'."
+    questions:
+      - "Can a person summarize this in one breath?"
+      - "Is the protagonist's identity clear?"
+    success_criteria:
+      - "A single, jargon-free sentence."
+  - name: "The Irony/Conflict Pass"
+    goal: "Maximize the dramatic tension."
+    instructions:
+      - "Look for ways to make the protagonist's goal more difficult based on who they are."
+    questions:
+      - "Is there a 'clash' between the character and the situation?"
+      - "Is the antagonist more than just a hurdle; are they a direct counter to the hero?"
+    success_criteria:
+      - "The presence of a clear, inherent contradiction."
+  - name: "The Stakes Pass"
+    goal: "Ensure the story doesn't 'fizzle out'."
+    instructions:
+      - "Increase the cost of failure."
+    questions:
+      - "If the protagonist fails, does their world (or the world) change forever?"
+      - "Is the cost personal, physical, or global?"
+    success_criteria:
+      - "A clearly defined, irreversible consequence."
+  - name: "The Visual Storytelling Pass"
+    goal: "Align the visual language with the narrative engine."
+    instructions:
+      - "Check if the setting and imagery reinforce the irony."
+    questions:
+      - "Does the visual tone match the stakes?"
+      - "Is the protagonist's struggle visually evident?"
+    success_criteria:
+      - "A cohesive visual-narrative loop."
+  - name: "The Logline-DNA Pass"
+    goal: "Verify structural integrity of the core engine."
+    instructions:
+      - "Audit the expanded plot against the original logline components."
+    questions:
+      - "Does every major beat stem from the logline's components?"
+      - "Has the expansion diluted the original irony?"
+    success_criteria:
+      - "Zero deviation from the core premise's fundamental conflict."
+
+validation_checklist:
+  - "Does the logline contain a clear Protagonist?"
+  - "Is there a clear Inciting Incident?"
+  - "Is there a clear, active Goal?"
+  - "Is there a clear Antagonistic Force?"
+  - "Are the Stakes explicitly or implicitly high?"
+  - "Is there a sense of Irony or Conflict?"
+  - "Does the premise feel 'big enough' for the target length?"
+  - "Is the protagonist's agency clearly defined?"
+  - "Does the antagonist's motivation directly oppose the hero's?"
+  - "Is the 'Point of No Return' established?"
+  - "Is the 'Cost of Failure' irreversible?"
+  - "Does the logline avoid 'The Concept Trap' (no plot)?"
+  - "Does the logline avoid 'The Passive Hero' (no agency)?"
+  - "Is the genre/tone consistent with the proposed stakes?"
+
+failure_modes:
+  - failure_mode: "The Concept Trap"
+    symptom: "The logline is 'cool' but nothing happens."
+    likely_cause: "Focusing on worldbuilding/setting rather than character goal/conflict."
+    fix: "Identify the active pursuit and the person stopping it."
+  - failure_mode: "The Passive Hero"
+    symptom: "The protagonist is a victim of circumstance."
+    likely_cause: "The inciting incident is the only driver; the hero just reacts."
+    fix: "Give the protagonist a choice that forces them into the pursuit."
+  - failure_mode: "The Low-Stakes Drift"
+    symptom: "The story starts strong but loses momentum in the second act."
+    likely_cause: "The consequence of failure is too small or non-existent."
+    fix: "Tie the protagonist's internal identity or survival to the outcome."
+
+adaptation_notes:
+  feature_film: "Focus on a singular, massive-scale conflict."
+  short_film: "Focus on a sharp, singular moment of irony or a sudden shift in status."
+  tv_episode: "Focus on a self-contained conflict that resolves within the runtime."
+  tv_pilot: "Focus on the 'Engine'—the setup that allows for endless conflict iterations."
+  anime: "Emphasize the 'Power System' or 'World Rule' as the primary antagonistic force."
+  adult_animation: "Leverage extreme irony and high-consequence visual satire."
+  anthology: "Each logline must be a self-contained, high-impact unit."
+  game_cinematic: "Focus on the immediate, visceral stakes that drive player motivation."
+
+yaml_usage_notes:
+  how_to_use: "Start with the 'story_inputs'. Use the 'methodology_structure' to build the sentence. Use 'revision_passes' to refine it before moving to 'character_design'."
+  recommended_population_order:
+    - "story_inputs"
+    - "methodology_structure.logline_components"
+    - "revision_passes"
+    - "character_design"
+    - "world_design"
+  minimum_viable_completion: "A completed 'logline_components' section and one successful 'revision_pass'."
+  signs_framework_is_ready_for_scene_outline: "When the logline can be used to predict the outcome of every major beat."

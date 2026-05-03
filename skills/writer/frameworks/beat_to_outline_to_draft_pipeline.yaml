@@ -1,0 +1,325 @@
+metadata:
+  framework_name: "Beat-to-Outline-to-Draft Pipeline"
+  methodology_name: "Beat-to-Outline-to-Draft Pipeline"
+  methodology_family: "Procedural/Iterative Development"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media: ["feature film", "short film", "TV episode", "TV pilot", "manga", "web series"]
+  best_for: ["complex plots", "high-stakes narratives", "writers prone to writer's block", "structuralists"]
+  not_ideal_for: ["experimental stream-of-consciousness", "highly improvisational writing", "ultra-short vignettes"]
+  target_lengths: ["any"]
+  core_principle: "Incremental expansion from micro-causality to macro-structure to granular execution."
+  primary_story_unit: "The Beat (Action/Reaction pair)"
+  primary_success_metric: "Structural integrity and narrative momentum maintained across all levels of granularity."
+
+framework_overview:
+  summary: "A three-stage expansion process designed to prevent structural collapse by building the narrative DNA (Beats) before the skeleton (Outline) and the flesh (Draft)."
+  what_this_framework_helps_create:
+    - "Logically sound plot progressions"
+    - "Pacing control through structural checkpoints"
+    - "Reduction of 'middle-act sag'"
+    - "Seamless transition from idea to execution"
+  what_it_prioritizes:
+    - "Causality (Because of X, Y happens)"
+    - "Structural integrity"
+    - "Iterative refinement"
+  what_it_deemphasizes:
+    - "Spontaneous prose"
+    - "Character-only driven plots without structural beats"
+
+use_when:
+  - "Starting a complex multi-act story"
+  - "Feeling overwhelmed by the scale of a script"
+  - "Struggling with plot holes or 'what happens next' syndrome"
+  - "When the ending is known but the path is unclear"
+
+avoid_when:
+  - "Writing character studies that rely on atmosphere over action"
+  - "When the goal is purely aesthetic or experimental"
+
+core_principles:
+  - "The Atom: Every story is a chain of beats (Action -> Reaction)."
+  - "The Molecule: Beats aggregate into Sequences; Sequences aggregate into Acts."
+  - "The Organism: The Draft is the expansion of the Outline into sensory, dialogue-driven scenes."
+  - "No Expansion Without Foundation: Do not write a scene until the beats within it are logically locked."
+
+workflow:
+  - step: 1
+    name: "Phase 1: Beat Generation (The Micro)"
+    goal: "Establish the causal chain of the entire story."
+    instructions:
+      - "Identify the start and end points."
+      - "Create a list of individual beats (Action/Reaction pairs) that bridge the gap."
+      - "Focus purely on 'What happens?' and 'What is the consequence?'"
+    output: "A raw, bulleted list of story beats."
+  - step: 2
+    name: "Phase 2: Outline Assembly (The Macro)"
+    goal: "Group beats into structural units (Sequences/Acts) to manage pacing."
+    instructions:
+      - "Group the beats into logical clusters (Sequintences)."
+      - "Identify structural milestones (Inciting Incident, Plot Point 1, Midpoint, etc.)."
+      - "Check for pacing gaps or 'empty' sequences."
+    output: "A structured beat-sheet or sequence outline."
+  - step: 3
+    name: "Phase 3: Draft Expansion (The Execution)"
+    goal: "Transform the structural outline into full-fledged scenes."
+    instructions:
+      - "Take one sequence at a time."
+      - "Expand each beat into a scene with dialogue, setting, and sensory detail."
+      - "Ensure the 'visual function' and 'emotional function' of the outline are realized."
+    output: "A completed, polished screenplay or manuscript."
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  phase_1_the_atom_beats:
+    focus: "Causality and Momentum"
+    description: "The smallest unit of narrative change."
+    logic_flow: "Action -> Reaction -> Consequence"
+    structural_components:
+      trigger_action:
+        definition: "The initial movement or decision."
+        decision_forcing_fields:
+          agency_level: "<High/Low/Reactive>"
+          intent: "<What is the character trying to achieve?>"
+      immediate_reaction:
+        definition: "The world or character's response to the action."
+        decision_forcing_fields:
+          resistance_level: "<How much does the world push back?>"
+          internal_shift: "<How does the character's mindset change?>"
+      causal_consequence:
+        definition: "The ripple effect that necessitates the next beat."
+        decision_forcing_fields:
+          irreversibility: "<Can the status quo be restored?>"
+          next_beat_trigger: "<What specific element of this consequence forces the next action?>"
+  
+  phase_2_the_molecule_outline:
+    focus: "Structure and Pacing"
+    description: "The organization of beats into narrative arcs."
+    logic_flow: "Beat Clusters -> Sequences -> Acts"
+    structural_components:
+      sequence_management:
+        sequence_id: "<write here>"
+        beats_included: []
+        structural_function: "<e.g., Inciting Incident, Escalation, Climax>"
+        pacing_check: "<Is the tension rising or falling in this sequence?>"
+        milestone_validation:
+          is_major_turning_point: "<True/False>"
+          stakes_increase: "<How much higher are the stakes here?>"
+      act_architecture:
+        act_number: "<1, 2, or 3>"
+        act_goal: "<What is the primary objective of this act?>"
+        act_transition_point: "<What beat ends this act and starts the next?>"
+        act_tension_profile: "<Rising/Plateau/Falling>"
+  
+  phase_3_the_organism_draft:
+    focus: "Texture and Experience"
+    description: "The expansion of structure into cinematic/literary reality."
+    logic_flow: "Outline -> Scene -> Prose/Dialogue"
+    structural_components:
+      scene_expansion:
+        sensory_details:
+          visual: "<What does the audience see?>"
+          auditory: "<What does the audience hear?>"
+          olfactory_tactile: "<What does the audience smell/feel?>"
+        dialogue_subtext:
+          surface_level: "<What is being said?>"
+          underlying_intent: "<What is being meant?>"
+        emotional_arc:
+          starting_emotion: "<Initial state>"
+          ending_emotion: "<Final state>"
+          catalyst_of_change: "<The specific beat/action that caused the shift>"
+      narrative_flesh:
+        pacing_control: "<Use of sentence length/action density to control speed>"
+        thematic_resonance: "<How the scene reinforces the central argument>"
+
+beats_or_units:
+  - id: "BEAT_001"
+    name: "The Primary Catalyst"
+    order: 1
+    purpose: "To disrupt the status quo."
+    approximate_position: "Inciting Incident"
+    writer_prompt: "What event makes it impossible for the protagonist to return to their normal life?"
+    story_function: "Disruption"
+    visual_function: "A sudden change in the visual environment or character state."
+    emotional_function: "Shock / Confusion / Urgency"
+    required_decisions:
+      - "Is the disruption irreversible?"
+      - "Does the character react or resist?"
+    fields_to_complete:
+      action: "<write here>"
+      reaction: "<write here>"
+      consequence: "<write here>"
+    diagnostic_questions:
+      - "Does this beat logically lead to the next?"
+      - "Is the consequence significant enough to drive the plot?"
+    completion_criteria:
+      - "The beat must result in a new 'state of being' for the character."
+    common_failure_modes:
+      - "The beat is too passive (nothing actually happens)."
+      - "The beat is too large (it's actually an entire sequence, not a beat)."
+
+character_design:
+  methodology_role: "Characters are the engines of the beats."
+  characters:
+    - name: "<write here>"
+      motivation_driving_beats: "<What desire forces them to take the 'Action' in the beat?>"
+      internal_conflict_affecting_reaction: "<What fear makes their 'Reaction' difficult or complicated?>"
+      arc_progression: "<How does their capacity for action change from Beat 1 to the Final Beat?>"
+
+world_design:
+  methodology_role: "The world provides the 'Reaction' constraints."
+  fields:
+    rules_of_physics_or_magic: "<What limits the character's actions?>"
+    environmental_pressures: "<What external forces force the character to move?>"
+
+theme_design:
+  methodology_role: "The thematic argument is the 'Why' behind the causal chain."
+  fields:
+    central_argument: "<What is being proven through the sequence of beats?>"
+    thematic_resolution: "<How does the final beat resolve the central question?>"
+
+visual_storytelling:
+  methodology_role: "Visuals are the manifestation of the beat's impact."
+  image_system:
+    recurring_motifs: ["<write here>"]
+    visual_metaphor_for_change: "<How do we see the character's change visually?>"
+  visual_rules:
+    - "Every beat must have a visible consequence."
+    - "The scale of visual composition should shift with the tension of the beats."
+
+scene_generation_rules:
+  scene_principles:
+    - "A scene is a cluster of beats."
+    - "A scene must contain at least one 'turn' (a change in value)."
+    - "Never expand a scene until the beats within it are structurally sound."
+  scene_template:
+    scene_id: "<write here>"
+    beat_group_reference: "<Which beats from Phase 1 are in this scene?>"
+    location: "<write here>"
+    characters_present: []
+    visible_goal: "<What is the character trying to achieve in this specific scene?>"
+    conflict_or_pressure: "<What is preventing the goal?>"
+    turn: "<How does the situation change by the end of the scene?>"
+    visual_anchor: "<A specific object or image that grounds the scene?>"
+    emotional_shift: "<From [Emotion A] to [Emotion B]>"
+    exits_with: "<The hook that leads to the next scene/beat>"
+  do_rules:
+    - "Focus on the 'Reaction' as much as the 'Action'."
+    - "Ensure dialogue serves the 'Consequence' of the beat."
+  avoid_rules:
+    - "Do not add 'filler' scenes that do not contain a beat-driven change."
+    - "Do not write dialogue for a beat that hasn't been logically established."
+
+revision_passes:
+  - name: "The Causal Pass (Phase 1 Review)"
+    goal: "Ensure the chain of logic is unbreakable."
+    instructions:
+      - "Read only the 'Action' and 'Consequence' fields."
+      - "Trace the path from start to finish."
+    questions:
+      - "Does 'Beat B' happen *because* of 'Beat A'?"
+      - "Are there any leaps in logic?"
+    success_criteria:
+      - "A seamless, 'unputdownable' chain of events."
+
+  - name: "The Pacing Pass (Phase 2 Review)"
+    goal: "Ensure the structural peaks and valleys are present."
+    instructions:
+      - "Review the Sequence IDs and their structural functions."
+      - "Map the tension levels across the acts."
+    questions:
+      - "Is there a Midpoint?"
+      - "Is the second act dragging?"
+    success_criteria:
+      - "A balanced distribution of tension across the acts."
+
+  - name: "The Sensory Pass (Phase 3 Review)"
+    goal: "Ensure the draft is cinematic and immersive."
+    instructions:
+      - "Read the draft and highlight all sensory details."
+      - "Check for sensory variety (sight, sound, touch, etc.)."
+    questions:
+      - "Are we seeing the consequence of the beats?"
+      - "Is the subtext present in the dialogue?"
+    success_criteria:
+      - "A vivid, immersive experience that feels 'alive'."
+
+  - name: "The Character Pass"
+    goal: "Ensure character agency drives the plot."
+    instructions:
+      - "Identify every 'Action' in the beats."
+      - "Verify if the character's established motivation is the driver."
+    questions:
+      - "Are characters acting, or just having things happen to them?"
+      - "Does the reaction align with their internal conflict?"
+    success_criteria:
+      - "A character-driven narrative where choices dictate direction."
+
+  - name: "The Theme Pass"
+    goal: "Ensure the narrative argument is cohesive."
+    instructions:
+      - "Review the final beat against the central argument."
+      - "Check for thematic motifs in the visual storytelling section."
+    questions:
+      - "Does the resolution answer the central question?"
+      - "Is the theme present in the subtext of the dialogue?"
+    success_criteria:
+      - "A unified narrative that leaves a lasting thematic impact."
+
+validation_checklist:
+  - "Phase 1: Every beat has a clear 'Action' and 'Reaction'."
+  - "Phase 1: Every beat includes a 'Consequence' that triggers the next beat."
+  - "Phase 2: Every sequence contributes to a major structural milestone."
+  - "Phase 2: The Midpoint is clearly identified and provides a significant shift."
+  - "Phase 2: The transition between Act 1 and Act 2 is irreversible."
+  - "Phase 3: Every scene contains a measurable emotional or situational 'turn'."
+  - "Phase 3: Dialogue contains subtext that reflects the beat's consequence."
+  - "Character: Every major action is driven by a character's specific motivation."
+  - "World: The environmental pressures are actively hindering or helping the character."
+  - "Theme: The final beat provides a resolution to the central argument."
+  - "Visuals: Every beat has a visible or audible manifestation."
+  - "Structure: There are no 'floating beats' that do not impact the causal chain."
+
+failure_modes:
+  - failure_mode: "The Floating Beat"
+    symptom: "A beat happens, but it doesn't affect the next beat or the character's path."
+    likely_cause: "Lack of causal connection; writing 'interesting' things rather than 'necessary' things."
+    fix: "Rewrite the beat to ensure its 'Consequence' forces a new 'Action'."
+  - failure_mode: "The Expansion Bloat"
+    symptom: "The draft is long, but the story feels like it's going nowhere."
+    likely_cause: "Writing scenes that don't contain the beats defined in the outline."
+    fix: "Audit each scene against your Phase 1 beat-list; delete scenes that don't move the chain."
+  - failure_mode: "Structural Collapse"
+    symptom: "The middle of the story loses all tension."
+    likely_cause: "Failure to identify the 'Midpoint' or 'Reaction' beats in Phase 2."
+    fix: "Re-map the beats in the second act to ensure each one increases the stakes."
+
+adaptation_notes:
+  feature_film: ["Focus heavily on the Midpoint and the 3-Act structure."]
+  short_film: ["Collapse the pipeline; the 'Beat' and the 'Outline' are often nearly identical."]
+  tv_episode: ["Focus on the 'Sequence' as the primary unit to allow for episodic modularity."]
+  tv_pilot: ["Emphasis on the 'Consequence' beat that sets up the series-long arc."]
+  anime: ["Focus on 'Visual Function' and 'Action/Reaction' for high-impact kinetic sequences."]
+  adult_animation: ["Ensure the 'Reaction' beats account for heightened, often satirical, consequences."]
+  anthology: ["Each entry is a complete, miniature version of the entire pipeline."]
+  game_cinematic: ["The 'Reaction' beat must account for player agency or the preceding gameplay loop."]
+
+yaml_usage_notes:
+  how_to_use: ["Do not skip stages. The power of this method is the hierarchy of development."]
+  recommended_population_order: ["Story Inputs, Phase 1, Phase 2, Phase 3, Revision Passes"]
+  minimum_viable_completion: ["A completed Phase 1 and Phase 2 is required before starting Phase 3."]
+  signs_framework_is_ready_for_scene_outline: ["When every beat in your list has a 'Consequence' that triggers the next."]

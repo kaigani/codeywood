@@ -1,0 +1,182 @@
+metadata:
+  framework_name: "Pilot Engine Framework"
+  methodology_name: "Pilot Engine Method"
+  methodology_family: "Series Development / TV Pilot"
+  version: "1.0"
+  created_for: "TV Pilot and Series Development"
+  suitable_media:
+    - "TV pilot"
+    - "TV episode"
+    - "Web series"
+    - "Anime series"
+    - "Animated series"
+  best_for:
+    - "High-concept procedurals"
+    - "Character-driven dramedies"
+    - "Ensemble dramas"
+    - "Genre-based episodic shows"
+  not_ideal_for:
+    - "Feature films"
+    - "Short films"
+    - "Anthology shorts"
+    - "Standalone limited series (without engine focus)"
+  target_lengths:
+    - "22-minute episode"
+    - "44-minute episode"
+    - "60-minute episode"
+  core_principle: "The Pilot is not a story; it is a proof-of-concept for a repeatable conflict loop (The Engine) that can sustain multiple episodes."
+  primary_story_unit: "The Engine Loop"
+  primary_success_metric: "Sustainability (The ability to generate new conflict using the same characters and setting without a reset)."
+
+framework_overview:
+  summary: "The Pilot Engine Method focuses on identifying the 'Engine'—the fundamental mechanism of conflict—before constructing the specific plot of the pilot episode. It treats the pilot as a demonstration of a machine that produces drama/comedy indefinitely."
+  what_this_framework_helps_create:
+    - "A repeatable conflict loop"
+    - "Character dynamics that force interaction"
+    - "A setting that acts as a pressure cooker"
+    - "A pilot plot that proves the engine works"
+  what_it_prioritizes:
+    - "The Engine (The 'Why' we can keep making episodes)"
+    - "Character Friction (The 'How' characters interact)"
+    - "The Status Quo Disruption (The 'What' starts the show)"
+  what_it_deemphasizes:
+    - "Standalone plot resolution (The pilot should resolve the episode plot but complicate the series state)"
+    - "Finality (The pilot should avoid 'closing' the story)"
+
+use_when:
+  - "Developing a series intended for multiple episodes."
+  - "When the concept relies on a specific setting or profession (e.g., a hospital, a police precinct, a magic academy)."
+  - "When the primary draw is the interaction between a fixed set of characters."
+
+avoid_when:
+  - "Writing a self-contained movie or short film."
+  - "Writing a limited series where the story is explicitly designed to end."
+
+core_principles:
+  - "The Engine must be 'renewable' (conflict must be able to recur)."
+  - "The Pilot must disrupt the Status Quo to launch the Engine."
+  - "Characters must be 'trapped' in the Engine (either by choice, duty, or circumstance)."
+  - "Conflict should arise from the intersection of Character, World, and Engine."
+
+workflow:
+  - step: 1
+    name: "Identify the Engine"
+    goal: "Define the repeatable conflict loop."
+    instructions:
+      - "Determine the source of recurring tension."
+      - "Define the 'Input' (what triggers an episode) and the 'Output' (the consequence)."
+    output: "The Engine Definition"
+  - step: 2
+    name: "Establish the Arena"
+    goal: "Define the world and its constraints."
+    instructions:
+      - "Create a setting that facilitates the Engine."
+    output: "World Design"
+  - step: 3
+    name: "Cast the Engine"
+    goal: "Define characters by their functional roles in the conflict."
+    instructions:
+      - "Assign characters roles that create friction within the Engine."
+    output: "Character Design"
+  - step: 4
+    name: "The Disruption (The Pilot Plot)"
+    goal: "Create the specific story of Episode 1."
+    instructions:
+      - "Introduce an event that breaks the old status quo and forces the Engine to start running."
+    output: "Pilot Beat Sheet"
+
+story_inputs:
+  premise: "<The core idea of the series>"
+  logline: "<The one-string summary of the engine + characters + stakes>"
+  medium: "<e.g., TV Pilot, Web Series>"
+  genre: "<e.g., Sci-Fi Procedural, Sitcom>"
+  tone: "<e.g., Darkly comedic, Hyper-realistic, Whimsical>"
+  target_length: "<e.g., 45 minutes>"
+  audience: "<e.g., Young Adult, Prestige Drama viewers>"
+  rating: "<e.g., TV-MA, PG-13>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  the_engine_definition_stage:
+    engine_type: "<e.g., Procedural, Serialized, Character-driven Loop, Mystery-box>"
+    the_loop_trigger: "<What event or occurrence starts an episode? (e.g., A new patient arrives, A crime is committed)>"
+    the_loop_process: "<What is the repeatable struggle or investigation? (e.g., The doctor must diagnose the impossible)>"
+    the_loop_consequence: "<What is the recurring cost or result? (e.g., The truth is found, but the doctor's reputation is damaged)>"
+    sustainability_check: "<Why can this loop happen 50 times without running out of ideas?>"
+    loop_complexity_rating: "<Low/Medium/High>"
+  the_status_quo_stage:
+    description: "<The state of the world/characters before the pilot's disruption>"
+    stability_level: "<How much does the world change between episodes? (High/Low)>"
+    the_old_normal: "<What was the routine before the pilot happened?>"
+    equilibrium_state: "<What is the baseline tension level?>"
+  the_disruption_stage:
+    inciting_incident_of_pilot: "<The event that breaks the status quo and launches the engine>"
+    consequence_to_status_quo: "<How the world is permanently altered for the series>"
+    the_point_of_no_return: "<The decision or event that prevents characters from returning to the old normal>"
+    disruption_magnitude: "<How much does this event shake the existing engine mechanics?>"
+  the_pilot_arc_stage:
+    act_1_setup: "<Establish the status quo and the engine's potential>"
+    act_2_escalation: "<The disruption occurs; the characters are forced into the engine>"
+    act_3_climax: "<The pilot's specific conflict reaches a peak using the engine's mechanics>"
+    act_4_resolution: "<The pilot's specific conflict is resolved, but the engine is now 'running' and the new status quo is established>"
+    engine_activation_indicator: "<The visual or narrative signal that the engine is now active>"
+
+beats_or_units:
+  - id: "engine_unit_1"
+    name: "The Engine Setup"
+    order: 1
+    purpose: "Demonstrate the mechanics of the show's recurring conflict."
+    approximate_position: "First 10 minutes of Pilot"
+    writer_prompt: "Show us a 'mini-version' of a standard episode. Show the rules of the world in action."
+    story_function: "Establishes the 'Normal' and the 'Rules'."
+    visual_function: "Establish the aesthetic of the 'Arena'."
+    emotional_function: "Establish the stakes of the recurring conflict."
+    required_decisions:
+      - "What is the visual shorthand for the engine's activation?"
+    fields_to_complete:
+      routine_demonstration: "<write here>"
+      rule_establishment: "<write here>"
+    diagnostic_questions:
+      - "Does the audience understand how a typical episode works yet?"
+    completion_criteria:
+      - "The mechanics of the profession/setting are clear."
+    common_failure_modes:
+      - "Over-explaining via dialogue instead of showing the routine."
+
+  - id: "engine_unit_2"
+    name: "The Disruption"
+    order: 2
+    purpose: "Break the status quo to launch the series."
+    approximate_position: "End of Act 1 / Start of Act 2"
+    writer_prompt: "What happens that makes it impossible for the characters to go back to how things were?"
+    story_function: "Catalyst for the series-lag arc."
+    visual_function: "A visual shift in the environment or character status."
+    emotional_function: "Shock, dread, or sudden opportunity."
+    required_decisions:
+      - "Is this disruption repeatable or a one-time event?"
+    fields_to_complete:
+      the_event: "<write here>"
+      the_permanent_change: "<write here>"
+    diagnostic_questions:
+      - "Does this event force the characters to stay within the 'Engine'?"
+    completion_criteria:
+      - "The characters are now 'trapped' or 'committed' to the engine."
+    common_failure_modes:
+      - "The disruption is too small to change the status quo."
+
+character_design:
+  methodology_role: "Characters are defined by their functional relationship to the Engine."
+  characters:
+    - name: "<write here>"
+      engine_role: "<e.g., The Catalyst, The Anchor, The Obstacle, The Wildcard, The Expert>"
+      dramatic_function: "<How do they drive the conflict? (e.g., They break rules, they enforce them)>"
+      relational_friction: "<Which other character are they most likely to clash with and why?>"
+      internal_engine_conflict: "<What part of the engine's process do they struggle with?>"
+      visible_want: "<What they pursue in the pilot>"
+      hidden_need: "<What they need to survive the series>"
+
+world_design:

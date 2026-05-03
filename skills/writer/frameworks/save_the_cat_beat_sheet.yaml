@@ -1,0 +1,640 @@
+metadata:
+  framework_name: "Save the Cat Beat Sheet Template"
+  methodology_name: "Save the Cat"
+  methodology_family: "Structural Beat Sheet"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv_pilot"
+    - "tv_episode"
+    - "short_film"
+  best_for:
+    - "high-concept narratives"
+    - "genre-driven stories"
+    - "commercial pacing"
+    - "character transformation arcs"
+  not_ideal_for:
+    - "experimental non-linear narratives"
+    - "pure character studies without plot progression"
+    - "anthology shorts without a unifying structural arc"
+  target_lengths:
+    - "90-120 page feature"
+    - "30-60 minute pilot"
+  core_principle: "Structural pacing through 15 essential beats that balance setup, tension, and transformation."
+  primary_story_unit: "The Beat"
+  primary_success_metric: "Structural balance and the successful execution of the 'Promise of the Premise'."
+
+framework_overview:
+  summary: "A structural framework designed to ensure a story has a clear beginning, middle, and end, with specific waypoints that maintain audience engagement and drive character change."
+  what_this_framework_helps_create:
+    - "tightly paced plots"
+    - "clear character arcs"
+    - "thematic resonance"
+    - "high-concept execution"
+  what_it_prioritizes:
+    - "pacing"
+    - "thematic clarity"
+    - "the 'Promise of the Premise'"
+    - "the 'All is Lost' moment"
+  what_it_deemphasizes:
+    - "subtle, slow-burn ambiguity"
+    - "structural experimentation"
+
+use_when:
+  - "Writing a commercial-grade screenplay"
+  - "Developing a high-concept premise"
+  - "Ensuring a story doesn't sag in the second act"
+  - "Establishing a clear 'Before' and 'After' for a protagonist"
+
+avoid_when:
+  - "Writing avant-garde or non-narrative art films"
+  - "Stories where the plot is secondary to atmospheric immersion"
+    
+core_principles:
+  - "The Catalyst must disrupt the status quo."
+  - "The Midpoint must shift the stakes from 'want' to 'need' or raise the pressure significantly."
+  - "The B-Story introduces the theme and the emotional counterpoint."
+  - "The 'Fun and Games' section must deliver on the marketing hook (Promise of the Premise)."
+  - "The 'All is Lost' moment must involve a literal or metaphorical death."
+
+workflow:
+  - step: 1
+    name: "The Logline & Irony"
+    goal: "Define the core engine of the story."
+    instructions:
+      - "Identify the protagonist, the Loser/Hero, and the goal."
+      - "Identify the 'Irony' (the gap between who the hero is and what the situation requires)."
+    output: "A high-concept logline."
+  - step: 2
+    name: "The 15-Beat Skeleton"
+    goal: "Map the structural milestones."
+    instructions:
+      - "Populate the methodology_structure section using only brief summaries."
+      - "Ensure every beat has a clear connection to the character's transformation."
+    output: "A completed beat sheet outline."
+  - step: 3
+    name: "Expansion & Character Integration"
+    goal: "Flesh out the emotional and thematic depth."
+    instructions:
+      - "Define the B-Story and the Theme Stated beat."
+      - "Align the 'Fun and Games' with the character's internal struggle."
+    output: "A detailed beat sheet with character motivations."
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  irony: "<What is the fundamental contradiction in your hero's situation?>"
+  genre_type: "<e.g., Monster in the House, Dude with a Problem, Golden Fleece, etc.>"
+  buddy_love_element: "<Is there a secondary character who provides the emotional mirror?>"
+  medium: "<write here>"
+  genre: "<write and define the genre tropes here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+
+methodology_structure:
+  act_1_setup:
+    opening_image:
+      stakes_level: "<low/baseline>"
+      character_evolution: "<stasis>"
+      visual_requirement: "<contrast with final image>"
+      thematic_relevance: "<introduction of flaw>"
+    theme_stated:
+      stakes_level: "<latent>"
+      character_evolution: "<unaware>"
+      visual_requirement: "<dialogue or symbolic action>"
+      thematic_relevance: "<explicit theme introduction>"
+    set_up:
+      stakes_level: "<establishing the need>"
+      character_evolution: "<the flaw in action>"
+      visual_requirement: "<the hero's world>"
+      thematic_relevance: "<thematic setup>"
+    catalyst:
+      stakes_level: "<sudden increase>"
+      character_evolution: "<disruption>"
+      visual_requirement: "<the inciting event>"
+      thematic_relevance: "<thematic trigger>"
+    debate:
+      stakes_level: "<uncertainty>"
+      character_evolution: "<hesitation>"
+      visual_requirement: "<internal or external conflict>"
+      thematic_relevance: "<testing the theme>"
+  act_2_confrontation:
+    break_into_two:
+      stakes_level: "<commitment>"
+      character_evolution: "<proactive choice>"
+      visual_requirement: "<crossing the threshold>"
+      thematic_relevance: "<leaving the old world>"
+    b_story:
+      stakes_level: "<emotional stakes>"
+      character_evolution: "<the mirror character>"
+      visual_requirement: "<new relationship dynamics>"
+      thematic_relevance: "<thematic delivery>"
+    fun_and_games:
+      stakes_level: "<genre promise>"
+      character_evolution: "<exploration of flaw>"
+      visual_requirement: "<set pieces/action>"
+      thematic_relevance: "<thematic exploration>"
+    midpoint:
+      stakes_level: "<massive shift>"
+      character_evolution: "<shift from want to need>"
+      visual_requirement: "<false victory/defeat>"
+      thematic_relevance: "<thematic pivot>"
+    bad_guys_close_in:
+      stakes_level: "<escalating pressure>"
+      character_evolution: "<internal/external pressure>"
+      visual_requirement: "<tightening the noose>"
+      thematic_relevance: "<thematic tension>"
+    all_is_lost:
+      stakes_level: "<rock bottom>"
+      character_evolution: "<the death of the old self>"
+      visual_requirement: "<the loss/defeat>"
+      thematic_relevance: "<thematic crisis>"
+    dark_night_of_the_soul:
+      stakes_level: "<despair>"
+      character_evolution: "<processing the loss>"
+      visual_requirement: "<isolation/reflection>"
+      thematic_relevance: "<thematic realization>"
+  act_3_resolution:
+    break_into_three:
+      stakes_level: "<clarity>"
+      character_evolution: "<the epiphany>"
+      visual_requirement: "<the new plan>"
+      thematic_relevance: "<thematic synthesis>"
+    finale:
+      stakes_level: "<ultimate stakes>"
+      character_evolution: "<the transformation complete>"
+      visual_requirement: "<the final battle/climax>"
+      thematic_relevance: "<thematic resolution>"
+    final_image:
+      stakes_level: "<resolution>"
+      character_evolution: "<the new stasis>"
+      visual_requirement: "<mirror of opening image>"
+      thematic_relevance: "<thematic conclusion>"
+
+beats_or_units:
+  - id: "beat_01"
+    name: "Opening Image"
+    order: 1
+    purpose: "Establish the 'Before' state."
+    approximate_position: "0-5%"
+    writer_prompt: "What is the visual representation of the hero's current, flawed life?"
+    story_function: "Sets the tone and the baseline for change."
+    visual_function: "A single, striking image or sequence."
+    emotional_function: "Establishes the status quo/stasis."
+    required_decisions:
+      - "What is the hero's primary flaw visible here?"
+    fields_to_complete:
+      visual_snapshot: "<write here>"
+      emotional_baseline: "<write here>"
+    diagnostic_questions:
+      - "Does this image contrast sharply with the Final Image?"
+    completion_criteria:
+      - "The audience understands the hero's 'normal' world."
+    common_failure_modes:
+      - "Too much exposition; not enough visual storytelling."
+
+  - id: "beat_02"
+    name: "Theme Stated"
+    order: 2
+    purpose: "Introduce the story's moral argument."
+    approximate_position: "5%"
+    writer_prompt: "Who or what mentions the theme to the hero?"
+    story_function: "Plants the seed of the hero's eventual transformation."
+    visual_function: "A line of dialogue or a symbolic event."
+    emotional_function: "Subtle foreshadowing."
+    required_decisions:
+      - "Is the theme too obvious or too hidden?"
+    fields_to_complete:
+      thematic_line: "<write here>"
+      speaker: "<write here>"
+    diagnostic_questions:
+      - "Does the hero dismiss this idea initially?"
+    completion_criteria:
+      - "The audience hears the central argument of the film."
+    common_failure_modes:
+      - "The theme is too heavy-handed or preachy."
+
+  - id: "beat_03"
+    name: "Set Up"
+    order: 3
+    purpose: "Establish the hero's world and flaws."
+    approximate_position: "5-10%"
+    writer_prompt: "What is missing from the hero's life that they don't realize?"
+    story_function: "Introduces the characters, setting, and the 'stasis' that must be broken."
+    visual_function: "Montage of daily life and character relationships."
+    emotional_function: "Empathy for the hero's current struggle."
+    required_decisions:
+      - "What are the key stakes of the hero's current life?"
+    fields_to_complete:
+      world_details: "<write here>"
+      character_flaws: "<write here>"
+    diagnostic_questions:
+      - "Are the supporting characters clearly defined?"
+    completion_criteria:
+      - "The audience understands the hero's 'Need' vs 'Want'."
+    common_failure_modes:
+      - "Too much character backstory that doesn't drive plot."
+
+  - id: "beat_04"
+    name: "Catalyst"
+    order: 4
+    purpose: "Disrupt the status quo."
+    approximate_position: "10-15%"
+    writer_prompt: "What event makes it impossible for the hero to continue as they were?"
+    story_function: "The inciting incident that launches the plot."
+    visual_function: "An event, a message, a visitor, or a discovery."
+    emotional_function: "Shock, realization, or sudden pressure."
+    required_decisions:
+      - "Is this event irreversible?"
+    fields_to_complete:
+      the_event: "<write here>"
+      the_consequence: "<write here>"
+    diagnostic_questions:
+      - "Does the hero have a choice to ignore this, or is it forced upon them?"
+    completion_criteria:
+      - "The hero's old life is fundamentally altered."
+    common_failure_modes:
+      - "The catalyst is too small to justify the hero's subsequent journey."
+
+  - id: "beat_05"
+    name: "Debate"
+    order: 5
+    purpose: "Show the hero's hesitation."
+    approximate_position: "15-25%"
+    writer_prompt: "Why is the hero afraid to take the journey?"
+    story_function: "Builds tension and demonstrates the difficulty of the change."
+    visual_function: "Internal monologue or external obstacles."
+    emotional_function: "Doubt and uncertainty."
+    required_decisions:
+      - "What is the cost of staying vs. the cost of leaving?"
+    fields_to_complete:
+      the_hesitation: "<write here>"
+      the_risk: "<write here>"
+    diagnostic_questions:
+      - "Does the hero attempt to revert to the status quo?"
+    completion_criteria:
+      - "The hero's reluctance is justified by the stakes."
+    common_failure_modes:
+      - "The debate lasts too long, stalling the plot."
+
+  - id: "beat_06"
+    name: "Break into Two"
+    order: 6
+    purpose: "The hero commits to the journey."
+    approximate_position: "25%"
+    writer_prompt: "What choice does the hero make to leave their old world?"
+    story_function: "Transitions the story from Act 1 to Act 2."
+    visual_function: "A physical departure or a decisive action."
+    emotional_function: "Determination or forced movement."
+    required_decisions:
+      - "Is the choice proactive or reactive?"
+    fields_to_complete:
+      the_choice: "<write here>"
+      the_new_world: "<write here>"
+    diagnostic_questions:
+      - "Is there a clear point of no return?"
+    completion_criteria:
+      - "The hero is now in the 'new world' of the story."
+    common_failure_modes:
+      - "The transition feels unearned or lacks impact."
+
+  - id: "beat_07"
+    name: "B-Story"
+    order: 7
+    purpose: "Introduce the thematic counterpoint."
+    approximate_position: "30%"
+    writer_prompt: "Who is the character that will help the hero learn the theme?"
+    story_function: "Provides the emotional heart and thematic mirror."
+    visual_function: "Introduction of a new, contrasting character."
+    emotional_function: "Connection and vulnerability."
+    required_decisions:
+      - "How does this character challenge the hero's flaw?"
+    fields_to_complete:
+      character_name: "<write here>"
+      relationship_dynamic: "<write here>"
+    diagnostic_questions:
+      - "Does this character represent the 'Need'?"
+    completion_criteria:
+      - "A secondary relationship is established that carries the theme."
+    common_failure_modes:
+      - "The B-Story character is just a plot device without agency."
+
+  - id: "beat_08"
+    name: "Fun and Games"
+    order: 8
+    purpose: "Deliver the promise of the premise."
+    approximate_position: "30-50%"
+    writer_prompt: "What are the 'cool' or 'expected' scenes the audience came to see?"
+    story_function: "Exploration of the new world and the mechanics of the genre."
+    visual_function: "Set pieces, action, or comedic sequences defining the genre."
+    emotional_function: "Engagement, excitement, or curiosity."
+    required_decisions:
+      - "How does this reinforce the 'high concept'?"
+    fields_to_complete:
+      key_set_pieces: []
+      promise_delivery: "<How are we satisfying the audience's expectations?>"
+    diagnostic_questions:
+      - "Are these scenes just 'stuff happening,' or do they advance the character's exploration?"
+    completion_criteria:
+      - "The audience feels they are getting exactly what the trailer promised."
+    common_failure_modes:
+      - "The 'Fun and Games' becomes a series of disconnected vignettes without plot momentum."
+
+  - id: "beat_09"
+    name: "Midpoint"
+    order: 9
+    purpose: "Raise the stakes and shift the direction."
+    approximate_position: "50%"
+    writer_prompt: "What massive event changes the hero's goal from 'want' to 'need'?"
+    story_function: "A pivot point that shifts the story from reactive to proactive."
+    visual_function: "A major victory or a devastating defeat."
+    emotional_function: "A surge of tension or a sudden realization."
+    required_decisions:
+      - "Does the stakes increase significantly?"
+    fields_to_complete:
+      the_shift: "<write here>"
+      the_new_stakes: "<write here>"
+    diagnostic_questions:
+      - "Does the hero move from 'reacting' to 'acting' after the Midpoint?"
+    completion_criteria:
+      - "The story's trajectory is fundamentally altered."
+    common_failure_modes:
+      - "The Midpoint is too subtle to be felt by the audience."
+
+  - id: "beat_10"
+    name: "Bad Guys Close In"
+    order: 10
+    purpose: "Increase external and internal pressure."
+    approximate_position: "50-75%"
+    writer_prompt: "How are the hero's obstacles becoming more difficult?"
+    story_function: "Tightens the noose around the protagonist."
+    visual_function: "Increasingly intense conflict and loss of resources."
+    emotional_function: "Anxiety, tension, and claustrophobia."
+    required_decisions:
+      - "What is the primary threat tightening the noose?"
+    fields_to_complete:
+      the_threat: "<write here>"
+      the_pressure: "<write here>"
+    diagnostic_questions:
+      - "Are the stakes rising both externally and internally?"
+    completion_criteria:
+      - "The hero's situation becomes increasingly untenable."
+    common_failure_modes:
+      - "The pressure feels repetitive rather than escalating."
+
+  - id: "beat_11"
+    name: "All Is Lost"
+    order: 11
+    purpose: "Force the ultimate transformation."
+    approximate_position: "75%"
+    writer_prompt: "What is the 'death' that occurs here (physical, emotional, or social)?"
+    story_function: "The lowest point; the destruction of the hero's false plan."
+    visual_function: "A moment of profound isolation, loss, or defeat."
+    emotional_function: "Despair, grief, or total hopelessness."
+    required_decisions:
+      - "What part of the hero's identity is dying?"
+    fields_to_complete:
+      the_loss: "<write here>"
+      the_whimper: "<The sound of the hero's defeat>"
+    diagnostic_questions:
+      - "Is the stakes increase high enough to justify this level of despair?"
+    completion_criteria:
+      - "The hero has no way forward using their old methods."
+    common_failure_modes:
+      - "The loss is superficial and doesn't actually threaten the hero's core mission."
+
+  - id: "beat_12"
+    name: "Dark Night of the Soul"
+    order: 12
+    purpose: "The hero processes the loss."
+    approximate_position: "75-85%"
+    writer_prompt: "How does the hero confront their failure?"
+    story_function: "The period of reflection before the final push."
+    visual_function: "Quiet, somber, or introspective scenes."
+    emotional_function: "Grief, realization, and the birth of a new idea."
+    required_decisions:
+      - "What truth does the hero finally accept?"
+    fields_to_complete:
+      the_realization: "<write here>"
+      the_new_plan: "<write here>"
+    diagnostic_questions:
+      - "Does the hero find the strength to try one last time?"
+    completion_criteria:
+      - "The hero is ready to face the antagonist with a new perspective."
+    common_failure_modes:
+      - "The hero finds the answer too easily without struggle."
+
+  - id: "beat_13"
+    name: "Break into Three"
+    order: 13
+    purpose: "The hero implements the new strategy."
+    approximate_position: "85%"
+    writer_prompt: "How does the hero use their 'Need' to solve the problem?"
+    story_function: "The transition from the low point to the final resolution."
+    visual_function: "A moment of renewed energy or a new plan of attack."
+    emotional_function: "Hope, determination, or clarity."
+    required_decisions:
+      - "How does the theme inform this new action?"
+    fields_to_complete:
+      the_epiphany: "<write here>"
+      the_action: "<write here>"
+    diagnostic_questions:
+      - "Is the hero acting based on their 'Need' rather than their 'Want'?"
+    completion_criteria:
+      - "The hero is prepared for the final confrontation."
+    common_failure_modes:
+      - "The hero's new plan feels disconnected from their character arc."
+
+  - id: "beat_14"
+    name: "Finale"
+    order: 14
+    purpose: "The resolution of the conflict."
+    approximate_position: "85-99%"
+    writer_prompt: "How does the hero execute the plan and win (or lose)?"
+    story_function: "The climax where the A and B stories are synthesized."
+    visual_function: "The high-stakes confrontation or resolution."
+    emotional_function: "Catharsis, tension, or resolution."
+    required_decisions:
+      - "How is the theme proven correct through this action?"
+    fields_to_complete:
+      the_climax: "<write here>"
+      the_outcome: "<write here>"
+    diagnostic_questions:
+      - "Does the hero use the lesson learned in the B-Story to win?"
+    completion_criteria:
+      - "The central conflict is resolved."
+    common_failure_modes:
+      - "The climax is resolved by external luck rather than character growth."
+
+  - id: "beat_15"
+    name: "Final Image"
+    order: 15
+    purpose: "Show the new status quo."
+    approximate_position: "99-100%"
+    writer_prompt: "How does the hero's world look now that they have changed?"
+    story_function: "Provides closure and mirrors the opening image."
+    visual_function: "A visual echo or inversion of the Opening Image."
+    emotional_function: "Satisfaction, peace, or a new kind of tension."
+    required_decisions:
+      - "How does this image prove the transformation?"
+    fields_to_complete:
+      the_new_reality: "<write here>"
+      the_visual_echo: "<write here>"
+    diagnostic_questions:
+      - "Does this image provide a sense of completion?"
+    completion_criteria:
+      - "The audience sees the 'After' state clearly."
+    common_failure_modes:
+      - "The ending feels abrupt or fails to resolve the character arc."
+
+character_design:
+  methodology_role: "The driver of the transformation arc."
+  characters:
+    - name: "<Protagonist Name>"
+      stasis_mode: "<How they act when they are stuck in their flaw>"
+      the_flaw: "<The internal weakness preventing them from achieving the 'Need'>"
+      the_need: "<The internal truth they must realize to win>"
+      the_want: "<The external goal they are chasing (often the wrong thing)>"
+      the_transformation: "<How they will be different by the Final Image>"
+    - name: "<B-Story Character>"
+      role: "<Mentor, Love Interest, Foil, etc.>"
+      thematic_function: "<How they represent the 'Theme Stated' to the hero?>"
+
+theme_design:
+  methodology_role: "The moral argument of the story."
+  fields:
+    central_argument: "<What is the debate the story is trying to resolve?>"
+    theme_stated_line: "<The specific dialogue or event that introduces the theme early on>"
+    thematic_resolution: "<How the Finale proves the/theme correct or incorrect>"
+
+visual_storytelling:
+  methodology_role: "The visual mirroring of the structural arc."
+  image_system:
+    opening_image_vibe: "<Visuals of stagnation/stasis>"
+    midpoint_vibe: "<Visuals of chaos/shifting stakes>"
+    final_image_vibe: "<Visuals of resolution/new reality>"
+  visual_rules:
+    - "The Final Image must visually echo or invert the Opening Image."
+    - "The B-Story character should often be visually contrasted with the Protagonist."
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either advance the A-Story (plot) or the B-Story (theme)."
+    - "Every scene should move the character closer to or further from their 'Need'."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: "<How does the scene change the character's situation?>"
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Ensure the 'Fun and Games' are visually spectacular."
+    - "Make the 'All is Lost' moment feel final."
+  avoid_rules:
+    - "Avoid 'talking heads' scenes that don't move the beat forward."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Ensure the 15-beat skeleton is intact and properly paced."
+    instructions:
+      - "Verify each beat exists in the timeline."
+      - "Check for logical transitions between acts."
+    questions:
+      - "Is there a clear Catalyst and Midpoint?"
+    success_criteria:
+      - "The story follows a coherent, high-tension progression."
+  - name: "character_pass"
+    goal: "Ensure the protagonist's transformation is earned."
+    instructions:
+      - "Trace the 'Want' to the 'Need' arc."
+      - "Check if the 'All is Lost' moment breaks the old self."
+    questions:
+      - "Does the character change because of the plot, or just despite it?"
+    success_criteria:
+      - "The character's internal arc mirrors the external plot arc."
+  - name: "theme_pass"
+    goal: "Ensure the thematic argument is clear and resolved."
+    instructions:
+      - "Locate the 'Theme Stated' beat."
+      - "Check if the 'Finale' resolves the central argument."
+    questions:
+      - "Is the moral of the story evident in the resolution?"
+    success_criteria:
+      - "The story leaves the audience with a clear thematic takeaway."
+  - name: "visual_storytelling_pass"
+    goal: "Ensure the visual arc mirrors the narrative arc."
+    instructions:
+      - "Compare the Opening Image to the Final Image."
+      - "Check for visual cues in the 'Fun and Games' section."
+    questions:
+      - "Does the visual language evolve with the character?"
+    success_criteria:
+      - "The story is told through imagery, not just dialogue."
+  - name: "pacing_pass"
+    goal: "Ensure the second act does not sag."
+    instructions:
+      - "Check the frequency of plot beats in Act 2."
+      - "Verify the Midpoint provides a significant shift."
+    questions:
+      - "Does the tension increase or decrease after the Midpoint?"
+    success_criteria:
+      - "The momentum remains high from the Catalyst through the Finale."
+
+validation_checklist:
+  - "Does the logline contain Irony?"
+  - "Is the 'Theme Stated' beat present and clear?"
+  - "Does the 'Fun and Games' section satisfy the genre's promise?"
+  - "Is there a clear 'All is Lost' moment?"
+  - "Does the Final Image provide a visual resolution to the Opening Image?"
+  - "Is the Catalyst event irreversible?"
+  - "Does the Midpoint shift the stakes from 'want' to 'need'?"
+  - "Is the B-Story character introduced early enough to impact the theme?"
+  - "Does the 'Dark Night of the Soul' lead directly to a new plan?"
+  - "Is the 'Break into Three' a result of character epiphany?"
+  - "Are the 'Bad Guys Close In' increasing the pressure?"
+  - "Does the 'Set Up' clearly establish the hero's flaw?"
+
+failure_modes:
+  - failure_mode: "The Sagging Middle"
+    symptom: "The story feels like it's wandering without direction between the Catalyst and Midpoint."
+    likely_cause: "Lack of clear 'Fun and Games' or insufficient pressure from the 'Bad Guys Close In'."
+    fix: "Introduce more obstacles or a more significant Midpoint shift."
+  - failure_mode: "The Hollow Victory"
+    symptom: "The ending feels unearned or unearned by the character's growth."
+    likely_cause: "The character won through luck rather than through embracing their 'Need'."
+    fix: "Ensure the 'Break into Three' is a result of a character epiphany."
+  - failure_mode: "The Weak Protagonist"
+    symptom: "The hero is passive, and things simply happen to them."
+    likely_cause: "The 'Break into Two' and 'Break into Three' are reactive rather than proactive."
+    fix: "Rewrite the transition beats to ensure the hero makes a decisive, costly choice."
+
+adaptation_notes:
+  feature_film: "Focus on the 15-beat progression over 90-120 pages."
+  short_film: "Compress the beats; the Catalyst and All Is Lost must happen much faster."
+  tv_episode: "The B-Story is often the primary driver of the episode's emotional arc."
+  tv_pilot: "Establish the 'world' and 'stasis' heavily to set up long-term series potential."
+  anime: "Emphasize the 'Fun and Games' and 'Bad Guys Close In' for high-action sequences."
+  adult_animation: "Use the 'Fun and Games' to push genre boundaries and satirical elements."
+  anthology: "Each segment must function as a complete, self-contained 15-beat cycle."
+  game_cinematic: "Focus on the 'Catalyst' and 'Break into Two' to transition player agency into narrative momentum."
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'story_inputs' first, then use the 'methodology_structure' to draft the beats."
+  recommended_population_order:
+    - "Logline"
+    - "Character Design"
+    - "The 15 Beats"
+    - "Theme Design"
+  minimum_viable_completion: "A completed 'methodology_structure' with brief descriptions for all 15 beats."
+  signs_framework_is_ready_for_scene_outline: "When every beat has a clear 'visual_function' and 'emotional_function' defined."

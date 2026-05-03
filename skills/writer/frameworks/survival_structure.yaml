@@ -1,0 +1,466 @@
+metadata:
+  framework_name: "Survival Structure Template"
+  methodology_name: "Survival Structure"
+  methodology_family: "High-Stakes/Environmental Antagonism"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "anime"
+    - "game cinematic"
+    - "horror/thriller anthology"
+  best_for:
+    - "survival horror"
+    - "disaster movies"
+    - "post-apocalyptic narratives"
+    - "man vs. nature"
+    - "siege stories"
+  not_ideal_for:
+    - "romance"
+    - "low-stakes comedy"
+    - "purely dialogue-driven period drama"
+  target_lengths:
+    - "short film"
+    - "feature film"
+  core_principle: "Escalating scarcity and the shrinking margin of error."
+  primary_story_unit: "The Pressure Event"
+  primary_success_metric: "The visceral maintenance of tension through resource depletion and environmental hostility."
+
+framework_overview:
+  summary: "The Survival Structure is a methodology focused on the mechanical and psychological escalation of threat. Unlike character-driven arcs that focus on internal growth, this structure focuses on the external pressure exerted by a hostile environment, a predator, or a depleting resource, forcing the character into increasingly desperate and transformative decisions."
+  what_this_scale_helps_create:
+    - "A sense of inescapable dread"
+    - "A clear, measurable way to track rising stakes"
+    - "A narrative that moves toward a 'point of no return'"
+  what_it_prioritizes:
+    - "Environmental antagonism"
+    - "Resource scarcity"
+    - "The ticking clock"
+    - "Physical and psychological attrition"
+  what_it_deemphasizes:
+    - "Subplots unrelated to the immediate threat"
+    - "Character growth that does not impact survival"
+    - "Safe havens that lack tension"
+
+use_when:
+  - "The setting itself is an antagonist."
+  - "The plot is driven by the loss of something essential (food, oxygen, ammo, time, allies)."
+  - "The primary conflict is external and physical."
+
+avoid_when:
+  - "The conflict is purely social or intellectual."
+  - "The characters have unlimited resources or safety."
+
+core_principles:
+  - "The Margin of Error: The space between 'safe' and 'dead' must shrink as the story progresses."
+  - "The Law of Attrition: Every victory must cost something (a wound, a tool, a companion, a piece of hope)."
+  - "Environmental Agency: The setting must actively work against the protagonist's goals."
+  - "The Ticking Clock: A visible or invisible countdown that prevents stagnation."
+
+workflow:
+  - step: 1
+    name: "Identify the Primary Threat"
+    goal: "Define the source of the pressure."
+    instructions:
+      - "Determine if the threat is biological, environmental, or human."
+      - "Define the threat's interaction capability."
+    able_to_interact: "How does the threat interact with the characters?"
+    output: "Threat Definition"
+  - step: 2
+    name: "Establish the Baseline Resources"
+    goal: "Define what is at stake and what can be lost."
+    instructions:
+      - "List physical resources (food, weapons, light)."
+      - "List psychological resources (sanity, trust, courage)."
+    output: "Resource Inventory"
+  - step: 3
+    name: "Map the Escalation Ladder"
+    goal: "Determine how the threat grows and resources vanish."
+    instructions:
+      - "Identify the 'Breach' (the first loss of safety)."
+      - "Identify the 'Depletion' (the point where survival becomes mathematically unlikely)."
+    output: "Structural Beat Sheet"
+  - step: 4
+    name: "The Final Stand/Resolution"
+    goal: "Determine the cost of survival."
+    instructions:
+      - "Decide if the character survives but is fundamentally broken, or dies but achieves a moral victory."
+    output: "Final Resolution"
+
+story_inputs:
+  premise: "<The core survival situation>"
+  logline: "<Who is trapped, by what, and what is the immediate cost of failure?>"
+  medium:
+    genre: ""
+    tone: ""
+    target_length: ""
+    audience: ""
+    rating: ""
+    production_constraints: []
+    creative_constraints: []
+    reference_points: []
+    must_include: []
+    must_avoid: []
+
+methodology_structure:
+  stages_of_survival:
+    - stage: "The False Equilibrium"
+      purpose: "Establish the baseline of safety and the value of what is about to be lost."
+      writer_prompt: "Show the characters in a moment of relative stability. What does 'normal' look like before the pressure begins?"
+      visual_function: "Wide shots, stable compositions, warm or natural lighting."
+      diagnostic_questions:
+        - "Do we understand what the characters stand to lose?"
+        - "Is the environment presented as 'safe' or 'manageable'?"
+      completion_criteria: "The audience understands the 'rules' of the world and the characters' current status."
+      decision_forcing_fields:
+        safety_baseline: "<Level of perceived security>"
+        resource_abundance: "<Current inventory status>"
+        threat_visibility: "<How much the threat is currently hidden>"
+        character_stability: "<Mental state of the group>"
+    - stage: "The Breach (The First Incident)"
+      purpose: "Introduce the threat and destroy the first layer of safety."
+      writer_prompt: "What is the first sign that the environment is no longer safe? What resource is lost immediately?"
+      story_function: "Transition from stability to instability."
+      visual_function: "Sudden movement, jarring cuts, shifts in lighting (shadows encroaching)."
+      diagnostic_questions:
+        - "Is the threat's presence felt immediately?"
+        - "Is there a clear 'point of no return' for the characters' safety?"
+      completion_criteria: "The characters can no longer return to the 'False Equilibrium'."
+      decision_forcing_fields:
+        breach_type: "<Physical, psychological, or resource-based>"
+        initial_loss: "<The first thing taken away>"
+        safety_destruction_level: "<Scale of the breach>"
+        immediate_consequence: "<The direct result of the breach>"
+    - stage: "The Attrition (The Squeeze)"
+      purpose: "Systematically reduce resources and increase the difficulty of movement/action."
+      writer_prompt: "List three ways the characters' options are being stripped away. (e.g., no more ammunition, the bridge is out, the storm is worsening)."
+      story_function: "Escalate tension through the loss of agency."
+      visual_function: "Tightening shots, claustrophobic framing, handheld camera."
+      diagnostic_questions:
+        - "Is the difficulty increasing because of the characters' mistakes or the environment's pressure?"
+        - "Are the characters forced into 'bad' choices?"
+      completion_criteria: "The characters are forced into a state of desperation."
+      decision_forcing_fields:
+        depletion_rate: "<Speed of resource loss>"
+        resource_scarcity_index: "<How critical the remaining items are>"
+        physical_strain_level: "<Physical damage to characters/gear>"
+        psychological_erosion_rate: "<Rate of mental breakdown>"
+    - stage: "The Breaking Point (The Siege/Climax)"
+      purpose: "The moment where survival is no longer a matter of strategy, but of pure will or sacrifice."
+      writer_prompt: "The last resource is gone. The threat is at the door. What is the final, irreversible choice?"
+      story_function: "The peak of the tension/confrontation."
+      visual_function: "High contrast, extreme close-ups, chaotic motion, sensory overload."
+      diagnostic_questions:
+        - "Is the cost of victory high enough?"
+        - "Does the character's survival depend on a fundamental change in their behavior?"
+      completion_criteria: "The conflict is resolved; the threat is either defeated, escaped, or has won."
+      decision_forcing_fields:
+        climax_lethality: "<Probability of death>"
+        final_choice_dilemma: "<The impossible choice>"
+        sacrifice_magnitude: "<What must be given up>"
+        survival_probability: "<The mathematical likelihood of success>"
+    - stage: "The Aftermath (The Residue)"
+      purpose: "Show the permanent impact of the survival struggle."
+      writer_prompt: "The threat is gone, but what remains of the character? What is the 'new normal'?"
+      story_function: "Thematic resolution and emotional release."
+      visual_function: "Static shots, lingering images, desaturated or stark lighting."
+      diagnostic_questions:
+        - "Is the cost of survival visible in the character's physical or mental state?"
+        - "Does the final image reflect the theme of the struggle?"
+      completion_criteria: "The audience feels the weight of the journey's cost."
+      decision_forcing_fields:
+        survivor_status: "<Alive, dead, or fundamentally changed>"
+        permanent_consequence: "<The lasting scar>"
+        thematic_resolution_state: "<How the central question is answered>"
+        environmental_residue: "<The state of the world after the threat>"
+
+beats_or_units:
+  - id: "beat_01"
+    name: "The False Equilibrium"
+    order: 1
+    purpose: "Establish the baseline of safety and the value of what is about to be lost."
+    approximate_position: "0% - 20%"
+    writer_prompt: "Show the characters in a moment of relative stability. What does 'normal' look like before the pressure begins?"
+    story_function: "Establishment of stakes and baseline resources."
+    visual_function: "Wide shots, stable compositions, warm or natural lighting."
+    emotional_function: "Comfort, stability, or deceptive peace."
+    required_decisions:
+      - "Define the primary resource baseline."
+      - "Establish the character's current level of competence."
+    fields_to_complete:
+      resource_inventory: ""
+      character_status: ""
+    diagnostic_questions:
+      - "Do we understand what the characters stand to lose?"
+      - "Is the environment presented as 'safe' or 'manageable'?"
+    completion_criteria:
+      - "The audience understands the 'rules' of the world."
+      - "The characters' current status is clearly defined."
+    common_failure_modes:
+      - "Too much safety makes the eventual breach feel unearned."
+      - "Lack of character competence makes the characters uninteresting."
+  - id: "beat_02"
+    name: "The Breach"
+    order: 2
+    purpose: "Introduce the threat and destroy the first layer of safety."
+    approximate_position: "20% - 35%"
+    writer_prompt: "What is the first sign that the environment is no longer safe? What resource is lost immediately?"
+    story_function: "Transition from stability to instability."
+    visual_function: "Sudden movement, jarring cuts, shifts in lighting (shadows encroaching)."
+    emotional_function: "Shock, panic, realization of danger."
+    required_decisions:
+      - "Determine the nature of the first loss."
+      - "Establish the point of no return."
+    fields_to_complete:
+      breach_event: ""
+      lost_resource: ""
+    diagnostic_questions:
+      - "Is the threat's presence felt immediately?"
+      - "Is there a clear 'point of no return' for the characters' safety?"
+    completion_criteria:
+      - "The characters can no longer return to the 'False Equilibrium'."
+      - "The threat is now an active participant in the narrative."
+    common_failure_modes:
+      - "The breach is too subtle to create immediate tension."
+      - "The breach doesn't actually remove any safety or resources."
+  - id: "beat_03"
+    name: "The Attrition"
+    order: 3
+    purpose: "Systematically reduce resources and increase the difficulty of movement/action."
+    approximate_position: "35% - 75%"
+    writer_prompt: "List three ways the characters' options are being stripped away. (e.g., no more ammunition, the bridge is out, the storm is worsening)."
+    story_function: "Escalate tension through the loss of agency."
+    visual_function: "Tightening shots, claustrophobic framing, handheld camera."
+    emotional_function: "Dread, exhaustion, desperation, frustration."
+    required_decisions:
+      - "Identify which resource is depleted next."
+      - "Determine the next environmental obstacle."
+    fields_to_complete:
+      depletion_event: ""
+      new_difficulty_level: ""
+    diagnostic_questions:
+      - "Is the difficulty increasing because of the characters' mistakes or the environment's pressure?"
+      - "Are the characters forced into 'bad' choices?"
+    completion_criteria:
+      - "The characters are forced into a state of desperation."
+      - "The margin of error has visibly shrunk."
+    common_failure_modes:
+      - "The attrition feels repetitive rather than escalating."
+      - "Characters find 'easy' ways to bypass the attrition."
+  - id: "beat_04"
+    name: "The Breaking Point"
+    order: 4
+    purpose: "The moment where survival is no longer a matter of strategy, but of pure will or sacrifice."
+    approximate_position: "75% - 95%"
+    writer_prompt: "The last resource is gone. The threat is at the door. What is the final, irreversible choice?"
+    story_function: "The peak of the tension/confrontation."
+    visual_function: "High contrast, extreme close-ups, chaotic motion, sensory overload."
+    emotional_function: "Terror, ultimate resolve, or total despair."
+    required_decisions:
+      - "Decide the outcome of the final confrontation."
+      - "Determine the ultimate cost of the character's choice."
+    fields_to_complete:
+      final_choice: ""
+      outcome: ""
+    diagnostic_questions:
+      - "Is the cost of victory high enough?"
+      - "Does the character's survival depend on a fundamental change in their behavior?"
+    completion_criteria:
+      - "The conflict is resolved."
+      - "The threat is either defeated, escaped, or has won."
+    common_failure_modes:
+      - "The climax relies on a deus ex machina."
+      - "The stakes are too low to justify the character's struggle."
+  - id: "beat_05"
+    name: "The Aftermath"
+    order: 5
+    purpose: "Show the permanent impact of the survival struggle."
+    approximate_position: "95% - 100%"
+    writer_prompt: "The threat is gone, but what remains of the character? What is the 'new normal'?"
+    story_function: "Thematic resolution and emotional release."
+    visual_function: "Static shots, lingering images, desaturated or stark lighting."
+    emotional_function: "Melancholy, relief, or hollow victory."
+    required_decisions:
+      - "Define the state of the survivor."
+      - "Establish the final state of the environment."
+    fields_to_complete:
+      survivor_state: ""
+      world_state: ""
+    diagnostic_questions:
+      - "Is the cost of survival visible in the character's physical or mental state?"
+      - "Does the final image reflect the theme of the struggle?"
+    completion_criteria:
+      - "The audience feels the weight of the journey's cost."
+      - "The thematic question is answered."
+    common_failure_modes:
+      - "The aftermath is too brief to allow for emotional processing."
+      - "The resolution feels disconnected from the struggle."
+
+character_design:
+  methodology_role: "Characters are defined by their competence, their vulnerabilities, and their breaking points."
+  characters:
+    - name: "<Character Name>"
+      survival_skill: "<What makes them capable of lasting this long?>"
+      fatal_flaw_in_crisis: "<What psychological trait will lead to their downfall?>"
+      essential_resource: "<What specific item or person do they need to survive?>"
+      breaking_point: "<At what level of pressure do they abandon their morals/sanity?>"
+
+world_design:
+  methodology_role: "The world is the primary antagonist."
+  fields:
+    the_threat:
+      nature: "<Biological, Environmental, Supernatural, etc.>"
+      visibility: "<Is it a known entity or an unseen force?>"
+      lethality_scale: "<How quickly can it end the story?>"
+    the_environment:
+      hostility_level: "<High/Extreme>"
+      terrain_traps: ["<List physical obstacles>"]
+      resource_availability: "<How scarce are the essentials?>"
+    the_rules:
+      environmental_rules: "<What are the laws of this hostile world?>"
+      survival_limitations: "<What is physically impossible for the characters?>"
+
+theme_design:
+  methodology_role: "Thematic tension between instinct and humanity."
+  fields:
+    central_question: "<Does survival justify the loss of humanity?>"
+    the_cost_of_survival: "<What is the price of staying alive?>"
+    the_illusion_of_safety: "<How does the story critique the idea of security?>"
+
+visual_storytelling:
+  methodology_role: "Using visual scarcity and claustrophobia to mirror the narrative."
+  image_system:
+    lighting_progression: "<From clear/wide to dark/shadowlag/obstructed>"
+    color_palette: "<From natural/vibrant to desaturated/monochromatic/bruised>"
+    composition_evolution: "<From expansive/stable to cramped/unstable>"
+  visual_rules:
+    - "Use shadows to hide the threat's true scale."
+    - "Use close-ups to emphasize the depletion of resources (e.g., a single drop of water)."
+    - "Use wide shots to emphasize the character's isolation/insignificance."
+  recurring_motifs: ["<e.g., ticking clocks, breaking glass, encroaching shadows, bleeding wounds>"]
+  final_image: "<An image that encapsulates the cost of the survival journey.>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either increase pressure or deplete a resource."
+    - "Avoid 'breather' scenes that do not introduce a new, subtle threat."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    resource_impact: "<What was lost or used in this scene?>"
+    turn: "<How did the survival outlook change?>"
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: "<The new level of danger/scarcity>"
+  do_rules:
+    - "Ensure every scene has a 'ticking clock' element."
+    - "Make the environment's impact felt physically."
+  avoid_rules:
+    - "Avoid scenes where characters are safe and unthreatened for extended periods."
+    - "Avoid 'deus ex machina' resource finds (unless they come with a terrible price)."
+
+revision_passes:
+  - name: "Structure Pass"
+    goal: "Ensure the escalation of tension is logical."
+    instructions:
+      - "Check the transition from False Equilibrium to Breach."
+      - "Verify the escalation of the threat."
+    questions:
+      - "Is the tension plateauing?"
+      - "Is the point of no return clear?"
+    success_criteria:
+      - "The tension curve is strictly increasing."
+  - name: "Character Pass"
+    goal: "Ensure characters are defined by their survival needs."
+    instructions:
+      - "Check if character skills are relevant to the threat."
+      - "Ensure flaws impact survival."
+    questions:
+      - "Does the character have too much agency?"
+      - "Is the breaking point earned?"
+    success_criteria:
+      - "Characters are vulnerable and reactive to the environment."
+  - name: "Theme Pass"
+    goal: "Ensure the cost of survival is thematic."
+    instructions:
+      - "Check if the final outcome reflects the central question."
+      - "Ensure the environment reinforces the theme."
+    questions:
+      - "Is the theme lost in the action?"
+      - "Does the survival cost matter?"
+    success_criteria:
+      - "Thematic resonance is present in the resolution."
+  - name: "Visual Storytelling Pass"
+    goal: "Ensure visuals mirror the scarcity."
+    instructions:
+      - "Check lighting progression."
+      - "Check composition evolution."
+    questions:
+      - "Does the lighting get darker as resources deplete?"
+      - "Is the framing more claustrophobic?"
+    success_criteria:
+      - "Visuals communicate the shrinking margin of error."
+  - name: "Scarcity Attrition Pass"
+    goal: "Ensure resource depletion drives the plot."
+    instructions:
+      - "Audit every scene for resource loss."
+      - "Check if any resource is replenished without cost."
+    questions:
+      - "Is there any 'free' resource?"
+      - "Is the depletion measurable?"
+    success_criteria:
+      - "Every scene either increases pressure or decreases resources."
+
+validation_checklist:
+  - "Is the primary threat clearly defined and active?"
+  - "Is there a measurable depletion of resources (physical or mental)?"
+  - "Does the environment act as a character/antagonist?"
+  - "Is the 'Point of No Return' clearly established?"
+  - "Does the final resolution reflect the cost of the struggle?"
+  - "Is the 'Margin of Error' visibly shrinking?"
+  - "Is the 'Law of Attrition' applied to every major victory?"
+  - "Is there a visible or invisible 'Ticking Clock'?"
+  - "Do the visual compositions mirror the increasing claustrophobia?"
+  - "Are characters' vulnerabilities directly linked to the threat?"
+  - "Is the environmental agency present in every major beat?"
+  - "Are there no unearned moments of safety or resource replenishment?"
+
+failure_modes:
+  - failure_mode: "The Invincible Protagonist"
+    symptom: "The character overcomes every threat with ease or skill."
+    likely_cause: "Lack of resource depletion/attrition."
+    fix: "Introduce a permanent injury or the loss of a vital tool/ally."
+  - failure_mode: "The Static Threat"
+    symptom: "The danger remains the same from start to finish."
+    likely_cause: "Failure to escalate the environmental pressure."
+    fix: "Introduce a new layer of environmental hostility or a 'Breach' in the middle of the story."
+  - failure_mode: "The Background Setting"
+    symptom: "The characters could be anywhere; the setting doesn't matter."
+    likely_cause: "The environment lacks agency or specific rules."
+    fix: "Make the terrain or weather a direct cause of character failure."
+
+adaptation_notes:
+  feature_film: "Focus on the massive scale of the disaster or the long-term psychological breakdown."
+  short_film: "Focus on a single, intense 'Breach' and the immediate 'Aftermath'."
+  tv_episode: "The threat can be localized, but the 'Resource Depletion' must drive the episode's arc."
+  tv_pilot: "Establish the 'False Equilibrium' and end on a massive 'Breach' to hook the audience."
+  anime: "Emphasize the visual spectacle of the threat and the hyper-stylized 'Breaking Point'."
+  adult_animation: "Use extreme, visceral imagery of attrition and physical consequence."
+  anthology: "Each entry should focus on a unique 'Survival Rule' or 'Type of Threat'."
+  game_cinematic: "Focus on the 'Resource Inventory'—showing the player/character what they have left to lose."
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'story_inputs' first, then move through the 'methodology_structure' stages sequentially."
+  recommended_population_order:
+    - "story_inputs"
+    - "world_design"
+    - "character_design"
+    - "methodology_structure"
+    - "theme_design"
+  minimum_viable_completion: "A completed 'Breach', 'Attrition', and 'Breaking Point' with defined 'Resources'."
+  signs_framework_is_ready_for_scene_outline: "When you can clearly state: 'The character is trapped by [Threat] and is losing [Resource] at a rate that will lead to [Death/Failure] by [Time/Event].'"

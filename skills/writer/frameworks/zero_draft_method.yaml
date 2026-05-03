@@ -1,0 +1,289 @@
+metadata:
+  framework_name: "Zero Draft Template"
+  methodology_name: "Zero Draft Method"
+  methodology_family: "Discovery Writing / Pre-Structural"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media: ["feature film", "short film", "TV pilot", "anime", "manga", "web series", "game cinematic"]
+  best_for: ["overcoming writer's block", "exploring new ideas", "character voice discovery", "high-concept experimentation"]
+  not_ideal_for: ["final polishing", "tightly constrained budget production", "structural editing"]
+  target_lengths: ["any"]
+  core_principle: "Prioritize momentum and raw discovery over structure and polish; write to find the story, and never let the inner critic interrupt the flow of the initial impulse."
+  primary_story_unite: "The Fragment (Scene snippet, character impulse, or visual spark)"
+  primary_success_metric: "Volume of uninhibited content generated without self-censorship."
+
+framework_overview:
+  summary: "The Zero Draft Method is a non-linear, non-structural approach to storytelling designed to bypass the inner critic. It focuses on capturing the 'essence' of a story through fragments, impulses, and raw imagery before any formal structural beats are applied."
+  what_this_framework_helps_create: ["raw narrative energy", "authentic character voices", "unfiltered world rules", "thematic seeds"]
+  what_it_prioritizes: ["momentum", "intuition", "sensory detail", "emotional honesty"]
+  what_it_deemphasphasizes: ["grammar", "continuity", "pacing", "formal structure", "dialogue polish"]
+
+use_when:
+  - "You have a 'vibe' or 'image' but no plot."
+  - "You are stuck in a structural loop and cannot move forward."
+  - "You feel the characters are 'hulnerable' or 'acting like puppets'."
+  - "You are starting a brand new genre or medium."
+
+avoid_when:
+  - "You are preparing a script for production/shooting."
+  - "You are performing a structural rewrite."
+  - "You are working within a strict, pre-defined IP bible."
+
+core_principles:
+  - "No Deleting: If a fragment is bad, leave it. Moving forward is more important than fixing."
+  - "Non-Linearity: You are allowed to write the ending before the beginning."
+  - "The 'Vomit' Rule: The goal is to get the 'DNA' of the story onto the page, regardless of how messy it is."
+  - "Discovery over Execution: Use the writing process to ask the story questions."
+
+workflow:
+  - step: 1
+    name: "The Seed Capture"
+    goal: "Identify the initial impulse."
+    instructions: ["Identify the single most compelling image, question, or feeling."]
+    output: "The Seed"
+  - step: 2
+    name: "Fragment Dumping"
+    goal: "Populate the canvas with raw data."
+    instructions: ["Write scenes, dialogues, or descriptions as they come, ignoring order."]
+    output: "The Fragment Collection"
+  - step: 3
+    name: "Pattern Recognition"
+    goal: "Identify emerging structure."
+    instructions: ["Look for recurring themes, character arcs, or causal links in your fragments."]
+    output: "The Emergent Outline"
+  - step: 4
+    name: "The First Structural Pass"
+    goal: "Organize fragments into a coherent narrative."
+    instructions: ["Arrange fragments into a sequence; identify gaps that need new fragments."]
+    output: "The Zero Draft Outline"
+
+story_inputs:
+  seed_impulse: "<the core image, 'what if', or emotion driving this draft>"
+  initial_vibe: "<the aesthetic or atmospheric feeling>"
+  unstructured_elements:
+    - "<fragment idea 1>"
+    - "<fragment idea 2>"
+  constraints_to_ignore: ["grammar", "pacing", "continuity"]
+
+methodology_structure:
+  seed_capture_stage:
+    input_source: "<image, dialogue, or feeling>"
+    sensory_anchor: "<the primary sense to focus on>"
+    impulse_intensity: "<low | medium | high>"
+    vibe_definition: "<the atmospheric goal>"
+    validation_check: "<does this feel 'alive'?>"
+  fragment_dump_stage:
+    capture_mode: "<stream of consciousness | rapid fire | visual sketching>"
+    fragment_type_selection: ["Visual Spark", "Character Burst", "Thematic Echo"]
+    intensity_threshold: "<how much self-censorship is allowed (aim for 0)>"
+    chaos_level: "<controlled | messy | total anarchy>"
+    retention_rule: "<what makes a fragment worth keeping?>"
+  pattern_recognition_stage:
+    link_identification: "<causal or emotional connections>"
+    thematic_clustering: "<grouping fragments by recurring ideas>"
+    character_emergence_check: "<identifying character traits from snippets>"
+    structural_seed_detection: "<finding the accidental plot points>"
+    gap_analysis: "<identifying where the story is missing pieces>"
+  structural_alignment_stage:
+    sequence_logic: "<chronological | thematic | emotional arc>"
+    beat_mapping: "<mapping fragments to formal beats>"
+    continuity_prevention: "<noting major contradictions to fix later>"
+    transition_planning: "<how to bridge the gaps between fragments>"
+
+beats_or_units:
+  - id: "seed_capture"
+    name: "The Seed Capture"
+    order: 1
+    purpose: "To anchor the entire process in a single, potent point of origin."
+    approximate_position: "The very beginning of the process."
+    writer_prompt: "What is the one image or question that won't leave your mind?"
+    story_function: "Foundational premise establishment"
+    visual_function: "Establishing the primary aesthetic motif"
+    emotional_function: "Setting the baseline emotional temperature"
+    required_decisions: ["Is this seed strong enough to sustain a draft?", "What is the primary sensory anchor?"]
+    fields_to_complete:
+      core_image: "<the central visual>"
+      primary_emotion: "<the core feeling>"
+      the_big_question: "<the 'what if' driving the seed>"
+    diagnostic_questions:
+      - "Does this seed feel exciting or like a chore?"
+      - "Can I visualize this seed clearly?"
+    completion_criteria: ["A single, clear, and evocative seed statement."]
+    common_failure_modes: ["Over-thinking the seed until it becomes a plot summary."]
+  - id: "fragment_dump"
+    name: "The Fragment Dump"
+    order: 2
+    purpose: "To bypass the internal editor by writing disconnected pieces."
+    approximate_position: "The bulk of the Zero Draft phase."
+    writer_prompt: "Write any scene, dialogue snippet, or world detail that feels 'alive' right now."
+    story_function: "Data collection and DNA extraction"
+    visual_function: "Visual asset generation"
+    emotional_function: "Emotional resonance testing"
+    required_decisions: ["Which fragments to keep", "Which fragments to ignore"]
+    fields_to_complete:
+      content: "<the raw text/description>"
+      energy_level: "<high | low | chaotic | steady>"
+      connection_point: "<does this link to another fragment? if so, which one?>"
+    diagnostic_questions:
+      - "Am I stopping to fix typos? (If yes, stop and keep writing.)"
+      - "Am I trying to force this into a 3-act structure? (If yes, revert to pure impulse.)"
+    completion_criteria: ["A collection of at least 5-10 distinct narrative fragments."]
+    common_failure_modes: ["The Infinite Loop (writing fragments but never attempting to connect them)."]
+  - id: "pattern_recognition"
+    name: "Pattern Recognition"
+    order: 3
+    purpose: "To identify emerging structure from the chaos."
+    approximate_position: "Post-dumping, pre-organization."
+    writer_prompt: "Look at your fragments. What is repeating? What is clashing?"
+    story_function: "Structural discovery"
+    visual_annotative_function: "Identifying recurring visual motifs"
+    emotional_function: "Identifying the emotional arc"
+    required_decisions: ["Which fragments form a sequence?", "What is the emerging theme?"]
+    fields_to_complete:
+      recurring_motifs: ["<motif 1>", "<motif 2>"]
+      emerging_conflict: "<the clash found in the fragments>"
+    diagnostic_questions:
+      - "Am I seeing a pattern of character behavior?"
+      - "Is there a recurring visual element?"
+    completion_criteria: ["A list of identified connections and themes."]
+    common_failure_modes: ["Forcing patterns that aren't actually there."]
+  - id: "structural_alignment"
+    name: "The First Structural Pass"
+    order: 4
+    purpose: "Organize fragments into a coherent narrative."
+    approximate_position: "The final stage of the Zero Draft."
+    writer_prompt: "Arrange your fragments into a sequence; identify gaps that need new fragments."
+    story_function: "Transition to First Draft"
+    visual_function: "Establishing visual continuity"
+    emotional_function: "Establishing emotional progression"
+    required_decisions: ["What is the new order?", "What gaps must be filled with new fragments?"]
+    fields_to_complete:
+      sequence_map: "<the new order of fragments>"
+      gap_list: ["<gap 1>", "<gap 2>"]
+    diagnostic_questions:
+      - "Does this sequence make sense emotionally?"
+      - "Are there massive leaps in logic that need new fragments?"
+    completion_criteria: ["A functional, albeit loose, beat sheet."]
+    common_failure_modes: ["Abandoning the 'discovery' mindset and trying to write a polished script too early."]
+
+character_design:
+  methodology_role: "Discovery-based"
+  characters:
+    - name: "<character name>"
+      essence_snapshot: "<a 1-sentence description of their 'vibe'>"
+      unfiltered_voice: "<how they sound when they aren't being 'written' by an author>"
+      internal_contradiction: "<the friction that makes them interesting>"
+      hidden_secret: "<something they haven't revealed to the writer yet>"
+
+world_design:
+  methodology_role: "Atmospheric"
+  fields:
+    sensory_atlas: ["<sight>", "<sound>", "<smell>", "<touch>", "<taste>"]
+    unwritten_rules: ["<rule 1>", "<rule 2>"]
+    the_feeling_of_space: "<how the world feels to inhabit (e.g., claustrophobic, infinite, decaying)>"
+
+theme_design:
+  methodology_role: "Emergent"
+  fields:
+    emerging_argument: "<the debate the story seems to be having with itself>"
+    unintended_themes: ["<theme found in fragments that wasn't in the seed>"]
+
+visual_storytelling:
+  methodology_role: "Impulse-driven"
+  image_system:
+    key_motifs: ["<motif 1>", "<motif 2>"]
+    color_pattern_vibe: "<the emotional temperature of the colors>"
+  visual_rules: ["<e.g., high contrast, handheld/unstable, dreamlike/soft focus>"]
+  final_image: "<the image that summarizes the 'soul' of the draft>"
+
+scene_generation_rules:
+  scene_principles: ["Focus on the 'Turn' or the 'Feeling', not the 'Plot'.", "If you don't know what happens next, write what the character is feeling instead."]
+  scene_template:
+    scene_id: "<fragment_id>"
+    beat_or_unit: "<Visual Spark | Character Burst | etc.>"
+    location: "<where/when, if known>"
+    characters_present: []
+    visible_goal: "<what is happening on the surface?>"
+    conflict_or_pressure: "<what is the immediate tension?>"
+    turn: "<how does the feeling change by the end of this snippet?>"
+    visual_anchor: "<the one object or image to focus on>"
+    emotional_shift: "<from [emotion] to [emotion]>"
+    exits_with: "<the lingering question or feeling>"
+  do_rules: ["Follow the impulse.", "Write the dialogue exactly as it sounds in your head."]
+  avoid_rules: ["Do not check for continuity.", "Do not worry about character backstories that aren't present in the moment."]
+
+revision_passes:
+  - name: "The Connection Pass"
+    goal: "Find the thread."
+    instructions: ["Read all fragments. Draw lines between them where causal or emotional links exist."]
+    questions: ["Which fragments belong together?", "What is the gap between Fragment A and Fragment B?"]
+    success_criteria: ["A rough chronological or thematic sequence."]
+  - name: "The Structural Alignment Pass"
+    goal: "Transition from Zero Draft to First Draft."
+    instructions: ["Map the connected fragments onto a formal structure (e.g., 3-Act, Hero's Journey)."]
+    questions: ["Where is the inciting incident in my fragments?", "Do I have a climax, or just a collection of scenes?"]
+    success_criteria: ["A functional beat sheet."]
+  - name: "The Character Pass"
+    goal: "Ensure character voices are distinct and uninhibited."
+    instructions: ["Review dialogue snippets specifically for unique vocal markers and contradictions."]
+    questions: ["Does every character sound different?", "Are their impulses driving the fragments?"]
+    success_criteria: ["A character list with distinct, non-interchangeable voices."]
+  - name: "The Theme Pass"
+    goal: "Identify and strengthen the emerging argument."
+    instructions: ["Highlight recurring symbols or words across all fragments."]
+    questions: ["What is the story actually about?", "Is the tension between opposing ideas clear?"]
+    success_criteria: ["A clearly defined thematic statement."]
+  - name: "The Momentum Pass"
+    goal: "Ensure the 'Zero Draft' spirit hasn't been lost to over-editing."
+    instructions: ["Scan for areas where you have started 'polishing' or 'fixing' instead of 'discovering'."]
+    questions: ["Where did I stop to fix grammar?", "Where did I start following a rigid template?"]
+    success_criteria: ["A draft that maintains its raw, energetic, and unpolished quality."]
+  - name: "The Visual Storytelling Pass"
+    goal: "Maximize the sensory impact of the fragments."
+    instructions: ["Check if each fragment has at least one strong sensory anchor."]
+    questions: ["Can I 'see' the lighting?", "Is there a tactile or auditory element present?"]
+    success_criteria: ["A visually rich collection of fragments."]
+
+validation_checklist:
+  - "Did I avoid editing during the generation phase?"
+  - "Do I have enough 'meat' (fragments) to form a story?"
+  - "Are the character voices distinct and unpolished?"
+  - "Is the central 'seed' still visible in the fragments?"
+  - "Did I respect the 'No Deleting' rule?"
+  - "Are the sensory details present and visceral?"
+  - "Is the 'What If' question clearly answered or explored?"
+  - "Have I identified at least one recurring motif?"
+  - "Is the emotional temperature of the draft consistent with the seed?"
+  - "Are there clear gaps that require new fragments?"
+  - "Did I avoid forcing a 3-act structure too early?"
+  - "Is the 'Vomit Rule' evident in the raw text?"
+
+failure_modes:
+  - failure_mode: "The Fragment Loop"
+    symptom: "Writing hundreds of snippets but never attempting to organize them."
+    likely_cause: "Fear of structural failure or lack of a 'Connection Pass'."
+    fix: "Force a 'Connection Pass' deadline."
+  - failure_mode: "The Polished Zero Draft"
+    symptom: "The draft looks too clean, too much like a finished script."
+    likely_cause: "Self-censorship and over-editing during the dump."
+    fix: "Delete/hide the polished parts and re-write the impulse."
+  - failure_mode: "The Empty Canvas"
+    symptom: "Stalling at the Seed Capture stage without moving to the Dump."
+    likely_cause: "Over-analyzing the seed instead of using it as a springboard."
+    fix: "Set a timer and force a 10-minute 'Brain Dump' regardless of quality."
+
+adaptation_notes:
+  feature_film: ["Focus on finding the 'Big Image' and the 'Climax Fragment'."]
+  short_film: ["Focus on the 'Single Emotional Turn'."]
+  tv_episode: ["Focus on 'Character Dynamics' and 'World Rules'."]
+  tv_pilot: ["Focus on 'The Engine' (the recurring conflict/situation)."]
+  anime: ["Focus on 'Visual Spectacle' and 'Iconic Character Traits'."]
+  adult_animation: ["Focus on 'Unfiltered Dialogue' and 'Subversive Imagery'."]
+  anthology: ["Focus on 'Thematic Resonance' across disparate fragments."]
+  game_cinematic: ["Focus on 'Environmental Storytelling' and 'Player-Character Interaction'."]
+
+yaml_usage_notes:
+  how_to_use: ["Treat this as a playground, not a prison. Fill in fragments as they arrive."]
+  recommended_population_order: ["Seed Impulse, Fragment Dump, Connection Pass, Structural Alignment."]
+  minimum_viable_completion: ["At least 5 fragments and 1 connection map."]
+  signs_framework_is_ready_for_scene_outline: ["When you can trace a line from an 'Inciting Fragment' to a 'Climax Fragment' using your 'Connection Pass'."]

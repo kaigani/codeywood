@@ -1,0 +1,378 @@
+metadata:
+  framework_name: "Kishōtenketsu Story Template"
+  methodology_name: "Kishōtenketsu"
+  methodology_family: "Four-act Structure (Non-Conflict Driven)"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "short film"
+    - "anime"
+    - "manga"
+    - "slice of life"
+    - "anthology short"
+    - "art film"
+    - "web series"
+  best_for:
+    - "character studies"
+    - "atmospheric narratives"
+    - "surrealist stories"
+    - "fables"
+    - "experimental animation"
+  not_ideal_for:
+    - "high-stakes action thrillers"
+    - "Western-style hero's journey"
+    - "procedural crime dramas"
+  target_lengths:
+    - "short film"
+    - "episode"
+    - "chapter"
+  core_principle: "Narrative progression through introduction, development, unexpected twist, and synthesis/reconciliation, rather than through central conflict/protagonist vs. antagonist."
+  primary_story_unit: "The Pivot (Ten)"
+  primary_success_metric: "The seamless recontextualization of the first two acts by the third act."
+
+framework_overview:
+  summary: "A structural framework for developing stories that rely on expansion, contrast, and revelation rather than a struggle between opposing forces."
+  what_this_framework_helps_create:
+    - "Stories that feel inevitable yet surprising."
+    - "Narratives focused on atmosphere, mood, and perspective."
+    - "Structural cohesion between seemingly unrelated elements."
+  what_it_prioritizes:
+    - "Thematic resonance"
+    - "Visual juxtaposition"
+    - "Contextual shifts"
+    - "Emotional continuity"
+  what_it_deemphasizes:
+    - "External conflict"
+    - "Protagonist vs. Antagonist"
+    - "Obstacle-driven pacing"
+
+use_when:
+  - "You want to tell a story about a change in perception."
+  - "The 'point' of your story is a realization rather than a victory."
+  - "You are working with a limited budget/cast where high-action conflict is difficult."
+  - "You want to explore a specific mood or aesthetic state."
+
+avoid_when:
+  - "The story requires a clear 'villain' or 'antagonist' to drive the plot."
+  - "The plot relies entirely on a character overcoming a physical obstacle."
+
+core_principles:
+  - "Ki (Introduction): Establishing the world and the status quo."
+  - "Shō (Development): Expanding the world and deepening the established context without changing it."
+  - "Ten (Twist/Pivot): Introducing a new, seemingly unrelated element or a sudden shift in perspective."
+  - "Ketsu (Conclusion/Reconcliation): Bringing the first two parts and the third part together to reveal a new, unified meaning."
+
+workflow:
+  - step: 1
+    name: "Establish the Ki"
+    goal: "Define the baseline reality."
+    instructions:
+      - "Define the characters and their environment."
+      - "Establish the 'rules' of this specific moment/world."
+    output: "The Status Quo"
+  - step: 2
+    name: "Expand the Shō"
+    goal: "Deepen the established context."
+    instructions:
+      - "Add detail, complexity, or secondary characters."
+      - "Maintain the stability of the Ki; do not introduce disruption yet."
+    output: "The Expanded Context"
+  - step: 3
+    name: "The Ten Pivot"
+    goal: "Introduce the disruption or new perspective."
+    instructions:
+      - "Introduce an element that feels 'out of place' or a sudden shift in focus."
+      - "Ensure the element is not just 'random' but carries thematic weight."
+    output: "The Pivot"
+  - step: 4
+    name: "Synthesize the Ketsu"
+    goal: "Reconcile the parts."
+    instructions:
+      - "Show how the Ten element changes the way we view the Ki and Shō."
+      - "Conclude with a sense of a new, unified reality."
+    output: "The Unified Resolution"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  ki_phase:
+    focus: "Establishment"
+    decision_driver: "Sensory baseline"
+    structural_logic: "Static"
+    expansion_potential: "Minimal"
+    primary_goal: "Grounding the audience"
+  sho_phase:
+    focus: "Expansion"
+    decision_driver: "Contextual depth"
+    structural_logic: "Additive"
+    expansion_potential: "High"
+    primary_goal: "Deepening immersion"
+  ten_phase:
+    focus: "Pivot"
+    decision_driver: "Contrast"
+    structural_logic: "Disruptive"
+    expansion_potential: "Transformative"
+    primary_goal: "Recontextualization"
+  ketsu_phase:
+    focus: "Synthesis"
+    decision_driver: "Reconciliation"
+    structural_logic: "Integrative"
+    expansion_potential: "Finalized"
+    primary_goal: "Unified revelation"
+
+beats_or_units:
+  - id: "KI"
+    name: "Introduction"
+    order: 1
+    purpose: "To ground the audience in a specific reality/state of being."
+    approximate_position: "Beginning"
+    writer_prompt: "What is the 'normal' here? Who are we watching, and what is their current state of existence?"
+    story_function: "Establishment of characters, setting, and atmosphere."
+    visual_function: "Establishing shots, character portraits, environmental texture."
+    emotional_function: "Establishing the baseline mood (e.g., peace, boredom, melancholy)."
+    required_decisions:
+      - "What is the primary sensory 'feel' of this world?"
+      - "What is the character's current 'stasis'?"
+    fields_to_complete:
+      setting_description: "<write here>"
+      character_baseline: "<write here>"
+      established_mood: "<write here>"
+    diagnostic_questions:
+      - "Is the world clear enough that we will notice when it is disrupted?"
+      - "Are the characters' roles/identities established?"
+    completion_criteria:
+      - "The audience understands the 'rules' and 'vibe' of the story."
+    common_failure_modes:
+      - "The introduction is too vague to care about."
+      - "The introduction is so heavy on plot that it leaves no room for the 'Ten' to surprise us."
+
+  - id: "SHO"
+    name: "Development"
+    order: 2
+    purpose: "To deepen the immersion and expand the scope of the Ki."
+    approximate_position: "Middle-Early"
+    writer_prompt: "How can we see more of this world? What layers exist beneath the surface of the Ki?"
+    story_function: "Expansion of scope, introduction of secondary elements, deepening of character traits."
+    visual_function: "Close-ups, secondary locations, character interactions, rhythmic expansion."
+    emotional_function: "Building empathy, increasing immersion, or deepening the established mood."
+    required_decisions:
+      - "What new information can we add that *supports* the existing status quo?"
+      - "How do we make the audience more invested in this specific reality?"
+    fields_to_complete:
+      expanded_details: "<write here>"
+      secondary_elements: "<write here>"
+      deepened_emotion: "<write here>"
+    diagnostic_questions:
+      - "Are we adding complexity without adding conflict?"
+      - "Is the expansion purely additive (making the world 'bigger' or 'deeper')?"
+    completion_criteria:
+      - "The audience is fully immersed in the established reality."
+    common_failure_modes:
+      - "Introducing a conflict that threatens the status quo prematurely (turning it into a Western structure)."
+      - "The expansion feels like 'filler' with no thematic connection to the Ki."
+
+  - id: "TEN"
+    name: "The Twist / Pivot"
+    order: 3
+    approximate_position: "Middle-Late"
+    purpose: "To introduce a disruption, a new perspective, or a sudden shift in focus."
+    writer_prompt: "What is the 'unrelated' or 'unexpected' element that forces us to look at the Ki/Shō differently?"
+    story_lag: "Disruption of focus; introduction of a new variable; perspective shift."
+    visual_function: "Sudden change in composition, color palette shift, sudden movement, or a jarring new image."
+    emotional_function: "Surprise, confusion, awe, or sudden realization."
+    required_decisions:
+      - "How does this element contrast with the Ki/Shō?"
+      - "Does this element feel like a 'pivot' or just a 'random event'?"
+    fields_to_complete:
+      the_disruption: "<write here>"
+      the_contrast: "<write/identify what is being contrasted>"
+      the_new_perspective: "<write here>"
+    diagnostic_questions:
+      - "Does this element force a re-evaluation of the previous acts?"
+      - "Is the 'Ten' visually or conceptually distinct from the 'Ki'?"
+    completion_criteria:
+      - "The audience's understanding of the story's context has been fundamentally altered."
+    common_failure_modes:
+      - "The twist is 'Deus Ex Machina' (random and meaningless)."
+      - "The twist is actually just a standard 'conflict' (e.g., a villain appears)."
+
+  - id: "KETSU"
+    name: "Conclusion / Reconciliation"
+    order: 4
+    approximate_position: "Ending"
+    purpose: "To synthesize the Ki, Shō, and Ten into a new, unified understanding."
+    writer_prompt: "How do the first two parts and the third part now coexist? What is the final, unified image?"
+    story_function: "Resolution through synthesis; the 'new normal'; revelation of meaning."
+    visual_function: "A final image that captures both the original setting and the new element; a sense of closure or 'afterimage'."
+    emotional_function: "Catharsis, realization, acceptance, or a lingering sense of wonder/melancholy."
+    required_decisions:
+      - "How has the 'Ten' changed the 'Ki'?"
+      - "What is the final 'state' of the characters/world?"
+    fields_to_complete:
+      the_synthesis: "<write how the parts connect>"
+      the_final_state: "<write here>"
+      the_thematic_revelation: "<write here>"
+    diagnostic_questions:
+      - "Does the ending feel like a logical consequence of the Ten meeting the Ki?"
+      - "Does the ending provide a sense of 'completion' even without a 'victory'?"
+    completion_criteria:
+      - "The story leaves the audience with a unified, transformed perspective."
+    common_failure_modes:
+      - "The ending fails to connect the Ten back to the Ki (leaving the twist isolated)."
+      - "The ending forces a 'victory' or 'defeat' that breaks the non-conflict nature of the story."
+
+character_design:
+  methodology_role: "Characters are vessels for atmosphere and stability, rather than engines of conflict."
+  characters:
+    - name: "<write here>"
+      baseline_state: "<How are they at the start?>"
+      relationship_to_environment: "<How do they embody the Ki/Shō?>"
+      reaction_to_ten: "<How do they absorb or react to the pivot?>"
+      thematic_weight: "<What do they represent in the final synthesis?>"
+
+world_design:
+  methodology_role: "The world is the primary 'protagonist' or 'subject' of the story."
+  fields:
+    sensory_identity: "<The primary sights, sounds, and textures of the Ki>"
+    stability_rules: "<The unshakeable truths of the Shō>"
+    the_disruption_zone: "<Where or how the Ten enters the world>"
+
+theme_design:
+  methodology_role: "Theme is found in the 'recontextualization' of the known by the unknown."
+  fields:
+    initial_theme_impression: "<The theme as perceived in Ki/Shō>"
+    the_pivot_thematic_shift: "<How the Ten changes the theme>"
+    final_thematic_synthesis: "<The ultimate, unified theme>"
+
+visual_storytelling:
+  methodology_role: "Visuals must handle the 'weight' of the transition between acts."
+  image_system:
+    ki_visual_motif: "<A recurring image of stability>"
+    ten_visual_disruption: "<A visual element that breaks the motif>"
+    ketsu_visual_synthesis: "<An image that combines the motif and the disruption>"
+  visual_rules:
+    - "Use color palettes to distinguish between the 'Old World' (Ki) and the 'New Perspective' (Ten)."
+    - "Composition should move from 'stable/symmetrical' to 'unstable/asymmetrical' during the Ten."
+  recurring_motifs: []
+  final_image: "<The image that lingers after the Ketsu>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Avoid 'action-for-action's sake'."
+    - "Focus on 'observation-for-observation's sake'."
+    - "Every scene in Shō should add a layer of texture to the Ki."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: "<What is being observed/shown?>"
+    conflict_or_pressure: "<What is the subtle tension or environmental pressure?>"
+    turn: "<How does this scene move us closer to the Ten or further into the Shō?>"
+    visual_anchor: "<A specific object or light/shadow element>"
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Focus on the relationship between character and environment."
+    - "Use the 'Ten' to re-color everything that came before."
+  avoid_rules:
+    - "Do not introduce an antagonist whose only goal is to defeat the protagonist."
+    - "Do not use the 'Ten' as a way to 'fix' a problem; use it to 'reveal' a truth."
+
+revision_passes:
+  - name: "The Connection Pass"
+    goal: "Ensure the 'Ten' is not a random accident."
+    instructions:
+      - "Look at your Twist (Ten)."
+      - "Trace its thematic roots back to the Introduction (Ki)."
+    questions:
+      - "Does the twist feel like it 'belongs' to this world, even if it's unexpected?"
+    success_criteria: "The twist feels like a 'revelation' rather than an 'interruption'."
+
+  - name: "The Synthesis Pass"
+    goal: "Ensure the 'Ketsu' completes the loop."
+    instructions:
+      - "Check if the final scene uses elements from both the Ki and the Ten."
+    questions:
+      - "Does the ending provide a sense of 'newly understood reality'?"
+    success_criteria: "The audience feels the world has been permanently changed by the pivot."
+
+  - name: "The Structure Pass"
+    goal: "Verify the integrity of the four-act progression."
+    instructions:
+      - "Check that Shō is purely additive and does not introduce conflict."
+      - "Ensure the Ten is a distinct shift in perspective."
+    questions:
+      - "Is there any 'Western-style' conflict breaking the flow?"
+    success_criteria: "The progression follows the Ki-Shō-Ten-Ketsu logic without deviation."
+
+  - name: "The Character Pass"
+    goal: "Ensure characters serve as vessels for the theme."
+    instructions:
+      - "Review character reactions to the Ten."
+      - "Confirm characters embody the environment of the Ki."
+    questions:
+      - "Does the character's change reflect the thematic shift?"
+    success_criteria: "Characters are reactive and thematic rather than proactive and conflict-driven."
+
+  - name: "The Theme Pass"
+    goal: "Confirm the thematic recontextualization."
+    instructions:
+      - "Identify the theme in the Ki."
+      - "Identify the theme in the Ketsu."
+    questions:
+      - "Is the difference between the two themes clearly defined by the Ten?"
+    success_criteria: "The theme undergoes a visible transformation through the pivot."
+
+  - name: "The Visual Storytelling Pass"
+    goal: "Align visual motifs with structural shifts."
+    instructions:
+      - "Check the color palette shift during the Ten."
+      - "Verify the visual motif of the Ki is present in the Ketsu."
+    questions:
+      - "Does the visual language support the pivot?"
+    success_criteria: "Visuals communicate the shift in perspective without dialogue."
+
+  - name: "The Recontextualization Pass"
+    goal: "Ensure the Ten provides a new lens for the Ki/Shō."
+    instructions:
+      - "Analyze the first two acts through the lens of the third act."
+    questions:
+      - "Does the Ten make the previous scenes more meaningful?"
+    success_criteria: "The audience experiences a 'second look' at the earlier story elements."
+
+validation_checklist:
+  - "Does the story avoid a central 'Protagonist vs. Antagonist' struggle?"
+  - "Is the 'Ten' visually or conceptually distinct from the 'Ki'?"
+  - "Does the 'Ketsu' explicitly link the 'Ten' back to the 'Ki'?"
+  - "Is the primary driver of the story 'Expansion and Recontextualization' rather than 'Conflict and Resolution'?"
+  - "Is the sensory identity of the Ki clearly established?"
+  - "Does the Shō add complexity without introducing external conflict?"
+  - "Is the character's baseline state clearly defined?"
+  - "Does the visual motif of the Ki reappear or transform in the Ketsu?"
+  - "Is the thematic shift between the initial impression and final synthesis identifiable?"
+  - "Are the rules of the world's stability clearly stated in the Shō?"
+  - "Does the Ten provide a new way to interpret the characters' previous actions?"
+  - "Is the ending a sense of 'completion' rather than a 'victory'?"
+
+failure_modes:
+  - failure_mode: "The Random Accident"
+    symptom: "The twist feels like it has nothing to do with the characters or setting."
+    likely_cause: "The Ten was chosen for shock value rather than thematic resonance."
+    fix: "Inject elements into the Shō that foreshadow the 'flavor' of the Ten."
+
+  - failure_mode: "The Western Encroachment"
+    symptom: ""

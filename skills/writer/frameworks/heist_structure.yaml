@@ -1,0 +1,390 @@
+metadata:
+  framework_name: "Heist Structure Template"
+  methodology_name: "Heist Structure"
+  methodology_family: "Genre-Specific Procedural"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv_episode"
+    - "anime"
+    - "game_cinematic"
+    - "short_film"
+  best_for:
+    - "high-stakes crime"
+    - "caper comedies"
+    - "action-thrillers"
+    - "ensemble-driven narratives"
+  not_ideal_for:
+    - "character studies without external goals"
+    - "slow-burn psychological horror"
+    - "purely romantic dramas"
+  target_lengths:
+    - "90-120 minute feature"
+    - "45-60 minute episodic"
+  core_principle: "The tension between a perfectly constructed plan and the chaotic reality of execution."
+  primary_story_unit: "The Phase (Preparation -> Assembly -> Execution -> Escape)"
+  primary_success_metric: "The satisfaction of seeing a complex plan either succeed through brilliance or fail through unforeseen human/environmental variables."
+
+framework_overview:
+  summary: "A structural methodology focused on the assembly of a specialized group, the engineering of a/an complex plan, and the high-tension execution of a high-stakes theft or infiltration."
+  what_this_function_helps_create:
+    - "Ensemble chemistry"
+    - "Procedural tension"
+    - "Intellectual engagement (solving the puzzle)"
+    - "High-stakes escalation"
+  what_it_prioritizes:
+    - "Competence porn (specialists doing their jobs)"
+    - "Logistical complexity"
+    - "The 'Impossible' obstacle"
+  what_it_deemphasizes:
+    - "Internal character growth (unless it impacts the plan)"
+    - "Subplots unrelated to the 'Score'"
+
+use_when:
+  - "The plot is driven by a specific, tangible goal (the 'Score')."
+  - "The protagonist requires a team of diverse skill sets."
+  - "The narrative relies on tension, timing, and technical detail."
+
+avoid_when:
+  - "The conflict is purely emotional or interpersonal without an external objective."
+  - "The setting is too static to allow for infiltration/exfiltration."
+
+core_principles:
+  - "The Score: The target must be sufficiently 'impossible' or high-value."
+  - "The Crew: Each member must possess a unique, indispensable skill."
+  - "The Logic: The plan must be logically sound but vulnerable to a single variable."
+  - "The Twist: A deviation from the plan (betrayal, equipment failure, or unexpected presence) must force a mid-execution pivot."
+
+workflow:
+  - step: 1
+    name: "Defining the Score"
+    goal: "Establish the target and the stakes."
+    instructions:
+      - "Identify what is being stolen/taken."
+      - "Determine why it is 'unstealable'."
+    output: "The Target Profile"
+  - step: 2
+    name: "Assembling the Crew"
+    goal: "Create an ensemble of specialists."
+    instructions:
+      - "Assign roles (The Brains, The Muscle, The Hacker, etc.)."
+      - "Define the interpersonal friction between roles."
+    output: "The Crew Roster"
+  - step: 3
+    name: "Engineering the Blueprint"
+    goal: "Outline the mechanical steps of the heist."
+    instructions:
+      - "Map the entry, the infiltration, the extraction, and the exit."
+      - "Identify the security layers."
+    output: "The Plan"
+  - step: 4
+    name: "The Execution & The Pivot"
+    goal: "Execute the plan and introduce the complication."
+    instructions:
+      - "Write the sequence of the heist."
+      - "Introduce the 'Variable' that breaks the plan."
+    output: "The Heist Sequence"
+
+story_inputs:
+  premise: "<The core idea of the heist>"
+  logline: "<Who is doing what, to what, and why it's hard>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Heist Comedy / Noir Thriller>"
+  tone: "<e.g., Slick, Gritty, or Chaotic>"
+  target_length: "<e.g., 110 pages>"
+  audience: "<e.g., Adult Thriller fans>"
+  rating: "<e.g., R>"
+  production_constraints:
+    - "<e.g., Single location for the vault>"
+  creative_constraints:
+    - "<e.g., No firearms allowed in the plan>"
+  reference_points:
+    - "<e.g., Ocean's Eleven, Heat, Inception>"
+  must_include:
+    - "<e.g., A betrayal by a crew member>"
+  must_avoid:
+    - "<e.g., A 'deus ex machina' escape>"
+
+methodology_structure:
+  preparation_logic:
+    target_definition:
+      focus: "The Score"
+      decision_factors: ["Value", "Security Level", "Accessibility"]
+    crew_assembly:
+      focus: "The Specialists"
+      decision_factors: ["Skill Gap", "Interpersonal Friction", "Hidden Agendas"]
+  planning_logic:
+    blueprint_engineering:
+      focus: "The Mechanics"
+      decision_factors: ["Entry Method", "Extraction Method", "The Contingency"]
+    risk_assessment:
+      focus: "The Variables"
+      decision_factors: ["The Ticking Clock", "The Unexpected Variable", "The Pivot Point"]
+  execution_logic:
+    operational_flow:
+      focus: "The Infiltration"
+      decision_factors: ["Precision", "Stealth vs. Force", "The Breakdown"]
+    resolution_logic:
+      focus: "The Aftermath"
+      decision_factors: ["The Cost", "The Escape", "The Final Image"]
+
+beats_or_units:
+  - id: "beat_1_the_hook"
+    name: "The Target & The Motivation"
+    order: 1
+    purpose: "Establish the 'Impossible' goal and the necessity of the heist."
+    approximate_position: "Opening / Inciting Incident"
+    writer_prompt: "Why this target? Why now? Why is it so hard to reach?"
+    story_function: "Establishes stakes and the 'gravity' of the plot."
+    visual_function: "Show the security, the grandeur, or the impenetrable nature of the target."
+    emotional_function: "Awe, greed, or desperation."
+    required_decisions:
+      - "What is the MacGuffin?"
+      - "What is the cost of failure?"
+      - "What is the catalyst for the heist?"
+    fields_to_complete:
+      target_value: "<What is being taken?>"
+      security_level: "<How hard is it to access?>"
+    diagnostic_questions:
+      - "Is the target valuable enough to justify the risk?"
+      - "Is the target's difficulty clearly communicated to the audience?"
+    completion_criteria:
+      - "The audience understands the 'what' and the 'why'."
+    common_failure_modes:
+      - "The target feels trivial or uninteresting."
+
+  - id: "beat_2_the_assembly"
+    name: "The Gathering of Specialists"
+    order: 2
+    purpose: "Introduce the ensemble and their utility."
+    approximate_position: "Act 1 Development"
+    writer_prompt: "Who is needed to pull this off, and why can't they work alone?"
+    story_function: "Character introduction and skill-set establishment."
+    visual_function: "The 'Introduction Montage' of each specialist in their element."
+    emotional_function: "Curiosity, admiration, or suspicion."
+    required_decisions:
+      - "Which roles are essential?"
+      - "Who has a secret agenda?"
+      - "How do the characters interact?"
+    fields_to_complete:
+      crew_members:
+        - name: "<Name>"
+          role: "<Role>"
+          skill: "<Skill>"
+          flaw: "<Flaw>"
+    diagnostic_questions:
+      - "Does every character have a functional reason to be in the heist?"
+      - "Is there enough interpersonal tension to sustain the mid-section?"
+    completion_criteria:
+      - "A complete team with overlapping/conflicting motivations is established."
+    common_failure_modes:
+      - "Too many characters with no distinct purpose."
+      - "The characters are too 'perfect' (no flaws to exploit)."
+
+  - id: "beat_3_the_blueprint"
+    name: "The Plan & The Rehearsal"
+    order: 3
+    purpose: "Detail the mechanics of the heist."
+    approximate_position: "Act 1 Climax / Act 2 Transition"
+    writer_prompt: "Walk us through the steps. How do they get in, and how do the mechanics work?"
+    story_function: "Setting the 'Rules of the Game' so the audience can judge the later failure."
+    visual_function: "Blueprints, maps, surveillance footage, technical diagrams."
+    emotional_function: "Anticipation, intellectual engagement, tension."
+    required_decisions:
+      - "What is the 'Point of No Return'?"
+      - "What is the contingency for the first failure?"
+      - "How do they bypass the primary security layer?"
+    fields_to_complete:
+      the_entry_method: "<How they get in>"
+      the_extraction_method: "<How they take the target>"
+      the_exfiltration_method: "<How they get out>"
+      the_contingency: "<The 'Plan B' that will eventually fail anyway>"
+    diagnostic_questions:
+      - "Does the plan feel clever or just lucky?"
+      - "Are the obstacles clearly defined so we can see when they are bypassed?"
+    completion_criteria:
+      - "A logical, step-by-step sequence of events is documented."
+    common_failure_modes:
+      - "The plan is too simple (no tension)."
+      - "The plan is too complex (audience loses track)."
+
+  - id: "beat_4_the_execution"
+    name: "The Heist (The Infiltration)"
+    order: 4
+    purpose: "The actual performance of the plan."
+    approximate_position: "Act 2 Climax"
+    writer_prompt: "The plan is working... until it isn't."
+    story_function: "The primary action sequence; the collision of plan vs. reality."
+    visual_function: "Tight spaces, ticking clocks, sweat, high-speed movement, precision."
+    emotional_function: "High tension, adrenaline, dread."
+    required_decisions:
+      - "What is the first 'hiccup'?"
+      - "When does the 'Plan B' become 'Plan C'?"
+      - "How does the variable impact the crew?"
+    fields_to_complete:
+      the_ticking_clock: "<What time limit is pressing them?>"
+      the_unexpected_variable: "<The person, object, or event not in the plan>"
+      the_pivot: "<The desperate decision made to compensate for the variable>"
+    diagnostic_questions:
+      - "Is the 'twist' a result of the characters' choices or just random bad luck?"
+      - "Can the audience still follow the logic despite the chaos?"
+    completion_criteria:
+      - "The sequence reaches a peak of chaos/intensity."
+    common_failure_modes:
+      - "The 'twist' feels unearned or random (Deus Ex Machina)."
+      - "The action loses its connection to the established plan."
+
+  - id: "beat_5_the_aftermath"
+    name: "The Escape & The Payoff"
+    order: 5
+    purpose: "Resolution of the heist and the characters' fates."
+    approximate_position: "Act 3 Resolution"
+    writer_prompt: "Did they get away with it? At what cost?"
+    story_function: "Resolution of the external goal and the internal character arcs."
+    visual_function: "The 'Afterimage'—the empty vault, the fleeing car, or the quiet disappearance."
+    emotional_function: "Catharsis, irony, or melancholy."
+    required_decisions:
+      - "Who is left? Who is caught?"
+      - "Was the 'Score' worth the price paid?"
+      - "What is the final state of the crew?"
+    fields_to_complete:
+      the_final_outcome: "<Success, failure, or pyrrhic victory?>"
+      the_cost: "<What was lost during the escape?>"
+      the_final_image: "<A visual echo of the beginning or the plan's failure>"
+    diagnostic_questions:
+      - "Does the ending provide a sense of closure for the crew's primary conflict?"
+    completion_criteria:
+      - "The 'Score' is resolved and the tension is released."
+    common_failure_modes:
+      - "An overly happy ending that negates the stakes."
+      - "An ending that leaves too many logical threads dangling."
+
+character_design:
+  methodology_role: "The Crew (Specialists)"
+  characters:
+    - name: "<Name>"
+      role_specialization: "<e.g., The Driver, The Grifter, The Tech>"
+      essential_skill: "<The one thing only they can do>"
+      utility_to_crew: "<Why the Leader needs them>"
+      personal_vulnerability: "<The flaw that might ruin the heist>"
+      hidden_agenda: "<What they are actually doing/seeking during the heist>"
+
+world_design:
+  methodology_role: "The Environment (The Fortress)"
+  fields:
+    security_infrastructure:
+      - "<e.g., Biometric scanners, guard rotations, motion sensors>"
+    environmental_hazards:
+      - "<e.g., High-altitude, underwater, heavy traffic, extreme heat>"
+    the_impenetrable_layer: "<The one thing that seems impossible to bypass>"
+
+theme_design:
+  methodology_role: "The Moral Argument"
+  fields:
+    central_tension: "<e.g., Loyalty vs. Greed / Skill vs. Chaos>"
+    the_moral_of_the_score: "<What the outcome says about the characters' lifestyle>"
+
+visual_storytelling:
+  methodology_role: "The Aesthetic of Precision"
+  image_system:
+    blueprints: "<How we see the plan visually>"
+    surveillance_angles: "<How we see the 'enemy' perspective>"
+    the_ticking_clock: "<Visual indicators of time running out>"
+  visual_rules:
+    - "Use close-ups of tools/mechanics to emphasize competence."
+    - "Use wide shots of the target to emphasize scale/impossibility."
+  recurring_motifs:
+    - "<e.g., The sound of a heartbeat, the clicking of a lock, the glow of a screen>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene in the 'Planning' phase must add a new layer of difficulty."
+    - "Every scene in the 'Execution' phase must either advance the plan or degrade it."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: "<How the situation changes by the end of the scene>"
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Show the technical difficulty."
+    - "Focus on the 'How'."
+  avoid_rules:
+    - "Do not have characters explain the plan via heavy exposition; show it through action/blueprints."
+
+revision_passes:
+  - name: "The Structure Pass"
+    goal: "Ensure the narrative arc follows the heist progression."
+    instructions: ["Verify presence of Setup, Assembly, Plan, Execution, and Escape."]
+    questions: ["Is the transition from planning to execution clear?"]
+    success_criteria: ["The story moves logically from preparation to resolution."]
+  - name: "The Character Pass"
+    goal: "Ensure the ensemble is distinct and functional."
+    instructions: ["Review each character's role and vulnerability."]
+    questions: ["Does every character have a unique skill? Does every character have a flaw?"]
+    success_ability: ["The crew feels like a specialized, interdependent unit."]
+  - name: "The Theme Pass"
+    goal: "Ensure the moral argument is present."
+    instructions: ["Check if the outcome of the heist reinforces the central tension."]
+    questions: ["Does the heist outcome reflect the theme of greed/loyalty/chaos?"]
+    success_criteria: ["The ending provides thematic resonance."]
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure the technical complexity is visually communicated."
+    instructions: ["Review the use of blueprints, surveillance, and mechanical close-ups."]
+    questions: ["Can the audience understand the plan without dialogue?"]
+    success_criteria: ["The plan's complexity is visible through action and imagery."]
+  - name: "The Heist Logic Pass"
+    goal: "Ensure the plan is physically and logically possible within the world's rules."
+    instructions: ["Trace the path from entry to exit. Look for 'magic' solutions."]
+    questions: ["Could a smart person stop this plan without magic?"]
+    success_criteria: ["The plan feels earned and grounded."]
+
+validation_checklist:
+  - "Is the target 'impossible'?"
+  - "Does every crew member have a unique, indispensable skill?"
+  - "Is the 'Twist' a direct consequence of the plan's mechanics or a character's flaw?"
+  - "Does the escape/aftermath address the 'Cost' established in the setup?"
+  - "Is the 'Ticking Clock' visually or narratively present?"
+  - "Does the plan include a clear entry and exit strategy?"
+  - "Is the 'Variable' unpredictable and disruptive?"
+  - "Does the 'Blueprint' phase establish the rules of the security layers?"
+  - "Is there enough interpersonal friction within the crew to sustain tension?"
+  - "Does the 'Score' have enough value to justify the risk?"
+  - "Are the technical details of the heist clearly communicated?"
+  - "Is the 'Point of No Return' clearly defined?"
+
+failure_modes:
+  - failure_mode: "The 'Magic' Heist"
+    symptom: "The crew succeeds without any actual struggle or cleverness."
+    likely_cause: "Lack of sufficient security layers or 'The Twist' being too weak."
+    fix: "Introduce a 'Variable' that renders the primary method useless."
+  - failure_mode: "The 'Generic' Crew"
+    symptom: "Characters feel interchangeable."
+    likely_cause: "Overlapping skill sets or lack of personal vulnerability."
+    fix: "Give each character a unique 'Specialty' and a 'Personal Debt'."
+  - failure_mode: "The 'Unstoppable' Variable"
+    symptom: "The twist feels like a random accident rather than a consequence of the heist."
+    likely_cause: "The complication is external to the characters' actions or the plan's flaws."
+    fix: "Ensure the complication arises from a character's mistake or a failure in the plan's logic."
+
+adaptation_notes:
+  feature_film: "Focus on the grand scale and the cinematic 'Big Moment'."
+  short_film: "Focus on a single, high-tension moment of a much larger plan."
+  tv_episode: "Focus on the 'Skill' and 'Procedural' aspect of one specific heist."
+  tv_pilot: "Focus on the 'Assembly' and the 'First Score' to establish the crew's dynamic."
+  anime: "Emphasize the 'Visual Mechanics' and highly stylized, superhuman skills."
+  adult_animation: "Can lean into extreme 'Chaos' and much higher 'Cost' of failure."
+  anthology: "Each episode is a self-contained 'Score' with a different crew/target."
+  game_cinematic: "Focus on the 'Blueprint' and the 'Execution' as a way to set up gameplay loops."
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'Story Inputs' first, then move through the 'Methodology Structure' phases sequentially."
+  recommended_population_order: ["Target, Crew, Plan, Execution"]
+  minimum_viable_completion: ["Target, Crew, Plan, Twist, Outcome"]
+  signs_framework_is_ready_for_scene_outline: "When the 'Blueprint' phase is logically sound and the 'Twist' is identified."

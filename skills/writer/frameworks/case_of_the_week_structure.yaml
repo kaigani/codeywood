@@ -1,0 +1,329 @@
+metadata:
+  framework_name: "Case-of-the-Week Template"
+  methodology_name: "Case-of-the-Week Structure"
+  methodology_family: "Procedural / Episodic"
+  version: "1.0"
+  created_for: "episodic story development"
+  suitable_media:
+    - "TV episode"
+    - "TV pilot"
+    - "anime"
+    - "anthology"
+    - "web series"
+  best_for:
+    - "Crime procedurals"
+    - "Medical dramas"
+    - "Supernatural investigations"
+    - "Detective mysteries"
+    - "Sci-fi exploration"
+  not_ideal_for:
+    - "Serialized high-concept epics"
+    - "Character studies without external catalysts"
+    - "Single-arc feature films"
+  target_lengths:
+    - "22-minute episode"
+    - "44-minute episode"
+  core_principle: "The resolution of a self-contained external conflict (The Case) serves as a vehicle to advance the long-term internal/relational conflict (The Seasonal Arc)."
+  primary_story_unit: "The Episode (The Case)"
+  primary_success_metric: "The satisfying closure of the mystery/problem alongside a measurable shift in the seasonal status quo."
+
+framework_overview:
+  summary: "A structural framework for managing two simultaneous narrative tracks: the episodic 'Case' (which must be/is resolved) and the seasonal 'Arc' (which must progress)."
+  what_this_framework_helps_create:
+    - "A sense of justice or resolution within a single sitting."
+    - "Sustainable, repeatable storytelling engines."
+    - "Character development that feels organic to the investigation."
+  what_it_prioritizes:
+    - "Clue-driven momentum."
+    - "Procedural rhythm (Discovery -> Investigation -> Confrontation)."
+    - "The 'Status Quo' vs. 'The Disruption'."
+  what_it_deemphasizes:
+    - "Complex, multi-episode plot twists that prevent standalone viewing."
+    - "Character growth that requires the entire season to conclude."
+
+use_when:
+  - "The audience expects a resolution by the end of the episode."
+  - "The setting/institution is the primary 'character' (e.g., a police precinct, a hospital, a spaceship)."
+  - "You want a format that allows for easy syndication or 'jump-in' viewing."
+
+avoid_when:
+  - "The central mystery is the primary driver of the entire series (e.g., Lost)."
+  - "The characters' primary conflict is purely internal and lacks external catalysts."
+
+core_principles:
+  - "The Case is the engine; the An Arc is the fuel."
+  - "Every case must leave a 'residue' on the characters' long-term journey."
+  - "The procedural rhythm must be maintained to satisfy genre expectations."
+  - "The 'Status Quo' is the baseline that the Case threatens to disrupt."
+
+workflow:
+  - step: 1
+    name: "Define the Seasonal Engine"
+    goal: "Establish the long-term stakes."
+    instructions:
+      - "Identify the overarching mystery or character evolution for the season."
+      - "Define the 'Status Quo' of the main cast."
+    output: "Seasonal Arc Summary"
+  - step: 2
+    name: "The Case Catalyst"
+    goal: "Introduce the episodic disruption."
+    instructions:
+      - "Create a self-contained problem that enters the characters' world."
+      - "Ensure the case forces the characters to interact with their seasonal arc tension."
+    output: "Episode Premise"
+  - step: 3
+    name: "Beat Mapping"
+    goal: "Construct the investigation rhythm."
+    instructions:
+      - "Map out the discovery, the investigation, and the climax."
+      - "Layer in 'Seasonal Arc' beats at key intervals."
+    output: "Episodic Beat Sheet"
+  - step: 4
+    name: "Validation"
+    goal: "Check for procedural integrity."
+    instructions:
+      - "Ensure the case is solvable but difficult."
+      - "Check that the characters haven't made too much permanent progress in the seasonal arc."
+    output: "Finalized Episode Outline"
+
+story_inputs:
+  seasonal_arc:
+    central_mystery: "<The big question of the season>"
+    current_status_quo: "<Where the characters are emotionally/professionally at the start of this episode>"
+    progress_goal: "<What specific piece of the seasonal arc should move forward here?>"
+  episodic_case:
+    the_incident: "<The crime, the patient, the anomaly, etc.>"
+    the_victim_or_subject: "<Who is affected by the case?>"
+    the_investigative_difficulty: "<Why can't this be solved in five minutes?>"
+    the_procedural_flavor: "<e.g., Forensic, Psychological, Combat, Interrogation>"
+  characters:
+    the_lead_investigator: "<Primary driver of the case>"
+    the_foil: "<Character who provides tension/different perspective on the case>"
+    the_anchor: "<Character representing the institution/authority>"
+  constraints:
+    budgetary_limitations: "<e.g., No large explosions, limited locations>"
+    genre_tropes_to_use: []
+    genre_tropes_to_avoid: []
+
+methodology_structure:
+  episodic_track_logic:
+    clue_progression_type: "<e.g., Linear, Red Herring-heavy, Deductive>"
+    investigative_complexity_scale: "<1-10 scale of difficulty>"
+    resolution_stakes: "<How much the case resolution affects the local environment>"
+    procedural_rhythm_metric: "<e.g., High-action, Slow-burn, Forensic-heavy>"
+    status_quo_impact_level: "<How much the case disrupts the baseline>"
+  seasonal_arc_logic:
+    arc_momentum_type: "<e.g., Incremental, Explosive, Retrospective>"
+    character_evolution_depth: "<How much the characters change over the season>"
+    mystery_layering_strategy: "<How new information is revealed about the season-long mystery>"
+    long_term_consequence_weight: "<The gravity of the seasonal stakes>"
+    interconnectivity_index: "<How much the case-track influences the arc-track>"
+
+beats_or_units:
+  - id: "the_inciting_incident"
+    name: "The Discovery / The Call"
+    order: 1
+    purpose: "To disrupt the status quo with the Case."
+    approximate_position: "0-10%"
+    writer_prompt: "What event brings the case to the characters' doorstep?"
+    story_function: "Establishes the stakes of the episode."
+    visual_function: "The 'Crime Scene' or the 'Emergency Arrival'."
+    emotional_function: "Shock, urgency, or curiosity."
+    required_decisions:
+      - "How much does this impact the characters' current tasks?"
+    fields_to_complete:
+      the_event: "<write here>"
+      immediate_consequence: "<write here>"
+    diagnostic_questions:
+      - "Does this event force the characters to stop what they were doing?"
+    completion_criteria:
+      - "The case is clearly identified."
+      - "The characters are actively engaged in the investigation."
+    common_failure_modes:
+      - "The case is introduced too late."
+      - "The characters are passive observers rather than active investigators."
+
+  - id: "the_investigation_phase"
+    name: "The Procedural Grind"
+    order: 2
+    purpose: "To gather clues and escalate tension."
+    approximate_position: "10-50%"
+    writer_prompt: "What are the first two leads, and how do they fail or complicate things?"
+    story_function: "Builds the world and introduces the 'rules' of the case."
+    visual_function: "Interrogations, lab work, searching locations, chasing leads."
+    emotional_function: "Frustration, mounting dread, or intellectual engagement."
+    required_decisions:
+      - "What is the 'False Lead'?"
+      - "How does a character's personal arc interfere with a clue?"
+    fields_to_complete:
+      clue_alpha: "<write here>"
+      clue_beta: "<write here>"
+      the_complication: "<write here>"
+    diagnostic_questions:
+      - "Is the investigation moving forward, or just spinning wheels?"
+    completion_criteria:
+      - "A major piece of information changes the direction of the case."
+    common_failure_modes:
+      - "Information dumps without action."
+      - "The investigation feels repetitive without new stakes."
+
+  - id: "the_midpoint_twist"
+    name: "The Pivot"
+    order: 3
+    purpose: "To shift the investigation from discovery to high-stakes confrontation."
+    approximate_position: "50%"
+    writer_prompt: "What revelation makes the case personal or much more dangerous?"
+    story_function: "Raises the stakes from 'solving a puzzle' to 'surviving a threat'."
+    visual_function: "A sudden discovery, a betrayal, or a secondary crime."
+    emotional_function: "Reversal of expectations; heightened tension."
+    required_decisions:
+      - "How does this twist link the Case to the Seasonal Arc?"
+    fields_to_complete:
+      the_revelation: "<write here>"
+      the_personal_stake: "<write here>"
+    diagnostic_questions:
+      - "Does this twist make the case harder to solve?"
+    completion_criteria:
+      - "The characters' relationship to the case has fundamentally changed."
+    common_failure_modes:
+      - "The twist is disconnected from the established investigation."
+      - "The twist is too predictable."
+
+  - id: "the_climax"
+    name: "The Confrontation / The Resolution"
+    order: 4
+    purpose: "To resolve the episodic conflict through action or revelation."
+    approximate_position: "80-95%"
+    writer_prompt: "How do the characters use the gathered clues to confront the antagonist/problem?"
+    story_function: "The final resolution of the episodic conflict."
+    visual_function: "The showdown, the surgery, the arrest, the final reveal."
+    emotional_function: "Catharsis, relief, or tragedy."
+    required_decisions:
+      - "Does the character win through skill, luck, or sacrifice?"
+    fields_to_complete:
+      the_climax_action: "<write here>"
+      the_final_outcome: "<write here>"
+    diagnostic_questions:
+      - "Is the resolution earned by the work done in the investigation phase?"
+    completion_criteria:
+      - "The Case is officially 'Closed'."
+    common_failure_modes:
+      - "Deus ex machina (solving it with unearned luck)."
+
+  - id: "the_coda"
+    name: "The Aftermath / The Tag"
+    order: 5
+    purpose: "To provide closure for the episode while maintaining momentum for the season."
+    approximate_position: "95-100%"
+    writer_prompt: "As the case closes, what small piece of the seasonal arc has moved?"
+    story_function: "Provides closure for the episode while maintaining momentum for the season."
+    visual_function: "A quiet moment in the precinct, a character walking away, a lingering look."
+    emotional_function: "Reflection, lingering tension, or a 'seed' of the next episode."
+    required_decisions:
+      - "What is the 'breadcrumb' left for the next episode?"
+    fields_to_complete:
+      the_resolution_image: "<write here>"
+      the_seasonal_breadcrumb: "<write here>"
+    diagnostic_questions:
+      - "Does the audience feel the episode is over, but the story is still ongoing?"
+    completion_criteria:
+      - "The status quo has been slightly altered or a new question has been planted."
+    common_failure_modes:
+      - "The tag is too disconnected from the episode's emotional tone."
+
+character_design:
+  methodology_role: "Characters must function as both investigators and participants in the seasonal drama."
+  characters:
+    - name: "<Lead>"
+      procedural_role: "<e.g., The Brains, The Muscle, The Intuitive>"
+      seasonal_driver: "<What part of the seasonal arc do they embody?>"
+      personal_flaw: "<How does this flaw hinder the current case?>"
+    - name: "<Partner/Fint>"
+      procedural_role: "<e.g., The Skeptic, The Rookie, The Tech>"
+      relationship_to_lead: "<Tension point for the episode>"
+
+world_design:
+  methodology_role: "The 'Institution' provides the boundaries for the case."
+  fields:
+    the_institution: "<e.g., NYPD, Hospital, FBI, Magic Academy>"
+    operational_rules: ["Rule 1", "Rule 2"]
+    the_base_of_operations: "<The recurring setting where investigation happens>"
+
+theme_design:
+  methodology_role: "The theme is the bridge between the Case and the Season."
+  fields:
+    episodic_theme: "<e.g., Justice vs. Mercy in this specific case>"
+    seasonal_theme: "<e.g., The cost of truth in the larger world>"
+
+visual_storytelling:
+  methodology_role: "Visuals must distinguish between 'The Evidence' and 'The Emotion'."
+  image_system:
+    clue_visuals: ["Macro shots of evidence", "Document scrolling", "Forensic lighting"]
+    character_visuals: ["Interpersonal distance", "The weight of the badge", "Fatigue"]
+  recurring_motifs: ["The ticking clock", "The mounting stack of files"]
+
+scene_generation_rules:
+  clue_density_rule: "Ensure at least one significant piece of evidence or information is revealed every 10 minutes of runtime."
+  character_interaction_rule: "Every investigation scene must feature a character-driven obstacle or interpersonal tension point."
+  procedural_pacing_rule: "The transition from the investigation phase to the climax must be marked by a visible increase in visual tension or kinetic energy."
+
+revision_passes:
+  - name: "The Integration Pass"
+    goal: "Ensure the Case and Arc are not running in parallel silos."
+    instructions: ["Check every beat. Does the case impact the characters' seasonal journey?"]
+    questions: ["Is the case just 'background noise', or does it drive character change?"]
+    success_criteria: ["The case resolution causes a measurable shift in the seasonal status quo."]
+  - name: "The Character Pass"
+    goal: "Verify character agency and growth."
+    instructions: ["Review all character beats to ensure they are driving the investigation, not just reacting to it."]
+    questions: ["Does the character's personal flaw actively impede the resolution of the case?"]
+    success_criteria: ["The character's internal struggle is visible in their investigative decisions."]
+  - name: "The Theme Pass"
+    goal: "Ensure thematic resonance between the episode and the season."
+    instructions: ["Compare the episodic theme to the seasonal theme."]
+    questions: ["Does the lesson learned in this case echo the larger seasonal question?"]
+    success_criteria: ["The episode's resolution reinforces or complicates the seasonal theme."]
+  - name: "The Visual Storytelling Pass"
+    goal: "Check for visual clarity of clues and emotions."
+    instructions: ["Review the visual function of each beat."]
+    questions: ["Are the clues visually distinct and easy for the audience to track?"]
+    success_criteria: ["The audience can follow the investigation through visual cues alone."]
+  - name: "The Procedural Logic Pass"
+    goal: "Verify the investigation logic and clue chain."
+    instructions: ["Trace the clues from discovery to climax."]
+    questions: ["Are there enough 'reversals' to prevent a predictable path?"]
+    success_criteria: ["The 'False Lead' and 'Major Twist' are clearly distinct and logically connected."]
+
+validation_checklist:
+  - "Is the case self-contained and solvable?"
+  - "Is the seasonal arc progressed by at least one small increment?"
+  - "Does the climax rely on information discovered during the investigation?"
+  - "Is the 'Status Quo' clearly established and then disrupted?"
+  - "Is the clue-to-climax logic sound?"
+  - "Does the episode end with a clear resolution of the case?"
+  - "Is the seasonal arc progress measurable?"
+  - "Does the character's personal flaw impact the investigation?"
+  - "Is the procedural rhythm (Discovery -> Investigation -> Confrontation) intact?"
+  - "Is the setting/institution's role clearly defined?"
+
+failure_modes:
+  - failure_mode: "The Parallel Story Syndrome"
+    symptomatic: "The case and the seasonal arc feel like two different shows playing at once."
+    likely_cause: "Lack of character interaction between the two tracks."
+    fix: "Make the case's outcome directly impact a character's seasonal goal."
+  - failure_mode: "The Procedural Vacuum"
+    symptom: "The episode is exciting but the characters feel hollow/static."
+    likely_cause: "Focusing entirely on the 'How' of the crime and ignoring the 'Who' of the investigators."
+    fix: "Inject character-driven obstacles into the investigation phase."
+  - failure_mode: "The Climax Collapse"
+    symptom: "The resolution feels unearned or sudden."
+    likely_cause: "Lack of sufficient clues or investigation depth in previous beats."
+    fix: "Ensure every element of the resolution is foreshadowed in the investigation phase."
+
+adaptation_notes:
+  feature_film: "Avoid. Feature films usually require a single, continuous arc without a 'reset' button."
+  short_film: "Useful for 'Anthology' style shorts where a single event is explored."
+  tv_episode: "The primary use case. Focus on the balance of the two tracks."
+  tv_pilot: "Focus heavily on establishing the 'Status Quo' and the 'Seasonal Engine' for future episodes."
+  anime: "Highly effective for 'Monster of the Week' formats; ensure the 'Monster' reflects the larger world's lore."
+  adult_animation: ""

@@ -1,0 +1,420 @@
+metadata:
+  framework_name: "Coming-of-Age Arc Template"
+  methodology_name: "Coming-of-Age Arc Method"
+  methodology_family: "Psychological/Character-Driven Transformation"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "anime"
+    - "manga"
+    - "TV episode"
+    - "web series"
+  best_for:
+    - "character studies"
+    - "dramas"
+    - "biopics"
+    - "period pieces"
+    - "high-concept fantasy with internal focus"
+  not_ideal_for:
+    - "purely procedural action"
+    - "static character studies"
+    - "high-concept plot-driven thrillers"
+  target_lengths:
+    - "short film"
+    - "feature film"
+    - "TV episode"
+  core_principle: "The transition from a state of protected innocence/ignorance to a state of experienced/burdened maturity through the loss of a fundamental illusion."
+  primary_story_unit: "The psychological shift in perception/worldview."
+  primary_success_metric: "The measurable difference between the character's initial worldview and their final, more complex worldview."
+
+framework_overview:
+  summary: "This framework focuses on the internal metamorphosis of a protagonist as they encounter the complexities, injustices, or harsh realities of the world that they previously did not understand or were shielded from."
+  what_this_framework_helps_create:
+    - "Deeply resonant character arcs"
+    - "Thematic weight through personal growth"
+    - "Emotional stakes rooted in identity"
+  what_it_prioritizes:
+    - "Internal change over external victory"
+    - "The cost of knowledge"
+    - "The loss of childhood/naivety"
+  what_it_deemphasizes:
+    - "External plot mechanics"
+    - "Winning the 'big battle'"
+    - "Purely physical conflict"
+
+use_when:
+  - "The protagonist's primary struggle is understanding who they are in relation to the world."
+  - "The story's theme is about the loss of innocence, the weight of responsibility, or the complexity of morality."
+  - "The conflict arises from the character's inability to cope with new, difficult truths."
+
+avoid_when:
+  - "The protagonist is already a fully formed, competent adult with no room for psychological growth."
+  - "The story is purely about overcoming an external antagonist without any internal cost."
+
+core_principles:
+  - "The 'Safety Net' must be dismantled."
+  - "Knowledge is a burden as much as a gift."
+  - "Growth requires a permanent loss (a person, an idea, or a sense of safety)."
+  - "The climax is a choice that proves the character has changed."
+
+workflow:
+  - step: 1
+    name: "Define the Initial Illusion"
+    goal: "Establish the character's starting point of ignorance or false security."
+    instructions:
+      - "Identify what the character believes about the world that is fundamentally untrue or incomplete."
+    output: "The Initial Worldview"
+  - step: 2
+    name: "Identify the Fracture"
+    goal: "Introduce the first crack in the character's protected reality."
+    instructions:
+      - "Determine the event that makes the old way of thinking impossible to maintain."
+    output: "The Inciting Disruption"
+  - step: 3
+    name: "Map the Trials of Exposure"
+    goal: "Design the sequence of events that forces the character to encounter harder and harder truths."
+    instructions:
+      - "Ensure each trial increases the complexity of the truth being revealed."
+    output: "The Escalation of Reality"
+  - step: 4
+    name: "The Point of No Return"
+    goal: "Force a choice that destroys the character's ability to return to innocence."
+    instructions:
+      - "The character must commit an act or make a decision that makes their old self obsolete."
+    output: "The Crucible"
+  - step: 5
+    name: "The Integration"
+    goal: "Establish the character's new, more complex, but more burdened identity."
+    instructions:
+      - "Show the character operating in the world with their new understanding, accepting the new cost."
+    output: "The Mature Worldview"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write/select>"
+  genre: "<write/select>"
+  tone: "<write/select>"
+  target_length: "<write/select>"
+  audience: "<write/select>"
+  rating: "<write/select>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  progression_logic:
+    stage_1_the_illusion:
+      description: "Establishing the baseline of false security."
+      decision_forcing_fields:
+        - "The Lie: What is the specific false belief?"
+        - "The Safety Net: What protects them from the truth?"
+        - "The Blind Spot: What is the character's specific vulnerability?"
+    stage_2_the_breach:
+      description: "The introduction of undeniable reality."
+      decision_forcing_fields:
+        - "The Catalyst: What event breaks the shield?"
+        - "The First Doubt: How does the character react to the crack?"
+        - "The Irreversibility Factor: Why can't they go back?"
+    stage_3_the_exposure:
+      description: "The progressive accumulation of difficult truths."
+      decision_forcing_fields:
+        - "The Escalation Ladder: How does each truth increase the stakes?"
+        - "The Cost of Knowledge: What is lost with every new insight?"
+        - "The Agency Shift: How does the character move from victim to actor?"
+    stage_4_the_crucible:
+      description: "The moment of definitive transformation."
+      decision_forcing_fields:
+        - "The Ultimate Choice: The conflict between the old Lie and the new Truth."
+        - "The Sacrifice: What must be permanently abandoned?"
+        - "The Proof: How does the action demonstrate the change?"
+    stage_5_the_integration:
+      description: "The establishment of the new, burdened reality."
+      decision_forcing_fields:
+        - "The New Normal: How does the character inhabit the world now?"
+        - "The Lingering Scar: What is the permanent psychological mark?"
+        - "The Weight of Wisdom: How does the new knowledge change their daily life?"
+
+beats_or_units:
+  - id: "the_protected_garden"
+    name: "The Protected Garden (Incentive/Innocence)"
+    order: 1
+    purpose: "Establish the baseline of what is being lost."
+    approximate_position: "Act I"
+    writer_prompt: "Show the character within their comfort zone, operating under a specific, beautiful, but false assumption."
+    story_function: "Establish the status quo and the character's 'Blind Spot'."
+    visual_function: "Warmth, safety, enclosure, soft edges, predictable lighting."
+    emotional_function: "Security, naivety, lightness, lack of weight."
+    required_decisions:
+      - "What is the specific lie/illusion the character believes?"
+      - "What is the 'Safety Net' (person, place, or mindset) that protects them?"
+    fields_to_complete:
+      initial_worldview: "<write here>"
+      the_blind_spot: "<What do they fail to see because they are safe?>"
+      the_safety_net: "<What prevents them from seeing the truth right now?>"
+    diagnostic_questions:
+      - "Is the character's ignorance palpable to the audience?"
+      - "Is the 'safety' of this stage clearly defined so we know what will be lost?"
+    completion_criteria:
+      - "The audience understands the character's comfort zone."
+      - "The character's fundamental 'Lie' is established."
+    common_failure_modes:
+      - "Making the character too pathetic/weak rather than just naive."
+      - "Failing to show why the character *wants* to stay in this state."
+
+  - id: "the_fracture"
+    name: "The Fracture (The Breach)"
+    order: 2
+    purpose: "Introduce the first undeniable evidence of a larger, more complex reality."
+    approximate_position: "End of Act I / Start of Act II"
+    writer_prompt: "What event or piece of information makes the 'Safety Net' start to fray?"
+    story_function: "Inciting Incident / Disruption of the Illusion."
+    visual_function: "Sharp edges, shadows, a sudden change in weather or lighting, a breach in a physical boundary."
+    emotional_function: "Confusion, doubt, curiosity, or fear."
+    required_decisions:
+      - "How much of the truth is revealed here vs. later?"
+    fields_to_complete:
+      the_disrupting_event: "<write here>"
+      the_first_doubt: "<The specific moment the character realizes something is wrong.>"
+    diagnostic_questions:
+      - "Does this event directly challenge the character's specific blind spot?"
+    completion_criteria:
+      - "The character can no longer pretend the old world is the only world."
+    common_failure_modes:
+      - "The event is too massive, skipping the 'doubt' phase and going straight to 'trauma'."
+
+  - id: "the_wilderness"
+    name: "The Wilderness (The Trials of Exposure)"
+    order: 3
+    purpose: "The character is forced to navigate the world without their previous protections."
+    approximate_position: "Act II"
+    writer_prompt: "As the character explores the 'Real World,' what harder truths do they encounter?"
+    story_function: "Progressive Complications / Learning through failure."
+    visual_function: "Expansiveness, exposure, harsh lighting, unpredictable environments, grit."
+    emotional_function: "Disorientation, struggle, the weight of new information, growing competence/scarring."
+    required_decisions:
+      - "What is the sequence of 'Truths' they must learn?"
+    fields_to_complete:
+      trial_1_truth: "<write here>"
+      trial_2_truth: "<write here>"
+      the_cost_of_exploration: "<What are they losing as they learn?>"
+    diagnostic_questions:
+      - "Is each trial progressively more difficult to ignore than the last?"
+      - "Is the character gaining agency (even if it's painful)?"
+    completion_criteria:
+      - "The character has accumulated enough 'experience' to make a definitive choice."
+    common_failure_modes:
+      - "A series of random events that don't build toward a cohesive new worldview."
+      - "The character remains a passive victim without learning anything."
+
+  - id: "the_crucible"
+    name: "The Crucible (The Irreversible Choice)"
+    order: 4
+    purpose: "The character must act based on their new, harder reality, destroying the possibility of returning to innocence."
+    approximate_position: "Climax"
+    writer_prompt: "The character faces a situation where they must choose between their old, comfortable Lie and the new, painful Truth."
+    story_function: "Climax / The Death of the Old Self."
+    visual_function: "High contrast, intense focus, claustrophobic or overwhelming scale, decisive action."
+    emotional_function: "Resolve, grief, sacrifice, transformation, heavy realization."
+    required_decisions:
+      - "What is the sacrifice required to embrace the truth?"
+    fields_to_complete:
+      the_ultimate_choice: "<write here>"
+      the_sacrifice_made: "<What part of their old self or old life dies here?>"
+    diagnostic_questions:
+      - "Is the choice 'irreversible'?"
+      - "Does the choice prove that the character's worldview has fundamentally shifted?"
+    completion_criteria:
+      - "The character has acted as a 'new' person."
+    common_failure_modes:
+      - "The choice is too easy or doesn't require a loss."
+      - "The character reverts to their old way of thinking at the last second (unless that is the intended tragedy)."
+
+  - id: "the_integration"
+    name: "The Integration (The Mature Self)"
+    order: 5
+    purpose: "Show the character living in the aftermath of their transformation."
+    approximate_position: "Resolution"
+    writer_prompt: "How does the character inhabit the world now that they know the truth? What is the new 'Normal'?"
+    story_function: "Resolution / New Status Quo."
+    visual_function: "A sense of clarity, perhaps more somber or grounded, a new kind of 'stable' lighting."
+    emotional_function: "Acceptance, weary wisdom, responsibility, bittersweetness."
+    required_decisions:
+      - "How does the character's new perspective change their daily existence?"
+    fields_to_complete:
+      the_new_worldview: "<write here>"
+      the_lingering_scar: "<What is the permanent emotional or physical mark of this journey?>"
+      final_image_expression: "<How is their maturity visually represented in the final shot?>"
+    diagnostic_questions:
+      - "Can the audience see the difference between the character in Act I and the character now?"
+    completion_criteria:
+      - "The character is fundamentally changed, even if the world around them hasn't."
+    common_failure_modes:
+      - "Ending on a 'happily ever after' that ignores the cost of the journey."
+
+character_design:
+  methodology_role: "The character is the primary site of the story's conflict."
+  characters:
+    - role: "Protagonist"
+      fields:
+        initial_state: "<Naive/Protected/Ignorant>"
+        the_lie: "<The false belief they hold>"
+        the_truth: "<The reality they must accept>"
+        the_burden: "<The weight of the new responsibility/knowledge>"
+        the_scar: "<The permanent change to their psyche>"
+    - role: "The Catalyst (Mentor/Antagonist/Foil)"
+      fields:
+        function: "<Does this person represent the Truth or the protection of the Lie?>"
+        impact_on_protagonist: "<How do they force the character toward the Crucible?>"
+
+world_design:
+  methodology_role: "The world must function as a mirror to the character's internal loss of innocence."
+  fields:
+    the_shield: "<What environmental or social factor protects the character at the start?>"
+    the_encroaching_reality: "<How does the 'real world' physically or socially intrude on the character's space?>"
+    the_moral_complexity: "<What elements of the world represent the 'gray areas' the character must learn to navigate?>"
+
+theme_design:
+  methodology_role: "The theme is the 'Lesson' or 'Cost' of the arc."
+  fields:
+    central_theme: "<e.g., The heavy price of truth; The necessity of loss for growth>"
+    the_argument: "<The struggle between the safety of a Lie and the danger of the Truth>"
+    the_philosophical_cost: "<What is lost when we grow up?>"
+
+visual_storytelling:
+  methodology_role: "Visuals must track the transition from 'Soft/Obscured' to 'Hard/Clear'."
+  image_system:
+    progression:
+      act_1: "<Soft focus, warm colors, enclosed spaces, obscured horizons>"
+      act_2: "<High contrast, harsh light, wide/exposed spaces, grit, shadows>"
+      act_3: "<Clear focus, grounded colors, stable but heavy compositions>"
+  recurring_motifs:
+    - "<Symbols of childhood/innocence that are broken or discarded>"
+    - "<Symbols of weight, scars, or clarity>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene should either reinforce the 'Lie' or chip away at it."
+    - "Avoid 'empty' action; every conflict should be a confrontation with a new reality."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    the_truth_revealed: "<What piece of the 'Real World' is presented here?>"
+    turn: "<How does the character's perception shift in this scene?>"
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Focus on the character's reaction to new information."
+    - "Use environmental changes to signal the loss of safety."
+  avoid_rules:
+    - "Avoid scenes where the character learns something but doesn't change their behavior."
+    - "Avoid 'unearned' growth where the character becomes wise without struggle."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Ensure the progression of the arc follows the logical movement from innocence to maturity."
+    instructions:
+      - "Verify that the 'Safety Net' is clearly established in Act I."
+      - "Check that the 'Crucible' provides a definitive break from the past."
+    questions:
+      - "Is the structural arc complete?"
+      - "Are there any gaps in the progression of the character's realization?"
+    success_criteria:
+      - "A coherent, irreversible movement through the five stages."
+
+  - name: "character_pass"
+    goal: "Ensure the protagonist's internal change is the engine of the story."
+    instructions:
+      - "Review the character's 'Lie' and 'Truth' for alignment."
+      - "Check if the character's actions in the climax prove their change."
+    questions:
+      - "Is the character's growth unearned?"
+      - "Does the character's new identity feel earned through struggle?"
+    success_criteria:
+      - "The character's internal metamorphosis is the primary driver of the plot."
+
+  - name: "theme_pass"
+    goal: "Ensure the thematic argument regarding the 'Cost of Knowledge' is present."
+    instructions:
+      - "Identify the central theme in the character's struggle."
+      - "Ensure the 'Cost' is visible in the resolution."
+    questions:
+      - "Is the theme too didactic or preachy?"
+      - "Does the story's resolution support the thematic argument?"
+    success_criteria:
+      - "The theme is felt through the character's experience, not just stated."
+
+  - name: "visual_storytelling_pass"
+    goal: "Ensure the visual language tracks the psychological shift."
+    instructions:
+      - "Check the lighting and color palette progression."
+      - "Verify that motifs of 'broken innocence' are visually present."
+
+    questions:
+      - "Do the visuals of Act I contrast sharply with Act III?"
+      - "Are the visual metaphors for the 'Truth' clear?"
+    success_criteria:
+      - "The visual progression mirrors the character's loss of innocence."
+
+  - name: "psychological_transformation_pass"
+    goal: "Ensure the 'Weight of Knowledge' is appropriately felt by the character."
+    instructions:
+      - "Analyze the character's emotional state in the 'Integration' phase."
+      - "Check for the presence of the 'Lingering Scar'."
+    questions:
+      - "Is the character's new worldview appropriately burdened?"
+      - "Is the loss of the 'Safety Net' emotionally impactful?"
+    success_criteria:
+      - "The character's new state of being is clearly more complex and heavy than their initial state."
+
+validation_checklist:
+  - "Does the protagonist start with a specific, identifiable blind spot?"
+  - "Is there a clear moment where the 'Safety Net' is removed?"
+  - "Does the character make a decision that makes their old life impossible?"
+  - "Is the final worldview more complex (even if more painful) than the first?"
+  - "Is the 'Lie' established before the 'Fracture' occurs?"
+  - "Does each trial in the 'Wilderness' introduce a new, harder truth?"
+  - "Is the 'Sacrifice' in the Crucible significant enough to be permanent?"
+  - "Does the visual palette shift from 'Soft/Warm' to 'Hard/Clear'?"
+  - "Is the 'Cost of Knowledge' explicitly visible in the character's new behavior?"
+  - "Is the 'Lingering Scar' present in the final resolution?"
+
+failure_modes:
+  - failure_mode: "The Eternal Child"
+    symptom: "The character is constantly a victim of circumstances without ever making a choice."
+    likely_cause: "Lack of agency in the 'Wilderness' phase."
+    fix: "Force the character to make a decision that has consequences."
+  - failure_mode: "The Unearned Sage"
+    symptom: "The character becomes wise/mature too quickly without sufficient struggle."
+    likely_cause: "Skipping the 'Trials of Exposure' or making them too easy."
+    fix: "Increase the 'cost' of each lesson learned."
+  - failure_mode: "The Cynic Trap"
+    symptom: "The character becomes a bitter person rather than a mature one."
+    likely_cause: "The arc focuses only on the 'Loss' and not the 'Integration'."
+    fix: "Show the character finding a new, more stable way to exist in the real world."
+
+adaptation_notes:
+  feature_film: "Focus on one major, life-altering loss."
+  short_film: "Focus on a single, sharp moment of realization/fracture."
+  tv_episode: "Focus on a specific 'lesson of the week' that contributes to a larger seasonal growth."
+  tv_pilot: "Establish the 'Safety Net' and the 'Fracture' immediately to set the seasonal trajectory."
+  anime: "Emphasize the visual transformation and the 'power' gained through the burden of truth."
+  adult_animation: "Use more explicit or visceral imagery to represent the destruction of the 'Safety Net'."
+  anthology: "Each entry should feature a completely different 'Type' of innocence being lost."
+  game_cinematic: "Focus on the character's physical reaction to the 'Crucible' to emphasize the weight of the choice."
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'story_inputs' first, then work through the 'beats_or_units' chronologically."
+  recommended_population_order:
+    - "Initial Worldview -> The Lie -> The Safety Net -> The Fracture -> The Trials -> The Crucible -> The New Worldview"
+  minimum_viable_completion: "At minimum, define the 'Initial Worldview', 'The Lie', 'The Crucible', and 'The New Worldview'."
+  signs_framework_is_ready_for_scene_outline: "When the 'Truths' for each trial in the 'Wilderness' are clearly defined."

@@ -1,0 +1,371 @@
+metadata:
+  framework_name: "Hero Goal Sequences Framework"
+  methodology_name: "Hero Goal Sequences"
+  methodology_family: "Causal Chain / Momentum-Based Structure"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv_episode"
+    - "anime"
+    - "short_film"
+    - "game_cinematic"
+  best_for:
+    - "high-stakes action"
+    - "thrillers"
+    - "adventure"
+    - "character-driven journeys"
+  not_ideal_for:
+    - "anthology shorts"
+    - "experimental non-linear narratives"
+    - "slice-of-life (without clear external stakes)"
+  target_lengths:
+    - "90-120 minutes"
+    - "22-45 minutes"
+  core_principle: "Every action must create a new complication that necessitates a new goal. The story is a chain of 'Therefore' and 'But' statements."
+  primary_story_unit: "The Goal-Obstacle-Consequence Loop"
+  primary_success_metric: "Causal Momentum (The degree to which the end of one sequence necessitates the beginning of the next)."
+
+framework_overview:
+  summary: "A structural methodology that focuses on the protagonist's agency and the cascading consequences of their pursuit of a primary objective."
+  what_this_framework_helps_create:
+    - "Unstoppable narrative momentum"
+    - "Strong protagonist agency"
+    - "Tight causal links between scenes"
+    - "Escalating stakes"
+  what_it_prioritizes:
+    - "Causality"
+    - "Character Drive"
+    - "Conflict Escalation"
+  what_it_deemphasizes:
+    - "Static exposition"
+    - "Incidental character moments without consequence"
+    - "Disconnected subplots"
+
+use_when:
+  - "The plot feels episodic or disconnected."
+  - "The protagonist feels passive or reactive."
+  - "The story lacks a sense of mounting tension."
+  - "The middle of the story feels 'sagging'."
+
+avoid_when:
+  - "The story relies on atmospheric dread rather than active pursuit."
+  - "The narrative is purely observational or character study without external movement."
+  - "The plot is driven by coincidence rather than character choice."
+
+core_principles:
+  - "The Chain of Causality: No event should happen 'and then'; it must happen 'therefore' or 'but'."
+  - "The Law of Escalation: Each subsequent goal must be harder to achieve or carry higher personal/external stakes."
+  - "Agency as Engine: The protagonist's decisions must be the primary driver of the plot's direction."
+  - "The Consequence Rule: Every successful action must disrupt the status quo and create a new problem."
+
+workflow:
+  - step: 1
+    name: "Define the Super-Goal"
+    goal: "Establish the ultimate destination/desire."
+    instructions:
+      - "Identify what the hero wants at the very end of the story."
+      - "Ensure this goal is high-stakes and requires a series of difficult steps."
+    output: "The Primary Objective"
+  - step: 2
+    name: "Map the Causal Chain"
+    goal: "Create the sequence of links."
+    instructions:
+      - "For every major beat, identify the 'Goal' that arises from the previous 'Consequence'."
+      - "Ensure each link is connected by 'Therefore' or 'But'."
+    output: "The Sequence Outline"
+  - step: 3
+    name: "Populate the Loops"
+    goal: "Flesh out the mechanics of each sequence."
+    instructions:
+      - "Fill in the Obstacle, the Action, and the Consequence for every link in the chain."
+    output: "The Detailed Sequence Framework"
+  - step: 4
+    name: "Causality Audit"
+    goal: "Remove episodic drift."
+    instructions:
+      - "Review the transitions between sequences to ensure no 'and then' moments exist."
+    output: "Finalized Causal Structure"
+
+story_inputs:
+  premise: "<The core concept>"
+  logline: "<Protagonist + Inciting Incident + Goal + Obstacle>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Sci-Fi Thriller>"
+  tone: "<e.g., Gritty, Urgent>"
+  target_length: "<e.g., 110 pages>"
+  audience: "<e.g., Young Adult>"
+  rating: "<e.g., PG-13>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  super_goal_definition:
+    description: "The ultimate, overarching objective that terminates the story."
+    definition: "<What is the hero's final destination/state?>"
+    stakes: "<What happens if they fail the super-goal?>"
+    internal_driver: "<The emotional need driving this pursuit>"
+    resolution_type: "<How is the goal achieved or lost?>"
+  sequence_chain_logic:
+    description: "A series of interconnected loops where the consequence of one becomes the catalyst for the next."
+    link_architecture:
+      causal_connector_types:
+        - "Therefore (Direct Consequence)"
+        - "But (Obstacle/Complication)"
+      loop_components:
+        - "Goal"
+        - "Obstacle"
+        - "Action"
+        - "Consequence"
+      progression_rules:
+        - "Escalation of stakes"
+        - "Increasing difficulty"
+        - "Irreversible changes"
+      status_tracking:
+        - "Pending"
+        - "In-Progress"
+        - "Complete"
+
+beats_or_units:
+  - id: 1
+    name: "The Inciting Catalyst"
+    order: 1
+    purpose: "Disrupt the status quo and establish the first goal."
+    approximate_position: "10-15%"
+    writer_prompt: "What event forces the hero to abandon their current life and pursue a new objective?"
+    story_function: "Establishes the Super-Goal and the first 'But' in the chain."
+    visual_function: "Contrast between the established world and the emerging threat."
+    emotional_function: "Shock, realization, or sudden urgency."
+    required_decisions:
+      - "The hero's first proactive choice"
+      - "The cost of staying in the status quo"
+    fields_to_complete:
+      current_goal: ""
+      the_obstacle: ""
+      the_action: ""
+      the_consequence: ""
+    diagnostic_questions:
+      - "Is the hero's action a choice or a reaction?"
+      - "Does the consequence make the super-goal harder or more urgent?"
+    completion_criteria:
+      - "The hero has committed to the path."
+      - "The new status quo is established."
+    common_failure_modes:
+      - "The hero is too passive."
+      - "The event is too small to force a change."
+
+  - id: 2
+    name: "The Escalating Complication"
+    order: 2
+    purpose: "Increase the difficulty and introduce the first major setback."
+    approximate_position: "25-40%"
+    writer_prompt: "How does the hero's attempt to solve the first problem create a much larger, more complex problem?"
+    story_function: "Transitions the story from initial reaction to active pursuit."
+    visual_function: "Increased scale, intensity, or environmental friction."
+    emotional_function: "Frustration, mounting pressure, or heightened tension."
+    required_decisions:
+      - "The hero's decision to double down"
+      - "The sacrifice required to proceed"
+    fields_to_complete:
+      current_goal: ""
+      the_obstacle: ""
+      the_action: ""
+      the_consequence: ""
+    diagnostic_questions:
+      - "Is the consequence a direct result of the hero's action?"
+      - "Does this link raise the stakes for the protagonist personally?"
+    completion_criteria:
+      - "The hero's previous success has become a new liability."
+    common_failure_modes:
+      - "The complication feels like a coincidence."
+      - "The hero's action doesn't actually cause the consequence."
+
+  - id: 3
+    name: "The Climax/Resolution Loop"
+    order: 3
+    purpose: "The final confrontation that resolves the Super-Goal."
+    approximate_position: "85-100%"
+    writer_prompt: "What is the final, most difficult choice the hero must make to achieve their ultimate goal?"
+    story_consequence: "The final state of the world and the hero."
+    story_function: "Closes the causal chain and resolves the primary tension."
+    visual_function: "The peak of visual intensity and thematic clarity."
+    emotional_function: "Catharsis, tragedy, or profound transformation."
+    required_decisions:
+      - "The ultimate sacrifice or triumph"
+      - "The final resolution of the 'Need' vs 'Want'"
+    fields_to_complete:
+      current_goal: ""
+      the_obstacle: ""
+      the_action: ""
+      the_consequence: ""
+    diagnostic_questions:
+      - "Does the final action resolve the Super-Goal?"
+      - "Is the cost of this action consistent with the established stakes?"
+    completion_criteria:
+      - "The chain is closed."
+      - "The new status quo is permanent."
+    common_failure_modes:
+      - "The resolution is too easy (Deus Ex Machina)."
+      - "The hero's agency is lost in the final moment."
+
+character_design:
+  method_role: "The engine of the causal chain."
+  protagonist:
+    visible_want: "<The external goal driving the sequence>"
+    hidden_need: "<The internal lack that makes them vulnerable to obstacles>"
+    agency_level: "<How much control do they exert over the plot? (High | Medium | Low)>"
+    competence_profile: "<What skills do they use to solve obstacles? What skills are they missing?>"
+    reactive_vs_proactive: "<Do they drive the chain or are they dragged by it?>"
+  antagonist:
+    role_in_chain: "<Does the antagonist provide the 'But' (obstacle) or the 'Therefore' (consequence)?>"
+    counter_goal: "<What is the antagonist's objective that conflicts with the hero's sequence?>"
+
+world_design:
+  method_role: "The landscape of obstacles."
+  fields:
+    friction_points: "<What elements of the world naturally resist the hero's goals?>"
+    consequence_scale: "<How much does a single action ripple through this world?>"
+    environmental_obstacles: []
+
+theme_design:
+  method_role: "The moral weight of the hero's choices."
+  fields:
+    the_argument: "<The debate between the hero's 'Want' and their 'Need' as expressed through sequences.>"
+    the_cost_of_success: "<What must the hero sacrifice to keep the chain moving forward?>"
+
+visual_storytelling:
+  method_role: "Visualizing the escalating stakes."
+  image_system:
+    visual_escalation: "<How does the visual scale/intensity grow with each sequence? (e.g., tight/claustrophobic to wide/epic)>"
+    action_motifs: "<Recurring visual cues of the hero's struggle>"
+  visual_rules:
+    - "<e.g., Use color shifts to indicate a change in the status quo after a consequence.>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either advance a goal or complicate a goal."
+    - "Avoid 'filler' scenes that do not contribute to the causal chain."
+    - "A scene is successful if it ends with a 'Therefore' or a 'But'."
+  scene_template:
+    scene_id: ""
+    linked_sequence_id: ""
+    visible_goal: "<What is being pursued in this specific scene?>"
+    conflict_or_pressure: "<What is stopping the goal right now?>"
+    the_turn: "<How does the power dynamic or situation shift by the end of the scene?>"
+    consequence_for_next_scene: "<What new problem does this scene create?>"
+  do_rules:
+    - "Ensure the hero makes a decision that has a cost."
+    - "Connect the end of the scene to the start of the next."
+  avoid_rules:
+    - "Avoid scenes where characters simply discuss the plot without acting."
+    - "Avoid scenes where the hero's goal remains unchanged by the end of the scene."
+
+revision_passes:
+  - name: "The 'Therefore/But' Test"
+    goal: "Eliminate episodic drift."
+    instructions:
+      - "Read the sequence chain aloud. Replace every 'And then' with 'Therefore' or '..'
+        'But'."
+      - "If a sentence doesn't work with 'Therefore' or 'But', the link is broken."
+    questions:
+      - "Does Link A lead to Link B naturally?"
+      - "Is there any sequence that could be removed without breaking the chain?"
+    success_criteria:
+      - "Every transition in the outline passes the 'Therefore/But' test."
+
+  - name: "The Agency Audit"
+    goal: "Strengthen the protagonist."
+    instructions:
+      - "Identify every 'Action' in the chain."
+      - "Check if these actions are proactive choices or merely reactions to external events."
+    questions:
+      - "Is the hero driving the plot, or is the plot driving the hero?"
+    success_criteria:
+      - "The hero's decisions are the primary cause of the 'Consequences'."
+
+  - name: "The Theme Pass"
+    goal: "Ensure thematic resonance through consequence."
+    instructions:
+      - "Review each 'Consequence' field."
+      - "Check if the cost of each consequence reflects the central argument."
+    questions:
+      - "Does the hero's struggle visually and narratively represent the theme?"
+      - "Is the 'Need' being addressed through the 'Action' taken?"
+    success_criteria:
+      - "The theme is palpable in the consequences of the hero's actions."
+
+  - name: "The Visual Storytelling Pass"
+    goal: "Verify visual escalation."
+    instructions:
+      - "Review the visual_function of every beat."
+      - "Check for a progression in scale and intensity."
+    questions:
+      - "Does the visual language grow more intense as the stakes rise?"
+      - "Are the action motifs consistent across the chain?"
+    success_criteria:
+      - "The visual scale mirrors the narrative tension."
+
+  - name: "The Causality Pass"
+    goal: "Ensure structural integrity of the chain."
+    instructions:
+      - "Trace the chain from the first link to the last."
+      - "Verify that no link exists in isolation."
+    questions:
+      - "Does every 'Consequence' serve as the 'Inciting Incident' for the next link?"
+      - "Are there any 'dead ends' in the narrative?"
+    success_criteria:
+      - "A seamless, unbroken chain of causality from start to finish."
+
+validation_checklist:
+  - "Does the Super-Goal provide a clear destination?"
+  - "Does every sequence end in a change of state (Consequence)?"
+  - "Is there a clear 'New Goal' at the start of every link?"
+  - "Do the stakes escalate with each subsequent link?"
+  - "Is the protagonist's agency visible in the 'Action' field of each link?"
+  - "Are there zero 'And then' transitions in the sequence chain?"
+  - "Does the antagonist provide a meaningful 'But' (obstacle)?"
+  - "Is the protagonist's 'Need' addressed through their actions?"
+  - "Does the visual scale grow alongside the narrative stakes?"
+  - "Is the theme present in the cost of the hero's successes?"
+  - "Does the world design provide sufficient friction for the goals?"
+  - "Does every scene end with a 'Turn' (shift in power or situation)?"
+  - "Is every 'Action' a decisive choice rather than a mere reaction?"
+  - "Is every 'Consequence' irreversible or significantly disruptive?"
+  - "Does the 'New Status Quo' present a harder challenge than the previous one?"
+
+failure_modes:
+  - failure_mode: "The Episodic Trap"
+    symptom: "The story feels like a collection of random adventures."
+    likely_cause: "Links are connected by 'And then' instead of 'Therefore'."
+    fix: "Rewrite the end of each sequence to create a new, urgent problem."
+  - failure_mode: "The Passive Protagonist"
+    symptom: "The hero is just 'along for the ride'."
+    likely_cause: "The 'Action' field contains only reactions to obstacles, not proactive attempts to solve them."
+    fix: "Introduce a choice where the hero's attempt to solve a problem actually causes a larger complication."
+  - failure_mode: "The Stagnant Chain"
+    symptom: "The story lacks momentum; the middle feels repetitive."
+    likely_cause: "The 'Consequence' does not increase the stakes or change the environment."
+    fix: "Ensure each consequence makes the Super-Goal more difficult or more costly to achieve."
+
+adaptation_notes:
+  feature_film: "Focus on a large-scale chain of 5-8 major sequences."
+  short_film: "Focus on a tight, 2-3 link chain with immediate consequences."
+  tv_episode: "The chain should resolve the episode's goal while seeding the 'Super-Goal' of the season."
+  tv_pilot: "The chain must establish the 'Status Quo' and then shatter it irrevocably by the final link."
+  anime: "Emphasize the 'Action' and 'Consequence' through highly visual, transformative combat or magic."
+  adult_animation: "Use visceral consequences and complex moral ambiguity in the causal chain."
+  anthology: "Each episode is a self-contained, complete chain with its own Super-Goal."
+  game_cinematic: "Ensure the 'Action' and 'Consequence' are clearly tied to player-driven or character-driven pivotal moments."
+
+yaml_usage_notes:
+  how_to_use: "Start with the Super-Goal. Do not attempt to fill out the sequence chain until the ultimate destination is clear."
+  recommended_population_order:
+    - "Super-Goal"
+    - "Character Agency/Drive"
+    - "Sequence Chain (Link by Link)"
+    - "Revision Passes"
+  minimum_viable_completion: "A completed 'Sequence Chain' with at least 3 links and valid 'Therefore/But' connections."
+  signs_framework_is_ready_for_scene_outline: "When every 'Consequence' in the chain provides a clear 'Visible Goal' for the next scene."

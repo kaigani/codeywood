@@ -1,0 +1,325 @@
+metadata:
+  framework_name: "Sequence Approach Template"
+  methodology_name: "Sequence Approach / Frank Daniel Method"
+  methodology_family: "Structuralism / Unit-Based Storytelling"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv_episode"
+    - "anime"
+    - "game_cinematic"
+  best_for:
+    - "complex narrative pacing"
+    - "preventing the 'sagging middle'"
+    - "breaking down large-scale plots into manageable units"
+    - "ensuring continuous narrative momentum"
+  not_ideal_for:
+    - "experimental non-linear narratives"
+    - "extremely short-form content (where sequences overlap)"
+  target_low_complexity: "short film"
+  target_high_complexity: "feature film"
+  core_principle: "A feature film is composed of eight discrete sequences, each functioning as a self-contained mini-story with its own beginning, middle, and end, linked by causal transitions."
+  primary_story_unit: "Sequence"
+  primary_success_metric: "Continuous narrative momentum and rhythmic tension shifts across 8 distinct movement cycles."
+
+framework_overview:
+  summary: "The Frank Daniel Method treats a screenplay not as a single arc, but as a chain of eight interconnected dramatic units. Each sequence must possess its own internal conflict, climax, and a 'hook' or 'turning point' that necessitates the start of the next sequence."
+  what_this_framework_helps_create:
+    - "Rhythmic pacing"
+    - "Structural integrity"
+    - "Clear dramatic transitions"
+    - "Manageable plotting segments"
+  what_it_prioritizes:
+    - "Causality (Sequence A leads to Sequence B)"
+    - "Internal sequence resolution"
+    - "The 'mini-climax' of every unit"
+  what_it_deemphasizes:
+    - "Static character studies without movement"
+    - "Loose, episodic structures without causal links"
+
+use_when:
+  - "Writing a feature-length screenplay"
+  - "Feeling stuck in the second act"
+  - "Struggling with pacing or 'dead air' in the middle of a story"
+  - "Developing a complex plot with multiple moving parts"
+
+avoid_when:
+  - "Writing a single-scene short film"
+  - "Developing an anthology where units are intentionally disconnected"
+  - "Purely atmospheric/experimental works that reject causal progression"
+
+core_principles:
+  - "The 8-Sequence Rule: Divide the story into 8 manageable units."
+  - "The Mini-Arc: Every sequence must have its own setup, complication, and climax."
+  - "The Chain Link: The resolution of one sequence must create the problem for the next."
+  - "The Pivot: Major plot points (Plot Point 1, Midpoint, Plot Point 2) occur at the transitions between specific sequences."
+
+workflow:
+  - step: 1
+    name: "Foundational Inputs"
+    goal: "Define the core DNA of the story."
+    instructions:
+      - "Establish the logline and character's primary drive."
+    output: "Story Inputs"
+  - step: 2
+    name: "The 8-Sequence Skeleton"
+    goal: "Map the 8 macro-movements of the film."
+    instructions:
+      - "Identify the primary conflict and the 8 major turning points."
+    output: "Methodology Structure"
+  - step: 3
+    name: "Sequence Deep-Dive"
+    goal: "Populate each sequence with internal drama."
+    instructions:
+      - "Define the internal arc, visual hook, and emotional shift for each of the 8 units."
+    output: "Beats or Units"
+  - step: 4
+    name: "The Causal Chain Audit"
+    goal: "Ensure no sequence is 'floating'."
+    instructions:
+      - "Verify that the end of Seq 1 causes Seq 2, and so on."
+    output: "Validation Checklist"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  act_one_setup_and_departure:
+    sequence_1_focus: "The Status Quo & Inciting Incident (The Setup)"
+    sequence_2_focus: "The Departure & Plot Point 1 (The Commitment)"
+    structural_logic: "Establishing the baseline and forcing the transition into the unknown."
+    tension_gradient: "Low to High"
+    primary_decision_driver: "The protagonist's choice to engage with the disruption."
+    transition_requirement: "The end of Sequence 2 must create an irreversible change."
+  act_two_a_exploration_and_midpoint:
+    sequence_3_focus: "The New World & Testing the Rules (Exploration)"
+    sequence_4_focus: "The Midpoint (The Shift from Reactive to Proactive)"
+    structural_logic: "Learning the new reality and fundamentally altering the protagonist's strategy."
+    tension_gradient: "Moderate to High"
+    primary_decision_driver: "The shift from reacting to external forces to actively pursuing a goal."
+    transition_requirement: "The Midpoint must render the original plan obsolete."
+  act_two_b_complication_and_crisis:
+    sequence_5_focus: "The Complications & Rising Stakes (The Pressure Cooker)"
+    sequence_6_focus: "The Crisis & Plot Point 2 (The Low Point/The Reversal)"
+    structural_logic: "Escalating the pressure until the protagonist's resources are depleted."
+    tension_gradient: "High to Extreme"
+    primary_decision_driver: "The protagonist's struggle to survive the consequences of the Midpoint."
+    transition_requirement: "The 'All Is Lost' moment must necessitate a final, desperate plan."
+  act_three_preparation_and_resolution:
+    sequence_7_focus: "The Final Push (The Preparation for Battle)"
+    sequence_8_focus: "The Climax & Resolution (The New Status Quo)"
+    structural_logic: "The gathering of strength and the final confrontation with the central conflict."
+    tension_gradient: "Extreme to Resolution"
+    primary_decision_driver: "The execution of the final gambit and the acceptance of the new reality."
+    transition_requirement: "The climax must resolve the thematic question established in Act 1."
+
+beats_or_units:
+  - id: "SEQ_01"
+    name: "Sequence 1: The Setup"
+    order: 1
+    purpose: "Establish the world, the protagonist's 'normal', and the inciting incident."
+    approximate_position: "0% - 12%"
+    writer_prompt: "What is the protagonist's life like before the disruption? What event shatters this stability?"
+    story_function: "Introduction of protagonist, stakes, and the call to adventure."
+    visual_function: "Establishing imagery, tone, and the 'before' state."
+    emotional_function: "Empathy building and sense of loss/disruption."
+    required_decisions:
+      - "What is the 'inciting incident'?"
+      - "What is the protagonist's immediate reaction?"
+    fields_to_complete:
+      inciting_incident: "<write here>"
+      protagonist_status_quo: "<write_here>"
+      sequence_climax: "<write_here>"
+    diagnostic_questions:
+      - "Does the sequence end with a problem that cannot be ignored?"
+      - "Is the protagonist's 'normal' clearly defined so we feel the impact of the change?"
+    completion_criteria:
+      - "Inciting incident occurs"
+      - "Protagonist's world is irrevocably changed"
+    common_failure_modes:
+      - "Too much exposition"
+      - "No clear disruption"
+
+  - id: "SEQ_02"
+    name: "Sequence 2: The Departure"
+    order: 2
+    purpose: "The protagonist makes a choice to engage with the new problem."
+    approximate_position: "12% - 25%"
+    writer_prompt: "What decision forces the protagonist out of their comfort zone and into the main plot?"
+    story_function: "Plot Point 1; the transition from Act 1 to Act 2."
+    visual_function: "Crossing a threshold; physical movement into a new environment/state."
+    emotional_function: "Anxiety, excitement, or dread regarding the unknown."
+    required_decisions:
+      - "What is the 'Point of No Return'?"
+    fields_to_complete:
+      the_choice: "<write here>"
+      plot_point_1_event: "<write here>"
+    diagnostic_questions:
+      - "Is the protagonist's commitment to the journey irreversible?"
+    completion_criteria:
+      - "Plot Point 1 achieved"
+      - "Protagonist enters the 'new world'"
+    common_failure_modes:
+      - "Protagonist is passive/driven only by external forces"
+
+  - id: "SEQ_03"
+    name: "Sequence 3: Exploration"
+    order: 3
+    purpose: "The protagonist learns the rules of the new reality."
+    approximate_position: "25% - 37%"
+    writer_prompt: "How does the protagonist test their new environment? Who are the new allies/enemies?"
+    story_function: "Introduction of subplots and secondary characters."
+    visual_function: "World-building; showcasing the scale/nature of the new setting."
+    emotional_function: "Curiosity, wonder, or growing unease."
+    required_decisions:
+      - "What is the first major obstacle in this new world?"
+    fields_to_complete:
+      new_rules_learned: "<write here>"
+      first_minor_victory_or_defeat: "<write here>"
+    diagnostic_questions:
+      - "Are we seeing the 'fun and games' or the 'promise of the premise'?"
+    completion_criteria:
+      - "Protagonist establishes a foothold or a pattern of behavior"
+    common_failure_modes:
+      - "Aimless wandering without narrative purpose"
+
+  - id: "SEQ_04"
+    name: "Sequence 4: The Midpoint"
+    order: 4
+    purpose: "A massive shift in stakes that changes the nature of the conflict."
+    approximate_position: "37% - 50%"
+    writer_prompt: "What event raises the stakes from 'personal' to 'existentially' or 'global'?"
+    story_function: "The Midpoint; the shift from reactive to proactive behavior."
+    visual_function: "A high-impact, large-scale cinematic event."
+    emotional_function: "A realization or a shock; the 'point of no return' for the character's psyche."
+    required_decisions:
+      - "How does the protagonist's goal change after this event?"
+    fields_to_complete:
+      midpoint_event: "<write here>"
+      the_shift_in_strategy: "<write here>"
+    diagnostic_questions:
+      - "Does the protagonist stop running and start fighting (or vice versa)?"
+    completion_criteria:
+      - "The protagonist's original plan is rendered obsolete"
+    common_failure_modes:
+      - "Midpoint is too small; doesn't fundamentally alter the story trajectory"
+
+  - id: "SEQ_05"
+    name: "Sequence 5: The Complication"
+    order: 5
+    purpose: "The consequences of the Midpoint begin to catch up."
+    approximate_position: "50% - 62%"
+    writer_prompt: "The protagonist is now proactive, but the world is pushing back harder than ever."
+    story_function: "Escalation of tension and complication of subplots."
+    visual_function: "Increasingly claustrophobic or high-pressure imagery."
+    emotional_function: "Stress, desperation, or mounting dread."
+    required_decisions:
+      - "What complication makes the protagonist's new plan fail?"
+    fields_to_complete:
+      the_rising_pressure: "<write here>"
+      the_complication: "<write here>"
+    diagnostic_questions:
+      - "Is the tension higher than in Sequence 3?"
+    completion_criteria:
+      - "The protagonist's resources or allies are depleted"
+    common_failure_modes:
+      - "Repetitive conflict without escalation"
+
+  - id: "SEQ_06"
+    name: "Sequence 6: The Crisis"
+    order: 6
+    purpose: "The protagonist hits their absolute lowest point."
+    approximate_position: "62% - 75%"
+    writer_prompt: "What loss or revelation makes the protagonist feel they have lost everything?"
+    story_function: "Plot Point 2; the 'All Is Lost' moment."
+    visual_function: "Darkness, isolation, or physical destruction."
+    emotional_function: "Despair, grief, or profound realization."
+    required_decisions:
+      - "What is the 'death' (literal or metaphorical) that occurs here?"
+    fields_to_complete:
+      the_all_is_lost_moment: "<write here>"
+      the_revelation: "<write here>"
+    diagnostic_questions:
+      - "Is the protagonist at their most vulnerable?"
+    completion_criteria:
+      - "The protagonist is stripped of their primary strength or hope"
+    common_failure_modes:
+      - "The low point feels unearned or too easy to overcome"
+
+  - id: "SEQ_07"
+    name: "Sequence 7: The Final Push"
+    order: 7
+    purpose: "The protagonist finds a new way to fight, fueled by the lessons of the crisis."
+    approximate_position: "75% - 88%"
+    writer_prompt: "How does the protagonist rally? What is the final plan?"
+    story_function: "The gathering of forces; the preparation for the climax."
+    visual_function: "Focus, intensity, and movement toward the final confrontation."
+    emotional_function: "Determination, resolve, or a 'last stand' mentality."
+    required_decisions:
+      - "What is the final, desperate gambit?"
+    fields_to_complete:
+      the_rallying_cry: "<write here>"
+      the_final_plan: "<write here>"
+    diagnostic_questions:
+      - "Does the protagonist use something they learned in Sequence 6 to succeed?"
+    completion_criteria:
+      - "The stage is set for the final confrontation"
+    common_failure_modes:
+      - "The protagonist regains power too easily without a cost"
+
+  - id: "SEQ_08"
+    name: "Sequence 8: Resolution"
+    order: 8
+    purpose: "The final confrontation and the settling of the new world."
+    approximate_position: "88% - 100%"
+    writer_prompt: "The climax happens. The dust settles. How has the world changed?"
+    story_function: "Climax and Resolution."
+    visual_function: "The 'aftermath' imagery; contrasting with the 'before' imagery of Seq 1."
+    emotional_function: "Catharsis, relief, or lingering tragedy."
+    required_decisions:
+      - "What is the final image that summarizes the journey?"
+    fields_to_complete:
+      the_climax_resolution: "<write here>"
+      the_new_status_quo: "<write here>"
+      the_final_image: "<write here>"
+    diagnostic_questions:
+      - "Does the ending resolve the central thematic question?"
+      - "Is the 'New Status Quo' a clear mirror/contrast to the 'Old Status Quo'?"
+    completion_criteria:
+      - "The central conflict is resolved"
+      - "The thematic arc is closed"
+    common_failure_modes:
+      - "Deus ex machina"
+      - "Unresolved thematic threads"
+
+character_design:
+  methodology_role: "Characters must evolve through the 8-sequence chain."
+  characters:
+    - name: "<write here>"
+      arc_start: "<How they are in Seq 1>"
+      arc_midpoint: "<How they change in Seq 4>"
+      arc_end: "<How they are in Seq 8>"
+      internal_contradiction: "<What makes their choices difficult?>"
+
+world_design:
+  methodology_role: "The world must provide the friction necessary for sequence transitions."
+  fields:
+    rules_of_the_world: []
+    consequences_of_action: "<How the world reacts to the protagonist's presence>"
+    environmental_pressure: "<How the setting forces the protagonist into the next sequence>"
+
+theme_design:
+  methodology_role: "Theme is the 'why' behind the sequence of events."

@@ -1,0 +1,374 @@
+metadata:
+  framework_name: "Dialectical Storytelling Framework"
+  methodology_name: "Dialectical Structure"
+  methodology_family: "Philosophical/Hegelian"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv_episode"
+    - "api"
+    - "anime"
+    - "short_film"
+    - "adult_animation"
+    - "game_cinematic"
+  best_for:
+    - "character studies"
+    - "political dramas"
+    - "philosophical sci-fi"
+    - "tragedies"
+    - "high-concept allegories"
+  not_ideal_for:
+    - "purely procedural action"
+    - "slapstick comedy"
+    - "simple adventure"
+  target_lengths:
+    - "any"
+  core_principle: "The resolution of conflict through the synthesis of opposing forces (Thesis + Antithesis = Synthesis)."
+  primary_story_unit: "The Dialectic (The tension between opposing truths/forces)"
+  primary_success_metric: "The depth and inevitability of the Synthesis (Sublation)."
+
+framework_overview:
+  summary: "A methodology where story progression is driven by the collision of two incompatible states, beliefs, or forces, resulting in a third, transformed reality."
+  what_this_framework_helps_create:
+    - "Stories with profound thematic resonance"
+    - "Character arcs that feel earned and transformative"
+    - "Conflict that is more/more than just physical, but ideological"
+  what_it_prioritizes:
+    - "Thematic argument"
+    - "Internal and external contradiction"
+    - "The evolution of truth"
+  what_it_deemphasies:
+    - "Random plot twists"
+    - "Action for action's sake"
+    - "Resolution through simple victory"
+
+use_when:
+  - "The story is about a fundamental change in worldview."
+  - "The conflict is rooted in a clash of values rather than just a clash of wills."
+  - "You want the ending to feel like a profound realization or a new state of being."
+
+avoid_when:
+  - "The plot is driven by purely external, non-ideological obstacles (e.g., a natural disaster with no human belief impact)."
+  - "The characters have no conflicting internal or external philosophies."
+
+core_principles:
+  - "Thesis: The initial state, belief, or character stability."
+  - "Antithesis: The disruptive force, opposing belief, or destabilizing reality."
+  - "Negation: The period of struggle where the Thesis and Antithesis clash and invalidate one another."
+  - "Synthesis (Sublation/Aufheben): The emergence of a new state that preserves the essence of both while discarding their limitations."
+
+workflow:
+  - step: 1
+    name: "Define the Thesis"
+    goal: "Establish the status quo and the primary belief/state."
+    instructions:
+      - "Identify the protagonist's initial worldview or the world's established order."
+    output: "The Thesis Statement/State"
+  - step: 2
+    name: "Introduce the Antithesis"
+    goal: "Introduce the force that contradicts the Thesis."
+    instructions:
+      - "Create a character, event, or idea that makes the Thesis impossible to maintain."
+    output: "The Antithesis Catalyst"
+  - step: 3
+    name: "Develop the Negation"
+    goal: "Escalate the conflict to the point of breakdown."
+    instructions:
+      - "Force the Thesis and Antithesis into direct collision where neither can remain unchanged."
+    output: "The Conflict/Crisis Arc"
+  - step: 4
+    name: "Formulate the Synthesis"
+    goal: "Determine the new reality/character state."
+    instructions:
+      - "Find the 'third way'—the resolution that integrates the lessons of both sides."
+    output: "The Synthesis/Resolution"
+
+story_inputs:
+  premise: "<The fundamental clash of two opposing ideas/forces>"
+  logline: "<Protagonist (Thesis) encounters [Antithesis] and must [Action] to reach [Synthesis]>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Noir>"
+  tone: "<e.g., Melancholic/Philosophical>"
+  target_length: "<e.g., 120 pages>"
+  audience: "<e.g., Mature/Adult>"
+  rating: "<e.g., R>"
+  production_constraints: []
+  creative_abilities: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  thesis_phase:
+    initial_truth: "<The foundational belief of the protagonist>"
+    stability_mechanics: "<How the world maintains this belief>"
+    vulnerability_factor: "<The hidden flaw in the status quo>"
+    visual_anchor: "<The visual representation of stability>"
+    character_anchor: "<The character's psychological reliance on the thesis>"
+  antithesis_phase:
+    disruptive_force: "<The agent of change or opposing idea>"
+    contradiction_logic: "<Why the thesis cannot survive this force>"
+    catalyst_type: "<Event, character, or revelation>"
+    tension_escalation: "<How the conflict grows>"
+    opposing_value: "<The core value of the antithesis>"
+  negation_phase:
+    clash_intensity: "<The scale of the ideological struggle>"
+    destruction_of_old_logic: "<What specific part of the thesis breaks first>"
+    sacrifice_requirement: "<What must be lost to continue the struggle>"
+    chaos_level: "<The degree of fragmentation in the world/mind>"
+    breaking_point: "<The moment where compromise is no longer possible>"
+  synthesis_phase:
+    emergent_truth: "<The new, higher-level realization>"
+    integration_mechanism: "<How the essence of both sides is preserved>"
+    new_stability_metric: "<The new rule of the world>"
+    transformed_worldview: "<The protagonist's new psychological state>"
+    residual_tension: "<The remaining friction in the new state>"
+  thematic_argument:
+    thesis_claim: "<What is the initial 'truth' or 'way' the world operates?>"
+    antithesis_challenge: "<What truth or reality contradicts the initial claim?>"
+    synthesis_resolution: "<What is the new, higher truth that emerges from the wreckage?>"
+
+beats_or_units:
+  - id: "unit_01"
+    name: "The Thesis Establishment"
+    order: 1
+    purpose: "To ground the audience in the existing logic, stability, or flaw of the status quo."
+    approximate_position: "Act I"
+    writer_prompt: "Show the world/character functioning under a specific, albeit limited, set of rules or beliefs."
+    story_function: "Establishment of the 'Old Way'."
+    visual_function: "Symmetrical, stable, or repetitive imagery; established routines."
+    emotional_function: "Comfort, stagnation, or false security."
+    required_decisions:
+      - "What is the protagonist's core, unexamined belief?"
+      - "What is the cost of maintaining this status quo?"
+    fields_to_complete:
+      initial_world_rule: "<write here>"
+      protagonist_belief: "<write here>"
+      visual_motif_of_stability: "<write here>"
+    diagnostic_questions:
+      - "Is the Thesis strong enough that its loss will be felt?"
+      - "Is the flaw in the Thesis visible to the audience but ignored by the character?"
+    completion_criteria:
+      - "The audience understands the 'rules' of the protagonist's life."
+    common_failure_modes:
+      - "Making the Thesis too weak to be worth challenging."
+
+  - id: "unit_02"
+    name: "The Antithesis Emergence"
+    order: 2
+    purpose: "To introduce the disruptive, contradictory force."
+    approximate_position: "Inciting Incident / Act I Transition"
+    writer_prompt: "Introduce a character, event, or information that proves the Thesis is incomplete, false, or dying."
+    story_function: "The destabilization of the status quo."
+    visual_function: "Asymmetry, intrusion, harsh lighting, or breaking of established patterns."
+    emotional_function: "Confusion, dread, or curiosity."
+    required_decisions:
+      - "How does the Antithesis directly negate the Thesis?"
+    fields_to_complete:
+      the_disruption: "<write here>"
+      the_contradiction: "<write here>"
+    diagnostic_questions:
+      - "Does the Antithesis feel like an outside intrusion or an internal contradiction?"
+    completion_criteria:
+      - "The protagonist can no longer ignore the conflict."
+    common_failure_modes:
+      - "The Antithesis is just an obstacle, not a fundamental contradiction."
+
+  - id: "unit_03"
+    name: "The Negation (The Struggle)"
+    order: 3
+    purpose: "To force the Thesis and Antithesis into a state of mutual destruction/transformation."
+    approximate_position: "Act II"
+    writer_prompt: "The protagonist attempts to defend the Thesis using Antithesis-era tools, failing repeatedly."
+    story_function: "The breakdown of both old logic and new disruption."
+    visual_function: "Chaos, fragmentation, loss of visual order, high-contrast conflict."
+    emotional_function: "Agony, loss, struggle, tension."
+    required_decisions:
+      - "What must the protagonist sacrifice to keep the Thesis alive?"
+      - "How does the Antithesis push back?"
+    fields_to_complete:
+      failed_compromise: "<write here>"
+      the_point_of_no_return: "<write here>"
+    diagnostic_questions:
+      - "Is the conflict escalating in ideological depth, or just physical scale?"
+    completion_criteria:
+      - "The old way of living is rendered impossible."
+    common_failure_modes:
+      - "The struggle becomes a series of random events rather than a clash of values."
+
+  - id: "unit_04"
+    name: "The Synthesis (Sublation)"
+    order: 4
+    purpose: "To reveal the new state that incorporates the lessons of both sides."
+    approximate_position: "Climax / Act III"
+    writer_prompt: "The protagonist adopts a new perspective or state that accepts the reality of the Antithesis while retaining the essence of the Thesis."
+    story_function: "The resolution through transcendence."
+    visual_function: "A new visual order; a 'new dawn'; imagery that combines previous motifs."
+    emotional_function: "Catharsis, realization, or bittersweet acceptance."
+    required_decisions:
+      - "What part of the Thesis is discarded?"
+      - "What part of the Antithesis is integrated?"
+    fields_to_complete:
+      the_new_truth: "<write here>"
+      the_transformed_state: "<write here>"
+      final_visual_image: "<write here>"
+    diagnostic_questions:
+      - "Is this a 'middle ground' (bad) or a 'new level' (good)?"
+      - "Does the ending feel like a victory of one side, or a victory of a new idea?"
+    completion_criteria:
+      - "The story ends with a fundamentally different reality than the start."
+    common_failure_modes:
+      - "The 'Compromise Trap': The ending is just a mediocre middle ground that satisfies neither side."
+
+character_design:
+  methodology_role: "Characters are personifications of the Thesis, Antithesis, or the potential Synthesis."
+  characters:
+    - name: "<Protagonist>"
+      initial_ideology: "<The Thesis they embody>"
+      internal_contradiction: "<The seed of the Antithesis within them>"
+      evolutionary_path: "<Thesis -> Negation -> Synthesis>"
+    - name: "<Antagonist/Antithesis>"
+      opposing_ideology: "<The Antithesis they embody>"
+      relationship_to_protagonist: "<How they negate the protagonist's belief>"
+
+world_design:
+  methodology_role: "The world is the landscape where the dialectic plays out."
+  fields:
+    established_order: "<The systemic Thesis of the setting>"
+    encroaching_chaos: "<The systemic Antithesis of the setting>"
+    the_dialectic_arena: "<The specific location/context where the clash is unavoidable>"
+
+theme_design:
+  methodology_role: "The theme is the 'Argument' itself."
+  fields:
+    central_argument: "<The debate between Thesis and Antithesis>"
+    the_false_answer: "<The error of the Thesis>"
+    the_destructive_answer: "<The error of the Antithesis>"
+    the_true_answer: "<The wisdom of the Synthesis>"
+
+visual_storytelling:
+  methodology_role: "Visuals must track the movement from stability to chaos to new order."
+  image_system:
+    thesis_visuals: ["Symmetry", "Static shots", "Monochromatic/Single tone", "Closed compositions"]
+    antithesis_visuals: ["Asymmetry", "Handheld/Kinetic", "Clashing colors", "Open/Intrusive compositions"]
+    synthesis_visuals: ["Complex compositions", "New color palettes", "Integration of motifs"]
+  recurring_motifs: []
+  final_image: "<An image that visually summarizes the Synthesis>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene should either reinforce the Thesis or introduce an element of the Antithesis."
+    - "Conflict in a scene should be a micro-dialectic."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: ""
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Ensure every character's action is driven by their ideological position."
+  avoid_rules:
+    - "Avoid scenes where characters agree without any tension or friction."
+
+revision_passes:
+  - name: "The Ideological Audit"
+    goal: "Ensure the conflict is not just physical."
+    instructions:
+      - "Review every major conflict."
+      - "Ask: 'Is this just a fight, or is it a clash of truths?'"
+    questions:
+      - "Does the antagonist represent a valid, though opposing, truth?"
+    success_criteria:
+      - "The conflict is intellectually and emotionally heavy."
+  - name: "The Synthesis Check"
+    goal: "Prevent the 'Compromise Trap'."
+    instructions:
+      - "Examine the ending."
+      - "Ensure it isn't just a surrender of one side."
+    questions:
+      - "Does the ending create a new reality, or just a truce?"
+    success_criteria:
+      - "The ending feels like an evolution, not a stalemate."
+  - name: "The Structure Pass"
+    goal: "Verify the progression of the dialectic."
+    instructions:
+      - "Check the transition from Thesis to Antithesis."
+      - "Ensure the Negation phase is sufficiently destructive."
+    questions:
+      - "Is there a clear breakdown of the status quo?"
+    success_criteria:
+      - "The narrative momentum follows the dialectical arc."
+  - name: "The Character Pass"
+    goal: "Ensure characters embody the ideological struggle."
+    instructions:
+      - "Review character motivations against their assigned roles (Thesis/Antithesis)."
+    questions:
+      - "Does the protagonist's change reflect the synthesis of their internal conflict?"
+    success_criteria:
+      - "Character arcs are inextricably linked to the thematic argument."
+  - name: "The Visual Storytelling Pass"
+    goal: "Align visual language with the thematic movement."
+    instructions:
+      - "Audit the use of symmetry, color, and composition."
+    questions:
+      - "Do the visuals shift from stability to chaos to a new order?"
+    success_criteria:
+      - "The visual language reinforces the dialectical progression."
+  - name: "The Dialectic Synthesis Pass"
+    goal: "Validate the 'Sublation' quality of the resolution."
+    instructions:
+      - "Analyze the final state for elements of both previous states."
+    questions:
+      - "Does the resolution discard the limitations of both sides while keeping their essence?"
+    success_criteria:
+      - "The resolution feels like a higher-order truth."
+
+validation_checklist:
+  - "Is the Thesis clearly defined at the start?"
+  - "Does the Antithesis directly negate the Thesis?"
+  - "Is the 'Negation' phase characterized by the breakdown of the old way?"
+  - "Does the Synthesis integrate elements of both previous states?"
+  - "Is the final state of the character/world fundamentally different from the start?"
+  - "Does the antagonist represent a valid, though opposing, truth?"
+  - "Is the visual language tracking the movement from stability to chaos?"
+  - "Does the ending avoid the 'Compromise Trap'?"
+  - "Is the thematic argument clearly articulated in the structure?"
+  - "Are the character's internal contradictions visible in their actions?"
+  - "Does the negation phase involve a significant loss or sacrifice?"
+  - "Is the 'new truth' of the synthesis higher than the initial thesis?"
+
+failure_modes:
+  - failure_mode: "The Compromise Trap"
+    symptom: "The ending feels hollow or unearned."
+    likely_cause: "The writer settled for a middle ground instead of a new synthesis."
+    fix: "Force the characters to undergo a fundamental change in belief."
+  - failure_mode: "The Erasure"
+    symptom: "The story feels like a simple 'Good vs Evil' battle."
+    likely_cause: "The Antithesis lacks its own valid logic/truth."
+    fix: "Give the Antithesis a profound, even sympathetic, justification."
+  - failure_mode: "The Static Thesis"
+    symptom: "The story lacks momentum."
+    likely_cause: "The Antithesis is too weak to disrupt the status quo."
+    fix: "Increase the disruptive power of the Antithesis."
+
+adaptation_notes:
+  feature_film: ["Focus on the large-scale thematic shift."]
+  short_film: ["Focus on a single, sharp dialectical moment."]
+  tv_episode: ["The episode is one dialectic; the series is a larger, multi-stage dialectic."]
+  tv_pilot: ["Establish the Thesis and the first major Antithesis disruption."]
+  anime: ["Use visual motifs and power systems to represent the Thesis and Antithesis."]
+  adult_animation: ["Can explore much more complex, morally ambiguous, and nihilistic syntheses."]
+  anthology: ["Each segment should present a self-contained dialectic."]
+  game_cinematic: ["The player's agency should represent the 'Negation' force."]
+
+yaml_usage_notes:
+  how_to_use: ["Start with the 'thematic_argument' before filling in the 'beats_or_units'."]
+  recommended_population_order: ["thematic_argument, characters, beats_or_units, visual_storytelling"]
+  minimum_viable_completion: ["Thesis, Antithesis, and Synthesis must be defined before any scenes are written."]
+  signs_framework_is_ready_for_scene_outline: ["The 'Synthesis' is clearly defined and feels inevitable."]

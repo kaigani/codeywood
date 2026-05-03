@@ -1,0 +1,384 @@
+metadata:
+  framework_name: "Step Outline Method Template"
+  methodology_name: "Step Outline Method"
+  methodology_family: "Structural/Sequential"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv_episode"
+    - "tv_pilot"
+    - "short_film"
+    - "anime"
+    - "manga"
+  best_for:
+    - "complex plotting"
+    - "testing narrative causality"
+    - "identifying pacing issues"
+    - "bridge between beat sheet and script"
+  not_ideal_for:
+    - "experimental non-linear narratives"
+    - "purely character-driven vignettes without plot progression"
+  target_lengths:
+    - "any"
+  core_principle: "Causal progression through granular scene-by-scene action and consequence."
+  primary_story_unit: "The Step (The Scene/Beat)"
+  primary_success_metric: "Narrative momentum and logical continuity."
+
+framework_overview:
+  summary: "The Step Outline Method is a granular breakdown of a highly structured story where every 'step' (scene or beat) is defined by its action, conflict, and its causal connection to the next step."
+  what_this_frame_work_helps_create:
+    - "A detailed roadmap of every physical action in the story."
+    - "A rigorous test of plot logic."
+    - "A way to visualize the 'turn' of every scene."
+  what_it_prioritizes:
+    - "Causality (Because of X, Y happens)."
+    - "Action and Reaction."
+    - "Structural pacing."
+  what_it_deemphasizes:
+    - "Dialogue and subtext (these are for the script phase)."
+    - "Internal monologue (unless expressed through action)."
+
+use_when:
+  - "You have a beat sheet but the story feels 'empty' or 'thin'."
+  - "The plot feels like a series of disconnected events rather than a chain of cause-and-effect."
+  - "You are struggling with 'sagging middle' syndrome."
+  - "You need to map out complex action or high-stakes sequences."
+
+avoid_when:
+  - "You are in the 'blue sky' and pure ideation phase."
+  - "The story is purely atmospheric or impressionistic."
+
+core_principles:
+  - "No step should exist in isolation; every step must be a consequence of the previous one."
+  - "Every step must contain a 'turn' (a shift in status, emotion, or information)."
+  - "Action must drive the plot, not just dialogue."
+  - "Conflict is the engine of the step."
+
+workflow:
+  - step: 1
+    name: "Premise Crystallization"
+    goal: "Define the core DNA of the story."
+    instructions:
+      - "Define the protagonist, the goal, and the primary obstacle."
+    output: "Logline/Premise"
+  - step: 2
+    name: "Beat Sheet Construction"
+    goal: "Identify major structural milestones."
+    instructions:
+      - "Map out the major plot points (Inciting Incident, Plot Point 1, Midpoint, etc.)."
+    output: "High-level Beat Sheet"
+  - step: 3
+    name: "Step Expansion"
+    goal: "Flesh out the gaps between beats into individual steps."
+    instructions:
+      - "For every gap between major beats, determine the specific scenes/steps required to get from A to B."
+    output: "Draft Step Outline"
+  - step: 4
+    name: "Causal Stress-Testing"
+    goal: "Ensure the 'Because of that' logic holds."
+    instructions:
+      - "Review each step and ensure it is a direct consequence of the preceding step."
+    output: "Validated Step Outline"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write or select from metadata>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  description: "This section acts as the template for a single 'Step'. Repeat this structure for every scene in your outline."
+  step_template:
+    step_id: "<e.g., Step 01, Scene 04>"
+    location: "<Where does this happen?>"
+    characters_present: []
+    action_summary: "<What physically happens in this step?>"
+    character_objective: "<What does the character want to achieve in this specific step?>"
+    conflict_or_obstacle: "<What prevents the objective from being achieved immediately?>"
+    the_turn: "<How does the situation, power dynamic, or emotional state change by the end of this step?>"
+    causal_link: "<How does the outcome of this step force the next step to happen?>"
+    visual_anchor: "<A key image or movement that defines this step>"
+    emotional_arc: "<The shift in character emotion, e.g., Hope -> Despair>"
+  stages_of_methodology:
+    stage_1_crystallization:
+      input_requirements: ["Core Concept", "Character Archetype"]
+      decision_logic: "Does the premise contain an inherent conflict?"
+      output_format: "Logline"
+      critical_check: "Is the protagonist's goal clearly stated?"
+    stage_2_construction:
+      input_requirements: ["Crystallized Premise"]
+      decision_logic: "Do the milestones follow a logical progression?"
+      output_format: "Beat Sheet"
+      critical_check: "Are the major structural shifts (Midpoint, etc.) identified?"
+    stage_3_expansion:
+      input_requirements: ["Beat Sheet"]
+      decision_logic: "Does every gap between beats require a new step?"
+      output_format: "Step Outline"
+      critical_check: "Is every step connected via 'Therefore' or 'But'?"
+    stage_4_validation:
+      input_requirements: ["Draft Step Outline"]
+      decision_logic: "Can any step be removed without breaking the chain?"
+      output_format: "Validated Step Outline"
+      critical_check: "Are there any 'floating' steps with no causal link?"
+
+beats_or_units:
+  - id: "Act_1"
+    name: "Act One: Setup & Inciting Incident"
+    order: 1
+    purpose: "Establish the world, the status quo, and the disruption."
+    approximate_position: "0% - 25%"
+    writer_prompt: "Describe the protagonist's normal life and the event that shatters it."
+    story_function: "Establish stakes and the inciting incident."
+    visual_function: "Introduce the primary setting and character's baseline."
+    emotional_function: "Establish stability before the disruption."
+    required_decisions:
+      - "What is the inciting incident?"
+      - "What is the protagonist's immediate reaction?"
+    fields_to_complete:
+      inciting_event: ""
+      status_quo_description: ""
+    diagnostic_questions:
+      - "Is the disruption significant enough to force action?"
+      - "Is the character's motivation established?"
+    completion_criteria:
+      - "Inciting incident is clearly defined."
+      - "Protagonist's primary goal is established."
+    common_failure_modes:
+      - "Inciting incident happens too late in the act."
+      - "The status quo is too interesting, making the disruption feel unnecessary."
+    steps_to_populate: []
+  - id: "Act_2_A"
+    name: "Act Two A: Response & Complication"
+    order: 2
+    purpose: "The protagonist reacts to the disruption and faces escalating obstacles."
+    approximate_position: "25% - 50%"
+    writer_prompt: "Detail the protagonist's attempts to solve the problem and the rising complications."
+    story_function: "Escalate stakes and introduce secondary conflicts."
+    visual_function: "Expand the world and introduce new locations/characters."
+    emotional_function: "Transition from reactive uncertainty to proactive struggle."
+    required_decisions:
+      - "What is the first major complication?"
+      - "How does the protagonist's plan fail?"
+    fields_to_complete:
+      complication_list: []
+      failure_consequence: ""
+    diagnostic_questions:
+      - "Are the obstacles increasing in difficulty?"
+      - "Is the protagonist making choices or just reacting?"
+    completion_criteria:
+      - "A clear progression of escalating tension is visible."
+    common_failure_modes:
+      - "The protagonist is too passive."
+      - "The complications feel disconnected from the main goal."
+    steps_to_populate: []
+  - id: "Act_2_B"
+    name: "Act Two B: Attack & Crisis"
+    order: 3
+    purpose: "The protagonist takes proactive steps, leading to a major midpoint shift and escalating stakes."
+    approximate_position: "50% - 75%"
+    writer_prompt: "Describe the shift from reaction to action and the subsequent crisis."
+    story_function: "Shift the protagonist from reactive to proactive; introduce the 'Point of No Return'."
+    visual_function: "Increase visual intensity and scale of conflict."
+    emotional_function: "Heightened tension, desperation, or false victory."
+    required_decisions:
+      - "What is the Midpoint shift?"
+      - "What is the 'All Is Lost' moment?"
+    fields_to_complete:
+      midpoint_event: ""
+      crisis_description: ""
+    diagnostic_questions:
+      - "Does the Midpoint change the nature of the conflict?"
+      - "Is the stakes-increase palpable?"
+    completion_criteria:
+      - "The protagonist's strategy has fundamentally changed."
+    common_failure_modes:
+      - "The Midpoint is too subtle."
+      - "The 'All Is Lost' moment lacks emotional weight."
+    steps_to_populate: []
+  - id: "Act_3"
+    name: "Act Three: Resolution"
+    order: 4
+    purpose: "The final confrontation and the establishment of a new status quo."
+    approximate_position: "75% - 100%"
+    writer_prompt: "Outline the final clash and the aftermath."
+    story_function: "Climax and resolution of the primary conflict."
+    visual_function: "The visual culmination of the story's motifs."
+    emotional_function: "Catharsis, relief, or tragedy."
+    required_decisions:
+      - "What is the final confrontation?"
+      - "What is the new status quo?"
+    fields_to_complete:
+      climax_summary: ""
+      resolution_state: ""
+    diagnostic_questions:
+      - "Does the resolution address the initial inciting incident?"
+      - "Is the change in the protagonist visible?"
+    completion_criteria:
+      - "The primary conflict is resolved."
+      - "The new status quo is clearly established."
+    common_failure_modes:
+      - "The climax is resolved by 'Deus Ex Machina'."
+      - "The resolution feels rushed or unearned."
+    steps_to_populate: []
+
+character_design:
+  methodology_role: "Characters must be defined by their agency and their capacity to change through the steps."
+  characters:
+    - name: "<write here>"
+      visible_want: "<What they pursue in the steps?>"
+      hidden_need: "<What they must learn to survive the steps?>"
+      primary_driver: "<What motivation forces them into the next step?>"
+      flaw_impact: "<How their flaw creates the obstacles in the steps?>"
+
+world_design:
+  methodology_role: "The world must provide the constraints that make the steps difficult."
+  fields:
+    physical_rules: "<What limits the characters' movement or options?>"
+    societal_pressure: "<What external forces push characters into conflict?>"
+    environmental_hazards: ["<List specific obstacles the world presents>"]
+
+theme_design:
+  methodology_role: "Theme is the 'Why' behind the 'What' of the steps."
+  fields:
+    central_argument: "<What is the core debate of the story?>"
+    thematic_progression: "<How does the action of the steps prove or disprove the argument?>"
+
+visual_storytelling:
+  methodology_role: "Visuals must reinforce the 'Turn' and the 'Causal Link'."
+  image_system:
+    recurring_motifs: []
+    visual_metaphor_for_conflict: "<write here>"
+  visual_rules:
+    - "<e.g., Use tight framing during high-conflict steps; wide shots for discovery steps.>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must have a beginning, a/middle (conflict), and an end (turn)."
+    - "Avoid 'empty' scenes that only provide information without changing the situation."
+    - "If a scene doesn't lead to the next, it is a 'floating step' and must be deleted or re-connected."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: ""
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Ensure the character's action causes the reaction."
+    - "Make sure every step has a clear 'exit' state that differs from the 'turn' state."
+  avoid_rules:
+    - "Avoid scenes where characters simply talk about what happened in a previous scene (unless it's a crucial 'turn')."
+    - "Avoid 'and then' storytelling; aim for 'but therefore' storytelling."
+
+revision_passes:
+  - name: "The Causal Chain Pass"
+    goal: "Verify logical continuity."
+    instructions:
+      - "Read only the 'causal_link' and 'the_turn' of every step in order."
+    questions:
+      - "Does Step B happen *because* of Step A?"
+      - "Is there any step that feels like it could be moved without breaking the chain?"
+    success_criteria:
+      - "A seamless chain of 'Therefore/But' logic."
+  - name: "The Agency Pass"
+    goal: "Ensure protagonist-driven plot."
+    instructions:
+      - "Highlight the protagonist's actions in every step."
+    questions:
+      - "Is the protagonist reacting to things, or are they making choices?"
+      - "Are they being 'carried' by the plot, or are they driving it?"
+    success_criteria:
+      - "The protagonist is the primary cause of the steps' outcomes."
+  - name: "The Pacing/Weight Pass"
+    goal: "Identify structural bloat."
+    instructions:
+      - "Check the 'action_summary' length and frequency."
+    questions:
+      - "Are there too many steps in one sequence with no major 'turn'?"
+      - "Are the high-stakes steps given enough structural space?"
+    success_criteria:
+      - "A balanced distribution of steps across the acts."
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure visual motifs and anchors reinforce the narrative turns."
+    instructions:
+      - "Review the 'visual_anchor' and 'the_turn' for every step."
+    questions:
+      - "Does the visual change alongside the narrative change?"
+      - "Are recurring motifs present during key emotional shifts?"
+    success_criteria:
+      - "Visuals and narrative beats are synchronized."
+  - name: "The Causal Continuity Pass"
+    goal: "Eliminate 'floating' or 'disconnected' steps."
+    instructions:
+      - "Trace the 'causal_link' from the first step to the last."
+    questions:
+      - "Is there any step that lacks a clear 'Because of that' connection?"
+      - "Does the consequence of the climax resolve the tension of the inciting incident?"
+    success_criteria:
+      - "Zero disconnected steps in the entire outline."
+
+validation_checklist:
+  - "Does every step have a clear 'Turn'?"
+  - "Is every step a consequence of the previous one?"
+  - "Does the protagonist's objective change or escalate through the steps?"
+  - "Can I remove any step without the entire structure collapsing? (If yes, delete it.)"
+  - "Does the final step resolve the tension established in the first step?"
+  - "Is the 'All Is Lost' moment clearly differentiated from standard obstacles?"
+  - "Does every step contain a visible conflict or obstacle?"
+  - "Are the character's internal needs reflected in their external actions?"
+  - "Is the setting/world actively providing resistance to the characters?"
+  - "Does the Midpoint shift the direction of the story significantly?"
+  - "Are the visual anchors distinct enough to be recognizable?"
+  - "Is the pacing consistent, with higher density in high-stakes areas?"
+  - "Does the 'causal_link' field explicitly reference the previous step's outcome?"
+  - "Is the protagonist's agency maintained through the second act?"
+  - "Are the thematic arguments being actively tested by the plot?"
+  - "Is the 'exit' state of each step fundamentally different from its 'entry' state?"
+
+failure_modes:
+  - failure_mode: "The Floating Step"
+    symptom: "A scene feels interesting but doesn't move the plot forward."
+    likely_cause: "The scene is purely character/information-based without a 'turn'."
+    fix: "Introduce a conflict that changes the character's situation."
+  - failure_mode: "The Domino Collapse"
+    symptom: "The story ends too abruptly or feels unearned."
+    likely_cause: "A lack of incremental causal steps leading to the climax."
+    fix: "Add 'bridge' steps that escalate the stakes incrementally."
+  - failure_mode: "The Passive Protagonist"
+    symptom: "The plot feels like things are just 'happening' to the hero."
+    likely_cause: "The 'causal_link' is driven by external events rather than character choices."
+    fix: "Rewrite steps so the hero's failed attempts at the 'objective' cause the next 'obstacle'."
+
+adaptation_notes:
+  feature_film: "Focus on the 3-act structure and the Midpoint shift."
+  short_film: "Focus on a single, intense causal chain with minimal steps."
+  tv_episode: "Ensure the episode steps resolve the 'A-plot' while setting up the 'B-plot' links."
+  tv_pilot: "The final steps must establish a 'status quo' that is ripe for further episodes."
+  anime: "Emphasize visual 'turns' and high-impact action steps."
+  adult_animation: "Focus on sharp, high-consequence causal links and thematic weight."
+  anthology: "Each entry is a complete, self-contained Step Outline."
+  game_cinematic: "Focus on steps that bridge gameplay beats with narrative progression."
+
+yaml_usage_notes:
+  how_to_use: "Use this template to transform a loose idea into a rigorous, scene-by-scene roadmap."
+  recommended_population_order:
+    - "1. Story Inputs"
+    - "2. Character/World/Theme Design"
+    - "3. Methodology Structure (The Step Template)"
+    - "4. Beats or Units (The Sequence of Steps)"
+  minimum_viable_completion: "A completed 'Step_template' for every scene in your story."
+  signs_framework_is_ready_for_scene_outline: "When you can read your 'causal_links' aloud and the story makes sense as a chain of events."

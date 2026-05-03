@@ -1,0 +1,410 @@
+metadata:
+  framework_name: "The Monomyth Template"
+  methodology_name: "Hero’s Journey / Monomyth"
+  methodology_family: "Archetypal/Cyclical"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "anime"
+    - "game cinematic"
+    - "fantasy/adventure epic"
+    - "animation"
+  best_for:
+    - "character-driven transformations"
+    - "epic quests"
+    - "mythic resonance"
+    - "high-stakes adventure"
+  not_ideal_for:
+    - "slice-of-life"
+    - "procedural/detective stories"
+    - "static character studies"
+    - "anthology shorts"
+  target_lengths:
+    - "90-120 minute feature"
+    - "seasonal arc"
+  core_principle: "The transformation of a protagonist through a cycle of departure, descent, and return."
+  primary_story_unit: "The Hero's Arc (Internal Change) mirroring the Quest (External Action)."
+  primary_success_metric: "The profound, irreversible change in the Hero's identity or worldview by the end of the journey."
+
+framework_overview:
+  summary: "A structural framework based on the archetypal journey of a protagonist who leaves their known world to face trials, undergo a fundamental transformation, and return to their origin with new wisdom or power."
+  what_this_framework_helps_create:
+    - "Deeply resonant character arcs"
+    - "Structured escalation of stakes"
+    - "Mythic or epic-scale narratives"
+    - "Clear thematic resolution"
+  what_it_prioritizes:
+    - "The Hero's internal growth"
+    - "The struggle against the Shadow"
+    - "The threshold between the Ordinary and Special worlds"
+  what_it_deemphasizes:
+    - "Purely plot-driven mechanics without character impact"
+    - "Static environments"
+    - "Stories without a definitive 'return' or resolution"
+
+use_when:
+  - "The story is about a person finding their true self or purpose."
+  - "The plot involves a physical or metaphorical journey into the unknown."
+  - "The stakes are existential or transformative."
+
+avoid_when:
+  - "The protagonist's status quo is the point of the story (e.g., a comedy of manners)."
+  - "The story lacks a clear sense of 'before' and 'after'."
+  - "The conflict is purely external/intellectual with no personal cost to the protagonist."
+
+core_principles:
+  - "The Hero must be fundamentally changed by the Ordeal."
+  - "The Special World must present rules and dangers unknown to the Ordinary World."
+  - "The Shadow must represent the ultimate obstacle to the Hero's growth."
+  - "The journey is a fundamental cycle: Departure -> Initiation -> Return."
+
+workflow:
+  - step: 1
+    name: "The Status Quo & The Wound"
+    goal: "Establish the Hero's starting point and their internal deficiency."
+    instructions:
+      - "Define the Ordinary World."
+      - "Identify the 'Ghost' or 'Wound' (the internal flaw preventing growth)."
+    output: "Character Profile & Ordinary World Setup"
+  - step: 2
+    name: "The Call & The Threshold"
+    goal: "Initiate the movement from stability to chaos."
+    instructions:
+      - "Create a disruption (The Call)."
+      - "Define the point of no return (The Threshold)."
+    output: "Inciting Incident & First Act Structure"
+  - step: 3
+    name: "The Descent & The Ordeal"
+    goal: "Execute the meat of the adventure and the central crisis."
+    instructions:
+      - "Map the tests, allies, and enemies."
+      - "Design the 'Ordeal'—the moment of symbolic death and rebirth."
+    output: "Midpoint & Climax Design"
+  - step: 4
+    name: "The Return & Integration"
+    goal: "Bring the lessons of the Special World back to the Ordinary World."
+    instructions:
+      - "Ensure the Hero's new identity clashes with or heals the old world."
+    output: "Resolution & Final Image"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write/select>"
+  genre: "<write/select>"
+  tone: "<write/select>"
+  target_length: "<write/select>"
+  audience: "<write/select>"
+  rating: "<write/select>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  concept: "The 12-Stage Heroic Cycle"
+  departure_phase:
+    stages: ["ordinary_world", "call_to_adventure", "refusal_of_the_call", "meeting_the_mentor", "crossing_the_threshold"]
+    logic_flow: "Establishing the baseline and the catalyst for movement."
+    decision_forcing_fields:
+      - "wound_definition"
+      - "call_urgency"
+      - "threshold_cost"
+  initiation_phase:
+    stages: ["tests_allies_enemies", "approach_to_the_inmost_cave", "the_ordeal", "the_reward"]
+    logic_flow: "The descent into the unknown and the central crisis."
+    decision_forcing_fields:
+      - "ally_utility"
+      - "ordeal_stakes"
+      - "reward_consequence"
+  return_phase:
+    stages: ["the_road_back", "resurrection", "return_with_the_elixir"]
+    logic_flow: "The integration of new wisdom and the return to the origin."
+    decision_forcing_fields:
+      - "pursuit_intensity"
+      - "final_test_nature"
+      - "elixir_impact"
+
+beats_or_units:
+  - id: "ordinary_world"
+    name: "The Ordinary World"
+    order: 1
+    purpose: "Establish the baseline, the Hero's flaw, and the stakes of what will be lost."
+    approximate_position: "Act 1 - Opening"
+    writer_prompt: "Show the Hero in their natural habitat. What is missing from their life? What is their 'wound'?"
+    story_function: "Establish empathy and the 'before' state."
+    visual_function: "Comfortable, familiar, perhaps stagnant or restrictive imagery."
+    emotional_function: "Empathy, stability, or boredom/unrest."
+    required_decisions:
+      - "Define the Hero's internal wound."
+      - "Establish the physical boundaries of the home world."
+    fields_to_complete:
+      hero_status_quo: "<write here>"
+      the_internal_wound: "<What is the Hero's psychological deficiency?>"
+      the_life_to_be_lost: "<What is at stake if they fail?>"
+    diagnostic_questions:
+      - "Is the Hero's flaw clearly visible?"
+      - "Do we understand why they cannot stay in this world forever?"
+    completion_criteria:
+      - "The Hero's internal/external deficiency is established."
+    common_failure_modes:
+      - "Hero is too perfect (no wound)."
+      - "World is too interesting (no reason to leave)."
+
+  - id: "call_to_adventure"
+    name: "The Call to Adventure"
+    order: 2
+    purpose: "Disrupt the status quo."
+    approximate_position: "Act 1 - Inciting Incident"
+    writer_prompt: "What event, person, or message forces the Hero to acknowledge a new reality?"
+    story_function: "The Inciting Incident."
+    visual_function: "A disruption of the established visual pattern (a messenger, a disaster, a discovery)."
+    emotional_function: "Curiosity, fear, or sudden realization."
+    required_decisions:
+      - "Determine the nature of the disruption."
+      - "Identify the Herald."
+    fields_to_complete:
+      the_disruption: "<write here>"
+      the_herald_role: "<Who or what delivers the news?>"
+    diagnostic_questions:
+      - "Does this event directly challenge the Hero's current way of life?"
+    completion_criteria:
+      - "The Hero can no longer ignore the need for change."
+    common_failure_modes:
+      - "The call is too easy to ignore."
+      - "The call doesn't matter to the Hero personally."
+
+  - id: "refusal_of_the_call"
+    name: "Refusal of the Call"
+    order: 3
+    purpose: "Demonstrate the weight of the stakes and the Hero's fear."
+    approximate_position: "Act 1 - Development"
+    writer_prompt: "Why is the Hero afraid to leave? What are they clinging to?"
+    story_function: "Heightens the tension and establishes the 'cost' of the journey."
+    visual_function: "Images of hesitation, retreating, or attempting to repair the 'Ordinary World'."
+    emotional_function: "Doubt, fear, or denial."
+    required_decisions:
+      - "Define the specific fear."
+      - "Establish the consequence of leaving."
+    fields_to_complete:
+      the_reason_for_fear: "<write here>"
+      the_consequence_of_leaving: "<write here>"
+    diagnostic_questions:
+      - "Does the refusal reveal more about the Hero's flaw?"
+    completion_criteria:
+      - "The Hero's resistance is clearly tied to their internal wound."
+    common_failure_modes:
+      - "The Hero is too brave (no stakes)."
+      - "The refusal is just annoying/stubborn."
+
+  - id: "meeting_the_mentor"
+    name: "Meeting the Mentor"
+    order: 4
+    purpose: "Provide the tools, training, or wisdom necessary for the journey."
+    approximate_position: "Act 1 - Development"
+    writer_prompt: "Who provides the 'supernatural aid' or the psychological push?"
+    story_function: "Equipping the Hero."
+    visual_function: "Introduction of a figure with different visual cues (wisdom, age, power, or eccentricity)."
+    emotional_function: "Hope, guidance, or intimidation."
+    required_decisions:
+      - "Define the Mentor's identity."
+      - "Determine the specific gift or lesson provided."
+    fields_to_complete:
+      the_mentor_identity: "<write here>"
+      the_gift_or_lesson: "<What does the Hero receive?>"
+    diagnostic_questions:
+      - "Does the Mentor empower the Hero or just solve the problem for them?"
+    completion_criteria:
+      - "The Hero possesses a new capability or piece of knowledge."
+    common_failure_modes:
+      - "The Mentor solves the plot (The 'Deus Ex Machina' trap)."
+
+  - id: "crossing_the_threshold"
+    name: "Crossing the First Threshold"
+    order: 5
+    purpose: "The point of no return; entering the Special World."
+    approximate_position: "End of Act 1"
+    writer_prompt: "What is the physical or symbolic boundary the Hero crosses?"
+    story_function: "Transition from Act 1 to Act 2."
+    visual_function: "A significant change in color palette, lighting, or scale."
+    emotional_function: "Awe, terror, or overwhelming sensation."
+    required_decisions:
+      - "Define the threshold event."
+      - "Establish the rules of the Special World."
+    fields_to_complete:
+      the_threshold_event: "<write here>"
+      the_new_rules: "<What are the rules of this new world?>"
+    diagnostic_questions:
+      - "Is the Hero now subject to the logic of the Special World?"
+    completion_criteria:
+      - "The Hero is irrevocably committed to the journey."
+    common_failure_modes:
+      - "The 'Special World' feels too much like the 'Ordinary World'."
+
+  - id: "tests_allies_enemies"
+    name: "Tests, Allies, and Enemies"
+    order: 6
+    purpose: "Acclimatization and building the supporting cast."
+    approximate_position: "Act 2 - Early"
+    writer_prompt: "What small trials prepare the Hero for the Great Ordeal? Who joins them?"
+    story_function: "Development of the supporting cast and world-building."
+    visual_function: "A series of vignettes showing the Hero interacting with different elements of the world."
+    emotional_function: "Learning, camaraderie, and mounting tension."
+    required_decisions:
+      - "Identify the primary ally."
+      - "Identify the primary antagonist presence."
+      - "Define the Hero's learning curve."
+    fields_to_complete:
+      the_primary_ally: "<write here>"
+      the_primary_antagonist_presence: "<write here>"
+      the_learning_curve: "<What skill is the Hero mastering?>"
+    diagnostic_questions:
+      - "Are the 'Tests' actually teaching the Hero something relevant to the climax?"
+    completion_criteria:
+      - "The Hero has established a team and identified the primary opposition."
+    common_failure_modes:
+      - "A series of random, disconnected adventures with no cumulative growth."
+
+  - id: "approach_to_the_inmost_cave"
+    name: "Approach to the Inmost Cave"
+    order: 7
+    purpose: "Preparing for the ultimate confrontation."
+    approximate_position: "Act 2 - Midpoint Build"
+    writer_prompt: "The Hero approaches the center of the conflict. What is the 'Cave'?"
+    story_function: "The 'Calint before the storm' or the buildup of tension."
+    visual_function: "Darkening, narrowing, or increasing claustrophobia/intensity."
+    emotional_function: "Dread, anticipation, or extreme focus."
+    required_decisions:
+      - "Define the location of the cave."
+      - "Determine the final preparation."
+    fields_to_complete:
+      the_cave_location: "<write here>"
+      the_final_preparation: "<What is the last thing the Hero does before the Ordeal?>"
+    diagnostic_questions:
+      - "Is the tension rising toward the Ordeal?"
+    completion_criteria:
+      - "The Hero is at the doorstep of their greatest fear."
+    common_failure_modes:
+      - "The tension plateaus instead of rising."
+
+  - id: "the_ordeal"
+    name: "The Ordeal"
+    order: 8
+    purpose: "The central crisis; a moment of death and rebirth."
+    approximate_position: "Act 2 - Midpoint/Climax"
+    writer_prompt: "What is the moment where the Hero faces their greatest fear and 'dies' (metaphorically or literally)?"
+    story_function: "The Midpoint or Climax (depending on structure version)."
+    visual_function: "High-intensity, high-contrast, or surreal imagery."
+    emotional_function: "Terror, agony, and eventual transformation."
+    required_decisions:
+      - "Define the moment of death."
+      - "Define the rebirth element."
+    fields_to_complete:
+      the_moment_of_death: "<write here>"
+      the_rebirth_element: "<What part of the Hero's old self dies here?>"
+    diagnostic_questions:
+      - "Does the Hero survive by their own agency or by luck?"
+    completion_criteria:
+      - "The Hero has undergone a fundamental internal shift."
+    common_failure_modes:
+      - "The Ordeal is just a physical fight without a psychological death."
+
+  - id: "the_reward"
+    name: "The Reward (Seizing the Sword)"
+    order: 9
+    purpose: "The Hero claims the prize of their Ordeal."
+    approximate_position: "Act 2 - Post-Ordeal"
+    writer_prompt: "What does the Hero gain (knowledge, object, person) from surviving the Ordeal?"
+    story_function: "The realization of the quest's immediate goal."
+    visual_function: "Luminous, triumphant, or heavy with new responsibility."
+    emotional_function: "Relief, triumph, or bittersweet realization."
+    required_decisions:
+      - "Identify the prize."
+      - "Identify the cost of the prize."
+    fields_to_complete:
+      the_prize: "<write here>"
+      the_cost_of_the_prize: "<write here>"
+    diagnostic_questions:
+      - "Does the prize impact the Hero's internal arc?"
+    completion_criteria:
+      - "The Hero possesses the 'Elixir' or 'Sword'."
+    common_failure_modes:
+      - "The reward is hollow or doesn't impact the Hero's character."
+
+  - id: "the_road_back"
+    name: "The Road Back"
+    order: 10
+    purpose: "The consequences of the Ordeal chase the Hero."
+    approximate_position: "Act 3 - Early"
+    writer_prompt: "The Hero must return, but the Shadow is still pursuing. What is the final obstacle?"
+    story_function: "Escalating the stakes toward the final resolution."
+    visual_function: "Movement, pursuit, or a race against time."
+    emotional_function: "Urgency, exhaustion, or flight."
+    required_decisions:
+      - "Define the pursuit mechanism."
+      - "Define the final choice."
+    fields_to_complete:
+      the_pursuit: "<write here>"
+      the_final_choice: "<write here>"
+    diagnostic_questions:
+      - "Is the tension escalating toward the final test?"
+    completion_criteria:
+      - "The Hero is forced to integrate their new power to escape."
+    common_failure_modes:
+      - "The tension drops too early after the Ordeal."
+
+  - id: "resurrection"
+    name: "The Resurrection"
+    order: 11
+    purpose: "The final test; the Hero is tested one last time to see if they have truly changed."
+    approximate_position: "Act 3 - Climax"
+    writer_prompt: "The Hero faces a final version of their old self/flaw. Can they overcome it with their new wisdom?"
+    story_function: "The Climax."
+    visual_function: "The ultimate visual synthesis of the Ordinary and Special worlds."
+    emotional_function: "Catharsis, finality, or profound transformation."
+    required_decisions:
+      - "Define the final confrontation."
+      - "Define the proof of change."
+    fields_to_complete:
+      the_final_confrontation: "<write here>"
+      the_proof_of_change: "<How does the Hero use their new self to win?>"
+    diagnostic_questions:
+      - "Does the victory require the Hero to use the lesson learned in the Ordeal?"
+    completion_criteria:
+      - "The Hero's internal change is proven through action."
+    common_failure_modes:
+      - "The Hero wins using their old, flawed methods."
+
+  - id: "return_with_the_elixir"
+    name: "Return with the Elixir"
+    order: 12
+    purpose: "The Hero returns home, changed, and brings something back to the community."
+    approximate_position: "Act 3 - Resolution"
+    writer_prompt: "How does the Hero's new self impact the Ordinary World? What is the final image?"
+    story_function: "Resolution."
+    visual_function: "A mirror of the 'Ordinary World' opening, but with a new light/perspective."
+    emotional_function: "Peace, wisdom, or bittersweetness."
+    required_decisions:
+      - "Define the new status quo."
+      - "Define the final image."
+    fields_to_complete:
+      the_new_status_quo: "<write here>"
+      the_final_image: "<write here>"
+    diagnostic_questions:
+      - "Is the 'Before' and 'After' clearly distinguishable?"
+    completion_criteria:
+      - "The cycle is complete; the wound is healed or integrated."
+    common_failure_modes:
+      - "The story ends without showing the impact of the journey on the world."
+
+character_design:
+  methodology_role: "Archetypal Functions"
+  archetypes:
+    - role: "The Hero"
+      focus: ["Internal Wound", "The Need for Growth", "The Capacity for Change"]
+    - role: "The Shadow"
+      focus: ["The Mirror of the Hero's Flaw", "The Ultimate Obstacle"]
+    - role: "The Mentor"
+      focus: ["The Gift", "The Lesson", "The Catalyst"]

@@ -1,0 +1,330 @@
+metadata:
+  framework_name: "Braided Narrative Template"
+  methodology_name: "Braided Narrative Structure"
+  methodology_family: "Multi-Strand/Parallel Narrative"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv series"
+    - "anthology"
+    - "novel"
+    - "anime"
+  best_for:
+    - "ensemble casts"
+    - "historical epics"
+    - "thematic explorations"
+    - "non-linear mysteries"
+  not_ideal_for:
+    - "single-protagonist character studies"
+    - "tightly linear action-driven shorts"
+  target_lengths:
+    - "feature film"
+    - "tv episode"
+    - "limited series"
+  core_principle: "Thematic synthesis through parallel progression and rhythmic interweaving."
+  primary_story_unit: "The Thread"
+  primary_success_metric: "Thematic Resonance (The feeling that the threads are inseparable)."
+
+framework_overview:
+  summary: "A framework for managing multiple, parallel narrative arcs that intersect, mirror, or collide to create a unified whole."
+  what_this_thread_helps_create:
+    - "Complex, multi-perspective storytelling"
+    - "Deep thematic resonance across different settings/times"
+    - "Structural tension through rhythmic alternation"
+  what_it_prioritizes:
+    - "Thematic glue (the 'why' behind the connection)"
+    - "Thread balance (ensuring no thread is a distraction)"
+    - "Convergence or Echo (the final synthesis)"
+  what_it_deemphasizes:
+    - "Single-track linear momentum"
+    - "Isolated character development"
+
+use_when:
+  - "You have multiple protagonists who do not physically meet but share a common struggle."
+  - "You want to tell a story across different time periods that explain a single event."
+  - "You want to use contrast (e.g., a comedy thread and a tragedy thread) to highlight a theme."
+
+avoid_when:
+  - "The secondary threads do not contribute to the central theme."
+  - "The complexity of the structure obscures the emotional stakes of the main plot."
+  - "The threads are so disconnected that the audience forgets the other's existence."
+
+core_principles:
+  - "Thematic Unity: Every thread must be an argument for or against the central theme."
+  - "Rhythmic Alternation: The switch between threads must drive momentum, not stall it."
+  - "Symmetry/Contrast: Threads should mirror each other's beats or provide a counterpoint."
+  - "Convergence/Resonance: The end of the story must resolve or illuminate the relationship between all threads."
+
+workflow:
+  - step: 1
+    name: "Identify the Glue"
+    goal: "Define the thematic or causal link."
+    instructions:
+      - "Determine if the threads are linked by Blood, Fate, Theme, or Contrast."
+    output: "Thematic Core"
+  - step: 2
+    name: "Thread Definition"
+    goal: "Map the individual arcs."
+    instructions:
+      - "Define the starting state, trajectory, and end state for each strand."
+    output: "Thread Summaries"
+  - step: 3
+    name: "Interweaving Pattern"
+    goal: "Establish the rhythm."
+    instructions:
+      - "Decide how often to switch threads and what 'hand-off' triggers the switch."
+    output: "Structural Rhythm Map"
+  - step: 4
+    name: "Convergence Planning"
+    goal: "Design the resolution."
+    instructions:
+      - "Plan the collision (physical meeting) or the echo (thematic realization)."
+    output: "Resolution Strategy"
+
+story_inputs:
+  premise: "<the central idea connecting all threads>"
+  logline: "<the unified logline covering the breadth of the braid>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Neo-Noir / Period Drama>"
+  tone: "<e.g., Melancholic / Interconnected>"
+  target_length: "<e.g., 120 pages>"
+  audience: "<e.g., Mature / Cerebral>"
+  rating: "<e.g., R>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  stage_1_thematic_foundation:
+    central_argument: "<The core philosophical debate the threads are fighting over>"
+    connection_type: "<Direct Intersection | Thematic Mirror | Causal Chain | Contrast/Counterpoint>"
+    thematic_anchor_image: "<A visual motif that appears in all threads>"
+    philosophical_polarity: "<The opposing forces at play, e.g., Order vs. Chaos>"
+    thematic_tension_level: "<Low | Medium | High>"
+
+  stage_2_thread_architecture:
+    thread_count: 0
+    threads:
+      - id: "thread_alpha"
+        protagonist: "<Name/Role>"
+        setting: "<Time/Place>"
+        arc_template: "<e.g., Rise and Fall | Discovery | Descent>"
+        thematic_function: "<How this thread supports the central argument>"
+        protagonist_alignment: "<Which side of the argument they represent>"
+        key_milestones: []
+      - id: "thread_beta"
+        protagonist: "<Name/Role>"
+        setting: "<Time/Place>"
+        arc_template: "<e.g., Rise and Fall | Discovery | Descent>"
+        thematic_function: "<How this thread supports the central argument>"
+        protagonist_alignment: "<Which side of the argument they represent>"
+        key_milestones: []
+
+  stage_3_interweaving_mechanics:
+    switching_triggers:
+      - "<e.g., A character reaches a moment of high tension, then we cut to a character in a moment of stillness.>"
+    rhythmic_pattern: "<e.g., Alternating 1:1 | Expanding (1 thread, then 2, then 3) | Shrinking (3 threads, then 1)>"
+    hand_off_mechanics:
+      - "<e.g., Visual Match Cut | Audio Bridge | Thematic Echo>"
+    tension_transfer_logic: "<How tension is passed from one thread to the next>"
+    pacing_cadence: "<e.g., Rapid-fire | Slow Burn | Erratic>"
+
+  stage_4_convergence_design:
+    convergence_type: "<Collision (physical meeting) | Synthesis (thematic realization) | Echo (one thread's end explains another's beginning)>"
+    climax_event: "<The moment where all threads are forced into the same narrative space or emotional space>"
+    final_resolution: "<How the tension between the threads is finally released>"
+    thematic_synthesis_method: "<How the argument is resolved visually or narratively>"
+    resolution_impact: "<The emotional residue left on the audience>"
+
+beats_or_units:
+  - id: "thread_unit_template"
+    name: "Individual Thread Arc"
+    order: 1
+    purpose: "To track the progression of a single strand within the larger braid."
+    approximate_position: "Continuous"
+    writer_prompt: "Map the progression of this specific thread from start to finish."
+    story_function: "Provides the localized stakes and character growth."
+    visual_function: "Establishes the unique aesthetic/setting of this strand."
+    emotional_function: "Creates the localized emotional journey."
+    required_decisions:
+      - "What is the thread's 'Inciting Incident'?"
+      - "How does this thread's 'Midpoint' change the character's direction?"
+      - "What is the thread's terminal state?"
+    fields_to_complete:
+      start_state: ""
+      inciting_incident: ""
+      midpoint_shift: ""
+      climax_local: ""
+      end_state: ""
+    diagnostic_questions:
+      - "Does this thread's progress feel independent of the others, yet essential to the whole?"
+      - "Is there a moment in this thread that 'hands off' the tension to another thread?"
+      - "Does this thread's resolution contribute to the final convergence?"
+    completion_criteria:
+      - "The thread has a clear beginning, middle, and end."
+      - "The thread's arc is explicitly tied to the central thematic argument."
+    common_failure_modes:
+      - "The thread is a 'side quest' with no thematic relevance."
+      - "The thread's pacing is significantly slower/faster than the others, breaking the rhythm."
+      - "The thread's climax is disconnected from the global climax."
+
+character_design:
+  methodology_role: "Characters serve as avatars for different sides of the thematic argument."
+  characters:
+    - name: ""
+      thread_association: ""
+      thematic_allegiance: "<Which side of the central argument do they represent?>"
+      mirror_character: "<Which character in another thread do they reflect or oppose?>"
+      arc_contradiction: "<How their personal struggle embodies the theme?>"
+
+world_design:
+  methodology_role: "Settings should provide the 'texture' that distinguishes threads visually and tonally."
+  fields:
+    thread_a_aesthetic: "<Visual language for Thread A>"
+    thread_b_aesthetic: "<Visual language for Thread B>"
+    shared_motifs: ["<Visual/Auditory elements that cross threads>"]
+
+theme_design:
+  methodology_role: "The 'Glue' that prevents the story from being a collection of unrelated shorts."
+  fields:
+    central_question: "<The question the braid is trying to answer>"
+    thematic_tension_points:
+      - "Thread A vs Thread B (e.g., Tradition vs. Progress)"
+      - "Thread B vs Thread C (e.g., Individual vs. Society)"
+
+visual_storytelling:
+  methodology_role: "Using cinematic language to signal thread transitions and connections."
+  image_system:
+    color_coding:
+      - thread_alpha: "<Color Palette>"
+      - thread_beta: "<Color Palette>"
+    composition_rules: ["<e.g., Use handheld for Thread A, Static for Thread B>"]
+  recurring_motifs: []
+  final_image: "<The image that visually synthesizes all threads>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either advance a thread or bridge two threads."
+    - "Avoid 'dead air' scenes that do not contribute to the braid's momentum."
+  scene_template:
+    scene_id: ""
+    thread_id: ""
+    location: ""
+    characters_and_presence: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: ""
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: "<The 'hook' that makes us want to switch to the next thread>"
+  do_rules:
+    - "Use 'Match Cuts' to bridge disparate threads."
+    - "Ensure each thread's climax is timed to create a 'cascade' effect."
+  avoid_rules:
+    - "Do not introduce a new thread too late in the structure."
+    - "Do not allow one thread to dominate the runtime unless it is the 'Anchor Thread'."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Ensure the structural integrity of the braid."
+    instructions:
+      - "Review the sequence of thread switches."
+      - "Check for any broken links in the causal or thematic chain."
+    questions:
+      - "Is the transition between threads seamless or jarring?"
+      - "Does the structure support the intended rhythm?"
+    success_criteria:
+      - "The sequence of threads creates a cohesive narrative arc."
+  - name: "character_pass"
+    goal: "Verify character relevance to the theme."
+    instructions:
+      - "Audit each character's thematic allegiance."
+      - "Ensure no character is purely decorative."
+    questions:
+      - "Does every character represent a facet of the central argument?"
+      - "Are the character arcs sufficiently distinct yet interconnected?"
+    success_criteria:
+      - "Every character drives the thematic progression."
+  - name: "theme_pass"
+    goal: "Ensure thematic unity across all strands."
+    instructions:
+      - "Trace the central argument through every thread."
+      - "Identify any thematic drift."
+    questions:
+      - "Is the central question being answered by the convergence?"
+      - "Are there any threads that contradict the core argument without purpose?"
+    success_criteria:
+      - "Thematic resonance is achieved at the story's conclusion."
+  - name: "visual_storytelling_pass"
+    goal: "Confirm visual signaling of thread transitions."
+    instructions:
+      - "Review color palettes and composition rules per thread."
+      - "Check the effectiveness of match cuts and motifs."
+    questions:
+      - "Can the audience tell which thread they are in immediately?"
+      - "Do the visual motifs effectively bridge the gaps?"
+    success_criteria:
+      - "Visual language clearly distinguishes and connects the threads."
+  - name: "interweaving_rhythm_pass"
+    goal: "Optimize the momentum of the switching pattern."
+    instructions:
+      - "Map the tension levels at each switch point."
+      - "Analyze the 'hand-off' mechanics."
+    questions:
+      - "Does the energy drop during a switch?"
+      - "Are the switches happening at high-tension 'hooks'?"
+    success_criteria:
+      - "The switching pattern creates a sense of mounting or alternating tension."
+
+validation_checklist:
+  - "Does every thread contribute to the central theme?"
+  - "Is the 'Hand-off' mechanism clear between threads?"
+  - "Does the story conclude with a convergence or a meaningful resonance?"
+  - "Is the visual/tonal distinction between threads consistent?"
+  - "Does every thread have a clear, identifiable 'Inciting Incident'?"
+  - "Is the 'Thematic Glue' identifiable in every thread?"
+  - "Are the switching triggers high-tension moments?"
+  - "Does the thematic anchor image appear across multiple threads?"
+  - "Is the thematic argument logically sound and complete?"
+  - "Is the pacing of the switches driving momentum rather than stalling it?"
+  - "Does the climax force all threads into the same narrative or emotional space?"
+  - "Are there any 'side quest' threads that lack thematic relevance?"
+
+failure_modes:
+  - failure_mode: "The Unconnected Strand"
+    symptom: "The audience asks, 'Why am I watching this part?'"
+    likely_cause: "A thread was added for scope but lacks thematic tie-in."
+    fix: "Re-align the thread's goal with the central argument or remove it."
+  - failure_mode: "The Narrative Stutter"
+    symptom: "The story loses momentum every time a switch occurs."
+    likely_cause: "Switches are happening at low-tension moments rather than high-tension 'hooks'."
+    fix: "Re-structure scenes so that the 'exit' of one thread is the 'entry' of the next."
+  - failure_mode: "The Imbalanced Braid"
+    symptom: "One thread feels like the 'real' movie, others feel like 'subplots'."
+    likely_cause: "Uneven distribution of stakes or screen time."
+    fix: "Increase the stakes of the weaker threads or consolidate them into the primary thread."
+
+adaptation_notes:
+  feature_film: "Focus on 2-3 threads with a clear physical or dramatic collision at the climax."
+  short_film: "Focus on 2 threads with high contrast and a rapid, impactful convergence."
+
+  tv_episode: "Use threads to explore different facets of a single incident or character's day."
+  tv_pilot: "Establish the 'rules' of the threads so the audience learns how to follow the braid."
+  anime: "Utilize heavy visual motifs and 'match-cut' animation to bridge disparate worlds/time-periods."
+  adult_animation: "Use extreme visual shifts and tonal dissonance to emphasize the contrast between threads."
+  anthology: "Threads are entirely separate but linked by a single, overarching thematic or visual 'anchor'."
+  game_cinematic: "Use threads to show the macro-scale (war/politics) and micro-scale (soldier/personal) simultaneously."
+
+yaml_usage_notes:
+  how_to_use: "Start with the 'Thematic Glue'. Do not define threads until you know what they are arguing about."
+  recommended_population_order:
+    - "thematic_glue"
+    - "thread_mapping"
+    - "convergence_strategy"
+    - "character_design"
+    - "interweaving_logic"
+  minimum_viable_completion: "Theme, Thread Summaries, and Convergence Strategy."
+  signs_framework_is_ready_for_scene_outline: "When every thread has a defined 'End State' that links back to the 'Central Argument'."

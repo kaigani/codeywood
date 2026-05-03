@@ -1,0 +1,447 @@
+metadata:
+  framework_name: "High-Concept Twist Template"
+  methodology_name: "High-Concept Twist Method"
+  methodology_family: "Structural Reversal"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "short film"
+    - "feature film"
+    - "anime"
+    - "anthology short"
+    - "web series"
+    - "game cinematic"
+  best_for:
+    - "Psychological Thrillers"
+    - "Sci-Fi/Speculative Fiction"
+    - "Horror"
+    - "Mystery"
+    - "High-Concept Shorts"
+  not_ideal_for:
+    - "Character Studies"
+    - "Period Dramas"
+    - "Slice of Life"
+    - "Epic Fantasy (without a central pivot)"
+  target_lengths:
+    - "7-20 minutes"
+    - "90-120 minutes"
+  core_principle: "Recontextualization: The story's ultimate power comes from a revelation that fundamentally changes the meaning of everything the audience previously witnessed."
+  primary_story_unit: "The Reversal (The Pivot)"
+  primary_success_metric: "The 'Aha!' Moment (The moment where the audience's understanding of the 'rules' or 'reality' is shattered and rebuilt)."
+
+framework_overview:
+  summary: "A methodology designed to build a narrative around a compelling 'What If' premise that culminates in a structural or narrative reversal."
+  what_this_framework_helps_create:
+    - "High-impact narrative pivots"
+    - "Tight, rule-based worlds"
+    - "Deeply foreshadowed revelations"
+    - "Memorable, lingering afterimages"
+  what_it_prioritizes:
+    - "Internal logic/The Rule"
+    - "Foreshadowing/The Breadcrumb"
+    - "The Reversal/The Twist"
+  what_it_deemphasizes:
+    - "Extensive character backstories (unless they serve the twist)"
+    - "Subplots (unless they complicate the twist)"
+
+use_when:
+  - "You have a powerful 'What If' premise."
+  - "You want to shock or unsettle the audience."
+  - "You are working with limited time/budget (focusing on concept over scale)."
+
+avoid_when:
+  - "The twist is purely for shock value without changing the story's meaning."
+  - "The story relies on character growth that is invalidated by the twist."
+
+core_principles:
+  - "The Rule: The 'What or What If' must have consistent, unbreakable internal logic."
+  - "The Assumption: The audience must be led to believe a specific version of reality is true."
+  - "The Recontextualization: The twist must not just provide new info, but change the meaning of old info."
+  - "The Earned Reveal: The twist must be visible in plain sight through foreshadowing (the 'breadcrumbs')."
+
+workflow:
+  - step: 1
+    name: "The Seed"
+    goal: "Establish the High Concept."
+    instructions:
+      - "Define the central 'What If'."
+      - "Identify the core irony."
+    output: "The High-Concept Premise"
+  - step: 2
+    name: "The Architecture"
+    goal: "Establish the Rules of the World."
+    instructions:
+      - "Define what is possible and what is impossible within the concept."
+      - "Determine the 'Cost' of the concept."
+    output: "The Rulebook"
+  - step: 3
+    name: "The Escalation"
+    goal: "Apply pressure to the concept."
+    instructions:
+      - "Introduce characters attempting to navigate/exploit/survive the concept."
+      - "Increase the stakes as the rules are tested."
+    output: "The Narrative Arc"
+  - step: 4
+    name: "The Pivot"
+    goal: "Execute the Reversal."
+    instructions:
+      - "Introduce the information that shatters the initial assumption."
+      - "Ensure the 'breadcrumbs' are present."
+    output: "The Twist"
+  - step: 5
+    name: "The Residue"
+    goal: "Establish the Afterimage."
+    instructions:
+      - "Show the new, altered reality."
+      - "Leave the audience with a final, haunting image or thought."
+    output: "The Final Image/Thematic Resolution"
+
+story_inputs:
+  premise: "<The 'What If' statement>"
+  logline: "<The story expressed in one sentence, focusing on the concept and the stakes>"
+  medium: "<e.g., short film, feature>"
+  genre: "<e.g., Sci-Fi, Horror>"
+  tone: "<e.g., Dread, Wonder, Irony>"
+  target_length: "<e.g., 15 minutes>"
+  audience: "<e.g., Adult, Gen Z, Horror Fans>"
+  rating: "<e.g., R, PG-13>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  phase_1_the_hook:
+    purpose: "Establish the initial reality and the 'What If'."
+    writer_prompt: "What is the central, impossible premise that grabs the audience immediately?"
+    decision_forcing_fields:
+      the_hook_image: "<The first visual that demonstrates the concept>"
+      the_initial_assumption: "<What the audience is led to believe is the 'truth' of the story>"
+      the_central_irony: "<The conflict inherent in the concept itself>"
+      the_audience_contract: "<The promise made to the audience about the genre/rules>"
+    diagnostic_questions:
+      - "Is the concept clear within the first 2 minutes/pages?"
+      - "Is there an immediate sense of 'What If'?"
+
+  phase_2_the_engine:
+    purpose: "Define the logic and the stakes."
+    writer_prompt: "How does this concept work, and what happens if someone breaks the rules?"
+    decision_forcing_fields:
+      the_rule: "<The fundamental law of this world/concept>"
+      the_cost: "<What must be sacrificed to interact with this concept?>"
+      the_boundary: "<The limit of the concept's power/reach>"
+      the_consequence_of_failure: "<What happens when the rule is violated?>"
+    diagnostic_questions:
+      - "Are the rules consistent?"
+      - "Does the cost create natural dramatic tension?"
+
+  phase_3_the_escalation:
+    purpose: "Drive the characters toward the breaking point."
+    writer_prompt: "How do the characters attempt to manipulate or survive the concept, and how does it push back?"
+    decision_forcing_fields:
+      the_pressure_point: "<The moment the concept becomes too much to ignore>"
+      the_point_of_no_return: "<The decision that makes the twist inevitable>"
+      the_breadcrumb_trail: ["<Clue 1>", "<Clue 2>", "<Clue 3>"]
+      the_escalation_trigger: "<The event that forces the characters to test the rules?>"
+    diagnostic_questions:
+      - "Are the clues present but easily overlooked?"
+      - "Is the tension rising due to the concept's logic, not just random events?"
+
+  phase_4_the_reversal:
+    purpose: "The structural pivot."
+    writer_prompt: "What is the truth that makes the first half of the story look completely different?"
+    decision_forcing_fields:
+      the_shattering_event: "<The moment the assumption is proven false>"
+      the_recontextualized_truth: "<The new reality that replaces the old one>"
+      the_emotional_pivot: "<The shift from e.g., hope to horror, or confusion to clarity>"
+      the_reveal_mechanism: "<How the information is delivered to the audience?>"
+    diagnostic_questions:
+      - "Does the twist change the meaning of the 'Breadcrumb Trail'?"
+      - "Is the twist a result of the established rules, or does it feel like 'cheating'?"
+
+  phase_5_the_afterimage:
+    purpose: "The emotional and thematic residue."
+    writer_prompt: "What is the final state of the world/character now that the truth is known?"
+    decision_forcing_fields:
+      the_new_normal: "<The state of the world after the twist>"
+      the_final_image: "<The visual that lingers in the audience's mind>"
+      the_thematic_echo: "<How the twist proves the story's theme>"
+      the_lingering_question: "<The thought that haunts the audience after the credits?>"
+    diagnostic_questions:
+      - "Does the final image reflect the new reality?"
+      - "Is the audience left with a sense of 'Awe' or 'Dread'?"
+
+beats_or_units:
+  - id: "B1"
+    name: "The Hook"
+    order: 1
+    purpose: "Establish the initial reality and the 'What If'."
+    approximate_position: "0% - 15%"
+    writer_prompt: "What is the central, impossible premise that grabs the audience immediately?"
+    story_function: "Establish the 'Assumption' and the 'Audience Contract'."
+    visual_function: "Introduce the 'Veneer' of reality."
+    emotional_function: "Curiosity, intrigue, or immediate dread."
+    required_decisions:
+      - "Define the 'What If' statement."
+      - "Establish the visual hook."
+    fields_to_complete:
+      the_hook_image: "<The first visual that demonstrates the concept>"
+      the_initial_assumption: "<What the audience is led to believe is the 'truth' of the story>"
+      the_central_irony: "<The conflict inherent in the concept itself>"
+    diagnostic_questions:
+      - "Is the concept clear within the first 2 minutes/pages?"
+    completion_criteria:
+      - "The 'What If' is clearly stated or visually demonstrated."
+      - "The audience understands the surface-level rules."
+    common_failure_modes:
+      - "The hook is too vague to be memorable."
+      - "The hook is too complex to be understood immediately."
+
+  - id: "B2"
+    name: "The Engine"
+    order: 2
+    purpose: "Define the logic and the stakes."
+    approximate_position: "15% - 40%"
+    writer_prompt: "How does this concept work, and what happens if someone breaks the rules?"
+    story_function: "Establish the 'Rule' and the 'Cost'."
+    visual_function: "Show the mechanics of the concept in action."
+    emotional_function: "Tension, apprehension, or fascination."
+    required_decisions:
+      - "Define the fundamental law (The Rule)."
+      - "Determine the price of interaction (The Cost)."
+    fields_to_complete:
+      the_rule: "<The fundamental law of this world/concept>"
+      the_cost: "<What must be sacrificed to interact with this concept?>"
+      the_boundary: "<The limit of the concept's power/reach>"
+    diagnostic_questions:
+      - "Are the rules consistent?"
+    completion_criteria:
+      - "The rules of the world are established and unambiguous."
+      - "The consequences of breaking the rules are clear."
+    common_failure_modes:
+      - "Rules are inconsistent or change without reason."
+      - "The cost is too low to create dramatic tension."
+
+  - id: "B3"
+    name: "The Escalation"
+    order: 3
+    purpose: "Drive the characters toward the breaking point."
+    approximate_position: "40% - 75%"
+    writer_prompt: "How do the characters attempt to manipulate or survive the concept, and how does it push back?"
+    story_function: "Planting 'Breadcrumbs' and increasing pressure."
+    visual_function: "Increasingly chaotic or revealing visual motifs."
+    emotional_function: "Anxiety, desperation, or mounting dread."
+    required_decisions:
+      - "Identify the pressure point."
+      - "Map the breadcrumb trail."
+    fields_to_complete:
+      the_pressure_point: "<The moment the concept becomes too much to ignore>"
+      the_point_of_no_return: "<The decision that makes the twist inevitable>"
+      the_breadcrumb_trail: ["<Clue 1>", "<Clue 2>", "<Clue 3>"]
+    diagnostic_questions:
+      - "Are the clues present but easily overlooked?"
+    completion_criteria:
+      - "The tension is visibly rising."
+      - "The characters have made a decision that cannot be undone."
+    common_failure_modes:
+      - "Clues are too obvious (spoiling the twist)."
+      - "Clues are too obscure (making the twist feel unearned)."
+
+  - id: "B4"
+    name: "The Reversal"
+    order: 4
+    purpose: "The structural pivot."
+    approximate_position: "75% - 90%"
+    writer_prompt: "What is the truth that makes the first half of the story look completely different?"
+    story_function: "Shattering the 'Assumption' and revealing the 'Mechanism'."
+    visual_function: "A sudden shift in lighting, color, or composition."
+    emotional_function: "Shock, horror, clarity, or profound realization."
+    required_decisions:
+      - "Determine the moment of revelation."
+      - "Define the new reality."
+    fields_to_complete:
+      the_shattering_event: "<The moment the assumption is proven false>"
+      the_recontextualized_truth: "<The new reality that replaces the old one>"
+      the_emotional_pivot: "<The shift from e.g., hope to horror, or confusion to clarity>"
+    diagnostic_questions:
+      - "Does the twist change the meaning of the 'Breadcrumb Trail'?"
+    completion_criteria:
+      - "The twist is logically supported by previous scenes."
+      - "The audience's understanding of the 'rules' is fundamentally altered."
+    common_failure_modes:
+      - "The twist feels like a 'Deus Ex Machina'."
+      - "The twist contradicts established rules."
+
+  - id: "B5"
+    name: "The Afterimage"
+    order: 5
+    purpose: "The emotional and thematic residue."
+    approximate_position: "90% - 100%"
+    writer_prompt: "What is the final state of the world/character now that the truth is known?"
+    story_function: "Establishing the 'New Normal' and thematic resolution."
+    visual_function: "A definitive, lingering final image."
+    emotional_function: "Melancholy, awe, or lingering dread."
+    required_decisions:
+      - "Define the final visual state."
+      - "Connect the twist to the theme."
+    fields_to_complete:
+      the_new_normal: "<The state of the world after the twist>"
+      the_final_image: "<The visual that lingers in the audience's mind>"
+      the_thematic_echo: "<How the twist proves the story's theme>"
+    diagnostic_questions:
+      - "Does the final image reflect the new reality?"
+    completion_criteria:
+      - "The story reaches a thematic conclusion."
+      - "The audience is left with a lasting impression."
+    common_failure_modes:
+      - "The ending feels abrupt or disconnected from the twist."
+      - "The theme is lost in the shock of the reversal."
+
+character_design:
+  methodology_role: "Characters are vessels for the concept's impact."
+  characters:
+    - name: "<Name>"
+      role: "<e.g., The Victim, The Architect, The Catalyst>"
+      the_blind_spot: "<What part of the truth are they fundamentally unable to see?>"
+      relationship_to_concept: "<How do they use, fear, or embody the concept?>"
+      the_irreversible_choice: "<The decision they make that makes the twist unavoidable>"
+
+world_design:
+  methodology_role: "The world is the 'Engine' of the twist."
+  fields:
+    the_veneer: "<The surface-level reality presented to the audience>"
+    the_underlying_mechanism: "<The hidden truth/logic that drives the concept>"
+    sensory_signature: "<The specific sounds/textures/colors associated with the concept>"
+
+theme_design:
+  methodology_role: "The theme is the 'Meaning' revealed by the twist."
+  fields:
+    the_initial_argument: "<The false belief the story starts with>"
+    the_revelatory_argument: "<The true meaning revealed by the twist>"
+    the_philosophical_tension: "<The conflict between the 'Veneer' and the 'Mechanism'>"
+
+visual_storytelling:
+  methodology_role: "Visuals provide the 'Breadcrumbs' and the 'Afterimage'."
+  image_system:
+    visual_motif_alpha: "<Symbol for the Assumption>"
+    visual_motif_omega: "<Symbol for the Reversal>"
+  visual_rules:
+    - "<e.g., Use warm lighting for the 'Veneer' and harsh, cold lighting for the 'Mechanism'>"
+  recurring_motifs: []
+  final_image: "<The definitive visual of the new reality>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either reinforce the 'Assumption' or plant a 'Breadcrumb'."
+    - "Avoid explaining the 'Mechanism' directly; show its effects via the 'Cost'."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: ""
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: ""
+  do_rules:
+    - "Hide the truth in plain sight."
+    - "Focus on the sensory experience of the concept."
+  avoid_rules:
+    - "Do not use dialogue to explain the twist before it happens."
+    - "Do not introduce new characters/rules during the twist itself."
+
+revision_passes:
+  - name: "The Structural Integrity Pass"
+    goal: "Ensure the twist is earned and follows the rules."
+    instructions:
+      - "Trace the 'Breadcrumb Trail' back through the script."
+      - "Verify that the 'Cost' was clearly established."
+    questions:
+      - "Is there any part of the twist that feels like a 'Deventer' or 'Deus Ex Machina'?"
+    success_criteria:
+      - "The twist feels inevitable in retrospect."
+  - name: "The Character Blind-Spot Pass"
+    goal: "Ensure characters are driven by the concept's impact."
+    instructions:
+      - "Check if the character's decisions are dictated by their ignorance of the truth."
+    questions:
+      - "Does the character's ignorance feel organic or forced?"
+    success_criteria:
+      - "The character's 'Blind Spot' is a functional part of the plot."
+  - name: "The Thematic Recontextualization Pass"
+    goal: "Ensure the twist changes the meaning of the first act."
+    instructions:
+      - "Read the first act as if you already know the twist."
+    questions:
+      - "Does the first act now feel different/ironic/tragic?"
+    success_criteria:
+      - "The audience feels a sense of 'I should have seen it!'"
+  - name: "The Visual Breadcrumb Pass"
+    goal: "Check for visual foreshadowing and motif consistency."
+    instructions:
+      - "Audit all visual motifs against the 'Breadcrumb Trail'."
+    questions:
+      - "Are the visual clues present but easily overlooked?"
+    success_criteria:
+      - "The visual motifs transition effectively from 'Assumption' to 'Mechanism'."
+  - name: "The Pivot Logic Pass"
+    goal: "Ensure the reversal is a structural pivot, not just a plot point."
+    instructions:
+      - "Analyze if the twist alters the fundamental 'Rules' of the world."
+    questions:
+      - "Does the twist change the meaning of the 'Rules' established in Phase 2?"
+    success_criteria:
+      - "The twist fundamentally redefines the story's reality."
+
+validation_checklist:
+  - "Does the story start with a clear 'What If'?"
+  - "Are the rules of the concept consistent throughout?"
+  - "Is the twist a reversal of an established assumption?"
+  - "Are the clues (breadcrumbs) present in the first half?"
+  - "Does the twist provide a new, deeper meaning to the characters' actions?"
+  - "Does the final image reflect the post-twist reality?"
+  - "Is the 'Cost' of the concept clearly established?"
+  - "Does the 'Assumption' feel plausible to the audience?"
+  - "Is the 'Mechanism' hidden well enough to prevent premature discovery?"
+  - "Does the 'Reversal' avoid being a 'Deus Ex Machina'?"
+  - "Is the 'Initial Irony' present in the setup?"
+  - "Does the 'Afterimage' leave a lingering effect?"
+
+failure_modes:
+  - failure_mode: "The Twist for Twist's Sake"
+    symptom: "The audience feels cheated or confused."
+    likely_cause: "The twist introduces a new rule that wasn't foreshadowed."
+    fix: "Tie the twist directly to the established 'Rule' or 'Cost'."
+  - failure_mode: "The Unearned Reveal"
+    symptom: "The twist feels random or uninteresting."
+    likely_cause: "Lack of breadcrumbs/foreshadowing."
+    fix: "Plant visual or narrative clues in the first act."
+  - failure_mode: "The Meaningless Pivot"
+    symptom: "The twist is shocking but doesn't change the story's theme."
+    likely_cause: "The twist is purely mechanical, not thematic."
+    fix: "Ensure the twist recontextualizes the character's 'Blind Spot'."
+
+adaptation_notes:
+  feature_film: "Use the twist to expand the scope of the 'Mechanism' in Act 3."
+  short_film: "Focus heavily on a single, powerful visual 'Breadcrumb'."
+  tv_episode: "The twist should conclude the episode's arc but leave the 'Mechanism' active for the series."
+  tv_pilot: "The twist should redefine the 'World' for the entire season."
+  anime: "Use high-contrast visual motifs to signal the shift from 'Assumption' to 'Reality'."
+  adult_animation: "Use the 'Cost' of the concept to explore visceral, transgressive themes."
+  anthology: "Each segment must have its own self-contained 'Assumption/Reversal' cycle."
+  game_cinematic: "The twist should change the player's understanding of the gameplay mechanics/rules."
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'Story Inputs' first, then move through the 'Methodology Structure' phases sequentially."
+  recommended_population_order:
+    - "Story Inputs"
+    - "Phase 1: The Hook"
+    - "Phase 2: The Engine"
+    - "Phase 4: The Reversal"
+    - "Phase 3: The Escalation (to bridge the gap)"
+    - "Phase 5: The Afterimage"
+  minimum_viable_completion: "A completed 'Phase 1', 'Phase 2', and 'Phase 4' is required before attempting a scene outline."
+  signs_framework_is_ready_for_scene_outline: "When the 'Breadcrumb Trail' is mapped and the 'Recontextualized Truth' is clearly defined."

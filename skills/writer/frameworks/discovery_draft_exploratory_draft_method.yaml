@@ -1,0 +1,389 @@
+metadata:
+  framework_name: "Discovery Draft / Exploratory Draft Template"
+  methodology_name: "Discovery Draft Method"
+  methodology_family: "Non-Linear / Character-Driven Exploration"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "novel"
+    - "web series"
+    - "anime"
+  best_for:
+    - "character-driven narratives"
+    - "high-concept premises with unknown plot trajectories"
+    - "writers who use writing as a way to think"
+    - "exploring world-building consequences"
+  not_ideal_for:
+    - "tightly budgeted commercial features"
+    - "highly complex multi-POV political epics (without subsequent structuring)"
+    - "strict deadline-driven production pipelines"
+  target_lengths:
+    - "any"
+  core_principle: "The story is discovered through the act of writing, not the act of planning."
+  primary_story_unit: "The Narrative Probe (The Scene/Encounter)"
+  primary_success_metric: "The emergence of a coherent, character-driven dramatic arc from raw exploration."
+
+framework_overview:
+  summary: "A framework for writers who prefer to 'pantser' or explore a story through trial and error, focusing on character agency and situational friction to reveal the plot organically."
+  what_this_uncovers:
+    - "The true nature of the protagonist's conflict"
+    - "The organic climax that the characters demand"
+    - "Thematic resonance emerging from character choices"
+  what_it_prioritizes:
+    - "Character voice and agency"
+    - "Situational tension"
+    - "Organic discovery"
+  what_it_deemphasizes:
+    - "Pre-determined plot beats"
+    - "Strict structural adherence in the first pass"
+    - "Fixed-point foreshadowing"
+
+use_when:
+  - "You have a compelling character but no idea what they would do in a crisis."
+  - "You have a world with interesting rules but no central conflict yet."
+  - "You feel 'stuck' by trying to force a plot that doesn't feel organic."
+
+avoid_when:
+  - "You are working within a rigid, pre-approved structural mandate."
+  - "You have zero initial direction or 'spark' (you and need at least a seed)."
+  - "You are managing a massive ensemble where plot-dependency is too high to track without a map."
+
+core_principles:
+  - "Write to find out: Use the prose to ask questions of the characters."
+  - "Character Agency is Engine: Plot is simply the consequence of characters making difficult choices."
+  - "Friction over Planning: Introduce obstacles and see how the characters react; do not plan the reaction."
+  - "The Extraction Principle: The 'real' story structure is found during the analysis of the draft, not before it."
+
+workflow:
+  - step: 1
+    name: "The Seed Phase"
+    goal: "Establish the initial spark and the 'knowns'."
+    instructions:
+      - "Identify the core 'What If' or 'Character Essence'."
+      - "Define the initial boundaries of the world."
+    output: "Initial Premise and Character Seeds"
+  - step: 2
+    name: "The Probing Phase (The Draft)"
+    goal: "Generate raw narrative material through exploration."
+    instructions:
+      - "Write scenes that push characters into uncomfortable or high-stakes situations."
+      - "Focus on 'The Encounter'—what happens when these two forces meet?"
+      - "Do not stop to outline; follow the momentum of the character's reaction."
+    output: "The Discovery Draft (Raw Prose/Script)"
+  - step: 3
+    name: "The Extraction Phase"
+    goal: "Identify the emergent structure within the chaos."
+    instructions:
+      - "Read through the draft and identify where the 'real' story actually started."
+      - "Mark the moments of true change or realization."
+      - "Identify the 'Accidental Beats' that worked."
+    output: "The Emergent Beat Sheet"
+  - step: 4
+    name: "The Structural Refinement"
+    goal: "Reconstruct the story into a coherent, professional framework."
+    instructions:
+      - "Use the discovered beats to build a formal outline."
+      - "Bridge the gaps between the organic moments discovered in the draft."
+    output: "The Final Structured Outline"
+
+story_inputs:
+  premise: "<The initial 'What If' or 'Seed' idea>"
+  logline: "<The working logline (subject to radical change)>"
+  medium: "<e.g., Feature Film, Short, etc.>"
+  genre: "<The aesthetic/tonal playground>"
+  tone: "<The intended emotional atmosphere>"
+  target_length: "<Expected duration/page count>"
+  audience: "<Who are we exploring this for?>"
+  rating: "<Intended maturity level>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  stage_01_seeding:
+    focus_area: "<Character, World, or Concept?>"
+    primary_question: "<What specific question are you trying to answer through writing?>"
+    experimental_boundaries: "<What rules must remain constant to allow for discovery?>"
+    initial_friction_level: "<Low/Medium/High>"
+    character_anchor_point: "<The one unshakeable trait of the protagonist>"
+    seed_validity_check: "<Does this spark have enough momentum to drive 90 minutes of conflict?>"
+
+  stage_02_probing:
+    probe_intensity: "<How much pressure are we applying?>"
+    environmental_pressure_scale: "<1-10>"
+    character_agency_threshold: "<The minimum level of choice required to prevent passive protagonists>"
+    unpredictability_index: "<How much room is left for 'happy accidents'?>"
+    target_subject_mapping: "<Which character or setting element is being tested?>"
+
+  stage_03_extraction:
+    pattern_recognition_depth: "<How deep are we looking for structural echoes?>"
+    structural_alignment_check: "<How closely does the found beat match the intended genre beats?>"
+    thematic_density_metric: "<How many layers of meaning were discovered?>"
+    found_inciting_incident: "<The moment the story actually began in the draft>"
+    found_midpoint: "<The moment of no return discovered during writing>"
+    found_climax: "<The resolution that emerged from character agency>"
+    discovered_themes: []
+
+  stage_04_refinement:
+    structural_integrity_score: "<Does the new outline hold weight?>"
+    pacing_consistency_check: "<Are there gaps in the momentum discovered during the draft?>"
+    narrative_coherence_index: "<Does the character's arc align with the world's friction?>"
+    gap_bridging_strategy: "<How will we connect the accidental beats?>"
+
+beats_or_units:
+  - id: "unit_01"
+    name: "The Inciting Probe"
+    order: 1
+    purpose: "To disrupt the initial status quo and test character reaction."
+    approximate_position: "0% - 15%"
+    writer_prompt: "Introduce a sudden environmental pressure that forces the character to abandon their comfort zone."
+    story_function: "Establishes the baseline and triggers the movement."
+    visual_function: "Establishes the visual language of the world's friction."
+    emotional_function: "Establishes the character's baseline emotional state."
+    required_decisions:
+      - "What is the specific catalyst?"
+      - "How does the character attempt to ignore the catalyst?"
+    fields_to_complete:
+      - "catalyst_description"
+      - "initial_reaction_type"
+    diagnostic_questions:
+      - "Is the pressure external or internal?"
+      - "Does this force a choice?"
+    completion_criteria:
+      - "The character has moved from a state of stasis to a state of reaction."
+    common_failure_modes:
+      - "The probe is too subtle to create momentum."
+      - "The character reacts too perfectly, leaving no room for discovery."
+
+  - id: "unit_02"
+    name: "The Escalation Probe"
+    order: 2
+    purpose: "To increase the stakes and test the limits of character agency."
+    approximate_position: "15% - 50%"
+    writer_prompt: "Introduce a complication that makes the character's previous solution impossible."
+    story_function: "Increases tension and complicates the character's path."
+    visual_function: "Introduces more intense or chaotic visual motifs."
+    emotional_function: "Moves the character from reaction to active struggle."
+    required_decisions:
+      - "What is the new, higher-stakes obstacle?"
+      - "What does the character have to sacrifice to continue?"
+    fields_to_complete:
+      - "new_obstacle_details"
+      - "sacrifice_made"
+    diagnostic_questions:
+      - "Is the character still making choices, or just reacting to events?"
+      - "Is the tension rising or plateauing?"
+    completion_criteria:
+      - "The character is now actively pursuing a goal despite the cost."
+    common_failure_modes:
+      - "The stakes increase without affecting the character personally."
+      - "The character becomes a passenger to the plot."
+
+  - id: "unit_03"
+    name: "The Midpoint Pivot"
+    order: 3
+    purpose: "To fundamentally shift the direction of the story through a major discovery."
+    approximate_position: "50%"
+    writer_prompt: "A revelation or event that changes the character's understanding of their goal or the world."
+    story_function: "The 'Point of No Return' that redefines the narrative trajectory."
+    visual_function: "A shift in lighting, color, or scale to signal a new reality."
+    emotional_function: "A shift from hope/struggle to desperation/resolve."
+    required_decisions:
+      - "What is the core revelation?"
+      - "How does this change the character's primary motivation?"
+    fields_to_complete:
+      - "the_revelation"
+      - "post_pivot_motivation"
+    diagnostic_questions:
+      - "Can the character ever go back to how they were before?"
+      - "Does this pivot create more friction or less?"
+    completion_criteria:
+      - "The character's trajectory has been irrevocably altered."
+    common_failure_modes:
+      - "The pivot is purely informational and lacks emotional weight."
+      - "The pivot doesn't actually change the character's actions."
+
+  - id: "unit_04"
+    name: "The Climax Discovery"
+    order: 4
+    purpose: "To resolve the primary conflict through the ultimate expression of character agency."
+    approximate_position: "85% - 100%"
+    writer_prompt: "Force the character into a final confrontation where their core contradiction must be resolved."
+    story_function: "The resolution of the central dramatic question."
+    visual_function: "The culmination of all recurring visual motifs into a single, definitive image."
+    emotional_function: "Catharsis or tragic realization."
+    required_decisions:
+      - "What is the final, impossible choice?"
+      - "What is the cost of the resolution?"
+    fields_to_complete:
+      - "final_choice_made"
+      - "the_ultimate_cost"
+    diagnostic_questions:
+      - "Does the resolution feel earned by the character's previous choices?"
+      - "Does the resolution honor the discovered theme?"
+    completion_criteria:
+      - "The central conflict is resolved, and the character is fundamentally changed."
+    common_failure_modes:
+      - "The resolution is a 'deus ex machina' that ignores character agency."
+      - "The climax is too easy and lacks the necessary friction."
+
+character_design:
+  methodology_role: "Characters are the primary drivers of plot discovery."
+  characters:
+    - name: "<write here>"
+      core_contradiction: "<What internal conflict makes them unpredictable?>"
+      untested_desire: "<What do they want that they haven't proven they'll fight for yet?>"
+      reactive_nature: "<How do they typically respond to pressure (Flight/Fight/Freeze/Fawn)?>"
+      discovered_arc: "<To be filled after the draft>"
+
+world_design:
+  methodology_role: "The world provides the 'Friction' necessary for exploration."
+  fields:
+    environmental_pressures: ["<List elements of the world that force character movement>"]
+    the_uncertain_rule: "<A rule of the world that, if broken, creates instant plot>"
+    the_friction_points: ["<Where the setting makes life difficult for the characters>"]
+
+theme_design:
+  methodology_role: "Theme is discovered, not imposed."
+  fields:
+    initial_thematic_inquiry: "<The question you are exploring through the draft>"
+    emergent_thematic_truth: "<The realization found after the draft is complete>"
+    thematic_irony: "<The gap between what the character thought was true and what the story revealed>"
+
+visual_storytelling:
+  methodology_role: "Visual motifs that emerge from the prose."
+  image_system:
+    recurring_visual_motifs: []
+    visual_metaphor_discovery: "<What visual symbols appeared spontaneously in the draft?>"
+  visual_rules: []
+  recurring_motifs: []
+  final_image: "<The image that best encapsulates the discovered truth>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Focus on the 'Reaction' to the 'Action'."
+    - "If a scene feels stagnant, introduce a new 'Friction Point' from the world design."
+    - "Never write a scene to 'get to' a plot point; write the scene to 'see' what happens."
+  scene_template:
+    scene_id: ""
+    probe_reference: "<Which probe/experiment does this scene belong to?>"
+    characters_present: []
+    the_pressure: "<What is forcing the characters to act right now?>"
+    the_discovery: "<What did we learn about the character or world in this scene?>"
+    the_turn: "<How did the situation change by the end of the scene?>"
+    visual_anchor: "<A specific image or object that grounds the scene>"
+  do_rules:
+    - "Follow the character's impulse."
+    - "Allow for 'happy accidents'."
+  avoid_rules:
+    - "Do not force a character to do something 'for the plot' if it feels wrong."
+    - "Do not write scenes that only serve to provide exposition without friction."
+
+revision_passes:
+  - name: "The Extraction Pass"
+    goal: "Identify the actual story within the draft."
+    instructions:
+      - "Highlight every moment of significant character change."
+      - "Identify the true beginning and true end."
+    questions:
+      - "Where did the momentum actually start?"
+      - "Which scenes were 'dead weight' that didn't contribute to discovery?"
+    success_criteria: "A coherent list of 'Found Beats'."
+  - name: "The Structural Integration Pass"
+    goal: "Turn the discovery into a repeatable structure."
+    instructions:
+      - "Map the 'Found Beats' onto a formal structure (e.g., 3-Act, Hero's Journey)."
+      - "Identify 'The Gaps'—where you need to write new, purposeful scenes to connect the discoveries."
+    questions:
+      - "Does the connection between the discovered beats feel earned?"
+      - "Is the character's arc visible and logical?"
+    success_criteria: "A completed, structured outline that respects the original discoveries."
+  - name: "The Structure Pass"
+    goal: "Ensure the discovered beats form a functional narrative arc."
+    instructions:
+      - "Check the pacing between the identified probes."
+      - "Verify that the 'Gaps' have been bridged with purposeful tension."
+    questions:
+      - "Is there a clear progression of stakes?"
+      - "Does the story move toward a logical climax?"
+    success_criteria: "A structurally sound outline with no narrative dead zones."
+  - name: "The Character Pass"
+    goal: "Verify that character agency is the primary driver of the plot."
+    instructions:
+      - "Audit every major beat to ensure it was caused by a character choice."
+      - "Check that the character's core contradiction is present in the climax."
+    questions:
+      - "Are the characters making choices, or is the plot happening to them?"
+      - "Does the character's reaction match their established reactive nature?"
+    success_criteria: "A character-driven narrative where plot is a consequence of agency."
+  - name: "The Theme Pass"
+    goal: "Ensure the emergent thematic truth is resonant and clear."
+    instructions:
+      - "Identify the primary thematic inquiry."
+      - "Trace how the character's journey answers that inquiry."
+    questions:
+      - "Is the theme visible in the character's ultimate sacrifice or victory?"
+      - "Does the story avoid being 'preachy' by letting the theme emerge from friction?"
+    success_criteria: "A thematic resonance that feels organic to the character's struggle."
+  - name: "The Visual Storytelling Pass"
+    goal: "Align the visual motifs with the discovered narrative truth."
+    instructions:
+      - "Review the recurring motifs identified in the draft."
+      - "Ensure the final image encapsulates the story's resolution."
+    questions:
+      - "Do the visual metaphors support the emotional arc?"
+      - "Is the visual language consistent with the world's friction?"
+    success_criteria: "A cohesive visual language that reinforces the narrative themes."
+
+validation_checklist:
+  - "Does the character's choice in the climax feel like an organic consequence of their exploration?"
+  - "Did I avoid forcing the characters into a pre-planned trap?"
+  - "Is the 'Found Inciting Incident' actually more compelling than my 'Initial Seed'?"
+  - "Are the 'Gaps' in the structure filled with purposeful tension rather than filler?"
+  - "Does the character's core contradiction drive the primary conflict?"
+  - "Is the environmental pressure sufficient to prevent character stasis?"
+  - "Are the visual motifs present and reinforcing the theme?"
+  - "Does the 'Extraction Pass' reveal a clear, identifiable arc?"
+  - "Is the character's reactive nature consistent throughout the probes?"
+  - "Does the 'Midpoint Pivot' fundamentally alter the character's trajectory?"
+  - "Is the thematic truth a result of the character's actions?"
+  - "Are there any scenes that exist solely for exposition without friction?"
+
+failure_modes:
+  - failure_mode: "The Meander"
+    symptom: "The story wanders without any sense of rising stakes or direction."
+    likely_cause: "Lack of 'Environmental Pressure' or 'Friction Points' in the world design."
+    fix: "Introduce a new, external threat or a ticking clock."
+  - failure_mode: "The Character Void"
+    symptom: "Events are happening, but the character feels like a passenger."
+    likely_cause: "Writing 'What Happens' instead of 'How they React'."
+    fix: "Re-focus on the character's 'Core Contradiction' and force them to make a choice."
+  - failure_mode: "The Structural Collapse"
+    symptom: "The draft is interesting but impossible to turn into a coherent movie/episode."
+    likely_cause: "Failure to perform the 'Extraction Pass' properly."
+    fix: "Go back to the draft and ruthlessly identify the 'True Story' hidden in the text."
+
+adaptation_notes:
+  feature_film: "Focus on finding a single, powerful emotional arc through the exploration."
+  short_film: "Focus on a single 'Probe'—one intense interaction or situation."
+  tv_episode: "Focus on how the 'Probe' establishes the status quo for the series."
+  tv_pilot: "Focus on discovering the 'Engine'—the repeatable conflict that will drive the series."
+  anime: "Focus on the discovery of 'World Rules' and how they impact character survival."
+  adult_animation: "Focus on pushing the 'Friction Points' to their most extreme, visceral limits."
+  anthology: "Each entry is a standalone 'Probe' with its own unique seed and extraction."
+  game_cinematic: "Focus on the 'Friction' between character agency and environmental constraints."
+
+yaml_usage_notes:
+  how_to_use: "Use this as a living document. Populate the 'Seed' and 'Probe' sections before writing. Populate the 'Extraction' and 'Revision' sections only after the draft is complete."
+  recommended_population_order:
+    - "1. Seed Phase (Inputs)"
+    - "2. Probing Phase (Probes/Experiments)"
+    - "3. Writing the Draft (External to YAML)"
+    - "4. Extraction Phase (Found Beats/Themes)"
+    - "5. Structural Refinement (Final Outline)"
+  minimum_viable_completion: "At least one 'Probe' with a clear 'Intended Friction' is required to start writing."
+  signs_framework_is_ready_for_scene_outline: "When the 'Extraction Pass' has successfully identified a sequence of 'Found Beats' that form a logical arc."

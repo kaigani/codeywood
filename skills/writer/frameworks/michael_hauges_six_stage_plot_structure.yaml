@@ -1,0 +1,370 @@
+metadata:
+  framework_name: "Six-Stage Plot Structure Template"
+  methodology_name: "Michael Hauge’s Six-Stage Plot Structure"
+  methodology_family: "Character-Driven Structuralism"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv_pilot"
+    - "tv_episode"
+    - "anime"
+    - "short_film"
+  best_for:
+    - "character arcs"
+    - "transformational journeys"
+    - "high-stakes drama"
+    - "heroic journeys"
+  not_ideal_for:
+    - "episodic procedural without character change"
+    - "static character studies"
+    - "purely plot-driven puzzles"
+  target_lengths:
+    - "90-120 minutes"
+    - "45-60 minutes"
+  core_principle: "The transition of a character from their false 'Identity' (the mask) to their true 'Essence' (the real self) through the pressure of plot."
+  primary_story_unit: "The Character Arc/Transformation"
+  primary_success_metric: "The alignment of the story's climax with the character's internal revelation."
+
+framework_overview:
+  summary: "A methodology focused on the emotional and psychological evolution of a protagonist, mapping plot beats to the character's journey from a defensive persona to their authentic self."
+  what_this_framework_helps_create:
+    - "deeply resonant character arcs"
+    - "structurally sound plot progression"
+    - "thematic cohesion between plot and character"
+  what_it_prioritizes:
+    - "internal change"
+    - "causality between character choice and plot event"
+    - "the midpoint shift from reactive to proactive"
+  what_it_deemphasizes:
+    - "external plot twists that don't impact character"
+    - "static character dynamics"
+
+use_when:
+  - "The story is about a person changing who they are."
+  - "The protagonist's personality is the primary obstacle to their success."
+  - "You have a strong character idea but the plot feels 'empty' or 'unconnected'."
+
+avoid_when:
+  - "The protagonist is a 'static' hero (e.g., Sherlock Holmes, James Bond) where the character does not change."
+  - "The plot is purely an intellectual puzzle or mystery where character growth is secondary."
+
+core_principles:
+  - "Identity vs. Essence: The difference between how the character presents (the mask) and who they truly are (the core)."
+  - "The Wound: The past trauma or event that created the false Identity."
+  - "The Midpoint Shift: The transition from the character being reactive (driven by the new situation) to proactive (driven by their own decisions)."
+  - "The Point of No Return: The moment where the character can no longer return to their old way of life."
+
+workflow:
+  - step: 1
+    name: "Character Foundation"
+    goal: "Define the Identity and the Essence."
+    instructions:
+      - "Identify the character's 'Mask' (Identity)."
+      - "Identify the character's 'True Self' (Essence)."
+      - "Define the 'Wound' that necessitates the Mask."
+    output: "Character Profile (Identity/Essence/Wound)"
+  - step: 2
+    name: "Stage Mapping"
+    goal: "Populate the six stages with plot events that force character change."
+    instructions:
+      - "Map the external plot to the and internal stages."
+      - "Ensure each stage increases the pressure on the Identity."
+    output: "Six-Stage Outline"
+  - step: 3
+    name: "The Midpoint Check"
+    goal: "Ensure the shift from reactive to proactive is clear."
+    instructions:
+      - "Verify that after the Midpoint, the character is making choices, not just reacting to stimuli."
+    output: "Midpoint Validation"
+  - step: 4
+    name: "Climax Alignment"
+    goal: "Ensure the final battle is a test of Essence over Identity."
+    instructions:
+      - "Check if the resolution of the plot requires the character to use their true Essence."
+    output: "Final Structural Review"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write/select here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  description: "The structural logic governing the six stages of transformation."
+  stage_1_logic:
+    focus: "Identity Establishment"
+    driver: "The Status Quo"
+    risk: "Character Stagnation"
+    decision_forcing_field: "The Mask's effectiveness"
+  stage_2_logic:
+    focus: "Disruption"
+    driver: "The Inciting Incident"
+    risk: "Lack of consequence"
+    decision_forcing_field: "The threat to the Identity"
+  stage_3_logic:
+    focus: "Reactive Struggle"
+    driver: "Old Tactics"
+    risk: "Failure to escalate"
+    decision_forcing_field: "The failure of the Mask"
+  stage_4_logic:
+    focus: "The Pivot"
+    driver: "The Midpoint Event"
+    risk: "Lack of agency"
+    decision_forcing_field: "The shift to Proactivity"
+  stage_5_logic:
+    focus: "The Crisis"
+    driver: "The Point of No Return"
+    risk: "Easy resolution"
+    decision_forcing_field: "The choice between Mask and Essence"
+  stage_6_logic:
+    focus: "Resolution"
+    driver: "The Climax"
+    risk: "Deus Ex Machina"
+    decision_forcing_field: "The manifestation of Essence"
+
+beats_or_units:
+  - id: 1
+    name: "The Setup"
+    order: 1
+    purpose: "Establish the character's 'Identity' and the status quo."
+    approximate_position: "0% - 10%"
+    writer_prompt: "Show the character in their natural habitat, using their 'Mask' to navigate the world."
+    story_function: "Establish the 'Before' state of the character arc."
+    visual_function: "Visual cues of the character's persona, social standing, and defensive habits."
+    emotional_function: "Establishing the comfort/discomfort of the character's current life."
+    required_decisions:
+      - "What is the character's visible persona (Identity)?"
+      - "What is the social/physical environment that reinforces this persona?"
+    fields_to_complete:
+      character_mask: "<how they present to the world>"
+      status_quo_description: "<the state of their life before the disruption>"
+      the_wound_hint: "<subtle visual or narrative clues of their past trauma>"
+    diagnostic_questions:
+      - "Do we see the character's flaws clearly through their behavior?"
+      - "Is the 'Identity' established well enough that we will miss it later?"
+    completion_criteria:
+      - "The audience understands the character's 'normal' and their primary social role."
+    common_failure_modes:
+      - "Making the character too likable/perfect (forgetting the Mask's flaws)."
+      - "Failing to establish the stakes of their current lifestyle."
+
+  - id: 2
+    name: "The New Situation"
+    order: 2
+    purpose: "The Inciting Incident that disrupts the Identity."
+    approximate_position: "10% - 25%"
+    writer_prompt: "Introduce an event that the character's 'Mask' cannot easily handle or ignore."
+    story_function: "The catalyst that forces the character out of their comfort zone."
+    visual_function: "A disruption of the established visual patterns of Stage 1."
+    emotional_function: "Confusion, fear, or sudden opportunity."
+    required_decisions:
+      - "What event breaks the status quo?"
+      - "How does this event specifically threaten the character's Identity?"
+    fields_to_complete:
+      inciting_incident: "<the event>"
+      the_disruption: "<how it breaks the old rules>"
+    diagnostic_questions:
+      - "Is the event significant enough to force a change?"
+      - "Does the event directly challenge the character's existing way of life?"
+    completion_criteria:
+      - "The character can no longer remain in the 'Setup' state."
+    common_failure_modes:
+      - "The incident is too small to matter."
+      - "The incident happens to the character but doesn't force them to act."
+
+  - id: 3
+    name: "Progress"
+    order: 3
+    purpose: "The character attempts to solve the new situation using their old Identity."
+    approximate_position: "25% - 50%"
+    writer_prompt: "The character tries to apply their old 'Mask' and old rules to the new problem, with varying success."
+    story_function: "The 'Learning' phase where the old ways are tested and found wanting."
+    visual_function: "The character moving into new, unfamiliar territories/situations."
+    emotional_function: "False confidence or struggling to maintain control."
+    required_decisions:
+      - "What 'old' tactics are they using?"
+      - "Where do these tactics begin to fail?"
+    fields_to_complete:
+      old_tactics: ["<tactic 1>", "<tactic 2>"]
+      early_successes: "<instances where the mask worked briefly>"
+      early_failures: "<instances where the mask failed>"
+    diagnostic_questions:
+      - "Is the character still being reactive?"
+      - "Are we seeing the cracks in their 'Identity' forming?"
+    completion_criteria:
+      - "The character's old way of operating is clearly becoming ineffective."
+    common_failure_modes:
+      - "The character changes too early (skipping the struggle of the old identity)."
+      - "The plot moves forward, but the character's internal struggle is ignored."
+
+  - id: 4
+    name: "Complications and Intensification"
+    order: 4
+    purpose: "The Midpoint shift from Reactive to Proactive."
+    approximate_position: "50%"
+    writer_prompt: "The stakes rise until the character can no longer just react; they must decide to take charge."
+    story_function: "The transition from being a victim of circumstance to an agent of change."
+    visual_function: "Increased visual chaos, higher energy, more intense lighting/composition."
+    emotional_function: "Urgency, realization, heightened tension."
+    required_decisions:
+      - "What is the Midpoint event that forces the shift?"
+      - "How does the character move from 'reacting' to 'acting'?"
+    fields_to_complete:
+      midpoint_event: "<the turning point>"
+      the_shift: "<how they move from reactive to proactive>"
+      rising_stakes: ["<stake 1>", "<stake 2>"]
+    diagnostic_questions:
+      - "Does the character now have a clear, self-driven goal?"
+      - "Is the pressure increasing significantly?"
+    completion_criteria:
+      - "The character is now the primary driver of the plot's momentum."
+    common_failure_modes:
+      - "The character remains reactive (just running from one problem to the next)."
+      - "The Midpoint is a 'false' shift that doesn't change the character's agency."
+
+  - id: 5
+    name: "The Final Push"
+    order: 5
+    purpose: "The Crisis and the Point of No Return."
+    approximate_position: "50% - 85%"
+    writer_prompt: "The character is pushed to the brink where they must choose between their old Identity and their true Essence."
+    story_function: "The ultimate test of the character's transformation."
+    visual_function: "High-stakes, high-contrast, often isolating the character from their old support systems."
+    emotional_function: "Desperation, clarity, or profound loss."
+    required_decisions:
+      - "What is the 'Point of No Return'?"
+      - "What is the 'Crisis' (the difficult choice)?"
+    fields_to_complete:
+      the_crisis: "<the choice between the old self and the new self>"
+      point_of_no_return: "<the event that makes retreat impossible>"
+    diagnostic_questions:
+      - "Is the choice between the Mask and the Essence clear?"
+      - "Is the cost of choosing the 'Essence' high enough?"
+    completion_criteria:
+      - "The character has committed to a path that necessitates their transformation."
+    common_failure_modes:
+      - "The 'choice' is too easy."
+      - "The character is forced into a situation by external plot without an internal choice."
+
+  - id: 6
+    name: "The Climax and Resolution"
+    order: 6
+    purpose: "The character embraces their Essence to resolve the conflict."
+    approximate_position: "85% - 100%"
+    writer_prompt: "The character uses their true, authentic self to overcome the final obstacle, resolving both the plot and the arc."
+    story_function: "The final demonstration of the character's transformation."
+    visual_function: "The 'Afterimage'—a visual representation of the new, transformed state."
+    emotional_function: "Catharsis, resolution, or tragic realization."
+    required_decisions:
+      - "How does the 'Essence' solve the external conflict?"
+      - "What is the final state of the character's world?"
+    fields_to_complete:
+      climax_resolution: "<how the conflict ends>"
+      essence_manifestation: "<how the true self is shown in action>"
+      final_image: "<the visual coda]"
+    diagnostic_questions:
+      - "Does the resolution of the plot feel earned by the character's internal change?"
+      - "Is the 'Identity' officially dead/transformed?"
+    completion_criteria:
+      - "The external plot and internal arc reach a simultaneous conclusion."
+    common_failure_modes:
+      - "The plot is resolved by luck or a 'Deus Ex Machina' rather than character agency."
+      - "The character ends up exactly where they started (no transformation)."
+
+character_design:
+  methodology_role: "The engine of the entire structure."
+  characters:
+    - role: "Protagonist"
+      fields:
+        identity_mask: "<the persona/defense mechanism>"
+        true_essence: "<the authentic self/potential>"
+        the_wound: "<the past event that created the mask>"
+        visible_want: "<the external goal (often tied to the mask)>"
+        hidden_need: "<the internal necessity (tied to the essence)>"
+        contradiction: "<the friction between mask and essence>"
+    - role: "Antagonist"
+      fields:
+        function: "<how they pressure the protagonist's Identity>"
+        the_mirror: "<how they represent the 'unresolved' version of the protagonist>"
+
+world_design:
+  methodology_role: "The testing ground for the Identity."
+  fields:
+    social_rules: "<rules that reinforce the character's Mask>"
+    environmental_pressure: "<how the world forces the character to change>"
+
+theme_design:
+  methodology_role: "The 'Lesson' of the transformation."
+  fields:
+    central_argument: "<the debate between the Mask's way and the Essence's way>"
+    the_moral_truth: "<the realization the character achieves>"
+
+visual_storytelling:
+  methodology_role: "Visualizing the internal arc."
+  image_system:
+    mask_motifs: ["<visual symbols of the persona/deception/armor>"]
+    essence_motifs: ["<visual symbols of authenticity/vulnerability/truth>"]
+  visual_rules:
+    - "Use lighting/color shifts to track the character's movement from Stage 1 to Stage 6."
+    - "Composition should move from 'controlled/rigid' (Identity) to 'fluid/dynamic' (Essence)."
+
+scene_generation_rules:
+  - rule: "The Agency Rule"
+    description: "Every scene must either challenge the character's Identity or force them toward their Essence."
+  - rule: "The Conflict Rule"
+    description: "External conflict must be a direct consequence of the character's internal struggle (the Wound or the Mask)."
+  - rule: "The Visual Rule"
+    description: "Visual motifs (lighting, color, framing) must evolve in tandem with the character's structural stage."
+
+revision_passes:
+  - name: "The Agency Pass"
+    goal: "Ensure the character is driving the plot."
+    instructions: ["Review Stage 4. Is the character making decisions or just reacting?"]
+    questions: ["Where does the character stop being a victim and start being a hero?"]
+    success_criteria: ["A clear Midpoint shift is identifiable."]
+  - name: "The Transformation Pass"
+    goal: "Verify the arc is complete."
+    instructions: ["Compare Stage 1 character traits to Stage 6 character traits."]
+    questions: ["Is the 'Wound' addressed? Has the 'Mask' been shed?"]
+    success_criteria: ["The character's final action is impossible for their Stage 1 self."]
+  - name: "The Structure Pass"
+    goal: "Ensure pacing and structural integrity."
+    instructions: ["Check the timing of the 6 stages against the target length."]
+    questions: ["Is the Midpoint at the 50% mark? Is the Inciting Incident too late?"]
+    success_criteria: ["All 6 stages are clearly demarcated and appropriately paced."]
+  - name: "The Character Pass"
+    goal: "Verify the distinction between Identity and Essence."
+    instructions: ["Audit every major character interaction for 'Mask' vs 'Essence' tension."]
+    questions: ["Are characters interacting with the persona or the person?"]
+    success_criteria: ["The protagonist's true self is revealed through conflict."]
+  - name: "The Theme Pass"
+    goal: "Ensure thematic resonance."
+    instructions: ["Trace the central argument through the plot progression."]
+    questions: ["Does the resolution of the plot prove the moral truth?"]
+    success_criteria: ["The plot resolution and the character's realization are one and the same."]
+  - name: "The Visual Storytelling Pass"
+    goal: "Align visual language with the character arc."
+    instructions: ["Review lighting, color, and composition changes across stages."]
+    questions: ["Can we visually see the character's 'unmasking'?"]
+    success_criteria: ["Visual motifs clearly track the movement from Identity to Essence."]
+  - name: "The Identity vs Essence Pass"
+    goal: "Ensure the methodology-specific tension is present."
+    instructions: ["Identify the specific moment the 'Mask' fails."]
+    questions: ["Is the cost of shedding the mask clearly demonstrated?"]
+    success_criteria: ["The character's choice is a direct sacrifice of their old safety."]
+
+validation_checklist:
+  - "Does the protagonist have a clear, identifiable 'Mask' in Stage 1?"
+  - "Is there a clear 'Wound' driving the need for that Mask?"
+  - "Does the Inciting Incident specifically threaten the character's Identity?"
+  - "Is the character's 'Progress' phase clearly defined and impactful?"

@@ -1,0 +1,82 @@
+metadata:
+  framework_name: "Todorov Equilibrium Framework"
+  methodology_name: "Todorov's Narrative Theory"
+  methodology_family: "Structuralism"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "tv_episode"
+    - "anime"
+    - "web series"
+  best_for:
+    - "character-driven arcs"
+    - "structural clarity"
+    - "establishing stakes"
+    - "defining world rules"
+  not_ideal_for:
+    - "experimental non-linear narratives"
+    - "purely episodic/procedural without character growth"
+    - "anti-resolution stories"
+  target_lengths:
+    - "any"
+  core_principle: "Narrative is a movement from a stable state, through a disruption, to a new, transformed stability."
+  primary_story_unit: "The Cycle of Equilibrium"
+  primary_success_metric: "The measurable difference between the Initial Equilibrium and the New Equilibrium."
+
+framework_overview:
+  summary: "A structuralist approach to storytelling that focuses on the disruption of a status quo and the subsequent struggle to restore (or redefine) order."
+  what_this_framework_helps_create:
+    - "A clear sense of 'the way things were'."
+    - "A high-stakes disruption that feels earned."
+    - "A meaningful resolution that shows permanent change."
+  what_it_prioritizes:
+    - "Causality"
+    - "Stability vs. Instability"
+    - "Character transformation through crisis"
+  what_it_deemphasizes:
+    - "Subplots that do not impact the equilibrium"
+    - "Random events without consequence"
+
+use_when:
+  - "You have a strong setting but no direction for the plot."
+  - "You need to ensure your ending feels earned and impactful."
+  - "You want to build tension by establishing what is at risk of being lost."
+
+avoid_when:
+  - "Writing 'slice of life' stories that intentionally lack conflict or resolution."
+  - "Writing 'dream logic' or surrealist narratives where cause and effect are intentionally broken."
+
+core_principles:
+  - "The Equilibrium must be clearly defined so the Disruption has weight."
+  - "The Disruption must be an event that the existing world-rules cannot easily absorb."
+  - "The New Equilibrium must be a 'New Normal'—not just a return to the old one."
+
+workflow:
+  - step: 1
+    name: "Establish the Status Quo"
+    goal: "Define the rules and the peace."
+    instructions:
+      - "Define the baseline state of the world and characters."
+    output: "Initial Equilibrium Description"
+  - step: 2
+    name: "Introduce the Breach"
+    goal: "Break the peace."
+    instructions:
+      - "Identify an event that violates the established rules."
+    output: "Disruption Event"
+  - step: 3
+    name: "Map the Struggle"
+    goal: "Bridge the gap between chaos and order."
+    instructions:
+      - "Detail the character's realization and their active attempts to fix the mess."
+    output: "Repair Arc"
+  - step: 4
+    name: "Define the Aftermath"
+    goal: "Establish the new reality."
+    instructions:
+      - "Determine how the world/character has been permanently altered."
+    output: "New Equilibrium Definition"
+
+story_inputs: {}

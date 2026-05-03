@@ -1,0 +1,386 @@
+metadata:
+  framework_name: "Parallel Narrative Method Template"
+  methodology_name: "Parallel Narrative Method"
+  methodology_family: "Multi-Strand Structuralism"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv_series"
+    - "anthology"
+    - "graphic novel"
+    - "game cinematic"
+  best_for:
+    - "ensemble casts"
+    - "historical/modern dual timelines"
+    - "investigation/crime (crime thread vs. detective thread)"
+    - "thematic studies via disparate characters"
+  not_ideal_for:
+    - "single-protagonist character studies"
+    - "linear, high-speed action thrillers"
+  target_lengths:
+    - "feature film"
+    - "tv_pilot"
+    - "limited series"
+  core_principle: "Thematic or structural convergence of disparate narrative threads."
+  primary_story_unit: "The Narrative Thread"
+  primary_success_metric: "Thematic Synthesis or Narrative Collision"
+
+framework_overview:
+  summary: "A framework for managing multiple independent storylines that are linked by theme, character, event, or eventual convergence."
+  what_this_framework_helps_create:
+    - "Interconnected plot webs"
+    - "Thematic resonance across different contexts"
+    - "Structural symmetry"
+    - "Complex world-building through multiple perspectives"
+  what_it_prioritizes:
+    - "Thematic Unity"
+    - "Structural Balance"
+    - "The 'Collision' or 'Synthesis' point"
+  what_it_deemphasphasizes:
+    - "Single-thread linear momentum"
+    - "Isolated character development"
+
+use_when:
+  - "When the theme is too large for one character to embody."
+  - "When you want to show the impact of a single event on different social strata."
+  - "When using a 'past vs. present' structure to solve a mystery."
+  - "When building an epic scale through multiple perspectives."
+
+avoid_when:
+  - "When one thread is significantly more compelling than the others (The Imbalance Problem)."
+  - "When the connection between threads feels unconvinced or purely coincidental."
+  - "When the complexity of the threads obscures the central emotional core."
+
+core_principles:
+  - "Symmetry: Mirroring actions or beats across different threads."
+  - "Contrast: Using one thread to provide the tonal opposite of another."
+  - "Convergence: The inevitable meeting or thematic realization of all threads."
+  - "Interconnectivity: Ensuring no thread exists in a vacuum."
+
+workflow:
+  - step: 1
+    name: "Thread Identification"
+    goal: "Define the distinct narrative strands."
+    instructions:
+      - "Identify 2-4 primary threads."
+      - "Define the setting and time for each."
+    output: "List of Narrative Threads"
+  - step: 2
+    name: "Thematic Anchor Definition"
+    goal: "Establish the 'glue' that holds the threads together."
+    instructions:
+      - "Determine if the connection is thematic, causal, or physical."
+    output: "Thematic Statement"
+  - step: 3
+    name: "Individual Arc Mapping"
+    goal: "Develop independent momentum for each thread."
+    instructions:
+      - "Apply standard dramatic structure to each thread in isolation."
+    output: "Individual Thread Outlines"
+  - step: 4
+    name: "Intersection & Collision Mapping"
+    goal: "Plan the points where threads touch or influence each other."
+    instructions:
+      - "Identify 'Direct Collisions' (characters meet) and '..' (events mirror each other)."
+    output: "Convergence Map"
+  - step: 5
+    name: "Structural Balancing"
+    goal: "Ensure even distribution of tension and screen time."
+    instructions:
+      - "Check for 'The Imbalance Problem'."
+    output: "Balanced Beat Sheet"
+
+story_inputs:
+  premise: "<The overarching idea connecting all threads>"
+  logline: "<A logline that encompasses the scope of the parallel narratives>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Neo-Noir / Historical Drama>"
+  tone: "<e.g., Melancholic, Interwoven, Tense>"
+  target_length: "<e.g., 120 pages>"
+  audience: "<e.g., Adult, Mature Themes>"
+  rating: "<e.g., R>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  foundation_layer:
+    thread_count_logic: "<How many threads are being managed?>"
+    thread_definition_rules:
+      - "Each thread must have a distinct temporal or spatial anchor."
+      - "Each thread must possess an independent internal conflict."
+    protagonist_anchor_check: "<Ensure each thread has a primary driver>"
+    threads:
+      - thread_id: "<e.g., Thread_A>"
+        context:
+          setting: "<Location/Time>"
+          tone_profile: "<e.g., Gritty, High-Stakes>"
+        protagonist:
+          name: "<write here>"
+          visible_goal: "<What they are highly doing in this thread>"
+          internal_arc: "<How they change>"
+        narrative_function: "<e._g., The 'Present Day' investigation / The 'Mirror' to Thread B>"
+        connection_type: "<Direct Collision | Thematic Echo | Causal Influence | Environmental Impact>"
+        relationship_to_other_threads:
+          - target_thread: "<ID>"
+            nature_of_connection: "<e.g., Character A's actions cause Character B's tragedy>"
+        key_beats: []
+
+  interconnection_layer:
+    global_thematic_anchor: "<The single question or idea that all threads are answering>"
+    connection_matrix:
+      thematic_echo_frequency: "<How often threads mirror each other?>"
+      contrast_ratio_control: "<How much tonal difference is maintained between threads?>"
+      visual_motif_distribution: "<How motifs are spread across threads>"
+    connection_type_mapping:
+      - type: "Direct Collision"
+        definition: "Physical meeting of characters or entities."
+      - type: "Thematic Echo"
+        definition: "Events in one thread mirror the emotional or thematic weight of another."
+      - type: "Causal Influence"
+        definition: "An action in Thread A creates a consequence in Thread B."
+
+  convergence_layer:
+    convergence_logic:
+      collision_points:
+        - point_id: "<e.g., The Big Meeting>"
+          threads_involved: []
+          description: "<What happens when these stories touch?>"
+          narrative_impact: "<How this changes the trajectory of all threads>"
+      synthesis_point:
+        description: "<The final moment where the parallel nature of the story is resolved or revealed>"
+        thematic_resolution: "<How the disparate parts form a whole>"
+    impact_assessment_rules:
+      - "The collision must escalate the stakes for all involved threads."
+      - "The synthesis must answer the global thematic anchor."
+
+beats_or_units:
+  - id: "Thread_Beat_Template"
+    name: "Individual Thread Beat"
+    order: 1
+    purpose: "To maintain momentum within a single strand."
+    approximate_position: "Sequential per thread"
+    writer_prompt: "Describe a pivotal moment in this specific thread."
+    story_function: "<e.g., Inciting Incident / Midpoint / Climax>"
+    visual_function: "<e.g., A specific recurring motif or visual change>"
+    emotional_function: "<e.g., Despair / Hope / Confusion>"
+    required_decisions:
+      - "Does this beat advance the thread's internal arc?"
+      - "Does this beat provide a 'hook' to pull the audience back to this thread?"
+    fields_to_complete:
+      action: "<write here>"
+      consequence: "<write here>"
+    diagnostic_questions:
+      - "Is this beat too isolated from the global theme?"
+      - "Does this beat provide a way to transition to another thread?"
+    completion_criteria:
+      - "The beat must move the protagonist toward or away from their goal."
+    common_failure_modes:
+      - "The beat is 'filler' that doesn't contribute to the thread's specific arc."
+
+  - id: "Thematic_Echo_Unit"
+    name: "Thematic Echo Beat"
+    order: 2
+    purpose: "To create structural symmetry between two different threads."
+    approximate_position: "Mid-point of the narrative"
+    writer_lag: "Identify a beat in Thread B that mirrors the emotional weight of a beat in Thread A."
+    story_function: "Structural Symmetry"
+    visual_function: "Visual Match-Cut or Motif Reappearance"
+    emotional_function: "Reinforcement of Theme"
+    required_decisions:
+      - "Is the connection between these two beats obvious or too subtle?"
+      - "Does the echo provide contrast or reinforcement?"
+    fields_to_complete:
+      source_thread_id: "<ID>"
+      target_thread_id: "<ID>"
+      shared_symbol: "<Object or Image>"
+    diagnostic_questions:
+      - "Does this echo feel forced?"
+      - "Does the audience have enough context to recognize the mirror?"
+    completion_criteria:
+      - "The audience recognizes the thematic link without explicit dialogue."
+    common_failure_modes:
+      - "The echo is too literal, making the story feel repetitive."
+
+  - id: "The_Collision_Event"
+    name: "The Collision Point"
+    order: 3
+    purpose: "To force the convergence of disparate narrative strands."
+    approximate_position: "Climax"
+    writer_prompt: "Write the moment where the paths of at least two threads physically or causally intersect."
+    story_function: "Global Climax"
+    visual_function: "High-intensity visual convergence"
+    emotional_function: "Catharsis / Resolution"
+    required_decisions:
+      - "Does this collision resolve the primary conflict of all involved threads?"
+      - "Does this event impact the 'Global Thematic Anchor'?"
+    fields_to_complete:
+      involved_threads: []
+      consequence_for_all: "<write here>"
+    diagnostic_questions:
+      - "Is the collision earned by the preceding causal links?"
+      - "Does this collision leave the threads in a state of permanent change?"
+    completion_criteria:
+      - "The collision point serves as the structural climax for the entire framework."
+    common_failure_modes:
+      - "The collision feels like a 'deus ex machina' or a random coincidence."
+
+character_design:
+  methodology_role: "Characters serve as avatars for different facets of the theme."
+  characters:
+    - name: "<write here>"
+      thread_association: "<ID>"
+      thematic_function: "<What aspect of the theme do they represent?>"
+      contradiction: "<How their actions conflict with the theme they embody?>"
+      connection_to_other_threads: "<Direct or Indirect?>"
+
+world_design:
+  methodology_role: "The world must provide the 'connective tissue' (e.g., shared geography, shared history)."
+  fields:
+    shared_geography: "<How do the locations physically or symbolically overlap?>"
+    shared_history: "<What event links the different time periods/locations?>"
+    environmental_impact: "<How does an event in Thread A physically affect Thread B?>"
+
+theme_design:
+  methodology_role: "The central axis around which all threads rotate."
+  fields:
+    central_question: "<The question all threads are testing>"
+    thematic_echoes:
+      - "Thread A answers the question by: <write here>"
+      - "Thread B answers the question by: <write here>"
+    thematic_irony: "<The gap between what the threads seem to be about and what they are actually about>"
+
+visual_storytelling:
+  methodology_role: "Using visual cues to help the audience track which thread they are currently viewing."
+  image_system:
+    color_palettes:
+      - thread_id: "<ID>"
+        primary_colors: []
+        visual_mood: "<e.g., Desaturated, Warm, Neon>"
+    visual_motifs:
+      - motif_name: "<e.g., The Watch>"
+        thread_presence: ["Thread_A", "Thread_B"]
+        symbolic_meaning: "<write here>"
+  visual_rules:
+    - "Use [X] camera movement style for Thread A to distinguish from Thread B."
+    - "Use [Y] lighting style for historical threads."
+  final_image: "<An image that visually unites all narrative strands>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either advance a thread or strengthen a connection between threads."
+    - "Transitions between threads should be triggered by 'Match Cuts' (visual or thematic)."
+  scene_template:
+    scene_id: "<write here>"
+    thread_id: "<write here>"
+    location: "<write here>"
+    characters_present: []
+    visible_goal: "<write here>"
+    conflict_or_pressure: "<write here>"
+    turn: "<How the power/emotion shifts in this scene>"
+    visual_anchor: "<A specific object or image to facilitate the next transition>"
+    emotional_shift: "<From X to Y>"
+    exits_with: "<A cliffhanger or a thematic 'drop' to the next thread>"
+  do_rules:
+    - "Do use thematic 'Match Cuts' (e.g., a character in Thread A drops a glass; cut to a character in Thread B dropping a heavy stone)."
+    - "Do ensure each thread has its one 'Climax' that feeds into the 'Global Climax'."
+  avoid_rules:
+    - "Avoid 'Thread Fatigue' (staying in one thread for too long without a thematic payoff)."
+    - "Avoid 'Thematic Drift' (where one thread stops addressing the central question)."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Ensure the structural integrity of the parallel threads."
+    instructions:
+      - "Check the page count/runtime distribution of each thread."
+      - "Verify that all threads have a clear beginning, middle, and end."
+    questions:
+      - "Is one thread feeling like a 'side story' rather than a parallel narrative?"
+      - "Are the transitions between threads logically or visually motivated?"
+    success_criteria:
+      - "All threads have comparable narrative weight and momentum."
+  - name: "character_pass"
+    goal: "Ensure characters are distinct and serve their thematic roles."
+    instructions:
+      - "Review each character's internal arc against their thematic function."
+      - "Check for character overlap that might cause confusion."
+    questions:
+      - "Does each character represent a unique facet of the central theme?"
+      - "Is the protagonist's goal in each thread clear and driving the action?"
+    success_criteria:
+      - "Every character's presence is essential to the thematic synthesis."
+  - name: "theme_pass"
+    goal: "Strengthen the thematic resonance across all strands."
+    instructions:
+      - "Audit every major beat for its connection to the global thematic anchor."
+      - "Check for thematic irony and contrast."
+    questions:
+      - "Is the central question being answered by all threads?"
+      - "Are the thematic echoes providing enough depth?"
+    success_criteria:
+      - "The theme is palpable even in the most disparate threads."
+  - name: "visual_storytelling_pass"
+    goal: "Ensure visual clarity and thread distinction."
+    instructions:
+      - "Review color palettes and lighting for thread-specific identity."
+      - "Check the use of motifs and match-cuts."
+    questions:
+      - "Can the audience tell which thread they are in without looking at the setting?"
+      - "Are the visual motifs effectively bridging the threads?"
+    success_criteria:
+      - "Visual cues provide seamless, intuitive navigation between threads."
+  - name: "convergence_pass"
+    goal: "Ensure the collision and synthesis are earned and impactful."
+    instructions:
+      - "Review the causal and thematic links leading to the collision point."
+      - "Evaluate the impact of the synthesis on the global theme."
+    questions:
+      - "Is the connection between threads earned, or does it feel like a coincidence?"
+      - "Does the final resolution provide a satisfying payoff for all threads?"
+    success_criteria:
+      - "The final synthesis feels inevitable based on the preceding parallels."
+
+validation_checklist:
+  - "Does every thread address the central thematic question?"
+  - "Are the transitions between threads visually or thematically motivated?"
+  - "Is the 'Imbalance Problem' (one thread being boring) resolved?"
+  - "Does the 'Collision' or 'Synthesis' provide a satisfying resolution to all threads?"
+  - "Is the thematic anchor present in every thread's primary arc?"
+  - "Are the visual palettes distinct enough to prevent audience confusion?"
+  - "Does each thread have a clear, independent protagonist goal?"
+  - "Is the 'Coincidence Trap' avoided through established causal or thematic links?"
+  - "Does the convergence point feel earned by the preceding narrative weight?"
+  - "Are the 'Thematic Echoes' providing meaningful contrast or symmetry?"
+  - "Is the scale of the story consistent across all active threads?"
+  - "Does the final image visually unite all narrative strands?"
+
+failure_modes:
+  - failure_mode: "The Imbalance Problem"
+    symptom: "The audience loses interest in Thread B because Thread A is much more exciting."
+    likely_cause: "Thread B lacks a clear protagonist goal or high stakes."
+    fix: "Inject a 'Direct Collision' or a 'High-Stakes Event' into Thread B."
+  - failure_mode: "The Coincidence Trap"
+    symptom: "The connection between threads feels forced or 'too small-world'."
+    likely_cause: "Characters meet without any prior thematic or causal groundwork."
+    fix: "Establish 'Thematic Echoes' much earlier in the story."
+  - failure_mode: "Thematic Drift"
+    symptom: "The story feels like two or three separate movies rather than one parallel narrative."
+    likely_cause: "One thread has lost its connection to the global thematic anchor."
+    fix: "Re-align the thread's beats with the central question or introduce a thematic motif."
+
+adaptation_notes:
+  feature_film: "Focus on 2-3 threads max to prevent audience disorientation."
+  short_film: "Focus on 2 threads with a very tight, singular 'Collision' point."
+  tv_episode: "Use threads to expand the world; focus on 'Thematic Echoes'."
+  tv_pilot: "Establish the 'Rules of Connection' so the audience knows how to track the threads."
+  anime: "Use highly distinct visual/color palettes for each thread to aid rapid switching."
+
+  adult_animation: "Use extreme visual metaphors and heavy thematic contrast to differentiate threads."
+  anthology: "The connection must be purely thematic or a shared 'Universe' rule."
+  game_cinematic: "Use threads to show the macro (war) vs. micro (soldier) perspectives."
+
+yaml_usage_notes:
+  how_to_use: ""

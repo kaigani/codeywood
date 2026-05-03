@@ -1,0 +1,286 @@
+# Writer Persona Schema v5 — Modular
+# Adopted 2026-04-15. Replaces v4 _schema.yaml.
+# Design philosophy: see _schema_v5_DRAFT.md. Summary: persona = lens (small BASE, always loaded)
+# + modules (task-conditional). Skills declare what they load; runtime pre-renders per skill.
+
+schema_version: 5.0
+
+# =============================================================================
+# BASE — always loaded (~8-9 fields). The lens.
+# =============================================================================
+base:
+  # --- IDENTITY ---
+  agent_name:
+    type: string
+    required: true
+    description: Full name.
+  room_title:
+    type: string
+    required: true
+    description: 3-5 words — the role they play in any room.
+  versatility:
+    type: enum[specialist, hybrid, generalist]
+    required: true
+
+  # --- MECHANISM ---
+  mechanism:
+    type: string
+    required: true
+    max_length: 200
+    description: |
+      ONE sentence. The operational signature — what this writer DOES that nobody
+      else does. Not genre, not tone — the move they make scene by scene.
+  mechanism_non_literal:
+    type: string
+    required: true
+    max_length: 200
+    description: |
+      v5.0 ADDITION — forced metaphorical reading of the mechanism. Must differ
+      from the literal. Prevents persona-level literal-reading drift (Oskar Brandt
+      case study: "monument builder" kept producing literal concrete structures
+      until the non-literal reading was foregrounded). Example for Oskar:
+      "What is made is rarely a building — it is a court case, a language, a
+      ledger, a neighborhood institution, a union contract."
+
+  # --- AUDIENCE ---
+  audience_cohort:
+    type: string
+    required: true
+    max_length: 200
+    description: |
+      ONE sentence. The actual person watching, with context. Operational, not
+      taxonomic. NOT a controlled-vocabulary tag.
+
+  # --- AFFECTIVE PALETTE ---
+  affective_palette:
+    type: object
+    required: true
+    fields:
+      primary_emotion:
+        type: enum
+        vocab: [wonder, delight, awe, melancholy, dread, tension, recognition,
+                ache, grief, joy, rage, tenderness, curiosity, discomfort,
+                catharsis, triumph, nostalgia, alarm, warmth, exhilaration]
+        required: true
+      register:
+        type: enum
+        vocab: [warm, cool, dry, plaintive, ecstatic, austere, wry, tender,
+                severe, ironic, sincere, operatic, deadpan, lyrical,
+                muscular, playful, elegiac, reverent]
+        required: true
+      restraint:
+        type: integer
+        range: [1, 5]
+        required: true
+        description: 1 = minimalist, 5 = maximalist
+
+  # --- MANIFESTO ---
+  philosophy:
+    type: string
+    required: true
+    max_length: 200
+    description: ONE sentence in quotes. The writer's own statement about what stories ARE.
+
+  # --- ENGINE ---
+  engine:
+    type: string
+    required: true
+    max_length: 200
+    description: ONE sentence. What fuels the work. Disgust, curiosity, love of craft, rage.
+
+  # --- POLEMIC ---
+  polemic:
+    type: string
+    required: true
+    max_length: 200
+    description: ONE sentence in quotes. What other writers get wrong.
+
+  # --- INFLUENCES ---
+  influences:
+    type: array
+    required: true
+    min_items: 5
+    max_items: 7
+    audit_rule: |
+      At least 2 must be mass-audience practitioners in the declared cohort.
+      Monoculture (all art-cinema, all comedy auteurs, etc.) is rejected by
+      the validator.
+
+  # --- OPT-IN MODULES (v5.0 — per approved open decision 4) ---
+  prefer_load:
+    type: array
+    required: false
+    description: |
+      Persona-side opt-in for modules that skills don't auto-request. E.g. a
+      dialogue-forward writer in writers-room can list ["dialogue"] to carry
+      their voice commitments into rooms that don't formally load dialogue.
+      Extra modules increase context — use deliberately.
+
+# =============================================================================
+# MODULES — conditionally loaded (intersection of persona-has and skill-needs)
+# =============================================================================
+modules:
+
+  # --- ARCHITECTURE ---
+  # For screenplay, episode break, season arc, multi-scene structure
+  architecture:
+    architectural_mechanic:
+      type: string
+      description: |
+        ONE sentence. The structural rule this writer builds work AROUND.
+        Not "what kind of stories" — the SHAPE of the build.
+    story_unit:
+      type: string
+      description: Scene / episode / returning ritual / season.
+    preferred_form:
+      type: string
+      description: Limited series / returning serial / feature / short / one-off / anthology.
+    what_breaks_the_form:
+      type: string
+      description: If you violate the architectural mechanic, what fails?
+
+  # --- DIALOGUE ---
+  # For screen test, dialogue pass, monologue, voice work
+  dialogue:
+    rhythm:
+      type: string
+      description: Cadence — clipped / overlapping / Mametian / silence-punctuated / etc.
+    speech_acts_loved:
+      type: array
+      description: Kinds of lines this writer writes better than anyone.
+    speech_acts_refused:
+      type: array
+      description: Lines they will not write (exposition dumps, monologue-as-thesis, etc.).
+    dialect_competence:
+      type: array
+      description: Languages, registers, regional voices they carry credibly.
+    signature_line_shape:
+      type: string
+      description: ONE sentence. What does a load-bearing line from this writer SOUND LIKE?
+
+  # --- SCENE_CRAFT ---
+  # For scene-by-scene drafting. Post-merge: blocking_instinct moved to vision.
+  scene_craft:
+    scene_entry:
+      type: string
+      description: Where do their scenes typically START?
+    scene_exit:
+      type: string
+      description: Where do they LEAVE?
+    what_makes_a_scene_alive:
+      type: string
+      description: ONE sentence — their internal test for whether a scene is working.
+
+  # --- VISION ---
+  # For directors' room, prompt engineering, visual translation.
+  # Post-merge: absorbed scene_craft.blocking_instinct.
+  vision:
+    camera_instinct:
+      type: string
+      description: Static / handheld / dolly / locked / tracking / observational / etc.
+    blocking_instinct:
+      type: string
+      description: How this writer thinks about bodies in space (close-and-static / kinetic / ensemble-overlap / stillness-and-frame / etc.).
+    set_logic:
+      type: string
+      description: How this writer thinks about built environments.
+    lighting_register:
+      type: string
+      description: Default lighting story (tungsten-warm / available-light / overcast / etc.).
+    what_the_frame_refuses:
+      type: string
+      description: ONE sentence. What this writer's frame will NOT show.
+
+  # --- ROOM_BEHAVIOR ---
+  # For writers' room, critique, peer scoring
+  room_behavior:
+    notices_first:
+      type: string
+    challenges_first:
+      type: string
+    protects_fiercely:
+      type: string
+    disagreement_format:
+      type: string
+      description: HOW they say no — short-and-direct / reframe-and-question / counter-pitch.
+    alliance_pattern:
+      type: string
+      description: Mechanism family they tend to side with (not personality).
+    blocked_behavior:
+      type: string
+      description: What they do when stuck or overruled.
+
+  # --- SLOT ---
+  # For pitch round, calling card, scheduling decisions
+  slot:
+    primary_daypart:
+      type: string
+      description: Specific broadcast/streaming context. "Tue 9pm ITV1 returning serial" / "Saturday 7am shonen block" / etc.
+    channel_context:
+      type: string
+      description: ONE sentence — why this slot, this network, this audience.
+    runtime:
+      type: string
+      description: Natural runtime — 22min / 45min / 60min / 90min / variable / 7-second / etc.
+    episode_count:
+      type: string
+      description: Natural season shape — 6 / 8 / 10 / 13 / 22 / one-off / returning-indefinitely.
+
+  # --- CONSTRAINTS ---
+  # For production gates, line cuts, budget pressure
+  constraints:
+    cuts_first:
+      type: string
+    protects_last:
+      type: string
+    budget_instinct:
+      type: string
+    fail_modes:
+      type: array
+      min_items: 2
+    correction_rule:
+      type: string
+
+  # --- PSYCHOLOGY ---
+  # RARE. Load only on explicit skill request. Never auto-loaded by generation tasks.
+  psychology:
+    formative_background:
+      type: string
+      description: Professional/life experience that shaped craft (not therapy framing).
+    craft_lineage:
+      type: string
+      description: Non-obvious tradition that shaped them.
+    blind_spot:
+      type: string
+    central_contradiction:
+      type: string
+
+# =============================================================================
+# SKILL MANIFESTS — which skill loads which modules
+# =============================================================================
+skill_manifests:
+  screen-test:        [base, dialogue, slot]
+  pitch-round:        [base, slot]                                # architecture loads if pitch >1 page
+  calling-card-test:  [base, slot]
+  screenplay-pass:    [base, architecture, scene_craft, dialogue]
+  writers-room:       [base, room_behavior, architecture]
+  directors-room:     [base, vision, scene_craft]
+  prompt-engineer:    [base, vision]
+  visual-translation: [base, vision, dialogue]
+  production-decision: [base, constraints]
+  room-composition:   [base, room_behavior, psychology]
+  persona-self-portrait: [base, psychology]
+
+# =============================================================================
+# LOADING SEMANTICS
+# =============================================================================
+# - Persona declares which modules it has (subset of 8).
+# - Skill declares which modules it needs (via manifest).
+# - Runtime loads intersection. Missing module = graceful degradation to base.
+# - No precedence rules — modules are orthogonal by design.
+# - Pre-render mechanism: scripts/personas/render_persona.py writes per-skill
+#   runtime files. The agent reads the runtime file, not the full persona.
+#
+# BACKWARD COMPAT: v4 personas gracefully degrade — render_persona.py detects
+# v4 and emits base-only. v4 personas run in v5 skills but with centroid defaults
+# on un-upgraded modules.

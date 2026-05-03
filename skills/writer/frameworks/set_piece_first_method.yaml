@@ -1,0 +1,362 @@
+metadata:
+  framework_name: "Set-Piece First Framework"
+  methodology_name: "Set-Piece First Method"
+  methodology_family: "Structural/Spectacle-Driven"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "short film"
+    - "anime"
+    - "action/horror/sci-fi scripts"
+    - "game cinematic"
+  best_for:
+    - "High-concept action"
+    - "Horror/Thriller sequences"
+    - "Visual-heavy storytelling"
+    - "Spectacle-driven narratives"
+  not_ideal_for:
+    - "Dialogue-driven chamber dramas"
+    - "Pure character studies without external conflict"
+    - "Slow-burn psychological realism"
+  target_lengths:
+    - "7-minute short"
+    - "120-page feature"
+  core_principle: "Narrative is constructed by identifying high-impact, self-contained, visually or emotionally intense sequences (Tentpoles) and then engineering the connective tissue (Bridges) required to link them logically and emotionally."
+  primary_story_unite: "The Set-Piece"
+  primary_success_metric: "The seamless integration of spectacle and narrative causality."
+
+framework_overview:
+  summary: "A bottom-up approach to storytelling where the most memorable, high-stakes moments are defined first, and the plot is built to justify their occurrence."
+  what_this_framework_helps_create:
+    - "Memorable, high-impact sequences"
+    - "Visually arresting narratives"
+    - "Strong pacing driven by escalating tension"
+  what_it_prioritizes:
+    - "Spectacle and impact"
+    - "Visual storytelling"
+    - "Causality between peaks"
+  what_it_deemphasizes:
+    - "Slow-lag character development (unless tied to action)"
+    - "Subtle, low-stakes dialogue scenes"
+
+use_when:
+  - "You have a 'killer image' or 'killer sequence' in mind."
+  - "The genre relies on physical or environmental escalation."
+  - "The scale of the story is defined by its biggest moments."
+
+avoid_when:
+  - "The story's strength lies entirely in subtle character shifts."
+  - "The plot is driven by internal monologue or intellectual debate."
+
+core_principles:
+  - "The Tentpole Principle: Every major set-piece must be a narrative necessity, not just an ornament."
+  - "The Bridge Principle: Connective tissue must move the character from the consequence of one set-piece to the necessity of the next."
+  - "The Escalation Principle: Each subsequent set-piece must raise the stakes (physical, emotional, or environmental)."
+
+workflow:
+  - step: 1
+    name: "Identify the Tentpoles"
+    goal: "Brainstorm the 3-5 most visually or emotionally impactful sequences."
+    instructions:
+      - "Ignore plot for a moment."
+      - "Focus on 'The Money Shot' or 'The Big Sequence'."
+      - "Identify the peak intensity of the story."
+    output: "A list of high-impact set-pieces."
+  - step: 2
+    name: "Define the Stakes & Context"
+    goal: "Determine what must happen for these sequences to exist."
+    instructions:
+      - "For each set-piece, define the 'Why now?'"
+      - "Define the 'What is lost if they fail?'"
+    output: "Contextualized set-pieces."
+  - step: 3
+    name: "Engineer the Bridges"
+    goal: "Create the narrative path between peaks."
+    instructions:
+      - "Identify the 'Consequence' of Set-Piece A."
+      - "Identify the 'Requirement' for Set-Piece B."
+      - "Write the scenes that bridge these two states."
+    output: "A structural outline of peaks and valleys."
+  - step: 4
+    name: "Character Integration"
+    goal: "Ensure characters are changed by the set-pieces, not just present in them."
+    instructions:
+      - "Map character growth/decay to the sequence of set-pieces."
+    output: "A character arc synchronized with the action arc."
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write/select: G | PG | PG-13 | R | NC-17>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  structure_type: "Tentpoles and Bridges"
+  description: "A sequence of high-intensity peaks (Set-Pieces) connected by causal transitions (Bridges)."
+  tentpole_identification_stage:
+    focus: "Visual and emotional peak identification"
+    decision_forcing_fields:
+      - "visual_impact_score"
+      - "emotional_intensity_level"
+      - "narrative_weight"
+      - "sequence_uniqueness"
+    output_requirement: "A list of 3-5 high-impact sequences."
+  contextual_engineering_stage:
+    focus: "Defining stakes and environmental necessity"
+    decision_ragging_fields:
+      - "causal_necessity"
+      - "environmental_hazard_type"
+      - "character_vulnerability_index"
+      - "consequence_of_failure"
+    output_requirement: "Contextualized profiles for each tentpole."
+  bridge_construction_stage:
+    focus: "Engineering causal transitions"
+    decision_forcing_fields:
+      - "information_drop_value"
+      - "consequence_linkage"
+      - "tension_maintenance_level"
+      - "character_momentum_shift"
+    output_requirement: "A structural outline of peaks and valleys."
+  character_integration_stage:
+    focus: "Synchronizing arc with action"
+    decision_forcing_fields:
+      - "arc_progression_percentage"
+      - "skill_utilization_rate"
+      - "psychological_toll_index"
+      - "status_quo_disruption_level"
+    output_requirement: "A character arc mapped to the action arc."
+
+beats_or_units:
+  - id: "set_piece_alpha"
+    name: "The First Tentpole"
+    order: 1
+    purpose: "Establish the visual language, the stakes, and the primary conflict."
+    approximate_position: "Inciting Incident or First Major Confrontation"
+    writer_prompt: "What is the most visually arresting way to introduce the central threat or conflict?"
+    story_function: "<How does this change the protagonist's status quo?>"
+    visual_function: "<What is the 'Money Shot' of this sequence?>"
+    emotional_function: "<What does the character feel after the dust settles?>"
+    required_decisions:
+      - "The environmental hazard/obstacle"
+      - "The specific moment of failure or narrow escape"
+    fields_to_complete:
+      visual_hook: "<write here>"
+      action_climax: "<write here>"
+      consequence_to_plot: "<write here>"
+    diagnostic_questions:
+      - "Does this sequence introduce a new rule of the world?"
+      - "Is the scale of this sequence appropriate for the start of the story?"
+    completion_criteria:
+      - "The sequence ends with a clear change in the character's situation."
+    common_failure_modes:
+      - "The sequence is cool but doesn't actually change the plot."
+
+  - id: "bridge_alpha_beta"
+    name: "The First Bridge"
+    order: 1.5
+    purpose: "Transition from the aftermath of the first peak to the necessity of the second."
+    approximate_position: "Between Set-Piece 1 and 2"
+    writer_prompt: "How does the character react to the first disaster, and what forces them into the next one?"
+    story_function: "<The 'Because of that...' logic>"
+    visual_function: "<A shift in tone or atmosphere (e.g., from chaos to quiet/dread)>"
+    emotional_function: "<Processing the loss/victory of the previous beat>"
+    required_decisions:
+      - "The piece of information revealed in the aftermath"
+      - "The new direction of travel"
+    fields_to_complete:
+      consequence_of_previous: "<write here>"
+      catalyst_for_next: "<write and identify the driver>"
+    diagnostic_questions:
+      - "Is this scene just 'filler', or does it provide the 'Why' for the next peak?"
+    completion_criteria:
+      - "The character is actively moving toward the next danger."
+    common_failure_modes:
+      - "The 'Empty Bridge': A scene that contains no new information or direction."
+
+  - id: "set_piece_omega"
+    name: "The Final Tentpole"
+    order: 5
+    purpose: "The ultimate resolution of the physical and emotional conflict."
+    approximate_position: "Climax"
+    writer_prompt: "What is the largest, most devastating, or most spectacular event possible in this world?"
+    story_function: "<The final confrontation/resolution>"
+    visual_function: "<The visual culmination of the film's motifs>"
+    emotional_function: "<Catharsis or Tragedy>"
+    required_decisions:
+      - "The ultimate sacrifice or realization"
+      - "The final resolution of the visual motif"
+    fields_to_complete:
+      the_ultimate_stake: "<write here>"
+      the_final_visual_image: "<write here>"
+    diagnostic_questions:
+      - "Does this sequence resolve the tension established in the first set-piece?"
+      - "Is the scale significantly higher or more intense than the first?"
+    completion_criteria:
+      - "The central conflict is resolved (for better or worse)."
+    common_failure_modes:
+      - "The 'Anticlimax': A resolution that feels smaller than the build-up."
+
+character_design:
+  methodology_role: "Characters are defined by their ability to survive (or fail) the set-pieces."
+  characters:
+    - name: "<write here>"
+      role: "<Protagonist/Antagonist/etc>"
+      physical_vulnerability: "<How are they physically threatened by the set-pieces?>"
+      emotional_vulnerability: "<What part of their psyche is tested during the peaks?>"
+      skill_set: "<What skills are showcased during action sequences?>"
+      arc_endpoint: "<How are they fundamentally different after the final tentpole?>"
+
+world_design:
+  methodology_role: "The world must provide the 'Arena' for the set-pieces."
+  fields:
+    environmental_hazards: ["<List elements that can be used in set-pieces>"]
+    visual_rules: "<The physics or magic that allows for spectacle>"
+    scale_indicators: "<How the world shows its immense size or danger>"
+
+theme_design:
+  methodology_role: "Theme is the 'Why' behind the 'How' of the spectacle."
+  fields:
+    central_argument: "<What is the debate being fought through action?>"
+    thematic_irony: "<How the set-pieces visually contradict the character's goals?>"
+
+visual_storytelling:
+  methodology_role: "The primary driver of the method."
+  image_system:
+    recurring_motifs: ["<write here>"]
+    visual_contrast: "<How the look of the 'Bridges' differs from the 'Tentpoles>'"
+  visual_rules:
+    - "Scale must be emphasized in every peak."
+    - "Use color shifts to signal the transition from Bridge to Tentpole."
+  final_image: "<The image that lingers after the final set-piece ends>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either contribute to a Tentpole or bridge the gap between them."
+    - "Avoid 'static' scenes that do not move the character toward or away from a peak."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: "<Tentpole or Bridge?>"
+    location: ""
+    characters_present: []
+    visible_goal: ""
+    conflict_or_pressure: ""
+    turn: "<How does the power dynamic shift?>"
+    visual_anchor: ""
+    emotional_shift: ""
+    exits_with: "<The new state of the character>"
+  do_rules:
+    - "Ensure every set-piece has a clear 'Point of No Return'."
+    - "Make sure bridges contain 'Information Drops' that drive the next peak."
+  avoid_rules:
+    - "Do not include set-pieces that are 'cool' but have no causal link to the plot."
+    - "Do not allow bridges to become long periods of inactivity."
+
+revision_passes:
+  - name: "structure_pass"
+    goal: "Verify the logical flow of the sequence of peaks."
+    instructions:
+      - "Trace the path from the first tentpole to the last."
+      - "Check for any breaks in the causal chain."
+    questions:
+      - "Does the sequence of events follow a logical progression?"
+      - "Are there any structural gaps?"
+    success_criteria:
+      - "A continuous, unbroken chain of events from start to finish."
+  - name: "character_pass"
+    goal: "Ensure character evolution is tied to physical conflict."
+    instructions:
+      - "Review each set-piece for character impact."
+      - "Check if the character's skills or vulnerabilities are utilized."
+    questions:
+      - "Does the character change after each peak?"
+      - "Is the character's survival/failure earned?"
+    success_criteria:
+      - "The character arc is visibly mapped to the action arc."
+  - name: "theme_pass"
+    goal: "Confirm the spectacle serves the central argument."
+    instructions:
+      - "Identify the central theme."
+      - "Analyze if the set-pieces visually or physically represent that theme."
+    questions:
+      - "Is the theme present in the largest moments?"
+      - "Does the action contradict or support the theme?"
+    success_criteria:
+      - "Thematic resonance is present in all major set-pieces."
+  - name: "visual_storytelling_pass"
+    goal: "Audit the visual impact and motif consistency."
+    instructions:
+      - "Check for 'Money Shots' in every tentpole."
+      - "Verify the use of visual contrast between bridges and peaks."
+    questions:
+      - "Are the visual motifs recurring?"
+      - "Is the scale of the spectacle clearly communicated?"
+    success_criteria:
+      - "A visually cohesive and arresting narrative."
+  - name: "spectacle_escalation_pass"
+    goal: "Ensure the intensity increases throughout the narrative."
+    instructions:
+      - "Compare the physical/environmental stakes of each peak."
+      - "Check for any plateaus in tension."
+    questions:
+      - "Is the final tentpole the most intense?"
+      - "Does each bridge lead to a higher level of danger?"
+    success_criteria:
+      - "A clear upward trajectory of tension and spectacle."
+
+validation_checklist:
+  - "Does every set-piece have a direct impact on the character's journey?"
+  - "Are the 'Bridges' providing the necessary causal links?"
+  - "Is the visual 'Money Shot' identified for every major sequence?"
+  - "Does the story avoid being a mere collection of disconnected clips?"
+  - "Is the scale of the final tentpole significantly higher than the first?"
+  - "Does every bridge contain a specific 'Information Drop'?"
+  - "Are the environmental hazards integrated into the character's vulnerability?"
+  - "Is the character's skill set showcased during the peaks?"
+  - "Does the visual contrast between bridges and peaks is clearly defined?"
+  - "Is the central argument of the theme visible in the action?"
+  - "Does each set-piece have a clear 'Point of No Return'?"
+  - "Are the consequences of the first set-piece the drivers for the second?"
+
+failure_modes:
+  - failure_mode: "The Anthology Trap"
+    symptom: "The story feels like a series of random, unrelated action scenes."
+    likely_cause: "Lack of strong 'Bridge' scenes/causality."
+    fix: "Rewrite the transitions to ensure one event forces the next."
+  - failure_mode: "The Empty Middle"
+    symptom: "The audience loses interest between the big moments."
+    likely_cause: "Bridges are too long or lack tension/information."
+    fix: "Inject micro-conflicts or character-driven stakes into the bridges."
+  - failure_mode: "The Ornamental Set-Piece"
+    symptom: "A visually stunning sequence that feels irrelevant to the plot."
+    likely_cause: "Focusing on spectacle without establishing narrative necessity."
+    fix: "Re-engineer the sequence to ensure it changes the character's status quo or the plot's direction."
+
+adaptation_notes:
+  feature_film: "Focus on 3-5 major pillars (Act 1, Midpoint, Climax)."
+  short_film: "Focus on 1 massive set-piece and its immediate consequence."
+  tv_episode: "Focus on 1 set-piece that resolves the 'A-plot' while setting up the 'B-plot'."
+  tv_pilot: "Use the first set-piece to establish the world's rules and the character's primary vulnerability."
+  anime: "Emphasize visual motifs and 'power-up' sequences as set-pieces."
+  adult_animation: "Leverage extreme environmental destruction and high-concept visual physics."
+  anthology: "Focus on the 'Self-Contained' nature of each set-piece while maintaining a consistent visual language."
+  game_cinematic: "Focus on environmental interaction and player-centric stakes."
+
+yaml_usage_notes:
+  how_to_use: "Start with the 'Set-Piece' IDs. Do not write the 'Bridge' sections until the 'Tentpoles' are finalized."
+  recommended_population_order:
+    - "set_piece_alpha"
+    - "set_piece_omega"
+    - "bridge_alpha_beta"
+    - "character_design"
+  minimum_viable_completion: "At least 3 Tentpoles and 2 Bridges."
+  signs_framework_is_ready_for_scene_outline: "When every 'Bridge' contains a clear 'Cause' and 'Effect' that leads to the next 'Tentpole'."

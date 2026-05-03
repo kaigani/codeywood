@@ -1,0 +1,381 @@
+metadata:
+  framework_name: "Visual Escalation Method Template"
+  methodology_name: "Visual Escalation Method"
+  methodology_family: "Aesthetic-Driven Narrative"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "short film"
+    - "anime"
+    - "action sequence"
+    - "game cinematic"
+    - "adult animation"
+    - "music video"
+  best_for:
+    - "high-concept visual storytelling"
+    - "action-heavy sequences"
+    - "transformative character arcs"
+    - "environmental destruction narratives"
+  not_ideal_for:
+    - "dialogue-heavy chamber dramas"
+    - "purely intellectual/philosophical treatises"
+    - "slow-burn character studies without physical change"
+  target_lengths:
+    - "30-second teaser"
+    - "5-minute short"
+    - "extended action sequence"
+  core_principle: "The narrative's emotional and dramatic stakes are directly proportional to the increasing scale, complexity, and intensity of the visual elements."
+  primary_story_unit: "The Escalation Tier"
+  primary_success_metric: "Visual Momentum (the feeling that the image cannot return to its previous simplicity)"
+
+framework_overview:
+  summary: "A framework designed to build tension through the progressive expansion of visual scope, sensory density, and environmental transformation."
+  what_this_framework_helps_create:
+    - "A sense of inevitable escalation"
+    - "Visceral impact"
+    - "Memorable, iconic imagery"
+    - "A clear visual arc that mirrors the plot arc"
+  what_it_prioritizes:
+    - "Visual scale"
+    - "Sensory saturation"
+    - "Physical transformation"
+    - "Environmental change"
+  what_it_deemphasizes:
+    - "Subtle subtextual dialogue"
+    - "Static character introspection"
+    - "Low-energy exposition"
+
+use_when:
+  - "The story's climax is a physical or environmental event."
+  - "The protagonist's change is visible (scenarios, power, costume, decay)."
+  - "The genre relies on spectacle or kinetic energy."
+
+avoid_when:
+  - "The conflict is entirely internal and lacks any external/physical manifestation."
+  - "The setting is static and cannot be transformed by the plot."
+
+core_principles:
+  - "Visual Symmetry: The end image should be a distorted, magnified, or shattered version of the beginning image."
+  - "The Rule of Increasing Density: Each tier must introduce more visual information or more chaotic movement than the previous."
+  - "The Vector of Change: Every escalation must follow a logical direction (e.g., Small -> Large, Quiet -> Loud, Clean -> Dirty, Single -> Swarm)."
+
+workflow:
+  - step: 1
+    name: "Establish the Visual Baseline"
+    goal: "Define the simplest, cleanest version of the story's world and characters."
+    instructions:
+      - "Identify the 'Seed Image'."
+      - "Define the visual 'Status Quo'."
+    output: "Baseline Visual Profile"
+  - step: 2
+    name: "Determine the Escalation Vector"
+    goal: "Decide how the visuals will grow."
+    instructions:
+      - "Choose a direction of growth (Scale, Chaos, Color, Destruction, or Density)."
+    output: "Escalation Strategy"
+  - step: 3
+    name: "Map the Tiers"
+    goal: "Structure the story into progressive levels of visual intensity."
+    instructions:
+      - "Fill out the methodology_structure for each tier."
+    output: "Visual Tier Outline"
+  - step: 4
+    name: "The Climax/Afterimage Check"
+    goal: "Ensure the final image provides the necessary resolution/impact."
+    instructions:
+      - "Compare the final tier to the baseline tier."
+    output: "Final Visual Validation"
+
+story_inputs:
+  premise: "<write here>"
+  logline: "<write here>"
+  medium: "<write here>"
+  genre: "<write here>"
+  tone: "<write here>"
+  target_length: "<write here>"
+  audience: "<write here>"
+  rating: "<write here>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  logic: "The story is divided into Tiers of Intensity rather than Acts of Plot."
+  tier_1_seed_stage:
+    visual_baseline_definition: "<The simplest possible visual state>"
+    complexity_floor: "<Minimum required visual information>"
+    stability_index: "<How resistant the environment is to change>"
+    primary_color_anchor: "<The base color palette>"
+    sensory_minimum: "<The baseline sound/texture level>"
+  tier_2_disruption_stage:
+    anomaly_trigger: "<The event that breaks the baseline>"
+    complexity_threshold: "<The first jump in visual detail>"
+    instability_vector: "<The direction of the first shift>"
+    sensory_addition_type: "<New sensory layer introduced>"
+    visual_friction_level: "<Degree of visual tension created>"
+  tier_3_expansion_stage:
+    expansion_radius: "<The scope of the spreading change>"
+    chaos_coefficient: "<The level of movement/unpredictability>"
+    density_target: "<The amount of visual information per frame>"
+    environmental_decay_rate: "<How fast the world is transforming>"
+    composition_instability: "<The shift from static to dynamic framing>"
+  tier_4_peak_stage:
+    climax_saturation_lag: "<The limit of visual information before loss of clarity>"
+    visual_density_limit: "<The maximum amount of detail/chaos allowed>"
+    afterimage_definition: "<The core image left in the viewer's mind>"
+    destruction_magnitude: "<The total scale of environmental change>"
+    sensory_overload_threshold: "<The point of maximum sensory impact>"
+
+beats_or_units:
+  - id: "tier_1"
+    name: "The Seed"
+    order: 1
+    purpose: "To establish the visual baseline and the 'before' state."
+    approximate_position: "Beginning"
+    writer_prompt: "How does the visual world start in its simplest, cleanest form?"
+    story_function: "<What happens in the plot here?>"
+    visual_function: "<What is the primary visual state (e.g., stability, simplicity)?>"
+    emotional_function: "<How should the audience feel based on this visual state?>"
+    required_decisions:
+      - "What is the visual 'anchor'?"
+      - "What is the baseline color palette?"
+    fields_to_complete:
+      visual_anchor: "<The primary object/character/setting focus>"
+      escalation_vector: "<The starting point of the vector>"
+      visual_complexity_level: "<Low>"
+      sensory_load: "<The baseline sounds, textures, or colors>"
+      environmental_state: "<The stable, undisturbed state of the world>"
+    diagnostic_questions:
+      - "Is this tier visually distinct from the previous one?"
+      - "Does the simplicity allow for a clear contrast later?"
+    completion_criteria:
+      - "A clear description of the primary image."
+      - "A defined visual 'status quo'."
+    common_failure_modes:
+      - "Visual Plateau: The tier is too complex, leaving no room for growth."
+  - id: "tier_2"
+    name: "The Disruption"
+    order: 2
+    purpose: "To introduce the first anomaly or change in scale."
+    approximate_position: "Transition"
+    writer_prompt: "What visual element breaks the established stability?"
+    story_function: "<What happens in the plot here?>"
+    visual_function: "<The introduction of a visual anomaly or change in scale?>"
+    emotional_function: "<How should the audience feel about this disruption?>"
+    required_decisions:
+      - "What is the new visual 'anchor'?"
+      - "What is the direction of the escalation (e.g., Micro to Macro)?"
+    fields_to_complete:
+      visual_anchor: "<The new object/character/setting focus>"
+      escalation_vector: "<The specific type of growth: e.g., 'Increasing destruction' or 'Increasing light saturation'>"
+      visual_complexity_level: "<Medium>"
+      sensory_load: "<What sounds, textures, or colors are added here?>"
+      environmental_state: "<How has the world changed from the previous tier?>"
+    diagnostic_questions:
+      - "Is this tier visually distinct from the previous one?"
+    completion_criteria:
+      - "A defined shift in the environment or character appearance."
+    common_failure_modes:
+      - "Unearned Chaos: The scale jumps from 'small' to 'apocalyptic' without intermediate steps."
+  - id: "tier_3"
+    name: "The Expansion"
+    order: 3
+    purpose: "To widen the scope and increase the density of visual information."
+    approximate_position: "Midpoint"
+    writer_prompt: "How does the visual 'chaos' begin to spread and overwhelm the frame?"
+    story_function: "<What happens in the plot here?>"
+    visual_function: "<The widening of the scope; the visual 'chaos' begins to spread?>"
+    emotional_function: "<How should the audience feel as the scope expands?>"
+    required_decisions:
+      - "What is the new visual 'anchor'?"
+      - "What is the direction of the escalation (e.g., Micro to Macro)?"
+    fields_to_complete:
+      visual_anchor: "<The expanding object/character/setting focus>"
+      escalation_vector: "<The specific type of growth: e.g., 'Increasing destruction' or 'Increasing light saturation'>"
+      visual_complexity_level: "<High>"
+      sensory_load: "<What sounds, textures, or colors are added here?>"
+      environmental_state: "<How has the world changed from the previous tier?>"
+    diagnostic_questions:
+      - "Is the visual change a consequence of the plot?"
+    completion_criteria:
+      - "A clear description of the expanding visual field."
+    common_failure_modes:
+      - "Visual Plateau: The tier looks too similar to the previous one."
+  - id: "tier_4"
+    name: "The Peak"
+    order: 4
+    purpose: "To reach the maximum density, scale, and intensity."
+    approximate_position: "Climax"
+    writer_prompt: "What is the ultimate, most complex, and most intense visual state?"
+    story_function: "<What happens in the plot here?>"
+    visual_function: "<The maximum density/scale; the visual climax?>"
+    emotional_function: "<How should the audience feel at the peak of intensity?>"
+    required_decisions:
+      - "What is the final visual 'anchor'?"
+      - "What is the final state of the escalation vector?"
+    fields_to_complete:
+      visual_anchor: "<The final object/character/setting focus>"
+      escalation_vector: "<The final state of the vector>"
+      visual_complexity_level: "<Extreme>"
+      sensory_load: "<The peak level of sounds, textures, or colors>"
+      environmental_state: "<The final, transformed state of the world>"
+    diagnostic_questions:
+      - "Is there a clear 'new' element that complicates the frame?"
+      - "Does the final image provide the necessary resolution?"
+    completion_criteria:
+      - "A clear description of the primary image."
+      - "A defined shift in the environment or character appearance."
+    common_failure_modes:
+      - "Visual Overload: The complexity is so high that the narrative impact is lost."
+
+character_design:
+  methodology_role: "Characters must act as visual barometers for the story's intensity."
+  characters:
+    - name: "<write here>"
+      visual_baseline: "<The character's clean/initial appearance>"
+      visual_transformation_arc: "<How their physical state (scares, aura, clothing, posture) degrades or ascends>"
+      visual_symbolism: "<What the character's physical change represents>"
+      key_visual_moment: "<A specific frame where their change is undeniable>"
+
+world_design:
+  methodology_role: "The environment is a dynamic participant that reacts to the escalation."
+  fields:
+    initial_state: "<The stable, simple environment>"
+    transformation_mechanics: "<How the world breaks, grows, or changes (e.g., 'crumbling,' 'blooming,' 'dissolving')>"
+    environmental_climax: "<The state of the world at the highest tier of escalation>"
+    scale_progression: "<e.g., 'Single room' -> 'Cityscape' -> 'Cosmic'>"
+
+theme_design:
+  methodology_role: "Theme is expressed through the tension between the 'Seed' and the 'Peak'."
+  fields:
+    central_visual_metaphor: "<The core image that represents the theme>"
+    the_tension: "<The conflict between simplicity and complexity>"
+    final_image_expression: "<How the theme is visually resolved in the final frame>"
+
+visual_storytelling:
+  methodology_role: "The engine of the entire framework."
+  image_system:
+    color_palette_progression: "<e.g., Monochromatic -> High Saturation -> Overexposed/Blinding>"
+    lighting_evolution: "<e.g., Soft/Natural -> High Contrast/Chiaroscuro -> Harsh/Strobe>"
+    composition_shift: "<e.g., Static/Centered -> Dynamic/Unstable -> Overwhelming/Full-frame>"
+  visual_rules:
+    - "Never repeat a visual composition exactly."
+    - "Every new tier must introduce a new sensory layer (sound, texture, or light)."
+  recurring_motifs:
+    - "<Identify a motif that grows in scale or complexity>"
+  final_image: "<The 'Afterimage'—the single most and most important frame of the story>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must contribute to the 'Visual Load'."
+    - "Action must move the camera/eye from simple to complex."
+  scene_template:
+    scene_id: "<write here>"
+    beat_or_unit: "<Which Tier does this belong to?>"
+    location: "<write here>"
+    characters_present: []
+    visible_goal: "<What is being visually achieved? e.g., 'The character reaches the summit'>"
+    conflict_or_pressure: "<What visual obstacle is present? e.g., 'The encroaching storm'>"
+    turn: "<The moment the visual state shifts in this scene>"
+    visual_anchor: "<The object/person the eye should track>"
+    emotional_shift: "<e.g., 'Calm to Terror' or 'Wonder to Awe'>"
+    exits_with: "<The visual 'cliffhanger' or state of change left at the end of the scene>"
+  do_rules:
+    - "Use physical destruction to signal narrative stakes."
+    - "Use scale changes to signal importance."
+  avoid_rules:
+    - "Avoid long periods of static, unchanging visual composition."
+    - "Avoid 'visual resets' where the world returns to simplicity without narrative reason."
+
+revision_passes:
+  - name: "The Structure Pass"
+    goal: "Ensure the narrative arc follows the visual escalation."
+    instructions:
+      - "Review the progression of tiers."
+      - "Check if the plot beats align with visual shifts."
+    questions:
+      - "Does the story structure support the visual growth?"
+    success_criteria:
+      - "A seamless alignment between plot beats and visual tiers."
+  - name: "The Character Pass"
+    goal: "Verify character physical transformation."
+    instructions:
+      - "Check each character's visual baseline against their peak state."
+    questions:
+      - "Is the character's physical change undeniable?"
+    success_criteria:
+      - "A clear, visible arc of physical change for all key characters."
+  - name: "The Theme Pass"
+    goal: "Ensure the visual metaphor communicates the core theme."
+    instructions:
+      - "Compare the 'Seed' image to the 'Peak' image."
+    questions:
+      - "Does the final image express the central tension?"
+    success_criteria:
+      - "The visual climax provides a thematic resolution."
+  - name: "The Visual Storytelling Pass"
+    goal: "Audit the sensory and compositional evolution."
+    instructions:
+      - "Review the color, lighting, and composition progression."
+    questions:
+      - "Is there a measurable increase in sensory load?"
+    success_criteria:
+      - "A consistent and logical progression of visual complexity."
+  - name: "The Visual Escalation Pass"
+    goal: "Ensure the 'Vector of Change' is never broken or stagnant."
+    instructions:
+      - "Trace the escalation vector from Tier 1 to Tier 4."
+    questions:
+      - "Are there any 'visual resets' that lack narrative justification?"
+    success_criteria:
+      - "A continuous, unbroken sense of increasing momentum."
+
+validation_checklist:
+  - "Does the final image reflect a transformation of the initial image?"
+  - "Is the 'Escalation Vector' consistent throughout the tiers?"
+  - "Does every character change physically in accordance with the plot?"
+  - "Is the 'Visual Peak' the most complex/dense moment in the framework?"
+  - "Is the visual anchor clearly identifiable in every tier?"
+  - "Does the lighting evolution match the increasing intensity?"
+  - "Is the sensory load increasing across the timeline?"
+  - "Does the environmental destruction/change follow a logical path?"
+  - "Is the color palette shift aligned with the escalation strategy?"
+  - "Is the composition becoming progressively more unstable?"
+  - "Are there any 'visual resets' that lack narrative justification?"
+  - "Does the scale progression follow the chosen vector (e.g., Micro to Macro)?"
+
+failure_modes:
+  - failure_mode: "Visual Plateau"
+    symptom: "The audience loses interest because the imagery isn't changing."
+    likely_cause: "Lack of new sensory layers or scale shifts in middle tiers."
+    fix: "Introduce a new environmental element or a change in lighting/color."
+  - failure_mode: "The 'Cheap' Climax"
+    symptom: "The ending is loud/big but feels unearned or disconnected from the start."
+    likely_cause: "The escalation vector was not established in the early tiers."
+    fix: "Plant 'visual seeds' (small versions of the climax) in Tier 1 and 2."
+  - failure_mode: "The 'Visual Reset'"
+    symptom: "The tension evaporates because the world returns to a simple state."
+    likely_cause: "A sudden removal of complexity without a narrative resolution."
+    fix: "Ensure all visual changes are permanent or lead to a new state of complexity."
+
+adaptation_notes:
+  feature_film: "Focus on long-term environmental/world-scale shifts."
+  short_film: "Focus on rapid, high-impact sensory shifts."
+  tv_episode: "Use the escalation to define the 'Episode Arc' specifically."
+  tv_pilot: "Establish the 'Visual Baseline' clearly to set the series' standard."
+  anime: "Emphasize character 'Aura' and 'Transformation' as primary escalation vectors."
+  adult_animation: "Utilize extreme color saturation and textural 'gross-out' or 'beauty' shifts."
+  anthology: "Each entry must establish its own unique 'Visual Seed' and 'Vector'."
+  game_cinematic: "Integrate camera movement and scale to match player-controlled perspective."
+
+yaml_usage_notes:
+  how_to_use: "Populate the 'story_inputs' first, then define the 'methodology_structure' tiers."
+  recommended_population_order:
+    - "1. Story Inputs"
+    - "2. Methodology Structure (Tiers)"
+    - "3. Character & World Design"
+    - "4. Visual Storytelling Engine"
+  minimum_viable_completion: "At least a 3-tier structure with defined 'Escalation Vectors'."
+  signs_framework_is_ready_for_scene_outline: "When you can see a clear 'progression of images' from the first frame to the last."

@@ -1,0 +1,393 @@
+metadata:
+  framework_name: "Mystery Box Template"
+  methodology_name: "Mystery Box Structure"
+  methodology_family: "Enigma-Driven Narrative"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "feature film"
+    - "tv_pilot"
+    - "t_episode"
+    - "anime"
+    - "web_series"
+    - "game_cinematic"
+  best_for:
+    - "high-concept sci-fi"
+    - "supernatural thriller"
+    - "detective noir"
+    - "unexplained phenomena"
+  not_ideal_for:
+    - "slice_of_life"
+    - "purely character-driven drama"
+    - "romance_without_external_conflict"
+  target_lengths:
+    - "90-minute feature"
+    - "45-minute episode"
+  core_principle: "The narrative engine is powered by the tension between what is known and what is hidden; the plot is the process of uncovering the 'Box'."
+  primary_story_unite: "The Revelation/The Clue"
+  primary_success_metric: "The satisfaction of the payoff relative to the intensity of the curiosity generated."
+
+framework_overview:
+  summary: "A framework for stories where the central driving force is an unanswered question or an unexplained phenomenon."
+  what_this_framework_helps_create:
+    - "High-engagement hooks"
+    - "Tension-heavy plot progression"
+    - "Sense of wonder and dread"
+    - "Episodic or serialized momentum"
+  what_it_prioritizes:
+    - "Curiosity"
+    - "Discovery"
+    - "Information asymmetry"
+    - "The 'What happens next?' factor"
+  what_it_deemphas_emphasis:
+    - "Static character studies"
+    - "Resolved, closed-loop narratives"
+    - "Predictable, linear progression"
+
+use_when:
+  - "The central hook is a 'What is that?' or 'Why did this happen?'"
+  - "The plot relies on the characters discovering information the audience does not yet have."
+  - "You want to sustain long-term engagement in a serialized format."
+
+avoid_when:
+  - "The story's emotional core is entirely internal and lacks external mystery."
+  - "The resolution of the mystery is less interesting than the mystery itself (The Empty Box risk)."
+  - "The mystery has no impact on the characters' survival or fundamental desires."
+
+core_principles:
+  - "The Box must be tantalizing: It must promise something significant."
+  - "The Breadcrumbs must be earned: Clues must be logically connected to the Box."
+  - "The Stakes must be personal: The mystery must threaten or define the protagonist's world."
+  - "The Payoff must be transformative: Opening the box must change the characters or the world forever."
+
+workflow:
+  - step: 1
+    name: "Define the Box"
+    goal: "Identify the central enigma."
+    instructions:
+      - "Determine the core unanswered question."
+      - "Establish the scale of the mystery (local vs. cosmic)."
+    output: "The Central Enigma Statement"
+  - step: 2
+    name: "Establish the Investigation"
+    goal: "Create the engine that moves the characters toward the box."
+    instructions:
+      - "Define the characters' primary method of discovery."
+      - "Identify the initial 'Breadcrumbs'."
+    output: "The Investigation Framework"
+  - step: 3
+    name: "Map the Layers"
+    goal: "Plan the sequence of partial reveals."
+    instructions:
+      - "Design the 'Red Herrings' to complicate the path."
+      - "Plan the 'Threshold Revelations' that raise the stakes."
+    output: "The Reveal Roadmap"
+  - step: 4
+    name: "The Unboxing"
+    goal: "Determine the final impact."
+    instructions:
+      - "Define the truth behind the box."
+      - "Ensure the truth recontextualizes everything that came before."
+    output: "The Final Resolution/Consequence"
+
+story_inputs:
+  premise: "<The core 'What if' involving the mystery>"
+  logline: "<Protagonist + Inciting Enigma + The Cost of Discovery>"
+  medium: "<e.g., Feature Film>"
+  genre: "<e.g., Sci-Fi Mystery>"
+  tone: "<e.g., Paranoid, Eerie, Wonder-filled>"
+  target_length: "<e.g., 120 pages>"
+  audience: "<e.g., Young Adult, Horror fans>"
+  rating: "<e.g., PG-13>"
+  production_constraints: []
+  creative_constraints: []
+  reference_points: []
+  must_include:
+    - "The Hook (The Box appearing)"
+    - "A significant clue"
+    - "A moment of profound doubt"
+  must_avoid:
+    - "An answer that is a mere coincidence"
+    - "A mystery that doesn't affect the protagonist"
+
+methodology_structure:
+  the_enigma:
+    central_question: "<What is the one question the audience is dying to know?>"
+    nature_of_the_unknown: "<Is it physical, psychological, historical, or cosmic?>"
+    perceived_danger: "<What happens if the box remains closed? What happens if it is opened?>"
+    the_hook_image: "<The first visual evidence of the mystery appearing in the world>"
+    scale_of_impact: "<How much of the world/universe is affected by this mystery?>"
+    initial_evidence_type: "<Is the first clue physical, auditory, or psychological?>"
+  
+  the_investigation_engine:
+    primary_method: "<How do characters find clues? (e.g., forensic, intuitive, accidental, investigative)>"
+    the_breadcrumb_else_trail:
+      - clue_1: "<Initial piece of evidence>"
+        impact: "<How it changes the protagonist's understanding>"
+      - clue_2: "<Escalating piece of evidence>"
+        impact: "<How it increases the danger>"
+    the_red_herring:
+      false_lead: "<A plausible but incorrect explanation or culprit>"
+      function: "<How it diverts the investigation and wastes time/resources>"
+    clue_frequency: "<How often should the audience receive new information?>"
+    investigative_difficulty: "<How much effort/risk is required to uncover each layer?>"
+    resource_drain: "<What is being depleted as the investigation continues (time, sanity, money, allies)?>"
+  
+  the_layers_of_revelation:
+    layer_1_partial_reveal:
+      content: "<A truth revealed that solves a small part of the mystery but creates a bigger question>"
+      consequence: "<How this forces the characters into a more dangerous position>"
+    layer_2_the_threshold:
+      content: "<A revelation that changes the genre or the scope of the story>"
+      consequence: "<The point of no return for the characters>"
+    revelation_pacing: "<The rhythm of reveals vs. periods of investigation>"
+    consequence_severity: "<The escalating weight of each partial truth>"
+    red_herring_weight: "<The degree to which false leads impact the plot trajectory>"
+
+  the_unboxing:
+    the_truth: "<The actual answer to the central question>"
+    recontextualization: "<How the earlier clues and events now look different in light of this truth?>"
+    the_cost: "<What was lost or destroyed in the pursuit of this truth?>"
+    the_afterimage: "<The new mystery or the permanent change to the world's status quo?>"
+    truth_recontextualization_depth: "<How much of the previous plot is rendered obsolete or transformed?>"
+    permanent_consequence_scale: "<The magnitude of the world-state change after the reveal?>"
+
+beats_or_units:
+  - id: "beat_01"
+    name: "The Enigma"
+    order: 1
+    purpose: "Establish the central mystery and hook the audience."
+    approximate_position: "Inciting Incident / Opening"
+    writer_prompt: "Introduce a visual or narrative anomaly that cannot be ignored."
+    story_function: "Establishes the 'Box' and the primary driving question."
+    visual_function: "A striking, unexplained image or event."
+    emotional_function: "Curiosity, confusion, or sudden dread."
+    required_decisions:
+      - "What is the specific unanswered question?"
+      - "What is the scale of the mystery?"
+    fields_to_complete:
+      enigma_type: ""
+      scale_of_mystery: ""
+    diagnostic_questions:
+      - "Is the mystery too easy to solve immediately?"
+      - "Does the enigma have enough weight to sustain a story?"
+    completion_criteria:
+      - "The central question is clearly articulated."
+      - "The audience understands the immediate stakes of the anomaly."
+    common_failure_modes:
+      - "The mystery is too vague to be interesting."
+      - "The mystery is resolved too quickly."
+
+  - id: "beat_02"
+    name: "The Investigation"
+    order: 2
+    purpose: "Drive the characters toward the truth through discovery."
+    approximate_position: "Rising Action / Development"
+    writer_prompt: "Create a sequence of clues that lead the protagonist deeper into danger."
+    story_function: "Provides the momentum and the 'Breadcrumb Trail'."
+    visual_function: "Discovery of physical evidence, forensic analysis, or environmental clues."
+    emotional_function: "Tension, obsession, and growing paranoia."
+    required_decisions:
+      - "What is the primary method of investigation?"
+      - "What is the first major red herring?"
+    fields_to_complete:
+      methodology: ""
+      first_clue_impact: ""
+    diagnostic_questions:
+      - "Is the investigation moving forward or circling?"
+      - "Are the characters actively pursuing the truth or just reacting?"
+    completion_criteria:
+      - "At least two significant clues have been uncovered."
+      - "The protagonist's obsession is clearly established."
+    common_failure_modes:
+      - "The investigation feels like a series of random events."
+      - "The characters are passive recipients of information."
+
+  - id: "beat_03"
+    name: "The Threshold"
+    order: 3
+    purpose: "Escalate the stakes and change the scope of the mystery."
+    approximate_position: "Midpoint / Second Act Pivot"
+    writer_prompt: "Reveal a truth that makes the original mystery much larger or more dangerous."
+    story_function: "Shifts the genre or the scale of the conflict."
+    visual_function: "A massive visual shift or a revelation of a hidden layer of reality."
+    emotional_function: "Shock, realization, and loss of safety."
+    required_decisions:
+      - "What is the new, larger truth?"
+      - "How does this change the protagonist's goal?"
+    fields_to_complete:
+      new_scope: ""
+      point_of_no_return: ""
+    diagnostic_questions:
+      - "Does this revelation raise the stakes significantly?"
+      - "Is there a way for the characters to turn back now?"
+    completion_criteria:
+      - "The scope of the mystery has expanded."
+      - "The characters are now committed to a more dangerous path."
+    common_failure_modes:
+      - "The revelation is a mere expansion of what was already known."
+      - "The revelation doesn't force the characters to change tactics."
+
+  - id: "beat_04"
+    name: "The Unboxing"
+    order: 4
+    purpose: "Deliver the final truth and its consequences."
+    approximate_position: "Climax / Resolution"
+    writer_prompt: "The characters confront the core of the mystery and face the ultimate cost."
+    story_function: "Resolves the central question and recontextualizes the journey."
+    visual_function: "The full reveal of the 'Box' or the truth behind the anomaly."
+    emotional_function: "Catharsis, devastation, or profound transformation."
+    required_decisions:
+      - "What is the final, undeniable truth?"
+      - "What is the permanent cost of this knowledge?"
+    fields_to_complete:
+      the_truth: ""
+      the_cost: ""
+    diagnostic_questions:
+      - "Does the truth recontextualize the earlier clues?"
+      - "Is the payoff satisfying relative to the buildup?"
+    completion_criteria:
+      - "The central question is answered."
+      - "The world or characters are permanently altered."
+    common_failure_modes:
+      - "The 'Empty Box' (the answer is underwhelming)."
+      - "The answer is a mere coincidence or 'deus ex mach dema'."
+
+character_design:
+  methodology_role: "Characters are defined by their relationship to the mystery."
+  characters:
+    - name: "<Protagonist>"
+      obsession_driver: "<Why can they NOT walk away from this mystery?>"
+      vulnerability: "<How does the mystery exploit their specific weaknesses?>"
+      connection_to_box: "<Is the mystery a personal trauma, a professional duty, or an accidental encounter?>"
+    - name: "<The Antagonist/Obstacle>"
+      relationship_to_truth: "<Do they want to hide the truth, or are they protecting a different lie?>"
+      method_of_interference: "<How do they actively disrupt the investigation?>"
+
+world_design:
+  methodology_role: "The world must feel like it is hiding something."
+  fields:
+    the_hidden_layer: "<What part of the world's history or physics is obscured from the characters?>"
+    environmental_clues: "<How does the setting itself provide or withhold information?>"
+    the_status_quo_pre_mystery: "<How the world functioned before the 'Box' appeared>"
+
+theme_design:
+  methodology_role: "The theme is the philosophical weight of the mystery."
+  fields:
+    central_tension: "<Knowledge vs. Ignorance | Truth vs. Safety | Curiosity vs. Survival>"
+    the_price_of_knowing: "<What is the emotional or physical cost of uncovering the truth?>"
+    the_lesson_learned: "<What does the protagonist realize about the nature of truth by the end?>"
+
+visual_storytelling:
+  methodology_role: "Visuals should emphasize the 'unseen' and the 'fragmented'."
+  image_system:
+    motifs_of_the_unknown: ["Shadows", "Obscured faces", "Fragmented reflections", "Unfinished objects"]
+    visual_clue_pattern: "<How are clues visually presented? (e.g., Glitches, ancient symbols, bloodstains)>"
+  visual_rules:
+    - "Use framing to hide or reveal information."
+    - "Use lighting to create pockets of 'unexplored' space."
+  final_image: "<An image that captures the new reality after the box is opened>"
+
+scene_generation_rules:
+  scene_principles:
+    - "Every scene must either provide a clue, complicate a clue, or reveal a consequence of a clue."
+    - "Information should be drip-fed, never dumped."
+  scene_template:
+    scene_id: ""
+    beat_or_unit: ""
+    location: ""
+    characters_clue_seeking: []
+    new_information_revealed: ""
+    information_withheld: ""
+    visual_anchor_of_mystery: ""
+    emotional_shift: "<From curiosity to dread, or confusion to clarity>"
+    exits_with: "<A new question or a pressing need to act>"
+  do_rules:
+    - "Show the effect of the mystery on the environment."
+    - "Focus on the character's reaction to the unknown."
+  avoid_rules:
+    - "Avoid 'Exposition Dumps' where characters explain the mystery to each other."
+    - "Avoid solving the mystery too early without consequences."
+
+revision_passes:
+  - name: "The Curiosity Audit"
+    goal: "Ensure the mystery remains engaging."
+    instructions: ["Check every beat. Is there a question being thrown at the audience?"]
+    questions: ["Does the audience know enough to be interested, but not enough to be certain?"]
+    success_criteria: ["The tension of the unknown is constant."]
+  - name: "The 'Empty Box' Check"
+    goal: "Ensure the payoff is worth the buildup."
+    instructions: ["Compare the scale of the 'Box' to the scale of the 'Truth'."]
+    questions: ["Is the answer disappointing or underwhelming?"]
+    success_criteria: ["The revelation recontextualizes the entire story."]
+  - name: "The Personal Stakes Pass"
+    goal: "Ensure the mystery isn't just a puzzle, but a drama."
+    instructions: ["Review character motivations."]
+    questions: ["If the mystery was solved tomorrow, would the character's life be fundamentally different?"]
+    success_criteria: ["The character's internal arc is tied to the external mystery."]
+  - name: "The Structure Pass"
+    goal: "Ensure the narrative momentum is maintained."
+    instructions: ["Analyze the pacing of reveals."]
+    questions: ["Are there long stretches without new information?"]
+    success_criteria: ["The investigation engine never stalls."]
+  - name: "The Character Pass"
+    goal: "Ensure characters are not just investigators, but participants."
+    instructions: ["Check if character flaws are being tested by the mystery."]
+    questions: ["Is the mystery exploiting the protagonist's specific vulnerabilities?"]
+    success_criteria: ["The mystery drives character change."]
+  - name: "The Theme Pass"
+    goal: "Ensure the mystery carries philosophical weight."
+    instructions: ["Identify the central tension."]
+    questions: ["Does the resolution of the mystery address the central tension?"]
+    success_criteria: ["The 'Unboxing' provides a thematic conclusion."]
+  - name: "The Visual Storytelling Pass"
+    goal: "Ensure the mystery is visually encoded."
+    instructions: ["Review the use of shadows, framing, and motifs."]
+    questions: ["Can the audience 'see' the mystery even when it isn't explained?"]
+    success_criteria: ["Visual clues are integrated into the environment."]
+  - name: "The Clue Integrity Pass"
+    goal: "Ensure the logic of the investigation holds up."
+    instructions: ["Trace the path from the first clue to the final truth."]
+    questions: ["Are there any leaps in logic that rely on pure coincidence?"]
+    success_criteria: ["The path to the truth is logically sound and earned."]
+
+validation_checklist:
+  - "Does the 'Box' present a clear, high-stakes question?"
+  - "Are the clues logically connected to the final revelation?"
+  - "Is there a clear distinction between 'The Truth' and 'The Red Herring'?"
+  - "Does the resolution of the mystery force a change in the protagonist?"
+  - "Is the 'Unboxing' moment visually and emotionally significant?"
+  - "Is the information drip-fed to prevent exposition dumps?"
+  - "Does the mystery have a tangible impact on the setting?"
+  - "Are the stakes personal enough to drive the protagonist's actions?"
+  - "Does the investigation engine provide enough momentum to prevent mid-story sag?"
+  - "Is the scale of the mystery appropriate for the chosen medium?"
+  - "Does the payoff avoid being a mere coincidence?"
+
+failure_modes:
+  - failure_mode: "The Empty Box"
+    symptom: "The audience feels cheated or bored by the answer."
+    likely_cause: "The mystery was too large/imaginative for the actual plot to support."
+    fix: "Scale down the mystery or increase the impact of the reveal."
+  - failure_mode: "The Information Dump"
+    symptom: "Characters explaining the plot to each other in long monologues."
+    likely_cause: "Lack of visual clues or physical evidence in the investigation."
+    fix: "Replace dialogue with visual discovery or 'Show, Don't Tell' evidence."
+  - failure_mode: "The Unconnected Mystery"
+    symptom: "The mystery feels like a random event with no impact on the characters."
+    likely_cause: "The protagonist's motivation is purely academic/professional rather than personal."
+    fix: "Tie the mystery to a character's past, trauma, or survival."
+
+adaptation_notes:
+  feature_film: "Focus on one major 'Box' and one major 'Unboxing'."
+  short_film: "The 'Box' should be the very first thing seen; the 'Unboxing' is the climax."
+  tv_episode: "The 'Box' is a single clue; the 'Unboxing' is the episode's resolution."
+  tv_pilot: "The 'Box' must establish the series-long mystery; the 'Unboxing' is a partial reveal."
+  anime: "Use high-concept visual metaphors for the 'Box' (e.g., cosmic entities, magical laws)."
+  adult_animation: "Use visceral or psychological imagery to represent the 'Box' and its consequences."
+  anthology: "Each episode must have a self-contained 'Box' and 'Unboxing'."
+  game_cinematic: "The 'Box' can be an interactive element or a landscape feature."
+
+yaml_usage_notes:
+  how_to_use: "Start with 'The Enigma'. Do not populate the 'Investigation' until you know what you are investigating."
+  recommended_population_order: []

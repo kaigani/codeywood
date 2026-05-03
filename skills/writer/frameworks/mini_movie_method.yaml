@@ -1,0 +1,231 @@
+metadata:
+  framework_name: "Mini-Movie Method Template"
+  methodology_name: "Mini-Movie Method"
+  methodology_family: "Compressed Narrative"
+  version: "1.0"
+  created_for: "story development"
+  suitable_media:
+    - "short film"
+    - "anime short"
+    - "social media micro-story"
+    - "commercial/spec"
+    - "animated bumper"
+    - "game cinematic"
+  best_for:
+    - "high-impact, short-duration narratives"
+    - "character-driven snapshots"
+    - "concept-heavy visual stories"
+  not_ideal_for:
+    - "epic-length feature films"
+    - "slow-burn character studies"
+    - "complex multi-protagonist sagas"
+  target_lengths:
+    - "30 seconds to 10 minutes"
+  core_principle: "Maximum narrative density through rapid causality and immediate engagement."
+  primary_story_unit: "The Narrative Beat (The Pivot)"
+  primary_success_metric: "Emotional/Narrative Impact-to-Duration Ratio"
+
+framework_overview:
+  summary: "The Mini-Movie Method is designed to strip away all non-essential exposition, focusing entirely on a rapid sequence of disruption, escalation, and resolution. It treats every second as a high-stakes pivot point."
+  what_this_framework_helps_create:
+    - "Impactful short-form content"
+    - "High-concept visual narratives"
+    - "Condensed, punchy story arcs"
+  what_it_prioritizes:
+    - "Visual shorthand"
+    - "Immediate conflict"
+    - "Causal momentum"
+  what_it_deemphasizes:
+    - "Extensive backstory"
+    - "Subplots"
+    - "Slow character development"
+
+use_when:
+  - "Working with strict time constraints"
+  - "Focusing on a single, powerful idea"
+  - "Creating content for platforms with low attention spans"
+
+avoid_when:
+  - "When the story requires deep world-building before the conflict begins"
+  - "When the emotional payoff relies on long-term character growth"
+
+core_principles:
+  - "The Hook must be immediate (within the first 5-10% of runtime)."
+  - "No beat should exist solely for exposition; every beat must move the plot or change the state."
+  - "Conflict must be visible and actionable."
+  - "The 'Aftermath' must provide a definitive emotional or thematic closure (or a sharp twist)."
+
+workflow:
+  - step: 1
+    name: "The Core Concept"
+    goal: "Identify the single most impactful idea."
+    instructions:
+      - "Define the 'What if' that can be resolved quickly."
+    output: "High-concept premise"
+  - step: 2
+    name: "The Hook Construction"
+    goal: "Create an immediate visual or narrative disruption."
+    instructions:
+      - "Design an opening image that demands attention."
+    output: "Opening Beat"
+  - step: 3
+    name: "Beat Mapping (The Chain of Causality)"
+    goal: "Connect disruption to resolution using 'Therefore/But' logic."
+    instructions:
+      - "Map the sequence of events where each event causes the next."
+    output: "Structural Outline"
+  - step: 4
+    name: "The Compression Pass"
+    goal: "Remove any beat that does not directly contribute to the climax."
+    instructions:
+      - "Audit every beat for 'narrative weight'."
+    output: "Condensed Beat Sheet"
+
+story_inputs:
+  premise: "<The core 'What if' of the mini-movie>"
+  logline: "<One sentence: Character + Inciting Incident + Goal + Stakes>"
+  medium: "<e.g., 3-minute animated short>"
+  genre: "<e.g., Sci-Fi / Comedy>"
+  tone: "<e/g., Tense, Whimsical, Melancholic>"
+  target_length: "<e.g., 120 seconds>"
+  audience: "<e.g., Gen Z, Animation Fans>"
+  rating: "<e.g., PG>"
+  production_constraints:
+    - "<e.g., Single location only>"
+    - "<e.g., No dialogue allowed>"
+  creative_constraints:
+    - "<e.g., Must end with a twist>"
+  reference_points: []
+  must_include: []
+  must_avoid: []
+
+methodology_structure:
+  structure_type: "Compressed 5-Beat Chain"
+  logic_flow: "Disruption -> Reaction -> Escalation -> Peak -> Resolution"
+  stages:
+    stage_01_disruption:
+      logic_gate: "The Break"
+      tension_delta: "Immediate Increase"
+      visual_requirement: "High Contrast"
+      narrative_weight: "Essential"
+    stage_02_reaction:
+      logic_gate: "The Pivot"
+      tension_delta: "Steady Rise"
+      visual_requirement: "Character Focus"
+      narrative_weight: "High"
+    stage_03_escalation:
+      logic_gate: "The Complication"
+      tension_delta: "Exponential"
+      visual_requirement: "Increasing Chaos"
+      narrative_weight: "High"
+    stage_04_climax:
+      logic_gate: "The Collision"
+      tension_delta: "Peak"
+      visual_requirement: "Dynamic Motion"
+      narrative_weight: "Critical"
+    stage_05_resolution:
+      logic_gate: "The Aftermath"
+      tension_delta: "Resolution/Twist"
+      visual_requirement: "Thematic Mirror"
+      narrative_weight: "High"
+
+beats_or_units:
+  - id: "beat_01_the_hook"
+    name: "The Hook / Status Quo"
+    order: 1
+    purpose: "Establish the 'normal' and immediately disrupt it."
+    approximate_position: "0-10%"
+    writer_prompt: "What is the first thing the audience sees, and how does it immediately signal that something is wrong or interesting?"
+    story_function: "Establishes stakes and captures attention."
+    visual_function: "Strong, iconic opening image."
+    emotional_function: "Curiosity or immediate tension."
+    required_decisions:
+      - "What is the visual 'anchor' of the opening?"
+      - "How is the disruption signaled?"
+    fields_to_complete:
+      opening_image: "<describe the visual>"
+      the_disruption: "<what changes in the first seconds?>"
+    diagnostic_questions:
+      - "Is the hook happening too late?"
+      - "Does the audience understand the 'rules' of this world immediately?"
+    completion_criteria:
+      - "The audience is visually engaged within seconds."
+    common_failure_modes:
+      - "Too much slow-build/exposition."
+
+  - id: "beat_02_the_inciting_incident"
+    name: "The Inciting Incident"
+    order: 2
+    purpose: "Force the character into action."
+    approximate_position: "10-25%"
+    writer_prompt: "What event makes it impossible for the character to return to their previous state?"
+    story_function: "Sets the trajectory of the plot."
+    visual_function: "A change in movement, color, or sound."
+    emotional_function: "Urgency or realization."
+    required_decisions:
+      - "What is the character's immediate reaction?"
+      - "What is the immediate consequence?"
+    fields_to_complete:
+      the_event: "<what happened?>"
+      character_reaction: "<what do they do first?>"
+    diagnostic_questions:
+      - "Is the consequence of this event clear?"
+      - "Does this event force a choice?"
+    completion_criteria:
+      - "The character's goal is now clearly defined."
+    common_failure_modes:
+      - "The incident is too passive; the character is just watching it happen."
+
+  - id: "beat_03_the_escalation"
+    name: "The Escalation"
+    order: 3
+    purpose: "Increase the pressure through a series of 'But/Therefore' events."
+    approximate_position: "25-70%"
+    writer_prompt: "How does the situation become progressively more difficult or absurd?"
+    story_function: "Builds tension and tests the character's resolve."
+    visual_function: "Increasingly chaotic or high-contrast imagery."
+    emotional_function: "Anxiety, excitement, or dread."
+    required_decisions:
+      - "What is the 'point of no return' within this sequence?"
+      - "What is the secondary complication?"
+    fields_to_complete:
+      complication_1: "<event 1>"
+      complication_2: "<event 2>"
+      the_pivot: "<the moment where things go from bad to worse>"
+    diagnostic_questions:
+      - "Are we just adding more stuff, or are the stakes actually rising?"
+      - "Is the causality chain unbroken?"
+    completion_criteria:
+      - "The character is pushed to their absolute limit."
+    common_failure_modes:
+      - "Repetitive action without increasing tension."
+      - "Loss of causal momentum."
+
+  - id: "beat_04_the_climax"
+    name: "The Climax"
+    order: 4
+    purpose: "The final confrontation or the moment of truth."
+    approximate_position: "70-90%"
+    writer_prompt: "What is the highest point of tension where the character must make a definitive choice or action?"
+    story_function: "The collision of the character's want and the obstacle."
+    visual_function: "Dynamic motion, peak lighting, or extreme close-ups."
+    emotional_function: "Catharsis, shock, or heartbreak."
+    required_decisions:
+      - "Does the character succeed or fail?"
+      - "What is the cost of the choice?"
+    fields_to_complete:
+      the_confrontation: "<the peak action>"
+      the_decisive_moment: "<the choice made>"
+    diagnostic_questions:
+      - "Is this the most intense moment in the film?"
+      - "Is the resolution of the conflict earned?"
+    completion_criteria:
+      - "The primary conflict is resolved (one way or another)."
+    common_failure_modes:
+      - "The climax feels unearned or disconnected from the setup."
+
+  - id: "beat_05_the_aftermath"
+    name: "The Aftermath / Twist"
+    order: 5
+    purpose: "Show the new reality or deliver the final punchline/twist."
+    approximate_position: "90-100%"
