@@ -1,7 +1,7 @@
 ---
 skill: writers-room
 role: writer
-version: 3.3
+version: 3.6
 
 description: |
   Persona-driven writers room led by a head writer (showrunner). The head
@@ -51,6 +51,63 @@ description: |
   (Phase 5) and AAA stay framework-agnostic — frameworks structure plot,
   experience map structures feeling.
 
+  v3.4 (2026-05-03): Two graduated process upgrades, validated on Stray
+  Signal v3.
+
+  (a) **In-voice transcript capture**: All review rounds (Phase 4 Story
+  Lock Review and any subsequent re-review) capture the room's response
+  as longform dialogue in each writer's voice — not a summary, not a
+  flag list. The transcript IS the artifact. This was discovered when
+  the v3 Stray Signal round produced a markedly sharper diagnosis as
+  in-voice prose than prior rounds had as flag summaries. Saves
+  context, captures the *reasoning* (which the room needs to revisit
+  later) and not just the conclusions, and forces the writer to argue
+  in voice rather than abstract from voice.
+
+  (b) **Audience Premortem**: A callable sub-step where the room
+  imagines that the current Story Lock has been screened to a
+  representative audience cohort and the response was poor. Each writer
+  delivers a credible failure-mode hypothesis from inside their lane,
+  in voice. The AAA delivers a harsh test-audience verdict. The head
+  writer aggregates the structural pattern. Premortem produces sharper
+  diagnosis than waiting for actual flags because it forces the room
+  into failure-state cognition (Gary Klein methodology). REQUIRED at
+  Phase 4 and Phase 6 (per-episode lock); OPTIONAL at Phase 5. See
+  "Audience Premortem Pattern" section below.
+
+  v3.5 (2026-05-03): Adds **Phase 3.5: Lore Forge** between Story Lock
+  v1 (Phase 3) and Story Lock Review (Phase 4). The head writer drafts
+  `STORY/WRITERS_ROOM/SEASON_LORE.md` — a deep cultural-historical
+  document (~250 years of in-world history) covering the war, class
+  evolution, cultural and linguistic substrates, generational naming
+  trends across class lines, and principal-character genealogies. The
+  character-namer skill (when invoked) then operates on the lore
+  rather than running the Anti-Trope Protocol from real-world pulls
+  alone. Discovered during Stray Signal v3 when v2.1 character names
+  (Beryl Heath, Orville Plinth, Heledd Vaughn) passed all Anti-Trope
+  Vibe Checks but felt "disconnected from the universe" — they were
+  literarily defensible but not lore-grounded. The lore is what makes
+  a name like *Heledd Vaughn* land as a person from a place rather than
+  a literary pull. Required for any project richer than a one-shot;
+  optional for single-character shorts. See "Phase 3.5: Lore Forge"
+  section below.
+
+  v3.6 (2026-05-03): Adds upstream **structural-stakes enforcement** at
+  the draft level (Phase 3) and as required premortem lanes at review
+  level (Phase 4). Discovered after Stray Signal v3 v3.2: documenting
+  the Claude villain-vacuum ceiling and the war-isn't-actually-a-war
+  default in memory did not prevent the room from producing them at
+  first draft — the user's craft note was still load-bearing. Memory
+  is read after a flag, not before the draft. The fix is a required
+  **Structural Stakes** section in STORY_LOCK_v1.md (Phase 3) where
+  the head writer must answer concrete, countable questions about the
+  inciting event's scale, the embodied antagonist's footprint, and
+  the named-figure consequence beat — before review. Plus two
+  required premortem lanes at Phase 4 (Stakes + Antagonist) the AAA
+  must address; the round cannot return clean without concrete
+  answers in both. Together these move the fix upstream of the
+  failure mode rather than catching it after.
+
 inputs:
   required:
     - name: creative_brief
@@ -75,10 +132,23 @@ outputs:
     type: file
     path: STORY/WRITERS_ROOM/STORY_LOCK_v1.md
     description: Head writer's initial Story Lock (before room review)
+  - name: season_lore
+    type: file
+    path: STORY/WRITERS_ROOM/SEASON_LORE.md
+    description: |
+      (v3.5) Head writer's deep lore document — ~250 years of in-world
+      history covering war, class evolution, language and naming
+      traditions, principal-character genealogies. Required input for
+      character-namer when invoked. Required for projects richer than
+      one-shots; optional for single-character shorts.
   - name: story_lock_review
     type: file
     path: STORY/WRITERS_ROOM/story_lock_review.md
-    description: Room review round — flags, debates, decisions
+    description: |
+      Room review round. (v3.4) Captured as longform in-voice transcript
+      (each writer speaking in their own voice across the round), not as
+      a flag summary. The transcript IS the artifact. Includes any
+      Audience Premortem sub-step output.
   - name: story_lock
     type: file
     path: STORY/WRITERS_ROOM/STORY_LOCK.md
@@ -90,7 +160,9 @@ doneness:
     - Head writer selected and configured in PROJECT_CONFIG.yaml
     - Room assembled with lanes assigned (hire for gaps named in framework.failure_modes)
     - Story Lock v1 written by head writer with all six components, episode arc filled using framework.beats_or_units
+    - (v3.6) Story Lock v1 contains a Structural Stakes section answering Lane A (Inciting Event Stakes) and Lane B (Embodied Antagonist) in concrete / countable terms — or documenting a deliberate-NO choice in voice
     - Room review completed (one flag per writer, sorted into accept/debate/table; framework.validation_checklist run as pre-flight)
+    - (v3.6) Phase 4 premortem covered the two Required Premortem Lanes (Stakes + Antagonist) with AAA delivery and head-writer response in voice
     - Story Lock updated to v2 with changes marked
     - Every character has fatal flaw, hidden desire, wound, and arc
     - Structural constraints locked and enforceable
@@ -324,6 +396,52 @@ A weak story lock produces a room that argues about fundamentals. A strong story
 
 The head writer writes this using `STORY/CREATIVE_BRIEF.md` and `STORY/FRAMEWORK.yaml` as inputs, filtered through their `creative_philosophy`, `taste`, and `craft_method`. The framework is consulted in this order: `methodology_structure` (the spine) → `core_principles` (the constraints) → `story_inputs` (what the framework demands the writer have already decided) → `beats_or_units` (the per-beat fill) → `validation_checklist` (the self-check).
 
+### Structural-Stakes Checklist (v3.6, NEW — REQUIRED)
+
+*This is the upstream fix for two documented Claude architectural defaults: the **villain-vacuum ceiling** (`memory/feedback_villain_vacuum_claude_ceiling.md`) and the **war-isn't-actually-a-war** softening that the model produces at first draft when the brief mentions a war or upheaval but does not specify scale. Both defaults survive the anti-viral blocklist; both have been re-discovered after detailed memory documentation. The fix has to live in the draft itself, not in post-hoc review.*
+
+**The mechanism:** A required `## Structural Stakes` section in `STORY_LOCK_v1.md`. The head writer must answer the questions below in concrete, countable terms — adjectives are insufficient. If a question cannot be answered concretely, the head writer either (a) drafts the answer and folds it into the lock, or (b) documents a **deliberate** choice to write the project without that element, with a one-paragraph reason. Silently leaving a question unanswered is itself an automatic ACCEPTED flag at Phase 4 (consumes no writer's flag).
+
+The questions are deliberately specific. Vague questions ("is this serious?") get answered "yes" and the failure persists. Concrete questions force concrete answers.
+
+#### Lane A — Inciting Event Stakes
+
+If the project's premise rests on a war, plague, regime change, climate collapse, accident, occupation, or any historical/world event whose memory shapes the present-tense story, answer:
+
+1. **Name the event in one sentence.** Date range, what it was called by the official record, what it was called in oral testimony if those differ.
+2. **Casualty / scale of loss in countable terms.** Numbers, ranges, or proportions — not adjectives. If the event was non-lethal, what was the equivalent loss (displacement count, infrastructure destroyed, language extinction percentage, populations dispersed)? "Devastating" / "terrible" / "many died" are insufficient — name the count, even approximately, even contested between official and oral records.
+3. **What was destroyed that cannot be recovered.** List specifically. Records (whose, in what archive)? Languages (which, spoken by whom)? Populations (named, with where they used to live)? Infrastructure with cultural meaning (a chapel, a foundry, a school)? If "nothing was destroyed" — fine, but document the deliberate choice and the show's threat then has to come from elsewhere.
+4. **What survives that the show can stage as evidence of the loss.** The list above is the off-screen ground; the on-screen counterparts are what matter. A surviving kettle. An older relative who remembers. A ruined building visible from the present-tense city. A word in a language nobody is supposed to speak. If you cannot name at least three on-screen survivors, the loss will not register on screen — **return to step 3 and revise**.
+5. **Inheritability.** How does the loss reach the protagonist? Direct ancestor? Adopted memory through an artifact (the cat-as-Mule pattern)? Cultural inheritance through community? Without an inheritance mechanism, the event is backstory and produces no present-tense pressure.
+
+If the answer to any of these is "this is not that kind of show" — document it as a deliberate choice, in voice, and the room will critique that choice rather than the absent stake.
+
+#### Lane B — Embodied Antagonist
+
+Answer YES or NO. If NO, document the deliberate alternative.
+
+1. **Is there a named, embodied antagonist?** If NO: who or what is the source of pressure on the protagonist? A system? A choice? A natural force? Document the alternative and how the show stages its dread without a body. (This is harder than it sounds; most projects that try this end up with a soft show.)
+2. **What is their concrete generational grievance?** A literal inheritance (a file, a debt, an unfinished project, an obligation), not an ideology. The grievance must be *something they could finish* — that's what gives them present-tense agency. Vague worldview ("they hate the protagonist's people") is insufficient. The grievance must point at a specific act they are in the middle of completing.
+3. **What is their on-show footprint?** Map across episodes: voice (audio-only) → body (one or two short scenes, brief instructions, no monologue) → name (spoken aloud once by a trusted character) → silence (visual stillness at climax, often the season's deepest threat). For projects with a no-theatre tonal rule, this is the **senior-superior pattern** (`memory/feedback_embodied_villain_senior_superior.md`) — the antagonist is the boss of a known bureaucrat, escalated through senses, calibrated to never break the no-theatre rule. If the project has no no-theatre rule, the antagonist may be staged more directly — but still allocate the senses-escalated footprint, since restraint is the load-bearing aesthetic discipline.
+4. **Is there a planned named-figure consequence beat?** One named recurring figure from the inhabited world is taken by the antagonist's project mid-season. Which episode? Delivered on-screen or off-screen? Reverberation across how many episodes after? This is the beat that makes the threat *threat* rather than *atmosphere*. Without it, the antagonist reads as bureaucratic register and the audience does not feel the cost.
+5. **Lineage subtext (optional, for series).** Is the antagonist's grievance against the protagonist's actual bloodline? Held as audience-assembled subtext? When does S2 (or the next reveal beat) confirm? If unused, mark NA.
+
+#### What "Required" Means
+
+The Structural Stakes section is a load-bearing element of the Story Lock, on the same level as Logline / Final Premise / World Rules / Character Shadows / Episode Arc / Structural Constraints. The head writer cannot skip it. Phase 4 (Story Lock Review) checks for its presence as a pre-flight item:
+
+- **Section absent**: automatic ACCEPTED flag — Story Lock returns to Phase 3 for completion.
+- **Section present, questions answered with adjectives or hand-waving**: automatic ACCEPTED flag — head writer rewrites with countable / concrete answers.
+- **Section present, deliberate-NO answer documented in voice**: passes pre-flight; the room may critique the deliberate choice, but it does not consume a writer's one flag.
+
+#### Why This Works (And Why Memory Alone Did Not)
+
+This pattern moves the fix from *post-hoc review* (where a memory or AAA flag catches the failure after the draft) to *upstream draft* (where the questions force the head writer to answer before the failure can land). The villain-vacuum ceiling and the soft-war default both survive memory because memory is consulted on demand, not on write. A required section is consulted on write — by definition. It is not optional reading.
+
+The questions are specific enough that vagueness is visibly insufficient. "The war was devastating" cannot answer Lane A.2; the head writer must name a count or a proportion or document a deliberate refusal to. Once the head writer is producing concrete answers, the rest of the lock is built on real ground.
+
+This is the lesson from Stray Signal v3 v3.2: the user's craft note (*"the war was a real, devastating war that reset history"* + *"a really nasty embodied villain, perhaps Beryl's boss, who is cruel, vindictive and just wants to obliterate the denizens of the Seam with a kind of genocidal mania"*) was load-bearing because nothing else upstream forced the room to specify those stakes. Now upstream forces it.
+
 ### Anti-Viral Blocklist (v3.2)
 
 Append `skills/writer/ANTIVIRAL_PROMPT.md` as the LAST section of the head writer's Story Lock prompt — after the persona lens, after the brief, after the POWER_STACK. This is the shared anti-viral list graduated from pitch-round v2.6.
@@ -339,13 +457,134 @@ Save as `STORY/WRITERS_ROOM/STORY_LOCK_v1.md`.
 
 ---
 
+## Phase 3.5: Lore Forge (v3.5, NEW)
+
+*This phase runs between Story Lock v1 and Story Lock Review. It produces the cultural-historical substrate that grounds names, dialogue, set dressing, and character behaviour for the rest of the project.*
+
+**Why:** The character-namer skill, run from real-world Anti-Trope Protocol pulls alone, can produce names that pass every Vibe Check but feel disconnected from the universe. Anti-Trope prevents *generic*; it cannot, on its own, ground names in the *specific* world. That grounding has to come from the world itself — the war the city survived, the populations that founded it, the language that was suppressed, the fashion of the year a 60-year-old character was born. Without lore, layering reads rich on the surface and hollow on closer reading. With lore, every name traces to a person from a place.
+
+The same principle scales to all surface-detail design: street names, foods, swearwords, signage, the slang a 12-year-old uses versus the slang her grandmother uses. The lore IS the source material — the named details are extracted from it.
+
+**Discovered during Stray Signal v3 (2026-05-03):** v2.1 names — Beryl Heath, Orville Plinth, Heledd Vaughn — passed all Anti-Trope Vibe Checks (literary outsourcing, historical frequency 300-400, cultural tradition, surname synthesis). The user surfaced that they "felt disconnected from the universe." Beryl is a 1940s English mineral name with no in-world reason to exist; Welsh appears via Heledd with no in-world reason for there to be Welsh. Lore Forge was the fix — and now graduates as a phase.
+
+**Required for:** any project richer than a single-character one-shot — series, novellas, multi-character shorts where class/generational/cultural stratification is baked into the premise.
+
+**Optional for:** single-character shorts, scenes with 1-2 named characters where the lore would never surface on screen.
+
+### Step 1: Head Writer Drafts SEASON_LORE.md
+
+The head writer drafts a deep cultural-historical document covering the past ~250 years of the world. Voice: in-world historian / archive-keeper / oral-tradition tone — whatever fits the project. Length: long enough to do the work; for a series this is typically 2,000-5,000 words.
+
+**Required sections:**
+
+1. **Chronology** — A dated timeline of the past ~250 years. Key historical events: wars, migrations, regime changes, technology shifts, plagues, founding moments. Each event named with the kind of specificity that suggests a real history (date ranges, names of who started what, names of what came after).
+
+2. **Populations** — Who founded this world and where they came from. Which groups migrated when. What language(s) they brought. Where each population settled in the spatial geography of the world (which side of the river, which floor of the city, which districts). This is the substrate of every later cultural detail.
+
+3. **Class Evolution** — How the social order stratified. Who was on top in 1900 and who is on top now and what happened in between. Class is a function of population × time × event, and naming traditions move along class lines, so this is a load-bearing section.
+
+4. **Language and Naming Traditions** — Which languages are dominant, which are suppressed or dying, which are decorative-but-not-spoken. Generational naming trends across class lines: what was fashionable in 1958 versus 1995 versus now, and how that varied by class. What kinds of names a Corporation cartographer carries versus a Seam kid versus a Hen Iaith matriarch (translate to the project's equivalents). Specific naming conventions: matronymics, surname etymology, nickname culture, pet-name traditions.
+
+5. **Principal-Character Genealogies** — For each named character in Story Lock v1, sketch grandparents → parents → character. What population are they from. What event of the chronology shaped their family. Why their parents chose their first name. What surname they carry and what it means in this world. This is the section the character-namer reads first.
+
+6. **What the Lore Buys the Show** — A short closing section where the head writer says, in voice: which Story Lock decisions are now lore-grounded, which world-rules now have an "of course it's that way, look at the chronology" reading, what's reserved for later seasons.
+
+**Constraint:** the lore must remain *operative* — the head writer is not writing a worldbuilder's appendix, they are writing the substrate the room will draft from. If a lore detail isn't load-bearing for at least one named character, scene type, or world-rule, cut it.
+
+### Step 2: Character-Namer (When Invoked) Operates on Lore
+
+If the project calls the character-namer skill (or runs Anti-Trope Protocol on names), the lore is loaded as the primary input. Each name must trace to a specific cultural/historical reason in SEASON_LORE.md:
+
+- Which substrate language?
+- Which generational trend (the year of birth × the class)?
+- Which class stratum?
+- Which migration or family arc?
+- Which surname etymology?
+
+The Anti-Trope Protocol is then applied as a craft discipline ON TOP of the lore-derived candidate (no apostrophes, no Y-for-I, no metal-name overuse, etc.) — not as the substrate itself.
+
+**Naming an existing character into the lore (retrofit pattern):** If Story Lock v1 already contains names (drafted from intuition or earlier protocol-only runs), the head writer's options are: (a) re-derive names from the lore from scratch, or (b) write the lore *around* the existing names so they earn their place culturally. Option (a) is cleaner; (b) is faster and often produces a richer reverse-engineered history. Either is valid. Stray Signal v3.1 used (b) for Beryl/Orville/Heledd and (a) for the previously-unnamed mother / uncle / cat-child / aunt / sibling — the hybrid is standard.
+
+### Step 3: Story Lock Update (Inline)
+
+After the lore is forged, the head writer updates Story Lock v1 to v1.1 with:
+
+- Naming Note: brief paragraph stating "names are derived from SEASON_LORE.md" with a 1-line lineage per principal character (population + family arc) — the audience-equivalent of the table of contents
+- Character Shadows table: add a "Lineage" column referencing the lore's genealogy section
+- Any open question that the lore answered: mark resolved
+- Any open question the lore *raised*: add to Open Questions
+
+The Story Lock then proceeds to Phase 4 review with the lore as a parallel input the room may critique.
+
+### Step 4: Room Review Reads Lore
+
+In Phase 4, the room reviews Story Lock v1.1 *and* SEASON_LORE.md. Flags about the lore (e.g., "this naming convention contradicts the chronology in section II") are first-class flags and can rewrite the lore. The AAA's flag at Phase 4 may also implicate the lore — "this audience does not feel the world has a history; the names feel borrowed" is a lore-grounding flag.
+
+### Output
+
+Save as `STORY/WRITERS_ROOM/SEASON_LORE.md`. Versioned alongside Story Lock (v1 of the lore corresponds to v1.1 of the Story Lock; revisions during Phase 4 produce SEASON_LORE.md v1.1 and Story Lock v2 in lockstep).
+
+### When to Skip
+
+- Single-character monologue shorts.
+- Documentary-style work using real-world cultural substrates (the world IS our world; the lore is "research" not "forge").
+- Adaptation work where the source IP already supplies the lore (pull from the IP rather than draft new — but document the pull in a SEASON_LORE.md so the room shares the substrate).
+
+For everything else: do the Lore Forge before the character-namer.
+
+---
+
 ## Phase 4: Story Lock Review
 
-One round. The whole room reviews Story Lock v1. **The AAA reviews alongside the room** (v3.1).
+One round. The whole room reviews Story Lock v1 (v1.1 if Lore Forge ran). **The AAA reviews alongside the room** (v3.1). **The round is conducted as an Audience Premortem and captured as an in-voice transcript** (v3.4).
 
-### Pre-Flight: Framework Validation Checklist (v3.3, NEW)
+### Capture Format: In-Voice Transcript (v3.4, NEW)
+
+The review IS the artifact. Capture each writer's contribution as longform dialogue in their own voice — paragraphs of them speaking, arguing, doing the room — not a flag summary or bullet list of notes. Reasoning matters as much as conclusions; later phases (Story Lock revision, episode breaking) need to revisit *why* a flag was raised, not just what it was.
+
+The transcript should read like a script of the room. The summarised "Accepted / Debated / Tabled" lists at the end are extracted FROM the transcript, not in place of it. If a writer's flag took three paragraphs to land, those three paragraphs are the artifact; the ACCEPTED row that names the change is the index entry.
+
+This was discovered during Stray Signal v3 (2026-05-03): the in-voice transcript produced markedly sharper diagnosis than prior flag-summary rounds, because writers had to argue in voice rather than abstract from voice. The voice carries the reasoning. Strip the voice and the reasoning thins.
+
+### Round Mode: Audience Premortem (v3.4, REQUIRED at Phase 4)
+
+The Phase 4 round runs as an **Audience Premortem** (Gary Klein methodology, adapted). Frame for the room before any writer speaks:
+
+> *Imagine the Story Lock has been screened to a representative audience cohort matching the AAA charter. The response was poor. The audience did not show up the way the room hoped. Each writer must now deliver the most credible failure-mode hypothesis from inside their lane — in voice — for why the screening failed.*
+
+This forces failure-state cognition. Writers find sharper diagnosis in premortem framing than in "what's wrong with this lock" framing because the premortem starts from a *concrete failure* and asks the writer to explain it, rather than asking the writer to scan for problems they may not see. See "Audience Premortem Pattern" section below for the full procedure.
+
+### Required Premortem Lanes (v3.6, NEW — REQUIRED at Phase 4)
+
+*The premortem at Phase 4 must cover two specific failure-mode lanes, in addition to whatever lanes the writers find from inside their personas. These two lanes catch the documented Claude defaults that the v3.6 Phase 3 Structural-Stakes Checklist also addresses upstream — running them at both levels is intentional. The Phase 3 checklist forces the head writer to answer the questions on the way in; the Phase 4 lanes give the AAA the standing to hold the answers accountable on the way out.*
+
+**Lane 1 — STAKES.** The AAA must hypothesize against this specific failure:
+
+> *"I went home and didn't feel anything had been at stake. The show kept telling me there was a war / a collapse / a regime change in the past, but the present-tense story didn't carry the weight of that loss. I didn't believe what was lost. I didn't see what survived the loss. The threat felt like backstory, not pressure."*
+
+The AAA addresses this in voice. The head writer's response — also in voice — must point to specific Story Lock answers in the **Structural Stakes** section's Lane A: the named event, the casualty count, the destroyed-and-survives lists, the inheritability mechanism. If the AAA's hypothesis lands and the head writer cannot point to load-bearing Lane A answers, the round produces an automatic ACCEPTED flag — Story Lock returns for stakes revision. *(Note: even with the Phase 3 checklist completed, the AAA's premortem may identify that the answers, while concrete, do not actually produce screen pressure — concrete-but-thin. This is the second-order check the Phase 3 step cannot do alone.)*
+
+**Lane 2 — ANTAGONIST.** The AAA must hypothesize against this specific failure:
+
+> *"The threat felt like atmosphere, not danger. There were forms and elevators and bureaucratic register, and they were well-drawn, but I never felt that anyone in particular was coming for these characters. Nobody was lost on screen. The villain was a system, and systems do not break my heart."*
+
+The AAA addresses this in voice. The head writer's response — also in voice — must point to Lane B answers: the named embodied antagonist (or the documented deliberate alternative), the concrete generational grievance, the on-show footprint (voice → body → name → silence), the named-figure consequence beat. If the AAA's hypothesis lands and the head writer cannot point to load-bearing Lane B answers, the round produces an automatic ACCEPTED flag — Story Lock returns for antagonist revision.
+
+**Both lanes are required.** They are run in addition to the regular per-writer premortem hypotheses. The AAA delivers them as part of the cohort verdict at step 2 of the standard premortem procedure (see "Audience Premortem Pattern" section below). Neither lane can be skipped because the answer is "this isn't that kind of show" — that answer must already have been documented in the Story Lock's Structural Stakes section as a deliberate choice, and the AAA may critique the deliberate choice but cannot ignore the lane.
+
+The point of running these as required lanes (rather than waiting for the room to surface them organically) is that *the room has demonstrably failed to surface them organically across multiple projects despite memory documenting the failure modes.* Memory-as-documentation does not change room behavior. Required lanes do.
+
+### Pre-Flight: Framework Validation Checklist (v3.3, NEW; v3.6 extended)
 
 Before the one-flag round begins, the head writer runs `STORY/FRAMEWORK.yaml`'s `validation_checklist` against Story Lock v1. Each item is a yes/no check. Items that fail go directly into the **ACCEPTED** pile as automatic structural fixes — they do not consume any writer's one flag. The room's flags are reserved for problems the framework's checklist *doesn't* catch.
+
+**(v3.6) Structural Stakes pre-flight:** the head writer also confirms the Story Lock contains a `## Structural Stakes` section with answers to all questions in Lane A (Inciting Event Stakes) and Lane B (Embodied Antagonist) per Phase 3's Structural-Stakes Checklist. Each question is a yes/no check on whether it has been answered concretely:
+
+- Section absent → automatic ACCEPTED (returns to Phase 3).
+- Section present, Lane A or Lane B questions answered with adjectives, hand-waving, or "TBD" → automatic ACCEPTED for those specific questions (head writer rewrites with countable / concrete answers before the premortem proceeds).
+- Section present, deliberate-NO answers documented in voice → passes pre-flight; the deliberate choice is then live for AAA critique in the Required Premortem Lanes (above).
+
+The Structural Stakes pre-flight runs *before* the framework validation checklist. If Stakes pre-flight fails, the framework checklist is not run — the lock returns to Phase 3 first.
 
 If more than ~30% of the validation checklist fails, the Story Lock isn't ready for room review. Return to Phase 3 — either the head writer hasn't internalized the framework yet, or the framework choice is wrong (return to Phase 0).
 
@@ -460,6 +699,8 @@ Silently ignoring the AAA across Story Lock revisions is the failure mode this r
 
 **v3.1 — AAA participation:** The Experience Map IS the audience-experience document. The AAA reads the Experience Map after the room produces it and answers a single question in voice: "Is the experience you mapped the experience I came for?" If the AAA names a gap between the room's mapped experience and the audience's expected experience, the Experience Map is revised before episode breaking begins. This is the natural intersection point — Experience Map asks "what does the audience feel?" and the AAA is the audience's voice.
 
+**v3.4 — Audience Premortem (OPTIONAL at Phase 5):** If the Experience Map is doing heavy structural lifting (long-arc series, novel adaptation, an experience that's hard to articulate without trying it on the audience first), the room MAY run an Audience Premortem on the map: imagine the audience has watched the season per the map and the experience didn't land — each writer hypothesizes which feeling-state transition collapsed and why. Sharpens the map before plot casting. Optional because for many projects the AAA's single voice-question is sufficient; required only when the room's instincts on audience experience are already known to drift. See "Audience Premortem Pattern" section below.
+
 ### Step 1: Define the "Underneath" Experience
 
 Before mapping *what* happens, map *how the audience feels.*
@@ -559,6 +800,16 @@ Not every per-episode beat needs AAA review — that drowns the room. The rule:
 
 The AAA stays brief-tuned across the project — the same charter from Phase 1a applies through to the finale. If audience expectations evolve mid-project (e.g., a streaming show's audience changes between seasons), the user re-runs Phase 1a to update the charter.
 
+### Audience Premortem at Episode Lock (v3.4, REQUIRED)
+
+**Before locking each episode's outline, the room runs an Audience Premortem on the outline.** Same procedure as Phase 4, scoped to the episode: imagine the episode has been screened, the audience disengaged, each writer in voice delivers the most credible failure-mode hypothesis from their lane, the AAA delivers the harshest test-audience verdict in voice, the head writer aggregates the structural pattern.
+
+The premortem is captured as an in-voice transcript appended to the episode's break document. The episode does not lock until the premortem-surfaced failure modes are addressed (or explicitly overridden by the head writer with a documented reason).
+
+This is REQUIRED — not optional — because the episode is the unit the audience actually watches, and most failures show up here that didn't show up at season level. The Phase 4 premortem catches season-shaped failures; the Phase 6 premortem catches episode-shaped failures. They are not redundant.
+
+See "Audience Premortem Pattern" section below for the full procedure.
+
 ### The Episode Has One Job
 
 Before drafting, the room agrees on one sentence: what is this episode's job?
@@ -604,6 +855,77 @@ Three parts:
 
 ---
 
+## Audience Premortem Pattern (v3.4, NEW)
+
+*Callable methodology referenced from Phase 4 (REQUIRED), Phase 5 (OPTIONAL), and Phase 6 (REQUIRED at each episode lock). The pattern is the same at every scale — the only thing that changes is the scope of the artifact under review (Story Lock / Experience Map / Episode Outline).*
+
+### Why This Works
+
+Standard review framing — "what's wrong with this Story Lock?" — asks the room to scan for problems they may not see. Pattern recognition is unreliable when the pattern hasn't crystallized. **Failure-state cognition** (Gary Klein's premortem methodology) reverses the cognitive task: assume failure has *already happened*, ask the room to explain *why*. This is empirically sharper because writers are good at explaining failures and poor at predicting them. The premortem makes prediction look like explanation.
+
+The room is also professionally accustomed to defending work in progress. The premortem disarms this — the work has, hypothetically, already failed. Defenders of the work are not addressed; the question is not whether but why. Writers will name failure modes they would not name as flags because flags imply ongoing argument and the premortem implies post-mortem honesty.
+
+### The Trigger
+
+Before any writer speaks, the head writer (or whoever is running the round) frames the premortem out loud — including for the AAA, who participates fully in this round:
+
+> *Imagine the [Story Lock / Experience Map / Episode Outline] has been screened to a representative audience cohort matching the AAA charter. The response was poor. The audience checked out, the discussion died, the early walkouts were obvious, the post-screening conversation was about everything except what we hoped. Each writer must now deliver — in voice — the most credible failure-mode hypothesis from inside their lane for why this screening failed.*
+
+The framing should match the project's stakes. For a season Story Lock the screening is the pilot test screening. For an episode outline the screening is the episode's first read at the table. For an experience map the screening is the audience leaving with the wrong feeling.
+
+### The Procedure
+
+**1. Each writer delivers a failure-mode hypothesis in voice.**
+
+Format: 2-4 paragraphs, in their voice (per their persona's `creative_philosophy`, `taste`, `craft_method`, `polemics`). The hypothesis must:
+
+- Name a specific failure mode they think most plausibly killed the screening
+- Trace it to a structural decision in the artifact under review (lock / map / outline)
+- Be from inside their lane — the failure mode has to be one their persona would *first notice*, not a generic "I think it's slow" diagnosis
+- Propose a direction (not a fix) — what the room could change to prevent this failure
+- Stay in failure-state framing: "the audience X" not "the lock would benefit from Y"
+
+**2. The AAA delivers the test-audience verdict.**
+
+Format: a 2-4 paragraph in-voice rant per the AAA charter — what the audience thought, what they said walking out, what they posted that night, what they told the friend they came with. Specific. Not "it was slow" but "I texted my partner during minute 18 because the show kept setting up things and not letting me feel anything yet." The AAA's verdict is the cohort speaking, not a critic — the AAA is allowed to be unfair, irritated, or wrong-but-revealing. Wrong-but-revealing is a feature; it shows where the show isn't surviving the audience's attention.
+
+**3. The head writer aggregates the structural pattern.**
+
+After all hypotheses + AAA verdict are delivered, the head writer reads the room and names the pattern. Not the most-cited failure mode (that's a vote, and votes are noisy), but the *structural decision* that produced the cluster. Often two writers from very different lanes name the same underlying problem in different vocabulary — that's the pattern. The head writer's call is in voice and forms the spine of the revision.
+
+**4. Sort hypotheses into ACCEPTED / DEBATED / TABLED — same procedure as a standard one-flag round.**
+
+The premortem produces flags; the flags then get sorted using the existing Phase 4 procedure. Premortem is a *frame* for the round, not a different output structure.
+
+### Capture
+
+The premortem IS the in-voice transcript. Save it inline in the relevant review document:
+
+- Phase 4 → `STORY/WRITERS_ROOM/story_lock_review.md` (the whole Phase 4 round runs as premortem)
+- Phase 5 (optional) → `STORY/WRITERS_ROOM/EXPERIENCE_MAP_PREMORTEM_{episode}.md`
+- Phase 6 → appended to the episode break document at `STORY/WRITERS_ROOM/EP{N}_BREAK.md` under a `## Premortem` section
+
+### Frequency and Discipline
+
+- Phase 4: REQUIRED — once, on Story Lock v1 (or v1.1 if Lore Forge ran).
+- Phase 5: OPTIONAL — only when the Experience Map is doing heavy structural lifting and the room's audience instincts are uncertain.
+- Phase 6: REQUIRED — once per episode, on the locked outline before drafting begins.
+
+Do not run premortem on every draft revision. The premortem is for *load-bearing* lock points — places where a structural problem unfixed now becomes a structural problem buried under execution. Once drafting starts, standard review rules apply.
+
+### Common Failure Modes of the Premortem Itself
+
+- **Generic doom**: writers all converge on "the audience would lose interest." That's not a failure-mode hypothesis. Push back into voice and lane: *what specifically* would lose them, *why*, *which beat*.
+- **Solution-mode collapse**: a writer skips the failure hypothesis and proposes a fix. Re-anchor: the hypothesis has to come first; the direction comes after the failure is named.
+- **Costume premortem**: writers all name the same surface failure mode. Real friction comes from different *beliefs* about what fails. If the room is converging too fast, check whether persona ontologies are actually distinct.
+- **AAA softening**: the AAA delivers a polite verdict matching the room's tone. The AAA is supposed to be the audience walking out, not the audience writing a craft note. Re-read the charter and re-deliver in voice.
+
+### Origin and Validation
+
+Discovered during Stray Signal v3 review (2026-05-03). The v3 round was conducted as an Audience Premortem after the v2 review (standard one-flag round) had landed structural fixes but missed audience-shaped failures. The v3 premortem produced 9 calls — including 4 that re-shaped the entire 8-episode arc — that the v2 round had not surfaced. The premortem framing was visibly responsible for the depth of the diagnosis. Graduating as a standard methodology applied at all load-bearing lock points.
+
+---
+
 ## Output Formats
 
 ### STORY_LOCK.md
@@ -629,6 +951,24 @@ Three parts:
 | Character | Fatal Flaw | Hidden Desire | Wound | Arc |
 |-----------|------------|---------------|-------|-----|
 | {Name}    | {Flaw}     | {Desire}      | {Wound} | {Arc} |
+
+## Structural Stakes (v3.6, REQUIRED)
+
+### Lane A — Inciting Event Stakes
+1. **Event named**: {one sentence — date range, official name, oral-tradition name if different}
+2. **Casualty / scale of loss (countable)**: {numbers, ranges, proportions — never adjectives}
+3. **What was destroyed that cannot be recovered**: {specific list — records, languages, populations, infrastructure}
+4. **What survives that the show can stage as evidence**: {at least three on-screen survivors}
+5. **Inheritability mechanism**: {how the loss reaches the protagonist — direct ancestor, adopted memory through artifact, cultural inheritance}
+
+*If "this is not that kind of show": document the deliberate choice in voice and explain where the show's pressure comes from instead.*
+
+### Lane B — Embodied Antagonist
+1. **Named, embodied antagonist**: YES / NO {if NO: alternative source of pressure, in voice}
+2. **Concrete generational grievance**: {literal inheritance — file, debt, project — not ideology}
+3. **On-show footprint**: voice (EP{N}) → body (EP{N}) → name (EP{N}) → silence (EP{N})
+4. **Named-figure consequence beat**: {which figure from the inhabited world is taken, which episode, on-screen vs. off-screen, reverberation across how many episodes}
+5. **Lineage subtext (optional, series only)**: {grievance against protagonist's bloodline? S2 reveal? NA?}
 
 ## Episode Arc
 | Ep | Title | Core Beat | Cliffhanger |
