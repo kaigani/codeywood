@@ -42,6 +42,29 @@ python3 scripts/generate/fal_generate.py --storyboard SCENE
 python3 scripts/generate/fal_generate.py --list-models
 ```
 
+### Concept Art (pencil + watercolor sketches via local z-image)
+
+```bash
+# Define subjects: copy template to projects/{name}/CONCEPT_ART/subjects.yaml
+cp scripts/production/concept_art/subjects_template.yaml \
+   projects/{name}/CONCEPT_ART/subjects.yaml
+
+# Dry-run to confirm subject list
+python3 scripts/production/concept_art/generate.py --project projects/{name} --dry-run
+
+# Generate all locations + characters + scenes
+caffeinate -i python3 scripts/production/concept_art/generate.py --project projects/{name}
+
+# One kind only / single subject / regenerate
+python3 scripts/production/concept_art/generate.py --project projects/{name} --kind scenes
+python3 scripts/production/concept_art/generate.py --project projects/{name} --only ep01_temple_sprint --force
+
+# Build contact sheets (scenes_contact_sheet.png + contact_sheet.png)
+python3 scripts/production/concept_art/contact_sheets.py --project projects/{name}
+```
+
+Skill: `skills/production/concept-art/SKILL.md`. Scenes use `ep##_<name>` id prefix so the contact sheet groups by episode.
+
 ### Available Models
 
 | Model | Best For |
@@ -325,6 +348,8 @@ When using claude-mem, follow the memory isolation rules in the Memory Managemen
 | `skills/art-director/SKILL.md` | Visual coherence cognitive skill |
 | `skills/production/clip-study/SKILL.md` | Feedback loop — study, replicate, learn |
 | `skills/production/visual-translation/SKILL.md` | Prose-to-visual diagnostic — tests beats before directors room, feedback loop to writers room |
+| `skills/production/concept-art/SKILL.md` | Pencil + watercolor concept sketches via local z-image (locations + characters + scenes) |
+| `scripts/production/concept_art/generate.py` | Concept-art driver — reads `{project}/CONCEPT_ART/subjects.yaml` |
 
 ## Current Active Project
 

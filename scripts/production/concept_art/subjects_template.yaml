@@ -1,0 +1,69 @@
+# {PROJECT_NAME} — concept art subjects (z-image-base-t2i).
+#
+# Schema: three sections (locations, characters, scenes). Each entry uses the
+# Z-Image official 4-layer prompt structure:
+#   subject_action  — what's in the frame (objective, concrete)
+#   composition     — medium, camera, framing, line/wash quality
+#   lighting        — color palette + atmosphere
+#   text_factor     — verbatim margin caption (1-5 words, in quotes)
+#
+# Conventions:
+#   - id: snake_case, unique within the file
+#   - seed: integer, project-block (70xxx is gemma-anthology)
+#   - scenes use ep##_<name> prefix so the contact sheet groups by episode
+#
+# Output sizes (set by generate.py):
+#   locations  — 1536x1024 (wide environment plate)
+#   characters — 1024x1536 (full-body/portrait)
+#   scenes     — 1536x1024 (widescreen scene sketch)
+
+locations:
+  - id: example_location
+    seed: 70001
+    subject_action: >-
+      Wide interior view of [LOCATION DESCRIPTION]. [Concrete materials,
+      furniture, props]. No people.
+    composition: >-
+      Wide environment plate, [perspective] perspective, [camera angle],
+      expressive pencil construction lines, watercolor wash on [surfaces],
+      off-white paper texture visible.
+    lighting: >-
+      [Light sources], [color palette], [shadow quality], [mood/atmosphere].
+    text_factor: >-
+      Small margin caption "LABEL" in clean black sans-serif lettering at
+      the lower right of the sheet.
+
+characters:
+  - id: example_character
+    seed: 70101
+    subject_action: >-
+      An adult [gender] in [age] named [Full Name], standing in three-quarter
+      pose facing the viewer, [pose detail]. [Face/skin description]. They
+      wear [clothing description with materials].
+    composition: >-
+      Full-body character sheet, plain off-white paper background, centered
+      figure, expressive pencil construction lines on anatomy and clothing,
+      soft watercolor wash on [key surfaces], small margin annotations and a
+      tiny three-color swatch row at the bottom right.
+    lighting: >-
+      Single soft light source from upper left casting gentle shadow on the
+      right side of the face and along the right flank of the figure.
+    text_factor: >-
+      Top-left margin label "NAME" in clean black sans-serif typography.
+
+scenes:
+  # Use ep##_<name> id prefix so scenes_contact_sheet.png groups by episode.
+  - id: ep01_example_scene
+    seed: 70201
+    subject_action: >-
+      [WHO does WHAT WHERE]. Characters: [names + brief look]. [Key action
+      verb and object]. [Environmental detail].
+    composition: >-
+      [Wide/medium/close] cinematic scene sketch, [angle] framing, [subject
+      placement], expressive pencil construction lines on [key forms],
+      watercolor washes in [palette], off-white paper texture visible.
+    lighting: >-
+      [Key light source], [secondary], [shadow], [mood/atmosphere].
+    text_factor: >-
+      Small margin caption "EP01 — TITLE" in clean black sans-serif lettering
+      at the lower right of the sheet.
