@@ -44,7 +44,7 @@ python3 scripts/generate/fal_generate.py --list-models
 
 ### Concept Art (pencil + watercolor sketches via local z-image)
 
-Requires the project venv (`source sandbox/fal_experiments/venv/bin/activate`) — pulls in `pyyaml`, `Pillow`, `requests`.
+Requires the project venv (`source scripts/venv/bin/activate`) — pulls in `pyyaml`, `Pillow`, `requests`.
 
 ```bash
 # Define subjects: copy template to projects/{name}/CONCEPT_ART/subjects.yaml
@@ -384,7 +384,7 @@ Graduation targets:
 
 - Visual consistency uses reference-based approach (Nano Banana Pro)
 - Dual-model workflow: SeeDream for artistic, Nano Banana for technical
-- Python venv at `sandbox/fal_experiments/venv/` has all dependencies
+- Python venv at `scripts/venv/` has all dependencies
 - Always use `--seed` parameter for reproducible generation
 - Optional MCP: `fal` for API documentation lookup
 - Optional Plugin: `claude-mem` for persistent memory across sessions

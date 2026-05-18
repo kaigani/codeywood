@@ -4,7 +4,7 @@ DIR="$(cd "$(dirname "$0")" && pwd)"
 ROOT="$(dirname "$DIR")"
 
 # Start Flask backend
-source "$ROOT/sandbox/fal_experiments/venv/bin/activate"
+source "$ROOT/scripts/venv/bin/activate"
 echo "Starting Flask API on :5555..."
 cd "$DIR/backend" && python3 app.py &
 FLASK_PID=$!

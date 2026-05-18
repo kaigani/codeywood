@@ -8,7 +8,7 @@ PROJECTS_DIR = CODEYWOOD_ROOT / "projects"
 TEMPLATES_DIR = CODEYWOOD_ROOT / "templates"
 SKILLS_DIR = CODEYWOOD_ROOT / "skills"
 SCRIPTS_DIR = CODEYWOOD_ROOT / "scripts"
-VENV_PYTHON = CODEYWOOD_ROOT / "sandbox" / "fal_experiments" / "venv" / "bin" / "python3"
+VENV_PYTHON = CODEYWOOD_ROOT / "scripts" / "venv" / "bin" / "python3"
 
 # Pipeline steps — ordered sequence with metadata
 # Each step maps to a quality gate or production phase

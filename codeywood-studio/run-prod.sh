@@ -12,7 +12,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Start Flask (serves frontend/dist/)
-source "$ROOT/sandbox/fal_experiments/venv/bin/activate"
+source "$ROOT/scripts/venv/bin/activate"
 echo "Starting Codeywood Studio at http://localhost:5555"
 open http://localhost:5555 &
 cd "$DIR/backend" && python3 app.py
