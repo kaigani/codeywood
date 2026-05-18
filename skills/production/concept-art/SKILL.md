@@ -13,6 +13,7 @@ This is **not** a storyboard. It's a sketchbook pass: loose, expressive, atmosph
 ## Inputs Required
 - `projects/{name}/CONCEPT_ART/subjects.yaml` — defines all subjects (start from `scripts/production/concept_art/subjects_template.yaml`)
 - Local ComfyUI reachable at `http://192.168.1.181:8100` with the `z-image-base-t2i` workflow loaded
+- Project venv activated: `source sandbox/fal_experiments/venv/bin/activate` (supplies `pyyaml`, `Pillow`, `requests`)
 
 ## Outputs Produced
 - `projects/{name}/CONCEPT_ART/locations/{id}.png` — 1536×1024 environment plates
@@ -47,6 +48,7 @@ Scenes must use `ep##_<name>` IDs (e.g. `ep01_temple_sprint`). The contact sheet
 
 ### Step 1 — Author subjects.yaml
 ```bash
+source sandbox/fal_experiments/venv/bin/activate
 mkdir -p projects/{name}/CONCEPT_ART
 cp scripts/production/concept_art/subjects_template.yaml \
    projects/{name}/CONCEPT_ART/subjects.yaml

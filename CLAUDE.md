@@ -44,6 +44,8 @@ python3 scripts/generate/fal_generate.py --list-models
 
 ### Concept Art (pencil + watercolor sketches via local z-image)
 
+Requires the project venv (`source sandbox/fal_experiments/venv/bin/activate`) — pulls in `pyyaml`, `Pillow`, `requests`.
+
 ```bash
 # Define subjects: copy template to projects/{name}/CONCEPT_ART/subjects.yaml
 cp scripts/production/concept_art/subjects_template.yaml \
