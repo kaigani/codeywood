@@ -575,7 +575,7 @@ def l_cut(
     filter_complex = (
         f"[0:a]afade=t=out:st={audio_cut_point}:d={audio_lead_s}[a0];"
         f"[1:a]adelay={int(audio_cut_point * 1000)}|{int(audio_cut_point * 1000)}[a1];"
-        f"[a0][a1]amix=inputs=2:duration=first:dropout_transition=2[aout];"
+        f"[a0][a1]amix=inputs=2:duration=longest:dropout_transition=2:normalize=0[aout];"
         f"[0:v][1:v]concat=n=2:v=1:a=0[vout]"
     )
 
@@ -638,7 +638,7 @@ def j_cut(
         f"[v0][v1]concat=n=2:v=1:a=0[vout];"
         f"[0:a]afade=t=out:st={video_cut_point}:d={video_lead_s}[a0];"
         f"[1:a]adelay={int(video_cut_point * 1000)}|{int(video_cut_point * 1000)}[a1];"
-        f"[a0][a1]amix=inputs=2:duration=first:dropout_transition=2[aout]"
+        f"[a0][a1]amix=inputs=2:duration=longest:dropout_transition=2:normalize=0[aout]"
     )
 
     cmd = [
