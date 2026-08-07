@@ -1,0 +1,194 @@
+[
+  {
+    "name": "Cyclical Dynasties",
+    "shape": "History moves in repeating cycles of rise, golden age, decadence, and fall, each cycle leaving ruins and lessons for the next. Participants are often aware they are inside a recurring pattern, and the present is positioned somewhere on the wheel.",
+    "real_examples": ["Chinese dynastic cycle", "Hindu yugas as cosmology"],
+    "fiction_examples": ["Asimov's Foundation", "Dune's Imperial cycle"]
+  },
+  {
+    "name": "Imperial Overstretch",
+    "shape": "A central power expands through conquest, trade, or migration until its logistical, military, or moral reach breaks. The periphery then redefines the center; what was once the heart becomes a ruin and the fringe becomes the new world.",
+    "real_examples": ["Roman Empire", "Mongol Empire", "British Empire post-1945"],
+    "fiction_examples": ["Star Wars Imperial collapse"]
+  },
+  {
+    "name": "Migration & Founding",
+    "shape": "A population is forced to leave its origin (climate, war, persecution) and founds a new society in a frontier. The new world inherits and resents its parent; founding myths emphasize both the loss and the journey.",
+    "real_examples": ["Israelites/Exodus", "Polynesian voyaging", "Mormon trek to Utah"],
+    "fiction_examples": ["Battlestar Galactica's fleet", "BSG-style 'find Earth' arc"]
+  },
+  {
+    "name": "Diaspora & Survival",
+    "shape": "The civilization is scattered across territories, never re-coalescing into a central state. Identity persists through ritual, language, and trade despite no central seat; the present is the long after-image of an absent center.",
+    "real_examples": ["Jewish diaspora", "Armenian diaspora", "Romani"],
+    "fiction_examples": ["Le Guin's traveling cultures"]
+  },
+  {
+    "name": "Trade Network Apogee & Collapse",
+    "shape": "Prosperity rose from a network of distant peoples connected by goods, ideas, and roads. One disruption (plague, climate, war) breaks the network, and inheriting societies fragment into local kingdoms cut off from the wider world.",
+    "real_examples": ["Silk Road", "Bronze Age Mediterranean Collapse", "Hanseatic League decline"],
+    "fiction_examples": ["Post-jump-gate-failure space settings"]
+  },
+  {
+    "name": "Reformation & Schism",
+    "shape": "A unified spiritual or ideological order splits over doctrine. The schism reorganizes politics, language, art, and inheritance for centuries; the present is shaped by a wound that hasn't healed.",
+    "real_examples": ["Protestant Reformation", "Sunni-Shia split", "Buddhist Mahayana-Theravada split"],
+    "fiction_examples": ["Warhammer 40K's Imperial schism"]
+  },
+  {
+    "name": "Colonial Encounter",
+    "shape": "Outsiders arrive in a sophisticated existing civilization. Trauma, disease, and adaptation produce a hybrid present whose past is contested between competing narratives and unequal record-keeping.",
+    "real_examples": ["Aztec/Spanish encounter", "Mughal-British encounter", "Inca/Spanish"],
+    "fiction_examples": ["The Sparrow", "Avatar (2009)"]
+  },
+  {
+    "name": "Plague & Reorganization",
+    "shape": "A pandemic kills a substantial fraction of the population in a short window. Labor shortages, religious upheaval, and forced social mobility reshape who has power; the survivors live in a world built on the absence of the dead.",
+    "real_examples": ["Black Death (14th c. Europe)", "Antonine Plague", "1918 Influenza"],
+    "fiction_examples": ["Station Eleven", "The Stand"]
+  },
+  {
+    "name": "Succession Crisis & Civil War",
+    "shape": "The death of a ruler triggers competing claims; the conflict is decided by alliances and treason rather than legitimacy. Institutional scars persist for centuries; the political settlement is always provisional.",
+    "real_examples": ["Wars of the Roses", "Three Kingdoms (China)", "Spanish Wars of Succession"],
+    "fiction_examples": ["Game of Thrones / A Song of Ice and Fire"]
+  },
+  {
+    "name": "Resistance & Independence",
+    "shape": "A peripheral region breaks from imperial control through war, sabotage, or political maneuver. The new state is haunted by what it owed to and fought against; founding myths simultaneously deny and reproduce imperial structures.",
+    "real_examples": ["American Revolution", "Haitian Revolution", "Algerian War of Independence"],
+    "fiction_examples": ["Andor", "1776"]
+  },
+  {
+    "name": "Prophet & New Order",
+    "shape": "A founder figure (real or supposed) produces doctrine that transforms law, art, war, and family within a century. The civilization is structured around the prophet's revelation; the present is the late stage of a movement that began as a small heresy.",
+    "real_examples": ["Early Islam", "Early Christianity", "Buddhism's spread"],
+    "fiction_examples": ["Dune's Mahdi arc", "The Wind-Up Bird Chronicle"]
+  },
+  {
+    "name": "Modernization Shock",
+    "shape": "Rapid technological or cultural change forces the entire society to reinvent within a single generation. Old elites lose, new ones emerge, and the present is haunted by the speed at which the recent past became unrecognizable.",
+    "real_examples": ["Meiji Restoration", "Industrial Revolution England", "Post-WWII Japan"],
+    "fiction_examples": ["Cyberpunk Edo / cyberpunk-era Japan tropes"]
+  },
+  {
+    "name": "Climate Shift & Migration",
+    "shape": "Environmental change destroys the old territory or its productivity. Survivors adapt to a new biome and lose access to ancestral landscape; the present is a refugee culture whose homeland is mythologized.",
+    "real_examples": ["Bronze Age Collapse", "Classic Maya Collapse", "Akkadian Empire collapse", "Anasazi"],
+    "fiction_examples": ["Mad Max", "The Drowned World"]
+  },
+  {
+    "name": "Assimilation & Hybridization",
+    "shape": "Two cultures meet under conquest or trade and over centuries merge into a third culture neither parent recognizes. The present is the synthesis; the original peoples exist only in fragments.",
+    "real_examples": ["Hellenistic Mediterranean", "Norman England", "Mestizo Mexico"],
+    "fiction_examples": ["Foundation's Encyclopedia world"]
+  },
+  {
+    "name": "Late-Era Decadence",
+    "shape": "A long stable period of accumulated wealth produces social atrophy. The institutions still function but no longer mean anything; legitimacy is performed rather than held; the present is waiting for the next event to break the spell.",
+    "real_examples": ["Late Ming dynasty", "Late Habsburg", "Late Roman West"],
+    "fiction_examples": ["Brideshead Revisited as world-history"]
+  },
+  {
+    "name": "Liberation Theology",
+    "shape": "An oppressed group adopts a religion-of-the-poor or a political movement that gives them dignity. That movement becomes culturally dominant within a few generations, reshaping who matters; the old elite must adapt or vanish.",
+    "real_examples": ["Early Christianity in the Roman Empire", "Civil rights movement / MLK era"],
+    "fiction_examples": ["Le Guin's The Dispossessed"]
+  },
+  {
+    "name": "Eternal Recurrence",
+    "shape": "History literally repeats in known cycles; participants must navigate their roles in a story that has happened before and will again. Memory of past cycles is partial and disputed; some try to break the cycle, most reproduce it.",
+    "real_examples": ["Hindu yugas", "Mesoamerican long-count cycles"],
+    "fiction_examples": ["The Wheel of Time", "Russian Doll", "True Detective S1's mythology"]
+  },
+  {
+    "name": "Inverted Hierarchy",
+    "shape": "The class structure inverts mid-history. Those who were lowest become functionally dominant; the old elite must adapt or vanish; the inversion is not a revolution from below but a rebalancing forced by external conditions.",
+    "real_examples": ["Post-WWII land redistribution in East Asia"],
+    "fiction_examples": ["Snowpiercer", "Sweet Tooth's post-collapse hierarchies"]
+  },
+  {
+    "name": "Time-Locked Society",
+    "shape": "A single event or technology has frozen part of history. Some live in the present, some still in a preserved past, and reconciliation between the two is unfinished; the present is partly archaeological.",
+    "real_examples": ["Sentinelese isolation", "Amish communities"],
+    "fiction_examples": ["Fallout", "Cloud Atlas's Sonmi sections", "The Village"]
+  },
+  {
+    "name": "Memory Inheritance",
+    "shape": "Each generation inherits ancestors' memories or deeds — through clan ritual, biological transmission, or technology. Debts and grudges persist literally rather than metaphorically; the present is crowded with the still-vivid past.",
+    "real_examples": ["Clan-based blood feuds (Albanian Kanun, Highlands)"],
+    "fiction_examples": ["Memento applied to nations", "Inheritance Cycle's Eldunari"]
+  },
+  {
+    "name": "Bargain With the Other",
+    "shape": "The civilization was founded on a pact with non-human powers (gods, faeries, AIs, aliens, biological agents). That pact is the engine of prosperity AND the source of what they're losing; the present is a renegotiation.",
+    "real_examples": [],
+    "fiction_examples": ["Annihilation", "Faerie-pact fantasy worlds", "His Dark Materials' Authority"]
+  },
+  {
+    "name": "Lost Knowledge",
+    "shape": "The civilization once commanded a power they no longer remember how to use. The present is built on relics they don't understand; rediscovery is dangerous and partial; the past is closer in artifacts than in memory.",
+    "real_examples": ["Post-Roman Europe inheriting Roman concrete and roads", "Antikythera mechanism"],
+    "fiction_examples": ["A Canticle for Leibowitz", "Numenera setting"]
+  },
+  {
+    "name": "Permanent Frontier",
+    "shape": "The civilization always lives at the edge of unknown territory. Expansion is the constant condition, never settling; identity is bound to the wilderness beyond. The present is one more advance, not a destination.",
+    "real_examples": ["American manifest destiny", "Russian eastward expansion", "Zomia border zones"],
+    "fiction_examples": ["Firefly", "Outer Wilds"]
+  },
+  {
+    "name": "Suspended Apocalypse",
+    "shape": "A world-ending threat has been ongoing but not consummated for generations. Daily life happens under it; people forget and remember the threat in cycles; the present is the longest stretch of pre-apocalypse anyone alive has known.",
+    "real_examples": [],
+    "fiction_examples": ["Akira's pre-detonation Tokyo", "Twin Peaks's Black Lodge", "Oxenfree's tear-in-time"]
+  },
+  {
+    "name": "Ascendant Underclass",
+    "shape": "A long-marginalized group gains real political and economic power mid-history through demographic shift, technological mastery, or political organizing. The old order must rewrite itself around them or break; the rewrite is incomplete.",
+    "real_examples": ["Russian serfdom emancipation", "Post-apartheid South Africa", "Women's suffrage waves"],
+    "fiction_examples": ["District 9", "Children of Men in reverse"]
+  },
+  {
+    "name": "Decapitation & Reconstruction",
+    "shape": "The ruling class is killed off in a short window — war, plague, revolution, genocide. The world rebuilds from below with no living memory of the old hierarchy; the new order is haunted by a missing layer.",
+    "real_examples": ["French Revolution", "Cambodian Khmer Rouge era", "Post-genocide Rwanda"],
+    "fiction_examples": ["The Last of Us", "Black Mirror's post-collapse arcs"]
+  },
+  {
+    "name": "Generational Reversal",
+    "shape": "Each generation undoes what the prior one built. History zigzags between competing visions of progress; nothing accumulates; the present is the latest in a long series of cancellations.",
+    "real_examples": ["Buddenbrooks-era family declines", "Successor-state political flips"],
+    "fiction_examples": ["The Buddenbrooks shape", "Many family-saga novels"]
+  },
+  {
+    "name": "Founder's Curse",
+    "shape": "One ancestor's decision, sin, or pact bends every subsequent era's politics. The founding moment is still the central conflict; descendants either repeat it, fight it, or are destroyed by it. History orbits a single original act.",
+    "real_examples": ["Original-sin theology applied to nations", "Constitutional founding-myth battles"],
+    "fiction_examples": ["One Hundred Years of Solitude", "House of Atreus tragedies"]
+  },
+  {
+    "name": "Discovered Origin",
+    "shape": "Mid-history, the population learns the truth of how their world began — and that truth invalidates the inherited identity. The reckoning that follows reorganizes everything; the present is post-revelation.",
+    "real_examples": ["Discovery of deep time and evolution overturning genesis narratives"],
+    "fiction_examples": ["The Matrix", "BSG's 'they're machines' reveal", "Logan's Run"]
+  },
+  {
+    "name": "Gradual Wonder",
+    "shape": "Things have been slowly, quietly getting better for centuries. The present is the most peaceful and abundant moment in the civilization's history; the lore is the unlikely story of an upward trajectory most people don't notice.",
+    "real_examples": ["Post-WWII global trends in violence and material abundance (arguable)"],
+    "fiction_examples": ["Star Trek's Federation as world-history", "Iain M. Banks's Culture"]
+  },
+  {
+    "name": "Impossible Equilibrium",
+    "shape": "The civilization is stable despite seemingly fatal internal contradictions. It shouldn't work, but it has for a long time; the present is held together by ritual, threat, and the inability of any party to imagine the alternative.",
+    "real_examples": ["Habsburg Austria-Hungary (centuries of fragile multinational state)", "Switzerland", "Nepal"],
+    "fiction_examples": ["1984's Oceania", "The Three-Body Problem's Trisolaran society"]
+  },
+  {
+    "name": "The Returning",
+    "shape": "An exiled population is forced to return to their origin land and remake it. They bring back foreign ideas, tools, and grievances; ancestral things turn out to be wrong, and locals who stayed view them as strangers. The present is contested re-occupation.",
+    "real_examples": ["Israeli founding", "Liberian repatriation", "Post-USSR returns to homelands"],
+    "fiction_examples": ["Black Panther's diasporic return arc"]
+  }
+]

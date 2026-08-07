@@ -1,7 +1,7 @@
 ---
 skill: writers-room
 role: writer
-version: 3.6
+version: 3.7
 
 description: |
   Persona-driven writers room led by a head writer (showrunner). The head
@@ -108,6 +108,33 @@ description: |
   answers in both. Together these move the fix upstream of the
   failure mode rather than catching it after.
 
+  v3.7 (2026-06-11): **Causal Contract** — graduated from the
+  divergence/gemmawood sister pipeline's rio_v2 transmission audit,
+  which found that causal/relational material the model writes early
+  (story bibles) is destroyed in transmission between phases: only
+  ~19% of bible causal commitments survived to the final outline, 43%
+  of episodes failed the deletion test, and the synthesis step never
+  received the bible. The same loss mechanism applies to any multi-phase
+  room. The intervention: **causal commitments become a first-class
+  artifact (`STORY/WRITERS_ROOM/CAUSAL_CONTRACT.md`), explicitly
+  transmitted to and consumed by every downstream phase; conformity is
+  tested as whole-output properties, never per-beat checklists.**
+  Concretely: (a) the Episode Arc is WIRED — each row written as causal
+  sentences ending with Needs/Sets-up tag lines using the v2 recipe tag
+  grammar; (b) the head writer extracts the emissions into the Causal
+  Contract register at Phase 3, and the Contract is REQUIRED input to
+  Phases 5/6 and all draft review; (c) Wiring Tests run at every
+  episode lock (deletion test, sets-up emission check, costs-paid
+  check; climax-precondition + thesis-shaped-climax checks at the
+  finale). Governed by the three laws (see story-recipe methodology
+  v2): whole-output tests not element checklists; causal grammar in →
+  causal reasoning out; nothing load-bearing in prose asides. Also
+  v3.7: Lore Forge gains Step 0 (entropy-pool sampling — cultures +
+  history shapes via scripts/writer/sample_pools.py) and a Job Census
+  step; Lane B gains the antagonist Action Test; Phase 4 pre-flight
+  gains the Surrounding-Cast Audit (centroid-laundering detection per
+  references/centroid_antiviral_brief.md).
+
 inputs:
   required:
     - name: creative_brief
@@ -153,6 +180,16 @@ outputs:
     type: file
     path: STORY/WRITERS_ROOM/STORY_LOCK.md
     description: Final Story Lock (v2+) incorporating room feedback
+  - name: causal_contract
+    type: file
+    path: STORY/WRITERS_ROOM/CAUSAL_CONTRACT.md
+    description: |
+      (v3.7) The commitments register extracted from the wired Episode
+      Arc — one row per emission tag: what it is, the character choice
+      that creates it, who consumes it, what cost it charges and where
+      the cost is paid. REQUIRED input to Phase 5, Phase 6, and all
+      draft review. Revised in lockstep with episode revisions and
+      versioned with the Story Lock.
 
 doneness:
   criteria:
@@ -166,11 +203,15 @@ doneness:
     - Story Lock updated to v2 with changes marked
     - Every character has fatal flaw, hidden desire, wound, and arc
     - Structural constraints locked and enforceable
+    - (v3.7) CAUSAL_CONTRACT.md exists; every Episode Arc row carries Needs/Sets-up lines in valid tag grammar; the season-level wiring rules hold as whole-output properties (no orphan episodes, no unfed setups, front half carries obligations, finale consumes ≥3 distinct earlier emissions with ≥2 character choices, costs paid, flaws fire as choices)
+    - (v3.7) Each locked episode passed the Wiring Tests at Episode Lock (deletion test, sets-up emission check, costs-paid check; finale additionally passed climax-precondition + thesis-shaped-climax checks)
   validation:
     - type: file_exists
       path: STORY/WRITERS_ROOM/STORY_LOCK.md
     - type: file_exists
       path: STORY/FRAMEWORK.yaml
+    - type: file_exists
+      path: STORY/WRITERS_ROOM/CAUSAL_CONTRACT.md
 
 dependencies:
   skills:
@@ -317,7 +358,7 @@ Skip if `PROJECT_CONFIG.yaml` already has `writers_room.head_writer`.
 
 1. Read `STORY/CREATIVE_BRIEF.md`.
 2. Preflight: `python3 scripts/personas/render_persona.py --all --skill writers-room` pre-renders base+room_behavior+architecture per persona into `skills/writer/personas/.runtime/writers-room/`.
-3. Load eligible personas from the runtime dir (those with `base.versatility: hybrid | generalist` or head-writer-related `base.room_title`).
+3. Load eligible personas from the runtime dir (those with `base.head_writer_band: generalist | hybrid` (v5.1), or — for personas predating the field — `base.versatility: hybrid | generalist` or head-writer-related `base.room_title`). **(v5.1)** If the project has a recipe (`STORY/RECIPE.md`), personas whose `base.recipe_affinities` include the recipe's slug are surfaced first.
 4. Each eligible persona delivers a ~150-word pitch in their voice: how they'd approach this project, what they'd optimize for, what they see that others would miss. Draw on their `base.philosophy`, `base.engine`, and `base.polemic`.
 4. Present all pitches to the user. User picks.
 
@@ -391,7 +432,7 @@ A weak story lock produces a room that argues about fundamentals. A strong story
 2. **Final Premise** — one paragraph. The full story, start to finish, including the answer.
 3. **World Rules** — numbered. Specific. Every rule that isn't load-bearing gets cut.
 4. **Character Shadows** — one row per character: fatal flaw, hidden desire, wound, arc. If a character doesn't have all four, they're not finished.
-5. **Episode Arc** — one row per episode: title, core beat, cliffhanger. **(v3.3) Filled using the framework's `beats_or_units` as the per-episode skeleton** — each episode's core beat must map to one of the framework's named beats/units, and the sequence must follow the framework's `methodology_structure`. If the framework's beat count doesn't match the episode count (e.g., 8-stage Story Circle for a 12-episode arc), the head writer specifies the mapping (e.g., one stage per arc-third, or one stage per episode with the remainder as transition episodes).
+5. **Episode Arc** — one row per episode: title, core beat, cliffhanger. **(v3.3) Filled using the framework's `beats_or_units` as the per-episode skeleton** — each episode's core beat must map to one of the framework's named beats/units, and the sequence must follow the framework's `methodology_structure`. If the framework's beat count doesn't match the episode count (e.g., 8-stage Story Circle for a 12-episode arc), the head writer specifies the mapping (e.g., one stage per arc-third, or one stage per episode with the remainder as transition episodes). **(v3.7) The Episode Arc is WIRED.** Each row's Core Beat is written as **causal sentences** — a character's choice plus what it irreversibly changes (Law 2: the model mirrors the input's grammar; noun-headline beats produce checklist outlines) — and ends with two lines: `**Needs:** [tags, or — for ep 1]` / `**Sets up:** [tags with consumer pointers, e.g. E3-false-story (→E5)]`. Tag grammar mirrors recipe v2 exactly: `E<emitting-episode>-<concrete-artifact-noun>`, emitter-prefixed, naming a story object (a lie, a debt, a wound, a tool, a secret, a body). Banned contentless nouns: consequence, choice, cost, constraint, aftermath, event, outcome. If a v2 recipe is in play (`STORY/RECIPE.md`), the recipe's edges are the FLOOR — edges fixed, edge-content free.
 6. **Structural Constraints** — the rules that make this show *this show*. Locked and enforced without mercy. **(v3.3) The framework's `core_principles` are appended as locked constraints** — they are not negotiable at draft level.
 
 The head writer writes this using `STORY/CREATIVE_BRIEF.md` and `STORY/FRAMEWORK.yaml` as inputs, filtered through their `creative_philosophy`, `taste`, and `craft_method`. The framework is consulted in this order: `methodology_structure` (the spine) → `core_principles` (the constraints) → `story_inputs` (what the framework demands the writer have already decided) → `beats_or_units` (the per-beat fill) → `validation_checklist` (the self-check).
@@ -425,6 +466,7 @@ Answer YES or NO. If NO, document the deliberate alternative.
 3. **What is their on-show footprint?** Map across episodes: voice (audio-only) → body (one or two short scenes, brief instructions, no monologue) → name (spoken aloud once by a trusted character) → silence (visual stillness at climax, often the season's deepest threat). For projects with a no-theatre tonal rule, this is the **senior-superior pattern** (`memory/feedback_embodied_villain_senior_superior.md`) — the antagonist is the boss of a known bureaucrat, escalated through senses, calibrated to never break the no-theatre rule. If the project has no no-theatre rule, the antagonist may be staged more directly — but still allocate the senses-escalated footprint, since restraint is the load-bearing aesthetic discipline.
 4. **Is there a planned named-figure consequence beat?** One named recurring figure from the inhabited world is taken by the antagonist's project mid-season. Which episode? Delivered on-screen or off-screen? Reverberation across how many episodes after? This is the beat that makes the threat *threat* rather than *atmosphere*. Without it, the antagonist reads as bureaucratic register and the audience does not feel the cost.
 5. **Lineage subtext (optional, for series).** Is the antagonist's grievance against the protagonist's actual bloodline? Held as audience-assembled subtext? When does S2 (or the next reveal beat) confirm? If unused, mark NA.
+6. **(v3.7) Antagonist occupation — Action Test.** What is the antagonist's job, and does it pass the **Action Test** (`references/centroid_antiviral_brief.md`): does the job put present-tense pressure on a body — theirs or someone else's — rather than grant access to past-tense material? If the antagonist's project is conducted through records, maps, archives, renaming, redrawing, or redacting, that is the prestige-literary centroid laundered into the antagonist (the conflict-register failure). Either revise toward a job that can break someone within the show's runtime, or document a deliberate-YES with the show's compensating physical-action discipline (how the records-conducted threat lands on bodies on screen).
 
 #### What "Required" Means
 
@@ -441,6 +483,30 @@ This pattern moves the fix from *post-hoc review* (where a memory or AAA flag ca
 The questions are specific enough that vagueness is visibly insufficient. "The war was devastating" cannot answer Lane A.2; the head writer must name a count or a proportion or document a deliberate refusal to. Once the head writer is producing concrete answers, the rest of the lock is built on real ground.
 
 This is the lesson from Stray Signal v3 v3.2: the user's craft note (*"the war was a real, devastating war that reset history"* + *"a really nasty embodied villain, perhaps Beryl's boss, who is cruel, vindictive and just wants to obliterate the denizens of the Seam with a kind of genocidal mania"*) was load-bearing because nothing else upstream forced the room to specify those stakes. Now upstream forces it.
+
+### Causal Contract (v3.7, NEW — REQUIRED)
+
+*This is the transmission fix from the rio_v2 audit. The model writes causal and relational material early and well — and the pipeline loses it between phases unless it travels as a first-class artifact. In the audited sister pipeline, only ~19% of story-bible causal commitments survived to the final outline, 43% of episodes were deletable, and the synthesis step never received the bible. The Causal Contract makes the wiring un-losable.*
+
+**The mechanism:** After the Episode Arc is wired (component 5 above), the head writer extracts every emission into `STORY/WRITERS_ROOM/CAUSAL_CONTRACT.md` — a commitments register, one row per tag:
+
+| Tag | Story object | Emitted by (episode + the character CHOICE that creates it) | Consumed by | Cost charged / where paid |
+|---|---|---|---|---|
+
+**Season-level wiring rules** — stated and verified as **whole-output properties of the Episode Arc**, never per-episode checklists:
+
+- **No orphan episodes.** Every episode except the opener consumes at least one earlier emission.
+- **No unfed setups.** Every emission is consumed by some later episode. If nothing consumes it, cut it or wire it.
+- **The front half carries forward obligations.** Every front-half episode emits at least one thing the back half consumes — establishment episodes that demonstrate and propagate nothing are where seasons go inert.
+- **The finale consumes the season.** The final two episodes consume emissions from ≥3 distinct earlier episodes, ≥2 of which are **character choices** (not facts, not setup conditions). A climax that needs only the premise is a restatement, not an ending.
+- **Costs are paid later.** Any episode that charges a cost (a death, a betrayal, a burned resource, a lost trust) has that cost visibly constrain a later episode.
+- **Flaws fire as choices.** Each Character Shadow's fatal flaw produces at least one *decision* whose consequence propagates — not a trait-display that merely happens to the character.
+
+**Three-laws note (binding):** The Contract document itself is a spec — authored once, human-reviewed, with explicitly checkable fields; that is fine (Law 1's asymmetry). But the *outlines and drafts written from it* are only ever tested with whole-output tests. **Do NOT convert contract rows into per-beat "must include X" items in any downstream prompt** — the executing model bolts missing elements on as asides and the draft degrades. Hand writers the contract slice as cause→consequence prose; test the finished outline as a whole.
+
+**Every-branch rule (v3.7.1, 2026-08-06):** The Contract travels on EVERY path to a draft — abbreviated sessions, resumed projects, single-episode revisions, short-form work, and any "skip ahead" the user requests. There is no fallback branch that drafts without it. Evidence: in the sister pipeline's post-fix validation lineage (rio_v4), 2 of 6 runs fell to a gate-FAIL single-pass fallback that silently bypassed the transmission fix — a third of production output never received the very fix the run existed to validate. If a shortcut genuinely can't carry the Contract (e.g. no Episode Arc exists yet), that is a sign the shortcut starts too far downstream — back up, don't draft.
+
+**Transmission rule (the rio_v2 fix):** The Causal Contract is REQUIRED input to Phase 5 (Plot Casting), Phase 6 (every episode brief and every draft review), and any editor/synthesis pass that touches episode structure. No downstream writer or reviewer works without it. Any phase that revises an episode revises the Contract in lockstep; the Contract is versioned with the Story Lock.
 
 ### Anti-Viral Blocklist (v3.2)
 
@@ -471,6 +537,24 @@ The same principle scales to all surface-detail design: street names, foods, swe
 
 **Optional for:** single-character shorts, scenes with 1-2 named characters where the lore would never surface on screen.
 
+### Step 0: Sample the Entropy Pools (v3.7, NEW)
+
+*Unconditioned lore generation falls into measurable attractors — in the sister pipeline's 20-run batches, Byzantine Empire appeared 11/20, Mongol 9/20, and nearly every unconditioned lore followed the same "founding rupture then five-act decline" template. The entropy pools force the lore into bounded, structured variation.*
+
+Before drafting any lore, run:
+
+```bash
+python3 scripts/writer/sample_pools.py --project {project}
+```
+
+This samples **32 cultural anchors** (from the 1,585-entry pool at `references/story_structure/pools/cultures.json`) and **1 history shape** (from 32 lore trajectory templates at `history_shapes.json`), with cross-project no-repeat tracking, and writes the draw to `projects/{project}/STORY/WRITERS_ROOM/LORE_SEEDS.md`.
+
+Rules:
+- The head writer drafts SEASON_LORE.md **harmonizing with the sampled history shape** — it is the arc of the chronology, not a suggestion.
+- Faction parallels, founding populations, and linguistic substrates are drawn **from the sampled cultural option set** — parallels must come from the list, which is what breaks the default Western/East-Asian-parallel attractor.
+- **User-brief overrides win.** A brief that demands a specific culture or historical arc is honored; document the override in LORE_SEEDS.md.
+- Re-rolls are allowed (`--seed N` for a deterministic re-draw); document why.
+
 ### Step 1: Head Writer Drafts SEASON_LORE.md
 
 The head writer drafts a deep cultural-historical document covering the past ~250 years of the world. Voice: in-world historian / archive-keeper / oral-tradition tone — whatever fits the project. Length: long enough to do the work; for a series this is typically 2,000-5,000 words.
@@ -490,6 +574,17 @@ The head writer drafts a deep cultural-historical document covering the past ~25
 6. **What the Lore Buys the Show** — A short closing section where the head writer says, in voice: which Story Lock decisions are now lore-grounded, which world-rules now have an "of course it's that way, look at the chronology" reading, what's reserved for later seasons.
 
 **Constraint:** the lore must remain *operative* — the head writer is not writing a worldbuilder's appendix, they are writing the substrate the room will draft from. If a lore detail isn't load-bearing for at least one named character, scene type, or world-rule, cut it.
+
+### Step 1b: Job Census + Conflict-Register Test (v3.7, NEW — before lore lock)
+
+*Banning prestige-literary protagonist occupations migrates the centroid into the surrounding cast and the world — "centroid laundering" (`references/centroid_antiviral_brief.md`). The protagonist drives a truck, but the uncle is a signal analyst, the love interest is a translator, and the founding conflict is about who controls the archive. The lore is where laundering hides; check it before locking.*
+
+Before the lore locks, the head writer runs two checks on the draft SEASON_LORE.md:
+
+1. **Job Census.** List every named character and historical figure in the lore with their occupation. Compute the percentage holding prestige-centroid occupations (per the brief's offender list: archivist, librarian, cartographer, linguist, translator, decoder, conservator, curator, records clerk, signal analyst, forecaster, stenographer, and kin — observe/record/decode/restore roles). **>30% → revise toward the Blue-Collar Pivot** (movers, builders, feeders, carers-with-hands, watchers-with-consequence, makers-with-risk — jobs that can break under someone within the show's runtime), or document a deliberate choice in voice.
+2. **Conflict-Register Test.** Is the lore's central conflict conducted through renaming, redrawing, recording, or redacting? That is the prestige register laundered into history. Wars over archives are still archive drama. Revise the conflict so its decisive acts land on bodies, food, land, shelter, or machines — or document the deliberate choice and how the show compensates on screen.
+
+Results (counts, percentage, any deliberate-YES documentation) are recorded in a short `## Job Census` section at the bottom of SEASON_LORE.md. Phase 4's Surrounding-Cast Audit re-checks this against the full Character Shadows table.
 
 ### Step 2: Character-Namer (When Invoked) Operates on Lore
 
@@ -585,6 +680,8 @@ Before the one-flag round begins, the head writer runs `STORY/FRAMEWORK.yaml`'s 
 - Section present, deliberate-NO answers documented in voice → passes pre-flight; the deliberate choice is then live for AAA critique in the Required Premortem Lanes (above).
 
 The Structural Stakes pre-flight runs *before* the framework validation checklist. If Stakes pre-flight fails, the framework checklist is not run — the lock returns to Phase 3 first.
+
+**(v3.7) Surrounding-Cast Audit:** after the Structural Stakes pre-flight, the head writer runs a Job Census across the **full Character Shadows table plus the named figures in SEASON_LORE.md** (this is the laundering check the per-character and per-antagonist tests miss — the centroid migrating into supporting cast and world, per `references/centroid_antiviral_brief.md`). If >30% hold prestige-centroid occupations without a documented deliberate choice, that is an automatic ACCEPTED flag (consumes no writer's flag): the cast returns for occupational revision toward the Blue-Collar Pivot. The AAA has standing to deliver this audit in voice if the head writer does not.
 
 If more than ~30% of the validation checklist fails, the Story Lock isn't ready for room review. Return to Phase 3 — either the head writer hasn't internalized the framework yet, or the framework choice is wrong (return to Phase 0).
 
@@ -767,6 +864,8 @@ The head writer "casts" the events that best fit the "roles" created by the Expe
 
 **The filter:** Review the brainstormed pool through the lens of the intended experience. Ask: *"Which of these events creates the exact underlying feeling we mapped?"*
 
+**(v3.7) Contract filter:** The cast events must honor `CAUSAL_CONTRACT.md` — an event that pays or plants a contract tag beats an equally-felt event that doesn't. Feeling states are the target; the contract is what makes the events that deliver them *necessary* rather than interchangeable.
+
 **Strategic selection principles:**
 - Don't pick the funniest scene — pick the one that establishes the character's heart.
 - Don't pick the most dramatic event — pick the one that physicalizes the internal experience.
@@ -835,6 +934,28 @@ For each episode, the lead writer is handed a beat brief assembled from `STORY/F
 
 This becomes the lead writer's prompt scaffold. The lead writer drafts *to* the framework's beats, not around them. If a beat's `completion_criteria` cannot be met, the writer flags it before drafting more — the framework choice or the Story Lock's beat mapping may be wrong.
 
+### Causal Contract Brief (v3.7, NEW — REQUIRED)
+
+*This is the transmission fix. In the audited sister pipeline, the synthesis step never received the story bible — and the causal material the model had already written died in transit. No writer in this room ever drafts an episode without the contract again.*
+
+Alongside the Framework-Driven Beat Brief, the lead writer's per-episode prompt MUST include the episode's **contract slice** from `CAUSAL_CONTRACT.md`, verbatim:
+
+- The episode's **Needs** lines — and for each consumed tag, its register row: what the story object is, and the character choice in the earlier episode that created it. The episode must *use* these; they are what makes it necessary now rather than merely next.
+- The episode's **Sets up** lines — with consumer pointers: which later episodes depend on what this episode creates, and the choice that must visibly create each emission on screen.
+- Any **cost** this episode charges or pays, per the contract's cost column.
+
+The slice is written into the brief as **cause→consequence prose** (Law 2), not as a checklist — "Because Mara buried the warning in Ep 2 (E2-buried-warning), the crew walks into the dock blind; what happens there must cost them the truck (E5-burned-truck), which is why Ep 7's escape fails" — never "must include: E2-buried-warning ✓". Per-item checklists get bolt-on-gamed (Law 1); the test of whether the draft honored the slice happens at episode lock, as a whole-output property.
+
+### Wiring Tests at Episode Lock (v3.7, NEW — REQUIRED)
+
+**Run by the head writer on each locked outline, alongside the Audience Premortem.** All tests are whole-output properties — read the outline whole and answer; never annotate scene-by-scene.
+
+- **Deletion test.** *"If this episode were deleted, name the later episode that breaks and state what breaks."* If nothing breaks, the episode is decoration — rewire it, usually by connecting existing beats (make a later episode consume something this one already shows), not by adding new ones.
+- **Sets-up emission check.** Every tag this episode is contracted to emit is visibly created on screen *as a character's choice* where the contract says so — not narrated, not implied in a bio.
+- **Costs-paid check.** Any cost this episode charges has a named later episode that is harder in a specific way because of it. Update the Contract's "where paid" column as episodes lock.
+- **Finale only — climax-precondition test.** The climax consumes emissions from ≥3 distinct earlier episodes, ≥2 of which are character choices. A climax that needs only the premise is a restatement, not an ending. **Plus the thesis-shaped-climax check:** if the climax *answers the theme* (the cautious one wins by caution; the workers force recognition) rather than *paying accumulated costs*, it fails regardless of how many beats are present — theme-shaped resolutions are the documented model default and they are unearned by construction.
+- **Failures return the outline to break.** The episode does not lock. Test results are appended to `STORY/WRITERS_ROOM/EP{N}_BREAK.md` under a `## Wiring Tests` section (one line per test: PASS, or FAIL + what broke + the rewire).
+
 ### Draft Review
 
 Three parts:
@@ -852,6 +973,8 @@ Three parts:
 **Rule (v3.2):** Every episode draft is written with `skills/writer/ANTIVIRAL_PROMPT.md` appended to the lead writer's prompt. The draft review includes an explicit anti-viral pass — any scene that violates a banned word, banned concept, or banned tone move is flagged. The lead writer rewrites or documents an explicit override. Virus violations are not tonal preferences; they are structural failures that degrade the scene's filmability.
 
 **Rule (v3.3):** Draft review uses the framework's `revision_passes` field (if present) as a structured re-read protocol. Each pass has a single focus (e.g., "structural pass," "character pass," "tension pass," "specificity pass"). The shadow runs the passes in order before bringing notes — preventing the common failure where one diffuse "I read it, here's everything I noticed" critique conflates structural problems with line-level ones. If the framework lacks `revision_passes`, the shadow runs a default three-pass: structural → character → specificity.
+
+**Rule (v3.7):** The shadow's structural pass verifies the draft still *delivers* the episode's contract slice — every tag the episode consumes is actually used, every tag it emits is visibly created as a character's choice, every cost lands. Checked by reading the whole draft and answering whole-output questions, NEVER by per-scene checklist annotation (Law 1). A draft that drifted from the contract either gets rewritten or the head writer revises the Contract in lockstep with a documented reason.
 
 ---
 
@@ -969,11 +1092,15 @@ Discovered during Stray Signal v3 review (2026-05-03). The v3 round was conducte
 3. **On-show footprint**: voice (EP{N}) → body (EP{N}) → name (EP{N}) → silence (EP{N})
 4. **Named-figure consequence beat**: {which figure from the inhabited world is taken, which episode, on-screen vs. off-screen, reverberation across how many episodes}
 5. **Lineage subtext (optional, series only)**: {grievance against protagonist's bloodline? S2 reveal? NA?}
+6. **Antagonist occupation — Action Test (v3.7)**: {job + PASS/FAIL on present-tense body pressure; if records/maps/archives-conducted, the deliberate-YES + compensating physical-action discipline}
 
 ## Episode Arc
 | Ep | Title | Core Beat | Cliffhanger |
 |----|-------|-----------|-------------|
-| 01 | {Title} | {Beat} | {Cliffhanger} |
+| 01 | {Title} | {2–4 causal sentences: a character's choice + what it irreversibly changes. **Needs:** — **Sets up:** E1-{artifact} (→E{n})} | {Cliffhanger} |
+| 02 | {Title} | {causal sentences. **Needs:** E1-{artifact} **Sets up:** E2-{artifact} (→E{m})} | {Cliffhanger} |
+
+*(v3.7) Every Core Beat cell ends with its Needs/Sets-up lines. Tag grammar: `E<emitting-episode>-<concrete-artifact-noun>`; banned nouns: consequence, choice, cost, constraint, aftermath, event, outcome.*
 
 ## Structural Constraints
 {The rules that make this show THIS show}
@@ -989,6 +1116,41 @@ Discovered during Stray Signal v3 review (2026-05-03). The v3 round was conducte
 ## Version History
 - v1.0: Head writer draft
 - v2.0: Post-review ({changes summary})
+```
+
+### CAUSAL_CONTRACT.md (v3.7)
+
+```markdown
+# Causal Contract v{N} — {Project title}
+
+*Extracted from Story Lock v{N}'s Episode Arc. REQUIRED input to Phase 5,
+Phase 6 (every episode brief), and all draft review. Revised in lockstep
+with episode revisions; versioned with the Story Lock.*
+
+## Commitments Register
+
+| Tag | Story object | Emitted by (ep + character choice) | Consumed by | Cost charged / where paid |
+|-----|--------------|------------------------------------|-------------|---------------------------|
+| E1-{artifact} | {what it is — a lie, a debt, a tool, a body} | EP01 — {who chooses what} | EP{n}, EP{m} | {cost} / paid EP{k} |
+
+## Season Wiring Verification (whole-output)
+
+- No orphan episodes: {PASS/FAIL + note}
+- No unfed setups: {PASS/FAIL + note}
+- Front half carries forward obligations: {PASS/FAIL + note}
+- Finale consumes ≥3 distinct earlier emissions, ≥2 character choices: {PASS/FAIL — list them}
+- Costs are paid later: {PASS/FAIL + note}
+- Flaws fire as choices (one row per Character Shadow): {PASS/FAIL + note}
+
+## Episode Lock Status
+
+| Ep | Deletion test | Emissions check | Costs-paid | Locked |
+|----|---------------|-----------------|------------|--------|
+| 01 | {what breaks downstream if deleted} | {PASS/FAIL} | {PASS/FAIL} | {date} |
+
+## Version History
+- v1.0: Extracted from Story Lock v1
+- v{N}: {what changed and which episode revision drove it}
 ```
 
 ---
@@ -1069,6 +1231,7 @@ Watch for these failures:
 - **Unearned complexity** — failed the KISS test. Strip back to the simplest version that does the job.
 - **Virus capture (v3.2)** — the draft reads as institutional process, passive endings, villain-absent, interior-static. If the anti-viral pass flags ≥3 violations per episode, the virus has taken hold and the Story Lock (not the draft) likely needs revision — the room's mechanisms are producing document-drama rather than physical story.
 - **Framework drift (v3.3)** — the draft no longer maps to the framework's `beats_or_units`. Symptom: the lead writer's draft is "good" in isolation but the room can't say which beat it is delivering. Diagnosis: the writer drafted from intuition and the framework was decoration. Fix: re-anchor to `STORY/FRAMEWORK.yaml` per the Phase 6 Beat Brief and re-draft from the beat the scene is supposed to be doing. Persistent drift across multiple episodes means the framework is wrong for this brief — return to Phase 0 and reselect.
+- **Demonstration drift (v3.7)** — episodes demonstrate traits and theme instead of propagating consequences. Symptom: multiple episodes fail the deletion test; the climax is thesis-shaped (it answers the stated question rather than paying accumulated costs); scenes are organized around labeled traits ("the reckless one acts recklessly"). Diagnosis: the Causal Contract stopped being transmitted — check whether the Phase 6 briefs actually included the episode's contract slice, and whether the Episode Arc's Needs/Sets-up lines survived the last Story Lock revision. This is the documented model default (the sister pipeline measured it at 43% deletable episodes when the wiring wasn't transmitted); the fix is restoring transmission, not exhorting the writers to "add causality."
 
 ---
 

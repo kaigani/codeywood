@@ -286,6 +286,8 @@ Before generating any pitches:
    ### R1 — Full Roster
    R1 is where surprise lives. Personas whose mechanisms the head writer did NOT expect to fit the brief sometimes nail it. A pre-curated R1 subset cuts off the discovery surface. For any production-grade run, R1 is the full available roster.
 
+   **(v5.1 roster rule)** Personas with `base.logline_eligible: false` are head-writer/room-only and are EXCLUDED from the pitch pool (at the v5.1 merge: Arthur Price, Inés Cavallo, Caelum Meridian). "Full roster" means all logline-eligible personas.
+
    Exception: if the available compute/time genuinely cannot support the full roster for R1, use a curated subset of ≥12 personas covering every mechanism family. Note this as a known limitation.
 
    ### R1 → R2 Transition — Cull to a Committed Room

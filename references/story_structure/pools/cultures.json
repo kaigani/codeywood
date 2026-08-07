@@ -1,0 +1,7927 @@
+[
+ {
+  "name": "Pashtun",
+  "country": "Afghanistan",
+  "period": "current"
+ },
+ {
+  "name": "Tajik",
+  "country": "Afghanistan",
+  "period": "current"
+ },
+ {
+  "name": "Hazara",
+  "country": "Afghanistan",
+  "period": "current"
+ },
+ {
+  "name": "Ghaznavid",
+  "country": "Afghanistan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ghurid",
+  "country": "Afghanistan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bactria-Margiana (BMAC)",
+  "country": "Afghanistan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Gandhara Grave culture",
+  "country": "Afghanistan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Albanian Gheg",
+  "country": "Albania",
+  "period": "current"
+ },
+ {
+  "name": "Albanian Tosk",
+  "country": "Albania",
+  "period": "current"
+ },
+ {
+  "name": "Aromanians",
+  "country": "Albania",
+  "period": "current"
+ },
+ {
+  "name": "Arbër/medieval Albanian",
+  "country": "Albania",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Byzantine Albanian",
+  "country": "Albania",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Illyrian",
+  "country": "Albania",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Epirus/Chaonian",
+  "country": "Albania",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Arab-Algerian",
+  "country": "Algeria",
+  "period": "current"
+ },
+ {
+  "name": "Kabyle Berber",
+  "country": "Algeria",
+  "period": "current"
+ },
+ {
+  "name": "Tuareg",
+  "country": "Algeria",
+  "period": "current"
+ },
+ {
+  "name": "Rustamid",
+  "country": "Algeria",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Almohad/Maghreb Islamic",
+  "country": "Algeria",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Capsian",
+  "country": "Algeria",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Numidian/Berber",
+  "country": "Algeria",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Catalan Andorran",
+  "country": "Andorra",
+  "period": "current"
+ },
+ {
+  "name": "Pyrenean pastoral",
+  "country": "Andorra",
+  "period": "current"
+ },
+ {
+  "name": "Medieval Catalan",
+  "country": "Andorra",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Carolingian Marca Hispanica",
+  "country": "Andorra",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Iberian",
+  "country": "Andorra",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bronze Age Pyrenean",
+  "country": "Andorra",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Ovimbundu",
+  "country": "Angola",
+  "period": "current"
+ },
+ {
+  "name": "Kimbundu/Ambundu",
+  "country": "Angola",
+  "period": "current"
+ },
+ {
+  "name": "Bakongo",
+  "country": "Angola",
+  "period": "current"
+ },
+ {
+  "name": "Kingdom of Kongo",
+  "country": "Angola",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ndongo",
+  "country": "Angola",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Later Stone Age Khoisan",
+  "country": "Angola",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bantu Iron Age",
+  "country": "Angola",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Antiguan/Barbudan Creole",
+  "country": "Antigua and Barbuda",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Caribbean",
+  "country": "Antigua and Barbuda",
+  "period": "current"
+ },
+ {
+  "name": "British-Caribbean",
+  "country": "Antigua and Barbuda",
+  "period": "current"
+ },
+ {
+  "name": "Colonial plantation Creole",
+  "country": "Antigua and Barbuda",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Kalinago-Carib contact era",
+  "country": "Antigua and Barbuda",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Saladoid",
+  "country": "Antigua and Barbuda",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Archaic Antillean",
+  "country": "Antigua and Barbuda",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Rioplatense/Argentine",
+  "country": "Argentina",
+  "period": "current"
+ },
+ {
+  "name": "Guaraní",
+  "country": "Argentina",
+  "period": "current"
+ },
+ {
+  "name": "Mapuche",
+  "country": "Argentina",
+  "period": "current"
+ },
+ {
+  "name": "Spanish colonial Criollo",
+  "country": "Argentina",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Jesuit-Guaraní missions",
+  "country": "Argentina",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Diaguita",
+  "country": "Argentina",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Tehuelche",
+  "country": "Argentina",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Armenian",
+  "country": "Armenia",
+  "period": "current"
+ },
+ {
+  "name": "Yezidi",
+  "country": "Armenia",
+  "period": "current"
+ },
+ {
+  "name": "Assyrian-Armenian",
+  "country": "Armenia",
+  "period": "current"
+ },
+ {
+  "name": "Bagratid Armenian",
+  "country": "Armenia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Cilician Armenian",
+  "country": "Armenia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Urartu",
+  "country": "Armenia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kura-Araxes",
+  "country": "Armenia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Anglo-Australian",
+  "country": "Australia",
+  "period": "current"
+ },
+ {
+  "name": "Aboriginal Australian",
+  "country": "Australia",
+  "period": "current"
+ },
+ {
+  "name": "Torres Strait Islander",
+  "country": "Australia",
+  "period": "current"
+ },
+ {
+  "name": "Colonial settler Australian",
+  "country": "Australia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Macassan-contact Aboriginal",
+  "country": "Australia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Pama-Nyungan Aboriginal",
+  "country": "Australia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Lapita-adjacent Torres Strait",
+  "country": "Australia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Austrian German",
+  "country": "Austria",
+  "period": "current"
+ },
+ {
+  "name": "Tyrolean",
+  "country": "Austria",
+  "period": "current"
+ },
+ {
+  "name": "Burgenland Croat",
+  "country": "Austria",
+  "period": "current"
+ },
+ {
+  "name": "Habsburg Austrian",
+  "country": "Austria",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bavarian-Ostarrîchi",
+  "country": "Austria",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Hallstatt",
+  "country": "Austria",
+  "period": "pre_historical"
+ },
+ {
+  "name": "La Tène Celtic",
+  "country": "Austria",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Austrian German",
+  "country": "Austrian Empire*",
+  "period": "current"
+ },
+ {
+  "name": "Hungarian",
+  "country": "Austrian Empire*",
+  "period": "current"
+ },
+ {
+  "name": "Czech/Slovak",
+  "country": "Austrian Empire*",
+  "period": "current"
+ },
+ {
+  "name": "Habsburg imperial",
+  "country": "Austrian Empire*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Austro-Hungarian",
+  "country": "Austrian Empire*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Hallstatt",
+  "country": "Austrian Empire*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "La Tène Celtic",
+  "country": "Austrian Empire*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Azerbaijani Turkic",
+  "country": "Azerbaijan",
+  "period": "current"
+ },
+ {
+  "name": "Lezgin",
+  "country": "Azerbaijan",
+  "period": "current"
+ },
+ {
+  "name": "Talysh",
+  "country": "Azerbaijan",
+  "period": "current"
+ },
+ {
+  "name": "Shirvanshah",
+  "country": "Azerbaijan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Safavid Azerbaijani",
+  "country": "Azerbaijan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Caucasian Albanian",
+  "country": "Azerbaijan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kura-Araxes",
+  "country": "Azerbaijan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Baden German",
+  "country": "Baden*",
+  "period": "current"
+ },
+ {
+  "name": "Alemannic",
+  "country": "Baden*",
+  "period": "current"
+ },
+ {
+  "name": "Swabian",
+  "country": "Baden*",
+  "period": "current"
+ },
+ {
+  "name": "Margraviate/Grand Duchy Baden",
+  "country": "Baden*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Alemannic medieval",
+  "country": "Baden*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Hallstatt",
+  "country": "Baden*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "La Tène Celtic",
+  "country": "Baden*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bahamian Creole",
+  "country": "Bahamas, The",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Bahamian",
+  "country": "Bahamas, The",
+  "period": "current"
+ },
+ {
+  "name": "British-Caribbean",
+  "country": "Bahamas, The",
+  "period": "current"
+ },
+ {
+  "name": "Loyalist colonial",
+  "country": "Bahamas, The",
+  "period": "historical_ad"
+ },
+ {
+  "name": "plantation Creole",
+  "country": "Bahamas, The",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Lucayan Taíno",
+  "country": "Bahamas, The",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Archaic Caribbean",
+  "country": "Bahamas, The",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bahraini Arab",
+  "country": "Bahrain",
+  "period": "current"
+ },
+ {
+  "name": "Baharna",
+  "country": "Bahrain",
+  "period": "current"
+ },
+ {
+  "name": "Ajam/Persian Bahraini",
+  "country": "Bahrain",
+  "period": "current"
+ },
+ {
+  "name": "Qarmatian",
+  "country": "Bahrain",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Gulf Islamic trading culture",
+  "country": "Bahrain",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Dilmun",
+  "country": "Bahrain",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Tylos",
+  "country": "Bahrain",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bengali",
+  "country": "Bangladesh",
+  "period": "current"
+ },
+ {
+  "name": "Chakma",
+  "country": "Bangladesh",
+  "period": "current"
+ },
+ {
+  "name": "Sylheti",
+  "country": "Bangladesh",
+  "period": "current"
+ },
+ {
+  "name": "Bengal Sultanate",
+  "country": "Bangladesh",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Pala Buddhist Bengal",
+  "country": "Bangladesh",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Vanga/Gangaridai",
+  "country": "Bangladesh",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Chalcolithic Bengal",
+  "country": "Bangladesh",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bajan Creole",
+  "country": "Barbados",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Barbadian",
+  "country": "Barbados",
+  "period": "current"
+ },
+ {
+  "name": "British-Caribbean",
+  "country": "Barbados",
+  "period": "current"
+ },
+ {
+  "name": "Plantation Barbados",
+  "country": "Barbados",
+  "period": "historical_ad"
+ },
+ {
+  "name": "colonial Creole",
+  "country": "Barbados",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Saladoid",
+  "country": "Barbados",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Archaic Antillean",
+  "country": "Barbados",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bavarian German",
+  "country": "Bavaria*",
+  "period": "current"
+ },
+ {
+  "name": "Franconian",
+  "country": "Bavaria*",
+  "period": "current"
+ },
+ {
+  "name": "Swabian",
+  "country": "Bavaria*",
+  "period": "current"
+ },
+ {
+  "name": "Duchy/Kingdom of Bavaria",
+  "country": "Bavaria*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "medieval Bavarii",
+  "country": "Bavaria*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Hallstatt",
+  "country": "Bavaria*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "La Tène Celtic",
+  "country": "Bavaria*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Belarusian",
+  "country": "Belarus",
+  "period": "current"
+ },
+ {
+  "name": "Polish-Belarusian",
+  "country": "Belarus",
+  "period": "current"
+ },
+ {
+  "name": "Litvin/Tutejszy",
+  "country": "Belarus",
+  "period": "current"
+ },
+ {
+  "name": "Grand Duchy of Lithuania Ruthenian",
+  "country": "Belarus",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Kievan Rus'",
+  "country": "Belarus",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Milograd",
+  "country": "Belarus",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Zarubintsy",
+  "country": "Belarus",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Flemish",
+  "country": "Belgium",
+  "period": "current"
+ },
+ {
+  "name": "Walloon",
+  "country": "Belgium",
+  "period": "current"
+ },
+ {
+  "name": "Belgian-German",
+  "country": "Belgium",
+  "period": "current"
+ },
+ {
+  "name": "Burgundian Netherlands",
+  "country": "Belgium",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Prince-Bishopric of Liège",
+  "country": "Belgium",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Belgae",
+  "country": "Belgium",
+  "period": "pre_historical"
+ },
+ {
+  "name": "La Tène Celtic",
+  "country": "Belgium",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Belizean Kriol",
+  "country": "Belize",
+  "period": "current"
+ },
+ {
+  "name": "Garifuna",
+  "country": "Belize",
+  "period": "current"
+ },
+ {
+  "name": "Maya (Yucatec/Mopan/Q'eqchi')",
+  "country": "Belize",
+  "period": "current"
+ },
+ {
+  "name": "British Honduras Creole",
+  "country": "Belize",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Postclassic Maya",
+  "country": "Belize",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Classic Maya",
+  "country": "Belize",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Preclassic Maya",
+  "country": "Belize",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Fon",
+  "country": "Benin (Dahomey)",
+  "period": "current"
+ },
+ {
+  "name": "Yoruba",
+  "country": "Benin (Dahomey)",
+  "period": "current"
+ },
+ {
+  "name": "Bariba",
+  "country": "Benin (Dahomey)",
+  "period": "current"
+ },
+ {
+  "name": "Kingdom of Dahomey",
+  "country": "Benin (Dahomey)",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Oyo/Yoruba states",
+  "country": "Benin (Dahomey)",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Nok-related Iron Age",
+  "country": "Benin (Dahomey)",
+  "period": "pre_historical"
+ },
+ {
+  "name": "West African Late Stone Age",
+  "country": "Benin (Dahomey)",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Quechua",
+  "country": "Bolivia",
+  "period": "current"
+ },
+ {
+  "name": "Aymara",
+  "country": "Bolivia",
+  "period": "current"
+ },
+ {
+  "name": "Mestizo Bolivian",
+  "country": "Bolivia",
+  "period": "current"
+ },
+ {
+  "name": "Tiwanaku successor",
+  "country": "Bolivia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Spanish colonial Charcas",
+  "country": "Bolivia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Tiwanaku",
+  "country": "Bolivia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Wankarani",
+  "country": "Bolivia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bosniak",
+  "country": "Bosnia and Herzegovina",
+  "period": "current"
+ },
+ {
+  "name": "Serb",
+  "country": "Bosnia and Herzegovina",
+  "period": "current"
+ },
+ {
+  "name": "Croat",
+  "country": "Bosnia and Herzegovina",
+  "period": "current"
+ },
+ {
+  "name": "Medieval Bosnian",
+  "country": "Bosnia and Herzegovina",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ottoman Bosnian",
+  "country": "Bosnia and Herzegovina",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Illyrian",
+  "country": "Bosnia and Herzegovina",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Butmir Neolithic",
+  "country": "Bosnia and Herzegovina",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Tswana",
+  "country": "Botswana",
+  "period": "current"
+ },
+ {
+  "name": "Kalanga",
+  "country": "Botswana",
+  "period": "current"
+ },
+ {
+  "name": "San/Basarwa",
+  "country": "Botswana",
+  "period": "current"
+ },
+ {
+  "name": "Tswana chiefdoms",
+  "country": "Botswana",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Great Zimbabwe sphere",
+  "country": "Botswana",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Toutswe",
+  "country": "Botswana",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Later Stone Age San",
+  "country": "Botswana",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Brazilian",
+  "country": "Brazil",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Brazilian",
+  "country": "Brazil",
+  "period": "current"
+ },
+ {
+  "name": "Indigenous Amazonian",
+  "country": "Brazil",
+  "period": "current"
+ },
+ {
+  "name": "Portuguese colonial Brazilian",
+  "country": "Brazil",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Quilombo cultures",
+  "country": "Brazil",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Marajoara",
+  "country": "Brazil",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Tupí-Guaraní",
+  "country": "Brazil",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bruneian Malay",
+  "country": "Brunei",
+  "period": "current"
+ },
+ {
+  "name": "Kedayan",
+  "country": "Brunei",
+  "period": "current"
+ },
+ {
+  "name": "Iban",
+  "country": "Brunei",
+  "period": "current"
+ },
+ {
+  "name": "Brunei Sultanate",
+  "country": "Brunei",
+  "period": "historical_ad"
+ },
+ {
+  "name": "maritime Malay",
+  "country": "Brunei",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Austronesian Neolithic",
+  "country": "Brunei",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Iron Age Borneo",
+  "country": "Brunei",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Lower Saxon German",
+  "country": "Brunswick and Lüneburg*",
+  "period": "current"
+ },
+ {
+  "name": "Hanoverian",
+  "country": "Brunswick and Lüneburg*",
+  "period": "current"
+ },
+ {
+  "name": "Wendland Slavic heritage",
+  "country": "Brunswick and Lüneburg*",
+  "period": "current"
+ },
+ {
+  "name": "Duchy of Brunswick-Lüneburg",
+  "country": "Brunswick and Lüneburg*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Saxon medieval",
+  "country": "Brunswick and Lüneburg*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Jastorf",
+  "country": "Brunswick and Lüneburg*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Funnelbeaker",
+  "country": "Brunswick and Lüneburg*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bulgarian",
+  "country": "Bulgaria",
+  "period": "current"
+ },
+ {
+  "name": "Turkish Bulgarian",
+  "country": "Bulgaria",
+  "period": "current"
+ },
+ {
+  "name": "Roma",
+  "country": "Bulgaria",
+  "period": "current"
+ },
+ {
+  "name": "First/Second Bulgarian Empire",
+  "country": "Bulgaria",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Thracian-Roman",
+  "country": "Bulgaria",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Thracian",
+  "country": "Bulgaria",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Karanovo",
+  "country": "Bulgaria",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Mossi",
+  "country": "Burkina Faso (Upper Volta)",
+  "period": "current"
+ },
+ {
+  "name": "Fulani",
+  "country": "Burkina Faso (Upper Volta)",
+  "period": "current"
+ },
+ {
+  "name": "Bobo",
+  "country": "Burkina Faso (Upper Volta)",
+  "period": "current"
+ },
+ {
+  "name": "Mossi kingdoms",
+  "country": "Burkina Faso (Upper Volta)",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Liptako Fulani emirates",
+  "country": "Burkina Faso (Upper Volta)",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Kintampo-related",
+  "country": "Burkina Faso (Upper Volta)",
+  "period": "pre_historical"
+ },
+ {
+  "name": "West African Late Stone Age",
+  "country": "Burkina Faso (Upper Volta)",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bamar",
+  "country": "Burma",
+  "period": "current"
+ },
+ {
+  "name": "Shan",
+  "country": "Burma",
+  "period": "current"
+ },
+ {
+  "name": "Karen",
+  "country": "Burma",
+  "period": "current"
+ },
+ {
+  "name": "Pagan/Bagan",
+  "country": "Burma",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Mon kingdoms",
+  "country": "Burma",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Pyu city-states",
+  "country": "Burma",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Neolithic Irrawaddy",
+  "country": "Burma",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hutu",
+  "country": "Burundi",
+  "period": "current"
+ },
+ {
+  "name": "Tutsi",
+  "country": "Burundi",
+  "period": "current"
+ },
+ {
+  "name": "Twa",
+  "country": "Burundi",
+  "period": "current"
+ },
+ {
+  "name": "Kingdom of Burundi",
+  "country": "Burundi",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Great Lakes Bantu",
+  "country": "Burundi",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Urewe",
+  "country": "Burundi",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Later Stone Age",
+  "country": "Burundi",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Cape Verdean Creole",
+  "country": "Cabo Verde",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Portuguese",
+  "country": "Cabo Verde",
+  "period": "current"
+ },
+ {
+  "name": "Badiu/Sampadjudu",
+  "country": "Cabo Verde",
+  "period": "current"
+ },
+ {
+  "name": "Portuguese Atlantic Creole",
+  "country": "Cabo Verde",
+  "period": "historical_ad"
+ },
+ {
+  "name": "colonial trading culture",
+  "country": "Cabo Verde",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Khmer",
+  "country": "Cambodia",
+  "period": "current"
+ },
+ {
+  "name": "Cham",
+  "country": "Cambodia",
+  "period": "current"
+ },
+ {
+  "name": "Khmer Loeu",
+  "country": "Cambodia",
+  "period": "current"
+ },
+ {
+  "name": "Angkor Khmer",
+  "country": "Cambodia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Chenla",
+  "country": "Cambodia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Funan",
+  "country": "Cambodia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Neolithic Mekong",
+  "country": "Cambodia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bamileke",
+  "country": "Cameroon",
+  "period": "current"
+ },
+ {
+  "name": "Fulani",
+  "country": "Cameroon",
+  "period": "current"
+ },
+ {
+  "name": "Beti-Pahuin",
+  "country": "Cameroon",
+  "period": "current"
+ },
+ {
+  "name": "Bamum kingdom",
+  "country": "Cameroon",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Kotoko city-states",
+  "country": "Cameroon",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Sao civilization",
+  "country": "Cameroon",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Shum Laka/Late Stone Age",
+  "country": "Cameroon",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Anglo-Canadian",
+  "country": "Canada",
+  "period": "current"
+ },
+ {
+  "name": "Québécois",
+  "country": "Canada",
+  "period": "current"
+ },
+ {
+  "name": "First Nations/Inuit/Métis",
+  "country": "Canada",
+  "period": "current"
+ },
+ {
+  "name": "New France",
+  "country": "Canada",
+  "period": "historical_ad"
+ },
+ {
+  "name": "fur-trade Métis",
+  "country": "Canada",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Dorset",
+  "country": "Canada",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Paleo-Indian/Archaic",
+  "country": "Canada",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Caymanian",
+  "country": "Cayman Islands, The",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Caribbean",
+  "country": "Cayman Islands, The",
+  "period": "current"
+ },
+ {
+  "name": "British-Caribbean",
+  "country": "Cayman Islands, The",
+  "period": "current"
+ },
+ {
+  "name": "British colonial Caymanian",
+  "country": "Cayman Islands, The",
+  "period": "historical_ad"
+ },
+ {
+  "name": "maritime turtle-fishing culture",
+  "country": "Cayman Islands, The",
+  "period": "historical_ad"
+ },
+ {
+  "name": "No confirmed permanent pre-Columbian culture",
+  "country": "Cayman Islands, The",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Banda",
+  "country": "Central African Republic",
+  "period": "current"
+ },
+ {
+  "name": "Gbaya",
+  "country": "Central African Republic",
+  "period": "current"
+ },
+ {
+  "name": "Sara",
+  "country": "Central African Republic",
+  "period": "current"
+ },
+ {
+  "name": "Dar al-Kuti",
+  "country": "Central African Republic",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Zande/Azande states",
+  "country": "Central African Republic",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bantu Iron Age",
+  "country": "Central African Republic",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Late Stone Age",
+  "country": "Central African Republic",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Guatemalan",
+  "country": "Central American Federation*",
+  "period": "current"
+ },
+ {
+  "name": "Salvadoran",
+  "country": "Central American Federation*",
+  "period": "current"
+ },
+ {
+  "name": "Honduran/Nicaraguan/Costa Rican",
+  "country": "Central American Federation*",
+  "period": "current"
+ },
+ {
+  "name": "Spanish Central American",
+  "country": "Central American Federation*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Federal liberal Creole",
+  "country": "Central American Federation*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Maya",
+  "country": "Central American Federation*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Lenca/Chorotega",
+  "country": "Central American Federation*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Sara",
+  "country": "Chad",
+  "period": "current"
+ },
+ {
+  "name": "Arab Chadian",
+  "country": "Chad",
+  "period": "current"
+ },
+ {
+  "name": "Kanembu",
+  "country": "Chad",
+  "period": "current"
+ },
+ {
+  "name": "Kanem-Bornu",
+  "country": "Chad",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bagirmi",
+  "country": "Chad",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Sao civilization",
+  "country": "Chad",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Ennedi/Tenerian Saharan",
+  "country": "Chad",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Chilean",
+  "country": "Chile",
+  "period": "current"
+ },
+ {
+  "name": "Mapuche",
+  "country": "Chile",
+  "period": "current"
+ },
+ {
+  "name": "Rapa Nui",
+  "country": "Chile",
+  "period": "current"
+ },
+ {
+  "name": "Spanish colonial Chilean",
+  "country": "Chile",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Araucanian/Mapuche",
+  "country": "Chile",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Chinchorro",
+  "country": "Chile",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Diaguita",
+  "country": "Chile",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Han Chinese",
+  "country": "China",
+  "period": "current"
+ },
+ {
+  "name": "Tibetan",
+  "country": "China",
+  "period": "current"
+ },
+ {
+  "name": "Uyghur",
+  "country": "China",
+  "period": "current"
+ },
+ {
+  "name": "Tang/Song Chinese",
+  "country": "China",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ming/Qing Chinese",
+  "country": "China",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Shang/Zhou",
+  "country": "China",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Yangshao/Longshan",
+  "country": "China",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Colombian Mestizo",
+  "country": "Colombia",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Colombian",
+  "country": "Colombia",
+  "period": "current"
+ },
+ {
+  "name": "Wayuu",
+  "country": "Colombia",
+  "period": "current"
+ },
+ {
+  "name": "Spanish New Granada",
+  "country": "Colombia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Muisca colonial",
+  "country": "Colombia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Muisca",
+  "country": "Colombia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "San Agustín",
+  "country": "Colombia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Comorian",
+  "country": "Comoros",
+  "period": "current"
+ },
+ {
+  "name": "Shirazi-Swahili",
+  "country": "Comoros",
+  "period": "current"
+ },
+ {
+  "name": "Malagasy-Arab",
+  "country": "Comoros",
+  "period": "current"
+ },
+ {
+  "name": "Sultanates of Comoros",
+  "country": "Comoros",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Swahili coast",
+  "country": "Comoros",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Austronesian/Bantu settlement",
+  "country": "Comoros",
+  "period": "pre_historical"
+ },
+ {
+  "name": "early Swahili",
+  "country": "Comoros",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kongo",
+  "country": "Congo Free State, The*",
+  "period": "current"
+ },
+ {
+  "name": "Luba",
+  "country": "Congo Free State, The*",
+  "period": "current"
+ },
+ {
+  "name": "Mongo",
+  "country": "Congo Free State, The*",
+  "period": "current"
+ },
+ {
+  "name": "Kingdom of Kongo",
+  "country": "Congo Free State, The*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Luba/Lunda states",
+  "country": "Congo Free State, The*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bantu Iron Age",
+  "country": "Congo Free State, The*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Later Stone Age",
+  "country": "Congo Free State, The*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Cook Islands Māori",
+  "country": "Cook Islands",
+  "period": "current"
+ },
+ {
+  "name": "Pukapukan",
+  "country": "Cook Islands",
+  "period": "current"
+ },
+ {
+  "name": "Polynesian Christian",
+  "country": "Cook Islands",
+  "period": "current"
+ },
+ {
+  "name": "Ariki chiefdoms",
+  "country": "Cook Islands",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Polynesian voyaging",
+  "country": "Cook Islands",
+  "period": "historical_ad"
+ },
+ {
+  "name": "East Polynesian Lapita-descended",
+  "country": "Cook Islands",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Polynesian settlement",
+  "country": "Cook Islands",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Costa Rican/Tico",
+  "country": "Costa Rica",
+  "period": "current"
+ },
+ {
+  "name": "Bribri",
+  "country": "Costa Rica",
+  "period": "current"
+ },
+ {
+  "name": "Cabécar",
+  "country": "Costa Rica",
+  "period": "current"
+ },
+ {
+  "name": "Spanish colonial Costa Rica",
+  "country": "Costa Rica",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Chorotega",
+  "country": "Costa Rica",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Diquís",
+  "country": "Costa Rica",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Greater Nicoya",
+  "country": "Costa Rica",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Akan/Baoulé",
+  "country": "Cote d’Ivoire (Ivory Coast)",
+  "period": "current"
+ },
+ {
+  "name": "Senufo",
+  "country": "Cote d’Ivoire (Ivory Coast)",
+  "period": "current"
+ },
+ {
+  "name": "Mande/Dyula",
+  "country": "Cote d’Ivoire (Ivory Coast)",
+  "period": "current"
+ },
+ {
+  "name": "Kong Empire",
+  "country": "Cote d’Ivoire (Ivory Coast)",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Baule/Akan states",
+  "country": "Cote d’Ivoire (Ivory Coast)",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Kintampo-related",
+  "country": "Cote d’Ivoire (Ivory Coast)",
+  "period": "pre_historical"
+ },
+ {
+  "name": "West African Iron Age",
+  "country": "Cote d’Ivoire (Ivory Coast)",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Croat",
+  "country": "Croatia",
+  "period": "current"
+ },
+ {
+  "name": "Serb Croatian",
+  "country": "Croatia",
+  "period": "current"
+ },
+ {
+  "name": "Istrian",
+  "country": "Croatia",
+  "period": "current"
+ },
+ {
+  "name": "Medieval Croatian",
+  "country": "Croatia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Venetian Dalmatian",
+  "country": "Croatia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Illyrian",
+  "country": "Croatia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Liburnian",
+  "country": "Croatia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Cuban",
+  "country": "Cuba",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Cuban",
+  "country": "Cuba",
+  "period": "current"
+ },
+ {
+  "name": "Cuban Spanish-Creole",
+  "country": "Cuba",
+  "period": "current"
+ },
+ {
+  "name": "Spanish colonial Cuban",
+  "country": "Cuba",
+  "period": "historical_ad"
+ },
+ {
+  "name": "plantation Afro-Cuban",
+  "country": "Cuba",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Taíno",
+  "country": "Cuba",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Ciboney/Guanahatabey",
+  "country": "Cuba",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Greek Cypriot",
+  "country": "Cyprus",
+  "period": "current"
+ },
+ {
+  "name": "Turkish Cypriot",
+  "country": "Cyprus",
+  "period": "current"
+ },
+ {
+  "name": "Maronite Cypriot",
+  "country": "Cyprus",
+  "period": "current"
+ },
+ {
+  "name": "Byzantine Cypriot",
+  "country": "Cyprus",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Lusignan/Venetian",
+  "country": "Cyprus",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Cypro-Minoan",
+  "country": "Cyprus",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Khirokitia Neolithic",
+  "country": "Cyprus",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Czech",
+  "country": "Czechia",
+  "period": "current"
+ },
+ {
+  "name": "Moravian",
+  "country": "Czechia",
+  "period": "current"
+ },
+ {
+  "name": "Silesian",
+  "country": "Czechia",
+  "period": "current"
+ },
+ {
+  "name": "Bohemian kingdom",
+  "country": "Czechia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Great Moravian",
+  "country": "Czechia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Únětice",
+  "country": "Czechia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "La Tène/Boii",
+  "country": "Czechia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Czech",
+  "country": "Czechoslovakia*",
+  "period": "current"
+ },
+ {
+  "name": "Slovak",
+  "country": "Czechoslovakia*",
+  "period": "current"
+ },
+ {
+  "name": "Moravian/Rusyn",
+  "country": "Czechoslovakia*",
+  "period": "current"
+ },
+ {
+  "name": "Czechoslovak interwar",
+  "country": "Czechoslovakia*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bohemian/Slovak national",
+  "country": "Czechoslovakia*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Únětice",
+  "country": "Czechoslovakia*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "La Tène/Boii",
+  "country": "Czechoslovakia*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kongo",
+  "country": "Democratic Republic of the Congo",
+  "period": "current"
+ },
+ {
+  "name": "Luba",
+  "country": "Democratic Republic of the Congo",
+  "period": "current"
+ },
+ {
+  "name": "Mongo",
+  "country": "Democratic Republic of the Congo",
+  "period": "current"
+ },
+ {
+  "name": "Kingdom of Kongo",
+  "country": "Democratic Republic of the Congo",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Luba/Lunda states",
+  "country": "Democratic Republic of the Congo",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bantu Iron Age",
+  "country": "Democratic Republic of the Congo",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Later Stone Age",
+  "country": "Democratic Republic of the Congo",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Danish",
+  "country": "Denmark",
+  "period": "current"
+ },
+ {
+  "name": "Faroese",
+  "country": "Denmark",
+  "period": "current"
+ },
+ {
+  "name": "Greenlandic Inuit",
+  "country": "Denmark",
+  "period": "current"
+ },
+ {
+  "name": "Viking Danish",
+  "country": "Denmark",
+  "period": "historical_ad"
+ },
+ {
+  "name": "medieval Danish",
+  "country": "Denmark",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ertebølle",
+  "country": "Denmark",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Nordic Bronze Age",
+  "country": "Denmark",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Somali Issa",
+  "country": "Djibouti",
+  "period": "current"
+ },
+ {
+  "name": "Afar",
+  "country": "Djibouti",
+  "period": "current"
+ },
+ {
+  "name": "Arab Djiboutian",
+  "country": "Djibouti",
+  "period": "current"
+ },
+ {
+  "name": "Adal Sultanate",
+  "country": "Djibouti",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ifat",
+  "country": "Djibouti",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Afar/Somali Cushitic pastoral",
+  "country": "Djibouti",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Land of Punt horizon",
+  "country": "Djibouti",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Dominican Creole",
+  "country": "Dominica",
+  "period": "current"
+ },
+ {
+  "name": "Kalinago",
+  "country": "Dominica",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Caribbean",
+  "country": "Dominica",
+  "period": "current"
+ },
+ {
+  "name": "French/British colonial Creole",
+  "country": "Dominica",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Kalinago resistance",
+  "country": "Dominica",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Saladoid",
+  "country": "Dominica",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kalinago/Island Carib",
+  "country": "Dominica",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Dominican",
+  "country": "Dominican Republic",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Dominican",
+  "country": "Dominican Republic",
+  "period": "current"
+ },
+ {
+  "name": "Cibaeño",
+  "country": "Dominican Republic",
+  "period": "current"
+ },
+ {
+  "name": "Spanish Santo Domingo",
+  "country": "Dominican Republic",
+  "period": "historical_ad"
+ },
+ {
+  "name": "colonial Creole",
+  "country": "Dominican Republic",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Taíno",
+  "country": "Dominican Republic",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Ostionoid",
+  "country": "Dominican Republic",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Emilian/Parmesan",
+  "country": "Duchy of Parma, The*",
+  "period": "current"
+ },
+ {
+  "name": "Italian",
+  "country": "Duchy of Parma, The*",
+  "period": "current"
+ },
+ {
+  "name": "Lombard-Emilian",
+  "country": "Duchy of Parma, The*",
+  "period": "current"
+ },
+ {
+  "name": "Duchy of Parma",
+  "country": "Duchy of Parma, The*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Lombard Italy",
+  "country": "Duchy of Parma, The*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Etruscan/Italic",
+  "country": "Duchy of Parma, The*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Terramare",
+  "country": "Duchy of Parma, The*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "East German",
+  "country": "East Germany (German Democratic Republic)*",
+  "period": "current"
+ },
+ {
+  "name": "Saxon",
+  "country": "East Germany (German Democratic Republic)*",
+  "period": "current"
+ },
+ {
+  "name": "Thuringian",
+  "country": "East Germany (German Democratic Republic)*",
+  "period": "current"
+ },
+ {
+  "name": "GDR socialist",
+  "country": "East Germany (German Democratic Republic)*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Prussian/Saxon",
+  "country": "East Germany (German Democratic Republic)*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Jastorf",
+  "country": "East Germany (German Democratic Republic)*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Lusatian",
+  "country": "East Germany (German Democratic Republic)*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Mestizo Ecuadorian",
+  "country": "Ecuador",
+  "period": "current"
+ },
+ {
+  "name": "Kichwa",
+  "country": "Ecuador",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Ecuadorian",
+  "country": "Ecuador",
+  "period": "current"
+ },
+ {
+  "name": "Quito colonial",
+  "country": "Ecuador",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Inca northern Andes",
+  "country": "Ecuador",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Valdivia",
+  "country": "Ecuador",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Cañari/Caras",
+  "country": "Ecuador",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Egyptian Arab",
+  "country": "Egypt",
+  "period": "current"
+ },
+ {
+  "name": "Coptic",
+  "country": "Egypt",
+  "period": "current"
+ },
+ {
+  "name": "Nubian",
+  "country": "Egypt",
+  "period": "current"
+ },
+ {
+  "name": "Fatimid/Mamluk Egyptian",
+  "country": "Egypt",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Coptic Byzantine",
+  "country": "Egypt",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ancient Egyptian",
+  "country": "Egypt",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Naqada",
+  "country": "Egypt",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Salvadoran",
+  "country": "El Salvador",
+  "period": "current"
+ },
+ {
+  "name": "Pipil/Nawat",
+  "country": "El Salvador",
+  "period": "current"
+ },
+ {
+  "name": "Lenca",
+  "country": "El Salvador",
+  "period": "current"
+ },
+ {
+  "name": "Spanish colonial Salvadoran",
+  "country": "El Salvador",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Pipil postclassic",
+  "country": "El Salvador",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Maya",
+  "country": "El Salvador",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Pipil",
+  "country": "El Salvador",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Fang",
+  "country": "Equatorial Guinea",
+  "period": "current"
+ },
+ {
+  "name": "Bubi",
+  "country": "Equatorial Guinea",
+  "period": "current"
+ },
+ {
+  "name": "Annobonese Creole",
+  "country": "Equatorial Guinea",
+  "period": "current"
+ },
+ {
+  "name": "Bubi island kingdoms",
+  "country": "Equatorial Guinea",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Spanish colonial",
+  "country": "Equatorial Guinea",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bantu Iron Age",
+  "country": "Equatorial Guinea",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bioko precolonial Bubi",
+  "country": "Equatorial Guinea",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Tigrinya",
+  "country": "Eritrea",
+  "period": "current"
+ },
+ {
+  "name": "Tigre",
+  "country": "Eritrea",
+  "period": "current"
+ },
+ {
+  "name": "Afar",
+  "country": "Eritrea",
+  "period": "current"
+ },
+ {
+  "name": "Medri Bahri",
+  "country": "Eritrea",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Aksumite",
+  "country": "Eritrea",
+  "period": "historical_ad"
+ },
+ {
+  "name": "D'mt",
+  "country": "Eritrea",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Gash Group",
+  "country": "Eritrea",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Estonian",
+  "country": "Estonia",
+  "period": "current"
+ },
+ {
+  "name": "Seto",
+  "country": "Estonia",
+  "period": "current"
+ },
+ {
+  "name": "Russian-Estonian",
+  "country": "Estonia",
+  "period": "current"
+ },
+ {
+  "name": "Livonian/Estonian medieval",
+  "country": "Estonia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Hanseatic Tallinn",
+  "country": "Estonia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Comb Ceramic",
+  "country": "Estonia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Corded Ware",
+  "country": "Estonia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Swazi",
+  "country": "Eswatini",
+  "period": "current"
+ },
+ {
+  "name": "Zulu-related",
+  "country": "Eswatini",
+  "period": "current"
+ },
+ {
+  "name": "Tsonga",
+  "country": "Eswatini",
+  "period": "current"
+ },
+ {
+  "name": "Swazi kingdom",
+  "country": "Eswatini",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Nguni chiefdoms",
+  "country": "Eswatini",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Urewe/Bantu Iron Age",
+  "country": "Eswatini",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Late Stone Age",
+  "country": "Eswatini",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Amhara",
+  "country": "Ethiopia",
+  "period": "current"
+ },
+ {
+  "name": "Oromo",
+  "country": "Ethiopia",
+  "period": "current"
+ },
+ {
+  "name": "Tigray",
+  "country": "Ethiopia",
+  "period": "current"
+ },
+ {
+  "name": "Aksumite",
+  "country": "Ethiopia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Solomonic Ethiopian",
+  "country": "Ethiopia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "D'mt",
+  "country": "Ethiopia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Pastoral Neolithic",
+  "country": "Ethiopia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "German",
+  "country": "Federal Government of Germany (1848-49)*",
+  "period": "current"
+ },
+ {
+  "name": "Austrian German",
+  "country": "Federal Government of Germany (1848-49)*",
+  "period": "current"
+ },
+ {
+  "name": "Prussian/Saxon",
+  "country": "Federal Government of Germany (1848-49)*",
+  "period": "current"
+ },
+ {
+  "name": "Frankfurt Parliament liberal German",
+  "country": "Federal Government of Germany (1848-49)*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "German Confederation",
+  "country": "Federal Government of Germany (1848-49)*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Jastorf",
+  "country": "Federal Government of Germany (1848-49)*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "La Tène Celtic",
+  "country": "Federal Government of Germany (1848-49)*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "iTaukei Fijian",
+  "country": "Fiji",
+  "period": "current"
+ },
+ {
+  "name": "Indo-Fijian",
+  "country": "Fiji",
+  "period": "current"
+ },
+ {
+  "name": "Rotuman",
+  "country": "Fiji",
+  "period": "current"
+ },
+ {
+  "name": "Fijian chiefdoms",
+  "country": "Fiji",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Tongan-influenced Lau",
+  "country": "Fiji",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Lapita",
+  "country": "Fiji",
+  "period": "pre_historical"
+ },
+ {
+  "name": "early Oceanic",
+  "country": "Fiji",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Finnish",
+  "country": "Finland",
+  "period": "current"
+ },
+ {
+  "name": "Swedish-Finn",
+  "country": "Finland",
+  "period": "current"
+ },
+ {
+  "name": "Sámi",
+  "country": "Finland",
+  "period": "current"
+ },
+ {
+  "name": "Medieval Finnish/Swedish realm",
+  "country": "Finland",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Karelian",
+  "country": "Finland",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Comb Ceramic",
+  "country": "Finland",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Corded Ware",
+  "country": "Finland",
+  "period": "pre_historical"
+ },
+ {
+  "name": "French",
+  "country": "France",
+  "period": "current"
+ },
+ {
+  "name": "Breton",
+  "country": "France",
+  "period": "current"
+ },
+ {
+  "name": "Occitan",
+  "country": "France",
+  "period": "current"
+ },
+ {
+  "name": "Capetian/medieval French",
+  "country": "France",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Gallo-Roman",
+  "country": "France",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Gaulish/La Tène",
+  "country": "France",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Magdalenian",
+  "country": "France",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Fang",
+  "country": "Gabon",
+  "period": "current"
+ },
+ {
+  "name": "Myene",
+  "country": "Gabon",
+  "period": "current"
+ },
+ {
+  "name": "Punu",
+  "country": "Gabon",
+  "period": "current"
+ },
+ {
+  "name": "Loango/Kongo sphere",
+  "country": "Gabon",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Mpongwe trade",
+  "country": "Gabon",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bantu Iron Age",
+  "country": "Gabon",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Late Stone Age",
+  "country": "Gabon",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Mandinka",
+  "country": "Gambia, The",
+  "period": "current"
+ },
+ {
+  "name": "Wolof",
+  "country": "Gambia, The",
+  "period": "current"
+ },
+ {
+  "name": "Fula",
+  "country": "Gambia, The",
+  "period": "current"
+ },
+ {
+  "name": "Kaabu",
+  "country": "Gambia, The",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Mali/Senegambia",
+  "country": "Gambia, The",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Senegambian megalithic",
+  "country": "Gambia, The",
+  "period": "pre_historical"
+ },
+ {
+  "name": "West African Late Stone Age",
+  "country": "Gambia, The",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Georgian/Kartvelian",
+  "country": "Georgia",
+  "period": "current"
+ },
+ {
+  "name": "Mingrelian",
+  "country": "Georgia",
+  "period": "current"
+ },
+ {
+  "name": "Svan",
+  "country": "Georgia",
+  "period": "current"
+ },
+ {
+  "name": "Kingdom of Georgia",
+  "country": "Georgia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Colchis/Iberia late antique",
+  "country": "Georgia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Kura-Araxes",
+  "country": "Georgia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Trialeti",
+  "country": "Georgia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "German",
+  "country": "Germany",
+  "period": "current"
+ },
+ {
+  "name": "Bavarian",
+  "country": "Germany",
+  "period": "current"
+ },
+ {
+  "name": "Saxon/Swabian",
+  "country": "Germany",
+  "period": "current"
+ },
+ {
+  "name": "Holy Roman/German",
+  "country": "Germany",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Prussian",
+  "country": "Germany",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Jastorf",
+  "country": "Germany",
+  "period": "pre_historical"
+ },
+ {
+  "name": "La Tène Celtic",
+  "country": "Germany",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Akan",
+  "country": "Ghana",
+  "period": "current"
+ },
+ {
+  "name": "Ewe",
+  "country": "Ghana",
+  "period": "current"
+ },
+ {
+  "name": "Mole-Dagbon",
+  "country": "Ghana",
+  "period": "current"
+ },
+ {
+  "name": "Ashanti Empire",
+  "country": "Ghana",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Dagbon",
+  "country": "Ghana",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Kintampo",
+  "country": "Ghana",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Nok-related Iron Age",
+  "country": "Ghana",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Tuscan Italian",
+  "country": "Grand Duchy of Tuscany, The*",
+  "period": "current"
+ },
+ {
+  "name": "Florentine",
+  "country": "Grand Duchy of Tuscany, The*",
+  "period": "current"
+ },
+ {
+  "name": "Maremman",
+  "country": "Grand Duchy of Tuscany, The*",
+  "period": "current"
+ },
+ {
+  "name": "Grand Duchy Tuscany",
+  "country": "Grand Duchy of Tuscany, The*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Renaissance Florence",
+  "country": "Grand Duchy of Tuscany, The*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Etruscan",
+  "country": "Grand Duchy of Tuscany, The*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Apennine/Terramare",
+  "country": "Grand Duchy of Tuscany, The*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Greek",
+  "country": "Greece",
+  "period": "current"
+ },
+ {
+  "name": "Cretan",
+  "country": "Greece",
+  "period": "current"
+ },
+ {
+  "name": "Pontic Greek",
+  "country": "Greece",
+  "period": "current"
+ },
+ {
+  "name": "Byzantine Greek",
+  "country": "Greece",
+  "period": "historical_ad"
+ },
+ {
+  "name": "medieval Helladic",
+  "country": "Greece",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Minoan",
+  "country": "Greece",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Mycenaean",
+  "country": "Greece",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Grenadian Creole",
+  "country": "Grenada",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Caribbean",
+  "country": "Grenada",
+  "period": "current"
+ },
+ {
+  "name": "Carriacou Maroon heritage",
+  "country": "Grenada",
+  "period": "current"
+ },
+ {
+  "name": "French/British colonial Creole",
+  "country": "Grenada",
+  "period": "historical_ad"
+ },
+ {
+  "name": "plantation culture",
+  "country": "Grenada",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Saladoid",
+  "country": "Grenada",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kalinago/Island Carib",
+  "country": "Grenada",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Ladino Guatemalan",
+  "country": "Guatemala",
+  "period": "current"
+ },
+ {
+  "name": "K'iche' Maya",
+  "country": "Guatemala",
+  "period": "current"
+ },
+ {
+  "name": "Q'eqchi' Maya",
+  "country": "Guatemala",
+  "period": "current"
+ },
+ {
+  "name": "Spanish colonial Guatemala",
+  "country": "Guatemala",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Postclassic Maya",
+  "country": "Guatemala",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Classic Maya",
+  "country": "Guatemala",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Preclassic Maya",
+  "country": "Guatemala",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Fulani",
+  "country": "Guinea",
+  "period": "current"
+ },
+ {
+  "name": "Malinke",
+  "country": "Guinea",
+  "period": "current"
+ },
+ {
+  "name": "Susu",
+  "country": "Guinea",
+  "period": "current"
+ },
+ {
+  "name": "Futa Jallon Imamate",
+  "country": "Guinea",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Mali Empire sphere",
+  "country": "Guinea",
+  "period": "historical_ad"
+ },
+ {
+  "name": "West African Late Stone Age",
+  "country": "Guinea",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Niani/Mande early",
+  "country": "Guinea",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Balanta",
+  "country": "Guinea-Bissau",
+  "period": "current"
+ },
+ {
+  "name": "Fula",
+  "country": "Guinea-Bissau",
+  "period": "current"
+ },
+ {
+  "name": "Mandinka",
+  "country": "Guinea-Bissau",
+  "period": "current"
+ },
+ {
+  "name": "Kaabu",
+  "country": "Guinea-Bissau",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Portuguese Guinea Creole",
+  "country": "Guinea-Bissau",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Senegambian megalithic",
+  "country": "Guinea-Bissau",
+  "period": "pre_historical"
+ },
+ {
+  "name": "West African Late Stone Age",
+  "country": "Guinea-Bissau",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Guyanese Creole",
+  "country": "Guyana",
+  "period": "current"
+ },
+ {
+  "name": "Indo-Guyanese",
+  "country": "Guyana",
+  "period": "current"
+ },
+ {
+  "name": "Indigenous Arawak/Carib",
+  "country": "Guyana",
+  "period": "current"
+ },
+ {
+  "name": "Dutch/British Guiana",
+  "country": "Guyana",
+  "period": "historical_ad"
+ },
+ {
+  "name": "plantation Creole",
+  "country": "Guyana",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Arawak/Lokono",
+  "country": "Guyana",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Saladoid-Orinoco",
+  "country": "Guyana",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Haitian Creole",
+  "country": "Haiti",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Haitian",
+  "country": "Haiti",
+  "period": "current"
+ },
+ {
+  "name": "Vodou culture",
+  "country": "Haiti",
+  "period": "current"
+ },
+ {
+  "name": "Saint-Domingue Creole",
+  "country": "Haiti",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Haitian revolutionary",
+  "country": "Haiti",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Taíno",
+  "country": "Haiti",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Archaic Antillean",
+  "country": "Haiti",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hanoverian German",
+  "country": "Hanover*",
+  "period": "current"
+ },
+ {
+  "name": "Lower Saxon",
+  "country": "Hanover*",
+  "period": "current"
+ },
+ {
+  "name": "Westphalian",
+  "country": "Hanover*",
+  "period": "current"
+ },
+ {
+  "name": "Kingdom of Hanover",
+  "country": "Hanover*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Saxon medieval",
+  "country": "Hanover*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Jastorf",
+  "country": "Hanover*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Funnelbeaker",
+  "country": "Hanover*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hamburg/Bremen/Lübeck urban",
+  "country": "Hanseatic Republics*",
+  "period": "current"
+ },
+ {
+  "name": "Low German",
+  "country": "Hanseatic Republics*",
+  "period": "current"
+ },
+ {
+  "name": "Baltic German heritage",
+  "country": "Hanseatic Republics*",
+  "period": "current"
+ },
+ {
+  "name": "Hanseatic League",
+  "country": "Hanseatic Republics*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "medieval merchant burgher",
+  "country": "Hanseatic Republics*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Jastorf",
+  "country": "Hanseatic Republics*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Nordic Bronze Age",
+  "country": "Hanseatic Republics*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Native Hawaiian",
+  "country": "Hawaii*",
+  "period": "current"
+ },
+ {
+  "name": "local Hawaiʻi Creole",
+  "country": "Hawaii*",
+  "period": "current"
+ },
+ {
+  "name": "Asian-American Hawaiian",
+  "country": "Hawaii*",
+  "period": "current"
+ },
+ {
+  "name": "Kingdom of Hawaiʻi",
+  "country": "Hawaii*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "aliʻi chiefdoms",
+  "country": "Hawaii*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Polynesian settlement",
+  "country": "Hawaii*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "East Polynesian voyaging",
+  "country": "Hawaii*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hessian German",
+  "country": "Hesse*",
+  "period": "current"
+ },
+ {
+  "name": "Rhine Franconian",
+  "country": "Hesse*",
+  "period": "current"
+ },
+ {
+  "name": "Waldeck",
+  "country": "Hesse*",
+  "period": "current"
+ },
+ {
+  "name": "Landgraviate/Grand Duchy Hesse",
+  "country": "Hesse*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Frankish",
+  "country": "Hesse*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "La Tène Celtic",
+  "country": "Hesse*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Jastorf",
+  "country": "Hesse*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Roman Catholic curial",
+  "country": "Holy See",
+  "period": "current"
+ },
+ {
+  "name": "Italian Roman",
+  "country": "Holy See",
+  "period": "current"
+ },
+ {
+  "name": "Vatican diplomatic",
+  "country": "Holy See",
+  "period": "current"
+ },
+ {
+  "name": "Papal Roman",
+  "country": "Holy See",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Renaissance papal",
+  "country": "Holy See",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Latin/Roman",
+  "country": "Holy See",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Etruscan/Italic",
+  "country": "Holy See",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Honduran Mestizo",
+  "country": "Honduras",
+  "period": "current"
+ },
+ {
+  "name": "Garifuna",
+  "country": "Honduras",
+  "period": "current"
+ },
+ {
+  "name": "Lenca",
+  "country": "Honduras",
+  "period": "current"
+ },
+ {
+  "name": "Spanish Honduras",
+  "country": "Honduras",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Miskito/Garifuna coast",
+  "country": "Honduras",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Maya",
+  "country": "Honduras",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Lenca",
+  "country": "Honduras",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hungarian/Magyar",
+  "country": "Hungary",
+  "period": "current"
+ },
+ {
+  "name": "Roma",
+  "country": "Hungary",
+  "period": "current"
+ },
+ {
+  "name": "Székely",
+  "country": "Hungary",
+  "period": "current"
+ },
+ {
+  "name": "Kingdom of Hungary",
+  "country": "Hungary",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ottoman Hungary",
+  "country": "Hungary",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Hallstatt/La Tène",
+  "country": "Hungary",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Scythian/Pannonian",
+  "country": "Hungary",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Icelandic",
+  "country": "Iceland",
+  "period": "current"
+ },
+ {
+  "name": "Nordic island",
+  "country": "Iceland",
+  "period": "current"
+ },
+ {
+  "name": "Icelandic literary",
+  "country": "Iceland",
+  "period": "current"
+ },
+ {
+  "name": "Norse Icelandic Commonwealth",
+  "country": "Iceland",
+  "period": "historical_ad"
+ },
+ {
+  "name": "medieval saga culture",
+  "country": "Iceland",
+  "period": "historical_ad"
+ },
+ {
+  "name": "No pre-Norse permanent culture",
+  "country": "Iceland",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hindi/Hindustani",
+  "country": "India",
+  "period": "current"
+ },
+ {
+  "name": "Tamil",
+  "country": "India",
+  "period": "current"
+ },
+ {
+  "name": "Bengali",
+  "country": "India",
+  "period": "current"
+ },
+ {
+  "name": "Mughal Indo-Persian",
+  "country": "India",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Gupta/Classical Indian",
+  "country": "India",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Indus Valley",
+  "country": "India",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Vedic/Ganges Painted Grey Ware",
+  "country": "India",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Javanese",
+  "country": "Indonesia",
+  "period": "current"
+ },
+ {
+  "name": "Sundanese",
+  "country": "Indonesia",
+  "period": "current"
+ },
+ {
+  "name": "Balinese",
+  "country": "Indonesia",
+  "period": "current"
+ },
+ {
+  "name": "Majapahit",
+  "country": "Indonesia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Srivijaya",
+  "country": "Indonesia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Dong Son-influenced",
+  "country": "Indonesia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Austronesian Neolithic",
+  "country": "Indonesia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Persian",
+  "country": "Iran",
+  "period": "current"
+ },
+ {
+  "name": "Azerbaijani",
+  "country": "Iran",
+  "period": "current"
+ },
+ {
+  "name": "Kurdish",
+  "country": "Iran",
+  "period": "current"
+ },
+ {
+  "name": "Sasanian Persian",
+  "country": "Iran",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Safavid Persian",
+  "country": "Iran",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Elamite",
+  "country": "Iran",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Achaemenid/Median",
+  "country": "Iran",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Iraqi Arab",
+  "country": "Iraq",
+  "period": "current"
+ },
+ {
+  "name": "Kurdish",
+  "country": "Iraq",
+  "period": "current"
+ },
+ {
+  "name": "Assyrian",
+  "country": "Iraq",
+  "period": "current"
+ },
+ {
+  "name": "Abbasid",
+  "country": "Iraq",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Sasanian/Islamic Mesopotamian",
+  "country": "Iraq",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Sumerian",
+  "country": "Iraq",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Babylonian/Assyrian",
+  "country": "Iraq",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Irish",
+  "country": "Ireland",
+  "period": "current"
+ },
+ {
+  "name": "Ulster-Scots",
+  "country": "Ireland",
+  "period": "current"
+ },
+ {
+  "name": "Irish Traveller",
+  "country": "Ireland",
+  "period": "current"
+ },
+ {
+  "name": "Gaelic Irish",
+  "country": "Ireland",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Hiberno-Norse",
+  "country": "Ireland",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Celtic/La Tène",
+  "country": "Ireland",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Neolithic passage tomb culture",
+  "country": "Ireland",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Israeli Jewish",
+  "country": "Israel",
+  "period": "current"
+ },
+ {
+  "name": "Palestinian Arab",
+  "country": "Israel",
+  "period": "current"
+ },
+ {
+  "name": "Druze/Bedouin",
+  "country": "Israel",
+  "period": "current"
+ },
+ {
+  "name": "Rabbinic Jewish",
+  "country": "Israel",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Byzantine/Crusader Levantine",
+  "country": "Israel",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ancient Israelite/Judahite",
+  "country": "Israel",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Canaanite",
+  "country": "Israel",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Italian",
+  "country": "Italy",
+  "period": "current"
+ },
+ {
+  "name": "Sicilian",
+  "country": "Italy",
+  "period": "current"
+ },
+ {
+  "name": "Sardinian",
+  "country": "Italy",
+  "period": "current"
+ },
+ {
+  "name": "Roman/Byzantine/medieval Italian",
+  "country": "Italy",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Renaissance city-state",
+  "country": "Italy",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Etruscan",
+  "country": "Italy",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Nuragic",
+  "country": "Italy",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Jamaican",
+  "country": "Jamaica",
+  "period": "current"
+ },
+ {
+  "name": "Rastafari",
+  "country": "Jamaica",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Caribbean",
+  "country": "Jamaica",
+  "period": "current"
+ },
+ {
+  "name": "British colonial Jamaica",
+  "country": "Jamaica",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Maroon",
+  "country": "Jamaica",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Taíno",
+  "country": "Jamaica",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Ostionoid",
+  "country": "Jamaica",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Yamato Japanese",
+  "country": "Japan",
+  "period": "current"
+ },
+ {
+  "name": "Ainu",
+  "country": "Japan",
+  "period": "current"
+ },
+ {
+  "name": "Ryukyuan",
+  "country": "Japan",
+  "period": "current"
+ },
+ {
+  "name": "Heian/Kamakura Japanese",
+  "country": "Japan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Edo Japanese",
+  "country": "Japan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Jōmon",
+  "country": "Japan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Yayoi",
+  "country": "Japan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Jordanian Arab",
+  "country": "Jordan",
+  "period": "current"
+ },
+ {
+  "name": "Bedouin",
+  "country": "Jordan",
+  "period": "current"
+ },
+ {
+  "name": "Circassian/Chechen",
+  "country": "Jordan",
+  "period": "current"
+ },
+ {
+  "name": "Nabataean/Byzantine",
+  "country": "Jordan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Umayyad Levantine",
+  "country": "Jordan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Nabataean",
+  "country": "Jordan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Edomite/Moabite",
+  "country": "Jordan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kazakh",
+  "country": "Kazakhstan",
+  "period": "current"
+ },
+ {
+  "name": "Russian-Kazakhstani",
+  "country": "Kazakhstan",
+  "period": "current"
+ },
+ {
+  "name": "Uyghur",
+  "country": "Kazakhstan",
+  "period": "current"
+ },
+ {
+  "name": "Kazakh Khanate",
+  "country": "Kazakhstan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Turkic steppe",
+  "country": "Kazakhstan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Saka/Scythian",
+  "country": "Kazakhstan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Andronovo",
+  "country": "Kazakhstan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kikuyu",
+  "country": "Kenya",
+  "period": "current"
+ },
+ {
+  "name": "Luo",
+  "country": "Kenya",
+  "period": "current"
+ },
+ {
+  "name": "Maasai",
+  "country": "Kenya",
+  "period": "current"
+ },
+ {
+  "name": "Swahili coast",
+  "country": "Kenya",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Wanga/Luo states",
+  "country": "Kenya",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Pastoral Neolithic",
+  "country": "Kenya",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Elmenteitan",
+  "country": "Kenya",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Serb",
+  "country": "Kingdom of Serbia/Yugoslavia*",
+  "period": "current"
+ },
+ {
+  "name": "Croat",
+  "country": "Kingdom of Serbia/Yugoslavia*",
+  "period": "current"
+ },
+ {
+  "name": "Slovene/Bosniak",
+  "country": "Kingdom of Serbia/Yugoslavia*",
+  "period": "current"
+ },
+ {
+  "name": "Kingdom of Serbia/Yugoslav",
+  "country": "Kingdom of Serbia/Yugoslavia*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "medieval Serbian",
+  "country": "Kingdom of Serbia/Yugoslavia*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Illyrian",
+  "country": "Kingdom of Serbia/Yugoslavia*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Vinča",
+  "country": "Kingdom of Serbia/Yugoslavia*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "I-Kiribati",
+  "country": "Kiribati",
+  "period": "current"
+ },
+ {
+  "name": "Banaban",
+  "country": "Kiribati",
+  "period": "current"
+ },
+ {
+  "name": "Micronesian",
+  "country": "Kiribati",
+  "period": "current"
+ },
+ {
+  "name": "Gilbertese chiefly culture",
+  "country": "Kiribati",
+  "period": "historical_ad"
+ },
+ {
+  "name": "colonial Kiribati",
+  "country": "Kiribati",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Lapita/Oceanic settlement",
+  "country": "Kiribati",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Micronesian voyaging",
+  "country": "Kiribati",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Korean",
+  "country": "Korea",
+  "period": "current"
+ },
+ {
+  "name": "Jeju",
+  "country": "Korea",
+  "period": "current"
+ },
+ {
+  "name": "Korean diaspora culture",
+  "country": "Korea",
+  "period": "current"
+ },
+ {
+  "name": "Goryeo",
+  "country": "Korea",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Joseon",
+  "country": "Korea",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Mumun pottery",
+  "country": "Korea",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Gojoseon",
+  "country": "Korea",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kosovar Albanian",
+  "country": "Kosovo",
+  "period": "current"
+ },
+ {
+  "name": "Serb",
+  "country": "Kosovo",
+  "period": "current"
+ },
+ {
+  "name": "Roma/Ashkali",
+  "country": "Kosovo",
+  "period": "current"
+ },
+ {
+  "name": "Medieval Serbian/Kosovo",
+  "country": "Kosovo",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ottoman Kosovar",
+  "country": "Kosovo",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Dardanian/Illyrian",
+  "country": "Kosovo",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Vinča",
+  "country": "Kosovo",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kuwaiti Arab",
+  "country": "Kuwait",
+  "period": "current"
+ },
+ {
+  "name": "Bedouin",
+  "country": "Kuwait",
+  "period": "current"
+ },
+ {
+  "name": "Persian-Ajam",
+  "country": "Kuwait",
+  "period": "current"
+ },
+ {
+  "name": "Bani Utub/Gulf maritime",
+  "country": "Kuwait",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Abbasid Gulf",
+  "country": "Kuwait",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Dilmun",
+  "country": "Kuwait",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hellenistic Failaka",
+  "country": "Kuwait",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kyrgyz",
+  "country": "Kyrgyzstan",
+  "period": "current"
+ },
+ {
+  "name": "Uzbek",
+  "country": "Kyrgyzstan",
+  "period": "current"
+ },
+ {
+  "name": "Russian-Kyrgyzstani",
+  "country": "Kyrgyzstan",
+  "period": "current"
+ },
+ {
+  "name": "Kyrgyz Khanate",
+  "country": "Kyrgyzstan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Karakhanid",
+  "country": "Kyrgyzstan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Saka/Scythian",
+  "country": "Kyrgyzstan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Andronovo",
+  "country": "Kyrgyzstan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Lao",
+  "country": "Laos",
+  "period": "current"
+ },
+ {
+  "name": "Hmong",
+  "country": "Laos",
+  "period": "current"
+ },
+ {
+  "name": "Khmu",
+  "country": "Laos",
+  "period": "current"
+ },
+ {
+  "name": "Lan Xang",
+  "country": "Laos",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Tai-Lao mandala",
+  "country": "Laos",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Plain of Jars",
+  "country": "Laos",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hoabinhian/Neolithic",
+  "country": "Laos",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Latvian",
+  "country": "Latvia",
+  "period": "current"
+ },
+ {
+  "name": "Latgalian",
+  "country": "Latvia",
+  "period": "current"
+ },
+ {
+  "name": "Livonian",
+  "country": "Latvia",
+  "period": "current"
+ },
+ {
+  "name": "Livonian/Latvian medieval",
+  "country": "Latvia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Hanseatic Riga",
+  "country": "Latvia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Comb Ceramic",
+  "country": "Latvia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Corded Ware/Baltic tribes",
+  "country": "Latvia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Lebanese Arab",
+  "country": "Lebanon",
+  "period": "current"
+ },
+ {
+  "name": "Maronite",
+  "country": "Lebanon",
+  "period": "current"
+ },
+ {
+  "name": "Druze",
+  "country": "Lebanon",
+  "period": "current"
+ },
+ {
+  "name": "Phoenician/Byzantine",
+  "country": "Lebanon",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Mamluk/Ottoman Levantine",
+  "country": "Lebanon",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Phoenician/Canaanite",
+  "country": "Lebanon",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Byblos Neolithic",
+  "country": "Lebanon",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Basotho",
+  "country": "Lesotho",
+  "period": "current"
+ },
+ {
+  "name": "Nguni",
+  "country": "Lesotho",
+  "period": "current"
+ },
+ {
+  "name": "San heritage",
+  "country": "Lesotho",
+  "period": "current"
+ },
+ {
+  "name": "Basotho kingdom",
+  "country": "Lesotho",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Sotho-Tswana chiefdoms",
+  "country": "Lesotho",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Urewe/Bantu Iron Age",
+  "country": "Lesotho",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Later Stone Age San",
+  "country": "Lesotho",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Ryukyuan/Okinawan",
+  "country": "Lew Chew (Loochoo)*",
+  "period": "current"
+ },
+ {
+  "name": "Japanese Okinawan",
+  "country": "Lew Chew (Loochoo)*",
+  "period": "current"
+ },
+ {
+  "name": "Miyako/Yaeyama",
+  "country": "Lew Chew (Loochoo)*",
+  "period": "current"
+ },
+ {
+  "name": "Ryukyu Kingdom",
+  "country": "Lew Chew (Loochoo)*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "gusuku culture",
+  "country": "Lew Chew (Loochoo)*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Jōmon",
+  "country": "Lew Chew (Loochoo)*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Gusuku-era precursors",
+  "country": "Lew Chew (Loochoo)*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kpelle",
+  "country": "Liberia",
+  "period": "current"
+ },
+ {
+  "name": "Bassa",
+  "country": "Liberia",
+  "period": "current"
+ },
+ {
+  "name": "Americo-Liberian",
+  "country": "Liberia",
+  "period": "current"
+ },
+ {
+  "name": "Americo-Liberian republic",
+  "country": "Liberia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Kru coast",
+  "country": "Liberia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "West African Late Stone Age",
+  "country": "Liberia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "early Mande/Kru",
+  "country": "Liberia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Arab Libyan",
+  "country": "Libya",
+  "period": "current"
+ },
+ {
+  "name": "Amazigh/Berber",
+  "country": "Libya",
+  "period": "current"
+ },
+ {
+  "name": "Tuareg",
+  "country": "Libya",
+  "period": "current"
+ },
+ {
+  "name": "Fatimid/Tripolitanian",
+  "country": "Libya",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ottoman Libyan",
+  "country": "Libya",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Garamantes",
+  "country": "Libya",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Capsian",
+  "country": "Libya",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Alemannic Liechtensteiner",
+  "country": "Liechtenstein",
+  "period": "current"
+ },
+ {
+  "name": "Swiss-German",
+  "country": "Liechtenstein",
+  "period": "current"
+ },
+ {
+  "name": "Austrian-influenced",
+  "country": "Liechtenstein",
+  "period": "current"
+ },
+ {
+  "name": "County/Principality Liechtenstein",
+  "country": "Liechtenstein",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Alemannic medieval",
+  "country": "Liechtenstein",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Raetian",
+  "country": "Liechtenstein",
+  "period": "pre_historical"
+ },
+ {
+  "name": "La Tène/Hallstatt",
+  "country": "Liechtenstein",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Lithuanian",
+  "country": "Lithuania",
+  "period": "current"
+ },
+ {
+  "name": "Samogitian",
+  "country": "Lithuania",
+  "period": "current"
+ },
+ {
+  "name": "Polish-Lithuanian",
+  "country": "Lithuania",
+  "period": "current"
+ },
+ {
+  "name": "Grand Duchy of Lithuania",
+  "country": "Lithuania",
+  "period": "historical_ad"
+ },
+ {
+  "name": "medieval Baltic",
+  "country": "Lithuania",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Narva",
+  "country": "Lithuania",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Corded Ware/Baltic tribes",
+  "country": "Lithuania",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Luxembourgish",
+  "country": "Luxembourg",
+  "period": "current"
+ },
+ {
+  "name": "French-speaking",
+  "country": "Luxembourg",
+  "period": "current"
+ },
+ {
+  "name": "German-speaking",
+  "country": "Luxembourg",
+  "period": "current"
+ },
+ {
+  "name": "County/Duchy Luxembourg",
+  "country": "Luxembourg",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Burgundian Netherlands",
+  "country": "Luxembourg",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Treveri/Gallo-Roman",
+  "country": "Luxembourg",
+  "period": "pre_historical"
+ },
+ {
+  "name": "La Tène",
+  "country": "Luxembourg",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Merina",
+  "country": "Madagascar",
+  "period": "current"
+ },
+ {
+  "name": "Betsimisaraka",
+  "country": "Madagascar",
+  "period": "current"
+ },
+ {
+  "name": "Sakalava",
+  "country": "Madagascar",
+  "period": "current"
+ },
+ {
+  "name": "Imerina kingdom",
+  "country": "Madagascar",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Sakalava kingdoms",
+  "country": "Madagascar",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Austronesian settlement",
+  "country": "Madagascar",
+  "period": "pre_historical"
+ },
+ {
+  "name": "early Bantu/Austronesian",
+  "country": "Madagascar",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Chewa",
+  "country": "Malawi",
+  "period": "current"
+ },
+ {
+  "name": "Yao",
+  "country": "Malawi",
+  "period": "current"
+ },
+ {
+  "name": "Tumbuka",
+  "country": "Malawi",
+  "period": "current"
+ },
+ {
+  "name": "Maravi Confederacy",
+  "country": "Malawi",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Yao trading culture",
+  "country": "Malawi",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bantu Iron Age",
+  "country": "Malawi",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Later Stone Age",
+  "country": "Malawi",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Malay",
+  "country": "Malaysia",
+  "period": "current"
+ },
+ {
+  "name": "Chinese Malaysian",
+  "country": "Malaysia",
+  "period": "current"
+ },
+ {
+  "name": "Iban/Dayak",
+  "country": "Malaysia",
+  "period": "current"
+ },
+ {
+  "name": "Malacca Sultanate",
+  "country": "Malaysia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Srivijaya/Malay",
+  "country": "Malaysia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Austronesian Neolithic",
+  "country": "Malaysia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hoabinhian",
+  "country": "Malaysia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Dhivehi Maldivian",
+  "country": "Maldives",
+  "period": "current"
+ },
+ {
+  "name": "Indian Ocean Muslim",
+  "country": "Maldives",
+  "period": "current"
+ },
+ {
+  "name": "Minicoy-related",
+  "country": "Maldives",
+  "period": "current"
+ },
+ {
+  "name": "Buddhist Maldives",
+  "country": "Maldives",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Islamic sultanate",
+  "country": "Maldives",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Early Indo-Aryan/Buddhist",
+  "country": "Maldives",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Indian Ocean Neolithic",
+  "country": "Maldives",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bambara",
+  "country": "Mali",
+  "period": "current"
+ },
+ {
+  "name": "Tuareg",
+  "country": "Mali",
+  "period": "current"
+ },
+ {
+  "name": "Fulani",
+  "country": "Mali",
+  "period": "current"
+ },
+ {
+  "name": "Mali Empire",
+  "country": "Mali",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Songhai",
+  "country": "Mali",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Tichitt",
+  "country": "Mali",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Dhar Tichitt/Mande",
+  "country": "Mali",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Maltese",
+  "country": "Malta",
+  "period": "current"
+ },
+ {
+  "name": "Gozo",
+  "country": "Malta",
+  "period": "current"
+ },
+ {
+  "name": "Italianate Maltese",
+  "country": "Malta",
+  "period": "current"
+ },
+ {
+  "name": "Knights Hospitaller Maltese",
+  "country": "Malta",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Arab-Norman Malta",
+  "country": "Malta",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Maltese Temple culture",
+  "country": "Malta",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Għar Dalam",
+  "country": "Malta",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Marshallese",
+  "country": "Marshall Islands",
+  "period": "current"
+ },
+ {
+  "name": "Ratak/Ralik island cultures",
+  "country": "Marshall Islands",
+  "period": "current"
+ },
+ {
+  "name": "Micronesian",
+  "country": "Marshall Islands",
+  "period": "current"
+ },
+ {
+  "name": "Iroij chiefly culture",
+  "country": "Marshall Islands",
+  "period": "historical_ad"
+ },
+ {
+  "name": "colonial Marshallese",
+  "country": "Marshall Islands",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Micronesian settlement",
+  "country": "Marshall Islands",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Lapita-adjacent Oceanic",
+  "country": "Marshall Islands",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Moor/Beidane",
+  "country": "Mauritania",
+  "period": "current"
+ },
+ {
+  "name": "Haratin",
+  "country": "Mauritania",
+  "period": "current"
+ },
+ {
+  "name": "Soninke/Wolof",
+  "country": "Mauritania",
+  "period": "current"
+ },
+ {
+  "name": "Almoravid",
+  "country": "Mauritania",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ghana Empire sphere",
+  "country": "Mauritania",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Tichitt",
+  "country": "Mauritania",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Saharan Neolithic",
+  "country": "Mauritania",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Mauritian Creole",
+  "country": "Mauritius",
+  "period": "current"
+ },
+ {
+  "name": "Indo-Mauritian",
+  "country": "Mauritius",
+  "period": "current"
+ },
+ {
+  "name": "Franco-Mauritian",
+  "country": "Mauritius",
+  "period": "current"
+ },
+ {
+  "name": "French/British plantation",
+  "country": "Mauritius",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Indian Ocean Creole",
+  "country": "Mauritius",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Mecklenburg German",
+  "country": "Mecklenburg-Schwerin*",
+  "period": "current"
+ },
+ {
+  "name": "Low German",
+  "country": "Mecklenburg-Schwerin*",
+  "period": "current"
+ },
+ {
+  "name": "Slavic/Wendish heritage",
+  "country": "Mecklenburg-Schwerin*",
+  "period": "current"
+ },
+ {
+  "name": "Duchy Mecklenburg-Schwerin",
+  "country": "Mecklenburg-Schwerin*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Obotrite/Wendish",
+  "country": "Mecklenburg-Schwerin*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Funnelbeaker",
+  "country": "Mecklenburg-Schwerin*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Jastorf",
+  "country": "Mecklenburg-Schwerin*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Mecklenburg German",
+  "country": "Mecklenburg-Strelitz*",
+  "period": "current"
+ },
+ {
+  "name": "Low German",
+  "country": "Mecklenburg-Strelitz*",
+  "period": "current"
+ },
+ {
+  "name": "Slavic/Wendish heritage",
+  "country": "Mecklenburg-Strelitz*",
+  "period": "current"
+ },
+ {
+  "name": "Duchy Mecklenburg-Strelitz",
+  "country": "Mecklenburg-Strelitz*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Obotrite/Wendish",
+  "country": "Mecklenburg-Strelitz*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Funnelbeaker",
+  "country": "Mecklenburg-Strelitz*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Jastorf",
+  "country": "Mecklenburg-Strelitz*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Mexican Mestizo",
+  "country": "Mexico",
+  "period": "current"
+ },
+ {
+  "name": "Nahua",
+  "country": "Mexico",
+  "period": "current"
+ },
+ {
+  "name": "Maya",
+  "country": "Mexico",
+  "period": "current"
+ },
+ {
+  "name": "New Spain",
+  "country": "Mexico",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Mexica/Aztec postclassic",
+  "country": "Mexico",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Olmec",
+  "country": "Mexico",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Maya/Teotihuacan",
+  "country": "Mexico",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Chuukese",
+  "country": "Micronesia",
+  "period": "current"
+ },
+ {
+  "name": "Pohnpeian",
+  "country": "Micronesia",
+  "period": "current"
+ },
+ {
+  "name": "Yapese",
+  "country": "Micronesia",
+  "period": "current"
+ },
+ {
+  "name": "Nan Madol/Saudeleur",
+  "country": "Micronesia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Micronesian chiefly",
+  "country": "Micronesia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Lapita-adjacent Oceanic",
+  "country": "Micronesia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Micronesian settlement",
+  "country": "Micronesia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Moldovan/Romanian",
+  "country": "Moldova",
+  "period": "current"
+ },
+ {
+  "name": "Gagauz",
+  "country": "Moldova",
+  "period": "current"
+ },
+ {
+  "name": "Ukrainian/Bulgarian",
+  "country": "Moldova",
+  "period": "current"
+ },
+ {
+  "name": "Principality of Moldavia",
+  "country": "Moldova",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bessarabian",
+  "country": "Moldova",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Cucuteni–Trypillia",
+  "country": "Moldova",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Geto-Dacian",
+  "country": "Moldova",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Monégasque",
+  "country": "Monaco",
+  "period": "current"
+ },
+ {
+  "name": "French Riviera",
+  "country": "Monaco",
+  "period": "current"
+ },
+ {
+  "name": "Italian Ligurian",
+  "country": "Monaco",
+  "period": "current"
+ },
+ {
+  "name": "Genoese/Grimaldi Monaco",
+  "country": "Monaco",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ligurian",
+  "country": "Monaco",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ligurian",
+  "country": "Monaco",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Neolithic Liguria",
+  "country": "Monaco",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Khalkha Mongol",
+  "country": "Mongolia",
+  "period": "current"
+ },
+ {
+  "name": "Kazakh",
+  "country": "Mongolia",
+  "period": "current"
+ },
+ {
+  "name": "Buryat",
+  "country": "Mongolia",
+  "period": "current"
+ },
+ {
+  "name": "Mongol Empire",
+  "country": "Mongolia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Yuan/Northern Yuan",
+  "country": "Mongolia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Xiongnu",
+  "country": "Mongolia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Deer Stone-Khirigsuur",
+  "country": "Mongolia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Montenegrin",
+  "country": "Montenegro",
+  "period": "current"
+ },
+ {
+  "name": "Serb",
+  "country": "Montenegro",
+  "period": "current"
+ },
+ {
+  "name": "Albanian/Bosniak",
+  "country": "Montenegro",
+  "period": "current"
+ },
+ {
+  "name": "Zeta/Duklja",
+  "country": "Montenegro",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Venetian/Ottoman Adriatic",
+  "country": "Montenegro",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Illyrian",
+  "country": "Montenegro",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Cetina culture",
+  "country": "Montenegro",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Arab-Moroccan",
+  "country": "Morocco",
+  "period": "current"
+ },
+ {
+  "name": "Amazigh",
+  "country": "Morocco",
+  "period": "current"
+ },
+ {
+  "name": "Sahrawi",
+  "country": "Morocco",
+  "period": "current"
+ },
+ {
+  "name": "Idrisid/Almohad/Marinid",
+  "country": "Morocco",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Andalusi-Moroccan",
+  "country": "Morocco",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Berber/Maurusian",
+  "country": "Morocco",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Capsian",
+  "country": "Morocco",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Makua",
+  "country": "Mozambique",
+  "period": "current"
+ },
+ {
+  "name": "Tsonga",
+  "country": "Mozambique",
+  "period": "current"
+ },
+ {
+  "name": "Sena/Shona",
+  "country": "Mozambique",
+  "period": "current"
+ },
+ {
+  "name": "Swahili coast",
+  "country": "Mozambique",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Mutapa sphere",
+  "country": "Mozambique",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bantu Iron Age",
+  "country": "Mozambique",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Later Stone Age",
+  "country": "Mozambique",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Ovambo",
+  "country": "Namibia",
+  "period": "current"
+ },
+ {
+  "name": "Herero",
+  "country": "Namibia",
+  "period": "current"
+ },
+ {
+  "name": "San/Nama",
+  "country": "Namibia",
+  "period": "current"
+ },
+ {
+  "name": "Herero/Nama chiefdoms",
+  "country": "Namibia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "German colonial",
+  "country": "Namibia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Later Stone Age San",
+  "country": "Namibia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Khoekhoe pastoral",
+  "country": "Namibia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hessian/Nassau German",
+  "country": "Nassau*",
+  "period": "current"
+ },
+ {
+  "name": "Rhine Franconian",
+  "country": "Nassau*",
+  "period": "current"
+ },
+ {
+  "name": "Westerwald",
+  "country": "Nassau*",
+  "period": "current"
+ },
+ {
+  "name": "Duchy of Nassau",
+  "country": "Nassau*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "medieval Frankish",
+  "country": "Nassau*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "La Tène Celtic",
+  "country": "Nassau*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Jastorf",
+  "country": "Nassau*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Nauruan",
+  "country": "Nauru",
+  "period": "current"
+ },
+ {
+  "name": "Micronesian",
+  "country": "Nauru",
+  "period": "current"
+ },
+ {
+  "name": "I-Kiribati-influenced",
+  "country": "Nauru",
+  "period": "current"
+ },
+ {
+  "name": "Nauruan clan culture",
+  "country": "Nauru",
+  "period": "historical_ad"
+ },
+ {
+  "name": "German/British colonial",
+  "country": "Nauru",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Micronesian settlement",
+  "country": "Nauru",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Oceanic voyaging",
+  "country": "Nauru",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Nepali/Khas",
+  "country": "Nepal",
+  "period": "current"
+ },
+ {
+  "name": "Newar",
+  "country": "Nepal",
+  "period": "current"
+ },
+ {
+  "name": "Tamang/Sherpa",
+  "country": "Nepal",
+  "period": "current"
+ },
+ {
+  "name": "Malla Newar",
+  "country": "Nepal",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Licchavi Nepal",
+  "country": "Nepal",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Kirat",
+  "country": "Nepal",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Neolithic Himalayan",
+  "country": "Nepal",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Dutch",
+  "country": "Netherlands, The",
+  "period": "current"
+ },
+ {
+  "name": "Frisian",
+  "country": "Netherlands, The",
+  "period": "current"
+ },
+ {
+  "name": "Limburgish",
+  "country": "Netherlands, The",
+  "period": "current"
+ },
+ {
+  "name": "Dutch Golden Age",
+  "country": "Netherlands, The",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Burgundian/Habsburg Netherlands",
+  "country": "Netherlands, The",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Funnelbeaker",
+  "country": "Netherlands, The",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Germanic/Frisii",
+  "country": "Netherlands, The",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Pākehā New Zealander",
+  "country": "New Zealand",
+  "period": "current"
+ },
+ {
+  "name": "Māori",
+  "country": "New Zealand",
+  "period": "current"
+ },
+ {
+  "name": "Pasifika",
+  "country": "New Zealand",
+  "period": "current"
+ },
+ {
+  "name": "Colonial New Zealand",
+  "country": "New Zealand",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Māori iwi/hapū",
+  "country": "New Zealand",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Polynesian settlement",
+  "country": "New Zealand",
+  "period": "pre_historical"
+ },
+ {
+  "name": "East Polynesian",
+  "country": "New Zealand",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Mestizo Nicaraguan",
+  "country": "Nicaragua",
+  "period": "current"
+ },
+ {
+  "name": "Miskito",
+  "country": "Nicaragua",
+  "period": "current"
+ },
+ {
+  "name": "Garifuna/Creole",
+  "country": "Nicaragua",
+  "period": "current"
+ },
+ {
+  "name": "Spanish Nicaragua",
+  "country": "Nicaragua",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Miskito Kingdom",
+  "country": "Nicaragua",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Chorotega",
+  "country": "Nicaragua",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Nicarao",
+  "country": "Nicaragua",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hausa",
+  "country": "Niger",
+  "period": "current"
+ },
+ {
+  "name": "Zarma-Songhai",
+  "country": "Niger",
+  "period": "current"
+ },
+ {
+  "name": "Tuareg",
+  "country": "Niger",
+  "period": "current"
+ },
+ {
+  "name": "Songhai",
+  "country": "Niger",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Hausa city-states",
+  "country": "Niger",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Tenerian",
+  "country": "Niger",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kiffian/Saharan Neolithic",
+  "country": "Niger",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hausa-Fulani",
+  "country": "Nigeria",
+  "period": "current"
+ },
+ {
+  "name": "Yoruba",
+  "country": "Nigeria",
+  "period": "current"
+ },
+ {
+  "name": "Igbo",
+  "country": "Nigeria",
+  "period": "current"
+ },
+ {
+  "name": "Benin Kingdom",
+  "country": "Nigeria",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Oyo/Igbo-Ukwu/Kanem-Bornu",
+  "country": "Nigeria",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Nok",
+  "country": "Nigeria",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kintampo-related",
+  "country": "Nigeria",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Niuean",
+  "country": "Niue",
+  "period": "current"
+ },
+ {
+  "name": "Polynesian Christian",
+  "country": "Niue",
+  "period": "current"
+ },
+ {
+  "name": "diaspora Niuean",
+  "country": "Niue",
+  "period": "current"
+ },
+ {
+  "name": "Niuean village polity",
+  "country": "Niue",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Tongan/Samoan contacts",
+  "country": "Niue",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Polynesian settlement",
+  "country": "Niue",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Lapita-descended",
+  "country": "Niue",
+  "period": "pre_historical"
+ },
+ {
+  "name": "North German",
+  "country": "North German Confederation*",
+  "period": "current"
+ },
+ {
+  "name": "Prussian",
+  "country": "North German Confederation*",
+  "period": "current"
+ },
+ {
+  "name": "Saxon/Low German",
+  "country": "North German Confederation*",
+  "period": "current"
+ },
+ {
+  "name": "North German Confederation",
+  "country": "North German Confederation*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Prussian/German",
+  "country": "North German Confederation*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Jastorf",
+  "country": "North German Confederation*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Nordic Bronze Age",
+  "country": "North German Confederation*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "North German",
+  "country": "North German Union*",
+  "period": "current"
+ },
+ {
+  "name": "Prussian",
+  "country": "North German Union*",
+  "period": "current"
+ },
+ {
+  "name": "Saxon/Low German",
+  "country": "North German Union*",
+  "period": "current"
+ },
+ {
+  "name": "North German Confederation",
+  "country": "North German Union*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Prussian/German",
+  "country": "North German Union*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Jastorf",
+  "country": "North German Union*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Nordic Bronze Age",
+  "country": "North German Union*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Macedonian",
+  "country": "North Macedonia",
+  "period": "current"
+ },
+ {
+  "name": "Albanian",
+  "country": "North Macedonia",
+  "period": "current"
+ },
+ {
+  "name": "Roma/Turkish",
+  "country": "North Macedonia",
+  "period": "current"
+ },
+ {
+  "name": "Byzantine/Slavic Macedonian",
+  "country": "North Macedonia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ottoman Macedonian",
+  "country": "North Macedonia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Paionian",
+  "country": "North Macedonia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Ancient Macedonian",
+  "country": "North Macedonia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Norwegian",
+  "country": "Norway",
+  "period": "current"
+ },
+ {
+  "name": "Sámi",
+  "country": "Norway",
+  "period": "current"
+ },
+ {
+  "name": "Kven",
+  "country": "Norway",
+  "period": "current"
+ },
+ {
+  "name": "Viking Norwegian",
+  "country": "Norway",
+  "period": "historical_ad"
+ },
+ {
+  "name": "medieval Norway",
+  "country": "Norway",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Fosna-Hensbacka",
+  "country": "Norway",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Nordic Bronze Age",
+  "country": "Norway",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Oldenburg German",
+  "country": "Oldenburg*",
+  "period": "current"
+ },
+ {
+  "name": "Low German",
+  "country": "Oldenburg*",
+  "period": "current"
+ },
+ {
+  "name": "Frisian",
+  "country": "Oldenburg*",
+  "period": "current"
+ },
+ {
+  "name": "Grand Duchy Oldenburg",
+  "country": "Oldenburg*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Saxon/Frisian medieval",
+  "country": "Oldenburg*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Jastorf",
+  "country": "Oldenburg*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Funnelbeaker",
+  "country": "Oldenburg*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Omani Arab",
+  "country": "Oman",
+  "period": "current"
+ },
+ {
+  "name": "Baluchi",
+  "country": "Oman",
+  "period": "current"
+ },
+ {
+  "name": "Zanzibari-Omani",
+  "country": "Oman",
+  "period": "current"
+ },
+ {
+  "name": "Ibadi Omani",
+  "country": "Oman",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Maritime Omani Empire",
+  "country": "Oman",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Magan",
+  "country": "Oman",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hafit/Umm an-Nar",
+  "country": "Oman",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Afrikaner",
+  "country": "Orange Free State*",
+  "period": "current"
+ },
+ {
+  "name": "Sotho-Tswana",
+  "country": "Orange Free State*",
+  "period": "current"
+ },
+ {
+  "name": "Basotho",
+  "country": "Orange Free State*",
+  "period": "current"
+ },
+ {
+  "name": "Boer republic",
+  "country": "Orange Free State*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Sotho chiefdoms",
+  "country": "Orange Free State*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Later Stone Age San",
+  "country": "Orange Free State*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bantu Iron Age",
+  "country": "Orange Free State*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Punjabi",
+  "country": "Pakistan",
+  "period": "current"
+ },
+ {
+  "name": "Sindhi",
+  "country": "Pakistan",
+  "period": "current"
+ },
+ {
+  "name": "Pashtun/Baloch",
+  "country": "Pakistan",
+  "period": "current"
+ },
+ {
+  "name": "Mughal",
+  "country": "Pakistan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Delhi Sultanate/Islamic Sindh",
+  "country": "Pakistan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Indus Valley",
+  "country": "Pakistan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Gandhara Grave",
+  "country": "Pakistan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Palauan",
+  "country": "Palau",
+  "period": "current"
+ },
+ {
+  "name": "Sonsorol/Tobian",
+  "country": "Palau",
+  "period": "current"
+ },
+ {
+  "name": "Micronesian",
+  "country": "Palau",
+  "period": "current"
+ },
+ {
+  "name": "Palauan chiefdoms",
+  "country": "Palau",
+  "period": "historical_ad"
+ },
+ {
+  "name": "colonial Palau",
+  "country": "Palau",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Micronesian settlement",
+  "country": "Palau",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Lapita-adjacent Oceanic",
+  "country": "Palau",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Panamanian Mestizo",
+  "country": "Panama",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Panamanian",
+  "country": "Panama",
+  "period": "current"
+ },
+ {
+  "name": "Guna/Ngäbe",
+  "country": "Panama",
+  "period": "current"
+ },
+ {
+  "name": "Spanish Panama",
+  "country": "Panama",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Cimarron/colonial transit",
+  "country": "Panama",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Coclé",
+  "country": "Panama",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Gran Coclé",
+  "country": "Panama",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Italian Roman",
+  "country": "Papal States*",
+  "period": "current"
+ },
+ {
+  "name": "Umbrian/Marche",
+  "country": "Papal States*",
+  "period": "current"
+ },
+ {
+  "name": "Catholic curial",
+  "country": "Papal States*",
+  "period": "current"
+ },
+ {
+  "name": "Papal States",
+  "country": "Papal States*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "medieval Papal Roman",
+  "country": "Papal States*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Latin/Roman",
+  "country": "Papal States*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Etruscan/Italic",
+  "country": "Papal States*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Huli",
+  "country": "Papua New Guinea",
+  "period": "current"
+ },
+ {
+  "name": "Tolai",
+  "country": "Papua New Guinea",
+  "period": "current"
+ },
+ {
+  "name": "Sepik peoples",
+  "country": "Papua New Guinea",
+  "period": "current"
+ },
+ {
+  "name": "Trobriand/Kula culture",
+  "country": "Papua New Guinea",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Hiri Motu trade",
+  "country": "Papua New Guinea",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Kuk Early Agriculture",
+  "country": "Papua New Guinea",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Lapita",
+  "country": "Papua New Guinea",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Paraguayan Mestizo",
+  "country": "Paraguay",
+  "period": "current"
+ },
+ {
+  "name": "Guaraní",
+  "country": "Paraguay",
+  "period": "current"
+ },
+ {
+  "name": "Mennonite Paraguayan",
+  "country": "Paraguay",
+  "period": "current"
+ },
+ {
+  "name": "Jesuit-Guaraní missions",
+  "country": "Paraguay",
+  "period": "historical_ad"
+ },
+ {
+  "name": "colonial Paraguay",
+  "country": "Paraguay",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Guaraní",
+  "country": "Paraguay",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Chaco hunter-gatherer",
+  "country": "Paraguay",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Quechua",
+  "country": "Peru",
+  "period": "current"
+ },
+ {
+  "name": "Aymara",
+  "country": "Peru",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Peruvian",
+  "country": "Peru",
+  "period": "current"
+ },
+ {
+  "name": "Inca/colonial Andean",
+  "country": "Peru",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Viceroyalty Peru",
+  "country": "Peru",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Caral/Norte Chico",
+  "country": "Peru",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Moche/Chavín",
+  "country": "Peru",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Tagalog",
+  "country": "Philippines",
+  "period": "current"
+ },
+ {
+  "name": "Cebuano/Visayan",
+  "country": "Philippines",
+  "period": "current"
+ },
+ {
+  "name": "Ilocano/Moro",
+  "country": "Philippines",
+  "period": "current"
+ },
+ {
+  "name": "Spanish colonial Filipino",
+  "country": "Philippines",
+  "period": "historical_ad"
+ },
+ {
+  "name": "precolonial barangay/sultanates",
+  "country": "Philippines",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Austronesian Neolithic",
+  "country": "Philippines",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Tabon/Metal Age Philippines",
+  "country": "Philippines",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Piedmontese",
+  "country": "Piedmont-Sardinia*",
+  "period": "current"
+ },
+ {
+  "name": "Sardinian",
+  "country": "Piedmont-Sardinia*",
+  "period": "current"
+ },
+ {
+  "name": "Ligurian",
+  "country": "Piedmont-Sardinia*",
+  "period": "current"
+ },
+ {
+  "name": "House of Savoy/Piedmont-Sardinia",
+  "country": "Piedmont-Sardinia*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "medieval Sardinian giudicati",
+  "country": "Piedmont-Sardinia*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Nuragic",
+  "country": "Piedmont-Sardinia*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Golasecca/Ligurian",
+  "country": "Piedmont-Sardinia*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Polish",
+  "country": "Poland",
+  "period": "current"
+ },
+ {
+  "name": "Silesian",
+  "country": "Poland",
+  "period": "current"
+ },
+ {
+  "name": "Kashubian",
+  "country": "Poland",
+  "period": "current"
+ },
+ {
+  "name": "Piast/Jagiellonian Polish",
+  "country": "Poland",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Polish-Lithuanian Commonwealth",
+  "country": "Poland",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Lusatian",
+  "country": "Poland",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Przeworsk",
+  "country": "Poland",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Portuguese",
+  "country": "Portugal",
+  "period": "current"
+ },
+ {
+  "name": "Madeiran/Azorean",
+  "country": "Portugal",
+  "period": "current"
+ },
+ {
+  "name": "Mirandese",
+  "country": "Portugal",
+  "period": "current"
+ },
+ {
+  "name": "Medieval Portuguese",
+  "country": "Portugal",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Lusitanian-Roman",
+  "country": "Portugal",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Lusitanian",
+  "country": "Portugal",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bell Beaker/Atlantic Bronze",
+  "country": "Portugal",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Qatari Arab",
+  "country": "Qatar",
+  "period": "current"
+ },
+ {
+  "name": "Bedouin",
+  "country": "Qatar",
+  "period": "current"
+ },
+ {
+  "name": "Gulf South Asian diaspora",
+  "country": "Qatar",
+  "period": "current"
+ },
+ {
+  "name": "Gulf pearling",
+  "country": "Qatar",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Abbasid/Islamic Qatar",
+  "country": "Qatar",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ubaid-related Gulf",
+  "country": "Qatar",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Dilmun sphere",
+  "country": "Qatar",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Genoese/Ligurian",
+  "country": "Republic of Genoa*",
+  "period": "current"
+ },
+ {
+  "name": "Italian",
+  "country": "Republic of Genoa*",
+  "period": "current"
+ },
+ {
+  "name": "Corsican/Sardinian links",
+  "country": "Republic of Genoa*",
+  "period": "current"
+ },
+ {
+  "name": "Republic of Genoa",
+  "country": "Republic of Genoa*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "medieval maritime Ligurian",
+  "country": "Republic of Genoa*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ligurian",
+  "country": "Republic of Genoa*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Etruscan/Italic",
+  "country": "Republic of Genoa*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Korean",
+  "country": "Republic of Korea (South Korea)",
+  "period": "current"
+ },
+ {
+  "name": "Jeju",
+  "country": "Republic of Korea (South Korea)",
+  "period": "current"
+ },
+ {
+  "name": "modern Seoul culture",
+  "country": "Republic of Korea (South Korea)",
+  "period": "current"
+ },
+ {
+  "name": "Joseon",
+  "country": "Republic of Korea (South Korea)",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Goryeo",
+  "country": "Republic of Korea (South Korea)",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Mumun pottery",
+  "country": "Republic of Korea (South Korea)",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Gojoseon",
+  "country": "Republic of Korea (South Korea)",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kongo",
+  "country": "Republic of the Congo",
+  "period": "current"
+ },
+ {
+  "name": "Teke",
+  "country": "Republic of the Congo",
+  "period": "current"
+ },
+ {
+  "name": "Mbochi",
+  "country": "Republic of the Congo",
+  "period": "current"
+ },
+ {
+  "name": "Kingdom of Kongo",
+  "country": "Republic of the Congo",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Teke kingdom",
+  "country": "Republic of the Congo",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bantu Iron Age",
+  "country": "Republic of the Congo",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Later Stone Age",
+  "country": "Republic of the Congo",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Romanian",
+  "country": "Romania",
+  "period": "current"
+ },
+ {
+  "name": "Hungarian/Székely",
+  "country": "Romania",
+  "period": "current"
+ },
+ {
+  "name": "Roma",
+  "country": "Romania",
+  "period": "current"
+ },
+ {
+  "name": "Wallachian/Moldavian",
+  "country": "Romania",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Byzantine/Danubian",
+  "country": "Romania",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Dacian/Getae",
+  "country": "Romania",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Cucuteni–Trypillia",
+  "country": "Romania",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Russian",
+  "country": "Russia",
+  "period": "current"
+ },
+ {
+  "name": "Tatar",
+  "country": "Russia",
+  "period": "current"
+ },
+ {
+  "name": "Bashkir/Buryat",
+  "country": "Russia",
+  "period": "current"
+ },
+ {
+  "name": "Kievan Rus'",
+  "country": "Russia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Muscovite/Russian imperial",
+  "country": "Russia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Scythian",
+  "country": "Russia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Fatyanovo-Balanovo",
+  "country": "Russia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hutu",
+  "country": "Rwanda",
+  "period": "current"
+ },
+ {
+  "name": "Tutsi",
+  "country": "Rwanda",
+  "period": "current"
+ },
+ {
+  "name": "Twa",
+  "country": "Rwanda",
+  "period": "current"
+ },
+ {
+  "name": "Kingdom of Rwanda",
+  "country": "Rwanda",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Great Lakes Bantu",
+  "country": "Rwanda",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Urewe",
+  "country": "Rwanda",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Later Stone Age",
+  "country": "Rwanda",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kittitian/Nevisian Creole",
+  "country": "Saint Kitts and Nevis",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Caribbean",
+  "country": "Saint Kitts and Nevis",
+  "period": "current"
+ },
+ {
+  "name": "British-Caribbean",
+  "country": "Saint Kitts and Nevis",
+  "period": "current"
+ },
+ {
+  "name": "British/French colonial Creole",
+  "country": "Saint Kitts and Nevis",
+  "period": "historical_ad"
+ },
+ {
+  "name": "plantation culture",
+  "country": "Saint Kitts and Nevis",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Saladoid",
+  "country": "Saint Kitts and Nevis",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kalinago/Island Carib",
+  "country": "Saint Kitts and Nevis",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Saint Lucian Creole",
+  "country": "Saint Lucia",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Caribbean",
+  "country": "Saint Lucia",
+  "period": "current"
+ },
+ {
+  "name": "French-Creole",
+  "country": "Saint Lucia",
+  "period": "current"
+ },
+ {
+  "name": "French/British colonial Creole",
+  "country": "Saint Lucia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "plantation culture",
+  "country": "Saint Lucia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Saladoid",
+  "country": "Saint Lucia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kalinago/Island Carib",
+  "country": "Saint Lucia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Vincentian Creole",
+  "country": "Saint Vincent and the Grenadines",
+  "period": "current"
+ },
+ {
+  "name": "Garifuna heritage",
+  "country": "Saint Vincent and the Grenadines",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Caribbean",
+  "country": "Saint Vincent and the Grenadines",
+  "period": "current"
+ },
+ {
+  "name": "Black Carib/Garifuna",
+  "country": "Saint Vincent and the Grenadines",
+  "period": "historical_ad"
+ },
+ {
+  "name": "British colonial",
+  "country": "Saint Vincent and the Grenadines",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Saladoid",
+  "country": "Saint Vincent and the Grenadines",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kalinago/Island Carib",
+  "country": "Saint Vincent and the Grenadines",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Samoan",
+  "country": "Samoa",
+  "period": "current"
+ },
+ {
+  "name": "Fa'a Samoa",
+  "country": "Samoa",
+  "period": "current"
+ },
+ {
+  "name": "Polynesian Christian",
+  "country": "Samoa",
+  "period": "current"
+ },
+ {
+  "name": "Samoan chiefly/matai",
+  "country": "Samoa",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Tui Manu'a",
+  "country": "Samoa",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Lapita",
+  "country": "Samoa",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Polynesian settlement",
+  "country": "Samoa",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Sammarinese",
+  "country": "San Marino",
+  "period": "current"
+ },
+ {
+  "name": "Italian Romagnol",
+  "country": "San Marino",
+  "period": "current"
+ },
+ {
+  "name": "Catholic microstate",
+  "country": "San Marino",
+  "period": "current"
+ },
+ {
+  "name": "Medieval commune of San Marino",
+  "country": "San Marino",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Byzantine/Romagnol",
+  "country": "San Marino",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Etruscan/Italic",
+  "country": "San Marino",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Villanovan",
+  "country": "San Marino",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Forro",
+  "country": "Sao Tome and Principe",
+  "period": "current"
+ },
+ {
+  "name": "Angolar",
+  "country": "Sao Tome and Principe",
+  "period": "current"
+ },
+ {
+  "name": "Cape Verdean/Portuguese Creole",
+  "country": "Sao Tome and Principe",
+  "period": "current"
+ },
+ {
+  "name": "Portuguese plantation Creole",
+  "country": "Sao Tome and Principe",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Angolares",
+  "country": "Sao Tome and Principe",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Saudi Arab",
+  "country": "Saudi Arabia",
+  "period": "current"
+ },
+ {
+  "name": "Bedouin",
+  "country": "Saudi Arabia",
+  "period": "current"
+ },
+ {
+  "name": "Hejazi/Najdi",
+  "country": "Saudi Arabia",
+  "period": "current"
+ },
+ {
+  "name": "Early Islamic/Umayyad-Abbasid",
+  "country": "Saudi Arabia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Nabataean/Arabian",
+  "country": "Saudi Arabia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Thamudic/Dadanite",
+  "country": "Saudi Arabia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Dilmun/Magan-related",
+  "country": "Saudi Arabia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Schaumburg German",
+  "country": "Schaumburg-Lippe*",
+  "period": "current"
+ },
+ {
+  "name": "Low Saxon",
+  "country": "Schaumburg-Lippe*",
+  "period": "current"
+ },
+ {
+  "name": "Westphalian",
+  "country": "Schaumburg-Lippe*",
+  "period": "current"
+ },
+ {
+  "name": "Principality Schaumburg-Lippe",
+  "country": "Schaumburg-Lippe*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Saxon medieval",
+  "country": "Schaumburg-Lippe*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Jastorf",
+  "country": "Schaumburg-Lippe*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Funnelbeaker",
+  "country": "Schaumburg-Lippe*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Wolof",
+  "country": "Senegal",
+  "period": "current"
+ },
+ {
+  "name": "Serer",
+  "country": "Senegal",
+  "period": "current"
+ },
+ {
+  "name": "Fula/Toucouleur",
+  "country": "Senegal",
+  "period": "current"
+ },
+ {
+  "name": "Jolof Empire",
+  "country": "Senegal",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Tekrur",
+  "country": "Senegal",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Senegambian megalithic",
+  "country": "Senegal",
+  "period": "pre_historical"
+ },
+ {
+  "name": "West African Late Stone Age",
+  "country": "Senegal",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Serb",
+  "country": "Serbia",
+  "period": "current"
+ },
+ {
+  "name": "Hungarian/Vojvodina",
+  "country": "Serbia",
+  "period": "current"
+ },
+ {
+  "name": "Bosniak/Roma",
+  "country": "Serbia",
+  "period": "current"
+ },
+ {
+  "name": "Medieval Serbian",
+  "country": "Serbia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ottoman/Habsburg Serbian",
+  "country": "Serbia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Vinča",
+  "country": "Serbia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Illyrian/Thraco-Dacian",
+  "country": "Serbia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Seychellois Creole",
+  "country": "Seychelles",
+  "period": "current"
+ },
+ {
+  "name": "Franco-Seychellois",
+  "country": "Seychelles",
+  "period": "current"
+ },
+ {
+  "name": "Indo-Seychellois",
+  "country": "Seychelles",
+  "period": "current"
+ },
+ {
+  "name": "French/British Indian Ocean Creole",
+  "country": "Seychelles",
+  "period": "historical_ad"
+ },
+ {
+  "name": "plantation",
+  "country": "Seychelles",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Mende",
+  "country": "Sierra Leone",
+  "period": "current"
+ },
+ {
+  "name": "Temne",
+  "country": "Sierra Leone",
+  "period": "current"
+ },
+ {
+  "name": "Krio",
+  "country": "Sierra Leone",
+  "period": "current"
+ },
+ {
+  "name": "Mane/Mende states",
+  "country": "Sierra Leone",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Freetown Krio",
+  "country": "Sierra Leone",
+  "period": "historical_ad"
+ },
+ {
+  "name": "West African Late Stone Age",
+  "country": "Sierra Leone",
+  "period": "pre_historical"
+ },
+ {
+  "name": "early Mande/Temne",
+  "country": "Sierra Leone",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Chinese Singaporean",
+  "country": "Singapore",
+  "period": "current"
+ },
+ {
+  "name": "Malay",
+  "country": "Singapore",
+  "period": "current"
+ },
+ {
+  "name": "Indian Singaporean",
+  "country": "Singapore",
+  "period": "current"
+ },
+ {
+  "name": "Straits Chinese/Peranakan",
+  "country": "Singapore",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Temasek/Malay",
+  "country": "Singapore",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Austronesian Malay",
+  "country": "Singapore",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hoabinhian region",
+  "country": "Singapore",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Slovak",
+  "country": "Slovakia",
+  "period": "current"
+ },
+ {
+  "name": "Hungarian-Slovak",
+  "country": "Slovakia",
+  "period": "current"
+ },
+ {
+  "name": "Rusyn/Roma",
+  "country": "Slovakia",
+  "period": "current"
+ },
+ {
+  "name": "Great Moravian",
+  "country": "Slovakia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "medieval Upper Hungary",
+  "country": "Slovakia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Únětice",
+  "country": "Slovakia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Lusatian/Púchov",
+  "country": "Slovakia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Slovene",
+  "country": "Slovenia",
+  "period": "current"
+ },
+ {
+  "name": "Italian-Slovene",
+  "country": "Slovenia",
+  "period": "current"
+ },
+ {
+  "name": "Hungarian-Slovene",
+  "country": "Slovenia",
+  "period": "current"
+ },
+ {
+  "name": "Carantanian/Slavic Alpine",
+  "country": "Slovenia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Habsburg Slovene",
+  "country": "Slovenia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "La Tène Celtic",
+  "country": "Slovenia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Ljubljana Marsh pile-dwellers",
+  "country": "Slovenia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Malaitan",
+  "country": "Solomon Islands, The",
+  "period": "current"
+ },
+ {
+  "name": "Guadalcanal",
+  "country": "Solomon Islands, The",
+  "period": "current"
+ },
+ {
+  "name": "Polynesian outlier",
+  "country": "Solomon Islands, The",
+  "period": "current"
+ },
+ {
+  "name": "Solomon Island chiefdoms",
+  "country": "Solomon Islands, The",
+  "period": "historical_ad"
+ },
+ {
+  "name": "colonial islander",
+  "country": "Solomon Islands, The",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Lapita",
+  "country": "Solomon Islands, The",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Papuan/Oceanic settlement",
+  "country": "Solomon Islands, The",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Somali",
+  "country": "Somalia",
+  "period": "current"
+ },
+ {
+  "name": "Benadiri",
+  "country": "Somalia",
+  "period": "current"
+ },
+ {
+  "name": "Bantu Somali",
+  "country": "Somalia",
+  "period": "current"
+ },
+ {
+  "name": "Ajuran Sultanate",
+  "country": "Somalia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Adal Sultanate",
+  "country": "Somalia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Cushitic pastoral",
+  "country": "Somalia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Land of Punt horizon",
+  "country": "Somalia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Zulu",
+  "country": "South Africa",
+  "period": "current"
+ },
+ {
+  "name": "Xhosa",
+  "country": "South Africa",
+  "period": "current"
+ },
+ {
+  "name": "Afrikaner",
+  "country": "South Africa",
+  "period": "current"
+ },
+ {
+  "name": "Zulu kingdom",
+  "country": "South Africa",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Cape Dutch/Afrikaner",
+  "country": "South Africa",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Later Stone Age San",
+  "country": "South Africa",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Khoekhoe pastoral",
+  "country": "South Africa",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Dinka",
+  "country": "South Sudan",
+  "period": "current"
+ },
+ {
+  "name": "Nuer",
+  "country": "South Sudan",
+  "period": "current"
+ },
+ {
+  "name": "Shilluk",
+  "country": "South Sudan",
+  "period": "current"
+ },
+ {
+  "name": "Shilluk kingdom",
+  "country": "South Sudan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Azande states",
+  "country": "South Sudan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Pastoral Neolithic",
+  "country": "South Sudan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Nilotic Iron Age",
+  "country": "South Sudan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Castilian Spanish",
+  "country": "Spain",
+  "period": "current"
+ },
+ {
+  "name": "Catalan",
+  "country": "Spain",
+  "period": "current"
+ },
+ {
+  "name": "Basque/Galician",
+  "country": "Spain",
+  "period": "current"
+ },
+ {
+  "name": "Visigothic/Al-Andalus",
+  "country": "Spain",
+  "period": "historical_ad"
+ },
+ {
+  "name": "medieval Christian kingdoms",
+  "country": "Spain",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Iberian",
+  "country": "Spain",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bell Beaker/El Argar",
+  "country": "Spain",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Sinhalese",
+  "country": "Sri Lanka",
+  "period": "current"
+ },
+ {
+  "name": "Sri Lankan Tamil",
+  "country": "Sri Lanka",
+  "period": "current"
+ },
+ {
+  "name": "Moor",
+  "country": "Sri Lanka",
+  "period": "current"
+ },
+ {
+  "name": "Kandyan/Anuradhapura",
+  "country": "Sri Lanka",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Polonnaruwa",
+  "country": "Sri Lanka",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Megalithic Iron Age",
+  "country": "Sri Lanka",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Balangoda",
+  "country": "Sri Lanka",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Sudanese Arab",
+  "country": "Sudan",
+  "period": "current"
+ },
+ {
+  "name": "Nubian",
+  "country": "Sudan",
+  "period": "current"
+ },
+ {
+  "name": "Beja/Fur",
+  "country": "Sudan",
+  "period": "current"
+ },
+ {
+  "name": "Funj Sultanate",
+  "country": "Sudan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Makuria/Alodia",
+  "country": "Sudan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Kush/Meroe",
+  "country": "Sudan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kerma",
+  "country": "Sudan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Surinamese Creole",
+  "country": "Suriname",
+  "period": "current"
+ },
+ {
+  "name": "Hindustani",
+  "country": "Suriname",
+  "period": "current"
+ },
+ {
+  "name": "Maroon/Javanese",
+  "country": "Suriname",
+  "period": "current"
+ },
+ {
+  "name": "Dutch Guiana",
+  "country": "Suriname",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Maroon cultures",
+  "country": "Suriname",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Arawak/Lokono",
+  "country": "Suriname",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Carib/Kali'na",
+  "country": "Suriname",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Swedish",
+  "country": "Sweden",
+  "period": "current"
+ },
+ {
+  "name": "Sámi",
+  "country": "Sweden",
+  "period": "current"
+ },
+ {
+  "name": "Tornedalian",
+  "country": "Sweden",
+  "period": "current"
+ },
+ {
+  "name": "Viking Swedish",
+  "country": "Sweden",
+  "period": "historical_ad"
+ },
+ {
+  "name": "medieval Swedish",
+  "country": "Sweden",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Battle Axe/Corded Ware",
+  "country": "Sweden",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Nordic Bronze Age",
+  "country": "Sweden",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Swiss German",
+  "country": "Switzerland",
+  "period": "current"
+ },
+ {
+  "name": "Romand/French Swiss",
+  "country": "Switzerland",
+  "period": "current"
+ },
+ {
+  "name": "Ticinese/Romansh",
+  "country": "Switzerland",
+  "period": "current"
+ },
+ {
+  "name": "Old Swiss Confederacy",
+  "country": "Switzerland",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Burgundian/Savoyard",
+  "country": "Switzerland",
+  "period": "historical_ad"
+ },
+ {
+  "name": "La Tène Celtic",
+  "country": "Switzerland",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Pfyn/Cortaillod",
+  "country": "Switzerland",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Syrian Arab",
+  "country": "Syria",
+  "period": "current"
+ },
+ {
+  "name": "Kurdish",
+  "country": "Syria",
+  "period": "current"
+ },
+ {
+  "name": "Assyrian/Armenian",
+  "country": "Syria",
+  "period": "current"
+ },
+ {
+  "name": "Umayyad/Abbasid Syrian",
+  "country": "Syria",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Byzantine/Aramaic",
+  "country": "Syria",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Eblaite",
+  "country": "Syria",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Ugaritic/Amorite",
+  "country": "Syria",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Tajik",
+  "country": "Tajikistan",
+  "period": "current"
+ },
+ {
+  "name": "Pamiri",
+  "country": "Tajikistan",
+  "period": "current"
+ },
+ {
+  "name": "Uzbek",
+  "country": "Tajikistan",
+  "period": "current"
+ },
+ {
+  "name": "Samanid Persian",
+  "country": "Tajikistan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Sogdian",
+  "country": "Tajikistan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bactria-Margiana (BMAC)",
+  "country": "Tajikistan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Andronovo",
+  "country": "Tajikistan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Sukuma",
+  "country": "Tanzania",
+  "period": "current"
+ },
+ {
+  "name": "Chaga",
+  "country": "Tanzania",
+  "period": "current"
+ },
+ {
+  "name": "Swahili/Zanzibari",
+  "country": "Tanzania",
+  "period": "current"
+ },
+ {
+  "name": "Kilwa/Swahili coast",
+  "country": "Tanzania",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Hehe/Unyanyembe",
+  "country": "Tanzania",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Pastoral Neolithic",
+  "country": "Tanzania",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Urewe",
+  "country": "Tanzania",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Texan Anglo",
+  "country": "Texas*",
+  "period": "current"
+ },
+ {
+  "name": "Tejano",
+  "country": "Texas*",
+  "period": "current"
+ },
+ {
+  "name": "African American Texan",
+  "country": "Texas*",
+  "period": "current"
+ },
+ {
+  "name": "Republic of Texas",
+  "country": "Texas*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Spanish/Mexican Tejas",
+  "country": "Texas*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Caddo",
+  "country": "Texas*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Paleo-Indian/Archaic",
+  "country": "Texas*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Central Thai",
+  "country": "Thailand",
+  "period": "current"
+ },
+ {
+  "name": "Isan/Lao",
+  "country": "Thailand",
+  "period": "current"
+ },
+ {
+  "name": "Northern Thai",
+  "country": "Thailand",
+  "period": "current"
+ },
+ {
+  "name": "Ayutthaya/Sukhothai",
+  "country": "Thailand",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Dvaravati",
+  "country": "Thailand",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Ban Chiang",
+  "country": "Thailand",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hoabinhian",
+  "country": "Thailand",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Tetum",
+  "country": "Timor-Leste",
+  "period": "current"
+ },
+ {
+  "name": "Mambai",
+  "country": "Timor-Leste",
+  "period": "current"
+ },
+ {
+  "name": "Fataluku",
+  "country": "Timor-Leste",
+  "period": "current"
+ },
+ {
+  "name": "Portuguese Timor",
+  "country": "Timor-Leste",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Timorese liurai kingdoms",
+  "country": "Timor-Leste",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Austronesian settlement",
+  "country": "Timor-Leste",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Papuan/Timonese Neolithic",
+  "country": "Timor-Leste",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Ewe",
+  "country": "Togo",
+  "period": "current"
+ },
+ {
+  "name": "Kabye",
+  "country": "Togo",
+  "period": "current"
+ },
+ {
+  "name": "Mina",
+  "country": "Togo",
+  "period": "current"
+ },
+ {
+  "name": "Aného coastal trade",
+  "country": "Togo",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Dagomba/Atakora states",
+  "country": "Togo",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Kintampo-related",
+  "country": "Togo",
+  "period": "pre_historical"
+ },
+ {
+  "name": "West African Iron Age",
+  "country": "Togo",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Tongan",
+  "country": "Tonga",
+  "period": "current"
+ },
+ {
+  "name": "Ha'apai/Vava'u",
+  "country": "Tonga",
+  "period": "current"
+ },
+ {
+  "name": "Polynesian Christian",
+  "country": "Tonga",
+  "period": "current"
+ },
+ {
+  "name": "Tu'i Tonga Empire",
+  "country": "Tonga",
+  "period": "historical_ad"
+ },
+ {
+  "name": "chiefly Tonga",
+  "country": "Tonga",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Lapita",
+  "country": "Tonga",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Polynesian settlement",
+  "country": "Tonga",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Trinidadian Creole",
+  "country": "Trinidad and Tobago",
+  "period": "current"
+ },
+ {
+  "name": "Indo-Trinidadian",
+  "country": "Trinidad and Tobago",
+  "period": "current"
+ },
+ {
+  "name": "Tobagonian",
+  "country": "Trinidad and Tobago",
+  "period": "current"
+ },
+ {
+  "name": "French/Spanish/British colonial Creole",
+  "country": "Trinidad and Tobago",
+  "period": "historical_ad"
+ },
+ {
+  "name": "plantation",
+  "country": "Trinidad and Tobago",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Arawak/Igneri",
+  "country": "Trinidad and Tobago",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kalinago/Carib",
+  "country": "Trinidad and Tobago",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Tunisian Arab",
+  "country": "Tunisia",
+  "period": "current"
+ },
+ {
+  "name": "Amazigh",
+  "country": "Tunisia",
+  "period": "current"
+ },
+ {
+  "name": "Djerban",
+  "country": "Tunisia",
+  "period": "current"
+ },
+ {
+  "name": "Ifriqiya/Aghlabid",
+  "country": "Tunisia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Hafsid",
+  "country": "Tunisia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Carthaginian/Punic",
+  "country": "Tunisia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Capsian",
+  "country": "Tunisia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Turkish",
+  "country": "Turkey",
+  "period": "current"
+ },
+ {
+  "name": "Kurdish",
+  "country": "Turkey",
+  "period": "current"
+ },
+ {
+  "name": "Alevi/Armenian/Greek minorities",
+  "country": "Turkey",
+  "period": "current"
+ },
+ {
+  "name": "Ottoman Turkish",
+  "country": "Turkey",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Byzantine/Anatolian",
+  "country": "Turkey",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Hittite",
+  "country": "Turkey",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Çatalhöyük/Anatolian Neolithic",
+  "country": "Turkey",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Turkmen",
+  "country": "Turkmenistan",
+  "period": "current"
+ },
+ {
+  "name": "Uzbek",
+  "country": "Turkmenistan",
+  "period": "current"
+ },
+ {
+  "name": "Russian-Turkmenistani",
+  "country": "Turkmenistan",
+  "period": "current"
+ },
+ {
+  "name": "Seljuk Turkmen",
+  "country": "Turkmenistan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Khwarezmian",
+  "country": "Turkmenistan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bactria-Margiana (BMAC)",
+  "country": "Turkmenistan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Parthian/Margiana",
+  "country": "Turkmenistan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Tuvaluan",
+  "country": "Tuvalu",
+  "period": "current"
+ },
+ {
+  "name": "Polynesian Christian",
+  "country": "Tuvalu",
+  "period": "current"
+ },
+ {
+  "name": "Nui Kiribati-linked",
+  "country": "Tuvalu",
+  "period": "current"
+ },
+ {
+  "name": "Tuvaluan island chiefdoms",
+  "country": "Tuvalu",
+  "period": "historical_ad"
+ },
+ {
+  "name": "colonial Ellice",
+  "country": "Tuvalu",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Polynesian settlement",
+  "country": "Tuvalu",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Lapita-descended",
+  "country": "Tuvalu",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Neapolitan",
+  "country": "Two Sicilies*",
+  "period": "current"
+ },
+ {
+  "name": "Sicilian",
+  "country": "Two Sicilies*",
+  "period": "current"
+ },
+ {
+  "name": "Calabrian",
+  "country": "Two Sicilies*",
+  "period": "current"
+ },
+ {
+  "name": "Kingdom of the Two Sicilies",
+  "country": "Two Sicilies*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Norman/Aragonese Sicily",
+  "country": "Two Sicilies*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Greek Magna Graecia",
+  "country": "Two Sicilies*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Sicel/Sican/Elymian",
+  "country": "Two Sicilies*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Baganda",
+  "country": "Uganda",
+  "period": "current"
+ },
+ {
+  "name": "Banyankole",
+  "country": "Uganda",
+  "period": "current"
+ },
+ {
+  "name": "Acholi",
+  "country": "Uganda",
+  "period": "current"
+ },
+ {
+  "name": "Buganda kingdom",
+  "country": "Uganda",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bunyoro-Kitara",
+  "country": "Uganda",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Urewe",
+  "country": "Uganda",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Pastoral Neolithic",
+  "country": "Uganda",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Ukrainian",
+  "country": "Ukraine",
+  "period": "current"
+ },
+ {
+  "name": "Crimean Tatar",
+  "country": "Ukraine",
+  "period": "current"
+ },
+ {
+  "name": "Rusyn",
+  "country": "Ukraine",
+  "period": "current"
+ },
+ {
+  "name": "Kievan Rus'",
+  "country": "Ukraine",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Cossack Hetmanate",
+  "country": "Ukraine",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Trypillia",
+  "country": "Ukraine",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Scythian/Sarmatian",
+  "country": "Ukraine",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Russian",
+  "country": "Union of Soviet Socialist Republics*",
+  "period": "current"
+ },
+ {
+  "name": "Ukrainian",
+  "country": "Union of Soviet Socialist Republics*",
+  "period": "current"
+ },
+ {
+  "name": "Central Asian/Siberian peoples",
+  "country": "Union of Soviet Socialist Republics*",
+  "period": "current"
+ },
+ {
+  "name": "Soviet multinational",
+  "country": "Union of Soviet Socialist Republics*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Russian imperial successor",
+  "country": "Union of Soviet Socialist Republics*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Scythian",
+  "country": "Union of Soviet Socialist Republics*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Sintashta/Andronovo",
+  "country": "Union of Soviet Socialist Republics*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Emirati Arab",
+  "country": "United Arab Emirates, The",
+  "period": "current"
+ },
+ {
+  "name": "Bedouin",
+  "country": "United Arab Emirates, The",
+  "period": "current"
+ },
+ {
+  "name": "South Asian Gulf diaspora",
+  "country": "United Arab Emirates, The",
+  "period": "current"
+ },
+ {
+  "name": "Trucial States",
+  "country": "United Arab Emirates, The",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Julfar/Gulf maritime",
+  "country": "United Arab Emirates, The",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Umm an-Nar",
+  "country": "United Arab Emirates, The",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Hafit",
+  "country": "United Arab Emirates, The",
+  "period": "pre_historical"
+ },
+ {
+  "name": "English",
+  "country": "United Kingdom, The",
+  "period": "current"
+ },
+ {
+  "name": "Scottish",
+  "country": "United Kingdom, The",
+  "period": "current"
+ },
+ {
+  "name": "Welsh/Irish",
+  "country": "United Kingdom, The",
+  "period": "current"
+ },
+ {
+  "name": "Anglo-Saxon/Norman",
+  "country": "United Kingdom, The",
+  "period": "historical_ad"
+ },
+ {
+  "name": "medieval Scottish/Welsh",
+  "country": "United Kingdom, The",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Celtic Brittonic",
+  "country": "United Kingdom, The",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Beaker/Bronze Age Britain",
+  "country": "United Kingdom, The",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Uruguayan",
+  "country": "Uruguay",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Uruguayan",
+  "country": "Uruguay",
+  "period": "current"
+ },
+ {
+  "name": "Gaucho/Rioplatense",
+  "country": "Uruguay",
+  "period": "current"
+ },
+ {
+  "name": "Spanish/Banda Oriental",
+  "country": "Uruguay",
+  "period": "historical_ad"
+ },
+ {
+  "name": "colonial Gaucho",
+  "country": "Uruguay",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Charrúa",
+  "country": "Uruguay",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Guaraní",
+  "country": "Uruguay",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Uzbek",
+  "country": "Uzbekistan",
+  "period": "current"
+ },
+ {
+  "name": "Tajik",
+  "country": "Uzbekistan",
+  "period": "current"
+ },
+ {
+  "name": "Karakalpak",
+  "country": "Uzbekistan",
+  "period": "current"
+ },
+ {
+  "name": "Timurid",
+  "country": "Uzbekistan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Samanid/Sogdian",
+  "country": "Uzbekistan",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bactria-Margiana (BMAC)",
+  "country": "Uzbekistan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Andronovo",
+  "country": "Uzbekistan",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Ni-Vanuatu",
+  "country": "Vanuatu",
+  "period": "current"
+ },
+ {
+  "name": "Bislama Creole",
+  "country": "Vanuatu",
+  "period": "current"
+ },
+ {
+  "name": "Tanna/Ambae island cultures",
+  "country": "Vanuatu",
+  "period": "current"
+ },
+ {
+  "name": "Melanesian chiefly societies",
+  "country": "Vanuatu",
+  "period": "historical_ad"
+ },
+ {
+  "name": "colonial New Hebrides",
+  "country": "Vanuatu",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Lapita",
+  "country": "Vanuatu",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Papuan/Oceanic settlement",
+  "country": "Vanuatu",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Venezuelan",
+  "country": "Venezuela",
+  "period": "current"
+ },
+ {
+  "name": "Afro-Venezuelan",
+  "country": "Venezuela",
+  "period": "current"
+ },
+ {
+  "name": "Wayuu/Warao",
+  "country": "Venezuela",
+  "period": "current"
+ },
+ {
+  "name": "Spanish colonial Venezuela",
+  "country": "Venezuela",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Llanero",
+  "country": "Venezuela",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Arawak/Carib",
+  "country": "Venezuela",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Saladoid-Orinoco",
+  "country": "Venezuela",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Kinh Vietnamese",
+  "country": "Vietnam",
+  "period": "current"
+ },
+ {
+  "name": "Tày",
+  "country": "Vietnam",
+  "period": "current"
+ },
+ {
+  "name": "Khmer Krom/Cham",
+  "country": "Vietnam",
+  "period": "current"
+ },
+ {
+  "name": "Đại Việt",
+  "country": "Vietnam",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Champa",
+  "country": "Vietnam",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Đông Sơn",
+  "country": "Vietnam",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Sa Huỳnh",
+  "country": "Vietnam",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Swabian",
+  "country": "Württemberg*",
+  "period": "current"
+ },
+ {
+  "name": "Württemberg German",
+  "country": "Württemberg*",
+  "period": "current"
+ },
+ {
+  "name": "Alemannic",
+  "country": "Württemberg*",
+  "period": "current"
+ },
+ {
+  "name": "Duchy/Kingdom Württemberg",
+  "country": "Württemberg*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Swabian medieval",
+  "country": "Württemberg*",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Hallstatt",
+  "country": "Württemberg*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "La Tène Celtic",
+  "country": "Württemberg*",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Yemeni Arab",
+  "country": "Yemen",
+  "period": "current"
+ },
+ {
+  "name": "Hadhrami",
+  "country": "Yemen",
+  "period": "current"
+ },
+ {
+  "name": "Socotri",
+  "country": "Yemen",
+  "period": "current"
+ },
+ {
+  "name": "Rasulid/Zaydi Yemen",
+  "country": "Yemen",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Himyarite late antique",
+  "country": "Yemen",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Sabaean",
+  "country": "Yemen",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Himyarite/Qataban",
+  "country": "Yemen",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bemba",
+  "country": "Zambia",
+  "period": "current"
+ },
+ {
+  "name": "Tonga",
+  "country": "Zambia",
+  "period": "current"
+ },
+ {
+  "name": "Lozi",
+  "country": "Zambia",
+  "period": "current"
+ },
+ {
+  "name": "Barotseland/Lozi",
+  "country": "Zambia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Luba-Lunda migrations",
+  "country": "Zambia",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Bantu Iron Age",
+  "country": "Zambia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Later Stone Age",
+  "country": "Zambia",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Shona",
+  "country": "Zimbabwe",
+  "period": "current"
+ },
+ {
+  "name": "Ndebele",
+  "country": "Zimbabwe",
+  "period": "current"
+ },
+ {
+  "name": "Tonga",
+  "country": "Zimbabwe",
+  "period": "current"
+ },
+ {
+  "name": "Great Zimbabwe",
+  "country": "Zimbabwe",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Mutapa",
+  "country": "Zimbabwe",
+  "period": "historical_ad"
+ },
+ {
+  "name": "Leopard's Kopje",
+  "country": "Zimbabwe",
+  "period": "pre_historical"
+ },
+ {
+  "name": "Bantu Iron Age",
+  "country": "Zimbabwe",
+  "period": "pre_historical"
+ }
+]
