@@ -76,6 +76,23 @@ Skill: `skills/production/concept-art/SKILL.md`. Scenes use `ep##_<name>` id pre
 | `hunyuan` | Illustration, stylized art |
 | `grok` | Creative exploration, graphic styles |
 
+### Local Model Server (ComfyUI, $0.00)
+
+Workflow server at `http://192.168.1.181:8100/workflows` (GET lists all workflows
++ schemas). Key workflows:
+
+| Workflow | Role |
+|----------|------|
+| `minimax-h3-r2v` | **Near-frontier reference-to-video** — 9 image + 3 video + 3 audio refs per shot, 1-10s. See `references/services/minimax-h3/` |
+| `krea2-turbo-t2i` | Fast t2i; best for one-image character turnarounds. See `references/services/krea/krea2-turbo.md` |
+| `ltx2-3` | LTX-2.3 22B i2v/t2v with native audio, ~20s max |
+| `ltx2-3-ingredients` | Reference-sheet-conditioned video (IC-LoRA @ strength 1.4) |
+| `flux2-*`, `z-image-base-t2i` | Image generation (Klein = fast draft, Dev = quality) |
+| `qwen-image-edit`, `qwen-multiangle`, `qwen-image-layered` | Image editing / camera angles / layer decomposition |
+| `qwen3-tts-voiceclone`, `qwen3-tts-voicedesign`, `chatterbox-v2v` | Voice |
+| `wan-infinitetalk` | Talking-head from portrait + audio |
+| `whisper-stt`, `qwen25-vl`, `vocal-separator` | Analysis / post |
+
 ### Video Analysis & Editing Commands
 
 ```bash
@@ -352,6 +369,18 @@ When using claude-mem, follow the memory isolation rules in the Memory Managemen
 | `skills/production/visual-translation/SKILL.md` | Prose-to-visual diagnostic — tests beats before directors room, feedback loop to writers room |
 | `skills/production/concept-art/SKILL.md` | Pencil + watercolor concept sketches via local z-image (locations + characters + scenes) |
 | `scripts/production/concept_art/generate.py` | Concept-art driver — reads `{project}/CONCEPT_ART/subjects.yaml` |
+| `skills/writer/writers-room/SKILL.md` | Writers room v3.7 — Causal Contract (wired Episode Arc + wiring tests at episode lock), premortems, Lore Forge |
+| `skills/writer/story-recipe/SKILL.md` | Story recipes v0.2 — v2 wired methodology, derive/diagnose/rewire modes, Claude wiring self-check |
+| `references/story_structure/recipes/` | 54 v2-wired genre recipes (Needs/Sets-up causal edges + whole-output wiring tests) |
+| `references/story_structure/pools/` + `scripts/writer/sample_pools.py` | Lore entropy pools (1,585 cultures + 32 history shapes) with no-repeat sampling for Lore Forge Step 0 |
+| `references/centroid_antiviral_brief.md` | Prestige-centroid laundering detection — Job Census / Action / Body / Conflict-Register tests (wired into writers-room v3.7) |
+| `references/story_structure/calibration_corpus.md` | Pointer to the gemmawood calibration corpus (rio_v2 transmission-audit ground truth) |
+| `references/services/minimax-h3/README.md` | MiniMax H3 reference-to-video — local endpoint contract + official prompt guides (base + full-reference) |
+| `references/services/krea/krea2-turbo.md` | Krea2 Turbo t2i — one-image character turnaround technique for reference sheets |
+| `references/story_structure/combined_evaluation_rubric.md` | v0.3 evaluation rubric — Assumed-Competence Floor + Floor Discipline/Cap Rules/dual score |
+| `references/story_structure/judge_workflow.md` | Heavyweight multi-judge protocol (blind A/B evidence, locked provisionals, median, uplift audit) |
+| `scripts/writer/validate_recipe_wiring.py` | Mechanical recipe wiring validator (ported from gemmawood — replaces LLM self-check) |
+| `references/story_structure/learnings/` | Primary-source audits behind writers-room v3.7 numbers (rio_v2 audit, divergence state report) |
 
 ## Current Active Project
 
