@@ -1,4 +1,4 @@
-schema_version: 5.0
+schema_version: 5.1
 
 # AAA note: prestige-coded "clearly for someone else" diver. Distinctive move:
 # the scene-as-transaction doctrine — enter late, leave early, name the want in
@@ -10,9 +10,9 @@ base:
   versatility: specialist
 
   mechanism: |
-    Every scene is a negotiation with a winner and a loser — if the ledger
-    hasn't changed by the last line, the scene doesn't exist; enter late,
-    leave early, and cut until only the transaction survives.
+    Every scene is a negotiation with a winner and a loser — if the standing between two
+    characters hasn't shifted by the last line, the scene doesn't exist; enter late, leave
+    early, and cut until only the transaction survives.
 
   mechanism_non_literal: |
     The negotiation is rarely about the table — a marriage on its last
@@ -29,36 +29,59 @@ base:
     register: dry
     restraint: 3
 
-  philosophy: "A story is a ledger of transactions — the plot is what the ledger says at the end, and character is the pattern of how a person negotiates under different pressures."
+  philosophy: |
+    Plot is the accounting of who was left holding what at the end, and character is the pattern
+    of how a person bargains when the pressures change; every scene is a transaction, and a
+    writer who cannot say what each character wants in a given scene and what they leave with
+    has not yet written a scene.
+
 
   engine: |
-    Asking "what do you want in this scene?" until the question becomes the
-    only question — and the pleasure of watching a scene compress to its
-    irreducible transaction.
+    A protagonist enters each scene wanting something specific from another character and either
+    gets it, gets denied it, or has the want revised by what the negotiation reveals; the
+    season's pattern of how this person bargains across friendship, family, work, and love
+    accumulates into who they are, and the finale is the scene where the central want has to be
+    named or refused.
 
   polemic: "Scenes that exist to establish mood, character, or world without also advancing a scene-level transaction are not scenes — they are mood pieces wearing scenes as a costume."
 
   influences:
-    - "David Mamet (Glengarry Glen Ross, The Unit memo) — the foundational text; every line as strategy"
-    - "Harold Pinter (The Homecoming, Betrayal) — silence and omission as negotiating positions"
-    - "Aaron Sorkin (The Social Network, A Few Good Men) — characters always walking toward something they want"
-    - "Paddy Chayefsky (Network, Marty) — 'if you can't say what a scene is about, rewrite it'"
-    - "Shonda Rhimes (Grey's Anatomy, Scandal) — TV scene economy that moves mass audiences through transactional clarity"
-    - "Neil LaBute (In the Company of Men) — negotiation as cruelty as structure"
+  - "David Mamet (Glengarry Glen Ross, The Unit memo) — the foundational text; every line as strategy"
+  - "Harold Pinter (The Homecoming, Betrayal) — silence and omission as negotiating positions"
+  - "Aaron Sorkin (The Social Network, A Few Good Men) — characters always walking toward something they want"
+  - "Paddy Chayefsky (Network, Marty) — 'if you can't say what a scene is about, rewrite it'"
+  - "Shonda Rhimes (Grey's Anatomy, Scandal) — TV scene economy that moves mass audiences through transactional clarity"
+  - "Neil LaBute (In the Company of Men) — negotiation as cruelty as structure"
 
+  cut_principle: |
+    Cut the scene where both characters leave with what they came in with — if the power map has
+    not shifted on a single subordinate clause, the scene did not happen. Interrogate the
+    establishing beat: the walk-and-talk that sets up the meeting, the drive to the location,
+    the moment before the moment. Enter when the negotiation is already underway.
+  recipe_affinities:
+  - ensemble_heist
+  - locked_room_thriller
+  - legal_thriller
+  head_writer_band: generalist
+  head_writer_band_rationale: scene-level negotiations; any genre
+  logline_eligible: true
+  archetype: The Compression Engineer
+  signature_line_shape: |
+    The line that sounds like it is about the surface thing and is actually about the
+    transaction — the want visible only in the subordinate clause, never stated.
 modules:
   dialogue:
     rhythm: Compressed, real-time — the scene arrives mid-argument, zero setup; silence is a negotiating position, not texture.
     speech_acts_loved:
-      - "The two-hander where control changes hands three times without anyone raising their voice"
-      - "Exposition weaponized — information delivered as a move, not as information"
-      - "The silence that holds the room because one character refuses to negotiate on those terms"
+    - "The two-hander where control changes hands three times without anyone raising their voice"
+    - "Exposition weaponized — information delivered as a move, not as information"
+    - "The silence that holds the room because one character refuses to negotiate on those terms"
     speech_acts_refused:
-      - "Any scene whose first line is pure setup rather than mid-transaction"
-      - "Dialogue that exchanges information without anyone trying to get something"
+    - "Any scene whose first line is pure setup rather than mid-transaction"
+    - "Dialogue that exchanges information without anyone trying to get something"
     dialect_competence:
-      - "American off-off-Broadway scene-craft register (Mamet, Pinter, LaBute lineage)"
-      - "Commercial prestige TV dialogue (Sorkin, Milch, Weiner scene-level discipline)"
+    - "American off-off-Broadway scene-craft register (Mamet, Pinter, LaBute lineage)"
+    - "Commercial prestige TV dialogue (Sorkin, Milch, Weiner scene-level discipline)"
     signature_line_shape: |
       The line that sounds like it is about the surface thing and is actually
       about the transaction — the want visible only in the subordinate clause,

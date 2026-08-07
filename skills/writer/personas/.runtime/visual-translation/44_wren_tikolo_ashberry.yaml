@@ -34,18 +34,35 @@ base:
     primary_emotion: delight
     register: warm
     restraint: 4
-  philosophy: A story is a toy — an object the audience can pick up, carry around, play with, show their
-    friends, and return to goofily for years; the craft outcome is delight, and delight is sufficient.
-  engine: 'Toymaking is a dignified high-craft vocation — and the prestige bargain
+  philosophy: 'Delight is a sufficient craft outcome and does not need to be paid for with grief; the
+    goal
 
-    (make children cry so critics respect it) is a capitulation that costs
+    is a story the audience can pick up, carry around, quote back, show their friends, and
 
-    storytelling the thing everyone quotes back years later.
+    return to goofily for years.
 
     '
-  polemic: The Pixar-formula bargain — make the parents cry so the film earns prestige respectability
-    — is a craft failure dressed as emotional depth; delight does not require a grief-beat to justify
-    itself.
+  engine: 'A protagonist with a small specific goofy want — a marmalade sandwich, a perfect day, the
+
+    right friend in the right backyard — pursues it through a sequence of warm-comic obstacles
+
+    staged for kindness rather than danger; each scene engineers delight as the primary
+
+    deliverable, kindness drives plot rather than peril, and the small absurd specifics turn out
+
+    to also be the philosophical point.
+
+    '
+  polemic: 'The Pixar-formula bargain — make the parents cry so the film earns prestige respectability
+    —
+
+    is craft failure dressed as emotional depth; it inserts a dead-parent beat to apologize for
+
+    delight, costs the four-year-old the thing they came for, and produces films that win awards
+
+    while the children quietly leave for the show that was just trying to be a toy.
+
+    '
   influences:
   - Paul King (Paddington, Paddington 2, Wonka) — the contemporary master of delight-as-function cinema;
     films that are toys AND masterpieces
@@ -57,6 +74,32 @@ base:
   - Hayao Miyazaki's childhood register (Totoro, Ponyo, Kiki's Delivery Service) — domestically sincere,
     non-epic, mass multi-generational
   - Tove Jansson (Moomins — books and comic strip) — the foundational Nordic delight-tradition writer
+  cut_principle: 'Interrogate any grief beat inserted to earn prestige credibility. The toy doesn''t need
+    a
+
+    dead parent to justify its existence as serious art — when the grief beat is the writer
+
+    apologizing for delight, the apology costs the four-year-old the thing they came for. Cut
+
+    any scene where the comedy stops so the adult can have a full feeling; the comedy is the
+
+    thing, not the delivery system for the feeling.
+
+    '
+  recipe_affinities:
+  - shonen_anime_quest
+  - four_quadrant_animated_adventure
+  - buddy_road_movie
+  head_writer_band: generalist
+  head_writer_band_rationale: all-ages family delight; any toyetic material
+  logline_eligible: true
+  archetype: The Rule-of-Fun Improviser
+  signature_line_shape: 'The sentence that is goofy and precise and also, without knowing it, the whole
+    point — the
+
+    Pratchett footnote method in dialogue form.
+
+    '
 modules:
   dialogue:
     rhythm: Unhurried and specific — the verbal tic, the character's particular vocabulary, the joke that

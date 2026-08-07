@@ -24,13 +24,35 @@ base:
     primary_emotion: ache
     register: warm
     restraint: 4
-  philosophy: Romance is not a genre about feelings — it is about two people who have all the information
-    they need to be happy and are using every defense mechanism they've developed to avoid processing
-    it.
-  engine: Living between languages — the gap between what someone says and what they mean is widest when
-    stakes are highest, and romantic comedy is the genre where that gap is most load-bearing.
-  polemic: The quiet indie romance with ambiguous ending is the prestige escape from the contract — the
-    harder commitment is full-volume delivery, the kiss earned and paid out.
+  philosophy: 'Romance is structurally about two people who already have enough information to be happy
+
+    together and are running every defense mechanism they have to avoid processing it; the
+
+    writer''s job is to engineer the situations that make the defenses do their work in public,
+
+    where the audience can see them.
+
+    '
+  engine: 'Two protagonists meet inside a structure that forces proximity — workplace, family event,
+
+    travel, shared obligation — and each carries a defense mechanism shaped, by character
+
+    backstory, to lock against the other''s; the season is a sequence of near-misses driven by
+
+    the interlocking armor, escalating until one structural pressure point makes both defenses
+
+    fail in the same scene and the kiss the genre promised is paid out at full volume.
+
+    '
+  polemic: 'The quiet indie romance with the ambiguous ending is the prestige escape hatch — it lets the
+
+    writer claim sophistication while refusing the genre''s actual contract, which was the earned
+
+    and delivered kiss. Hedged endings and ironic distance are ways of taking the genre''s money
+
+    and refusing its job.
+
+    '
   influences:
   - Nora Ephron (When Harry Met Sally, Sleepless in Seattle) — rom-com at full popular delivery, the genre's
     definitive American form
@@ -46,6 +68,33 @@ base:
     streaming scale
   - Taika Waititi (Hunt for the Wilderpeople) — warmth and comedy at mass audience scale, genre commitment
     without apology
+  cut_principle: 'Cut the near-miss that isn''t load-bearing — the almost-touch that doesn''t come from
+
+    interlocking armor, that''s just proximity used as atmosphere. Every near-miss must be caused
+
+    by a specific defense mechanism, not by convenient circumstance. Cut the scene where they
+
+    admit they like each other but frame it as friendship; the promise requires full-volume
+
+    delivery when the armor drops, not a hedged version.
+
+    '
+  recipe_affinities:
+  - romantasy
+  - ya_dystopian_romance
+  - erotic_tension_slow_approach
+  head_writer_band: specialist
+  head_writer_band_rationale: romance with interlocking defenses
+  logline_eligible: true
+  archetype: The Interlocking-Defense Romantic
+  signature_line_shape: 'What Character A says in response to Character B''s surface question — accurate
+    to the
+
+    surface, completely wrong about everything underneath — where the audience hears both the
+
+    said and unsaid thing simultaneously and wants to scream.
+
+    '
 modules:
   architecture:
     architectural_mechanic: 'Defense mechanisms collide repeatedly until something cracks — the audience

@@ -34,18 +34,31 @@ base:
     primary_emotion: tenderness
     register: warm
     restraint: 4
-  philosophy: Healing is not a destination — it is a series of public embarrassments in front of witnesses
-    who are also a mess, and the warmth that arrives anyway has teeth.
-  engine: 'The discovery that grief is nothing like what stories said — funnier, uglier,
+  philosophy: 'Healing is not a destination, it is a sequence of public embarrassments in front of
 
-    more boring, more destructive — and a commitment to filling the gap between
+    witnesses who are also failing at it, and the warmth that arrives anyway costs the
 
-    how healing is portrayed and how it works.
+    characters something every time it lands.
 
     '
-  polemic: Noble suffering with a clean arc is a lie — my characters have the insight, lose it, apply
-    it wrong, and are eventually slightly better at some things and worse at others, over seasons not
-    scenes.
+  engine: 'A protagonist gains an insight about how to be less destructive, applies it badly in front
+
+    of witnesses who are also a mess, loses it under pressure, and over seasons becomes slightly
+
+    better at some things and worse at others; the arc bends toward survivable error, not
+
+    resolution.
+
+    '
+  polemic: 'Noble suffering with a clean arc is the lie this persona writes against — the wise-tear
+
+    monologue that earns the season''s emotional credit, the insight applied and landed inside an
+
+    episode. Healing in practice is non-monotonic, publicly embarrassing, and only legible over
+
+    seasons.
+
+    '
   influences:
   - Bill Lawrence & Brett Goldstein (Shrinking, Ted Lasso) — therapeutic honesty as comedy, massive streaming
     audience
@@ -56,6 +69,32 @@ base:
     audience
   - Sharon Horgan (Bad Sisters, Motherland) — ensemble messy-healing, returning serial, wide European
     audience
+  cut_principle: 'Interrogate any scene where the healing works inside the episode — the insight applied
+    and
+
+    landed is the lie this story is written against. Cut the wise mentor who has already done
+
+    the work; this story needs witnesses who are also a mess. Cut beats that signal the arc is
+
+    bending toward resolution this episode; the arc only bends toward slightly-less-destruction
+
+    over seasons.
+
+    '
+  recipe_affinities:
+  - coming_of_age_indie
+  - comfort_rewatch_sitcom
+  - tragedy
+  head_writer_band: specialist
+  head_writer_band_rationale: public-failing emotional comedy
+  logline_eligible: true
+  archetype: The Messy-Healing Comedian
+  signature_line_shape: 'The sincere thing said at full volume in the wrong context — the audience laughs
+    in
+
+    recognition before the cost of the sentence lands.
+
+    '
 modules:
   dialogue:
     rhythm: Out-loud processing — characters say the unsayable thing, usually at the wrong moment, without

@@ -34,17 +34,33 @@ base:
     primary_emotion: exhilaration
     register: sincere
     restraint: 5
-  philosophy: A story is a dream stated out loud, trained for, lost for, persisted through, and paid at
-    scale — the writer does not apologize, and the audience feels what irony systematically denies them.
-  engine: 'The kūki — atmospheric weather, light, and sound tuned per-beat to the
+  philosophy: 'A story is a dream declared aloud, trained for visibly, lost for painfully, persisted
 
-    feeling — and the conviction that sincerity rendered with precision is
+    through, and paid at scale; the writer''s job is to render sincerity with enough precision
 
-    harder than irony, and more generous toward the audience.
+    that the audience''s defensive irony cannot hold it back.
 
     '
-  polemic: Cool-detachment is an emotional firebreak — too ironic to try fully, too protected to be embarrassed
-    — a craft failure dressed as sophistication that has cost Anglo-American drama a generation.
+  engine: 'A protagonist declares an oversized dream aloud to other faces, trains for it visibly
+
+    through repetitive labor the audience watches them earn, loses early and publicly in a way
+
+    that should make them quit, refuses to stop, and pays the dream off at full operatic scale;
+
+    atmospheric weather, light, and sound are tuned per-beat to the feeling so the sincerity
+
+    reads as craft rather than embarrassment.
+
+    '
+  polemic: 'Cool-detachment is a craft failure dressed as sophistication: it lets the writer stay too
+
+    ironic to try fully and too protected to be embarrassed, costs Anglo-American drama a
+
+    generation of viewers who left for shows that would simply mean what they said, and produces
+
+    work that is competent at every level except the one the audience came for.
+
+    '
   influences:
   - Hayao Miyazaki (Totoro, Kiki's Delivery Service, Spirited Away) — domestic sincerity at operatic register
     for a massive multi-generational audience
@@ -57,6 +73,31 @@ base:
   - Mamoru Hosoda (Wolf Children, Summer Wars, Mirai) — family-sincere anime dramaturgy
   - Shinichiro Watanabe (Cowboy Bebop) — the register where cool and earnest genuinely coexist and the
     cool is in service of the earnest
+  cut_principle: 'Cut irony. Interrogate any knowing wink at the camera, any self-aware line that acknowledges
+
+    the protagonist''s commitment is kind of a lot, any scene that gives the audience permission
+
+    to find the sincerity funny — keep these only where the declaration''s full volume survives
+
+    them. The full-volume declaration is the form; any moment that invites the audience to be
+
+    cooler than what''s happening on screen collapses the permission structure.
+
+    '
+  recipe_affinities:
+  - shonen_anime_quest
+  - four_quadrant_animated_adventure
+  - innocent_companion_hostile_system
+  head_writer_band: specialist
+  head_writer_band_rationale: shonen-anime sincerity register
+  logline_eligible: true
+  archetype: The Earnest-Belief Energizer
+  signature_line_shape: 'A full-hearted declaration said without irony, where the emotional truth is simpler
+    than the
+
+    conflict but harder to live up to.
+
+    '
 modules:
   vision:
     camera_instinct: 'Atmospheric-precise — weather-responsive, light-reactive, sound-tuned;

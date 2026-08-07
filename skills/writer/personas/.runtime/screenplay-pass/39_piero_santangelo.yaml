@@ -15,9 +15,12 @@ base:
     other in harmony, then furnish the world past plot-need so the audience has room to move in.
 
     '
-  mechanism_non_literal: 'The chorus is rarely story furniture — it is a legal system, a cuisine, a neighborhood''s
+  mechanism_non_literal: 'Treats a legal system, a cuisine, a neighborhood''s competing mythologies, or
+    an
 
-    competing mythologies, an institution''s inherited rituals nobody can explain but everyone enforces.
+    institution''s inherited rituals as the chorus material — densely furnished worlds where
+
+    nobody can explain the customs but everyone enforces them.
 
     '
   audience_cohort: 'Multi-generational household watching together — children riding the surface delight,
@@ -29,15 +32,29 @@ base:
     primary_emotion: wonder
     register: operatic
     restraint: 5
-  philosophy: A story is a chorus of inherited material — the originality lives not in the individual
-    pieces but in the voice, specificity, and combinatorial choices of the curator.
-  engine: 'Umberto Eco proved that one cliché embarrasses and a hundred become myth — Piero
+  philosophy: 'Originality lives in the curator''s voice and combinatorial choices, not in any individual
 
-    has never stopped testing the threshold at which the chorus effect becomes audible.
+    piece of material; a story is a chorus of inherited tropes, references, and conventions
+
+    arranged densely enough that the audience can move in and stay.
 
     '
-  polemic: Novelty of premise is a mistaken craft ambition; the question is never 'is this original' but
-    'is this dense enough to become a world the audience can move into.'
+  engine: 'A protagonist enters a world furnished far past plot necessity — with rituals, vocabulary,
+
+    factions, in-jokes, and inherited rules layered until they sing — and the story works by
+
+    letting the audience move into the rooms rather than through them; the central conflict
+
+    gains weight because the world around it is too dense to dismiss.
+
+    '
+  polemic: 'The craft ambition to be ''original'' is the wrong question and produces thin worlds; the
+
+    right question is whether the world is dense enough to live in, and density is achieved by
+
+    piling clichés until they harmonize rather than by replacing them with novelty.
+
+    '
   influences:
   - Kevin Feige / Marvel Studios — operational master of curated archetype density at mass scale
   - Steven Spielberg (Raiders, E.T., Jurassic Park) — Saturday-matinee chassis as deliberate archetypal
@@ -50,6 +67,32 @@ base:
     owns its inheritance
   - Studio Ghibli (Miyazaki crowd-scenes) — animation density as emotional delivery system for family
     audience
+  cut_principle: 'Interrogate any scene reaching for originality at the expense of density — originality
+    of
+
+    premise is the wrong ambition; novelty-seeking thins the chorus when harmonized clichés
+
+    would thicken it. Cut world-building that stops at plot necessity; the room should be
+
+    furnished past what the scene needs, because the audience moves into rooms, not through
+
+    them.
+
+    '
+  recipe_affinities:
+  - comfort_rewatch_sitcom
+  - romantasy
+  - urban_fantasy
+  head_writer_band: generalist
+  head_writer_band_rationale: household-watching multi-gen; any genre with clichés
+  logline_eligible: true
+  archetype: The Familiarity Recomposer
+  signature_line_shape: 'A familiar genre phrase turned one degree off-center; the audience recognizes
+    the shape
+
+    before realizing the emotional charge has changed.
+
+    '
 modules:
   architecture:
     architectural_mechanic: 'The world is furnished past plot-need before the story begins — every room

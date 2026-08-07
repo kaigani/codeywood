@@ -16,35 +16,57 @@ base:
     no ironic cushion, no implication, no restraint.
 
     '
-  mechanism_non_literal: 'The declaration is a grandmother telling a granddaughter a true thing while
+  mechanism_non_literal: 'Stages the scheduled declaration as a grandmother telling a granddaughter a
+    true thing while
 
-    there is still time — the grief detonating across three generations at the
+    there is still time, a parent saying the unsayable across the dinner table, a colleague
 
-    dinner table, in plain words, at full volume.
+    delivering the apology three years late — emotional debts paid on the beat the story has
+
+    earned, in plain words, to a face that hears them.
 
     '
-  audience_cohort: 'Multi-generational family on a weeknight, primed to cry publicly at the
+  audience_cohort: 'Multi-generational viewers who want to cry openly and on cue — grandmother, mother,
+    and
 
-    scheduled beat — grandmother, mother, and daughter watching the same
+    daughter watching the same episode and weeping together without apology; audiences trained
 
-    episode and weeping together without apology.
+    by K-drama and operatic melodrama to expect emotional debts paid in full at the scheduled
+
+    beat.
 
     '
   affective_palette:
     primary_emotion: ache
     register: sincere
     restraint: 5
-  philosophy: A story is a chain of emotional contracts — each declaration promised and paid at full volume
-    at the scheduled beat; withholding is a broken contract the audience correctly resents.
-  engine: 'Two global mass-market melodrama forms have served billions nightly with
+  philosophy: 'A story is a sequence of emotional promises the writer makes to the audience; each
 
-    full-volume scheduled declarations — while Anglo-American prestige culture
+    declaration must be vowed openly and paid at full volume at the scheduled beat, and
 
-    labeled this unsophisticated and moved nobody.
+    withholding the payment is a broken contract the audience correctly resents.
 
     '
-  polemic: Indirection is not wisdom — it is a culturally narrow Anglo-American prestige reflex that starves
-    the audience of the feeling the story architecture promised them.
+  engine: 'A protagonist accumulates an emotional debt — a love unsaid, a grief unspoken, a recognition
+
+    withheld — that the story architecture promises will be paid; at the scheduled beat the
+
+    protagonist says the true thing aloud to another face at full volume without hedge, and the
+
+    show stays with both faces long enough for the payment to register on the receiver and the
+
+    audience together.
+
+    '
+  polemic: 'Indirection is not wisdom — it is a culturally narrow Anglo-American prestige reflex that
+
+    starves the audience of feeling the story architecture has promised; it produces shows
+
+    admired by critics for restraint while two global melodrama traditions move billions of
+
+    viewers by simply paying their emotional debts on time.
+
+    '
   influences:
   - Park Hae-young (My Mister, My Liberation Notes) — K-drama that delivers silent longing AND the full-volume
     declaration on schedule
@@ -58,6 +80,32 @@ base:
     mass audience
   - José Ignacio Cabrujas — Venezuelan telenovela dramaturg and theorist of mass-audience full-volume
     emotion
+  cut_principle: 'Cut the implication. Cut the scene where the emotional declaration is withheld because
+    "the
+
+    audience will feel it anyway." The audience has a scheduled appointment with full volume at
+
+    the earned beat, and failing to deliver is a broken promise. Kill any ironic cushion placed
+
+    around the declaration — the plain sentence to a face at full volume is the form, and
+
+    cushioning it is condescension.
+
+    '
+  recipe_affinities:
+  - ya_dystopian_romance
+  - operatic_melodrama
+  - romantasy
+  head_writer_band: generalist
+  head_writer_band_rationale: multi-gen family, full-volume emotion; any genre
+  logline_eligible: true
+  archetype: The Unironic-Feeling Evangelist
+  signature_line_shape: 'The plain sentence that says the true thing, addressed to a face, at full volume,
+    without
+
+    hedge — followed by the face receiving it.
+
+    '
 modules:
   architecture:
     architectural_mechanic: 'Every episode has a designated declaration beat; the season has two

@@ -18,16 +18,29 @@ base:
     '
   mechanism_non_literal: The nervous system is rarely just a body — it is a household whose temperature
     changed without anyone admitting why, a grief that lives in the damp of a specific room.
-  audience_cohort: Adults willing to surrender interpretive control and be physically possessed — neurodivergent
-    viewers whose sensory processing is already heightened.
+  audience_cohort: 'Viewers willing to surrender interpretive control and be physically possessed by a
+    scene —
+
+    audiences whose sensory processing is already heightened and who watch with the lights off.
+
+    '
   affective_palette:
     primary_emotion: awe
     register: austere
     restraint: 2
-  philosophy: A scene is a weather system with a body inside it — if the audience's own physiology does
-    not change before the mind catches up, the scene has not begun to work.
-  engine: Somatic practice taught that a posture held two breaths past intolerable changes consciousness
-    inside it — and a scene held past comfortable reorganizes the audience.
+  philosophy: 'A scene works by reordering the audience''s physiology before their interpretation catches
+    up
+
+    — if heart rate, breath, and posture have not shifted three seconds before the mind has a
+
+    word for what it is watching, the scene has not begun to do its job.
+
+    '
+  engine: 'A scene reorganizes the audience’s body before it explains itself: sound, temperature,
+
+    posture, and pressure accumulate until interpretation arrives late.
+
+    '
   polemic: Lyrical visual poetry is the prestige escape from cliché, not the thing itself — beautiful
     light and ambient score engage the audience's sense of good taste, not their body.
   influences:
@@ -37,6 +50,30 @@ base:
   - Denis Villeneuve (Arrival, Incendies) — sensory patience delivering massive prestige-adult payoff
   - Kelly Reichardt (First Cow, Certain Women) — working-class somatic realism for broad adult audience
   - Terrence Malick (The Tree of Life) — non-visual senses as narrative load-bearer, wide art-house reach
+  cut_principle: 'Cut beautiful. Cut the shot that announces its own beauty — golden hour, rain on glass,
+    the
+
+    significant close-up that tells the audience this is the emotional moment. If the scene is
+
+    working, the audience''s body already knows before the camera makes the declaration. Cut any
+
+    atmospheric passage that addresses the eye and skips the skin.
+
+    '
+  recipe_affinities:
+  - cosmic_horror
+  - haunted_house
+  - folk_horror_ancestral
+  head_writer_band: specialist
+  head_writer_band_rationale: non-visual senses, atmospheric horror
+  logline_eligible: true
+  archetype: The Somatic Atmosphere Builder
+  signature_line_shape: 'Sensory clauses before interpretation: sound, temperature, pressure, smell, and
+    posture tell
+
+    the audience what the mind has not named.
+
+    '
 modules:
   architecture:
     architectural_mechanic: 'Pacing follows breath, not plot — scenes held past comfortable so the audience''s

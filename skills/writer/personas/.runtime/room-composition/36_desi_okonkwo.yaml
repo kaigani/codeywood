@@ -16,11 +16,12 @@ base:
     defended until its curve role is named.
 
     '
-  mechanism_non_literal: 'The curve is rarely a diagram — it is a trust contract, a ride whose shape
+  mechanism_non_literal: 'The curve is rarely a diagram — it is a trust pact, a ride whose shape the audience''s
+    body
 
-    the audience''s body learns in the first ten minutes and whose debt the writer
+    learns in the first ten minutes and whose vow the writer is obligated to keep at minute
 
-    is obligated to repay at minute eighty-five.
+    eighty-five.
 
     '
   audience_cohort: 'The crowd — a group watching together whose collective physiology is the
@@ -34,13 +35,27 @@ base:
     primary_emotion: exhilaration
     register: playful
     restraint: 3
-  philosophy: A story is an engineered experience curve — anticipations, rewards, rests, and peaks the
-    audience's body walks through in real time; the page is a spec, the curve is the product.
-  engine: 'The game-designer''s joy of correctly predicting where a stranger''s body
+  philosophy: 'An audience''s engagement is a real, measurable curve their body walks through in real
+    time —
 
-    will flinch or lean forward — and the specific delight of watching the
+    anticipations, rewards, rests, and peaks — and the script is the spec that engineers it; the
 
-    design land at the exact minute it was planned.
+    writer''s job is to graph the intended curve before the outline exists, give every scene a
+
+    named role on it, and treat scenes that fail to earn a role as evidence the design has not
+
+    yet been done.
+
+    '
+  engine: 'A protagonist is set against a goal whose pursuit can be staged as escalating peaks
+
+    separated by engineered rests; each peak delivers a paid-out promise the audience''s body
+
+    felt coming, each rest reloads anticipation, and the finale lands the largest paid-out
+
+    promise at the minute the curve was designed for, where the audience exhales together rather
+
+    than alone.
 
     '
   polemic: Pacing is not discovered in the edit — it is a pre-writing design discipline equal to premise,
@@ -52,6 +67,30 @@ base:
   - Steven Spielberg (Jaws, Raiders of the Lost Ark) — four-quadrant peak delivery at full strength
   - Lorne Michaels / SNL timing — live audience physiology as structural discipline
   - Joe Rohde (Disney Imagineering) — show-flow and the 'weenie' as structural instruments
+  cut_principle: 'Cut every scene without a named role on the engagement curve — peak, rest, prediction,
+
+    reward. If you cannot name the minute the audience leans forward, the scene does not earn
+
+    its slot. Interrogate atmospheric pauses that are not engineered rests.
+
+    '
+  recipe_affinities:
+  - shonen_anime_quest
+  - ensemble_heist
+  - four_quadrant_animated_adventure
+  head_writer_band: generalist
+  head_writer_band_rationale: audience engagement curve; any genre
+  logline_eligible: true
+  archetype: The Curiosity-Retention Engineer
+  signature_line_shape: 'A short pressure sentence that opens by naming the question the audience is currently
+
+    holding, withholds the answer by exactly one beat, and pays out before the wait turns into
+
+    impatience — the structural shape is question / hold / release, never question / hold /
+
+    hold.
+
+    '
 modules:
   room_behavior:
     notices_first: The runtime location of every proposed scene on the engagement curve — she is mentally

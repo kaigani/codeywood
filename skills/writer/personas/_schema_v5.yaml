@@ -2,8 +2,21 @@
 # Adopted 2026-04-15. Replaces v4 _schema.yaml.
 # Design philosophy: see _schema_v5_DRAFT.md. Summary: persona = lens (small BASE, always loaded)
 # + modules (task-conditional). Skills declare what they load; runtime pre-renders per skill.
+#
+# v5.1 (2026-06-11): Merges the Peele-pass edits from the divergence/gemmawood
+# persona pool (407 cumulative edits across the 69-persona roster) back into the
+# canonical YAMLs, and adds the pool's routing fields. New BASE fields:
+# cut_principle (required), recipe_affinities (required, 3 slugs from
+# references/story_structure/recipes/), head_writer_band (required enum) +
+# head_writer_band_rationale, logline_eligible (default true), archetype
+# (optional), signature_line_shape (optional at base; dialogue-module copy
+# stays authoritative for dialogue work). Base text-field budgets raised
+# 200 → 500 chars: the Peele pass deliberately densified mechanism/engine/
+# polemic (mean ~280-350 chars) per the cognitive-cores finding that
+# structural-detail density correlates with attractor strength
+# (references/cognitive_cores_brief.md).
 
-schema_version: 5.0
+schema_version: 5.1
 
 # =============================================================================
 # BASE — always loaded (~8-9 fields). The lens.
@@ -26,14 +39,14 @@ base:
   mechanism:
     type: string
     required: true
-    max_length: 200
+    max_length: 500
     description: |
       ONE sentence. The operational signature — what this writer DOES that nobody
       else does. Not genre, not tone — the move they make scene by scene.
   mechanism_non_literal:
     type: string
     required: true
-    max_length: 200
+    max_length: 500
     description: |
       v5.0 ADDITION — forced metaphorical reading of the mechanism. Must differ
       from the literal. Prevents persona-level literal-reading drift (Oskar Brandt
@@ -46,7 +59,7 @@ base:
   audience_cohort:
     type: string
     required: true
-    max_length: 200
+    max_length: 500
     description: |
       ONE sentence. The actual person watching, with context. Operational, not
       taxonomic. NOT a controlled-vocabulary tag.
@@ -78,21 +91,21 @@ base:
   philosophy:
     type: string
     required: true
-    max_length: 200
+    max_length: 500
     description: ONE sentence in quotes. The writer's own statement about what stories ARE.
 
   # --- ENGINE ---
   engine:
     type: string
     required: true
-    max_length: 200
+    max_length: 500
     description: ONE sentence. What fuels the work. Disgust, curiosity, love of craft, rage.
 
   # --- POLEMIC ---
   polemic:
     type: string
     required: true
-    max_length: 200
+    max_length: 500
     description: ONE sentence in quotes. What other writers get wrong.
 
   # --- INFLUENCES ---
@@ -105,6 +118,66 @@ base:
       At least 2 must be mass-audience practitioners in the declared cohort.
       Monoculture (all art-cinema, all comedy auteurs, etc.) is rejected by
       the validator.
+
+  # --- CUT PRINCIPLE (v5.1) ---
+  cut_principle:
+    type: string
+    required: true
+    max_length: 500
+    description: |
+      v5.1 ADDITION (Peele pass). What this writer cuts FIRST and why — the
+      negative steering gradient that pairs with the mechanism's positive
+      attractor. Craft-specific ("kill the pause that tells the audience it's
+      a meaningful moment"), never generic ("show don't tell").
+
+  # --- ROUTING (v5.1 — from the divergence/gemmawood pool) ---
+  recipe_affinities:
+    type: array
+    required: true
+    min_items: 3
+    max_items: 3
+    description: |
+      v5.1 ADDITION. Exactly 3 recipe slugs from
+      references/story_structure/recipes/ that this persona's mechanism
+      serves with authority. Used for head-writer and room selection when a
+      project has a recipe: personas whose affinities include the project's
+      recipe slug are surfaced first.
+  head_writer_band:
+    type: enum[generalist, hybrid, specialist]
+    required: true
+    description: |
+      v5.1 ADDITION. Head-writer eligibility band — DISTINCT from
+      `versatility` (craft range across forms/genres): the band rates
+      fitness to LEAD a room and hold a whole season's argument.
+      generalist/hybrid are eligible for the head-writer draw; specialists
+      are room hires. Roster distribution at merge: 15 generalist /
+      5 hybrid / 49 specialist.
+  head_writer_band_rationale:
+    type: string
+    required: false
+    description: One line — why this band.
+  logline_eligible:
+    type: boolean
+    required: false
+    default: true
+    description: |
+      v5.1 ADDITION. False = head-writer/room-only persona, excluded from
+      pitch-round and logline-generation pools (at merge: Arthur Price,
+      Inés Cavallo, Caelum Meridian).
+  archetype:
+    type: string
+    required: false
+    description: v5.1 ADDITION. Short character-descriptor label (e.g. "The Simultaneity Dramatist").
+  signature_line_shape:
+    type: string
+    required: false
+    max_length: 500
+    description: |
+      v5.1 ADDITION (optional at base). ONE sentence — what a load-bearing
+      line from this writer sounds like. Mirrors
+      modules.dialogue.signature_line_shape so the line-shape survives in
+      skills that don't load the dialogue module; the dialogue-module copy
+      stays authoritative for dialogue work.
 
   # --- OPT-IN MODULES (v5.0 — per approved open decision 4) ---
   prefer_load:

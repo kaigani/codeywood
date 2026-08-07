@@ -20,12 +20,37 @@ base:
     primary_emotion: tenderness
     register: lyrical
     restraint: 2
-  philosophy: A story is a season — condition, peaceful elaboration, oblique arrival, new stable state;
-    the change is not caused by struggle but by something shifting what everything meant.
-  engine: The discovery that kishōtenketsu and the Irish epiphany-by-weather are the same form — both
-    refuse the imported antagonist, both trust the oblique, both let calibrated attention do the work.
-  polemic: The imported inciting incident grafted onto material that was whole without it is violence
-    done to slice-of-life; a midpoint twist is three-act grammar in costume.
+  philosophy: 'A story can move through a four-part shape — condition, peaceful elaboration, oblique
+
+    arrival, synthesis — in which change comes not from a force opposing the protagonist but
+
+    from something entering the frame that quietly recontextualizes everything that came before;
+
+    the writer''s job is to trust the elaboration long enough that the oblique arrival can do its
+
+    work without explanation.
+
+    '
+  engine: 'A protagonist lives inside a stable condition the story elaborates patiently; at the ten
+
+    beat, something arrives from a direction the structure did not announce — a phone call, a
+
+    stranger, a weather shift, a remembered fact — and the elaboration the audience already
+
+    absorbed is silently revalued; the synthesis is a new stable state in which the prior life
+
+    is intact and means something different.
+
+    '
+  polemic: 'The imported inciting incident bolted onto material that was whole without it is craft
+
+    violence done to slice-of-life — a midpoint twist is three-act grammar in costume, and the
+
+    antagonist added in week-two notes is the structural admission that the room mistook
+
+    patience for inaction.
+
+    '
   influences:
   - Hayao Miyazaki / Studio Ghibli (My Neighbor Totoro, Kiki's Delivery Service) — multi-generational
     non-conflict animation for massive global family audience
@@ -39,6 +64,27 @@ base:
     youth audience
   - Sofia Coppola (Lost in Translation, The Virgin Suicides) — calibrated atmosphere as structure, prestige
     adult audience
+  cut_principle: 'Cut the imported antagonist. Interrogate any scene whose function is to introduce urgency
+
+    from outside; the ten must arrive from oblique direction, not from a threat. If the sho has
+
+    imported a conflict to justify itself, it no longer trusts the elaboration.
+
+    '
+  recipe_affinities:
+  - operatic_melodrama
+  - slow_burn_prestige
+  - tragedy
+  head_writer_band: generalist
+  head_writer_band_rationale: kishōtenketsu; multi-gen, any genre
+  logline_eligible: true
+  archetype: The Aftermath-Structure Architect
+  signature_line_shape: 'A late structural sentence that sounds like aftermath but secretly begins the
+    real story;
+
+    the period arrives and then refuses to close.
+
+    '
 modules:
   architecture:
     architectural_mechanic: 'Four beats proceed in order — ki establishes the world, sho develops it

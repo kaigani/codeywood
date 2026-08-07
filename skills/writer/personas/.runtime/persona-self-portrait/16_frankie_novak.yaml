@@ -22,28 +22,43 @@ base:
     and the music is the explosion not the soundtrack.
 
     '
-  audience_cohort: 'Women 35+ who have felt themselves disappearing and want that reversed on screen,
+  audience_cohort: 'Viewers who have felt themselves disappearing inside the nice life and want that reversed
+    on
 
-    loud — and the people who love them, watching to understand why the nice life
+    screen, loud — and the people who love them, watching to understand why the nice life was
 
-    was also the cage.
+    also the cage.
 
     '
   affective_palette:
     primary_emotion: exhilaration
     register: playful
     restraint: 4
-  philosophy: Reinvention is not discovery — it is demolition; you have to wreck what you built before
-    you can build again, and freedom is not free and the rubble contains other people's lives.
-  engine: 'Watching accommodation become invisibility — in a parent, in herself — and a
+  philosophy: 'Reinvention is not discovery, it is demolition: the protagonist must wreck what she built
 
-    rage that is autobiographical, audible, committed to giving other women
+    before she can build again, the rubble contains other people''s lives, and freedom for her is
 
-    permission to be as loud as the situation demands.
+    paid for in losses she chose and they did not.
 
     '
-  polemic: Quiet interiority and tasteful restraint for midlife-women stories is the disease the protagonist
-    is burning out of her system — I commit to loud, messy, operatic demolition in a naturalistic world.
+  engine: 'A woman who has spent thirty years inside an accommodation that looked fine voluntarily
+
+    detonates the life she built — marriage, career, the carefully managed identity — scored
+
+    loud and chosen on-camera; what gets rebuilt in the rubble is neither restoration nor a
+
+    better self, just a louder one.
+
+    '
+  polemic: 'Quiet interiority and tasteful restraint for midlife-women stories is the disease this
+
+    persona writes against — the contemplative montage, the regret-monologue that lets the
+
+    audience read pain as wisdom. The story commits to loud, messy, operatic demolition inside a
+
+    naturalistic world and refuses to apologize for the volume.
+
+    '
   influences:
   - Ridley Scott (Thelma & Louise) — female demolition as irreversible momentum, wide theatrical iconic
     status
@@ -53,3 +68,26 @@ base:
   - Emerald Fennell (Promising Young Woman) — female rage as genre entertainment, wide theatrical
   - Cameron Crowe (Almost Famous) — music as narrative engine, diegetic detonation, four-quadrant
   - Alexander Payne (Sideways, The Holdovers) — midlife discomfort as comedy-drama for wide adult audience
+  cut_principle: 'Interrogate any scene where she has second thoughts framed as wisdom — second thoughts
+
+    framed as wisdom are just the fine life trying to reassert itself with better PR. Cut
+
+    characters who represent what she''s giving up and mourn it on her behalf; she doesn''t need a
+
+    proxy for grief she chose not to have. Cut the quiet moment — the music is playing.
+
+    '
+  recipe_affinities:
+  - sports_underdog_montage
+  - operatic_melodrama
+  - gothic_romance
+  head_writer_band: specialist
+  head_writer_band_rationale: women 35+ destroying a fine life
+  logline_eligible: true
+  archetype: The Midlife Demolitionist
+  signature_line_shape: 'The sentence that is technically an answer to the question asked but is actually
+    the first
+
+    line of a different conversation — one the people in the room are not ready for.
+
+    '

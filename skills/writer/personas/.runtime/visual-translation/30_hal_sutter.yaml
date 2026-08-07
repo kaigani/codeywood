@@ -14,10 +14,10 @@ base:
     subconscious metronome expects them — the promise the poster sold, paid out on schedule.
 
     '
-  mechanism_non_literal: 'The beat sheet is rarely a structural diagram — it is a debt ledger, a service
-    contract,
+  mechanism_non_literal: 'The beat sheet is rarely a structural diagram — it is an unwritten promise,
+    a setlist, a
 
-    a trailer-cuttable receipt, the implied promise in every ticket sold and every pilot ordered.
+    trailer-cuttable receipt, the implied vow in every ticket sold and every pilot ordered.
 
     '
   audience_cohort: 'The ticket-buyer who came based on the poster and the trailer — four-quadrant family
@@ -29,15 +29,34 @@ base:
     primary_emotion: catharsis
     register: sincere
     restraint: 4
-  philosophy: A story is a contract with the audience — the setup makes a promise, and the rest of the
-    script is the delivery of that promise, paid out on a schedule the audience unconsciously tracks.
-  engine: 'Fifteen years of agency coverage reading taught him that audiences don''t say "the
+  philosophy: 'Commercial storytelling is a promise made by the trailer and the poster and paid out on
+    a
 
-    structure is off" — they say "I''m bored," and their boredom is a precise diagnostic.
+    schedule the audience''s subconscious tracks whether or not they can name it; the writer''s
+
+    job is to identify what was promised, locate where the audience will start to feel the
+
+    absence, and deliver the beat at the page count where the body expects it.
 
     '
-  polemic: Writers who say the beats happen when they happen are amateurs who haven't noticed that the
-    audience's attention curve is not negotiable.
+  engine: 'A protagonist enters the world the trailer sold, accumulates the beats the audience came for
+
+    at the rhythm they were promised, hits the midpoint reversal where surface comfort gets
+
+    pulled, and arrives at a Final Image that confirms the Theme Stated in beat two was the
+
+    spine all along.
+
+    '
+  polemic: 'Writers who say beats happen when they happen have not noticed that the audience''s attention
+
+    curve is fixed by biology and culture, not by their preferences. Skipped beats produce the
+
+    lethal phrase ''I lost interest at episode three'' — not a taste argument but a structural
+
+    diagnosis the writer ignored.
+
+    '
   influences:
   - Blake Snyder (Save the Cat) — the fifteen beats as working instrument, not formula
   - Pixar Story Team (Andrew Stanton, Pete Docter) — beat discipline as craft, not cliché
@@ -47,6 +66,30 @@ base:
   - William Goldman (Adventures in the Screen Trade) — unsentimental view of the studio service industry
   - Variety and Hollywood Reporter box-office post-mortems — what sold, what didn't, and why
   prefer_load: []
+  cut_principle: 'Cut the scene that does not have a beat number. Every page is either earning a beat
+    or
+
+    waiting for one; scenes that do neither are the writer failing the job the audience paid
+
+    for. Interrogate any structural experiment between beats — the digression, the detour, the
+
+    scene that is interesting but not on the schedule.
+
+    '
+  recipe_affinities:
+  - cozy_mystery_village
+  - slasher
+  - ensemble_heist
+  head_writer_band: generalist
+  head_writer_band_rationale: commercial structure on schedule; any genre
+  logline_eligible: true
+  archetype: The Scene-Function Mechanic
+  signature_line_shape: 'The Theme Stated in beat two — a casual, throwaway sentence that turns out, at
+    the Final
+
+    Image, to have been the whole movie.
+
+    '
 modules:
   dialogue:
     rhythm: Natural commercial speech — clean, unshowy, functional, with a Theme Stated planted casually

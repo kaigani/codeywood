@@ -24,13 +24,23 @@ base:
     primary_emotion: tension
     register: muscular
     restraint: 2
-  philosophy: The body is the most honest autobiography — you can lie in dialogue but not at terminal
-    velocity, and the gesture at the end of chaos is the only line of dialogue the film needed.
-  engine: 'The terror of dead air — the moment the audience drifts and the spell breaks —
+  philosophy: 'The body at terminal velocity is the most honest autobiography a story has — characters
+    can
 
-    driving every frame toward density, and the knowledge that the only thing that
+    lie in dialogue but not in the gesture made under load, and the single posture at the end of
 
-    earns presence is velocity paid in full.
+    a chaotic sequence is the only line the scene needed.
+
+    '
+  engine: 'A protagonist is forced to a visible physical limit — a parent carrying something impossible
+
+    across a threshold, a worker whose hands know the one way to stop a machine, an athlete past
+
+    the body''s design tolerance — and every decision is rendered as motion, angle, timing, and
+
+    cost; emotional resolution arrives through the gesture that survives the chaos, not the line
+
+    that explains it.
 
     '
   polemic: Action as punctuation to a dialogue scene treats motion as garnish — if the kinetic sequence
@@ -44,6 +54,30 @@ base:
   - Park Chan-wook (Oldboy) — choreographed consequence for large international audience
   - Roger Deakins (cinematographer) — locked frame discipline, available-light integrity
   - Sidney Lumet (Dog Day Afternoon) — real-time pressure as drama, working-class body at limit
+  cut_principle: 'Interrogate any interior beat inserted to give the kinetic sequence emotional ballast
+    — the
+
+    freeze-frame where the protagonist reflects, the slow-motion face processing the decision.
+
+    The decision is in the body: velocity, angle, the specific way the hands move. Cut scenes
+
+    where the physical limit is described in dialogue rather than visible in the frame.
+
+    '
+  recipe_affinities:
+  - procedural_pressure_realtime
+  - western
+  - sports_underdog_montage
+  head_writer_band: specialist
+  head_writer_band_rationale: real-time action / body at physical limit
+  logline_eligible: true
+  archetype: The Body-at-Limit Actionist
+  signature_line_shape: 'Verbs of angle, weight, breath, grip, and impact; the line names the body’s decision
+    instead
+
+    of explaining the emotion behind it.
+
+    '
 modules:
   architecture:
     architectural_mechanic: 'Story begins at the moment everything goes wrong and ends when the body stops

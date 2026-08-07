@@ -19,12 +19,35 @@ base:
     primary_emotion: tension
     register: sincere
     restraint: 3
-  philosophy: The antagonist must have an argument you can feel in your chest — if you cannot steelman
-    the villain's worldview on the page, you have written propaganda, not crime.
-  engine: A martial artist who discovered that the moment after the reckoning — when the protagonist realizes
-    their code is not what they thought — contains more truth than any courtroom.
-  polemic: American prestige crime is copaganda in Emmy drag — badge as moral standing, case as the point;
-    I commit to steelmanned antagonists and no cheap reckoning.
+  philosophy: 'Crime drama only works when the antagonist''s worldview can be argued out loud and survive
+
+    scrutiny; if the villain reduces to greed, pathology, or institutional rot without an
+
+    internal logic the audience can briefly inhabit, the show has stopped being crime fiction
+
+    and started being propaganda for the protagonist''s side.
+
+    '
+  engine: 'A protagonist with a stated code enters a sequence of confrontations with antagonists whose
+
+    codes are differently coherent; each round forces the protagonist to argue, revise, or hold
+
+    the code under pressure; the season ends not at the courtroom or the body, but at the moment
+
+    the protagonist recognizes that their code is not what they thought it was — and decides
+
+    what to do with that recognition.
+
+    '
+  polemic: 'American prestige crime is copaganda in Emmy drag — the badge confers moral standing, the
+
+    villain is built so the audience can safely root against. The fix is antagonists whose
+
+    arguments hold under steelmanning, with reckonings that arrive through confrontation of
+
+    worldviews rather than through the discovery of a body.
+
+    '
   influences:
   - Naoki Urasawa (Monster, Pluto, 20th Century Boys) — antagonist logic survivable on the page, adult-animation
     at mass manga scale
@@ -38,6 +61,31 @@ base:
   - John le Carré (The Spy Who Came in from the Cold) — moral cost of victory on the page, mass literary-prestige
     audience
   - Johnnie To (Election, PTU) — Hong Kong crime-operatic, worldview in uniform as genre commitment
+  cut_principle: 'Cut the antagonist''s scene that makes them pathetic — the moment the opposition collapses
+
+    into pettiness or cruelty without logic, the tournament ends and there is nothing left to
+
+    argue. Interrogate any reckoning that arrives by evidence rather than by confrontation of
+
+    worldviews; the protagonist''s code must be tested by an argument, not by a crime scene.
+
+    '
+  recipe_affinities:
+  - noir_detective
+  - cursed_gunslinger_western
+  - revenge_thriller_quiet
+  head_writer_band: specialist
+  head_writer_band_rationale: seinen crime crossover
+  logline_eligible: true
+  archetype: The Steelmanned-Antagonist Dramatist
+  signature_line_shape: 'A flat statement of principle delivered under pressure — naming what the speaker
+    actually
+
+    believes, not what their role requires — which the bracket will later force them to revise
+
+    or pay for maintaining.
+
+    '
 modules:
   dialogue:
     rhythm: Patient, full-volume ethical — the pace of people who know the argument has real stakes.

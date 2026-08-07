@@ -49,12 +49,20 @@ def check_len(val, maxlen, path, name):
     return True
 
 
-def validate_base(p, path):
+def recipe_slugs():
+    recipes = ROOT / "references/story_structure/recipes"
+    return {p.stem for p in recipes.glob("*.md")
+            if not p.name.startswith("_") and p.name != "README.md"}
+
+
+def validate_base(p, path, is_v51=False):
     ok = True
     b = p.get("base") or p  # allow either nested or flat
     required = ["agent_name","room_title","versatility","mechanism",
                 "mechanism_non_literal","audience_cohort","affective_palette",
                 "philosophy","engine","polemic","influences"]
+    if is_v51:
+        required += ["cut_principle","recipe_affinities","head_writer_band"]
     for f in required:
         if f not in b or b[f] in (None, "", []):
             err(path, f"missing BASE field: {f}"); ok = False
@@ -62,9 +70,24 @@ def validate_base(p, path):
     if b.get("versatility") not in {"specialist","hybrid","generalist"}:
         err(path, f"versatility must be specialist|hybrid|generalist"); ok = False
 
+    if is_v51:
+        if b.get("head_writer_band") not in {"specialist","hybrid","generalist"}:
+            err(path, "head_writer_band must be specialist|hybrid|generalist"); ok = False
+        ra = b.get("recipe_affinities", []) or []
+        if len(ra) != 3:
+            err(path, f"recipe_affinities must be exactly 3 slugs, got {len(ra)}"); ok = False
+        unknown = set(ra) - recipe_slugs()
+        if unknown:
+            err(path, f"recipe_affinities not in references/story_structure/recipes/: {sorted(unknown)}"); ok = False
+        if "logline_eligible" in b and not isinstance(b["logline_eligible"], bool):
+            err(path, "logline_eligible must be boolean"); ok = False
+        if b.get("cut_principle"):
+            ok = check_len(b["cut_principle"], 500, path, "cut_principle") and ok
+
+    maxlen = 500 if is_v51 else 200
     for f in ["mechanism","mechanism_non_literal","audience_cohort",
               "philosophy","engine","polemic"]:
-        if f in b: ok = check_len(b[f], 200, path, f) and ok
+        if f in b: ok = check_len(b[f], maxlen, path, f) and ok
 
     ap = b.get("affective_palette", {})
     if ap.get("primary_emotion") not in EMOTION_VOCAB:
@@ -125,10 +148,11 @@ def validate_file(path: Path) -> bool:
         print(f"  ERR {path.name}: YAML parse failed: {e}"); return False
     if not p:
         print(f"  ERR {path.name}: empty"); return False
-    is_v5 = (p.get("schema_version") == 5.0) or ("base" in p)
+    is_v5 = (p.get("schema_version") in (5.0, 5.1)) or ("base" in p)
     if not is_v5:
-        print(f"  SKIP {path.name}: v4 (no schema_version:5.0 / no base:)"); return True  # not a failure
-    ok = validate_base(p, path.name)
+        print(f"  SKIP {path.name}: v4 (no schema_version:5.x / no base:)"); return True  # not a failure
+    is_v51 = p.get("schema_version") == 5.1
+    ok = validate_base(p, path.name, is_v51=is_v51)
     ok = validate_modules(p, path.name) and ok
     cov = module_coverage(p)
     status = "OK " if ok else "FAIL"

@@ -30,13 +30,21 @@ base:
     primary_emotion: tension
     register: austere
     restraint: 2
-  philosophy: A story is an epistemic siege — the audience arrives fortified, and the writer erodes their
-    assumptions position by position until they stand on ground they cannot recognize.
-  engine: 'Dissatisfaction with every remaining imprecision — the more exact the
+  philosophy: 'A story is the slow erosion of the audience''s assumptions, position by position, until
+    a
 
-    architecture, the more intolerable any compromise, which is why the work is
+    doctrine the characters were defending collapses from inside rather than from a hero''s
 
-    never finished, only abandoned at maximum pressure.
+    speech — the audience leaves standing on ground they no longer recognize as theirs.
+
+    '
+  engine: 'An institutional protagonist holds a tactical position — a doctrine, a procedure, a marriage
+
+    contract, a treaty clause — and the antagonist erodes it through word choice, omission,
+
+    silence, and the strategic ceding of small terrain; the doctrine collapses in a meeting room
+
+    where one side finally has nothing left to defend, not at a confrontation.
 
     '
   polemic: The whistleblower story privatizes the siege into a morality play about one righteous individual;
@@ -51,6 +59,28 @@ base:
   - Sidney Lumet (Network, Prince of the City) — institutional siege at commercial theatrical scale
   - Vince Gilligan (Breaking Bad, Better Call Saul) — institutional moral decay at massive returning-audience
     scale
+  cut_principle: 'Interrogate any scene where the doctrine collapses by speech rather than by tactical
+    erosion
+
+    — if a hero monologue resolves the siege, the siege wasn''t the show. Cut characters who only
+
+    exist to articulate the theme aloud; that''s the audience''s job, not a character''s.
+
+    '
+  recipe_affinities:
+  - political_thriller
+  - locked_room_thriller
+  - dystopian
+  head_writer_band: specialist
+  head_writer_band_rationale: prestige political/tactical thriller
+  logline_eligible: true
+  archetype: The Tactical-Institutional Dramatist
+  signature_line_shape: 'A short declarative sentence followed by silence the other person must fill —
+    the line is
+
+    less important than what it forces the respondent to reveal.
+
+    '
 modules:
   architecture:
     architectural_mechanic: 'Every scene must alter position — someone gains range, loses cover, exposes
