@@ -15,9 +15,34 @@ Choose the right pipeline tier based on production phase:
 | 1 — First Draft | LTX-2 T2V (text only) | ~18 min | $0.00 | Testing shot lists, prompt quality, pacing |
 | 2 — Revision | Klein frames + LTX-2 i2v | ~28 min | $0.00 | Character anchoring, composition control |
 | 2b — Continuity | 3-stage compositing + LTX-2 i2v | ~40 min | $0.00 | Cross-shot consistency (same character across 10+ shots) |
+| 2c — Ingredients | Krea2 turnarounds → stitched sheet → ltx2-3-ingredients @ 1.4 | ~7 min/clip | $0.00 | Multi-shot identity from ONE reference sheet (validated: roadtrip-nostalgia, the-regular) |
+| 2d — Reference-to-video | Krea2/canon refs → MiniMax H3 r2v | ~4.3 min/8s clip (warm) | $0.00 | Near-frontier quality (pilot-validated); up to 9 image + 3 video + 3 audio refs per shot; 10s max; ALWAYS specify soundscape or it invents garbled speech |
 | 3 — Final | Dev frames + Kling v3 Pro | $$$ | varies | Final production, highest quality |
 
 **Default workflow**: Start at Tier 1 for every scene. Only escalate to Tier 2/3 for shots that need it.
+
+### Tier 2d: MiniMax H3 Reference-to-Video
+
+`minimax-h3-r2v` on the local server conditions one generation on up to 9 reference
+images, 3 reference videos, and 3 audio clips — character turnarounds, location
+refs, prop refs, a motion reference, and a voice-timbre ref can all drive the same
+shot without a pre-composed start frame. Tag refs in-prompt as `<Picture i>` /
+`<Video k>` / `<Audio j>`; full prompt grammar (shots, speakers `(S1)`, dialogue
+`<d>[English]...</d>`, camera motion vocabulary) in
+`references/services/minimax-h3/`. Constraints vs LTX-2.3: **10s duration ceiling**
+(LTX allows ~20s), default 832x480. Backend: `MiniMaxH3Backend`
+(`CODEYWOOD_VIDEO_BACKEND=minimax-h3`).
+
+Pilot-validated rules (2026-08-06, see README §Pilot findings):
+- **Always include `overall_soundscape:` + `non_diegetic_music:` sections** —
+  a prompt with unspecified audio produces garbled invented dialogue.
+- Dialogue via official grammar (`voice description (S1) says: <d>[English]
+  line</d>`) is intelligible with correct per-speaker voices on the first take,
+  even across an internal cut — no single-character-closeup workaround needed.
+- Separate refs (character turnarounds + location) replace the stitched-sheet
+  step; identity holds across shots and cuts.
+- Prose "the shot cuts to the reverse" reliably produces internal hard cuts.
+- Whisper-QC every dialogue clip (whisper-stt on the same server).
 
 ### Tier 2b: 3-Stage Compositing Pipeline
 

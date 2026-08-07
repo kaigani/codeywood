@@ -197,6 +197,14 @@ multiple people, crowd scene, deformed, extra limbs, bad anatomy
 | flux2-t2i (Dev) | Production frames | ~150-270s | ~85-90% | steps 20, best local option for final frames |
 | flux2-klein-edit | Character likeness transfer | ~21s | ~85-90% of Dev i2i | Input image resolution determines output resolution |
 | flux2-i2i (Dev) | Hero frames, final production | ~270s | ~95% | Best skin/material micro-detail locally |
+| krea2-turbo-t2i | Character turnarounds, fast t2i | fast (8-step distilled) | — | Keep defaults steps 8 / cfg 1. Best local model for one-image multi-view turnarounds — see `references/services/krea/krea2-turbo.md` |
+
+#### Krea2 Character Turnarounds (for reference-conditioned video)
+
+Generate each character's multi-view turnaround as **ONE image** (front /
+three-quarter / profile side by side, plain grey studio background, wide canvas
+~1536x864). Separate per-angle gens drift in identity even at the same seed.
+Feeds `ltx2-3-ingredients` sheets and `minimax-h3-r2v` `<Picture N>` refs.
 
 **Klein vs Dev decision**: Use Klein for anything iterative (storyboards, drafts, concept exploration). Switch to Dev only for final production frames where texture and detail density matter. Klein at 20 steps matches Dev at 12 steps for composition quality, but can never match Dev's material texture rendering.
 

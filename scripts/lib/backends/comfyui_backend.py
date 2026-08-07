@@ -12,6 +12,7 @@ Supports:
   - flux2-klein-t2i: Flux 2 Klein text-to-image (fast draft mode)
   - flux2-klein-edit: Flux 2 Klein image edit (fast draft, 1 reference)
   - flux2-klein-multiref: Flux 2 Klein multi-reference (fast draft, 1-4 references)
+  - minimax-h3-r2v: MiniMax H3 reference-to-video (9 images / 3 videos / 3 audio refs)
 """
 
 import re
@@ -179,6 +180,10 @@ class ComfyUIVideoBackend(VideoBackend):
                 data["static_camera"] = str(backend_kwargs["static_camera"])
             if "img_compression" in backend_kwargs:
                 data["img_compression"] = str(backend_kwargs["img_compression"])
+            if "width" in backend_kwargs:
+                data["width"] = str(backend_kwargs["width"])
+            if "height" in backend_kwargs:
+                data["height"] = str(backend_kwargs["height"])
 
         # Build files dict — open all file handles together
         file_handles = []
@@ -337,6 +342,190 @@ class ComfyUIVideoBackend(VideoBackend):
             return False
         except requests.Timeout:
             return False
+
+
+class MiniMaxH3Backend(ComfyUIVideoBackend):
+    """MiniMax H3 reference-to-video via local ComfyUI service.
+
+    Workflow: minimax-h3-r2v — up to 9 reference images, 3 reference videos,
+    and 3 standalone reference audio clips, all optional (none = pure t2v).
+    Tag references in the prompt by 1-based position within type:
+    <Picture i> / <Video k> / <Audio j>. Each reference video's soundtrack
+    automatically becomes an audio reference for its slot; standalone audio
+    ordinals continue after those. See references/services/minimax-h3/.
+
+    Duration is 1-10 seconds (vs ~20s for LTX-2.3).
+    """
+
+    name = "minimax-h3"
+    supports_audio = True
+    cost_per_second = 0.0
+
+    WORKFLOW = "minimax-h3-r2v"
+    MAX_REF_IMAGES = 9
+    MAX_REF_VIDEOS = 3
+    MAX_REF_AUDIO = 3
+    MIN_DURATION = 1.0
+    MAX_DURATION = 10.0
+
+    def __init__(
+        self,
+        base_url: str = "http://192.168.1.181:8100",
+        timeout: int = 3600,
+    ):
+        super().__init__(base_url=base_url, workflow=self.WORKFLOW, timeout=timeout)
+
+    @staticmethod
+    def _collect_paths(value, label: str, limit: int) -> List[Path]:
+        """Normalize a path/list-of-paths kwarg into validated Paths."""
+        if not value:
+            return []
+        items = value if isinstance(value, (list, tuple)) else [value]
+        paths = []
+        for item in items:
+            p = Path(item)
+            if not p.exists():
+                raise FileNotFoundError(f"{label} not found: {p}")
+            paths.append(p)
+        if len(paths) > limit:
+            print(f"  Note: Max {limit} {label}s — {len(paths) - limit} extra ignored")
+            paths = paths[:limit]
+        return paths
+
+    def generate_video(
+        self,
+        start_frame: Optional[Path] = None,
+        prompt: str = "",
+        duration_seconds: float = 5.0,
+        negative_prompt: str = "",
+        seed: Optional[int] = None,
+        reference_audio: Optional[Path] = None,
+        on_queue_update: Optional[Callable] = None,
+        **backend_kwargs,
+    ) -> VideoResult:
+        """
+        Generate video via MiniMax H3 reference-to-video.
+
+        Unlike the LTX backends there is no dedicated first-frame input: if
+        start_frame is given it is prepended to the reference images (anchor it
+        in the prompt with <Picture 1> phrasing per the base guide's I2VA form).
+
+        Backend kwargs:
+            reference_images: Path or list of Paths (max 9 total incl. start_frame)
+            reference_videos: Path or list of Paths (max 3)
+            reference_audios: Path or list of Paths (max 3; reference_audio arg
+                              is folded in as the first entry)
+            width / height: ints, 256-1280 (default 832x480)
+            steps: int 1-50 (default 20)
+        """
+        if not prompt:
+            raise ValueError("MiniMax H3 requires a prompt")
+
+        ref_images = self._collect_paths(
+            backend_kwargs.get("reference_images"), "reference image", self.MAX_REF_IMAGES
+        )
+        if start_frame:
+            start_frame = Path(start_frame)
+            if not start_frame.exists():
+                raise FileNotFoundError(f"Start frame not found: {start_frame}")
+            ref_images = [start_frame] + ref_images[: self.MAX_REF_IMAGES - 1]
+
+        ref_videos = self._collect_paths(
+            backend_kwargs.get("reference_videos"), "reference video", self.MAX_REF_VIDEOS
+        )
+
+        ref_audios = self._collect_paths(
+            backend_kwargs.get("reference_audios"), "reference audio", self.MAX_REF_AUDIO
+        )
+        if reference_audio:
+            reference_audio = Path(reference_audio)
+            if not reference_audio.exists():
+                raise FileNotFoundError(f"Reference audio not found: {reference_audio}")
+            ref_audios = ([reference_audio] + ref_audios)[: self.MAX_REF_AUDIO]
+
+        if negative_prompt:
+            print("  Note: minimax-h3-r2v has no negative_prompt input — ignored")
+
+        duration = max(self.MIN_DURATION, min(float(duration_seconds), self.MAX_DURATION))
+        if duration != duration_seconds:
+            print(f"  Note: duration clamped to {duration}s (H3 range 1-10s)")
+
+        data = {"prompt": prompt, "duration": str(duration)}
+        if seed is not None:
+            data["seed"] = str(seed)
+        for key in ("width", "height", "steps"):
+            if key in backend_kwargs:
+                data[key] = str(backend_kwargs[key])
+
+        refs_label = f"{len(ref_images)} img / {len(ref_videos)} vid / {len(ref_audios)} aud refs"
+        print(f"  ComfyUI: {self.WORKFLOW} | {duration}s | {refs_label}")
+        print(f"  Prompt: {prompt[:120]}...")
+
+        url = f"{self.base_url}/workflows/{self.WORKFLOW}"
+
+        _IMAGE_MIME = {"jpg": "image/jpeg", "jpeg": "image/jpeg", "webp": "image/webp"}
+        _AUDIO_MIME = {"wav": "audio/wav", "mp3": "audio/mpeg", "flac": "audio/flac"}
+
+        file_handles = []
+        files = []
+        try:
+            for i, p in enumerate(ref_images, start=1):
+                fh = open(p, "rb")
+                file_handles.append(fh)
+                mime = _IMAGE_MIME.get(p.suffix.lower().lstrip("."), "image/png")
+                files.append((f"reference_image_{i}", (p.name, fh, mime)))
+            for i, p in enumerate(ref_videos, start=1):
+                fh = open(p, "rb")
+                file_handles.append(fh)
+                files.append((f"reference_video_{i}", (p.name, fh, "video/mp4")))
+            for i, p in enumerate(ref_audios, start=1):
+                fh = open(p, "rb")
+                file_handles.append(fh)
+                mime = _AUDIO_MIME.get(p.suffix.lower().lstrip("."), "audio/wav")
+                files.append((f"reference_audio_{i}", (p.name, fh, mime)))
+
+            print(f"  Sending to {url} (timeout: {self.timeout}s)...")
+            response = requests.post(
+                url,
+                data=data,
+                files=files or None,
+                timeout=self.timeout,
+            )
+        finally:
+            for fh in file_handles:
+                fh.close()
+
+        metadata = {
+            "workflow": self.WORKFLOW,
+            "prompt": prompt,
+            "duration": duration,
+            "seed": seed,
+            "base_url": self.base_url,
+        }
+        if ref_images:
+            metadata["reference_images"] = [str(p) for p in ref_images]
+        if ref_videos:
+            metadata["reference_videos"] = [str(p) for p in ref_videos]
+        if ref_audios:
+            metadata["reference_audios"] = [str(p) for p in ref_audios]
+
+        if response.status_code == 200:
+            content_type = response.headers.get("content-type", "")
+            if "video" in content_type or len(response.content) > 10000:
+                print(f"  -> {len(response.content)} bytes received")
+                return VideoResult(video_bytes=response.content, metadata=metadata)
+
+        if response.status_code in (200, 202):
+            try:
+                job_id = response.json().get("job_id")
+            except Exception:
+                job_id = None
+            if job_id:
+                print(f"  -> Job queued: {job_id}, polling...")
+                return self._poll_job(job_id, metadata)
+
+        print(f"  -> HTTP {response.status_code}: {response.text[:200]}")
+        return VideoResult(metadata={**metadata, "error": f"http_{response.status_code}"})
 
 
 class ComfyUIImageBackend(ImageBackend):

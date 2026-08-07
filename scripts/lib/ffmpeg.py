@@ -1246,9 +1246,13 @@ def composite_overlay(
     """
     Composite a PNG overlay (e.g., lower-third) over a video with fade in/out.
 
+    Uses -loop 1 for the PNG input so it persists across the time window,
+    then controls visibility via the overlay filter's enable expression
+    and alpha fading based on the background timeline.
+
     Args:
         background: Path to background video
-        overlay_image: Path to PNG overlay (should have transparency or green-screen)
+        overlay_image: Path to PNG overlay (with RGBA transparency)
         output_path: Path for output
         fade_in_s: Fade-in duration in seconds
         fade_out_s: Fade-out duration in seconds
@@ -1266,18 +1270,22 @@ def composite_overlay(
     total_overlay = fade_in_s + hold_s + fade_out_s
     end_s = start_s + total_overlay
 
-    # Fade the overlay alpha: ramp up, hold, ramp down
+    # Apply fade in/out on the overlay's alpha channel, then overlay onto
+    # the background with an enable window matching the timeline.
+    # The overlay input is looped and trimmed to the total overlay duration,
+    # with fade applied relative to its own timeline (starting at 0).
     filter_complex = (
         f"[1:v]format=rgba,"
         f"fade=t=in:st=0:d={fade_in_s}:alpha=1,"
-        f"fade=t=out:st={fade_in_s + hold_s}:d={fade_out_s}:alpha=1[ov];"
-        f"[0:v][ov]overlay=0:0:enable='between(t,{start_s},{end_s})'[vout]"
+        f"fade=t=out:st={fade_in_s + hold_s}:d={fade_out_s}:alpha=1,"
+        f"setpts=PTS+{start_s}/TB[ov];"
+        f"[0:v][ov]overlay=0:0:eof_action=pass[vout]"
     )
 
     cmd = [
         "ffmpeg", "-y",
         "-i", str(background),
-        "-i", str(overlay_image),
+        "-loop", "1", "-t", str(total_overlay), "-i", str(overlay_image),
         "-filter_complex", filter_complex,
         "-map", "[vout]", "-map", "0:a?",
         "-c:v", "libx264", "-preset", "fast", "-crf", "18",
@@ -1294,7 +1302,7 @@ def composite_overlay(
 
     print(f"  Overlay failed")
     if result.stderr:
-        print(result.stderr[:500])
+        print(result.stderr[-500:])
     return None
 
 

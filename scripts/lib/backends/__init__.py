@@ -85,6 +85,12 @@ def create_video_backend(config=None, preflight: bool = False) -> Optional[Video
             workflow=settings.get("video_workflow", "ltx2-i2v"),
             fps=settings.get("fps", 25),
         )
+    elif name == "minimax-h3":
+        from .comfyui_backend import MiniMaxH3Backend
+        settings = _get_comfyui_settings(config) if config else {}
+        return MiniMaxH3Backend(
+            base_url=settings.get("base_url", "http://192.168.1.181:8100"),
+        )
     elif name == "fal":
         from .fal_backend import FalVideoBackend
         # Get endpoint from config if available
@@ -96,7 +102,7 @@ def create_video_backend(config=None, preflight: bool = False) -> Optional[Video
                 pass
         return FalVideoBackend(endpoint=endpoint)
     else:
-        raise ValueError(f"Unknown video backend: {name}. Supported: fal, comfyui")
+        raise ValueError(f"Unknown video backend: {name}. Supported: fal, comfyui, minimax-h3")
 
 
 def create_image_backend(config=None, preflight: bool = False) -> Optional[ImageBackend]:
