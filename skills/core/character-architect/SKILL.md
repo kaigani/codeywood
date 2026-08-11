@@ -1,195 +1,103 @@
-# Character Architect Skill
+---
+name: character-architect
+description: "Develops psychologically coherent characters with want/need/lie profiles, distinct voice fingerprints, a scored relationship matrix, and image-generation-ready visual descriptions. Produces CHARACTER_SHEETS, RELATIONSHIP_MAP.json, and CAST_LIST.md. Use when LOGLINE_LOCK.md is approved and characters need to be developed before story structure."
+---
 
-## Purpose
-Develop deep, psychologically coherent characters with distinct voices, trackable relationships, and image-generation-ready visual descriptions.
+# Character Architect
 
-## Trigger
-LOGLINE_LOCK.md exists and is approved.
+Develop deep, psychologically coherent characters with distinct voices, trackable relationships, and image-generation-ready visual descriptions. Each character drives conflict through their psychology, not just their plot function.
 
-## Inputs Required
-- `CREATIVE_BRIEF.md`
-- `POWER_STACK.md`
-- `LOGLINE_LOCK.md`
+## Inputs
 
-## Outputs Produced
-- `CHARACTER_SHEETS/{NAME}.md` - Individual character profiles
-- `RELATIONSHIP_MAP.json` - Machine-readable relationship matrix
-- `CAST_LIST.md` - Summary of all characters
+- `CREATIVE_BRIEF.md` — genre, protagonist, key relationship, aesthetic keywords
+- `POWER_STACK.md` — story structure framework
+- `LOGLINE_LOCK.md` — approved logline with protagonist flaw and stakes
+
+## Outputs
+
+- `CHARACTER_SHEETS/{NAME}.md` — individual character profiles (identity, psychology, visual, voice, arc)
+- `RELATIONSHIP_MAP.json` — machine-readable relationship matrix with 5 axes per pair
+- `CAST_LIST.md` — summary of all characters with roles and tiers
 
 ## Process
 
 ### Step 1: Identify Required Characters
 
-From CREATIVE_BRIEF.md and LOGLINE_LOCK.md, identify:
+Extract character requirements from `CREATIVE_BRIEF.md` and `LOGLINE_LOCK.md`:
 
-**Tier 1 - Must Have (Pilot)**:
-- Protagonist
-- Key relationship character (from brief)
-- Primary antagonist or obstacle character
+| Tier | Scope | Characters |
+|------|-------|------------|
+| 1 — Must Have (Pilot) | Protagonist, key relationship character, primary antagonist/obstacle | 3 |
+| 2 — Series Regulars | Supporting cast for series engine + relationship dynamics | 3–5 |
+| 3 — Recurring | World-building, multi-episode characters | As needed |
 
-**Tier 2 - Series Regulars**:
-- Supporting cast needed for series engine
-- Additional relationship dynamics
-- Typically 3-5 additional characters
+### Step 2: Build Protagonist
 
-**Tier 3 - Recurring**:
-- Characters who appear in multiple episodes
-- World-building characters
-- Define as needed
+Complete the full CHARACTER_SHEET template with these critical sections:
 
-### Step 2: Build Protagonist First
+**Psychology Deep Dive:**
+1. **Want** — what they consciously pursue
+2. **Need** — what they actually require (unconscious)
+3. **Lie** — the false belief that blocks them
+4. **Wound** — the origin event of the lie
+5. **Ghost** — how the wound manifests daily
+6. **Virtue with Cost** — their strength that also causes problems
 
-Complete the full CHARACTER_SHEET template for the protagonist.
+**Relationship Wiring:** How they attach, what triggers defenses, what they never discuss, how they show (not say) love.
 
-**Critical Sections**:
-
-#### Psychology Deep Dive
-1. **Want**: What they consciously pursue
-2. **Need**: What they actually require (unconscious)
-3. **Lie**: The false belief that blocks them
-4. **Wound**: The origin event of the lie
-5. **Ghost**: How the wound manifests daily
-6. **Virtue with Cost**: Their strength that also causes problems
-
-#### Relationship Wiring
-- How they attach to others
-- What triggers their defenses
-- What they never talk about
-- How they show (not say) love
-
-#### Voice Profile
-- Sentence structure patterns
-- Vocabulary level and domains
-- Metaphor sources
-- Sarcasm/humor patterns
-- What topics they avoid
-- Speech patterns under stress
+**Voice Profile:** Sentence length patterns, vocabulary domains, metaphor sources, sarcasm/humor levels, taboo topics, stress speech patterns.
 
 ### Step 3: Build Key Relationship Character
 
-The character identified as "who they need most" in the brief.
-
-**Special Focus**:
-- Why they are uniquely suited to the protagonist
-- What they provide that no one else can
-- Their own want/need/lie (independent arc)
-- The "bond mechanism" - what draws them together
-- The "pressure mechanism" - what creates conflict
+The person identified as "who they need most" in the brief. Define their independent want/need/lie arc, plus the **bond mechanism** (what draws them together) and **pressure mechanism** (what creates conflict).
 
 ### Step 4: Build Remaining Cast
 
-For each additional character:
+For each additional character, verify:
 
-1. **Role Check**: What story function do they serve?
-   - Ally
-   - Antagonist
-   - Mentor
-   - Threshold Guardian
-   - Shapeshifter
-   - Trickster
-   - Herald
-
-2. **Differentiation Check**: Are they distinct from existing characters in:
-   - Voice
-   - Visual appearance
-   - Worldview
-   - Relationship to protagonist
-
-3. **Arc Potential**: What change is available to them over the season?
+1. **Role check** — story function (ally, antagonist, mentor, threshold guardian, shapeshifter, trickster, herald)
+2. **Differentiation check** — distinct from existing characters in voice, visual, worldview, and relationship to protagonist
+3. **Arc potential** — what change is available to them over the season
 
 ### Step 5: Generate Relationship Map
 
-Create `RELATIONSHIP_MAP.json` with:
+Create `RELATIONSHIP_MAP.json` with scored axes for every character pair:
 
-For each character pair:
-- **Trust** (-5 to +5): Belief in reliability/honesty
-- **Respect** (-5 to +5): Admiration for competence/character
-- **Dependency** (-5 to +5): Need for the other
-- **Intimacy** (-5 to +5): Emotional closeness
-- **Moral Alignment** (-5 to +5): Shared values
-
-Plus:
-- **Bond Mechanism**: What connects them
-- **Pressure Mechanism**: What creates conflict
-- **Private Language**: Unique terms/references
-- **Arc Direction**: Where the relationship is heading
+- **Trust** (−5 to +5), **Respect** (−5 to +5), **Dependency** (−5 to +5), **Intimacy** (−5 to +5), **Moral Alignment** (−5 to +5)
+- Plus: bond mechanism, pressure mechanism, private language, arc direction
 
 ### Step 6: Visual Description Optimization
 
-For each character, ensure the visual description is:
+Ensure each character's visual description is prompt-ready for image generation:
 
-**Prompt-Ready**:
-- Specific physical features (not vague)
-- Age-appropriate markers
-- Distinctive silhouette elements
-- Signature clothing/accessories
-- Color associations
-
-**Consistency-Focused**:
-- Locked visual anchors (never change)
-- Allowed variations (outfit changes, etc.)
-- Negative prompts (what to avoid)
+- Specific physical features (not vague — avoid "attractive woman")
+- Distinctive silhouette elements, signature clothing/accessories, color associations
+- Locked visual anchors that never change + allowed variations
+- Negative prompts (what to avoid generating)
 
 ### Step 7: Voice Differentiation Test
 
-Read sample dialogue for each character. They should be distinguishable WITHOUT dialogue tags.
-
-Test: Write the same line ("We need to talk about what happened.") in each character's voice.
-
-If voices are too similar:
-- Adjust sentence length patterns
-- Change vocabulary domains
-- Modify directness levels
-- Add unique verbal tics
+Test: write the same line ("We need to talk about what happened.") in each character's voice. Characters must be distinguishable WITHOUT dialogue tags. If voices overlap, adjust sentence length, vocabulary domain, directness level, or add verbal tics.
 
 ### Step 8: Contradiction Check
 
-Verify each character:
+Verify each major character:
+
 - [ ] Has at least one surprising trait (against type)
 - [ ] Causes at least one problem in the pilot (not just reactive)
 - [ ] Has one relationship they're actively failing
 - [ ] Has a secret (even if never revealed)
-- [ ] Wants something in every scene they're in
+- [ ] Wants something in every scene they appear in
 
 ## Quality Gate: Gate 2
 
-**Pass Criteria**:
-- [ ] Every major character has complete want/need/lie
-- [ ] Every major character causes at least one pilot problem
-- [ ] Every major character has one surprising competency
-- [ ] Every major character has one failing relationship
-- [ ] Visual descriptions are prompt-ready
-- [ ] Voices are distinguishable in blind test
+**Pass**: Every major character has complete want/need/lie, causes a pilot problem, has a surprising competency, has a failing relationship, has prompt-ready visuals, and passes voice differentiation.
 
-**Fail Action**:
-- Identify specific gaps
-- Return to relevant step
-- Do not proceed to story-architect until passed
+**Fail**: Identify specific gaps, return to the relevant step. Do not proceed to story-architect until this gate passes.
 
-## Character Sheet Sections
+## Notes
 
-1. **Identity**: Name, age, role, archetype
-2. **Psychology**: Want/need/lie/wound/virtue
-3. **Relationships**: How they connect to others
-4. **Visual**: Physical description, wardrobe, props
-5. **Voice**: Speech patterns, vocabulary, quirks
-6. **Arc**: Where they start, where they're going
-7. **Secrets**: What they hide
-8. **Casting Notes**: Actor comparisons (optional)
-
-## Common Pitfalls
-
-### Avoid:
-- Characters who only react, never initiate
-- Visual descriptions that are generic ("attractive woman")
-- Voices that all sound like the writer
-- Relationships without conflict potential
-- Backstory that doesn't affect present behavior
-- Perfect heroes or pure villains
-
-### Ensure:
-- Every character believes they're the hero of their own story
-- Antagonists have understandable (not sympathetic) logic
+- Every character believes they are the hero of their own story — antagonists have understandable logic
 - Supporting characters have lives beyond the protagonist
-- Physical descriptions include something memorable
-- Voice profiles include what they WON'T say
+- Voice profiles must include what the character WON'T say, not just what they will
+- Visual descriptions feed directly into character-reference-generator — specificity here saves regeneration cycles later

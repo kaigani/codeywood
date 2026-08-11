@@ -1,140 +1,91 @@
-# Prop Reference Generator Skill
+---
+name: prop-reference-generator
+description: "Generates consistent reference images for signature props, plot-critical objects, and recurring items using CANON_DB.json data and style guidelines. Produces isolated, in-context, and detail close-up shots for each prop. Use when CANON_DB.json and STYLEGUIDE_VISUAL.md exist and prop references need to be created for visual production."
+---
 
-## Purpose
-Generate reference images for signature props and objects that need consistent appearance across shots.
+# Prop Reference Generator
 
-## Trigger
-CANON_DB.json and STYLEGUIDE_VISUAL.md exist.
+Generate reference images for signature props and objects that need consistent appearance across shots. Reads prop definitions from `CANON_DB.json`, applies the show's visual style from `STYLEGUIDE_VISUAL.md`, and produces a categorized reference pack for each prop.
 
-## Inputs Required
-- `CANON_DB.json` (props data)
-- `STYLEGUIDE_VISUAL.md`
-- `CHARACTER_SHEETS/*.md` (for signature props)
+## Inputs
 
-## Outputs Produced
-- `PROP_REFS/{PROP}/refs/*.png` - Reference images
-- Updated `CANON_DB.json` (reference paths added)
+- `CANON_DB.json` — props section with type, owner, description, significance
+- `STYLEGUIDE_VISUAL.md` — global aesthetic and style keywords
+- `CHARACTER_SHEETS/*.md` — for signature prop ownership and interaction context
 
-## Reference Types Required
+## Outputs
 
-For each signature prop:
-
-### 1. Isolated Object
-- Clean background
-- Multiple angles
-- Detail visible
-
-### 2. In Context
-- With owner/user
-- In typical usage
-
-### 3. Detail Close-ups
-- Specific important features
-- Texture and material
+- `PROP_REFS/{PROP}/refs/*.png` — isolated, context, and detail reference images
+- Updated `CANON_DB.json` — reference image paths added to each prop entry
 
 ## Process
 
-### Step 1: Identify Required Props
+### Step 1: Identify and Prioritize Props
 
-From CANON_DB.json and CHARACTER_SHEETS:
-- Signature props (character-associated)
-- Plot-critical objects
-- Recurring items
+Extract props from `CANON_DB.json` and `CHARACTER_SHEETS`. Assign priority:
 
-**Priority**:
-- Signature character props (high)
-- Plot McGuffins (high)
-- Frequently seen objects (medium)
-- Background props (low - may not need refs)
+| Priority | Category | Reference Scope |
+|----------|----------|-----------------|
+| High | Signature character props | All three reference types |
+| High | Plot McGuffins | Isolated + detail |
+| Medium | Frequently seen objects | Isolated + context |
+| Low | Background props | Skip unless appears in close-ups |
 
 ### Step 2: Extract Prop Data
 
-From CANON_DB.json:
+Read each prop's entry from `CANON_DB.json`:
+
 ```json
 {
   "type": "signature",
   "owner": "CHARACTER_ID",
-  "description": "...",
-  "significance": "..."
+  "description": "Worn leather-bound notebook, frayed bookmark",
+  "significance": "Contains all case notes, never out of sight"
 }
 ```
 
 ### Step 3: Generate Isolated Reference
 
-Load prompt template:
+Load `prompts/isolated_prop.txt` and substitute variables. Generate a clean studio shot:
+
+- White or neutral background
+- Multiple angles where possible
+- Full detail visibility, material texture clear
+
+**Prompt template example:**
 ```
-prompts/isolated_prop.txt
-```
-
-Create clean object shot:
-- White/neutral background
-- Multiple angles if possible
-- Clear detail visibility
-
-Save as `refs/{prop}_isolated.png`
-
-### Step 4: Generate Context Shots
-
-Show prop in typical use:
-- With character (if signature prop)
-- In typical environment
-- Natural interaction
-
-Use character reference as input for consistency.
-
-Save as `refs/{prop}_context.png`
-
-### Step 5: Generate Detail Shots
-
-For important props:
-- Close-up of distinctive features
-- Texture/material clarity
-- Any text/markings
-
-Save as `refs/{prop}_detail.png`
-
-### Step 6: Update CANON_DB
-
-Add reference paths:
-```json
-"reference_images": {
-  "isolated": "PROP_REFS/ALICE_NOTEBOOK/refs/notebook_isolated.png",
-  "in_hand": "PROP_REFS/ALICE_NOTEBOOK/refs/notebook_hand.png",
-  ...
-}
-```
-
-## Prompt Template
-
-### prompts/isolated_prop.txt
-
-```
-{{PROP_DESCRIPTION}}, product photography style, clean white background, studio lighting, multiple angles visible, high detail, {{MATERIAL_DESCRIPTION}}, {{STYLE_KEYWORDS}}
+{{PROP_DESCRIPTION}}, product photography style, clean white background,
+studio lighting, multiple angles visible, high detail,
+{{MATERIAL_DESCRIPTION}}, {{STYLE_KEYWORDS}}
 
 Negative: people, hands, cluttered background, shadows, low detail
 ```
 
-## Prop Categories
+Save as `refs/{prop}_isolated.png`.
 
-### SIGNATURE PROPS
-Items associated with specific characters.
-- Generate all reference types
-- Include character interaction shots
+### Step 4: Generate Context Shots
 
-### PLOT PROPS
-Items critical to story.
-- Generate isolated + detail
-- Ensure distinctive features are clear
+Show the prop in typical use — with its owner character (using character reference images for consistency) in a natural environment. Save as `refs/{prop}_context.png`.
 
-### ENVIRONMENT PROPS
-Items that define locations.
-- May only need establishing shot inclusion
-- Generate if appears in close-ups
+### Step 5: Generate Detail Shots
+
+For high-priority props, generate close-ups of distinctive features: texture, material, markings, text. Save as `refs/{prop}_detail.png`.
+
+### Step 6: Update CANON_DB
+
+Add generated reference paths to each prop entry:
+
+```json
+"reference_images": {
+  "isolated": "PROP_REFS/ALICE_NOTEBOOK/refs/notebook_isolated.png",
+  "in_hand": "PROP_REFS/ALICE_NOTEBOOK/refs/notebook_hand.png",
+  "detail": "PROP_REFS/ALICE_NOTEBOOK/refs/notebook_detail.png"
+}
+```
 
 ## Notes
 
-- Signature props get full treatment
-- Plot props need distinctive features visible
-- Background props may not need dedicated references
-- Use character references when generating interaction shots
-- Props should match show's visual style
+- Signature props get full treatment (all three reference types)
+- Use character reference images when generating interaction shots for consistency
+- Props must match the show's locked visual style — apply `STYLEGUIDE_VISUAL.md` keywords
+- Background props rarely need dedicated references unless they appear in insert shots
